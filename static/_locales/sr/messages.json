@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Онемогући аутоматско одбацивање картица",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Онемогућите Chrome-ово одбацивање картица и спречите нежељено поновно учитавање картица. Правила по сајту, контрола по картици и статистика уживо.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Онемогући аутоматско одбацивање картица",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Главни прекидач",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Заштита укључена",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Паузирано",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "заштићених картица",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Ова картица",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Овај веб-сајт",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Трајно",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Привремено",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Интерне странице немају правила за сајт — ову картицу и даље можете да пребаците.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Овом страницом није могуће управљати",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Овде није доступно",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Интерне странице и странице проширења увек остају нетакнуте.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Заштићена",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Може се одбацити",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Заштити овај сајт",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Престани да штитиш овај сајт",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Изузми овај сајт",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Заштићени сајтови",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Изузети сајтови",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Још нема сајтова",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ још",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Уклони $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Подешавања и статистика",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Подешавања",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Добро дошли — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Покрени обилазак",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Тема",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Аутоматски",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Светла",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Тамна",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "заштићено сада",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "отворених картица",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "операција заштите",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "запажених одбацивања",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Од $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Ресетуј",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Режим заштите",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Заштити све",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Одржава све картице активним, осим сајтова које изузмете.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Само бела листа",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Одржава активним само сајтове које наведете.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Отворене картице",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Претражи картице…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Преклопите прекидач да бисте задржали ту картицу активном или дозволили да је Chrome одбаци. Ручни прекидач има предност над правилима сајта и важи док се картица не затвори.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Нема отворених картица.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Ниједна картица не одговара вашој претрази.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Овај прозор · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Прозор $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Ручно",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Успавана",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Закачена",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Репродукује",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Картица без наслова",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Интерна страница",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Пређи на ову картицу",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Заштита је паузирана главним прекидачем",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Заштићена — преклопите да дозволите Chrome-у да одбаци ову картицу",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Може се одбацити — преклопите да задржите ову картицу активном",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Само ови сајтови се одржавају активним; сви остали могу бити одбачени. Домен важи и за своје поддомене — нпр. <code>example.com</code> обухвата <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Овим сајтовима је дозвољено да буду одбачени. Домен важи и за своје поддомене — нпр. <code>example.com</code> обухвата <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Додај",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Уклони",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Увек за овај сајт",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Увек одржавај $HOST$ активним (додаје правило сајта)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Увек дозволи да $HOST$ буде одбачен (ажурира правила сајта)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Увек активна",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Увек одбацива",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ је сачуван као правило сајта — кликните да га уклоните",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Уклоњено — $HOST$ сада поново прати подразумевани режим.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Сачувано — $HOST$ ће сада увек остати активан. Погледајте Правила сајтова испод.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Сачувано — $HOST$ сада увек може бити одбачен. Погледајте Правила сајтова испод.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Овде још нема ничега.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Унесите важећи домен, нпр. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ је већ на листи.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Можете додати највише $MAX$ домена.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Савет: отворите <code>chrome://discards</code> да видите колону <strong>Auto Discardable</strong> — заштићене картице приказују ✕. Напомена: ручна одбацивања тамо и даље раде; ово блокира само Chrome-ово <em>аутоматско</em> одбацивање ради уштеде меморије.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Добро дошли",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Одржите важне картице активним",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chrome-ова Уштеда меморије уклања неактивне картице да би ослободила RAM, а затим их поново учитава када се вратите. Keep Tabs Alive вам омогућава да изаберете које картице остају активне и спремне — спречавајући нежељена поновна учитавања и прекиде.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Картице остају на месту",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Отворене картице остају спремне за употребу, са очуваним стањем странице и текућим радом — без неочекиваних поновних учитавања.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Прекидачи по картици",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "Страница са подешавањима наводи сваку отворену картицу са сопственим прекидачем. Одржите једну картицу активном или пустите другу да заспи — то заобилази правила само за ту картицу.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Правила за сајтове",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Заштитите све осим неколико сајтова или на белу листу ставите само оне које изаберете. Правила се подударају и са поддоменима — <code>example.com</code> обухвата све.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Започните",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Више волите да подразумевано заштитите све? Режиме можете да промените у подешавањима.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Закачите</strong> за приступ једним кликом: кликните на икону слагалице <span class=\"puzzle\">🧩</span> на траци са алаткама, а затим на чиоду.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Проверите било кад</strong> на <code>chrome://discards</code> — заштићене картице приказују ✕ у колони <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Главни прекидач",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Овде укључите или искључите сву заштиту. Док је искључена, свака картица може бити одбачена — ваша правила се чувају, само су паузирана.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Изаберите режим заштите",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Само бела листа</b> одржава активним само сајтове које изаберете (благо подразумевано подешавање). <b>Заштити све</b> одржава активним све картице осим оних које изузмете.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Управљајте картицама једну по једну",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Свака отворена картица има сопствени прекидач. Преклопите га да задржите ту картицу активном или пустите да заспи — једнократан избор који важи док се картица не затвори. Желите заувек? Кликните на <b>Увек за овај сајт</b> поред прекидача да га претворите у трајно правило сајта. Кликните на ред да скочите на картицу.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Поставите правила по сајту",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Овде додајте домене да заштитите (или изузмете) целе сајтове одједном. Домен обухвата и своје поддомене — <code>example.com</code> одговара <code>mail.example.com</code>. То је цео обилазак — поново га отворите у било ком тренутку дугметом ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Прескочи",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Назад",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Даље",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Готово",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Ова картица је заштићена — Chrome је неће аутоматски одбацити.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Ова картица није заштићена — Chrome може да је одбаци ради ослобађања меморије.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Заштита је паузирана — ниједна картица се не одржава активном.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

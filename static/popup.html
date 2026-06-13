@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keep Tabs Alive</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/popup.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <img class="brand__logo" src="icons/icon48.png" alt="" width="22" height="22" />
+        <span class="brand__name" data-i18n="brandName">Keep Tabs Alive</span>
+      </div>
+      <label class="switch switch--lg" data-i18n-title="masterSwitchTitle" title="Master switch">
+        <input type="checkbox" id="masterToggle" />
+        <span class="switch__track"><span class="switch__thumb"></span></span>
+      </label>
+    </header>
+
+    <!-- Status card -->
+    <section class="card status" id="statusCard">
+      <div class="status__main">
+        <span class="status__count" id="protectedCount">0</span>
+        <span class="status__label" data-i18n="tabsProtected">tabs protected</span>
+      </div>
+      <div class="status__pill" id="statusPill">
+        <span class="dot"></span><span id="statusText">Active</span>
+      </div>
+    </section>
+
+    <!-- Current tab: site-level + tab-level switches -->
+    <section class="card site">
+      <div class="ctl">
+        <div class="ctl__text">
+          <span class="ctl__head">
+            <span class="ctl__label" data-i18n="thisWebsite">This website</span>
+            <span class="ctl__scope ctl__scope--site" data-i18n="scopePermanent">Permanent</span>
+          </span>
+          <span class="ctl__value">
+            <img class="ctl__favicon" id="siteFavicon" src="" alt="" width="14" height="14" />
+            <span id="siteHost">—</span>
+          </span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="siteToggle" />
+          <span class="switch__track"><span class="switch__thumb"></span></span>
+        </label>
+      </div>
+      <div class="ctl">
+        <div class="ctl__text">
+          <span class="ctl__head">
+            <span class="ctl__label" data-i18n="thisTab">This tab</span>
+            <span class="ctl__scope ctl__scope--tab" data-i18n="scopeTemporary">Temporary</span>
+          </span>
+          <span class="ctl__value"><span id="tabPath">—</span></span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="tabToggle" />
+          <span class="switch__track"><span class="switch__thumb"></span></span>
+        </label>
+      </div>
+      <p class="site__hint" id="siteHint" hidden></p>
+    </section>
+
+    <!-- Current-tab protection summary -->
+    <section class="card note" id="protectNote" data-state="off">
+      <span class="note__icon" id="protectIcon"></span>
+      <span class="note__text" id="protectText">—</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <button class="link" id="openOptions">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="2"/>
+          <path d="M19.4 13a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 008 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 003.6 15a1.65 1.65 0 00-1.51-1H2a2 2 0 110-4h.09A1.65 1.65 0 003.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 008 4.6a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.2.6.74 1 1.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span data-i18n="settingsAndStats">Settings &amp; statistics</span>
+      </button>
+    </footer>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

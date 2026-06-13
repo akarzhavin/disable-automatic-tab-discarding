@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Wyłącz automatyczne odrzucanie kart",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Wyłącz odrzucanie kart przez Chrome i zapobiegaj niechcianemu przeładowywaniu kart. Reguły dla witryn, sterowanie dla każdej karty i statystyki na żywo.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Wyłącz automatyczne odrzucanie kart",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Przełącznik główny",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Ochrona włączona",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Wstrzymano",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "chronionych kart",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Ta karta",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Ta witryna",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Trwałe",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Tymczasowe",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Strony wewnętrzne nie mają reguł witryn — nadal możesz przełączyć tę kartę.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Tej strony nie można zarządzać",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Niedostępne tutaj",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Strony wewnętrzne i strony rozszerzeń zawsze pozostają nietknięte.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Chroniona",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Do odrzucenia",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Chroń tę witrynę",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Przestań chronić tę witrynę",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Wyklucz tę witrynę",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Chronione witryny",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Wykluczone witryny",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Brak witryn",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ więcej",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Usuń $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Ustawienia i statystyki",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Ustawienia",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Witamy — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Rozpocznij przewodnik",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Motyw",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Auto",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Jasny",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Ciemny",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "chronionych teraz",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "otwartych kart",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "operacji ochrony",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "zaobserwowanych odrzuceń",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Od $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Resetuj",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Tryb ochrony",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Chroń wszystko",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Utrzymuj wszystkie karty aktywne, z wyjątkiem wykluczonych witryn.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Tylko biała lista",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Utrzymuj aktywne tylko witryny z listy.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Otwarte karty",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Szukaj kart…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Przełącz, aby utrzymać daną kartę aktywną lub pozwolić Chrome ją odrzucić. Ręczny przełącznik nadpisuje reguły witryny i obowiązuje do zamknięcia karty.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Brak otwartych kart.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Żadna karta nie pasuje do wyszukiwania.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "To okno · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Okno $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Ręczne",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Uśpiona",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Przypięta",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Odtwarza",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Karta bez tytułu",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Strona wewnętrzna",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Przejdź do tej karty",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Ochrona jest wstrzymana przez przełącznik główny",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Chroniona — przełącz, aby pozwolić Chrome odrzucić tę kartę",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Do odrzucenia — przełącz, aby utrzymać tę kartę aktywną",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Tylko te witryny pozostają aktywne; cała reszta może zostać odrzucona. Domena obejmuje także swoje subdomeny — np. <code>example.com</code> obejmuje <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Te witryny mogą zostać odrzucone. Domena obejmuje także swoje subdomeny — np. <code>example.com</code> obejmuje <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Dodaj",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Usuń",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Zawsze dla tej witryny",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Zawsze utrzymuj $HOST$ aktywną (dodaje regułę witryny)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Zawsze pozwalaj odrzucać $HOST$ (aktualizuje reguły witryny)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Zawsze utrzymywana aktywna",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Zawsze do odrzucenia",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ jest zapisany jako reguła witryny — kliknij, aby ją usunąć",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Usunięto — $HOST$ ponownie podlega domyślnemu ustawieniu trybu.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Zapisano — $HOST$ będzie teraz zawsze pozostawać aktywna. Zobacz Reguły witryn poniżej.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Zapisano — $HOST$ może teraz zawsze być odrzucana. Zobacz Reguły witryn poniżej.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Jeszcze nic tutaj nie ma.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Wprowadź prawidłową domenę, np. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ jest już na liście.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Możesz dodać maksymalnie $MAX$ domen.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Wskazówka: otwórz <code>chrome://discards</code>, aby zobaczyć kolumnę <strong>Auto Discardable</strong> — chronione karty pokazują ✕. Uwaga: ręczne odrzucanie tam nadal działa; to blokuje tylko <em>automatyczne</em> odrzucanie przez oszczędzanie pamięci w Chrome.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Witamy",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Utrzymuj aktywne karty, które są ważne",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Oszczędzanie pamięci w Chrome usuwa nieaktywne karty, aby zwolnić pamięć RAM, a następnie wczytuje je ponownie po powrocie. Keep Tabs Alive pozwala wybrać, które karty pozostaną aktywne i gotowe do użycia — zapobiegając niechcianym przeładowaniom i przerwom.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Karty pozostają na miejscu",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Otwarte karty pozostają gotowe do użycia, z zachowanym stanem strony i bieżącą pracą — bez nieoczekiwanych przeładowań.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Przełączniki dla każdej karty",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "Strona ustawień wyświetla każdą otwartą kartę z własnym przełącznikiem. Utrzymaj jedną kartę aktywną lub pozwól innej zasnąć — zastępuje to reguły tylko dla tej karty.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Reguły witryn",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Chroń wszystko z wyjątkiem kilku witryn lub dodaj do białej listy tylko te, które wybierzesz. Reguły obejmują również subdomeny — <code>example.com</code> obejmuje całość.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Rozpocznij",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Wolisz domyślnie chronić wszystko? Tryb możesz zmienić w ustawieniach.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Przypnij</strong>, aby uzyskać dostęp jednym kliknięciem: kliknij ikonę układanki <span class=\"puzzle\">🧩</span> na pasku narzędzi, a następnie pinezkę.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Sprawdź w dowolnej chwili</strong> na <code>chrome://discards</code> — chronione karty pokazują ✕ w kolumnie <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Przełącznik główny",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Włącz lub wyłącz tutaj całą ochronę. Gdy jest wyłączona, każda karta może zostać odrzucona — twoje reguły są zachowane, tylko wstrzymane.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Wybierz tryb ochrony",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Tylko biała lista</b> utrzymuje aktywne tylko wybrane przez ciebie witryny (łagodne ustawienie domyślne). <b>Chroń wszystko</b> utrzymuje aktywną każdą kartę z wyjątkiem wykluczonych.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Zarządzaj kartami pojedynczo",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Każda otwarta karta ma własny przełącznik. Przełącz go, aby utrzymać tę jedną kartę aktywną lub pozwolić jej zasnąć — jednorazowy wybór obowiązujący do zamknięcia karty. Chcesz na zawsze? Kliknij <b>Zawsze dla tej witryny</b> obok przełącznika, aby zmienić go w stałą regułę witryny. Kliknij wiersz, aby przejść do karty.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Ustaw reguły według witryny",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Dodaj tutaj domeny, aby chronić (lub wykluczyć) całe witryny naraz. Domena obejmuje także swoje subdomeny — <code>example.com</code> pasuje do <code>mail.example.com</code>. To koniec przewodnika — otwórz go ponownie w dowolnej chwili przyciskiem ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Pomiń",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Wstecz",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Dalej",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Gotowe",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Ta karta jest chroniona — Chrome nie usunie jej automatycznie.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Ta karta nie jest chroniona — Chrome może ją usunąć, aby zwolnić pamięć.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Ochrona jest wstrzymana — żadne karty nie są utrzymywane aktywne.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

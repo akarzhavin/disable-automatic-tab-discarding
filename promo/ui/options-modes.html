@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../../static/css/theme.css" />
+<link rel="stylesheet" href="../../static/css/options.css" />
+<style>
+  *{animation:none!important;transition:none!important}
+  html,body{background:transparent!important}
+</style>
+</head>
+<body>
+  <div class="page">
+    
+  <header class="topbar">
+    <div class="brand">
+      <img class="brand__logo" src="../../static/icons/icon128.png" alt="" width="40" height="40" />
+      <div>
+        <h1 class="brand__name">Keep Tabs Alive</h1>
+        <p class="brand__sub">Disable automatic tab discarding</p>
+      </div>
+    </div>
+    <div class="topbar__controls">
+      <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M9.5 9.2a2.5 2.5 0 014.9.8c0 1.7-2.4 2-2.4 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="16.6" r="1.1" fill="currentColor"/></svg></button>
+      <div class="seg" role="radiogroup">
+        <button class="seg__btn" role="radio" aria-checked="false">Auto</button>
+        <button class="seg__btn" role="radio" aria-checked="true">Light</button>
+        <button class="seg__btn" role="radio" aria-checked="false">Dark</button>
+      </div>
+      <label class="switch switch--lg"><input type="checkbox" checked /><span class="switch__track"><span class="switch__thumb"></span></span></label>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="panel__head"><h2 class="panel__title">Protection mode</h2></div>
+    <div class="modes">
+      <label class="mode"><input type="radio" name="mode" checked /><div class="mode__body"><span class="mode__name">Protect everything</span><span class="mode__desc">Keep all tabs alive, except the sites you exclude.</span></div></label>
+      <label class="mode"><input type="radio" name="mode" /><div class="mode__body"><span class="mode__name">Whitelist only</span><span class="mode__desc">Only keep the sites you list alive.</span></div></label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel__head"><h2 class="panel__title">Excluded sites</h2><span class="count-badge">2</span></div>
+    <p class="panel__desc">These sites are allowed to be discarded. A domain also matches its subdomains — e.g. <code>example.com</code> covers <code>mail.example.com</code>.</p>
+    <form class="adder"><input class="input" type="text" placeholder="example.com" /><button class="btn" type="button">Add</button></form>
+    <ul class="domain-list">
+      <li class="domain-row"><span class="domain-row__name">youtube.com</span><button class="domain-row__remove">Remove</button></li>
+      <li class="domain-row"><span class="domain-row__name">reddit.com</span><button class="domain-row__remove">Remove</button></li>
+    </ul>
+  </section>
+  </div>
+</body></html>

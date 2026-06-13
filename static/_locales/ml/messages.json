@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — സ്വയമേവയുള്ള ടാബ് ഉപേക്ഷിക്കൽ പ്രവർത്തനരഹിതമാക്കുക",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Chrome-ന്റെ ടാബ് ഉപേക്ഷിക്കൽ പ്രവർത്തനരഹിതമാക്കുകയും അനാവശ്യ ടാബ് റീലോഡുകൾ തടയുകയും ചെയ്യുക. ഓരോ സൈറ്റിനുമുള്ള നിയമങ്ങൾ, ഓരോ ടാബിനുമുള്ള നിയന്ത്രണം, തത്സമയ സ്ഥിതിവിവരക്കണക്കുകൾ.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "സ്വയമേവയുള്ള ടാബ് ഉപേക്ഷിക്കൽ പ്രവർത്തനരഹിതമാക്കുക",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "മാസ്റ്റർ സ്വിച്ച്",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "പരിരക്ഷ ഓൺ",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "നിർത്തി",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "ടാബുകൾ പരിരക്ഷിച്ചു",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "ഈ ടാബ്",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "ഈ വെബ്സൈറ്റ്",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "സ്ഥിരം",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "താൽക്കാലികം",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "ആന്തരിക പേജുകൾക്ക് സൈറ്റ് നിയമങ്ങളില്ല — എന്നിരുന്നാലും ഈ ടാബ് മാറ്റാം.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "ഈ പേജ് കൈകാര്യം ചെയ്യാനാകില്ല",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "ഇവിടെ ലഭ്യമല്ല",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "ആന്തരിക, വിപുലീകരണ പേജുകൾ എപ്പോഴും സ്പർശിക്കാതെ വിടുന്നു.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "പരിരക്ഷിതം",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "ഉപേക്ഷിക്കാവുന്നത്",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "ഈ സൈറ്റ് പരിരക്ഷിക്കുക",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "ഈ സൈറ്റ് പരിരക്ഷിക്കുന്നത് നിർത്തുക",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "ഈ സൈറ്റ് ഒഴിവാക്കുക",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "പരിരക്ഷിത സൈറ്റുകൾ",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "ഒഴിവാക്കിയ സൈറ്റുകൾ",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "ഇതുവരെ സൈറ്റുകളൊന്നുമില്ല",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ കൂടി",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "$DOMAIN$ നീക്കം ചെയ്യുക",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "ക്രമീകരണങ്ങളും സ്ഥിതിവിവരക്കണക്കുകളും",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — ക്രമീകരണങ്ങൾ",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "സ്വാഗതം — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "പര്യടനം നടത്തുക",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "തീം",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "സ്വയമേവ",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "ഇളം",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "ഇരുണ്ട",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "ഇപ്പോൾ പരിരക്ഷിതം",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "തുറന്ന ടാബുകൾ",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "പരിരക്ഷണ പ്രവർത്തനങ്ങൾ",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "നിരീക്ഷിച്ച ഉപേക്ഷിക്കലുകൾ",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "$DATE$ മുതൽ",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "പുനഃസജ്ജമാക്കുക",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "പരിരക്ഷണ മോഡ്",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "എല്ലാം പരിരക്ഷിക്കുക",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "നിങ്ങൾ ഒഴിവാക്കുന്ന സൈറ്റുകളൊഴികെ എല്ലാ ടാബുകളും സജീവമായി നിലനിർത്തുക.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "വൈറ്റ്‌ലിസ്റ്റ് മാത്രം",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "നിങ്ങൾ പട്ടികപ്പെടുത്തുന്ന സൈറ്റുകൾ മാത്രം സജീവമായി നിലനിർത്തുക.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "തുറന്ന ടാബുകൾ",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "ടാബുകൾ തിരയുക…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "ആ ടാബ് സജീവമായി നിലനിർത്താനോ Chrome അത് ഉപേക്ഷിക്കാൻ അനുവദിക്കാനോ ഒരു സ്വിച്ച് മാറ്റുക. ഒരു മാനുവൽ സ്വിച്ച് സൈറ്റ് നിയമങ്ങളെ മറികടക്കുകയും ടാബ് അടയ്ക്കുന്നതുവരെ നിലനിൽക്കുകയും ചെയ്യുന്നു.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "തുറന്ന ടാബുകളൊന്നുമില്ല.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "നിങ്ങളുടെ തിരയലുമായി പൊരുത്തപ്പെടുന്ന ടാബുകളൊന്നുമില്ല.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "ഈ വിൻഡോ · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "വിൻഡോ $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "മാനുവൽ",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "ഉറക്കത്തിൽ",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "പിൻ ചെയ്തു",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "പ്ലേ ചെയ്യുന്നു",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "ശീർഷകമില്ലാത്ത ടാബ്",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "ആന്തരിക പേജ്",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "ഈ ടാബിലേക്ക് മാറുക",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "മാസ്റ്റർ സ്വിച്ച് പരിരക്ഷണം താൽക്കാലികമായി നിർത്തിയിരിക്കുന്നു",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "പരിരക്ഷിതം — ഈ ടാബ് ഉപേക്ഷിക്കാൻ Chrome-നെ അനുവദിക്കാൻ മാറ്റുക",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "ഉപേക്ഷിക്കാവുന്നത് — ഈ ടാബ് സജീവമായി നിലനിർത്താൻ മാറ്റുക",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "ഈ സൈറ്റുകൾ മാത്രമേ സജീവമായി നിലനിർത്തുകയുള്ളൂ; മറ്റെല്ലാം ഉപേക്ഷിക്കപ്പെടാം. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്‌ഡൊമെയ്‌നുകളുമായും പൊരുത്തപ്പെടുന്നു — ഉദാ. <code>example.com</code> എന്നത് <code>mail.example.com</code>-നെ ഉൾക്കൊള്ളുന്നു.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "ഈ സൈറ്റുകൾ ഉപേക്ഷിക്കാൻ അനുവദിച്ചിരിക്കുന്നു. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്‌ഡൊമെയ്‌നുകളുമായും പൊരുത്തപ്പെടുന്നു — ഉദാ. <code>example.com</code> എന്നത് <code>mail.example.com</code>-നെ ഉൾക്കൊള്ളുന്നു.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "ചേർക്കുക",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "നീക്കം ചെയ്യുക",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "ഈ സൈറ്റിന് എപ്പോഴും",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "$HOST$ എപ്പോഴും സജീവമായി നിലനിർത്തുക (ഒരു സൈറ്റ് നിയമം ചേർക്കുന്നു)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "$HOST$ എപ്പോഴും ഉപേക്ഷിക്കാൻ അനുവദിക്കുക (സൈറ്റ് നിയമങ്ങൾ പുതുക്കുന്നു)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "സംരക്ഷിച്ചു — $HOST$ ഇനി എപ്പോഴും സജീവമായി നിലനിൽക്കും. താഴെയുള്ള സൈറ്റ് നിയമങ്ങൾ കാണുക.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "സംരക്ഷിച്ചു — $HOST$ ഇനി എപ്പോഴും ഉപേക്ഷിക്കാനാകും. താഴെയുള്ള സൈറ്റ് നിയമങ്ങൾ കാണുക.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "എപ്പോഴും സജീവമായി നിലനിർത്തുന്നു",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "എപ്പോഴും ഉപേക്ഷിക്കാവുന്നത്",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ ഒരു സൈറ്റ് നിയമമായി സംരക്ഷിച്ചു — അത് നീക്കം ചെയ്യാൻ ക്ലിക്ക് ചെയ്യുക",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "നീക്കം ചെയ്തു — $HOST$ ഇപ്പോൾ വീണ്ടും മോഡ് സ്ഥിരസ്ഥിതി പിന്തുടരുന്നു.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "ഇവിടെ ഇതുവരെ ഒന്നുമില്ല.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "സാധുവായ ഒരു ഡൊമെയ്ൻ നൽകുക, ഉദാ. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ ഇതിനകം പട്ടികയിലുണ്ട്.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "നിങ്ങൾക്ക് $MAX$ ഡൊമെയ്‌നുകൾ വരെ ചേർക്കാം.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "നുറുങ്ങ്: <strong>Auto Discardable</strong> കോളം കാണാൻ <code>chrome://discards</code> തുറക്കുക — പരിരക്ഷിത ടാബുകൾ ✕ കാണിക്കുന്നു. ശ്രദ്ധിക്കുക: അവിടെയുള്ള മാനുവൽ ഉപേക്ഷിക്കലുകൾ ഇപ്പോഴും പ്രവർത്തിക്കും; ഇത് Chrome-ന്റെ <em>സ്വയമേവയുള്ള</em> മെമ്മറി-സേവർ ഉപേക്ഷിക്കൽ മാത്രമേ തടയുകയുള്ളൂ.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "സ്വാഗതം",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "പ്രധാനപ്പെട്ട ടാബുകൾ സജീവമായി നിലനിർത്തുക",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "RAM സ്വതന്ത്രമാക്കാൻ Chrome-ന്റെ മെമ്മറി സേവർ നിഷ്ക്രിയ ടാബുകൾ അൺലോഡ് ചെയ്യുകയും നിങ്ങൾ മടങ്ങിയെത്തുമ്പോൾ അവ വീണ്ടും ലോഡ് ചെയ്യുകയും ചെയ്യുന്നു. ഏതൊക്കെ ടാബുകൾ സജീവവും തയ്യാറുമായി നിലനിൽക്കണമെന്ന് തിരഞ്ഞെടുക്കാൻ Keep Tabs Alive നിങ്ങളെ അനുവദിക്കുന്നു — അനാവശ്യമായ റീലോഡുകളും തടസ്സങ്ങളും തടയുന്നു.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "ടാബുകൾ അവിടെത്തന്നെ നിലനിൽക്കുന്നു",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "തുറന്ന ടാബുകൾ അവയുടെ പേജ് അവസ്ഥയും നടന്നുകൊണ്ടിരിക്കുന്ന ജോലിയും കേടുകൂടാതെ ഉപയോഗത്തിന് തയ്യാറായി നിലനിൽക്കുന്നു — അപ്രതീക്ഷിത റീലോഡുകൾ ഇല്ല.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "ഓരോ ടാബിനും സ്വിച്ചുകൾ",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "ക്രമീകരണ പേജ് ഓരോ തുറന്ന ടാബും അതിന്റേതായ സ്വിച്ചോടെ പട്ടികപ്പെടുത്തുന്നു. ഒരു ടാബ് സജീവമായി നിലനിർത്തുക അല്ലെങ്കിൽ മറ്റൊന്ന് ഉറങ്ങാൻ അനുവദിക്കുക — ഇത് ആ ടാബിന് മാത്രം നിയമങ്ങൾ മറികടക്കുന്നു.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "സൈറ്റ് നിയമങ്ങൾ",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "ഏതാനും സൈറ്റുകൾ ഒഴികെ എല്ലാം പരിരക്ഷിക്കുക, അല്ലെങ്കിൽ നിങ്ങൾ തിരഞ്ഞെടുക്കുന്നവ മാത്രം വൈറ്റ്ലിസ്റ്റ് ചെയ്യുക. നിയമങ്ങൾ സബ്ഡൊമെയ്നുകൾക്കും യോജിക്കുന്നു — <code>example.com</code> എല്ലാം ഉൾക്കൊള്ളുന്നു.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "ആരംഭിക്കുക",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "സ്ഥിരസ്ഥിതിയായി എല്ലാം പരിരക്ഷിക്കാൻ ആഗ്രഹിക്കുന്നുവോ? ക്രമീകരണങ്ങളിൽ നിങ്ങൾക്ക് മോഡുകൾ മാറ്റാം.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "ഒറ്റ ക്ലിക്കിൽ ആക്സസ് ചെയ്യാൻ <strong>ഇത് പിൻ ചെയ്യുക</strong>: ടൂൾബാറിലെ <span class=\"puzzle\">🧩</span> പസിൽ ഐക്കണിൽ ക്ലിക്ക് ചെയ്യുക, പിന്നെ പിന്നിൽ.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<code>chrome://discards</code> എന്നതിൽ <strong>എപ്പോൾ വേണമെങ്കിലും പരിശോധിക്കുക</strong> — പരിരക്ഷിത ടാബുകൾ <em>Auto Discardable</em> കോളത്തിൽ ✕ കാണിക്കുന്നു.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "മാസ്റ്റർ സ്വിച്ച്",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "എല്ലാ പരിരക്ഷണവും ഇവിടെ ഓൺ അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. ഇത് ഓഫ് ആയിരിക്കുമ്പോൾ, ഓരോ ടാബും ഉപേക്ഷിക്കാൻ സ്വതന്ത്രമാണ് — നിങ്ങളുടെ നിയമങ്ങൾ സൂക്ഷിക്കുന്നു, വെറുതെ താൽക്കാലികമായി നിർത്തുന്നു.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "ഒരു പരിരക്ഷണ മോഡ് തിരഞ്ഞെടുക്കുക",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>വൈറ്റ്‌ലിസ്റ്റ് മാത്രം</b> നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന സൈറ്റുകൾ മാത്രം സജീവമായി നിലനിർത്തുന്നു (മൃദുവായ സ്ഥിരസ്ഥിതി). <b>എല്ലാം പരിരക്ഷിക്കുക</b> നിങ്ങൾ ഒഴിവാക്കുന്നവയൊഴികെ ഓരോ ടാബും സജീവമായി നിലനിർത്തുന്നു.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "ടാബുകൾ ഓരോന്നായി കൈകാര്യം ചെയ്യുക",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "ഓരോ തുറന്ന ടാബിനും അതിന്റേതായ സ്വിച്ച് ഉണ്ട്. ആ ഒറ്റ ടാബ് സജീവമായി നിലനിർത്താനോ ഉറങ്ങാൻ അനുവദിക്കാനോ അത് മാറ്റുക — ടാബ് അടയ്ക്കുന്നതുവരെ നിലനിൽക്കുന്ന ഒറ്റത്തവണ തിരഞ്ഞെടുപ്പ്. എന്നേക്കും വേണോ? അത് ഒരു സ്ഥിര സൈറ്റ് നിയമമാക്കി മാറ്റാൻ സ്വിച്ചിന് അടുത്തുള്ള <b>ഈ സൈറ്റിന് എപ്പോഴും</b> ക്ലിക്ക് ചെയ്യുക. ടാബിലേക്ക് പോകാൻ ഒരു വരിയിൽ ക്ലിക്ക് ചെയ്യുക.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "സൈറ്റ് അനുസരിച്ച് നിയമങ്ങൾ സജ്ജമാക്കുക",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "മുഴുവൻ സൈറ്റുകളും ഒറ്റയടിക്ക് പരിരക്ഷിക്കാൻ (അല്ലെങ്കിൽ ഒഴിവാക്കാൻ) ഇവിടെ ഡൊമെയ്‌നുകൾ ചേർക്കുക. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്‌ഡൊമെയ്‌നുകളെയും ഉൾക്കൊള്ളുന്നു — <code>example.com</code> എന്നത് <code>mail.example.com</code>-മായി പൊരുത്തപ്പെടുന്നു. അതാണ് പര്യടനം — ? ബട്ടണിൽ നിന്ന് എപ്പോൾ വേണമെങ്കിലും ഇത് വീണ്ടും തുറക്കാം.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "ഒഴിവാക്കുക",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "പിന്നോട്ട്",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "അടുത്തത്",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "പൂർത്തിയായി",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "ഈ ടാബ് പരിരക്ഷിതമാണ് — Chrome ഇത് സ്വയമേവ ഒഴിവാക്കില്ല.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "ഈ ടാബ് പരിരക്ഷിതമല്ല — മെമ്മറി സ്വതന്ത്രമാക്കാൻ Chrome ഇത് ഒഴിവാക്കിയേക്കാം.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "പരിരക്ഷ താൽക്കാലികമായി നിർത്തി — ഒരു ടാബും സജീവമായി നിലനിർത്തുന്നില്ല.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — 禁用自动丢弃标签页",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "禁用 Chrome 的标签页丢弃，防止标签页被意外重新加载。支持按站点规则、按标签页控制以及实时统计。",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "禁用自动丢弃标签页",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "总开关",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "保护已开启",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "已暂停",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "个标签页受保护",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "此标签页",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "此网站",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "永久",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "临时",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "内部页面没有网站规则——但你仍可以单独切换此标签页。",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "无法管理此页面",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "此处不可用",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "内部页面和扩展页面始终保持不变。",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "受保护",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "可丢弃",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "保护此站点",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "停止保护此站点",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "排除此站点",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "受保护的站点",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "已排除的站点",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "暂无站点",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "还有 $COUNT$ 个",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "移除 $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "设置和统计",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — 设置",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "欢迎使用 — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "开始导览",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "主题",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "自动",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "浅色",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "深色",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "当前受保护",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "打开的标签页",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "次保护操作",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "次丢弃记录",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "自 $DATE$ 起",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "重置",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "保护模式",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "保护全部",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "保持所有标签页活动，但排除你指定的站点。",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "仅白名单",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "仅保持你列出的站点活动。",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "打开的标签页",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "搜索标签页…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "拨动开关即可保持该标签页活动，或让 Chrome 丢弃它。手动开关会覆盖站点规则，并在标签页关闭前一直有效。",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "没有打开的标签页。",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "没有匹配搜索的标签页。",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "当前窗口 · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "窗口 $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "手动",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "已休眠",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "已固定",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "播放中",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "无标题标签页",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "内部页面",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "切换到此标签页",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "保护已被总开关暂停",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "受保护 — 拨动以让 Chrome 丢弃此标签页",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "可丢弃 — 拨动以保持此标签页活动",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "仅这些站点保持活动；其余站点可能被丢弃。域名也会匹配其子域名 — 例如 <code>example.com</code> 涵盖 <code>mail.example.com</code>。",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "这些站点允许被丢弃。域名也会匹配其子域名 — 例如 <code>example.com</code> 涵盖 <code>mail.example.com</code>。",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "添加",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "移除",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "始终用于此站点",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "始终保持 $HOST$ 活动（添加一条站点规则）",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "始终允许丢弃 $HOST$（更新站点规则）",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "始终保持活动",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "始终可丢弃",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ 已保存为站点规则 — 点击即可移除",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "已移除 — $HOST$ 现在重新遵循模式默认设置。",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "已保存 — $HOST$ 现在将始终保持活动。请查看下方的站点规则。",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "已保存 — $HOST$ 现在始终可被丢弃。请查看下方的站点规则。",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "这里还没有内容。",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "请输入有效的域名，例如 example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ 已在列表中。",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "最多可添加 $MAX$ 个域名。",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "提示：打开 <code>chrome://discards</code> 查看 <strong>Auto Discardable</strong> 列 — 受保护的标签页显示 ✕。注意：在那里手动丢弃仍然有效；本扩展只阻止 Chrome 为节省内存而进行的<em>自动</em>丢弃。",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "欢迎",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "让重要的标签页保持活动",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chrome 的内存节省程序会卸载闲置标签页以释放内存，待你返回时再重新加载它们。Keep Tabs Alive 让你选择哪些标签页保持活动并随时可用——避免不必要的重新加载和中断。",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "标签页保持不变",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "打开的标签页随时可用，页面状态和正在进行的工作都完好无损——不会意外重新加载。",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "单个标签页开关",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "设置页面会列出每个打开的标签页，并配有独立开关。让某个标签页保持活动，或让另一个进入休眠——它仅针对该标签页覆盖现有规则。",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "网站规则",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "保护除少数网站外的所有内容，或仅将你选择的网站加入白名单。规则同样匹配子域名——<code>example.com</code> 涵盖其全部内容。",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "开始使用",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "想默认保护所有内容？你可以在设置中切换模式。",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>固定它</strong>以便一键访问：点击工具栏中的拼图图标 <span class=\"puzzle\">🧩</span>，然后点击图钉。",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>随时验证</strong>，访问 <code>chrome://discards</code>——受保护的标签页会在 <em>Auto Discardable</em> 列中显示 ✕。",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "总开关",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "在此处开启或关闭全部保护。关闭时，每个标签页都可能被丢弃 — 你的规则会被保留，只是暂停。",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "选择一种保护模式",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>仅白名单</b>只让你选择的站点保持活动（温和的默认选项）。<b>保护全部</b>让每个标签页保持活动，但排除你指定的站点。",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "逐个管理标签页",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "每个打开的标签页都有各自的开关。拨动它，让单个标签页保持活动或让它休眠 — 这是一次性选择，在标签页关闭前一直有效。想要永久生效？点击开关旁的<b>始终用于此站点</b>，将其变为永久的站点规则。点击某一行可跳转到该标签页。",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "按站点设置规则",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "在此处添加域名，可一次性保护（或排除）整个站点。域名也涵盖其子域名 — <code>example.com</code> 匹配 <code>mail.example.com</code>。导览到此结束 — 随时可通过 ? 按钮重新打开。",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "跳过",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "上一步",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "下一步",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "完成",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "此标签页已受保护——Chrome 不会自动丢弃它。",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "此标签页未受保护——Chrome 可能会丢弃它以释放内存。",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "保护已暂停——没有标签页保持活动。",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

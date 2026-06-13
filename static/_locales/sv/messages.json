@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Inaktivera automatisk fliksläppning",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Inaktivera Chromes släppande av flikar och förhindra oönskad omladdning av flikar. Regler per webbplats, kontroll per flik och livestatistik.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Inaktivera automatisk fliksläppning",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Huvudströmbrytare",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Skydd på",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Pausat",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "skyddade flikar",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Den här fliken",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Den här webbplatsen",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Permanent",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Tillfälligt",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Interna sidor har inga webbplatsregler — du kan ändå växla den här fliken.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Denna sida kan inte hanteras",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Inte tillgängligt här",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Interna sidor och tilläggssidor lämnas alltid orörda.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Skyddad",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Släppbar",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Skydda denna webbplats",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Sluta skydda denna webbplats",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Undanta denna webbplats",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Skyddade webbplatser",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Undantagna webbplatser",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Inga webbplatser än",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ till",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Ta bort $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Inställningar och statistik",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Inställningar",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Välkommen — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Ta rundturen",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Tema",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Auto",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Ljust",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Mörkt",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "skyddade nu",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "öppna flikar",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "skyddsåtgärder",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "släppningar observerade",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Sedan $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Återställ",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Skyddsläge",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Skydda allt",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Håll alla flikar vid liv, utom de webbplatser du undantar.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Endast vitlista",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Håll endast de webbplatser du listar vid liv.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Öppna flikar",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Sök flikar…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Vippa på en strömbrytare för att hålla fliken vid liv eller låta Chrome släppa den. En manuell strömbrytare åsidosätter webbplatsreglerna och gäller tills fliken stängs.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Inga öppna flikar.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Inga flikar matchar din sökning.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Detta fönster · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Fönster $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Manuell",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Sovande",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Fäst",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Spelar",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Namnlös flik",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Intern sida",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Växla till denna flik",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Skyddet är pausat av huvudströmbrytaren",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Skyddad — vippa för att låta Chrome släppa denna flik",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Släppbar — vippa för att hålla denna flik vid liv",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Endast dessa webbplatser hålls vid liv; allt annat kan släppas. En domän matchar även dess underdomäner — t.ex. <code>example.com</code> omfattar <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Dessa webbplatser tillåts att släppas. En domän matchar även dess underdomäner — t.ex. <code>example.com</code> omfattar <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Lägg till",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Ta bort",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Alltid för denna webbplats",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Håll alltid $HOST$ vid liv (lägger till en webbplatsregel)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Låt alltid $HOST$ släppas (uppdaterar webbplatsregler)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Alltid vid liv",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Alltid släppbar",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ är sparad som en webbplatsregel — klicka för att ta bort den",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Borttagen — $HOST$ följer nu lägets standard igen.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Sparad — $HOST$ kommer nu alltid att hållas vid liv. Se Webbplatsregler nedan.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Sparad — $HOST$ kan nu alltid släppas. Se Webbplatsregler nedan.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Inget här än.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Ange en giltig domän, t.ex. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ finns redan i listan.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Du kan lägga till upp till $MAX$ domäner.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Tips: öppna <code>chrome://discards</code> för att se kolumnen <strong>Auto Discardable</strong> — skyddade flikar visar ✕. Obs: manuella släppningar där fungerar fortfarande; detta blockerar endast Chromes <em>automatiska</em> minnesbesparande släppning.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Välkommen",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Håll flikarna som betyder något aktiva",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chromes Minnesbesparing laddar ur inaktiva flikar för att frigöra RAM och laddar sedan om dem när du återvänder. Keep Tabs Alive låter dig välja vilka flikar som förblir aktiva och redo — vilket förhindrar oönskade omladdningar och avbrott.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Flikarna stannar kvar",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Öppna flikar förblir redo att användas, med sidans tillstånd och pågående arbete intakt — inga oväntade omladdningar.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Strömbrytare per flik",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "Inställningssidan listar varje öppen flik med en egen strömbrytare. Håll en flik aktiv eller låt en annan sova — det åsidosätter reglerna enbart för den fliken.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Webbplatsregler",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Skydda allt utom några få webbplatser, eller vitlista bara de du väljer. Reglerna matchar även underdomäner — <code>example.com</code> omfattar allt.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Kom igång",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Föredrar du att skydda allt som standard? Du kan byta läge i inställningarna.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Fäst den</strong> för åtkomst med ett klick: klicka på pusselikonen <span class=\"puzzle\">🧩</span> i verktygsfältet och sedan på nålen.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Verifiera när som helst</strong> på <code>chrome://discards</code> — skyddade flikar visar ✕ i kolumnen <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Huvudströmbrytaren",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Slå på eller av allt skydd här. När den är av kan varje flik släppas — dina regler behålls, bara pausade.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Välj ett skyddsläge",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Endast vitlista</b> håller bara de webbplatser du väljer vid liv (det skonsamma standardläget). <b>Skydda allt</b> håller varje flik vid liv utom de du undantar.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Hantera flikar en och en",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Varje öppen flik har sin egen strömbrytare. Vippa på den för att hålla just den fliken vid liv eller låta den sova — ett engångsval som gäller tills fliken stängs. Vill du ha det för alltid? Klicka på <b>Alltid för denna webbplats</b> bredvid strömbrytaren för att göra det till en permanent webbplatsregel. Klicka på en rad för att hoppa till fliken.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Ställ in regler per webbplats",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Lägg till domäner här för att skydda (eller undanta) hela webbplatser på en gång. En domän omfattar även dess underdomäner — <code>example.com</code> matchar <code>mail.example.com</code>. Det var rundturen — öppna den när som helst igen från ?-knappen.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Hoppa över",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Tillbaka",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Nästa",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Klar",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Den här fliken är skyddad — Chrome kasserar den inte automatiskt.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Den här fliken är inte skyddad — Chrome kan kassera den för att frigöra minne.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Skyddet är pausat — inga flikar hålls aktiva.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

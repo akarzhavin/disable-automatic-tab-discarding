@@ -1,0 +1,153 @@
+/* Chrome Web Store promo tiles — fixed 1280×800 canvas */
+:root {
+  --accent: #10a37f;
+  --accent-strong: #0d8a6c;
+  --ink: #10241d;
+  --muted: #4a5b54;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { width: 1280px; height: 800px; overflow: hidden; }
+body { font-family: var(--font); -webkit-font-smoothing: antialiased; }
+
+.slide {
+  position: relative;
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+}
+
+/* ── Backgrounds (per-theme tint, same family) ──────────────────────────── */
+.bg { position: absolute; inset: 0; z-index: 0; }
+.bg::before, .bg::after {
+  content: ""; position: absolute; border-radius: 50%; filter: blur(10px);
+}
+.theme-1 .bg { background: linear-gradient(135deg, #e9f8f2 0%, #f4f6f8 60%, #eef7fb 100%); }
+.theme-2 .bg { background: linear-gradient(135deg, #f3f7f5 0%, #eaf6f1 100%); }
+.theme-3 .bg { background: linear-gradient(135deg, #eef7fb 0%, #eef9f4 100%); }
+.theme-4 .bg { background: linear-gradient(135deg, #fef6ef 0%, #eef7f3 100%); }
+.theme-5 .bg { background: linear-gradient(140deg, #0e1f1a 0%, #0b1722 100%); }
+
+/* soft decorative orbs */
+.bg::before {
+  width: 520px; height: 520px; top: -160px; right: -120px;
+  background: radial-gradient(circle at 30% 30%, rgba(16,163,127,0.22), transparent 70%);
+}
+.bg::after {
+  width: 420px; height: 420px; bottom: -180px; left: -120px;
+  background: radial-gradient(circle at 50% 50%, rgba(16,163,127,0.12), transparent 70%);
+}
+.theme-5 .bg::before { background: radial-gradient(circle at 30% 30%, rgba(45,212,160,0.30), transparent 70%); }
+.theme-5 .bg::after  { background: radial-gradient(circle at 50% 50%, rgba(45,212,160,0.16), transparent 70%); }
+
+/* ── Copy ───────────────────────────────────────────────────────────────── */
+.copy { position: relative; z-index: 2; }
+.eyebrow {
+  display: inline-block;
+  font-size: 14px; font-weight: 800; letter-spacing: 0.16em;
+  color: var(--accent-strong);
+  background: rgba(16,163,127,0.10);
+  padding: 7px 14px; border-radius: 999px;
+}
+.copy h1 {
+  margin-top: 22px;
+  font-size: 52px; line-height: 1.06; font-weight: 800; letter-spacing: -0.025em;
+  color: var(--ink);
+}
+.copy p {
+  margin-top: 20px;
+  font-size: 20px; line-height: 1.5; font-weight: 450;
+  color: var(--muted);
+  max-width: 520px;
+}
+.theme-5 .copy h1 { color: #eef4f1; }
+.theme-5 .copy p { color: #a9bcb4; }
+.theme-5 .eyebrow { color: #5fe7be; background: rgba(45,212,160,0.14); }
+
+/* ── Side layout (popup) ────────────────────────────────────────────────── */
+.slide--side {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 0 90px;
+}
+.slide--side .copy { max-width: 540px; }
+.stage { position: relative; z-index: 2; display: grid; place-items: center; }
+
+/* Popup device = faux toolbar + the real popup, floating with shadow */
+.device { position: relative; width: 372px; }
+.device .toolbar {
+  height: 46px; width: 372px;
+  background: #ffffff;
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: flex-end;
+  padding: 0 12px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+.device .toolbar__ext {
+  position: relative; display: grid; place-items: center;
+  width: 32px; height: 32px; border-radius: 8px; background: #f1f3f5;
+}
+.device .toolbar__badge {
+  position: absolute; top: -6px; right: -8px;
+  min-width: 18px; height: 18px; padding: 0 4px;
+  background: var(--accent); color: #fff;
+  font-size: 11px; font-weight: 800; line-height: 18px; text-align: center;
+  border-radius: 999px; border: 2px solid #fff;
+}
+.device iframe {
+  display: block;
+  width: 340px; height: 384px; border: 0;
+  margin: 10px 0 0 auto;            /* drop down from the toolbar, right-aligned */
+  background: #f4f5f7;
+  border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(16,24,40,0.22), 0 4px 12px rgba(16,24,40,0.10);
+}
+.device--dark .toolbar { background: #181b21; border-color: #2a2f38; }
+.device--dark .toolbar__ext { background: #20242c; }
+.device--dark iframe { background: #0f1115; box-shadow: 0 18px 50px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.4); }
+
+/* ── Stack layout (options window) ──────────────────────────────────────── */
+.slide--stack {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 56px 70px 0;
+}
+.slide--stack .copy { text-align: center; max-width: 900px; }
+.slide--stack .copy p { max-width: 760px; margin-left: auto; margin-right: auto; }
+.slide--stack .copy h1 { font-size: 46px; }
+
+.window {
+  position: relative; z-index: 2;
+  margin-top: 34px;
+  width: 1120px;
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 26px 70px rgba(16,24,40,0.20), 0 6px 16px rgba(16,24,40,0.08);
+  overflow: hidden;
+}
+.window__bar {
+  height: 46px; display: flex; align-items: center; gap: 8px;
+  padding: 0 18px; background: #f3f4f6; border-bottom: 1px solid #e6e8ec;
+}
+.window__bar .d { width: 12px; height: 12px; border-radius: 50%; }
+.window__bar .red { background: #ff5f57; }
+.window__bar .yel { background: #febc2e; }
+.window__bar .grn { background: #28c840; }
+.window__url {
+  margin-left: 14px; font-size: 13px; color: #8a929c; font-weight: 500;
+}
+.window__view { width: 1120px; height: 520px; overflow: hidden; background: #fff; }
+.window__view iframe { border: 0; height: 1400px; }
+
+/* ── Welcome slide (real onboarding page in a centered window) ───────────── */
+.slide--welcome {
+  display: flex; align-items: center; justify-content: center;
+  padding: 46px 70px;
+}
+.window--welcome { width: 1150px; margin-top: 0; }
+.window__view--welcome { width: 1148px; height: 650px; background: #f4f5f7; }
+.window__view--welcome iframe { height: 1100px; background: #f4f5f7; }

@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Estä välilehtien automaattinen hylkääminen",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Poista Chromen välilehtien hylkääminen käytöstä ja estä välilehtien ei-toivotut uudelleenlataukset. Sivustokohtaiset säännöt, välilehtikohtainen hallinta ja reaaliaikaiset tilastot.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Estä välilehtien automaattinen hylkääminen",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Pääkytkin",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Suojaus käytössä",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Keskeytetty",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "suojattua välilehteä",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Tämä välilehti",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Tämä sivusto",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Pysyvä",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Väliaikainen",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Sisäisillä sivuilla ei ole sivustosääntöjä — voit silti vaihtaa tämän välilehden tilaa.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Tätä sivua ei voi hallita",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Ei käytettävissä täällä",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Sisäiset ja laajennusten sivut jätetään aina koskematta.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Suojattu",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Hylättävissä",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Suojaa tämä sivusto",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Lopeta tämän sivuston suojaaminen",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Sulje tämä sivusto pois",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Suojatut sivustot",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Poissuljetut sivustot",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Ei vielä sivustoja",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ lisää",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Poista $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Asetukset ja tilastot",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Asetukset",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Tervetuloa — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Tee esittelykierros",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Teema",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Automaattinen",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Vaalea",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Tumma",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "suojattu nyt",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "avointa välilehteä",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "suojaustoimintoa",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "havaittua hylkäystä",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Alkaen $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Nollaa",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Suojaustila",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Suojaa kaikki",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Pidä kaikki välilehdet hengissä lukuun ottamatta poissulkemiasi sivustoja.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Vain sallittujen lista",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Pidä hengissä vain luettelemasi sivustot.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Avoimet välilehdet",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Etsi välilehtiä…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Käännä kytkintä pitääksesi välilehden hengissä tai antaaksesi Chromen hylätä sen. Manuaalinen kytkin ohittaa sivustosäännöt ja on voimassa, kunnes välilehti suljetaan.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Ei avoimia välilehtiä.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Mikään välilehti ei vastaa hakuasi.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Tämä ikkuna · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Ikkuna $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Manuaalinen",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Nukkuu",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Kiinnitetty",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Toistaa",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Nimetön välilehti",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Sisäinen sivu",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Siirry tähän välilehteen",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Suojaus on keskeytetty pääkytkimellä",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Suojattu — käännä antaaksesi Chromen hylätä tämä välilehti",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Hylättävissä — käännä pitääksesi tämän välilehden hengissä",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Vain nämä sivustot pidetään hengissä; kaikki muu voidaan hylätä. Verkkotunnus vastaa myös aliverkkotunnuksiaan — esim. <code>example.com</code> kattaa <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Nämä sivustot saa hylätä. Verkkotunnus vastaa myös aliverkkotunnuksiaan — esim. <code>example.com</code> kattaa <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Lisää",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Poista",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Aina tälle sivustolle",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Pidä $HOST$ aina hengissä (lisää sivustosäännön)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Salli $HOST$ aina hylättäväksi (päivittää sivustosäännöt)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Tallennettu — $HOST$ pysyy nyt aina hengissä. Katso sivustosäännöt alta.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Tallennettu — $HOST$ voidaan nyt aina hylätä. Katso sivustosäännöt alta.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Pidetään aina hengissä",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Aina hylättävissä",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ on tallennettu sivustosäännöksi — napsauta poistaaksesi sen",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Poistettu — $HOST$ noudattaa nyt taas tilan oletusarvoa.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Täällä ei ole vielä mitään.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Anna kelvollinen verkkotunnus, esim. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ on jo luettelossa.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Voit lisätä enintään $MAX$ verkkotunnusta.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Vinkki: avaa <code>chrome://discards</code> nähdäksesi sarakkeen <strong>Auto Discardable</strong> — suojatuissa välilehdissä näkyy ✕. Huomaa: manuaalinen hylkääminen sieltä toimii edelleen; tämä estää vain Chromen <em>automaattisen</em> muistinsäästöhylkäyksen.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Tervetuloa",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Pidä tärkeät välilehdet aktiivisina",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chromen muistinsäästäjä poistaa käyttämättömät välilehdet käytöstä vapauttaakseen RAM-muistia ja lataa ne uudelleen, kun palaat. Keep Tabs Alive antaa sinun valita, mitkä välilehdet pysyvät aktiivisina ja valmiina — estäen ei-toivotut uudelleenlataukset ja keskeytykset.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Välilehdet pysyvät paikallaan",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Avoimet välilehdet pysyvät käyttövalmiina, sivun tila ja kesken oleva työ ennallaan — ei yllättäviä uudelleenlatauksia.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Välilehtikohtaiset kytkimet",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "Asetussivu listaa jokaisen avoimen välilehden omalla kytkimellään. Pidä yksi välilehti aktiivisena tai anna toisen nukahtaa — se ohittaa säännöt vain kyseisen välilehden osalta.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Sivustosäännöt",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Suojaa kaikki muutamaa sivustoa lukuun ottamatta tai salli vain valitsemasi. Säännöt vastaavat myös aliverkkotunnuksia — <code>example.com</code> kattaa ne kaikki.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Aloita",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Suojaatko mieluummin kaiken oletuksena? Voit vaihtaa tiloja asetuksissa.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Kiinnitä se</strong> yhden napsautuksen käyttöä varten: napsauta työkalupalkin <span class=\"puzzle\">🧩</span> palapelikuvaketta ja sitten kiinnitysnastaa.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Tarkista milloin tahansa</strong> osoitteessa <code>chrome://discards</code> — suojatut välilehdet näyttävät merkin ✕ sarakkeessa <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Pääkytkin",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Kytke kaikki suojaus päälle tai pois täältä. Kun se on pois päältä, jokainen välilehti voidaan hylätä — sääntösi säilyvät, ne on vain keskeytetty.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Valitse suojaustila",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Vain sallittujen lista</b> pitää hengissä vain valitsemasi sivustot (lempeä oletus). <b>Suojaa kaikki</b> pitää jokaisen välilehden hengissä lukuun ottamatta poissulkemiasi.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Hallitse välilehtiä yksitellen",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Jokaisella avoimella välilehdellä on oma kytkimensä. Käännä sitä pitääksesi yksittäisen välilehden hengissä tai antaaksesi sen nukkua — kertaluonteinen valinta, joka on voimassa, kunnes välilehti suljetaan. Haluatko sen pysyvästi? Napsauta kytkimen vieressä <b>Aina tälle sivustolle</b> tehdäksesi siitä pysyvän sivustosäännön. Napsauta riviä siirtyäksesi välilehteen.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Aseta säännöt sivustoittain",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Lisää tähän verkkotunnuksia suojataksesi (tai sulkeaksesi pois) kokonaisia sivustoja kerralla. Verkkotunnus kattaa myös aliverkkotunnuksensa — <code>example.com</code> vastaa <code>mail.example.com</code>. Siinä esittelykierros — avaa se milloin tahansa ?-painikkeesta.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Ohita",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Takaisin",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Seuraava",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Valmis",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Tämä välilehti on suojattu — Chrome ei poista sitä automaattisesti käytöstä.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Tämä välilehti ei ole suojattu — Chrome voi poistaa sen käytöstä vapauttaakseen muistia.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Suojaus on keskeytetty — yhtäkään välilehteä ei pidetä aktiivisena.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

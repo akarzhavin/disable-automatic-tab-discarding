@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — غیرفعال کردن دور انداختن خودکار زبانه‌ها",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "دور انداختن زبانه‌ها توسط کروم را غیرفعال کنید و از بارگذاری مجدد ناخواستهٔ زبانه‌ها جلوگیری کنید. قوانین بر اساس سایت، کنترل برای هر زبانه و آمار زنده.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "غیرفعال کردن دور انداختن خودکار زبانه‌ها",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "کلید اصلی",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "محافظت روشن",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "متوقف",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "زبانه محافظت‌شده",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "این زبانه",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "این وب‌سایت",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "دائمی",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "موقت",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "صفحه‌های داخلی قانون سایت ندارند — همچنان می‌توانید این زبانه را تغییر دهید.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "این صفحه قابل مدیریت نیست",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "در اینجا در دسترس نیست",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "صفحات داخلی و صفحات افزونه‌ها همیشه دست‌نخورده باقی می‌مانند.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "محافظت‌شده",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "قابل دور انداختن",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "محافظت از این سایت",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "توقف محافظت از این سایت",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "حذف این سایت",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "سایت‌های محافظت‌شده",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "سایت‌های مستثنا",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "هنوز سایتی نیست",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "‎+$COUNT$ مورد دیگر",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "حذف $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "تنظیمات و آمار",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — تنظیمات",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "خوش آمدید — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "شروع تور",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "تم",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "خودکار",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "روشن",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "تیره",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "اکنون محافظت‌شده",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "زبانه باز",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "عملیات محافظت",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "دور انداختن مشاهده‌شده",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "از $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "بازنشانی",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "حالت محافظت",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "محافظت از همه چیز",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "همه زبانه‌ها را زنده نگه می‌دارد، به‌جز سایت‌هایی که مستثنا می‌کنید.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "فقط فهرست سفید",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "فقط سایت‌هایی را که فهرست می‌کنید زنده نگه می‌دارد.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "زبانه‌های باز",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "جستجوی زبانه‌ها…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "یک کلید را تغییر دهید تا آن زبانه زنده بماند یا اجازه دهید کروم آن را دور بیندازد. کلید دستی بر قوانین سایت اولویت دارد و تا بسته شدن زبانه باقی می‌ماند.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "هیچ زبانه بازی وجود ندارد.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "هیچ زبانه‌ای با جستجوی شما مطابقت ندارد.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "این پنجره · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "پنجره $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "دستی",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "خوابیده",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "سنجاق‌شده",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "در حال پخش",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "زبانه بدون عنوان",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "صفحهٔ داخلی",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "رفتن به این زبانه",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "محافظت توسط کلید اصلی متوقف شده است",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "محافظت‌شده — تغییر دهید تا کروم بتواند این زبانه را دور بیندازد",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "قابل دور انداختن — تغییر دهید تا این زبانه زنده بماند",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "فقط این سایت‌ها زنده نگه داشته می‌شوند؛ بقیه ممکن است دور انداخته شوند. یک دامنه با زیردامنه‌هایش نیز مطابقت دارد — مثلاً <code>example.com</code> شامل <code>mail.example.com</code> می‌شود.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "این سایت‌ها اجازه دارند دور انداخته شوند. یک دامنه با زیردامنه‌هایش نیز مطابقت دارد — مثلاً <code>example.com</code> شامل <code>mail.example.com</code> می‌شود.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "افزودن",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "حذف",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "همیشه برای این سایت",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "همیشه $HOST$ را زنده نگه دار (یک قانون سایت اضافه می‌کند)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "همیشه اجازه بده $HOST$ دور انداخته شود (قوانین سایت را به‌روزرسانی می‌کند)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "همیشه زنده نگه داشته می‌شود",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "همیشه قابل دور انداختن",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ به‌عنوان قانون سایت ذخیره شده است — برای حذف کلیک کنید",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "حذف شد — $HOST$ اکنون دوباره از پیش‌فرض حالت پیروی می‌کند.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "ذخیره شد — $HOST$ اکنون همیشه زنده می‌ماند. قوانین سایت را در زیر ببینید.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "ذخیره شد — $HOST$ اکنون همیشه می‌تواند دور انداخته شود. قوانین سایت را در زیر ببینید.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "هنوز چیزی اینجا نیست.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "یک دامنه معتبر وارد کنید، مثلاً example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ از قبل در فهرست است.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "می‌توانید تا $MAX$ دامنه اضافه کنید.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "نکته: <code>chrome://discards</code> را باز کنید تا ستون <strong>Auto Discardable</strong> را ببینید — زبانه‌های محافظت‌شده ✕ نشان می‌دهند. توجه: دور انداختن دستی در آنجا همچنان کار می‌کند؛ این فقط دور انداختن <em>خودکار</em> صرفه‌جویی حافظه کروم را مسدود می‌کند.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "خوش آمدید",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "زبانه‌های مهم را فعال نگه دارید",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "صرفه‌جوی حافظهٔ Chrome زبانه‌های بی‌کار را برای آزادسازی RAM تخلیه می‌کند و هنگام بازگشت دوباره آن‌ها را بارگذاری می‌کند. Keep Tabs Alive به شما امکان می‌دهد انتخاب کنید کدام زبانه‌ها فعال و آماده بمانند — و از بارگذاری‌های مجدد ناخواسته و وقفه‌ها جلوگیری می‌کند.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "زبانه‌ها سر جای خود می‌مانند",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "زبانه‌های باز آمادهٔ استفاده می‌مانند و وضعیت صفحه و کار در حال انجام آن‌ها دست‌نخورده باقی می‌ماند — بدون بارگذاری مجدد غیرمنتظره.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "کلید برای هر زبانه",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "صفحهٔ تنظیمات هر زبانهٔ باز را همراه با کلید مخصوص خودش فهرست می‌کند. یک زبانه را فعال نگه دارید یا اجازه دهید دیگری به خواب برود — این کار قوانین را فقط برای همان زبانه نادیده می‌گیرد.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "قوانین سایت",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "همه‌چیز را به‌جز چند سایت محافظت کنید، یا فقط مواردی را که خودتان انتخاب می‌کنید در فهرست مجاز قرار دهید. قوانین زیردامنه‌ها را نیز پوشش می‌دهند — <code>example.com</code> همهٔ آن را در بر می‌گیرد.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "شروع کنید",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "ترجیح می‌دهید به‌طور پیش‌فرض همه‌چیز محافظت شود؟ می‌توانید حالت‌ها را در تنظیمات تغییر دهید.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>آن را سنجاق کنید</strong> برای دسترسی با یک کلیک: روی نماد پازل <span class=\"puzzle\">🧩</span> در نوار ابزار کلیک کنید، سپس روی سنجاق.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>هر زمان بررسی کنید</strong> در <code>chrome://discards</code> — زبانه‌های محافظت‌شده در ستون <em>Auto Discardable</em> نشان ✕ نمایش می‌دهند.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "کلید اصلی",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "تمام محافظت را از اینجا روشن یا خاموش کنید. وقتی خاموش است، هر زبانه می‌تواند دور انداخته شود — قوانین شما حفظ می‌شوند، فقط متوقف شده‌اند.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "یک حالت محافظت انتخاب کنید",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>فقط فهرست سفید</b> فقط سایت‌هایی را که انتخاب می‌کنید زنده نگه می‌دارد (پیش‌فرض ملایم). <b>محافظت از همه چیز</b> هر زبانه را به‌جز مواردی که مستثنا می‌کنید زنده نگه می‌دارد.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "زبانه‌ها را یکی‌یکی مدیریت کنید",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "هر زبانه باز کلید مخصوص خودش را دارد. آن را تغییر دهید تا همان یک زبانه زنده بماند یا اجازه دهید بخوابد — یک انتخاب یک‌باره که تا بسته شدن زبانه باقی می‌ماند. آن را برای همیشه می‌خواهید؟ روی <b>همیشه برای این سایت</b> کنار کلید کلیک کنید تا به یک قانون سایت دائمی تبدیل شود. روی یک ردیف کلیک کنید تا به زبانه بروید.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "قوانین را بر اساس سایت تنظیم کنید",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "دامنه‌ها را اینجا اضافه کنید تا کل سایت‌ها را یکجا محافظت (یا مستثنا) کنید. یک دامنه زیردامنه‌هایش را نیز در بر می‌گیرد — <code>example.com</code> با <code>mail.example.com</code> مطابقت دارد. این پایان تور بود — هر زمان از دکمه ؟ آن را دوباره باز کنید.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "رد کردن",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "بازگشت",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "بعدی",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "تمام",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "این زبانه محافظت‌شده است — Chrome آن را به‌طور خودکار رها نمی‌کند.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "این زبانه محافظت‌شده نیست — Chrome ممکن است برای آزادسازی حافظه آن را رها کند.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "محافظت متوقف شده است — هیچ زبانه‌ای فعال نگه داشته نمی‌شود.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — 자동 탭 폐기 비활성화",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Chrome의 탭 폐기를 비활성화하고 원치 않는 탭 새로고침을 방지하세요. 사이트별 규칙, 탭별 제어, 실시간 통계.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "자동 탭 폐기 비활성화",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "마스터 스위치",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "보호 켜짐",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "일시 중지됨",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "개 탭 보호됨",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "이 탭",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "이 웹사이트",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "영구",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "임시",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "내부 페이지에는 사이트 규칙이 없지만, 이 탭은 전환할 수 있습니다.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "이 페이지는 관리할 수 없습니다",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "여기서는 사용할 수 없음",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "내부 페이지와 확장 프로그램 페이지는 항상 그대로 유지됩니다.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "보호됨",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "폐기 가능",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "이 사이트 보호",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "이 사이트 보호 중지",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "이 사이트 제외",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "보호된 사이트",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "제외된 사이트",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "아직 사이트가 없습니다",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "외 $COUNT$개",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "$DOMAIN$ 제거",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "설정 및 통계",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — 설정",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "환영합니다 — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "둘러보기 시작",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "테마",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "자동",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "라이트",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "다크",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "현재 보호 중",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "열린 탭",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "보호 작업",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "관찰된 폐기",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "$DATE$부터",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "초기화",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "보호 모드",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "모두 보호",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "제외한 사이트를 제외하고 모든 탭을 유지합니다.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "허용 목록만",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "목록에 추가한 사이트만 유지합니다.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "열린 탭",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "탭 검색…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "스위치를 전환하여 해당 탭을 유지하거나 Chrome이 폐기하도록 할 수 있습니다. 수동 스위치는 사이트 규칙보다 우선하며 탭을 닫을 때까지 유지됩니다.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "열린 탭이 없습니다.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "검색과 일치하는 탭이 없습니다.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "현재 창 · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "창 $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "수동",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "절전 중",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "고정됨",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "재생 중",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "제목 없는 탭",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "내부 페이지",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "이 탭으로 전환",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "마스터 스위치에 의해 보호가 일시중지되었습니다",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "보호됨 — 전환하면 Chrome이 이 탭을 폐기할 수 있습니다",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "폐기 가능 — 전환하면 이 탭을 유지합니다",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "이 사이트들만 유지되며, 나머지는 폐기될 수 있습니다. 도메인은 하위 도메인에도 적용됩니다 — 예: <code>example.com</code>은 <code>mail.example.com</code>을 포함합니다.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "이 사이트들은 폐기가 허용됩니다. 도메인은 하위 도메인에도 적용됩니다 — 예: <code>example.com</code>은 <code>mail.example.com</code>을 포함합니다.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "추가",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "제거",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "이 사이트에 항상 적용",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "$HOST$을(를) 항상 유지 (사이트 규칙 추가)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "$HOST$이(가) 항상 폐기되도록 허용 (사이트 규칙 업데이트)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "저장됨 — $HOST$은(는) 이제 항상 유지됩니다. 아래의 사이트 규칙을 참고하세요.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "저장됨 — $HOST$은(는) 이제 항상 폐기될 수 있습니다. 아래의 사이트 규칙을 참고하세요.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "항상 유지됨",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "항상 폐기 가능",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$이(가) 사이트 규칙으로 저장되었습니다 — 클릭하여 제거하세요",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "제거됨 — $HOST$은(는) 이제 다시 모드 기본값을 따릅니다.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "아직 아무것도 없습니다.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "유효한 도메인을 입력하세요. 예: example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$은(는) 이미 목록에 있습니다.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "도메인은 최대 $MAX$개까지 추가할 수 있습니다.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "팁: <code>chrome://discards</code>를 열면 <strong>Auto Discardable</strong> 열을 볼 수 있습니다 — 보호된 탭에는 ✕가 표시됩니다. 참고: 거기서의 수동 폐기는 여전히 작동합니다. 이 기능은 Chrome의 <em>자동</em> 메모리 절약 폐기만 차단합니다.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "환영합니다",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "중요한 탭을 살려 두세요",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chrome의 메모리 절약 기능은 유휴 탭을 언로드하여 RAM을 확보한 뒤, 돌아오면 다시 로드합니다. Keep Tabs Alive는 어떤 탭을 활성 상태로 준비해 둘지 선택할 수 있게 해 줍니다 — 원치 않는 새로고침과 중단을 방지합니다.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "탭이 그대로 유지됩니다",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "열린 탭은 페이지 상태와 진행 중인 작업을 그대로 유지한 채 바로 사용할 수 있습니다 — 예기치 않은 새로고침이 없습니다.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "탭별 스위치",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "설정 페이지에는 열린 모든 탭이 각자의 스위치와 함께 표시됩니다. 한 탭은 살려 두고 다른 탭은 잠들게 하세요 — 해당 탭에 한해 규칙을 재정의합니다.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "사이트 규칙",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "몇 개의 사이트만 제외하고 모두 보호하거나, 선택한 사이트만 허용 목록에 추가하세요. 규칙은 하위 도메인에도 적용됩니다 — <code>example.com</code>이 전체를 포함합니다.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "시작하기",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "기본적으로 모두 보호하시겠어요? 설정에서 모드를 전환할 수 있습니다.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "원클릭 액세스를 위해 <strong>고정하세요</strong>: 툴바의 <span class=\"puzzle\">🧩</span> 퍼즐 아이콘을 클릭한 다음 핀을 클릭하세요.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<code>chrome://discards</code>에서 <strong>언제든지 확인하세요</strong> — 보호된 탭은 <em>Auto Discardable</em> 열에 ✕로 표시됩니다.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "마스터 스위치",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "여기서 모든 보호를 켜거나 끌 수 있습니다. 꺼져 있는 동안에는 모든 탭이 폐기될 수 있습니다 — 규칙은 유지되며 일시중지될 뿐입니다.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "보호 모드 선택",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>허용 목록만</b>은 선택한 사이트만 유지합니다(부드러운 기본값). <b>모두 보호</b>는 제외한 사이트를 제외하고 모든 탭을 유지합니다.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "탭을 하나씩 관리",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "열린 모든 탭에는 각자의 스위치가 있습니다. 전환하여 그 탭 하나만 유지하거나 절전 상태로 둘 수 있으며 — 탭을 닫을 때까지 유지되는 일회성 선택입니다. 계속 유지하고 싶으신가요? 스위치 옆의 <b>이 사이트에 항상 적용</b>을 클릭하면 영구 사이트 규칙이 됩니다. 행을 클릭하면 해당 탭으로 이동합니다.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "사이트별 규칙 설정",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "여기에 도메인을 추가하면 전체 사이트를 한 번에 보호(또는 제외)할 수 있습니다. 도메인은 하위 도메인도 포함합니다 — <code>example.com</code>은 <code>mail.example.com</code>과 일치합니다. 여기까지가 둘러보기입니다 — ? 버튼에서 언제든지 다시 열 수 있습니다.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "건너뛰기",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "뒤로",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "다음",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "완료",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "이 탭은 보호되어 있습니다 — Chrome이 자동으로 삭제하지 않습니다.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "이 탭은 보호되어 있지 않습니다 — Chrome이 메모리 확보를 위해 삭제할 수 있습니다.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "보호가 일시 중지되었습니다 — 유지되는 탭이 없습니다.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

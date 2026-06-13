@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Nonaktifkan Pembuangan Tab Otomatis",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Nonaktifkan pembuangan tab oleh Chrome dan cegah pemuatan ulang tab yang tidak diinginkan. Aturan per situs, kontrol per tab, dan statistik langsung.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Nonaktifkan pembuangan tab otomatis",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Sakelar utama",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Perlindungan aktif",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Dijeda",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "tab terlindungi",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Tab ini",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "pageCantBeManaged": {
+    "message": "Halaman ini tidak dapat dikelola",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Tidak tersedia di sini",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Halaman internal dan ekstensi selalu dibiarkan tak tersentuh.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Terlindungi",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Dapat dibuang",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Lindungi situs ini",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Berhenti melindungi situs ini",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Kecualikan situs ini",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Situs terlindungi",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Situs yang dikecualikan",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Belum ada situs",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ lagi",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Hapus $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Pengaturan & statistik",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Setelan",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Selamat datang — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Ikuti tur",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Tema",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Otomatis",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Terang",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Gelap",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "terlindungi saat ini",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "tab terbuka",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "operasi perlindungan",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "pembuangan teramati",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Sejak $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Setel ulang",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Mode perlindungan",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Lindungi semua",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Jaga semua tab tetap aktif, kecuali situs yang Anda kecualikan.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Hanya daftar putih",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Jaga hanya situs yang Anda daftarkan tetap aktif.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Tab terbuka",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Cari tab…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Geser sakelar untuk menjaga tab tetap aktif atau biarkan Chrome membuangnya. Sakelar manual menggantikan aturan situs dan bertahan sampai tab ditutup.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Tidak ada tab terbuka.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Tidak ada tab yang cocok dengan pencarian Anda.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Jendela ini · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Jendela $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Manual",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Tertidur",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Disematkan",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Memutar",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Tab tanpa judul",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Halaman internal",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Beralih ke tab ini",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Perlindungan dijeda oleh sakelar utama",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Terlindungi — geser untuk membiarkan Chrome membuang tab ini",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Dapat dibuang — geser untuk menjaga tab ini tetap aktif",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Hanya situs ini yang dijaga tetap aktif; lainnya dapat dibuang. Sebuah domain juga mencakup subdomainnya — mis. <code>example.com</code> mencakup <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Situs ini diizinkan untuk dibuang. Sebuah domain juga mencakup subdomainnya — mis. <code>example.com</code> mencakup <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Tambah",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Hapus",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Selalu untuk situs ini",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Selalu jaga $HOST$ tetap aktif (menambah aturan situs)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Selalu izinkan $HOST$ dibuang (memperbarui aturan situs)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Belum ada apa-apa di sini.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Masukkan domain yang valid, mis. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ sudah ada dalam daftar.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Anda dapat menambahkan hingga $MAX$ domain.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Tips: buka <code>chrome://discards</code> untuk melihat kolom <strong>Auto Discardable</strong> — tab terlindungi menampilkan ✕. Catatan: pembuangan manual di sana tetap berfungsi; ini hanya memblokir pembuangan <em>otomatis</em> penghemat memori Chrome.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Selamat datang",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Jaga tab penting tetap aktif",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Penghemat Memori Chrome membongkar tab yang tidak aktif untuk membebaskan RAM, lalu memuatnya ulang saat Anda kembali. Keep Tabs Alive memungkinkan Anda memilih tab mana yang tetap aktif dan siap — mencegah pemuatan ulang dan gangguan yang tidak diinginkan.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Tab tetap di tempatnya",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Tab yang terbuka tetap siap digunakan, dengan status halaman dan pekerjaan yang sedang berlangsung tetap utuh — tanpa pemuatan ulang yang tak terduga.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Sakelar per tab",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "Halaman pengaturan mencantumkan setiap tab yang terbuka dengan sakelarnya sendiri. Jaga satu tab tetap aktif atau biarkan yang lain tidur — ini menggantikan aturan hanya untuk tab tersebut.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Aturan situs",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Lindungi semuanya kecuali beberapa situs, atau hanya masukkan ke daftar putih situs yang Anda pilih. Aturan juga mencakup subdomain — <code>example.com</code> mencakup semuanya.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Mulai",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Lebih suka melindungi semuanya secara default? Anda dapat mengganti mode di pengaturan.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Sematkan</strong> untuk akses sekali klik: klik ikon teka-teki <span class=\"puzzle\">🧩</span> di bilah alat, lalu pin-nya.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Verifikasi kapan saja</strong> di <code>chrome://discards</code> — tab yang terlindungi menampilkan ✕ pada kolom <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Sakelar utama",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Aktifkan atau nonaktifkan semua perlindungan di sini. Saat nonaktif, setiap tab bebas dibuang — aturan Anda tetap tersimpan, hanya dijeda.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Pilih mode perlindungan",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Hanya daftar putih</b> hanya menjaga situs yang Anda pilih tetap aktif (default yang lembut). <b>Lindungi semua</b> menjaga setiap tab tetap aktif kecuali yang Anda kecualikan.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Kelola tab satu per satu",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Setiap tab terbuka memiliki sakelarnya sendiri. Geser untuk menjaga satu tab itu tetap aktif atau biarkan tidur — pilihan sekali pakai yang bertahan sampai tab ditutup. Ingin selamanya? Klik <b>Selalu untuk situs ini</b> di samping sakelar untuk menjadikannya aturan situs permanen. Klik baris untuk berpindah ke tab.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Atur aturan per situs",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Tambahkan domain di sini untuk melindungi (atau mengecualikan) seluruh situs sekaligus. Sebuah domain juga mencakup subdomainnya — <code>example.com</code> cocok dengan <code>mail.example.com</code>. Itulah turnya — buka kembali kapan saja dari tombol ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Lewati",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Kembali",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Berikutnya",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Selesai",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "thisWebsite": {
+    "message": "Situs web ini",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Permanen",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Sementara",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Halaman internal tidak memiliki aturan situs — Anda tetap dapat mengganti tab ini.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "alwaysKeptAlive": {
+    "message": "Selalu tetap aktif",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Selalu dapat dibuang",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ disimpan sebagai aturan situs — klik untuk menghapusnya",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Dihapus — $HOST$ kini mengikuti default mode lagi.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Disimpan — $HOST$ kini akan selalu tetap aktif. Lihat Aturan situs di bawah.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Disimpan — $HOST$ kini selalu dapat dibuang. Lihat Aturan situs di bawah.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Tab ini terlindungi — Chrome tidak akan membuangnya secara otomatis.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Tab ini tidak terlindungi — Chrome dapat membuangnya untuk membebaskan memori.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Perlindungan dijeda — tidak ada tab yang dijaga tetap aktif.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+/* ── Welcome / first-run introduction ───────────────────────────────────── */
+
+body {
+  min-height: 100vh;
+}
+
+.welcome {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 24px 56px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 44px;
+}
+.hero__badge {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+/* soft accent glow behind the badge */
+.hero__badge::before {
+  content: "";
+  position: absolute;
+  inset: -28px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--accent-soft), transparent 75%);
+  z-index: -1;
+}
+.hero__badge img {
+  border-radius: 18px;
+}
+.hero__eyebrow {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-strong);
+}
+.hero__title {
+  margin: 0 0 14px;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.hero__lead {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Feature cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.wcard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 22px 20px;
+}
+.wcard__icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.wcard__icon svg {
+  width: 24px;
+  height: 24px;
+}
+.wcard__title {
+  margin: 0 0 7px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.wcard__text {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+.wcard__text code {
+  font-size: 12px;
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+/* Call to action */
+.actions {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.actions__note {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+/* Footer steps */
+.welcome__footer {
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.step {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+}
+.step__icon {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.step__icon svg {
+  width: 20px;
+  height: 20px;
+}
+.step p {
+  margin: 5px 0 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text);
+}
+.step strong {
+  color: var(--text);
+  font-weight: 700;
+}
+.step code {
+  font-size: 12px;
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.puzzle {
+  filter: grayscale(0.2);
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .welcome {
+    padding: 48px 16px 40px;
+  }
+  .hero__title {
+    font-size: 27px;
+  }
+  .cards,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

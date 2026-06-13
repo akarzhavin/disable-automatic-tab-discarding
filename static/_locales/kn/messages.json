@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — ಸ್ವಯಂಚಾಲಿತ ಟ್ಯಾಬ್ ತ್ಯಜಿಸುವಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Chrome ನ ಟ್ಯಾಬ್ ತ್ಯಜಿಸುವಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಅನಗತ್ಯ ಟ್ಯಾಬ್ ಮರುಲೋಡ್‌ಗಳನ್ನು ತಡೆಯಿರಿ. ಪ್ರತಿ ಸೈಟ್‌ಗೆ ನಿಯಮಗಳು, ಪ್ರತಿ ಟ್ಯಾಬ್‌ಗೆ ನಿಯಂತ್ರಣ ಮತ್ತು ತಕ್ಷಣದ ಅಂಕಿಅಂಶಗಳು.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "ಸ್ವಯಂಚಾಲಿತ ಟ್ಯಾಬ್ ತ್ಯಜಿಸುವಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "ಮಾಸ್ಟರ್ ಸ್ವಿಚ್",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "ರಕ್ಷಣೆ ಆನ್",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "ಟ್ಯಾಬ್‌ಗಳು ರಕ್ಷಿತ",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "ಈ ಟ್ಯಾಬ್",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "ಈ ವೆಬ್‌ಸೈಟ್",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "ಶಾಶ್ವತ",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "ತಾತ್ಕಾಲಿಕ",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "ಆಂತರಿಕ ಪುಟಗಳಿಗೆ ಸೈಟ್ ನಿಯಮಗಳಿಲ್ಲ — ಆದರೂ ನೀವು ಈ ಟ್ಯಾಬ್ ಅನ್ನು ಬದಲಾಯಿಸಬಹುದು.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "ಈ ಪುಟವನ್ನು ನಿರ್ವಹಿಸಲಾಗದು",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "ಇಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "ಆಂತರಿಕ ಮತ್ತು ವಿಸ್ತರಣೆ ಪುಟಗಳನ್ನು ಯಾವಾಗಲೂ ಸ್ಪರ್ಶಿಸದೆ ಬಿಡಲಾಗುತ್ತದೆ.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "ರಕ್ಷಿತ",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "ತ್ಯಜಿಸಬಹುದಾದ",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ರಕ್ಷಿಸಿ",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ರಕ್ಷಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ಹೊರಗಿಡಿ",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "ರಕ್ಷಿತ ಸೈಟ್‌ಗಳು",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "ಹೊರಗಿಟ್ಟ ಸೈಟ್‌ಗಳು",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "ಇನ್ನೂ ಯಾವುದೇ ಸೈಟ್‌ಗಳಿಲ್ಲ",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ ಇನ್ನಷ್ಟು",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "$DOMAIN$ ಅನ್ನು ತೆಗೆದುಹಾಕಿ",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಅಂಕಿಅಂಶಗಳು",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "ಸ್ವಾಗತ — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "ಪ್ರವಾಸ ಮಾಡಿ",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "ಥೀಮ್",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "ಸ್ವಯಂಚಾಲಿತ",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "ತಿಳಿ",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "ಗಾಢ",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "ಈಗ ರಕ್ಷಿತ",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳು",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "ರಕ್ಷಣಾ ಕಾರ್ಯಾಚರಣೆಗಳು",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "ಗಮನಿಸಿದ ತ್ಯಜಿಸುವಿಕೆಗಳು",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "$DATE$ ರಿಂದ",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "ಮರುಹೊಂದಿಸಿ",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "ರಕ್ಷಣಾ ಮೋಡ್",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "ಎಲ್ಲವನ್ನೂ ರಕ್ಷಿಸಿ",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "ನೀವು ಹೊರಗಿಡುವ ಸೈಟ್‌ಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಿ.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "ಶ್ವೇತಪಟ್ಟಿ ಮಾತ್ರ",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "ನೀವು ಪಟ್ಟಿ ಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ಮಾತ್ರ ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಿ.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳು",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹುಡುಕಿ…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "ಆ ಟ್ಯಾಬ್ ಅನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಲು ಅಥವಾ Chrome ಅದನ್ನು ತ್ಯಜಿಸಲು ಬಿಡಲು ಸ್ವಿಚ್ ಅನ್ನು ಹೊರಳಿಸಿ. ಹಸ್ತಚಾಲಿತ ಸ್ವಿಚ್ ಸೈಟ್ ನಿಯಮಗಳನ್ನು ಮೀರಿಸುತ್ತದೆ ಮತ್ತು ಟ್ಯಾಬ್ ಮುಚ್ಚುವವರೆಗೆ ಮುಂದುವರಿಯುತ್ತದೆ.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳಿಲ್ಲ.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "ನಿಮ್ಮ ಹುಡುಕಾಟಕ್ಕೆ ಯಾವುದೇ ಟ್ಯಾಬ್‌ಗಳು ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "ಈ ವಿಂಡೋ · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "ವಿಂಡೋ $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "ಹಸ್ತಚಾಲಿತ",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "ನಿದ್ರಿಸುತ್ತಿದೆ",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "ಪಿನ್ ಮಾಡಲಾಗಿದೆ",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "ಪ್ಲೇ ಆಗುತ್ತಿದೆ",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "ಶೀರ್ಷಿಕೆಯಿಲ್ಲದ ಟ್ಯಾಬ್",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "ಆಂತರಿಕ ಪುಟ",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "ಈ ಟ್ಯಾಬ್‌ಗೆ ಬದಲಾಯಿಸಿ",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "ಮುಖ್ಯ ಸ್ವಿಚ್‌ನಿಂದ ರಕ್ಷಣೆಯನ್ನು ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "ರಕ್ಷಿತ — Chrome ಈ ಟ್ಯಾಬ್ ಅನ್ನು ತ್ಯಜಿಸಲು ಅನುಮತಿಸಲು ಹೊರಳಿಸಿ",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "ತ್ಯಜಿಸಬಹುದಾದ — ಈ ಟ್ಯಾಬ್ ಅನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಲು ಹೊರಳಿಸಿ",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "ಈ ಸೈಟ್‌ಗಳನ್ನು ಮಾತ್ರ ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಲಾಗುತ್ತದೆ; ಉಳಿದೆಲ್ಲವನ್ನೂ ತ್ಯಜಿಸಬಹುದು. ಡೊಮೇನ್ ತನ್ನ ಉಪಡೊಮೇನ್‌ಗಳಿಗೂ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ — ಉದಾ., <code>example.com</code> ಎಂಬುದು <code>mail.example.com</code> ಅನ್ನು ಒಳಗೊಳ್ಳುತ್ತದೆ.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "ಈ ಸೈಟ್‌ಗಳನ್ನು ತ್ಯಜಿಸಲು ಅನುಮತಿಸಲಾಗಿದೆ. ಡೊಮೇನ್ ತನ್ನ ಉಪಡೊಮೇನ್‌ಗಳಿಗೂ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ — ಉದಾ., <code>example.com</code> ಎಂಬುದು <code>mail.example.com</code> ಅನ್ನು ಒಳಗೊಳ್ಳುತ್ತದೆ.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "ಸೇರಿಸಿ",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "ತೆಗೆದುಹಾಕಿ",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "ಈ ಸೈಟ್‌ಗೆ ಯಾವಾಗಲೂ",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "$HOST$ ಅನ್ನು ಯಾವಾಗಲೂ ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಿ (ಸೈಟ್ ನಿಯಮವನ್ನು ಸೇರಿಸುತ್ತದೆ)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "$HOST$ ಅನ್ನು ಯಾವಾಗಲೂ ತ್ಯಜಿಸಲು ಅನುಮತಿಸಿ (ಸೈಟ್ ನಿಯಮಗಳನ್ನು ನವೀಕರಿಸುತ್ತದೆ)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "ಉಳಿಸಲಾಗಿದೆ — $HOST$ ಇನ್ನು ಮುಂದೆ ಯಾವಾಗಲೂ ಸಕ್ರಿಯವಾಗಿರುತ್ತದೆ. ಕೆಳಗಿನ ಸೈಟ್ ನಿಯಮಗಳನ್ನು ನೋಡಿ.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "ಉಳಿಸಲಾಗಿದೆ — $HOST$ ಅನ್ನು ಇನ್ನು ಮುಂದೆ ಯಾವಾಗಲೂ ತ್ಯಜಿಸಬಹುದು. ಕೆಳಗಿನ ಸೈಟ್ ನಿಯಮಗಳನ್ನು ನೋಡಿ.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "ಯಾವಾಗಲೂ ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಲಾಗಿದೆ",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "ಯಾವಾಗಲೂ ತ್ಯಜಿಸಬಹುದಾದ",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ ಅನ್ನು ಸೈಟ್ ನಿಯಮವಾಗಿ ಉಳಿಸಲಾಗಿದೆ — ಅದನ್ನು ತೆಗೆದುಹಾಕಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "ತೆಗೆದುಹಾಕಲಾಗಿದೆ — $HOST$ ಈಗ ಮತ್ತೆ ಮೋಡ್ ಡೀಫಾಲ್ಟ್ ಅನ್ನು ಅನುಸರಿಸುತ್ತದೆ.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "ಇಲ್ಲಿ ಇನ್ನೂ ಏನೂ ಇಲ್ಲ.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "ಮಾನ್ಯ ಡೊಮೇನ್ ಅನ್ನು ನಮೂದಿಸಿ, ಉದಾ. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ ಈಗಾಗಲೇ ಪಟ್ಟಿಯಲ್ಲಿದೆ.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "ನೀವು $MAX$ ಡೊಮೇನ್‌ಗಳವರೆಗೆ ಸೇರಿಸಬಹುದು.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "ಸಲಹೆ: <strong>Auto Discardable</strong> ಕಾಲಮ್ ಅನ್ನು ನೋಡಲು <code>chrome://discards</code> ಅನ್ನು ತೆರೆಯಿರಿ — ರಕ್ಷಿತ ಟ್ಯಾಬ್‌ಗಳು ✕ ತೋರಿಸುತ್ತವೆ. ಗಮನಿಸಿ: ಅಲ್ಲಿನ ಹಸ್ತಚಾಲಿತ ತ್ಯಜಿಸುವಿಕೆಗಳು ಇನ್ನೂ ಕೆಲಸ ಮಾಡುತ್ತವೆ; ಇದು Chrome ನ <em>ಸ್ವಯಂಚಾಲಿತ</em> ಮೆಮೊರಿ-ಉಳಿತಾಯ ತ್ಯಜಿಸುವಿಕೆಯನ್ನು ಮಾತ್ರ ತಡೆಯುತ್ತದೆ.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "ಸ್ವಾಗತ",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "ಮುಖ್ಯವಾದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಿ",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chrome ನ ಮೆಮೊರಿ ಸೇವರ್ ಜಡ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಅನ್‌ಲೋಡ್ ಮಾಡಿ RAM ಅನ್ನು ಮುಕ್ತಗೊಳಿಸುತ್ತದೆ, ನಂತರ ನೀವು ಮರಳಿದಾಗ ಅವುಗಳನ್ನು ಮರುಲೋಡ್ ಮಾಡುತ್ತದೆ. ಯಾವ ಟ್ಯಾಬ್‌ಗಳು ಸಕ್ರಿಯವಾಗಿ ಮತ್ತು ಸಿದ್ಧವಾಗಿ ಉಳಿಯಬೇಕು ಎಂಬುದನ್ನು Keep Tabs Alive ನಿಮಗೆ ಆಯ್ಕೆ ಮಾಡಲು ಅನುವು ಮಾಡುತ್ತದೆ — ಅನಗತ್ಯ ಮರುಲೋಡ್‌ಗಳು ಮತ್ತು ಅಡಚಣೆಗಳನ್ನು ತಡೆಯುತ್ತದೆ.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "ಟ್ಯಾಬ್‌ಗಳು ಹಾಗೇ ಉಳಿಯುತ್ತವೆ",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳು ತಮ್ಮ ಪುಟ ಸ್ಥಿತಿ ಮತ್ತು ನಡೆಯುತ್ತಿರುವ ಕೆಲಸದೊಂದಿಗೆ ಬಳಸಲು ಸಿದ್ಧವಾಗಿ ಉಳಿಯುತ್ತವೆ — ಯಾವುದೇ ಅನಿರೀಕ್ಷಿತ ಮರುಲೋಡ್‌ಗಳಿಲ್ಲ.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "ಪ್ರತಿ-ಟ್ಯಾಬ್ ಸ್ವಿಚ್‌ಗಳು",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "ಸೆಟ್ಟಿಂಗ್ಸ್ ಪುಟವು ಪ್ರತಿ ತೆರೆದ ಟ್ಯಾಬ್ ಅನ್ನು ಅದರ ಸ್ವಂತ ಸ್ವಿಚ್‌ನೊಂದಿಗೆ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ. ಒಂದು ಟ್ಯಾಬ್ ಅನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಿ ಅಥವಾ ಇನ್ನೊಂದನ್ನು ನಿದ್ರೆ ಮಾಡಲು ಬಿಡಿ — ಇದು ಆ ಟ್ಯಾಬ್‌ಗೆ ಮಾತ್ರ ನಿಯಮಗಳನ್ನು ಅತಿಕ್ರಮಿಸುತ್ತದೆ.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "ಸೈಟ್ ನಿಯಮಗಳು",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "ಕೆಲವು ಸೈಟ್‌ಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲವನ್ನೂ ರಕ್ಷಿಸಿ, ಅಥವಾ ನೀವು ಆಯ್ಕೆ ಮಾಡಿದವುಗಳನ್ನು ಮಾತ್ರ ಶ್ವೇತಪಟ್ಟಿಗೆ ಸೇರಿಸಿ. ನಿಯಮಗಳು ಉಪಡೊಮೇನ್‌ಗಳಿಗೂ ಹೊಂದಿಕೆಯಾಗುತ್ತವೆ — <code>example.com</code> ಎಲ್ಲವನ್ನೂ ಒಳಗೊಳ್ಳುತ್ತದೆ.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "ಪ್ರಾರಂಭಿಸಿ",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "ಡೀಫಾಲ್ಟ್ ಆಗಿ ಎಲ್ಲವನ್ನೂ ರಕ್ಷಿಸಲು ಬಯಸುವಿರಾ? ನೀವು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಮೋಡ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "ಒಂದೇ ಕ್ಲಿಕ್ ಪ್ರವೇಶಕ್ಕಾಗಿ <strong>ಪಿನ್ ಮಾಡಿ</strong>: ಟೂಲ್‌ಬಾರ್‌ನಲ್ಲಿ <span class=\"puzzle\">🧩</span> ಪಜಲ್ ಐಕಾನ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ, ನಂತರ ಪಿನ್ ಮಾಡಿ.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<code>chrome://discards</code> ನಲ್ಲಿ <strong>ಯಾವಾಗ ಬೇಕಾದರೂ ಪರಿಶೀಲಿಸಿ</strong> — ರಕ್ಷಿತ ಟ್ಯಾಬ್‌ಗಳು <em>Auto Discardable</em> ಕಾಲಂನಲ್ಲಿ ✕ ಅನ್ನು ತೋರಿಸುತ್ತವೆ.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "ಮುಖ್ಯ ಸ್ವಿಚ್",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "ಇಲ್ಲಿ ಎಲ್ಲಾ ರಕ್ಷಣೆಯನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಿ. ಅದು ಆಫ್ ಆಗಿರುವಾಗ, ಪ್ರತಿ ಟ್ಯಾಬ್ ಅನ್ನು ತ್ಯಜಿಸಲು ಮುಕ್ತವಾಗಿರುತ್ತದೆ — ನಿಮ್ಮ ನಿಯಮಗಳನ್ನು ಉಳಿಸಲಾಗುತ್ತದೆ, ಕೇವಲ ವಿರಾಮಗೊಳಿಸಲಾಗುತ್ತದೆ.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "ರಕ್ಷಣಾ ಮೋಡ್ ಆಯ್ಕೆಮಾಡಿ",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>ಶ್ವೇತಪಟ್ಟಿ ಮಾತ್ರ</b> ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ಮಾತ್ರ ಸಕ್ರಿಯವಾಗಿ ಇರಿಸುತ್ತದೆ (ಸೌಮ್ಯ ಡೀಫಾಲ್ಟ್). <b>ಎಲ್ಲವನ್ನೂ ರಕ್ಷಿಸಿ</b> ನೀವು ಹೊರಗಿಡುವವುಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಪ್ರತಿ ಟ್ಯಾಬ್ ಅನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸುತ್ತದೆ.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "ಟ್ಯಾಬ್‌ಗಳನ್ನು ಒಂದೊಂದಾಗಿ ನಿರ್ವಹಿಸಿ",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "ಪ್ರತಿ ತೆರೆದ ಟ್ಯಾಬ್‌ಗೆ ಅದರ ಸ್ವಂತ ಸ್ವಿಚ್ ಇದೆ. ಆ ಒಂದು ಟ್ಯಾಬ್ ಅನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಲು ಅಥವಾ ನಿದ್ರಿಸಲು ಬಿಡಲು ಅದನ್ನು ಹೊರಳಿಸಿ — ಟ್ಯಾಬ್ ಮುಚ್ಚುವವರೆಗೆ ಮುಂದುವರಿಯುವ ಒಂದು-ಬಾರಿಯ ಆಯ್ಕೆ. ಶಾಶ್ವತವಾಗಿ ಬೇಕೇ? ಅದನ್ನು ಶಾಶ್ವತ ಸೈಟ್ ನಿಯಮವಾಗಿ ಪರಿವರ್ತಿಸಲು ಸ್ವಿಚ್ ಪಕ್ಕದ <b>ಈ ಸೈಟ್‌ಗೆ ಯಾವಾಗಲೂ</b> ಕ್ಲಿಕ್ ಮಾಡಿ. ಟ್ಯಾಬ್‌ಗೆ ಹೋಗಲು ಸಾಲನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "ಸೈಟ್ ಪ್ರಕಾರ ನಿಯಮಗಳನ್ನು ಹೊಂದಿಸಿ",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "ಸಂಪೂರ್ಣ ಸೈಟ್‌ಗಳನ್ನು ಒಮ್ಮೆಗೇ ರಕ್ಷಿಸಲು (ಅಥವಾ ಹೊರಗಿಡಲು) ಇಲ್ಲಿ ಡೊಮೇನ್‌ಗಳನ್ನು ಸೇರಿಸಿ. ಡೊಮೇನ್ ತನ್ನ ಉಪಡೊಮೇನ್‌ಗಳನ್ನೂ ಒಳಗೊಳ್ಳುತ್ತದೆ — <code>example.com</code> ಎಂಬುದು <code>mail.example.com</code> ಗೆ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ. ಅದೇ ಪ್ರವಾಸ — ? ಬಟನ್‌ನಿಂದ ಯಾವಾಗ ಬೇಕಾದರೂ ಅದನ್ನು ಮತ್ತೆ ತೆರೆಯಿರಿ.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "ಬಿಟ್ಟುಬಿಡಿ",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "ಹಿಂದೆ",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "ಮುಂದೆ",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "ಮುಗಿದಿದೆ",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "ಈ ಟ್ಯಾಬ್ ರಕ್ಷಿತವಾಗಿದೆ — Chrome ಇದನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತ್ಯಜಿಸುವುದಿಲ್ಲ.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "ಈ ಟ್ಯಾಬ್ ರಕ್ಷಿತವಾಗಿಲ್ಲ — ಮೆಮೊರಿ ಮುಕ್ತಗೊಳಿಸಲು Chrome ಇದನ್ನು ತ್ಯಜಿಸಬಹುದು.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "ರಕ್ಷಣೆಯನ್ನು ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ — ಯಾವುದೇ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಲಾಗಿಲ್ಲ.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

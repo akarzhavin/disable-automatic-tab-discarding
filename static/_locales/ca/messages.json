@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Desactiva el descart automàtic de pestanyes",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Desactiva el descart de pestanyes de Chrome i evita recàrregues de pestanyes no desitjades. Regles per lloc, control per pestanya i estadístiques en directe.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Desactiva el descart automàtic de pestanyes",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Interruptor principal",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Protecció activa",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "En pausa",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "pestanyes protegides",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Aquesta pestanya",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Aquest lloc web",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Permanent",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Temporal",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Les pàgines internes no tenen regles de lloc, però encara pots canviar aquesta pestanya.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Aquesta pàgina no es pot gestionar",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "No disponible aquí",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Les pàgines internes i d'extensions sempre es deixen intactes.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Protegida",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Descartable",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Protegeix aquest lloc",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Deixa de protegir aquest lloc",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Exclou aquest lloc",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Llocs protegits",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Llocs exclosos",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Encara no hi ha llocs",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ més",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Elimina $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Configuració i estadístiques",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Configuració",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Et donem la benvinguda — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Fes la visita guiada",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Tema",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Automàtic",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Clar",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Fosc",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "protegides ara",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "pestanyes obertes",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "operacions de protecció",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "descarts observats",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Des de $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Restableix",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Mode de protecció",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Protegeix-ho tot",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Mantén actives totes les pestanyes, excepte els llocs que excloguis.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Només llista blanca",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Mantén actius només els llocs que enumeris.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Pestanyes obertes",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Cerca pestanyes…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Canvia un interruptor per mantenir activa aquella pestanya o deixar que Chrome la descarti. Un interruptor manual té prioritat sobre les regles del lloc i dura fins que es tanca la pestanya.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "No hi ha pestanyes obertes.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Cap pestanya coincideix amb la cerca.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Aquesta finestra · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Finestra $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Manual",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Adormida",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Fixada",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Reproduint",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Pestanya sense títol",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Pàgina interna",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Canvia a aquesta pestanya",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "La protecció està en pausa per l'interruptor principal",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Protegida — canvia per deixar que Chrome descarti aquesta pestanya",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Descartable — canvia per mantenir activa aquesta pestanya",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Només aquests llocs es mantenen actius; tota la resta es pot descartar. Un domini també coincideix amb els seus subdominis — p. ex. <code>example.com</code> cobreix <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Aquests llocs poden ser descartats. Un domini també coincideix amb els seus subdominis — p. ex. <code>example.com</code> cobreix <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Afegeix",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Elimina",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Sempre per a aquest lloc",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Mantén sempre $HOST$ actiu (afegeix una regla de lloc)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Deixa sempre que es descarti $HOST$ (actualitza les regles de lloc)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Sempre activa",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Sempre descartable",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ s'ha desat com a regla de lloc — fes clic per eliminar-la",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Eliminat — $HOST$ ara torna a seguir el valor per defecte del mode.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Desat — $HOST$ ara es mantindrà sempre activa. Mira Regles de lloc a sota.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Desat — $HOST$ ara sempre es pot descartar. Mira Regles de lloc a sota.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Encara no hi ha res aquí.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Introdueix un domini vàlid, p. ex. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ ja és a la llista.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Pots afegir fins a $MAX$ dominis.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Consell: obre <code>chrome://discards</code> per veure la columna <strong>Auto Discardable</strong> — les pestanyes protegides mostren ✕. Nota: els descarts manuals d'allà encara funcionen; això només bloqueja el descart <em>automàtic</em> d'estalvi de memòria de Chrome.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Benvingut/uda",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Mantén actives les pestanyes que importen",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "L'Estalvi de memòria de Chrome descarrega les pestanyes inactives per alliberar RAM i les torna a carregar quan hi tornes. Keep Tabs Alive et permet triar quines pestanyes es mantenen actives i a punt, evitant recàrregues i interrupcions no desitjades.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Les pestanyes es queden quietes",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Les pestanyes obertes resten a punt per fer servir, amb l'estat de la pàgina i la feina en curs intactes, sense recàrregues inesperades.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Interruptors per pestanya",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "La pàgina de configuració mostra cada pestanya oberta amb el seu propi interruptor. Mantén activa una pestanya o deixa que una altra es dormi: anul·la les regles només per a aquella pestanya.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Regles de lloc",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Protegeix-ho tot excepte uns quants llocs, o posa a la llista blanca només els que triïs. Les regles també coincideixen amb subdominis: <code>example.com</code> ho cobreix tot.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Comença",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Prefereixes protegir-ho tot de manera predeterminada? Pots canviar de mode a la configuració.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Fixa-la</strong> per accedir-hi amb un clic: clica la icona del trencaclosques <span class=\"puzzle\">🧩</span> a la barra d'eines i després la xinxeta.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Comprova-ho quan vulguis</strong> a <code>chrome://discards</code>: les pestanyes protegides mostren ✕ a la columna <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "L'interruptor principal",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Activa o desactiva tota la protecció aquí. Mentre està desactivat, qualsevol pestanya es pot descartar — les teves regles es conserven, només estan en pausa.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Tria un mode de protecció",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Només llista blanca</b> manté actius només els llocs que triïs (l'opció suau per defecte). <b>Protegeix-ho tot</b> manté activa cada pestanya excepte les que excloguis.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Gestiona les pestanyes una a una",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Cada pestanya oberta té el seu propi interruptor. Canvia'l per mantenir activa aquella pestanya o deixar que es dormi — una elecció puntual que dura fins que es tanca la pestanya. La vols per sempre? Fes clic a <b>Sempre per a aquest lloc</b> al costat de l'interruptor per convertir-la en una regla de lloc permanent. Fes clic a una fila per saltar a la pestanya.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Estableix regles per lloc",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Afegeix dominis aquí per protegir (o excloure) llocs sencers de cop. Un domini també cobreix els seus subdominis — <code>example.com</code> coincideix amb <code>mail.example.com</code>. Aquesta és la visita guiada — torna-la a obrir quan vulguis des del botó ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Omet",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Enrere",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Següent",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Fet",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Aquesta pestanya està protegida: Chrome no la descartarà automàticament.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Aquesta pestanya no està protegida: Chrome la pot descartar per alliberar memòria.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "La protecció està en pausa: cap pestanya es manté activa.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

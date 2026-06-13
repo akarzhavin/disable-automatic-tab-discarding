@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Tắt tính năng tự động loại bỏ tab",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Tắt tính năng loại bỏ tab của Chrome và ngăn việc tải lại tab ngoài ý muốn. Quy tắc theo từng trang, kiểm soát theo từng tab và thống kê trực tiếp.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Tắt tính năng tự động loại bỏ tab",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Công tắc chính",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Đang bảo vệ",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Đã tạm dừng",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "tab được bảo vệ",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Tab này",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Trang web này",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Vĩnh viễn",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Tạm thời",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Các trang nội bộ không có quy tắc theo trang — nhưng bạn vẫn có thể bật/tắt cho tab này.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Không thể quản lý trang này",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Không khả dụng ở đây",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Các trang nội bộ và trang tiện ích luôn được giữ nguyên.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Được bảo vệ",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Có thể loại bỏ",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Bảo vệ trang này",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Ngừng bảo vệ trang này",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Loại trừ trang này",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Trang được bảo vệ",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Trang bị loại trừ",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Chưa có trang nào",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ trang nữa",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Xóa $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Cài đặt & thống kê",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Cài đặt",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Chào mừng — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Tham quan hướng dẫn",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Giao diện",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Tự động",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Sáng",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Tối",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "đang được bảo vệ",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "tab đang mở",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "thao tác bảo vệ",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "lần loại bỏ ghi nhận",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Kể từ $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Đặt lại",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Chế độ bảo vệ",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Bảo vệ mọi thứ",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Giữ tất cả tab hoạt động, ngoại trừ các trang bạn loại trừ.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Chỉ danh sách cho phép",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Chỉ giữ hoạt động những trang bạn liệt kê.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Tab đang mở",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Tìm tab…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Gạt công tắc để giữ tab đó hoạt động hoặc để Chrome loại bỏ nó. Công tắc thủ công sẽ ghi đè các quy tắc của trang và duy trì cho đến khi tab bị đóng.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Không có tab nào đang mở.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Không có tab nào khớp với tìm kiếm của bạn.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Cửa sổ này · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Cửa sổ $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Thủ công",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Đang ngủ",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Đã ghim",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Đang phát",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Tab không có tiêu đề",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Trang nội bộ",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Chuyển đến tab này",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Bảo vệ đang bị tạm dừng bởi công tắc chính",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Được bảo vệ — gạt để Chrome loại bỏ tab này",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Có thể loại bỏ — gạt để giữ tab này hoạt động",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Chỉ những trang này được giữ hoạt động; mọi trang khác có thể bị loại bỏ. Một tên miền cũng khớp với các tên miền phụ của nó — ví dụ <code>example.com</code> bao gồm <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Những trang này được phép loại bỏ. Một tên miền cũng khớp với các tên miền phụ của nó — ví dụ <code>example.com</code> bao gồm <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Thêm",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Xóa",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Luôn áp dụng cho trang này",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Luôn giữ $HOST$ hoạt động (thêm một quy tắc trang)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Luôn cho phép loại bỏ $HOST$ (cập nhật quy tắc trang)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Luôn hoạt động",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Luôn có thể loại bỏ",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ đã được lưu thành quy tắc trang — nhấp để xóa",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Đã xóa — $HOST$ giờ lại tuân theo mặc định của chế độ.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Đã lưu — $HOST$ giờ sẽ luôn hoạt động. Xem quy tắc trang bên dưới.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Đã lưu — $HOST$ giờ luôn có thể bị loại bỏ. Xem quy tắc trang bên dưới.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Chưa có gì ở đây.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Nhập một tên miền hợp lệ, ví dụ example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ đã có trong danh sách.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Bạn có thể thêm tối đa $MAX$ tên miền.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Mẹo: mở <code>chrome://discards</code> để xem cột <strong>Auto Discardable</strong> — các tab được bảo vệ hiển thị ✕. Lưu ý: việc loại bỏ thủ công ở đó vẫn hoạt động; phần này chỉ chặn tính năng loại bỏ <em>tự động</em> để tiết kiệm bộ nhớ của Chrome.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Chào mừng",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Giữ hoạt động những tab quan trọng",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Trình tiết kiệm bộ nhớ của Chrome dỡ bỏ các tab nhàn rỗi để giải phóng RAM, rồi tải lại khi bạn quay lại. Keep Tabs Alive cho phép bạn chọn những tab nào luôn hoạt động và sẵn sàng — ngăn việc tải lại và gián đoạn ngoài ý muốn.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Tab luôn nguyên vẹn",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Các tab đang mở luôn sẵn sàng sử dụng, giữ nguyên trạng thái trang và công việc đang dở — không bị tải lại bất ngờ.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Công tắc cho từng tab",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "Trang cài đặt liệt kê mọi tab đang mở với công tắc riêng. Giữ một tab hoạt động hoặc để tab khác ngủ — điều này ghi đè quy tắc chỉ riêng cho tab đó.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Quy tắc theo trang",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Bảo vệ mọi thứ trừ một vài trang, hoặc chỉ đưa vào danh sách trắng những trang bạn chọn. Quy tắc cũng áp dụng cho tên miền phụ — <code>example.com</code> bao gồm tất cả.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Bắt đầu",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Muốn bảo vệ mọi thứ theo mặc định? Bạn có thể chuyển chế độ trong phần cài đặt.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Ghim lại</strong> để truy cập bằng một cú nhấp: nhấp vào biểu tượng mảnh ghép <span class=\"puzzle\">🧩</span> trên thanh công cụ, rồi nhấp vào hình ghim.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Kiểm tra bất cứ lúc nào</strong> tại <code>chrome://discards</code> — các tab được bảo vệ hiển thị ✕ trong cột <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Công tắc chính",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Bật hoặc tắt toàn bộ bảo vệ tại đây. Khi đã tắt, mọi tab đều có thể bị loại bỏ — các quy tắc của bạn vẫn được giữ, chỉ là tạm dừng.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Chọn một chế độ bảo vệ",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Chỉ danh sách cho phép</b> chỉ giữ hoạt động những trang bạn chọn (mặc định nhẹ nhàng). <b>Bảo vệ mọi thứ</b> giữ mọi tab hoạt động trừ những trang bạn loại trừ.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Quản lý từng tab một",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Mỗi tab đang mở có công tắc riêng. Gạt nó để giữ riêng tab đó hoạt động hoặc để nó ngủ — một lựa chọn một lần duy trì cho đến khi tab bị đóng. Muốn duy trì mãi? Nhấp <b>Luôn áp dụng cho trang này</b> bên cạnh công tắc để biến nó thành quy tắc trang vĩnh viễn. Nhấp vào một hàng để nhảy đến tab.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Đặt quy tắc theo trang",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Thêm tên miền vào đây để bảo vệ (hoặc loại trừ) toàn bộ trang cùng lúc. Một tên miền cũng bao gồm các tên miền phụ của nó — <code>example.com</code> khớp với <code>mail.example.com</code>. Đó là toàn bộ hướng dẫn — mở lại bất cứ lúc nào từ nút ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Bỏ qua",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Quay lại",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Tiếp theo",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Xong",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Tab này được bảo vệ — Chrome sẽ không tự động loại bỏ nó.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Tab này chưa được bảo vệ — Chrome có thể loại bỏ nó để giải phóng bộ nhớ.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Đã tạm dừng bảo vệ — không có tab nào được giữ hoạt động.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

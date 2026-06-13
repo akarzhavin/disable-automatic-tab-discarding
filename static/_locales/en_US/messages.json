@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Disable Automatic Tab Discarding",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Disable Chrome tab discarding and prevent unwanted tab reloads. Per-site rules, per-tab control and live stats.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Disable automatic tab discarding",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Master switch",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Protection on",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Paused",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "tabs protected",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "This tab",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "This website",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Permanent",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Temporary",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Internal pages don't have site rules — you can still switch this tab.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "This page can't be managed",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Not available here",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Internal and extension pages are always left untouched.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Protected",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Discardable",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Protect this site",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Stop protecting this site",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Exclude this site",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Protected sites",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Excluded sites",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "No sites yet",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ more",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Remove $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Settings & statistics",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Settings",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Welcome — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Take the tour",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Theme",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Auto",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Light",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Dark",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "protected now",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "open tabs",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "protect operations",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "discards observed",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Since $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Reset",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Protection mode",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Protect everything",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Keep all tabs alive, except the sites you exclude.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Whitelist only",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Only keep the sites you list alive.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Open tabs",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Search tabs…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Flip a switch to keep that tab alive or let Chrome discard it. A manual switch overrides the site rules and lasts until the tab is closed.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "No open tabs.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "No tabs match your search.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "This window · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Window $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Manual",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Asleep",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Pinned",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Playing",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Untitled tab",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Internal page",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Switch to this tab",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Protection is paused by the master switch",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Protected — flip to let Chrome discard this tab",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Discardable — flip to keep this tab alive",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Only these sites are kept alive; everything else may be discarded. A domain also matches its subdomains — e.g. <code>example.com</code> covers <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "These sites are allowed to be discarded. A domain also matches its subdomains — e.g. <code>example.com</code> covers <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Add",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Remove",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Always for this site",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeptAlive": {
+    "message": "Always kept alive",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Always discardable",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ is saved as a site rule — click to remove it",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Removed — $HOST$ now follows the mode default again.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeepHost": {
+    "message": "Always keep $HOST$ alive (adds a site rule)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Always let $HOST$ be discarded (updates site rules)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Saved — $HOST$ will now always stay alive. See Site rules below.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Saved — $HOST$ can now always be discarded. See Site rules below.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Nothing here yet.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Enter a valid domain, e.g. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ is already in the list.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "You can add up to $MAX$ domains.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Tip: open <code>chrome://discards</code> to see the <strong>Auto Discardable</strong> column — protected tabs show ✕. Note: manual discards there still work; this only blocks Chrome's <em>automatic</em> memory-saver discarding.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Welcome",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Keep the tabs that matter alive",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chrome's Memory Saver unloads idle tabs to free RAM, then reloads them when you return. Keep Tabs Alive lets you choose which tabs stay active and ready — preventing unwanted reloads and interruptions.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Tabs stay put",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Open tabs stay ready to use, with their page state and ongoing work intact — no unexpected reloads.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Per-tab switches",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "The settings page lists every open tab with its own switch. Keep one tab alive or let another sleep — it overrides the rules just for that tab.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Site rules",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Protect everything except a few sites, or whitelist only the ones you choose. Rules match subdomains too — <code>example.com</code> covers all of it.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Get Started",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Prefer to protect everything by default? You can switch modes in settings.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Pin it</strong> for one-click access: click the <span class=\"puzzle\">🧩</span> puzzle icon in the toolbar, then the pin.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Verify any time</strong> at <code>chrome://discards</code> — protected tabs show ✕ in the <em>Auto Discardable</em> column.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "The master switch",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Turn all protection on or off here. While it's off, every tab is free to be discarded — your rules are kept, just paused.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Pick a protection mode",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Whitelist only</b> keeps just the sites you choose alive (the gentle default). <b>Protect everything</b> keeps every tab alive except the ones you exclude.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Manage tabs one by one",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Every open tab has its own switch. Flip it to keep that single tab alive or let it sleep — a one-time choice that lasts until the tab is closed. Want it forever? Click <b>Always for this site</b> next to the switch to turn it into a permanent site rule. Click a row to jump to the tab.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Set rules by site",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Add domains here to protect (or exclude) whole sites at once. A domain also covers its subdomains — <code>example.com</code> matches <code>mail.example.com</code>. That's the tour — reopen it any time from the ? button.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Skip",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Back",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Next",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Done",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "This tab is protected — Chrome won't auto-discard it.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "This tab isn't protected — Chrome may discard it to free memory.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Protection is paused — no tabs are kept alive.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

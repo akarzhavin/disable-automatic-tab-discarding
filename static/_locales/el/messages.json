@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Απενεργοποίηση αυτόματης απόρριψης καρτελών",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Απενεργοποιήστε την απόρριψη καρτελών του Chrome και αποτρέψτε ανεπιθύμητες επαναφορτώσεις καρτελών. Κανόνες ανά ιστότοπο, έλεγχος ανά καρτέλα και ζωντανά στατιστικά.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Απενεργοποίηση αυτόματης απόρριψης καρτελών",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Κύριος διακόπτης",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Προστασία ενεργή",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Σε παύση",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "καρτέλες προστατεύονται",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Αυτή η καρτέλα",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Αυτός ο ιστότοπος",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Μόνιμα",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Προσωρινά",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Οι εσωτερικές σελίδες δεν έχουν κανόνες ιστότοπου — μπορείτε ωστόσο να αλλάξετε αυτήν την καρτέλα.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Αυτή η σελίδα δεν μπορεί να διαχειριστεί",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Μη διαθέσιμο εδώ",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Οι εσωτερικές σελίδες και οι σελίδες επεκτάσεων παραμένουν πάντα ανέπαφες.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Προστατευμένη",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Απορρίψιμη",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Προστασία αυτού του ιστότοπου",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Διακοπή προστασίας αυτού του ιστότοπου",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Εξαίρεση αυτού του ιστότοπου",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Προστατευμένοι ιστότοποι",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Εξαιρεμένοι ιστότοποι",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Κανένας ιστότοπος ακόμη",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ ακόμη",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Αφαίρεση $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Ρυθμίσεις & στατιστικά",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Ρυθμίσεις",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Καλώς ορίσατε — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Ξεκινήστε την ξενάγηση",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Θέμα",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Αυτόματο",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Φωτεινό",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Σκούρο",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "προστατευμένες τώρα",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "ανοιχτές καρτέλες",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "λειτουργίες προστασίας",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "απορρίψεις που καταγράφηκαν",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Από $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Επαναφορά",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Λειτουργία προστασίας",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Προστασία όλων",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Διατηρήστε όλες τις καρτέλες ενεργές, εκτός από τους ιστότοπους που εξαιρείτε.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Μόνο λίστα επιτρεπόμενων",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Διατηρήστε ενεργούς μόνο τους ιστότοπους που καταχωρείτε.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Ανοιχτές καρτέλες",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Αναζήτηση καρτελών…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Γυρίστε έναν διακόπτη για να διατηρήσετε την καρτέλα ενεργή ή να αφήσετε το Chrome να την απορρίψει. Ένας χειροκίνητος διακόπτης υπερισχύει των κανόνων ιστότοπου και διαρκεί έως ότου κλείσει η καρτέλα.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Καμία ανοιχτή καρτέλα.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Καμία καρτέλα δεν ταιριάζει με την αναζήτησή σας.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Αυτό το παράθυρο · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Παράθυρο $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Χειροκίνητη",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Σε αδράνεια",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Καρφιτσωμένη",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Αναπαραγωγή",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Καρτέλα χωρίς τίτλο",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Εσωτερική σελίδα",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Μετάβαση σε αυτή την καρτέλα",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Η προστασία είναι σε παύση από τον κεντρικό διακόπτη",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Προστατευμένη — γυρίστε τον διακόπτη για να επιτρέψετε στο Chrome να απορρίψει αυτή την καρτέλα",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Απορρίψιμη — γυρίστε τον διακόπτη για να διατηρήσετε αυτή την καρτέλα ενεργή",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Μόνο αυτοί οι ιστότοποι διατηρούνται ενεργοί· οτιδήποτε άλλο μπορεί να απορριφθεί. Ένας τομέας καλύπτει και τους υποτομείς του — π.χ. το <code>example.com</code> καλύπτει το <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Αυτοί οι ιστότοποι επιτρέπεται να απορριφθούν. Ένας τομέας καλύπτει και τους υποτομείς του — π.χ. το <code>example.com</code> καλύπτει το <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Προσθήκη",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Αφαίρεση",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Πάντα για αυτόν τον ιστότοπο",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Διατήρηση του $HOST$ πάντα ενεργού (προσθέτει κανόνα ιστότοπου)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Να επιτρέπεται πάντα η απόρριψη του $HOST$ (ενημερώνει τους κανόνες ιστότοπου)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Πάντα ενεργό",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Πάντα απορρίψιμο",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "Το $HOST$ είναι αποθηκευμένο ως κανόνας ιστότοπου — κάντε κλικ για αφαίρεση",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Αφαιρέθηκε — το $HOST$ ακολουθεί ξανά την προεπιλογή της λειτουργίας.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Αποθηκεύτηκε — το $HOST$ θα παραμένει πλέον πάντα ενεργό. Δείτε τους Κανόνες ιστότοπων παρακάτω.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Αποθηκεύτηκε — το $HOST$ μπορεί πλέον να απορρίπτεται πάντα. Δείτε τους Κανόνες ιστότοπων παρακάτω.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Τίποτα εδώ ακόμη.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Εισαγάγετε έναν έγκυρο τομέα, π.χ. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "Το $DOMAIN$ υπάρχει ήδη στη λίστα.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Μπορείτε να προσθέσετε έως $MAX$ τομείς.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Συμβουλή: ανοίξτε το <code>chrome://discards</code> για να δείτε τη στήλη <strong>Auto Discardable</strong> — οι προστατευμένες καρτέλες εμφανίζουν ✕. Σημείωση: οι χειροκίνητες απορρίψεις εκεί εξακολουθούν να λειτουργούν· αυτό αποκλείει μόνο την <em>αυτόματη</em> απόρριψη του Chrome για εξοικονόμηση μνήμης.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Καλώς ορίσατε",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Κρατήστε ενεργές τις καρτέλες που έχουν σημασία",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Η Εξοικονόμηση μνήμης του Chrome εκφορτώνει τις ανενεργές καρτέλες για να ελευθερώσει RAM και τις επαναφορτώνει όταν επιστρέφετε. Το Keep Tabs Alive σάς επιτρέπει να επιλέγετε ποιες καρτέλες παραμένουν ενεργές και έτοιμες — αποτρέποντας ανεπιθύμητες επαναφορτώσεις και διακοπές.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Οι καρτέλες παραμένουν",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Οι ανοιχτές καρτέλες παραμένουν έτοιμες για χρήση, με την κατάσταση της σελίδας και την εργασία σας σε εξέλιξη ανέπαφες — χωρίς απρόσμενες επαναφορτώσεις.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Διακόπτες ανά καρτέλα",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "Η σελίδα ρυθμίσεων παραθέτει κάθε ανοιχτή καρτέλα με τον δικό της διακόπτη. Κρατήστε μια καρτέλα ενεργή ή αφήστε μια άλλη να κοιμηθεί — παρακάμπτει τους κανόνες μόνο για αυτήν την καρτέλα.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Κανόνες ιστότοπου",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Προστατέψτε τα πάντα εκτός από λίγους ιστότοπους ή επιτρέψτε μόνο όσους επιλέγετε. Οι κανόνες ταιριάζουν και με υποτομείς — το <code>example.com</code> τα καλύπτει όλα.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Ξεκινήστε",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Προτιμάτε να προστατεύετε τα πάντα από προεπιλογή; Μπορείτε να αλλάξετε λειτουργία στις ρυθμίσεις.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Καρφιτσώστε το</strong> για πρόσβαση με ένα κλικ: κάντε κλικ στο εικονίδιο παζλ <span class=\"puzzle\">🧩</span> στη γραμμή εργαλείων και έπειτα στην πινέζα.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Επαληθεύστε ανά πάσα στιγμή</strong> στο <code>chrome://discards</code> — οι προστατευμένες καρτέλες εμφανίζουν ✕ στη στήλη <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Ο κεντρικός διακόπτης",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Ενεργοποιήστε ή απενεργοποιήστε όλη την προστασία εδώ. Όσο είναι ανενεργή, κάθε καρτέλα μπορεί να απορριφθεί — οι κανόνες σας διατηρούνται, απλώς σε παύση.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Επιλέξτε λειτουργία προστασίας",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "Η <b>Μόνο λίστα επιτρεπόμενων</b> κρατά ενεργούς μόνο τους ιστότοπους που επιλέγετε (η ήπια προεπιλογή). Η <b>Προστασία όλων</b> κρατά κάθε καρτέλα ενεργή εκτός από όσες εξαιρείτε.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Διαχειριστείτε τις καρτέλες μία προς μία",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Κάθε ανοιχτή καρτέλα έχει τον δικό της διακόπτη. Γυρίστε τον για να κρατήσετε αυτή τη μία καρτέλα ενεργή ή να την αφήσετε να κοιμηθεί — μια εφάπαξ επιλογή που διαρκεί έως ότου κλείσει η καρτέλα. Τη θέλετε μόνιμη; Κάντε κλικ στο <b>Πάντα για αυτόν τον ιστότοπο</b> δίπλα στον διακόπτη για να γίνει μόνιμος κανόνας ιστότοπου. Κάντε κλικ σε μια γραμμή για να μεταβείτε στην καρτέλα.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Ορίστε κανόνες ανά ιστότοπο",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Προσθέστε εδώ τομείς για να προστατεύσετε (ή να εξαιρέσετε) ολόκληρους ιστότοπους με μία κίνηση. Ένας τομέας καλύπτει και τους υποτομείς του — το <code>example.com</code> ταιριάζει με το <code>mail.example.com</code>. Αυτή ήταν η ξενάγηση — ανοίξτε την ξανά ανά πάσα στιγμή από το κουμπί ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Παράλειψη",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Πίσω",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Επόμενο",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Τέλος",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Αυτή η καρτέλα προστατεύεται — το Chrome δεν θα την απορρίψει αυτόματα.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Αυτή η καρτέλα δεν προστατεύεται — το Chrome μπορεί να την απορρίψει για να ελευθερώσει μνήμη.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Η προστασία είναι σε παύση — καμία καρτέλα δεν διατηρείται ενεργή.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

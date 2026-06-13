@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="settingsTitle">Keep Tabs Alive — Settings</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/options.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand__logo" src="icons/icon128.png" alt="" width="40" height="40" />
+        <div>
+          <h1 class="brand__name" data-i18n="brandName">Keep Tabs Alive</h1>
+          <p class="brand__sub" data-i18n="brandSub">Disable automatic tab discarding</p>
+        </div>
+      </div>
+      <div class="topbar__controls">
+        <button class="icon-btn" id="startTour" data-i18n-title="takeTour" data-i18n-aria-label="takeTour" title="Take the tour" aria-label="Take the tour">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M9.5 9.2a2.5 2.5 0 014.9.8c0 1.7-2.4 2-2.4 3.6" stroke="currentColor"
+                  stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="12" cy="16.6" r="1.1" fill="currentColor"/>
+          </svg>
+        </button>
+        <div class="seg" id="themeSeg" role="radiogroup" data-i18n-aria-label="themeLabel" aria-label="Theme">
+          <button class="seg__btn" data-theme="auto" role="radio" data-i18n="themeAuto">Auto</button>
+          <button class="seg__btn" data-theme="light" role="radio" data-i18n="themeLight">Light</button>
+          <button class="seg__btn" data-theme="dark" role="radio" data-i18n="themeDark">Dark</button>
+        </div>
+        <label class="switch switch--lg" id="masterSwitch" data-i18n-title="masterSwitchTitle" title="Master switch">
+          <input type="checkbox" id="masterToggle" />
+          <span class="switch__track"><span class="switch__thumb"></span></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Stats strip -->
+    <section class="panel statbar">
+      <div class="stat">
+        <span class="stat__num stat__num--accent" id="statProtected">0</span>
+        <span class="stat__label" data-i18n="statProtectedNow">protected now</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" id="statOpen">0</span>
+        <span class="stat__label" data-i18n="statOpenTabs">open tabs</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" id="statOps">0</span>
+        <span class="stat__label" data-i18n="statProtectOps">protect operations</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" id="statDiscards">0</span>
+        <span class="stat__label" data-i18n="statDiscardsObserved">discards observed</span>
+      </div>
+      <div class="statbar__meta">
+        <span id="statsSince">&nbsp;</span>
+        <button class="linklike" id="resetStats" data-i18n="reset">Reset</button>
+      </div>
+    </section>
+
+    <!-- Protection mode -->
+    <section class="panel" id="modePanel">
+      <div class="panel__head">
+        <h2 class="panel__title" data-i18n="protectionMode">Protection mode</h2>
+      </div>
+      <div class="modes">
+        <label class="mode" data-mode="exclude">
+          <input type="radio" name="mode" value="exclude" />
+          <div class="mode__body">
+            <span class="mode__name" data-i18n="modeProtectEverything">Protect everything</span>
+            <span class="mode__desc" data-i18n="modeProtectEverythingDesc">Keep all tabs alive, except the sites you exclude.</span>
+          </div>
+        </label>
+        <label class="mode" data-mode="whitelist">
+          <input type="radio" name="mode" value="whitelist" />
+          <div class="mode__body">
+            <span class="mode__name" data-i18n="modeWhitelistOnly">Whitelist only</span>
+            <span class="mode__desc" data-i18n="modeWhitelistOnlyDesc">Only keep the sites you list alive.</span>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <!-- Open tabs -->
+    <main class="panel" id="tabsPanel">
+      <div class="panel__head">
+        <h2 class="panel__title" data-i18n="openTabs">Open tabs</h2>
+        <span class="count-badge" id="tabsCount">0</span>
+        <input
+          class="input input--search"
+          id="tabSearch"
+          type="search"
+          placeholder="Search tabs…"
+          data-i18n-placeholder="searchTabs"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+      <p class="panel__desc" data-i18n="openTabsDesc">
+        Flip a switch to keep that tab alive or let Chrome discard it. A manual switch
+        overrides the site rules and lasts until the tab is closed.
+      </p>
+      <div class="tab-groups" id="tabGroups"></div>
+      <p class="tab-groups__empty" id="tabsEmpty" hidden>No open tabs.</p>
+    </main>
+
+    <!-- Site rules -->
+    <section class="panel" id="rulesPanel">
+      <div class="panel__head">
+        <h2 class="panel__title" id="listTitle" data-i18n="excludedSites">Excluded sites</h2>
+        <span class="count-badge" id="rulesCount">0</span>
+      </div>
+      <p class="panel__desc" id="listDesc" data-i18n-html="listDescExclude">
+        These sites are allowed to be discarded. A domain also matches its subdomains —
+        e.g. <code>example.com</code> covers <code>mail.example.com</code>.
+      </p>
+      <form class="adder" id="domainForm">
+        <input class="input" id="domainInput" type="text" placeholder="example.com" data-i18n-placeholder="domainPlaceholderDefault" autocomplete="off" spellcheck="false" />
+        <button class="btn" type="submit" data-i18n="add">Add</button>
+      </form>
+      <p class="adder__error" id="domainError" hidden></p>
+      <ul class="domain-list" id="domainList"></ul>
+      <p class="domain-list__empty" id="domainEmpty" data-i18n="nothingHereYet">Nothing here yet.</p>
+    </section>
+
+    <footer class="page__footer">
+      <p data-i18n-html="footerTip">
+        Tip: open <code>chrome://discards</code> to see the
+        <strong>Auto Discardable</strong> column — protected tabs show ✕.
+        Note: manual discards there still work; this only blocks Chrome's
+        <em>automatic</em> memory-saver discarding.
+      </p>
+    </footer>
+  </div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

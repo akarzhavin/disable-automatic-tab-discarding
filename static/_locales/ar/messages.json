@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — تعطيل التخلص التلقائي من علامات التبويب",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "عطّل تخلص Chrome من علامات التبويب وامنع إعادة تحميلها غير المرغوبة. قواعد لكل موقع، وتحكم لكل علامة تبويب، وإحصاءات مباشرة.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "تعطيل التخلص التلقائي من علامات التبويب",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "المفتاح الرئيسي",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "الحماية مُفعّلة",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "متوقف مؤقتًا",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "علامة تبويب محمية",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "علامة التبويب هذه",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "هذا الموقع",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "دائم",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "مؤقت",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "الصفحات الداخلية ليس لها قواعد للموقع — لا يزال بإمكانك تبديل علامة التبويب هذه.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "لا يمكن إدارة هذه الصفحة",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "غير متاح هنا",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "تُترك الصفحات الداخلية وصفحات الإضافات دائمًا دون تغيير.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "محمي",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "قابل للتخلص",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "حماية هذا الموقع",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "إيقاف حماية هذا الموقع",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "استبعاد هذا الموقع",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "المواقع المحمية",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "المواقع المستبعدة",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "لا توجد مواقع بعد",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ أخرى",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "إزالة $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "الإعدادات والإحصائيات",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — الإعدادات",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "مرحبًا — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "ابدأ الجولة",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "السمة",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "تلقائي",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "فاتح",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "داكن",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "محمية الآن",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "علامات تبويب مفتوحة",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "عمليات الحماية",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "عمليات التخلص المرصودة",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "منذ $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "إعادة تعيين",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "وضع الحماية",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "حماية كل شيء",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "أبقِ جميع علامات التبويب نشطة، باستثناء المواقع التي تستبعدها.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "القائمة المسموح بها فقط",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "أبقِ المواقع التي تدرجها فقط نشطة.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "علامات التبويب المفتوحة",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "بحث في علامات التبويب…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "بدّل المفتاح لإبقاء علامة التبويب تلك نشطة أو السماح لـ Chrome بالتخلص منها. يتجاوز المفتاح اليدوي قواعد الموقع ويستمر حتى إغلاق علامة التبويب.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "لا توجد علامات تبويب مفتوحة.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "لا توجد علامات تبويب مطابقة لبحثك.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "هذه النافذة · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "النافذة $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "يدوي",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "نائم",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "مثبّت",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "قيد التشغيل",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "علامة تبويب بلا عنوان",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "صفحة داخلية",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "التبديل إلى علامة التبويب هذه",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "الحماية متوقفة مؤقتًا بواسطة المفتاح الرئيسي",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "محمي — بدّل للسماح لـ Chrome بالتخلص من علامة التبويب هذه",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "قابل للتخلص — بدّل لإبقاء علامة التبويب هذه نشطة",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "تبقى هذه المواقع فقط نشطة؛ وقد يتم التخلص من كل ما عداها. يطابق النطاق نطاقاته الفرعية أيضًا — مثلاً <code>example.com</code> يشمل <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "يُسمح بالتخلص من هذه المواقع. يطابق النطاق نطاقاته الفرعية أيضًا — مثلاً <code>example.com</code> يشمل <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "إضافة",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "إزالة",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "دائمًا لهذا الموقع",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "أبقِ $HOST$ نشطًا دائمًا (يضيف قاعدة موقع)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "اسمح دائمًا بالتخلص من $HOST$ (يحدّث قواعد الموقع)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "نشط دائمًا",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "قابل للتخلص دائمًا",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "تم حفظ $HOST$ كقاعدة موقع — انقر لإزالتها",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "تمت الإزالة — يتبع $HOST$ الآن إعداد الوضع الافتراضي من جديد.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "تم الحفظ — سيبقى $HOST$ الآن نشطًا دائمًا. راجع قواعد المواقع أدناه.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "تم الحفظ — يمكن الآن التخلص من $HOST$ دائمًا. راجع قواعد المواقع أدناه.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "لا يوجد شيء هنا بعد.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "أدخل نطاقًا صالحًا، مثل example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ موجود بالفعل في القائمة.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "يمكنك إضافة ما يصل إلى $MAX$ نطاقًا.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "نصيحة: افتح <code>chrome://discards</code> لرؤية عمود <strong>Auto Discardable</strong> — تعرض علامات التبويب المحمية ✕. ملاحظة: لا يزال التخلص اليدوي هناك يعمل؛ هذا يحظر فقط التخلص <em>التلقائي</em> لتوفير الذاكرة في Chrome.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "مرحبًا",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "أبقِ علامات التبويب المهمة نشطة",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "يُفرغ موفّر الذاكرة في Chrome علامات التبويب الخاملة لتحرير ذاكرة الوصول العشوائي، ثم يعيد تحميلها عند عودتك. يتيح لك Keep Tabs Alive اختيار علامات التبويب التي تبقى نشطة وجاهزة — مما يمنع عمليات إعادة التحميل والمقاطعات غير المرغوب فيها.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "علامات التبويب تبقى في مكانها",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "تبقى علامات التبويب المفتوحة جاهزة للاستخدام، مع الحفاظ على حالة صفحتها وعملك الجاري — دون أي عمليات إعادة تحميل غير متوقعة.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "مفاتيح لكل علامة تبويب",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "تعرض صفحة الإعدادات كل علامة تبويب مفتوحة بمفتاحها الخاص. أبقِ علامة تبويب نشطة أو دع أخرى تخلد للنوم — فهذا يتجاوز القواعد لتلك العلامة فقط.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "قواعد المواقع",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "احمِ كل شيء باستثناء بضعة مواقع، أو أضِف إلى القائمة البيضاء المواقع التي تختارها فقط. تطابق القواعد النطاقات الفرعية أيضًا — <code>example.com</code> يشملها كلها.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "ابدأ الآن",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "هل تفضّل حماية كل شيء بشكل افتراضي؟ يمكنك تبديل الأوضاع في الإعدادات.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>ثبّته</strong> للوصول بنقرة واحدة: انقر على أيقونة اللغز <span class=\"puzzle\">🧩</span> في شريط الأدوات، ثم على الدبوس.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>تحقّق في أي وقت</strong> على <code>chrome://discards</code> — تُظهر علامات التبويب المحمية ✕ في عمود <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "المفتاح الرئيسي",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "شغّل أو أوقف كل الحماية من هنا. أثناء إيقافه، يمكن التخلص من كل علامة تبويب — تُحفظ قواعدك، لكنها متوقفة فقط.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "اختر وضع حماية",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>القائمة المسموح بها فقط</b> تبقي المواقع التي تختارها فقط نشطة (الإعداد الافتراضي اللطيف). <b>حماية كل شيء</b> تبقي كل علامة تبويب نشطة باستثناء التي تستبعدها.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "أدِر علامات التبويب واحدة تلو الأخرى",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "كل علامة تبويب مفتوحة لها مفتاحها الخاص. بدّله لإبقاء تلك العلامة الواحدة نشطة أو دعها تنام — خيار لمرة واحدة يستمر حتى إغلاق العلامة. تريده دائمًا؟ انقر <b>دائمًا لهذا الموقع</b> بجوار المفتاح لتحويله إلى قاعدة موقع دائمة. انقر صفًا للانتقال إلى علامة التبويب.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "حدّد القواعد حسب الموقع",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "أضف النطاقات هنا لحماية (أو استبعاد) مواقع كاملة دفعة واحدة. يشمل النطاق نطاقاته الفرعية أيضًا — <code>example.com</code> يطابق <code>mail.example.com</code>. هذه هي الجولة — أعد فتحها في أي وقت من زر ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "تخطٍ",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "رجوع",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "التالي",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "تم",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "علامة التبويب هذه محمية — لن يُلغي Chrome تحميلها تلقائيًا.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "علامة التبويب هذه غير محمية — قد يُلغي Chrome تحميلها لتحرير الذاكرة.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "الحماية متوقفة مؤقتًا — لا يتم الإبقاء على أي علامة تبويب نشطة.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

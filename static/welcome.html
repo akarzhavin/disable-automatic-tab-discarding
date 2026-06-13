@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="welcomeTitle">Welcome — Keep Tabs Alive</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/welcome.css" />
+</head>
+<body>
+  <main class="welcome">
+    <header class="hero">
+      <div class="hero__badge">
+        <img src="icons/icon128.png" alt="" width="72" height="72" />
+      </div>
+      <p class="hero__eyebrow" data-i18n="heroEyebrow">Welcome</p>
+      <h1 class="hero__title" data-i18n="heroTitle">Keep the tabs that matter alive</h1>
+      <p class="hero__lead" data-i18n="heroLead">
+        Chrome's Memory Saver unloads idle tabs to free RAM, then reloads them when
+        you return. Keep Tabs Alive lets you choose which tabs stay active and
+        ready — preventing unwanted reloads and interruptions.
+      </p>
+    </header>
+
+    <section class="cards">
+      <article class="wcard">
+        <span class="wcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3l7 3v5c0 4.4-3 7.4-7 8.5C8 21.4 5 18.4 5 14V6l7-3z"
+                  fill="currentColor" opacity="0.16"/>
+            <path d="M12 3l7 3v5c0 4.4-3 7.4-7 8.5C8 21.4 5 18.4 5 14V6l7-3z"
+                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <h3 class="wcard__title" data-i18n="wcard1Title">Tabs stay put</h3>
+        <p class="wcard__text" data-i18n="wcard1Text">
+          Open tabs stay ready to use, with their page state and ongoing work
+          intact — no unexpected reloads.
+        </p>
+      </article>
+
+      <article class="wcard">
+        <span class="wcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="10" rx="5"
+                  stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="15" cy="12" r="2.6" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="wcard__title" data-i18n="wcard2Title">Per-tab switches</h3>
+        <p class="wcard__text" data-i18n="wcard2Text">
+          The settings page lists every open tab with its own switch. Keep one tab
+          alive or let another sleep — it overrides the rules just for that tab.
+        </p>
+      </article>
+
+      <article class="wcard">
+        <span class="wcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M3 12h18M12 3c2.5 2.4 2.5 15.6 0 18M12 3c-2.5 2.4-2.5 15.6 0 18"
+                  stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+        </span>
+        <h3 class="wcard__title" data-i18n="wcard3Title">Site rules</h3>
+        <p class="wcard__text" data-i18n-html="wcard3Text">
+          Protect everything except a few sites, or whitelist only the ones you
+          choose. Rules match subdomains too — <code>example.com</code> covers all of it.
+        </p>
+      </article>
+    </section>
+
+    <section class="actions">
+      <button class="btn btn--lg" id="openOptions" data-i18n="chooseYourSites">Get Started</button>
+      <p class="actions__note" data-i18n="actionsNote">
+        Prefer to protect everything by default? You can switch modes in settings.
+      </p>
+    </section>
+
+    <footer class="welcome__footer">
+      <div class="steps">
+        <div class="step">
+          <span class="step__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M9 4h6l-1 6 3 3v2h-5v5l-1 1-1-1v-5H5v-2l3-3-1-6z"
+                    fill="currentColor" opacity="0.16"/>
+              <path d="M9 4h6l-1 6 3 3v2h-5v5l-1 1-1-1v-5H5v-2l3-3-1-6z"
+                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <p data-i18n-html="welcomeStep1">
+            <strong>Pin it</strong> for one-click access: click the
+            <span class="puzzle">🧩</span> puzzle icon in the toolbar, then the pin.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.16"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8.5 12.2l2.3 2.3 4.7-4.9" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <p data-i18n-html="welcomeStep2">
+            <strong>Verify any time</strong> at <code>chrome://discards</code> — protected
+            tabs show ✕ in the <em>Auto Discardable</em> column.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="welcome.js"></script>
+</body>
+</html>

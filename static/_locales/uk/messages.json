@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Вимкнення автоматичного відвантаження вкладок",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Вимкніть вивантаження вкладок у Chrome і запобігайте небажаним перезавантаженням вкладок. Правила для окремих сайтів, керування для кожної вкладки та статистика в реальному часі.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Вимкнення автоматичного відвантаження вкладок",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Головний перемикач",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Захист увімкнено",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "Призупинено",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "вкладок захищено",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Ця вкладка",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Цей сайт",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Постійно",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Тимчасово",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "До внутрішніх сторінок не застосовуються правила сайтів — але ви все одно можете перемкнути цю вкладку.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Цією сторінкою неможливо керувати",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Тут недоступно",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Внутрішні сторінки та сторінки розширень завжди залишаються недоторканими.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Захищено",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Можна відвантажити",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Захистити цей сайт",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Припинити захист цього сайту",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Виключити цей сайт",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Захищені сайти",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Виключені сайти",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Поки немає сайтів",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ ще",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Видалити $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Налаштування та статистика",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Налаштування",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Ласкаво просимо — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Пройти тур",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Тема",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Авто",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Світла",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Темна",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "захищено зараз",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "відкритих вкладок",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "операцій захисту",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "помічених відвантажень",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Починаючи з $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Скинути",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Режим захисту",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Захищати все",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Тримати всі вкладки активними, крім сайтів, які ви виключите.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Лише білий список",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Тримати активними лише сайти зі списку.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Відкриті вкладки",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Пошук вкладок…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Перемкніть, щоб тримати вкладку активною або дозволити Chrome її відвантажити. Ручний перемикач має пріоритет над правилами сайту й діє, доки вкладку не закрито.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Немає відкритих вкладок.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Немає вкладок, що відповідають пошуку.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Це вікно · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Вікно $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Вручну",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "Сплячий",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Закріплено",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "Відтворення",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Вкладка без назви",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Внутрішня сторінка",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Перейти до цієї вкладки",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "Захист призупинено головним перемикачем",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Захищено — перемкніть, щоб дозволити Chrome відвантажити цю вкладку",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Можна відвантажити — перемкніть, щоб тримати цю вкладку активною",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Лише ці сайти залишаються активними; решту може бути відвантажено. Домен також охоплює свої субдомени — наприклад, <code>example.com</code> охоплює <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Цим сайтам дозволено бути відвантаженими. Домен також охоплює свої субдомени — наприклад, <code>example.com</code> охоплює <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Додати",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Видалити",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Завжди для цього сайту",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Завжди тримати $HOST$ активним (додає правило сайту)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Завжди дозволяти відвантаження $HOST$ (оновлює правила сайту)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Завжди активний",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Завжди можна відвантажити",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ збережено як правило сайту — натисніть, щоб видалити",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Видалено — $HOST$ тепер знову дотримується типового режиму.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Збережено — $HOST$ тепер завжди залишатиметься активним. Див. правила сайтів нижче.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Збережено — $HOST$ тепер завжди може бути відвантажений. Див. правила сайтів нижче.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Тут поки нічого немає.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Введіть дійсний домен, наприклад example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ вже є у списку.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Можна додати до $MAX$ доменів.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Порада: відкрийте <code>chrome://discards</code>, щоб побачити стовпець <strong>Auto Discardable</strong> — захищені вкладки показують ✕. Примітка: ручне відвантаження там усе ще працює; це блокує лише <em>автоматичне</em> відвантаження Chrome для економії пам’яті.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Вітаємо",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Тримайте активними вкладки, що мають значення",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Економія пам'яті в Chrome вивантажує неактивні вкладки, щоб звільнити ОЗП, а потім перезавантажує їх, коли ви повертаєтесь. Keep Tabs Alive дає змогу обрати, які вкладки залишатимуться активними та готовими до роботи — запобігаючи небажаним перезавантаженням і перериванням.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Вкладки залишаються на місці",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Відкриті вкладки готові до використання, а стан сторінки й поточна робота залишаються незмінними — жодних несподіваних перезавантажень.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Перемикачі для кожної вкладки",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "На сторінці налаштувань перелічено кожну відкриту вкладку з власним перемикачем. Тримайте одну вкладку активною або дозвольте іншій заснути — це перевизначає правила лише для цієї вкладки.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Правила для сайтів",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Захищайте все, окрім кількох сайтів, або додавайте в білий список лише обрані. Правила охоплюють і субдомени — <code>example.com</code> покриває їх усі.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Почати",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Бажаєте захищати все за замовчуванням? Ви можете змінити режим у налаштуваннях.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Закріпіть</strong> для доступу одним кліком: натисніть на значок головоломки <span class=\"puzzle\">🧩</span> на панелі інструментів, а потім — на шпильку.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Перевіряйте будь-коли</strong> на <code>chrome://discards</code> — захищені вкладки позначені ✕ у стовпці <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "Головний перемикач",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Тут можна ввімкнути або вимкнути весь захист. Поки він вимкнений, кожну вкладку можна відвантажити — ваші правила збережено, просто призупинено.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Оберіть режим захисту",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Лише білий список</b> тримає активними лише обрані вами сайти (м’який варіант за замовчуванням). <b>Захищати все</b> тримає активними всі вкладки, крім тих, які ви виключите.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Керуйте вкладками по черзі",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Кожна відкрита вкладка має власний перемикач. Перемкніть його, щоб тримати окрему вкладку активною або дозволити їй заснути — одноразовий вибір, що діє, доки вкладку не закрито. Хочете назавжди? Натисніть <b>Завжди для цього сайту</b> поряд із перемикачем, щоб перетворити це на постійне правило сайту. Натисніть рядок, щоб перейти до вкладки.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Налаштуйте правила за сайтами",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Додавайте сюди домени, щоб захистити (або виключити) цілі сайти одразу. Домен також охоплює свої субдомени — <code>example.com</code> відповідає <code>mail.example.com</code>. Це й увесь тур — відкрийте його будь-коли за допомогою кнопки ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Пропустити",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Назад",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Далі",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Готово",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Ця вкладка захищена — Chrome не вивантажуватиме її автоматично.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Ця вкладка не захищена — Chrome може вивантажити її, щоб звільнити пам'ять.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "Захист призупинено — жодна вкладка не залишається активною.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

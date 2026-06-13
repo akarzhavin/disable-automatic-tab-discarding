@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — தானியங்கி தாவல் நீக்கத்தை முடக்கு",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Chrome இன் தாவல் நீக்கத்தை முடக்கி, தேவையற்ற தாவல் மீளேற்றங்களைத் தடுக்கவும். ஒவ்வொரு தளத்திற்கான விதிகள், ஒவ்வொரு தாவலுக்கான கட்டுப்பாடு மற்றும் நேரடி புள்ளிவிவரங்கள்.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "தானியங்கி தாவல் நீக்கத்தை முடக்கு",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "முதன்மை சுவிட்ச்",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "பாதுகாப்பு இயக்கத்தில்",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "இடைநிறுத்தப்பட்டது",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "தாவல்கள் பாதுகாக்கப்பட்டன",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "இந்த தாவல்",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "இந்த இணையதளம்",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "நிரந்தரம்",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "தற்காலிகம்",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "உள் பக்கங்களுக்கு தள விதிகள் இல்லை — இந்த தாவலை இன்னும் மாற்றலாம்.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "இந்தப் பக்கத்தை நிர்வகிக்க முடியாது",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "இங்கு கிடைக்கவில்லை",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "உள் மற்றும் நீட்டிப்புப் பக்கங்கள் எப்போதும் தொடப்படாமல் விடப்படுகின்றன.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "பாதுகாக்கப்பட்டது",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "நீக்கக்கூடியது",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "இந்தத் தளத்தைப் பாதுகாக்கவும்",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "இந்தத் தளத்தைப் பாதுகாப்பதை நிறுத்தவும்",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "இந்தத் தளத்தை விலக்கவும்",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "பாதுகாக்கப்பட்ட தளங்கள்",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "விலக்கப்பட்ட தளங்கள்",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "இன்னும் தளங்கள் இல்லை",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ மேலும்",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "$DOMAIN$ ஐ அகற்று",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "அமைப்புகள் & புள்ளிவிவரங்கள்",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — அமைப்புகள்",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "வரவேற்கிறோம் — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "சுற்றுப்பயணம் செய்யவும்",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "தீம்",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "தானியங்கி",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "ஒளி",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "இருள்",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "இப்போது பாதுகாக்கப்பட்டது",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "திறந்த தாவல்கள்",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "பாதுகாப்புச் செயல்பாடுகள்",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "கவனிக்கப்பட்ட நீக்கங்கள்",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "$DATE$ முதல்",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "மீட்டமை",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "பாதுகாப்பு முறை",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "எல்லாவற்றையும் பாதுகாக்கவும்",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "நீங்கள் விலக்கும் தளங்கள் தவிர அனைத்து தாவல்களையும் உயிருடன் வைத்திருங்கள்.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "அனுமதிப் பட்டியல் மட்டும்",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "நீங்கள் பட்டியலிடும் தளங்களை மட்டும் உயிருடன் வைத்திருங்கள்.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "திறந்த தாவல்கள்",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "தாவல்களைத் தேடு…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "அந்தத் தாவலை உயிருடன் வைக்க அல்லது Chrome அதை நீக்க அனுமதிக்க ஒரு சுவிட்சை மாற்றவும். கைமுறை சுவிட்ச் தளவிதிகளை மீறி, தாவல் மூடப்படும் வரை நீடிக்கும்.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "திறந்த தாவல்கள் இல்லை.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "உங்கள் தேடலுக்குப் பொருந்தும் தாவல்கள் இல்லை.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "இந்த சாளரம் · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "சாளரம் $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "கைமுறை",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "உறக்கத்தில்",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "பின் செய்யப்பட்டது",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "இயங்குகிறது",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "தலைப்பில்லா தாவல்",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "உள் பக்கம்",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "இந்த தாவலுக்கு மாறவும்",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "முதன்மை சுவிட்சால் பாதுகாப்பு இடைநிறுத்தப்பட்டது",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "பாதுகாக்கப்பட்டது — இந்த தாவலை Chrome நீக்க அனுமதிக்க மாற்றவும்",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "நீக்கக்கூடியது — இந்த தாவலை உயிருடன் வைக்க மாற்றவும்",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "இந்தத் தளங்கள் மட்டுமே உயிருடன் வைக்கப்படுகின்றன; மற்ற அனைத்தும் நீக்கப்படலாம். ஒரு டொமைன் அதன் துணை டொமைன்களுடனும் பொருந்தும் — எ.கா. <code>example.com</code> என்பது <code>mail.example.com</code> ஐ உள்ளடக்கும்.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "இந்தத் தளங்கள் நீக்கப்பட அனுமதிக்கப்படுகின்றன. ஒரு டொமைன் அதன் துணை டொமைன்களுடனும் பொருந்தும் — எ.கா. <code>example.com</code> என்பது <code>mail.example.com</code> ஐ உள்ளடக்கும்.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "சேர்",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "அகற்று",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "இந்தத் தளத்திற்கு எப்போதும்",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "$HOST$ ஐ எப்போதும் உயிருடன் வைக்கவும் (ஒரு தள விதியைச் சேர்க்கிறது)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "$HOST$ எப்போதும் நீக்கப்பட அனுமதிக்கவும் (தள விதிகளைப் புதுப்பிக்கிறது)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "எப்போதும் உயிருடன்",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "எப்போதும் நீக்கக்கூடியது",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ தள விதியாகச் சேமிக்கப்பட்டுள்ளது — அகற்ற கிளிக் செய்யவும்",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "அகற்றப்பட்டது — $HOST$ இப்போது மீண்டும் முறையின் இயல்புநிலையைப் பின்பற்றுகிறது.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "சேமிக்கப்பட்டது — $HOST$ இப்போது எப்போதும் உயிருடன் இருக்கும். கீழே உள்ள தள விதிகளைப் பார்க்கவும்.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "சேமிக்கப்பட்டது — $HOST$ இப்போது எப்போதும் நீக்கப்படலாம். கீழே உள்ள தள விதிகளைப் பார்க்கவும்.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "இங்கு இன்னும் எதுவும் இல்லை.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "சரியான டொமைனை உள்ளிடவும், எ.கா. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ ஏற்கனவே பட்டியலில் உள்ளது.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "நீங்கள் $MAX$ டொமைன்கள் வரை சேர்க்கலாம்.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "குறிப்பு: <strong>Auto Discardable</strong> நெடுவரிசையைப் பார்க்க <code>chrome://discards</code> ஐத் திறக்கவும் — பாதுகாக்கப்பட்ட தாவல்கள் ✕ ஐக் காட்டும். கவனிக்க: அங்குள்ள கைமுறை நீக்கங்கள் இன்னும் வேலை செய்யும்; இது Chrome இன் <em>தானியங்கி</em> நினைவக-சேமிப்பு நீக்கத்தை மட்டுமே தடுக்கிறது.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "வரவேற்கிறோம்",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "முக்கியமான தாவல்களை செயலில் வைத்திருங்கள்",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chrome இன் Memory Saver, RAM ஐ விடுவிக்க செயலற்ற தாவல்களை இறக்குகிறது, பின்னர் நீங்கள் திரும்பும்போது அவற்றை மீண்டும் ஏற்றுகிறது. தேவையற்ற மீண்டும் ஏற்றங்கள் மற்றும் இடையூறுகளைத் தடுத்து, எந்த தாவல்கள் செயலில் மற்றும் தயாராக இருக்க வேண்டும் என்பதை Keep Tabs Alive உங்களை தேர்வு செய்ய அனுமதிக்கிறது.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "தாவல்கள் அப்படியே இருக்கும்",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "திறந்த தாவல்கள் அவற்றின் பக்க நிலை மற்றும் தற்போதைய வேலையுடன் பயன்படுத்த தயாராக இருக்கும் — எதிர்பாராத மீண்டும் ஏற்றங்கள் இல்லை.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "தாவலுக்கான சுவிட்ச்கள்",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "அமைப்புகள் பக்கம் ஒவ்வொரு திறந்த தாவலையும் அதன் சொந்த சுவிட்சுடன் பட்டியலிடுகிறது. ஒரு தாவலை செயலில் வைக்கவும் அல்லது மற்றொன்றை உறங்க விடவும் — அது அந்த தாவலுக்கு மட்டும் விதிகளை மீறுகிறது.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "தள விதிகள்",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "சில தளங்களைத் தவிர அனைத்தையும் பாதுகாக்கவும், அல்லது நீங்கள் தேர்வு செய்தவற்றை மட்டும் அனுமதிப்பட்டியலில் சேர்க்கவும். விதிகள் துணை டொமைன்களையும் பொருந்துகின்றன — <code>example.com</code> அதன் அனைத்தையும் உள்ளடக்குகிறது.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "தொடங்குங்கள்",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "இயல்பாக அனைத்தையும் பாதுகாக்க விரும்புகிறீர்களா? அமைப்புகளில் நீங்கள் முறைகளை மாற்றலாம்.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>பின் செய்யுங்கள்</strong> ஒரே கிளிக்கில் அணுக: கருவிப்பட்டியில் உள்ள <span class=\"puzzle\">🧩</span> புதிர் ஐகானைக் கிளிக் செய்து, பின்னர் பின்னை அழுத்தவும்.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>எப்போது வேண்டுமானாலும் சரிபார்க்கவும்</strong> <code>chrome://discards</code> இல் — பாதுகாக்கப்பட்ட தாவல்கள் <em>Auto Discardable</em> நெடுவரிசையில் ✕ ஐக் காட்டுகின்றன.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "முதன்மை சுவிட்ச்",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "எல்லா பாதுகாப்பையும் இங்கே இயக்கவும் அல்லது அணைக்கவும். அது அணைக்கப்பட்டிருக்கும்போது, ஒவ்வொரு தாவலும் நீக்கப்படலாம் — உங்கள் விதிகள் வைக்கப்படுகின்றன, இடைநிறுத்தப்பட்டிருக்கின்றன அவ்வளவே.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "ஒரு பாதுகாப்பு முறையைத் தேர்ந்தெடுக்கவும்",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>அனுமதிப் பட்டியல் மட்டும்</b> நீங்கள் தேர்ந்தெடுக்கும் தளங்களை மட்டும் உயிருடன் வைக்கிறது (மென்மையான இயல்புநிலை). <b>எல்லாவற்றையும் பாதுகாக்கவும்</b> நீங்கள் விலக்குபவை தவிர ஒவ்வொரு தாவலையும் உயிருடன் வைக்கிறது.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "தாவல்களை ஒவ்வொன்றாக நிர்வகிக்கவும்",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "ஒவ்வொரு திறந்த தாவலுக்கும் அதன் சொந்த சுவிட்ச் உள்ளது. அந்த ஒரு தாவலை உயிருடன் வைக்க அல்லது உறங்க அனுமதிக்க அதை மாற்றவும் — தாவல் மூடப்படும் வரை நீடிக்கும் ஒருமுறை தேர்வு. எப்போதும் வேண்டுமா? அதை நிரந்தர தள விதியாக மாற்ற சுவிட்சுக்கு அருகில் உள்ள <b>இந்தத் தளத்திற்கு எப்போதும்</b> ஐக் கிளிக் செய்யவும். தாவலுக்குச் செல்ல வரிசையைக் கிளிக் செய்யவும்.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "தளம் வாரியாக விதிகளை அமைக்கவும்",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "முழுத் தளங்களையும் ஒரே நேரத்தில் பாதுகாக்க (அல்லது விலக்க) இங்கே டொமைன்களைச் சேர்க்கவும். ஒரு டொமைன் அதன் துணை டொமைன்களையும் உள்ளடக்கும் — <code>example.com</code> என்பது <code>mail.example.com</code> உடன் பொருந்தும். அதுதான் சுற்றுப்பயணம் — ? பொத்தானிலிருந்து எந்த நேரத்திலும் மீண்டும் திறக்கவும்.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "தவிர்",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "பின்",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "அடுத்து",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "முடிந்தது",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "இந்த தாவல் பாதுகாக்கப்பட்டுள்ளது — Chrome இதைத் தானாக நிறுத்தாது.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "இந்த தாவல் பாதுகாக்கப்படவில்லை — நினைவகத்தை விடுவிக்க Chrome இதை நிறுத்தக்கூடும்.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "பாதுகாப்பு இடைநிறுத்தப்பட்டுள்ளது — எந்த தாவலும் செயலில் வைக்கப்படவில்லை.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

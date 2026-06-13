@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — Désactiver la mise en veille automatique des onglets",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Désactivez la mise en veille des onglets par Chrome et évitez les rechargements d'onglets indésirables. Règles par site, contrôle par onglet et statistiques en direct.",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "Désactiver la mise en veille automatique des onglets",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "Interrupteur principal",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "Protection activée",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "En pause",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "onglets protégés",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "Cet onglet",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "Ce site",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "Permanent",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "Temporaire",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "Les pages internes n'ont pas de règles de site — vous pouvez tout de même activer cet onglet.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "Cette page ne peut pas être gérée",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "Indisponible ici",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "Les pages internes et d'extension restent toujours intactes.",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "Protégé",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "Désactivable",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "Protéger ce site",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "Ne plus protéger ce site",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "Exclure ce site",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "Sites protégés",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "Sites exclus",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "Aucun site pour l'instant",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ de plus",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "Supprimer $DOMAIN$",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "Paramètres et statistiques",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — Paramètres",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "Bienvenue — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "Faire la visite",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "Thème",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "Auto",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "Clair",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "Sombre",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "protégés maintenant",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "onglets ouverts",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "opérations de protection",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "mises en veille observées",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "Depuis le $DATE$",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "Réinitialiser",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "Mode de protection",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "Tout protéger",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "Garde tous les onglets actifs, sauf les sites que vous excluez.",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "Liste blanche uniquement",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "Ne garde actifs que les sites que vous listez.",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "Onglets ouverts",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "Rechercher des onglets…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "Actionnez un interrupteur pour garder cet onglet actif ou laisser Chrome le mettre en veille. Un interrupteur manuel prime sur les règles de site et reste actif jusqu'à la fermeture de l'onglet.",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "Aucun onglet ouvert.",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "Aucun onglet ne correspond à votre recherche.",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "Cette fenêtre · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "Fenêtre $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "Manuel",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "En veille",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "Épinglé",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "En lecture",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "Onglet sans titre",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "Page interne",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "Basculer vers cet onglet",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "La protection est en pause via l'interrupteur principal",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "Protégé — actionnez pour laisser Chrome mettre cet onglet en veille",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "Désactivable — actionnez pour garder cet onglet actif",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "Seuls ces sites restent actifs ; tout le reste peut être mis en veille. Un domaine couvre aussi ses sous-domaines — p. ex. <code>example.com</code> couvre <code>mail.example.com</code>.",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "Ces sites peuvent être mis en veille. Un domaine couvre aussi ses sous-domaines — p. ex. <code>example.com</code> couvre <code>mail.example.com</code>.",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "Ajouter",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "Supprimer",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "Toujours pour ce site",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "Toujours garder $HOST$ actif (ajoute une règle de site)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "Toujours laisser $HOST$ être mis en veille (met à jour les règles de site)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "Enregistré — $HOST$ restera désormais toujours actif. Voir les règles de site ci-dessous.",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "Enregistré — $HOST$ peut désormais toujours être mis en veille. Voir les règles de site ci-dessous.",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "Toujours maintenu actif",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "Toujours désactivable",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ est enregistré comme règle de site — cliquez pour le supprimer",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "Supprimé — $HOST$ suit de nouveau le réglage par défaut du mode.",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "Rien ici pour l'instant.",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "Saisissez un domaine valide, p. ex. example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ est déjà dans la liste.",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "Vous pouvez ajouter jusqu'à $MAX$ domaines.",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "Astuce : ouvrez <code>chrome://discards</code> pour voir la colonne <strong>Auto Discardable</strong> — les onglets protégés affichent ✕. Remarque : les mises en veille manuelles y fonctionnent toujours ; ceci ne bloque que la mise en veille <em>automatique</em> d'économie de mémoire de Chrome.",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "Bienvenue",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "Gardez actifs les onglets qui comptent",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "L'Économiseur de mémoire de Chrome décharge les onglets inactifs pour libérer de la RAM, puis les recharge à votre retour. Keep Tabs Alive vous laisse choisir quels onglets restent actifs et prêts — évitant rechargements et interruptions indésirables.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "Les onglets restent en place",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "Les onglets ouverts restent prêts à l'emploi, avec l'état de leur page et votre travail en cours intacts — sans rechargements inattendus.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "Interrupteurs par onglet",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "La page des paramètres liste chaque onglet ouvert avec son propre interrupteur. Gardez un onglet actif ou laissez-en un autre se mettre en veille — cela remplace les règles pour cet onglet uniquement.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "Règles de site",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "Protégez tout sauf quelques sites, ou n'autorisez que ceux de votre choix. Les règles s'appliquent aussi aux sous-domaines — <code>example.com</code> couvre l'ensemble.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "Commencer",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "Vous préférez tout protéger par défaut ? Vous pouvez changer de mode dans les paramètres.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>Épinglez-le</strong> pour un accès en un clic : cliquez sur l'icône puzzle <span class=\"puzzle\">🧩</span> dans la barre d'outils, puis sur l'épingle.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>Vérifiez à tout moment</strong> sur <code>chrome://discards</code> — les onglets protégés affichent ✕ dans la colonne <em>Auto Discardable</em>.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "L'interrupteur principal",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "Activez ou désactivez toute la protection ici. Lorsqu'il est désactivé, chaque onglet peut être mis en veille — vos règles sont conservées, simplement en pause.",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "Choisissez un mode de protection",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>Liste blanche uniquement</b> ne garde actifs que les sites que vous choisissez (le réglage par défaut, en douceur). <b>Tout protéger</b> garde chaque onglet actif sauf ceux que vous excluez.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "Gérez les onglets un par un",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "Chaque onglet ouvert a son propre interrupteur. Actionnez-le pour garder ce seul onglet actif ou le laisser se mettre en veille — un choix ponctuel qui dure jusqu'à la fermeture de l'onglet. Vous le voulez pour toujours ? Cliquez sur <b>Toujours pour ce site</b> à côté de l'interrupteur pour en faire une règle de site permanente. Cliquez sur une ligne pour accéder à l'onglet.",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "Définissez des règles par site",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "Ajoutez ici des domaines pour protéger (ou exclure) des sites entiers d'un coup. Un domaine couvre aussi ses sous-domaines — <code>example.com</code> correspond à <code>mail.example.com</code>. C'est la fin de la visite — rouvrez-la à tout moment depuis le bouton ?.",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "Ignorer",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "Retour",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "Suivant",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "Terminé",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "Cet onglet est protégé — Chrome ne le déchargera pas automatiquement.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "Cet onglet n'est pas protégé — Chrome peut le décharger pour libérer de la mémoire.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "La protection est en pause — aucun onglet n'est maintenu actif.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

@@ -1,0 +1,417 @@
+/* ── Design tokens & theming ──────────────────────────────────────────────
+   Light tokens live on :root. Dark tokens are declared twice:
+   1) auto: prefers-color-scheme:dark, unless the user pinned light
+   2) manual: :root[data-theme="dark"]
+   This gives system-follow by default plus a manual override, no JS colors. */
+
+:root {
+  color-scheme: light;
+
+  --accent: #10a37f;
+  --accent-strong: #0d8a6c;
+  --accent-soft: rgba(16, 163, 127, 0.12);
+  --danger: #e5484d;
+  --danger-soft: rgba(229, 72, 77, 0.12);
+  --info-strong: #1d4ed8;
+  --info-soft: rgba(37, 99, 235, 0.12);
+
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --surface-2: #f7f8fa;
+  --elevated: #ffffff;
+
+  --text: #1b1f24;
+  --text-muted: #6b7280;
+  --text-faint: #9aa1ab;
+
+  --border: #e6e8ec;
+  --border-strong: #d6d9df;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --radius-pill: 999px;
+
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.08);
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+  --ease: cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --accent: #2dd4a0;
+    --accent-strong: #38e0ac;
+    --accent-soft: rgba(45, 212, 160, 0.16);
+    --danger: #ff6369;
+    --danger-soft: rgba(255, 99, 105, 0.16);
+    --info-strong: #93c5fd;
+    --info-soft: rgba(96, 165, 250, 0.18);
+
+    --bg: #0f1115;
+    --surface: #181b21;
+    --surface-2: #1f232b;
+    --elevated: #20242c;
+
+    --text: #e9ecf1;
+    --text-muted: #9aa3b2;
+    --text-faint: #6b7383;
+
+    --border: #2a2f38;
+    --border-strong: #353b46;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.45);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --accent: #2dd4a0;
+  --accent-strong: #38e0ac;
+  --accent-soft: rgba(45, 212, 160, 0.16);
+  --danger: #ff6369;
+  --danger-soft: rgba(255, 99, 105, 0.16);
+
+  --bg: #0f1115;
+  --surface: #181b21;
+  --surface-2: #1f232b;
+  --elevated: #20242c;
+
+  --text: #e9ecf1;
+  --text-muted: #9aa3b2;
+  --text-faint: #6b7383;
+
+  --border: #2a2f38;
+  --border-strong: #353b46;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Toggle switch (shared) ─────────────────────────────────────────────── */
+
+.switch {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  cursor: pointer;
+}
+.switch input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch__track {
+  position: relative;
+  width: 40px;
+  height: 23px;
+  border-radius: var(--radius-pill);
+  background: var(--border-strong);
+  transition: background 0.22s var(--ease);
+}
+.switch__thumb {
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.22s var(--ease);
+}
+.switch input:checked + .switch__track {
+  background: var(--accent);
+}
+.switch input:checked + .switch__track .switch__thumb {
+  transform: translateX(17px);
+}
+.switch input:focus-visible + .switch__track {
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.switch--lg .switch__track {
+  width: 50px;
+  height: 29px;
+}
+.switch--lg .switch__thumb {
+  width: 23px;
+  height: 23px;
+  top: 3px;
+  left: 3px;
+}
+.switch--lg input:checked + .switch__track .switch__thumb {
+  transform: translateX(21px);
+}
+.switch--sm .switch__track {
+  width: 34px;
+  height: 20px;
+}
+.switch--sm .switch__thumb {
+  width: 15px;
+  height: 15px;
+  top: 2.5px;
+  left: 2.5px;
+}
+.switch--sm input:checked + .switch__track .switch__thumb {
+  transform: translateX(14px);
+}
+.switch input:disabled + .switch__track {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ── Buttons (shared) ───────────────────────────────────────────────────── */
+
+.btn {
+  appearance: none;
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s var(--ease), transform 0.06s var(--ease),
+    border-color 0.15s var(--ease), color 0.15s var(--ease);
+}
+.btn:hover {
+  background: var(--accent-strong);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border-strong);
+}
+.btn--ghost:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.btn--sm {
+  padding: 7px 11px;
+  font-size: 12px;
+}
+.btn--lg {
+  padding: 13px 28px;
+  font-size: 15px;
+  border-radius: var(--radius);
+}
+
+/* ── Brand (shared) ─────────────────────────────────────────────────────── */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand__logo {
+  display: block;
+  border-radius: 6px;
+}
+.brand__name {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* ── Page transitions & micro loader ────────────────────────────────────── */
+
+@keyframes fx-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Entrance: page containers ease in on load. */
+.page,
+.welcome,
+.app {
+  animation: fx-in 0.34s var(--ease) both;
+}
+
+/* Exit: fade the page out before navigating away. */
+body.fx-leaving .page,
+body.fx-leaving .welcome,
+body.fx-leaving .app {
+  animation: none;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+/* Thin top progress bar. */
+.fx-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  border-radius: 0 2px 2px 0;
+  z-index: 99999;
+  pointer-events: none;
+  transition: width 0.25s var(--ease), opacity 0.3s var(--ease);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page,
+  .welcome,
+  .app,
+  body.fx-leaving .page,
+  body.fx-leaving .welcome,
+  body.fx-leaving .app {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+}
+
+/* ── Round help / tour button (shared) ──────────────────────────────────── */
+
+.icon-btn {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.15s var(--ease), color 0.15s var(--ease);
+}
+.icon-btn svg {
+  width: 19px;
+  height: 19px;
+}
+.icon-btn:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+/* ── Guided tour (shared) ───────────────────────────────────────────────── */
+
+.tour-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998; /* transparent click-catcher; dim comes from the spotlight */
+}
+.tour-spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 12px;
+  z-index: 9999;
+  pointer-events: none;
+  box-shadow: 0 0 0 9999px rgba(8, 10, 14, 0.62);
+  transition: top 0.28s var(--ease), left 0.28s var(--ease), width 0.28s var(--ease),
+    height 0.28s var(--ease), opacity 0.2s var(--ease);
+}
+.tour-card {
+  position: fixed;
+  z-index: 10000;
+  width: 320px;
+  max-width: calc(100vw - 24px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 17px 18px 14px;
+  transition: top 0.28s var(--ease), left 0.28s var(--ease);
+}
+.tour-card__skip {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-faint);
+  cursor: pointer;
+  padding: 4px 7px;
+  border-radius: 6px;
+  transition: background 0.15s var(--ease), color 0.15s var(--ease);
+}
+.tour-card__skip:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.tour-card__title {
+  margin: 0 0 8px;
+  padding-right: 44px;
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.tour-card__body {
+  margin: 0 0 16px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+.tour-card__body b {
+  color: var(--text);
+  font-weight: 650;
+}
+.tour-card__body code {
+  font-size: 12px;
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.tour-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tour-card__progress {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+.tour-card__buttons {
+  display: flex;
+  gap: 8px;
+}

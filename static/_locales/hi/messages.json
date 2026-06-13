@@ -1,0 +1,594 @@
+{
+  "appName": {
+    "message": "Keep Tabs Alive — स्वचालित टैब डिस्कार्डिंग बंद करें",
+    "description": "Extension name shown in the Chrome Web Store and browser."
+  },
+  "appShortName": {
+    "message": "Keep Tabs Alive",
+    "description": "Short extension name used where space is limited."
+  },
+  "appDesc": {
+    "message": "Chrome की टैब डिस्कार्डिंग बंद करें और अनचाहे टैब रीलोड रोकें। प्रति-साइट नियम, प्रति-टैब नियंत्रण और लाइव आँकड़े।",
+    "description": "Extension description in the Web Store / extensions page."
+  },
+  "actionTitle": {
+    "message": "Keep Tabs Alive",
+    "description": "Toolbar button tooltip."
+  },
+  "brandName": {
+    "message": "Keep Tabs Alive",
+    "description": "Product name shown in the header."
+  },
+  "brandSub": {
+    "message": "स्वचालित टैब डिस्कार्डिंग बंद करें",
+    "description": "Tagline under the product name on the settings page."
+  },
+  "masterSwitchTitle": {
+    "message": "मुख्य स्विच",
+    "description": "Tooltip for the on/off master switch."
+  },
+  "statusActive": {
+    "message": "सुरक्षा चालू",
+    "description": "Status label when protection is on."
+  },
+  "statusPaused": {
+    "message": "रुका हुआ",
+    "description": "Status label when protection is off."
+  },
+  "tabsProtected": {
+    "message": "टैब सुरक्षित",
+    "description": "Label under the protected-tab count in the popup."
+  },
+  "thisTab": {
+    "message": "यह टैब",
+    "description": "Heading for the current-tab card in the popup."
+  },
+  "thisWebsite": {
+    "message": "यह वेबसाइट",
+    "description": "Label for the site-level switch in the popup."
+  },
+  "scopePermanent": {
+    "message": "स्थायी",
+    "description": "Scope chip on the site switch: the rule covers every page on the site and persists."
+  },
+  "scopeTemporary": {
+    "message": "अस्थायी",
+    "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
+  },
+  "internalPageTabOnly": {
+    "message": "आंतरिक पेजों के लिए साइट नियम नहीं होते — फिर भी आप इस टैब को बदल सकते हैं.",
+    "description": "Hint when the current page is internal: only the tab switch works."
+  },
+  "pageCantBeManaged": {
+    "message": "इस पेज को प्रबंधित नहीं किया जा सकता",
+    "description": "Shown when the current tab is an internal/extension page."
+  },
+  "notAvailableHere": {
+    "message": "यहाँ उपलब्ध नहीं",
+    "description": "Disabled button label for unmanageable pages."
+  },
+  "internalPagesUntouched": {
+    "message": "आंतरिक और एक्सटेंशन पेज हमेशा अछूते छोड़ दिए जाते हैं।",
+    "description": "Hint explaining why some pages can't be managed."
+  },
+  "stateProtected": {
+    "message": "सुरक्षित",
+    "description": "Badge: this tab is kept alive."
+  },
+  "stateDiscardable": {
+    "message": "डिस्कार्ड करने योग्य",
+    "description": "Badge: this tab may be discarded by Chrome."
+  },
+  "protectThisSite": {
+    "message": "इस साइट को सुरक्षित करें",
+    "description": "Button to start protecting the current site."
+  },
+  "stopProtectingThisSite": {
+    "message": "इस साइट को सुरक्षित करना बंद करें",
+    "description": "Button to stop protecting the current site (whitelist mode)."
+  },
+  "excludeThisSite": {
+    "message": "इस साइट को बाहर रखें",
+    "description": "Button to exclude the current site (exclude mode)."
+  },
+  "protectedSites": {
+    "message": "सुरक्षित साइटें",
+    "description": "Title for the list of whitelisted (kept-alive) sites."
+  },
+  "excludedSites": {
+    "message": "बाहर रखी गई साइटें",
+    "description": "Title for the list of excluded (discardable) sites."
+  },
+  "noSitesYet": {
+    "message": "अभी तक कोई साइट नहीं",
+    "description": "Empty state for the popup site list."
+  },
+  "moreCount": {
+    "message": "+$COUNT$ और",
+    "description": "Chip showing how many more sites are hidden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "removeDomain": {
+    "message": "$DOMAIN$ हटाएँ",
+    "description": "Accessible label for a remove-domain button.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "settingsAndStats": {
+    "message": "सेटिंग्स और आँकड़े",
+    "description": "Footer link from the popup to the options page."
+  },
+  "settingsTitle": {
+    "message": "Keep Tabs Alive — सेटिंग्स",
+    "description": "Document title of the settings page."
+  },
+  "welcomeTitle": {
+    "message": "स्वागत है — Keep Tabs Alive",
+    "description": "Document title of the welcome page."
+  },
+  "takeTour": {
+    "message": "टूर लें",
+    "description": "Tooltip/label for the guided-tour button."
+  },
+  "themeLabel": {
+    "message": "थीम",
+    "description": "Accessible label for the theme selector."
+  },
+  "themeAuto": {
+    "message": "स्वचालित",
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": {
+    "message": "लाइट",
+    "description": "Theme option: light."
+  },
+  "themeDark": {
+    "message": "डार्क",
+    "description": "Theme option: dark."
+  },
+  "statProtectedNow": {
+    "message": "अभी सुरक्षित",
+    "description": "Stat label: tabs currently protected."
+  },
+  "statOpenTabs": {
+    "message": "खुले टैब",
+    "description": "Stat label: total open tabs."
+  },
+  "statProtectOps": {
+    "message": "सुरक्षा संचालन",
+    "description": "Stat label: number of protect operations performed."
+  },
+  "statDiscardsObserved": {
+    "message": "देखे गए डिस्कार्ड",
+    "description": "Stat label: discard events observed."
+  },
+  "statsSince": {
+    "message": "$DATE$ से",
+    "description": "Shows when stats started being collected.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 5, 2026"
+      }
+    }
+  },
+  "reset": {
+    "message": "रीसेट",
+    "description": "Button to reset statistics."
+  },
+  "protectionMode": {
+    "message": "सुरक्षा मोड",
+    "description": "Heading for the protection-mode chooser."
+  },
+  "modeProtectEverything": {
+    "message": "सब कुछ सुरक्षित करें",
+    "description": "Mode name: protect all tabs except exclusions."
+  },
+  "modeProtectEverythingDesc": {
+    "message": "जिन साइटों को आप बाहर रखते हैं, उन्हें छोड़कर सभी टैब सक्रिय रखें।",
+    "description": "Description of the protect-everything mode."
+  },
+  "modeWhitelistOnly": {
+    "message": "केवल व्हाइटलिस्ट",
+    "description": "Mode name: protect only listed sites."
+  },
+  "modeWhitelistOnlyDesc": {
+    "message": "केवल उन साइटों को सक्रिय रखें जिन्हें आप सूचीबद्ध करते हैं।",
+    "description": "Description of the whitelist-only mode."
+  },
+  "openTabs": {
+    "message": "खुले टैब",
+    "description": "Heading for the live list of open tabs."
+  },
+  "searchTabs": {
+    "message": "टैब खोजें…",
+    "description": "Placeholder for the tab search box."
+  },
+  "openTabsDesc": {
+    "message": "किसी टैब को सक्रिय रखने या Chrome को उसे डिस्कार्ड करने देने के लिए स्विच पलटें। मैनुअल स्विच साइट नियमों को ओवरराइड करता है और टैब बंद होने तक बना रहता है।",
+    "description": "Description under the open-tabs heading."
+  },
+  "noOpenTabs": {
+    "message": "कोई खुला टैब नहीं।",
+    "description": "Empty state when there are no open tabs."
+  },
+  "noTabsMatch": {
+    "message": "आपकी खोज से कोई टैब मेल नहीं खाता।",
+    "description": "Empty state when a search returns no tabs."
+  },
+  "thisWindowCount": {
+    "message": "यह विंडो · $COUNT$",
+    "description": "Group header for the focused window and its tab count.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "windowNoCount": {
+    "message": "विंडो $NO$ · $COUNT$",
+    "description": "Group header for another window and its tab count.",
+    "placeholders": {
+      "no": {
+        "content": "$1",
+        "example": "2"
+      },
+      "count": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "tagManual": {
+    "message": "मैनुअल",
+    "description": "Tag: this tab has a manual override."
+  },
+  "tagAsleep": {
+    "message": "सुप्त",
+    "description": "Tag: this tab is currently discarded."
+  },
+  "tagPinned": {
+    "message": "पिन किया गया",
+    "description": "Tag: this tab is pinned."
+  },
+  "tagPlaying": {
+    "message": "चल रहा है",
+    "description": "Tag: this tab is playing audio."
+  },
+  "untitledTab": {
+    "message": "बिना शीर्षक टैब",
+    "description": "Fallback title for a tab with no title."
+  },
+  "internalPage": {
+    "message": "आंतरिक पेज",
+    "description": "Fallback host label for internal pages."
+  },
+  "switchToThisTab": {
+    "message": "इस टैब पर जाएँ",
+    "description": "Tooltip for the clickable tab row."
+  },
+  "switchPausedByMaster": {
+    "message": "मास्टर स्विच द्वारा सुरक्षा रोकी गई है",
+    "description": "Tooltip when the per-tab switch is disabled."
+  },
+  "switchProtectedFlip": {
+    "message": "सुरक्षित — Chrome को इस टैब को डिस्कार्ड करने देने के लिए पलटें",
+    "description": "Tooltip for a protected tab's switch."
+  },
+  "switchDiscardableFlip": {
+    "message": "डिस्कार्ड करने योग्य — इस टैब को सक्रिय रखने के लिए पलटें",
+    "description": "Tooltip for a discardable tab's switch."
+  },
+  "listDescWhitelist": {
+    "message": "केवल ये साइटें सक्रिय रखी जाती हैं; बाकी सब डिस्कार्ड हो सकती हैं। एक डोमेन अपने सबडोमेन से भी मेल खाता है — जैसे <code>example.com</code> <code>mail.example.com</code> को कवर करता है।",
+    "description": "Description for the whitelist site list. Keep the <code> tags."
+  },
+  "listDescExclude": {
+    "message": "इन साइटों को डिस्कार्ड होने की अनुमति है। एक डोमेन अपने सबडोमेन से भी मेल खाता है — जैसे <code>example.com</code> <code>mail.example.com</code> को कवर करता है।",
+    "description": "Description for the exclude site list. Keep the <code> tags."
+  },
+  "domainPlaceholderWhitelist": {
+    "message": "site-to-keep.com",
+    "description": "Placeholder for the domain input in whitelist mode."
+  },
+  "domainPlaceholderExclude": {
+    "message": "site-to-discard.com",
+    "description": "Placeholder for the domain input in exclude mode."
+  },
+  "domainPlaceholderDefault": {
+    "message": "example.com",
+    "description": "Default placeholder for the domain input."
+  },
+  "add": {
+    "message": "जोड़ें",
+    "description": "Button to add a domain."
+  },
+  "remove": {
+    "message": "हटाएँ",
+    "description": "Button to remove a domain from the list."
+  },
+  "alwaysForThisSite": {
+    "message": "इस साइट के लिए हमेशा",
+    "description": "Button to promote a one-time tab override into a permanent site rule."
+  },
+  "alwaysKeepHost": {
+    "message": "$HOST$ को हमेशा सक्रिय रखें (एक साइट नियम जोड़ता है)",
+    "description": "Tooltip for the always-protect action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysDiscardHost": {
+    "message": "$HOST$ को हमेशा डिस्कार्ड होने दें (साइट नियम अपडेट करता है)",
+    "description": "Tooltip for the always-discard action.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "alwaysKeptAlive": {
+    "message": "हमेशा सक्रिय रखा गया",
+    "description": "Active state of the always-button when the site is whitelisted."
+  },
+  "alwaysDiscardable": {
+    "message": "हमेशा डिस्कार्ड करने योग्य",
+    "description": "Active state of the always-button when the site is excluded."
+  },
+  "alwaysUndoTip": {
+    "message": "$HOST$ साइट नियम के रूप में सहेजा गया है — इसे हटाने के लिए क्लिक करें",
+    "description": "Tooltip for the active always-button (click removes the rule).",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastRuleRemoved": {
+    "message": "हटाया गया — $HOST$ अब फिर से मोड डिफ़ॉल्ट का पालन करता है।",
+    "description": "Toast after removing a permanent site rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysProtected": {
+    "message": "सहेजा गया — $HOST$ अब हमेशा सक्रिय रहेगा। नीचे साइट नियम देखें।",
+    "description": "Toast after promoting a protect override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "toastAlwaysDiscardable": {
+    "message": "सहेजा गया — $HOST$ अब हमेशा डिस्कार्ड किया जा सकता है। नीचे साइट नियम देखें।",
+    "description": "Toast after promoting a discard override to a permanent rule.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "nothingHereYet": {
+    "message": "यहाँ अभी तक कुछ नहीं।",
+    "description": "Empty state for the domain list on the settings page."
+  },
+  "errorInvalidDomain": {
+    "message": "एक मान्य डोमेन दर्ज करें, जैसे example.com",
+    "description": "Validation error for an invalid domain."
+  },
+  "errorDomainExists": {
+    "message": "$DOMAIN$ पहले से सूची में है।",
+    "description": "Error when adding a domain that already exists.",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "errorMaxDomains": {
+    "message": "आप अधिकतम $MAX$ डोमेन जोड़ सकते हैं।",
+    "description": "Error when the domain limit is reached.",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "footerTip": {
+    "message": "टिप: <strong>Auto Discardable</strong> कॉलम देखने के लिए <code>chrome://discards</code> खोलें — सुरक्षित टैब ✕ दिखाते हैं। ध्यान दें: वहाँ मैनुअल डिस्कार्ड अब भी काम करते हैं; यह केवल Chrome के <em>स्वचालित</em> मेमोरी-सेवर डिस्कार्डिंग को रोकता है।",
+    "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
+  },
+  "heroEyebrow": {
+    "message": "स्वागत है",
+    "description": "Small eyebrow text above the welcome title."
+  },
+  "heroTitle": {
+    "message": "जो टैब मायने रखते हैं उन्हें सक्रिय रखें",
+    "description": "Main welcome headline."
+  },
+  "heroLead": {
+    "message": "Chrome का मेमोरी सेवर RAM खाली करने के लिए निष्क्रिय टैब हटा देता है, और लौटने पर उन्हें फिर से लोड करता है. Keep Tabs Alive आपको चुनने देता है कि कौन-से टैब सक्रिय और तैयार रहें — अनचाहे रीलोड और रुकावटों को रोकते हुए.",
+    "description": "Intro paragraph on the welcome page."
+  },
+  "wcard1Title": {
+    "message": "टैब अपनी जगह रहते हैं",
+    "description": "Welcome card 1 title."
+  },
+  "wcard1Text": {
+    "message": "खुले टैब अपने पेज की स्थिति और जारी काम के साथ उपयोग के लिए तैयार रहते हैं — बिना किसी अप्रत्याशित रीलोड के.",
+    "description": "Welcome card 1 body."
+  },
+  "wcard2Title": {
+    "message": "प्रति-टैब स्विच",
+    "description": "Welcome card 2 title."
+  },
+  "wcard2Text": {
+    "message": "सेटिंग्स पेज हर खुले टैब को उसके अपने स्विच के साथ सूचीबद्ध करता है. एक टैब को सक्रिय रखें या दूसरे को सोने दें — यह केवल उस टैब के लिए नियमों को ओवरराइड करता है.",
+    "description": "Welcome card 2 body."
+  },
+  "wcard3Title": {
+    "message": "साइट नियम",
+    "description": "Welcome card 3 title."
+  },
+  "wcard3Text": {
+    "message": "कुछ साइटों को छोड़कर सब कुछ सुरक्षित करें, या केवल अपनी चुनी हुई साइटों को व्हाइटलिस्ट करें. नियम सबडोमेन से भी मेल खाते हैं — <code>example.com</code> इन सबको कवर करता है.",
+    "description": "Welcome card 3 body. Keep the <code> tag."
+  },
+  "chooseYourSites": {
+    "message": "शुरू करें",
+    "description": "Primary call-to-action button on the welcome page."
+  },
+  "actionsNote": {
+    "message": "डिफ़ॉल्ट रूप से सब कुछ सुरक्षित रखना पसंद करते हैं? आप सेटिंग्स में मोड बदल सकते हैं.",
+    "description": "Note under the welcome CTA."
+  },
+  "welcomeStep1": {
+    "message": "<strong>एक-क्लिक पहुँच के लिए इसे पिन करें</strong>: टूलबार में <span class=\"puzzle\">🧩</span> पज़ल आइकन पर क्लिक करें, फिर पिन पर.",
+    "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
+  },
+  "welcomeStep2": {
+    "message": "<strong>किसी भी समय जाँचें</strong> <code>chrome://discards</code> पर — सुरक्षित टैब <em>Auto Discardable</em> कॉलम में ✕ दिखाते हैं.",
+    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
+  },
+  "tourMasterTitle": {
+    "message": "मास्टर स्विच",
+    "description": "Tour step title."
+  },
+  "tourMasterBody": {
+    "message": "यहाँ सारी सुरक्षा चालू या बंद करें। जब यह बंद होती है, तो हर टैब डिस्कार्ड होने के लिए स्वतंत्र होता है — आपके नियम बने रहते हैं, बस रुक जाते हैं।",
+    "description": "Tour step body."
+  },
+  "tourModeTitle": {
+    "message": "एक सुरक्षा मोड चुनें",
+    "description": "Tour step title."
+  },
+  "tourModeBody": {
+    "message": "<b>केवल व्हाइटलिस्ट</b> केवल उन साइटों को सक्रिय रखता है जिन्हें आप चुनते हैं (सौम्य डिफ़ॉल्ट)। <b>सब कुछ सुरक्षित करें</b> उन साइटों को छोड़कर हर टैब को सक्रिय रखता है जिन्हें आप बाहर रखते हैं।",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourTabsTitle": {
+    "message": "टैब एक-एक करके प्रबंधित करें",
+    "description": "Tour step title."
+  },
+  "tourTabsBody": {
+    "message": "प्रत्येक खुले टैब का अपना स्विच होता है। उस एकल टैब को सक्रिय रखने या उसे सुप्त होने देने के लिए इसे पलटें — एक बार का चुनाव जो टैब बंद होने तक बना रहता है। इसे हमेशा के लिए चाहते हैं? इसे स्थायी साइट नियम में बदलने के लिए स्विच के बगल में <b>इस साइट के लिए हमेशा</b> पर क्लिक करें। टैब पर जाने के लिए किसी पंक्ति पर क्लिक करें।",
+    "description": "Tour step body. Keep the <b> tags."
+  },
+  "tourRulesTitle": {
+    "message": "साइट के अनुसार नियम सेट करें",
+    "description": "Tour step title."
+  },
+  "tourRulesBody": {
+    "message": "पूरी साइटों को एक साथ सुरक्षित (या बाहर) करने के लिए यहाँ डोमेन जोड़ें। एक डोमेन अपने सबडोमेन को भी कवर करता है — <code>example.com</code> <code>mail.example.com</code> से मेल खाता है। यही टूर है — इसे ? बटन से कभी भी फिर से खोलें।",
+    "description": "Tour step body. Keep the <code> tags."
+  },
+  "tourSkip": {
+    "message": "छोड़ें",
+    "description": "Tour: skip the tour."
+  },
+  "tourBack": {
+    "message": "पीछे",
+    "description": "Tour: go to the previous step."
+  },
+  "tourNext": {
+    "message": "आगे",
+    "description": "Tour: go to the next step."
+  },
+  "tourDone": {
+    "message": "पूर्ण",
+    "description": "Tour: finish on the last step."
+  },
+  "tourProgress": {
+    "message": "$CURRENT$ / $TOTAL$",
+    "description": "Tour progress indicator, e.g. 2 / 4.",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "internalPagesGroup": {
+    "message": "Internal pages",
+    "description": "Group header for tabs without a web host (chrome://, extension pages)."
+  },
+  "keepSiteAlive": {
+    "message": "Keep alive",
+    "description": "Label next to the site-wide switch in a tab group header."
+  },
+  "keepSiteAliveTip": {
+    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "description": "Tooltip for the site-wide keep-alive switch in a group header.",
+    "placeholders": {
+      "host": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popupSummaryProtected": {
+    "message": "यह टैब सुरक्षित है — Chrome इसे अपने आप नहीं हटाएगा.",
+    "description": "Popup summary line when the current tab is kept alive."
+  },
+  "popupSummaryDiscardable": {
+    "message": "यह टैब सुरक्षित नहीं है — मेमोरी खाली करने के लिए Chrome इसे हटा सकता है.",
+    "description": "Popup summary line when the current tab can be discarded."
+  },
+  "popupSummaryPaused": {
+    "message": "सुरक्षा रुकी हुई है — कोई भी टैब सक्रिय नहीं रखा जा रहा.",
+    "description": "Popup summary line when the master switch is off."
+  },
+  "tagClosed": {
+    "message": "Closed",
+    "description": "Tag: this tab is closed but its activation is remembered."
+  },
+  "ghostForgetTip": {
+    "message": "Stop keeping this closed tab alive (forget it)",
+    "description": "Tooltip on the switch of a remembered, closed tab."
+  },
+  "groupHasPinned": {
+    "message": "This group has pinned tabs.",
+    "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
+  },
+  "groupPinnedUnprotected": {
+    "message": "Pinned tabs here aren't being kept alive.",
+    "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
+  },
+  "groupActiveCount": {
+    "message": "$COUNT$ tab(s) here are kept alive.",
+    "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

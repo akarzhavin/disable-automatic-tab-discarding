@@ -1,0 +1,701 @@
+/* ════════════════════════════════════════════════════════════════════════
+   "The Document" — borderless, seamless options page.
+   The whole 1200px column is ONE continuous sheet (one surface, one radius,
+   one shadow). Former cards become content BANDS, separated only by
+   full-bleed hairline rules + whitespace + typography. No boxed panels, no
+   nested elevation, no outlines — presence comes from tinted fills and weight.
+   ════════════════════════════════════════════════════════════════════════ */
+
+/* ── One continuous surface ───────────────────────────────────────────────
+   The whole viewport IS the sheet — no gray frame, no floating box. The
+   content is just a centered column on it; sections divide by hairlines. */
+body {
+  background: var(--surface);
+}
+.page {
+  max-width: 1200px;
+  margin: 28px auto 44px;
+  padding: 0; /* padding now lives per-band */
+  display: block; /* no flex gap that separated cards */
+  background: transparent;
+}
+
+/* ── Band primitive: every former panel is a transparent content band whose
+   ONLY separator is a full-bleed 1px hairline on top — never a box. ─────── */
+.panel {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 26px 32px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Topbar = masthead (first band, no top hairline) ──────────────────────── */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0;
+  padding: 24px 32px;
+}
+.topbar .brand__logo {
+  border-radius: 11px;
+  box-shadow: var(--shadow-sm); /* the one sanctioned depth accent — it's an app icon */
+}
+.topbar h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+.brand__sub {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.topbar__controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Help button — flat borderless circle (scoped so shared component is untouched). */
+.page .icon-btn {
+  border: 0;
+  background: transparent;
+}
+.page .icon-btn:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+/* Theme segmented control — flat borderless pill, active = pressed key. */
+.seg {
+  display: inline-flex;
+  background: var(--surface-2);
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  gap: 2px;
+}
+.seg__btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 6px 13px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background 0.15s var(--ease), color 0.15s var(--ease);
+}
+.seg__btn:hover {
+  color: var(--text);
+}
+.seg__btn[aria-checked="true"] {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Section heads + shared bits ──────────────────────────────────────────── */
+.panel__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.panel__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.panel__desc {
+  margin: 6px 0 16px;
+  max-width: 72ch;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+.panel__desc code,
+.page__footer code {
+  font-size: 12px;
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.count-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Stats band — masthead numbers, hero metric on an accent backplate ─────── */
+.statbar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 32px;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+}
+/* Lead metric (protected now) glows out of the sheet — fill, not a box. */
+.stat:first-child {
+  background: var(--accent-soft);
+}
+.stat__num {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+}
+.stat__num--accent {
+  color: var(--accent-strong);
+}
+.stat__label {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.statbar__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+.linklike {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background 0.15s var(--ease), color 0.15s var(--ease);
+}
+.linklike:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+/* ── Protection mode — borderless swatches, inset accent rail on select ────── */
+.modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+.mode {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 14px 15px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: background 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+.mode:hover {
+  background: color-mix(in srgb, var(--surface-2) 70%, var(--border) 30%);
+}
+.mode input {
+  margin: 2px 0 0;
+  accent-color: var(--accent);
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+/* Selected = accent tint + 2px inset accent rail (NOT a border). */
+.mode:has(input:checked) {
+  background: var(--accent-soft);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+.mode:has(input:checked) .mode__name {
+  color: var(--accent-strong);
+}
+.mode__body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.mode__name {
+  font-size: 13.5px;
+  font-weight: 650;
+}
+.mode__desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ── Open tabs (centerpiece) ──────────────────────────────────────────────── */
+
+/* Search — underline-only field. `.input.input--search` wins over `.input`
+   regardless of source order (higher specificity). */
+.input--search {
+  margin-left: auto;
+  max-width: 230px;
+}
+.input.input--search {
+  padding: 7px 2px;
+  font-size: 13px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1.5px solid var(--border);
+  border-radius: 0;
+  color: var(--text);
+  transition: border-color 0.15s var(--ease);
+}
+.input.input--search:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+  box-shadow: none;
+}
+
+/* The list grows to its full natural height — the page scrolls, not the list. */
+.tab-groups__empty {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+/* Each group is its own rounded card so its boundaries read clearly. */
+.tab-group {
+  margin: 10px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s var(--ease);
+}
+.tab-group:first-child {
+  margin-top: 4px;
+}
+.tab-group:hover,
+.tab-group.is-expanded {
+  border-color: var(--border-strong);
+}
+
+/* Host head — favicon, name and count, plus the site-wide switch. */
+.tab-group__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+}
+.tab-group.is-expanded .tab-group__head {
+  border-bottom: 1px solid var(--border);
+}
+/* Collapse toggle — fills the row so the whole host area is a click target. */
+.tab-group__toggle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  padding: 4px 6px;
+  margin: -4px -6px;
+  border-radius: var(--radius-sm);
+  transition: background 0.13s var(--ease);
+}
+.tab-group__toggle:hover {
+  background: var(--surface-2);
+}
+/* Site logo before the host name. */
+.tab-group__icon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+}
+.tab-group__icon img,
+.tab-group__icon svg {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+.tab-group__icon svg {
+  color: var(--text-faint);
+}
+.tab-group__chevron {
+  flex: none;
+  width: 13px;
+  height: 13px;
+  color: var(--text-faint);
+  transition: transform 0.15s var(--ease);
+}
+.tab-group__toggle[aria-expanded="true"] .tab-group__chevron {
+  transform: rotate(90deg);
+}
+/* "Keep alive" label sits just left of the site switch. */
+.tab-group__alive {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-faint);
+}
+.tab-group__host {
+  min-width: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab-group__count {
+  flex: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-faint);
+  background: var(--surface-2);
+  border-radius: var(--radius-pill);
+  padding: 1px 8px;
+  font-variant-numeric: tabular-nums;
+}
+/* Kept-alive flag on a collapsed group — accent dot + count. */
+.tab-group__active {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px 2px 8px;
+  font-variant-numeric: tabular-nums;
+}
+.tab-group__active .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Pinned-tabs flag on a collapsed group — pin glyph + count. */
+.tab-group__pins {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border-radius: var(--radius-pill);
+  padding: 2px 8px 2px 6px;
+  font-variant-numeric: tabular-nums;
+}
+.tab-group__pins svg {
+  width: 12px;
+  height: 12px;
+}
+.tab-group__pins--warn {
+  color: var(--danger);
+  background: var(--danger-soft);
+}
+
+/* Rows: no dividers at rest. Zebra-by-tint tracks long lists; full-row hover
+   (stronger fill) always beats the zebra. nth-child scopes per group <ul>. */
+.tab-list {
+  list-style: none;
+  margin: 0;
+  padding: 5px 6px;
+}
+.tab-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  transition: background 0.13s var(--ease);
+}
+.tab-row:nth-child(even) {
+  background: color-mix(in srgb, var(--surface-2) 45%, transparent);
+}
+.tab-row:hover {
+  background: var(--surface-2);
+}
+.tab-row.is-asleep .tab-row__main {
+  opacity: 0.55;
+}
+.tab-row__main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  padding: 6px 8px;
+}
+.tab-row__favicon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+.tab-row__text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.tab-row__title {
+  font-size: 13.5px;
+  font-weight: 550;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab-row__sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.tab-row__host {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* State tags — flat tinted chips, no border. */
+.minitag {
+  flex: none;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1.5px 6px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-2);
+  color: var(--text-muted);
+}
+.minitag--manual {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+.minitag--closed {
+  background: var(--surface-2);
+  color: var(--text-faint);
+}
+
+/* Ghost rows — a remembered tab that's currently closed. Dimmed, not clickable. */
+.tab-row.is-ghost .tab-row__main {
+  opacity: 0.6;
+}
+.tab-row__main--static {
+  cursor: default;
+}
+.tab-row__favicon--ghost {
+  display: grid;
+  place-items: center;
+  color: var(--text-faint);
+}
+.tab-row__favicon--ghost svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* Toast — feedback after an action (e.g. a rule was saved). Fixed, unclipped. */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 26px;
+  transform: translate(-50%, 14px);
+  max-width: min(480px, calc(100vw - 32px));
+  background: var(--elevated);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 550;
+  color: var(--text);
+  z-index: 10001;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s var(--ease), transform 0.22s var(--ease);
+}
+.toast--show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.toast--error {
+  border-left-color: var(--danger);
+}
+
+/* ── Site rules — flat-fill input, flush hover/zebra rows, ghost remove ────── */
+.adder {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.input {
+  flex: 1;
+  font: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  transition: box-shadow 0.15s var(--ease);
+}
+.input::placeholder {
+  color: var(--text-faint);
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-soft), inset 0 -2px 0 var(--accent);
+}
+.adder__error {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  color: var(--danger);
+}
+.domain-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.domain-list__empty {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: var(--text-faint);
+}
+.domain-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 6px;
+  border-radius: var(--radius-sm);
+  transition: background 0.13s var(--ease);
+}
+.domain-row:nth-child(even) {
+  background: color-mix(in srgb, var(--surface-2) 45%, transparent);
+}
+.domain-row:hover {
+  background: var(--surface-2);
+}
+.domain-row__name {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  word-break: break-all;
+}
+.domain-row__remove {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background 0.15s var(--ease), color 0.15s var(--ease);
+}
+.domain-row__remove:hover {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+/* ── Footer — full-bleed hairline band, matching the rhythm ────────────────── */
+.page__footer {
+  margin: 0;
+  padding: 22px 32px 26px;
+  border-top: 1px solid var(--border);
+}
+.page__footer p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--text-faint);
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+@media (max-width: 720px) {
+  .page {
+    margin: 0 auto 24px;
+  }
+  .topbar {
+    flex-wrap: wrap;
+    padding: 20px 18px;
+  }
+  .panel,
+  .page__footer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .statbar {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .statbar__meta {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modes {
+    grid-template-columns: 1fr;
+  }
+  .panel__head {
+    flex-wrap: wrap;
+  }
+  .input--search {
+    margin-left: 0;
+    max-width: none;
+    width: 100%;
+    order: 10;
+  }
+}
