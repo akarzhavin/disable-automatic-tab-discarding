@@ -1,0 +1,97 @@
+/* Chrome Web Store promo TILES — small (440×280) & marquee (1400×560) */
+:root {
+  --accent: #10a37f;
+  --accent-strong: #0d8a6c;
+  --ink: #10241d;
+  --muted: #4a5b54;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font); -webkit-font-smoothing: antialiased; }
+
+.tile { position: relative; overflow: hidden; }
+.tile .bg { position: absolute; inset: 0; z-index: 0; }
+.tile .bg::before, .tile .bg::after { content: ""; position: absolute; border-radius: 50%; }
+.tile .bg::before {
+  width: 60%; aspect-ratio: 1; top: -22%; right: -12%;
+  background: radial-gradient(circle at 30% 30%, rgba(16,163,127,0.22), transparent 70%);
+}
+.tile .bg::after {
+  width: 55%; aspect-ratio: 1; bottom: -28%; left: -14%;
+  background: radial-gradient(circle at 50% 50%, rgba(16,163,127,0.13), transparent 70%);
+}
+
+.eyebrow {
+  display: inline-block; font-weight: 800; letter-spacing: 0.16em;
+  color: var(--accent-strong); background: rgba(16,163,127,0.10);
+  border-radius: 999px;
+}
+.brandrow { display: flex; align-items: center; gap: 12px; }
+.brandrow img { border-radius: 9px; display: block; }
+.brandrow span { font-weight: 800; letter-spacing: -0.01em; color: var(--ink); }
+
+/* ── Small tile 440×280 ─────────────────────────────────────────────────── */
+.tile--small {
+  width: 440px; height: 280px;
+  background: linear-gradient(135deg, #e9f8f2 0%, #f4f6f8 60%, #eef7fb 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 28px;
+}
+.tile--small .logo {
+  width: 78px; height: 78px; border-radius: 19px; display: block;
+  box-shadow: 0 10px 26px rgba(16,24,40,0.16), 0 2px 6px rgba(16,24,40,0.08);
+  position: relative; z-index: 1;
+}
+.tile--small .name {
+  position: relative; z-index: 1;
+  margin-top: 18px; font-size: 27px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink);
+}
+.tile--small .tag {
+  position: relative; z-index: 1;
+  margin-top: 9px; font-size: 14.5px; line-height: 1.4; font-weight: 500; color: var(--muted);
+  max-width: 330px;
+}
+
+/* ── Marquee tile 1400×560 ──────────────────────────────────────────────── */
+.tile--marquee {
+  width: 1400px; height: 560px;
+  background: linear-gradient(125deg, #e9f8f2 0%, #f3f6f8 55%, #eaf3fb 100%);
+  display: grid; grid-template-columns: 1.15fr 1fr; align-items: center;
+  gap: 40px; padding: 0 92px;
+}
+.tile--marquee .copy { position: relative; z-index: 2; max-width: 600px; }
+.tile--marquee .brandrow { margin-bottom: 26px; }
+.tile--marquee .brandrow img { width: 46px; height: 46px; border-radius: 11px;
+  box-shadow: 0 6px 16px rgba(16,24,40,0.12); }
+.tile--marquee .brandrow span { font-size: 23px; }
+.tile--marquee .eyebrow { font-size: 14px; padding: 7px 14px; margin-bottom: 18px; }
+.tile--marquee h1 {
+  font-size: 52px; line-height: 1.05; font-weight: 800; letter-spacing: -0.025em; color: var(--ink);
+}
+.tile--marquee p {
+  margin-top: 20px; font-size: 20px; line-height: 1.5; font-weight: 450; color: var(--muted);
+  max-width: 540px;
+}
+
+/* Popup device (toolbar + real popup iframe) */
+.stage { position: relative; z-index: 2; display: grid; place-items: center; }
+.device { position: relative; width: 372px; }
+.device .toolbar {
+  height: 46px; width: 372px; background: #fff; border: 1px solid #e6e8ec; border-radius: 12px;
+  display: flex; align-items: center; justify-content: flex-end; padding: 0 12px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+.device .toolbar__ext {
+  position: relative; display: grid; place-items: center;
+  width: 32px; height: 32px; border-radius: 8px; background: #f1f3f5;
+}
+.device .toolbar__badge {
+  position: absolute; top: -6px; right: -8px; min-width: 18px; height: 18px; padding: 0 4px;
+  background: var(--accent); color: #fff; font-size: 11px; font-weight: 800; line-height: 18px;
+  text-align: center; border-radius: 999px; border: 2px solid #fff;
+}
+.device iframe {
+  display: block; width: 340px; height: 384px; border: 0; margin: 10px 0 0 auto;
+  background: #f4f5f7; border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(16,24,40,0.22), 0 4px 12px rgba(16,24,40,0.10);
+}
