@@ -1,0 +1,1433 @@
+{
+  "en": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Stop Chrome from<br>reloading your tabs",
+      "sub": "Chrome's Memory Saver discards idle tabs and reloads them from scratch when you switch back. Keep the tabs that matter exactly where you left them."
+    },
+    "slide2": {
+      "eyebrow": "EVERY TAB, ONE PLACE",
+      "title": "See and control every open tab",
+      "sub": "A live list of all your tabs — grouped by site, searchable, with stats. Flip a switch to keep any tab alive, or let Chrome discard it."
+    },
+    "slide3": {
+      "eyebrow": "YOUR RULES",
+      "title": "Protect everything — or just what you choose",
+      "sub": "Two modes plus per-site rules. Domain rules cover subdomains automatically, so example.com protects all of it."
+    },
+    "slide4": {
+      "eyebrow": "ONE CLICK",
+      "title": "Per site or<br>per tab — instantly",
+      "sub": "Protect or exclude the current site straight from the toolbar. Or override a single tab until you close it. Domain rules cover subdomains too."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATE BY DESIGN",
+      "title": "Lightweight, private,<br>in 50+ languages",
+      "sub": "No tracking, no analytics, no servers — everything stays in your browser. Light, dark or auto theme, fully localized."
+    }
+  },
+  "af": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Keer dat Chrome jou<br>oortjies herlaai",
+      "sub": "Chrome se Geheuebespaarder gooi ledige oortjies weg en herlaai hulle van voor af wanneer jy terugskakel. Hou die oortjies wat saak maak presies waar jy hulle gelos het."
+    },
+    "slide2": {
+      "eyebrow": "ELKE OORTJIE, EEN PLEK",
+      "title": "Sien en beheer elke oop oortjie",
+      "sub": "'n Lewende lys van al jou oortjies — gegroepeer per werf, deursoekbaar, met statistiek. Skakel 'n knoppie om enige oortjie lewend te hou, of laat Chrome dit weggooi."
+    },
+    "slide3": {
+      "eyebrow": "JOU REËLS",
+      "title": "Beskerm alles — of net wat jy kies",
+      "sub": "Twee modusse plus per-werf-reëls. Domeinreëls dek subdomeine outomaties, sodat example.com alles daarvan beskerm."
+    },
+    "slide4": {
+      "eyebrow": "EEN KLIK",
+      "title": "Per werf of<br>per oortjie — dadelik",
+      "sub": "Beskerm of sluit die huidige werf reguit vanaf die nutsbalk uit. Of oorheers 'n enkele oortjie totdat jy dit toemaak. Domeinreëls dek ook subdomeine."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAAT VAN ONTWERP",
+      "title": "Lig, privaat,<br>in 50+ tale",
+      "sub": "Geen nasporing, geen analise, geen bedieners nie — alles bly in jou blaaier. Lig-, donker- of outo-tema, ten volle gelokaliseer."
+    }
+  },
+  "am": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome ትሮችዎን<br>እንዳይጭን ያስቁሙት",
+      "sub": "የChrome ማህደረ ትውስታ ቆጣቢ ስራ ፈት ትሮችን ያስወግዳል እና ሲመለሱ ከባዶ እንደገና ይጭናቸዋል። አስፈላጊ የሆኑትን ትሮች በትክክል በተዉበት ቦታ ያቆዩ።"
+    },
+    "slide2": {
+      "eyebrow": "እያንዳንዱ ትር፣ በአንድ ቦታ",
+      "title": "እያንዳንዱን የተከፈተ ትር ይመልከቱ እና ይቆጣጠሩ",
+      "sub": "የሁሉም ትሮችዎ ቀጥታ ዝርዝር — በጣቢያ የተመደበ፣ ሊፈለግ የሚችል፣ ከስታቲስቲክስ ጋር። ማንኛውንም ትር በሕይወት ለማቆየት ማብሪያ ይቀያይሩ፣ ወይም Chrome እንዲያስወግደው ይፍቀዱ።"
+    },
+    "slide3": {
+      "eyebrow": "የእርስዎ ሕጎች",
+      "title": "ሁሉንም ይጠብቁ — ወይም የመረጡትን ብቻ",
+      "sub": "ሁለት ሁነታዎች ከጣቢያ-ተኮር ሕጎች ጋር። የጎራ ሕጎች ንዑስ ጎራዎችን በራስ-ሰር ይሸፍናሉ፣ ስለዚህ example.com ሁሉንም ይጠብቃል።"
+    },
+    "slide4": {
+      "eyebrow": "በአንድ ጠቅታ",
+      "title": "በጣቢያ ወይም<br>በትር — ወዲያውኑ",
+      "sub": "የአሁኑን ጣቢያ ከመሣሪያ አሞሌው በቀጥታ ይጠብቁ ወይም ያግልሉ። ወይም አንድን ትር እስኪዘጉት ድረስ ይሽሩት። የጎራ ሕጎች ንዑስ ጎራዎችንም ይሸፍናሉ።"
+    },
+    "slide5": {
+      "eyebrow": "በንድፍ የግል",
+      "title": "ቀላል፣ የግል፣<br>በ50+ ቋንቋዎች",
+      "sub": "ክትትል የለም፣ ትንታኔ የለም፣ አገልጋዮች የሉም — ሁሉም ነገር በአሳሽዎ ውስጥ ይቆያል። ብሩህ፣ ጨለማ ወይም ራስ-ሰር ገጽታ፣ ሙሉ በሙሉ የተተረጎመ።"
+    }
+  },
+  "ar": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "أوقِف Chrome عن<br>إعادة تحميل علامات تبويبك",
+      "sub": "يتخلص موفّر الذاكرة في Chrome من علامات التبويب الخاملة ويعيد تحميلها من جديد عند رجوعك إليها. أبقِ علامات التبويب المهمة تمامًا حيث تركتها."
+    },
+    "slide2": {
+      "eyebrow": "كل علامة تبويب في مكان واحد",
+      "title": "اعرض كل علامة تبويب مفتوحة وتحكّم بها",
+      "sub": "قائمة حيّة بكل علامات تبويبك — مجمّعة حسب الموقع، قابلة للبحث، مع إحصاءات. بدّل مفتاحًا لإبقاء أي علامة تبويب نشطة، أو اترك Chrome يتخلص منها."
+    },
+    "slide3": {
+      "eyebrow": "قواعدك أنت",
+      "title": "احمِ كل شيء — أو ما تختاره فقط",
+      "sub": "وضعان إضافة إلى قواعد لكل موقع. تشمل قواعد النطاق النطاقات الفرعية تلقائيًا، لذا فإن example.com يحمي كل أجزائه."
+    },
+    "slide4": {
+      "eyebrow": "بنقرة واحدة",
+      "title": "لكل موقع أو<br>لكل علامة تبويب — فورًا",
+      "sub": "احمِ الموقع الحالي أو استثنِه مباشرة من شريط الأدوات. أو تجاوز إعداد علامة تبويب واحدة حتى تغلقها. وتشمل قواعد النطاق النطاقات الفرعية أيضًا."
+    },
+    "slide5": {
+      "eyebrow": "خصوصية بالتصميم",
+      "title": "خفيف وخاص،<br>بأكثر من 50 لغة",
+      "sub": "لا تتبّع، ولا تحليلات، ولا خوادم — يبقى كل شيء داخل متصفحك. سمة فاتحة أو داكنة أو تلقائية، ومُعرّب بالكامل."
+    }
+  },
+  "bg": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Спрете Chrome да<br>презарежда разделите ви",
+      "sub": "Спестяването на памет на Chrome освобождава неактивните раздели и ги презарежда отначало, когато се върнете. Запазете важните раздели точно там, където сте ги оставили."
+    },
+    "slide2": {
+      "eyebrow": "ВСЕКИ РАЗДЕЛ НА ЕДНО МЯСТО",
+      "title": "Вижте и управлявайте всеки отворен раздел",
+      "sub": "Жив списък с всичките ви раздели — групирани по сайт, с търсене и статистика. Превключете, за да поддържате всеки раздел активен, или оставете Chrome да го освободи."
+    },
+    "slide3": {
+      "eyebrow": "ВАШИТЕ ПРАВИЛА",
+      "title": "Защитете всичко — или само избраното",
+      "sub": "Два режима плюс правила за всеки сайт. Правилата за домейн обхващат поддомейните автоматично, така че example.com защитава целия сайт."
+    },
+    "slide4": {
+      "eyebrow": "С ЕДИН КЛИК",
+      "title": "По сайт или<br>по раздел — мигновено",
+      "sub": "Защитете или изключете текущия сайт направо от лентата с инструменти. Или заменете настройката за един раздел, докато не го затворите. Правилата за домейн обхващат и поддомейните."
+    },
+    "slide5": {
+      "eyebrow": "ПОВЕРИТЕЛНОСТ ПО ДИЗАЙН",
+      "title": "Лек, поверителен,<br>на 50+ езика",
+      "sub": "Без проследяване, без анализи, без сървъри — всичко остава в браузъра ви. Светла, тъмна или автоматична тема, напълно локализиран."
+    }
+  },
+  "bn": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome-কে আপনার ট্যাব<br>পুনরায় লোড করা থেকে থামান",
+      "sub": "Chrome-এর Memory Saver নিষ্ক্রিয় ট্যাব বাতিল করে এবং আপনি ফিরে এলে সেগুলো শুরু থেকে পুনরায় লোড করে। গুরুত্বপূর্ণ ট্যাবগুলো ঠিক যেখানে রেখেছিলেন সেখানেই রাখুন।"
+    },
+    "slide2": {
+      "eyebrow": "প্রতিটি ট্যাব, এক জায়গায়",
+      "title": "প্রতিটি খোলা ট্যাব দেখুন ও নিয়ন্ত্রণ করুন",
+      "sub": "আপনার সব ট্যাবের একটি লাইভ তালিকা — সাইট অনুযায়ী গোষ্ঠীবদ্ধ, খোঁজযোগ্য, পরিসংখ্যানসহ। যেকোনো ট্যাব সক্রিয় রাখতে একটি সুইচ চাপুন, অথবা Chrome-কে তা বাতিল করতে দিন।"
+    },
+    "slide3": {
+      "eyebrow": "আপনার নিয়ম",
+      "title": "সবকিছু সুরক্ষিত করুন — বা শুধু যা বেছে নেন",
+      "sub": "দুটি মোড এবং সাইট-ভিত্তিক নিয়ম। ডোমেইন নিয়ম স্বয়ংক্রিয়ভাবে সাবডোমেইন অন্তর্ভুক্ত করে, তাই example.com পুরোটাই সুরক্ষিত করে।"
+    },
+    "slide4": {
+      "eyebrow": "এক ক্লিকে",
+      "title": "সাইট অনুযায়ী বা<br>ট্যাব অনুযায়ী — তাৎক্ষণিক",
+      "sub": "টুলবার থেকে সরাসরি বর্তমান সাইট সুরক্ষিত করুন বা বাদ দিন। অথবা একটি ট্যাব বন্ধ না করা পর্যন্ত তার সেটিং ওভাররাইড করুন। ডোমেইন নিয়ম সাবডোমেইনও অন্তর্ভুক্ত করে।"
+    },
+    "slide5": {
+      "eyebrow": "নকশায় গোপনীয়তা",
+      "title": "হালকা, গোপন,<br>50+ ভাষায়",
+      "sub": "কোনো ট্র্যাকিং নেই, অ্যানালিটিক্স নেই, সার্ভার নেই — সবকিছু আপনার ব্রাউজারেই থাকে। হালকা, গাঢ় বা স্বয়ংক্রিয় থিম, সম্পূর্ণ স্থানীয়করণ করা।"
+    }
+  },
+  "ca": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Evita que Chrome<br>recarregui les pestanyes",
+      "sub": "L'Estalvi de memòria de Chrome descarta les pestanyes inactives i les torna a carregar des de zero quan hi tornes. Mantén les pestanyes que importen exactament on les vas deixar."
+    },
+    "slide2": {
+      "eyebrow": "CADA PESTANYA, EN UN LLOC",
+      "title": "Mira i controla cada pestanya oberta",
+      "sub": "Una llista en viu de totes les pestanyes — agrupades per lloc, amb cerca i estadístiques. Activa un interruptor per mantenir viva qualsevol pestanya, o deixa que Chrome la descarti."
+    },
+    "slide3": {
+      "eyebrow": "LES TEVES REGLES",
+      "title": "Protegeix-ho tot — o només el que triïs",
+      "sub": "Dos modes més regles per lloc. Les regles de domini cobreixen els subdominis automàticament, així example.com ho protegeix tot."
+    },
+    "slide4": {
+      "eyebrow": "AMB UN CLIC",
+      "title": "Per lloc o<br>per pestanya — a l'instant",
+      "sub": "Protegeix o exclou el lloc actual directament des de la barra d'eines. O substitueix una sola pestanya fins que la tanquis. Les regles de domini també cobreixen els subdominis."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT PER DISSENY",
+      "title": "Lleuger, privat,<br>en 50+ idiomes",
+      "sub": "Sense seguiment, sense analítiques, sense servidors — tot es queda al teu navegador. Tema clar, fosc o automàtic, totalment localitzat."
+    }
+  },
+  "cs": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Zabraňte Chromu<br>ve znovunačítání karet",
+      "sub": "Spořič paměti v Chromu zahazuje nečinné karty a po přepnutí zpět je načítá od začátku. Udržte důležité karty přesně tam, kde jste je nechali."
+    },
+    "slide2": {
+      "eyebrow": "VŠECHNY KARTY NA JEDNOM MÍSTĚ",
+      "title": "Mějte přehled o každé otevřené kartě",
+      "sub": "Živý seznam všech karet — seskupený podle webů, s vyhledáváním a statistikami. Přepnutím udržte libovolnou kartu aktivní, nebo ji nechte Chromem zahodit."
+    },
+    "slide3": {
+      "eyebrow": "VAŠE PRAVIDLA",
+      "title": "Chraňte vše — nebo jen to, co si zvolíte",
+      "sub": "Dva režimy a pravidla pro jednotlivé weby. Doménová pravidla automaticky pokrývají i subdomény, takže example.com chrání celou doménu."
+    },
+    "slide4": {
+      "eyebrow": "JEDNÍM KLIKNUTÍM",
+      "title": "Pro web či kartu —<br>okamžitě",
+      "sub": "Chraňte nebo vylučte aktuální web přímo z panelu nástrojů. Nebo přepište jednu kartu, dokud ji nezavřete. Doménová pravidla pokrývají i subdomény."
+    },
+    "slide5": {
+      "eyebrow": "SOUKROMÍ V ZÁKLADU",
+      "title": "Lehký, soukromý,<br>ve více než 50 jazycích",
+      "sub": "Žádné sledování, žádná analytika, žádné servery — vše zůstává ve vašem prohlížeči. Světlý, tmavý nebo automatický motiv, plně lokalizováno."
+    }
+  },
+  "da": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Stop Chrome fra<br>at genindlæse dine faner",
+      "sub": "Chromes Hukommelsesbesparelse fjerner inaktive faner og indlæser dem forfra, når du vender tilbage. Hold de faner, der betyder noget, præcis hvor du forlod dem."
+    },
+    "slide2": {
+      "eyebrow": "ALLE FANER ÉT STED",
+      "title": "Se og styr hver eneste åbne fane",
+      "sub": "En live-liste over alle dine faner — grupperet efter websted, søgbar og med statistik. Slå en kontakt til for at holde en fane i live, eller lad Chrome fjerne den."
+    },
+    "slide3": {
+      "eyebrow": "DINE REGLER",
+      "title": "Beskyt alt — eller kun det, du vælger",
+      "sub": "To tilstande plus regler pr. websted. Domæneregler dækker automatisk underdomæner, så example.com beskytter det hele."
+    },
+    "slide4": {
+      "eyebrow": "ÉT KLIK",
+      "title": "Pr. websted eller<br>pr. fane — med det samme",
+      "sub": "Beskyt eller udeluk det aktuelle websted direkte fra værktøjslinjen. Eller tilsidesæt en enkelt fane, indtil du lukker den. Domæneregler dækker også underdomæner."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT FRA BUNDEN",
+      "title": "Let, privat<br>og på 50+ sprog",
+      "sub": "Ingen sporing, ingen analyse, ingen servere — alt bliver i din browser. Lyst, mørkt eller automatisk tema, fuldt oversat."
+    }
+  },
+  "de": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Verhindere, dass Chrome<br>deine Tabs neu lädt",
+      "sub": "Chromes Speichersparmodus verwirft inaktive Tabs und lädt sie beim Zurückwechseln von Grund auf neu. Halte die wichtigen Tabs genau dort, wo du sie verlassen hast."
+    },
+    "slide2": {
+      "eyebrow": "ALLE TABS AN EINEM ORT",
+      "title": "Jeden offenen Tab sehen und steuern",
+      "sub": "Eine Live-Liste all deiner Tabs — nach Website gruppiert, durchsuchbar, mit Statistiken. Lege einen Schalter um, um jeden Tab aktiv zu halten, oder lass Chrome ihn verwerfen."
+    },
+    "slide3": {
+      "eyebrow": "DEINE REGELN",
+      "title": "Alles schützen — oder nur deine Auswahl",
+      "sub": "Zwei Modi plus Regeln pro Website. Domain-Regeln umfassen automatisch Subdomains, sodass example.com alles abdeckt."
+    },
+    "slide4": {
+      "eyebrow": "EIN KLICK",
+      "title": "Pro Website oder<br>pro Tab — sofort",
+      "sub": "Schütze die aktuelle Website oder schließe sie direkt aus der Symbolleiste aus. Oder überschreibe einen einzelnen Tab, bis du ihn schließt. Domain-Regeln umfassen auch Subdomains."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT VON GRUND AUF",
+      "title": "Leicht, privat,<br>in 50+ Sprachen",
+      "sub": "Kein Tracking, keine Analyse, keine Server — alles bleibt in deinem Browser. Helles, dunkles oder automatisches Design, vollständig lokalisiert."
+    }
+  },
+  "el": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Σταματήστε το Chrome<br>από το να επαναφορτώνει τις καρτέλες σας",
+      "sub": "Η Εξοικονόμηση μνήμης του Chrome απορρίπτει τις ανενεργές καρτέλες και τις φορτώνει από την αρχή όταν επιστρέφετε. Κρατήστε τις καρτέλες που έχουν σημασία ακριβώς εκεί που τις αφήσατε."
+    },
+    "slide2": {
+      "eyebrow": "ΟΛΕΣ ΟΙ ΚΑΡΤΕΛΕΣ ΣΕ ΕΝΑ ΣΗΜΕΙΟ",
+      "title": "Δείτε και ελέγξτε κάθε ανοιχτή καρτέλα",
+      "sub": "Μια ζωντανή λίστα με όλες τις καρτέλες σας — ομαδοποιημένη ανά ιστότοπο, με αναζήτηση και στατιστικά. Γυρίστε έναν διακόπτη για να κρατήσετε ενεργή οποιαδήποτε καρτέλα ή αφήστε το Chrome να την απορρίψει."
+    },
+    "slide3": {
+      "eyebrow": "ΟΙ ΚΑΝΟΝΕΣ ΣΑΣ",
+      "title": "Προστατέψτε τα πάντα — ή μόνο όσα επιλέγετε",
+      "sub": "Δύο λειτουργίες και κανόνες ανά ιστότοπο. Οι κανόνες τομέα καλύπτουν αυτόματα τους υποτομείς, οπότε το example.com τα προστατεύει όλα."
+    },
+    "slide4": {
+      "eyebrow": "ΕΝΑ ΚΛΙΚ",
+      "title": "Ανά ιστότοπο ή<br>ανά καρτέλα — άμεσα",
+      "sub": "Προστατέψτε ή εξαιρέστε τον τρέχοντα ιστότοπο απευθείας από τη γραμμή εργαλείων. Ή παρακάμψτε μία καρτέλα μέχρι να την κλείσετε. Οι κανόνες τομέα καλύπτουν και τους υποτομείς."
+    },
+    "slide5": {
+      "eyebrow": "ΙΔΙΩΤΙΚΟ ΕΞ ΑΡΧΗΣ",
+      "title": "Ελαφρύ, ιδιωτικό,<br>σε 50+ γλώσσες",
+      "sub": "Καμία παρακολούθηση, κανένα analytics, κανένας διακομιστής — όλα παραμένουν στο πρόγραμμα περιήγησής σας. Φωτεινό, σκούρο ή αυτόματο θέμα, πλήρως μεταφρασμένο."
+    }
+  },
+  "es": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Evita que Chrome<br>recargue tus pestañas",
+      "sub": "El Ahorro de memoria de Chrome descarta las pestañas inactivas y las recarga desde cero cuando vuelves. Mantén las pestañas que importan justo donde las dejaste."
+    },
+    "slide2": {
+      "eyebrow": "TODAS LAS PESTAÑAS, EN UN LUGAR",
+      "title": "Ve y controla cada pestaña abierta",
+      "sub": "Una lista en vivo de todas tus pestañas: agrupada por sitio, con búsqueda y estadísticas. Acciona un interruptor para mantener cualquier pestaña activa, o deja que Chrome la descarte."
+    },
+    "slide3": {
+      "eyebrow": "TUS REGLAS",
+      "title": "Protégelo todo — o solo lo que elijas",
+      "sub": "Dos modos más reglas por sitio. Las reglas de dominio cubren los subdominios automáticamente, así que example.com lo protege todo."
+    },
+    "slide4": {
+      "eyebrow": "UN CLIC",
+      "title": "Por sitio o<br>por pestaña — al instante",
+      "sub": "Protege o excluye el sitio actual directamente desde la barra de herramientas. O anula una sola pestaña hasta que la cierres. Las reglas de dominio también cubren los subdominios."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR DISEÑO",
+      "title": "Ligero, privado<br>y en más de 50 idiomas",
+      "sub": "Sin seguimiento, sin analíticas, sin servidores: todo se queda en tu navegador. Tema claro, oscuro o automático, totalmente localizado."
+    }
+  },
+  "es_419": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Evita que Chrome<br>recargue tus pestañas",
+      "sub": "El Ahorro de memoria de Chrome descarta las pestañas inactivas y las recarga desde cero cuando vuelves. Mantén las pestañas que importan justo donde las dejaste."
+    },
+    "slide2": {
+      "eyebrow": "TODAS LAS PESTAÑAS, EN UN LUGAR",
+      "title": "Mira y controla cada pestaña abierta",
+      "sub": "Una lista en vivo de todas tus pestañas: agrupada por sitio, con búsqueda y estadísticas. Acciona un interruptor para mantener cualquier pestaña activa, o deja que Chrome la descarte."
+    },
+    "slide3": {
+      "eyebrow": "TUS REGLAS",
+      "title": "Protégelo todo — o solo lo que elijas",
+      "sub": "Dos modos más reglas por sitio. Las reglas de dominio cubren los subdominios automáticamente, así que example.com lo protege todo."
+    },
+    "slide4": {
+      "eyebrow": "UN CLIC",
+      "title": "Por sitio o<br>por pestaña — al instante",
+      "sub": "Protege o excluye el sitio actual directamente desde la barra de herramientas. O anula una sola pestaña hasta que la cierres. Las reglas de dominio también cubren los subdominios."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR DISEÑO",
+      "title": "Liviano, privado<br>y en más de 50 idiomas",
+      "sub": "Sin seguimiento, sin analíticas, sin servidores: todo se queda en tu navegador. Tema claro, oscuro o automático, totalmente localizado."
+    }
+  },
+  "et": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Takista Chrome'il<br>vahekaarte taaslaadida",
+      "sub": "Chrome'i mälusäästja hülgab jõude seisvad vahekaardid ja laadib need tagasi tulles nullist uuesti. Hoia olulised vahekaardid täpselt seal, kuhu need jätsid."
+    },
+    "slide2": {
+      "eyebrow": "IGA VAHEKAART, ÜKS KOHT",
+      "title": "Näe ja juhi iga avatud vahekaarti",
+      "sub": "Reaalajas nimekiri kõigist vahekaartidest — saidi järgi rühmitatud, otsitav, statistikaga. Lülita iga vahekaart aktiivseks või luba Chrome'il see hüljata."
+    },
+    "slide3": {
+      "eyebrow": "SINU REEGLID",
+      "title": "Kaitse kõike — või täpselt seda, mida valid",
+      "sub": "Kaks režiimi pluss saidipõhised reeglid. Domeenireeglid hõlmavad automaatselt alamdomeene, nii et example.com katab kõik."
+    },
+    "slide4": {
+      "eyebrow": "ÜKS KLÕPS",
+      "title": "Saidi või<br>vahekaardi kaupa — kohe",
+      "sub": "Kaitse või välista praegune sait otse tööriistaribalt. Või muuda üksikut vahekaarti, kuni selle sulged. Domeenireeglid hõlmavad ka alamdomeene."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAATSUS ALGUSEST",
+      "title": "Kerge, privaatne,<br>50+ keeles",
+      "sub": "Ei mingit jälgimist, analüütikat ega servereid — kõik jääb sinu brauserisse. Hele, tume või automaatne teema, täielikult tõlgitud."
+    }
+  },
+  "fa": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "از بارگذاری دوبارهٔ زبانه‌ها<br>توسط Chrome جلوگیری کنید",
+      "sub": "صرفه‌جوی حافظهٔ Chrome زبانه‌های بی‌کار را تخلیه می‌کند و هنگام بازگشت آن‌ها را از نو بارگذاری می‌کند. زبانه‌های مهم را دقیقاً همان‌جا که رها کرده‌اید نگه دارید."
+    },
+    "slide2": {
+      "eyebrow": "هر زبانه، یک جا",
+      "title": "هر زبانهٔ باز را ببینید و کنترل کنید",
+      "sub": "فهرستی زنده از همهٔ زبانه‌ها — گروه‌بندی بر اساس سایت، قابل جستجو، همراه با آمار. با یک کلید هر زبانه‌ای را فعال نگه دارید یا بگذارید Chrome آن را تخلیه کند."
+    },
+    "slide3": {
+      "eyebrow": "قوانین شما",
+      "title": "از همه چیز محافظت کنید — یا فقط از آنچه می‌خواهید",
+      "sub": "دو حالت به‌علاوهٔ قوانین برای هر سایت. قوانین دامنه به‌طور خودکار زیردامنه‌ها را در بر می‌گیرند، پس example.com همهٔ آن را پوشش می‌دهد."
+    },
+    "slide4": {
+      "eyebrow": "یک کلیک",
+      "title": "برای هر سایت یا<br>هر زبانه — فوری",
+      "sub": "سایت فعلی را مستقیماً از نوار ابزار محافظت یا مستثنا کنید. یا یک زبانه را تا زمان بستن آن نادیده بگیرید. قوانین دامنه زیردامنه‌ها را هم در بر می‌گیرند."
+    },
+    "slide5": {
+      "eyebrow": "حریم خصوصی در طراحی",
+      "title": "سبک، خصوصی،<br>به بیش از ۵۰ زبان",
+      "sub": "بدون ردیابی، بدون آنالیز، بدون سرور — همه چیز در مرورگر شما می‌ماند. پوستهٔ روشن، تیره یا خودکار، کاملاً بومی‌سازی‌شده."
+    }
+  },
+  "fi": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Estä Chromea lataamasta<br>välilehtiäsi uudelleen",
+      "sub": "Chromen muistinsäästäjä poistaa käyttämättömät välilehdet ja lataa ne alusta, kun palaat. Pidä tärkeät välilehdet juuri siellä, mihin ne jätit."
+    },
+    "slide2": {
+      "eyebrow": "KAIKKI VÄLILEHDET, YKSI PAIKKA",
+      "title": "Näe ja hallitse jokaista avointa välilehteä",
+      "sub": "Reaaliaikainen lista kaikista välilehdistä — sivuston mukaan ryhmiteltynä, haettavissa, tilastoineen. Pidä mikä tahansa välilehti aktiivisena yhdellä kytkimellä tai anna Chromen hylätä se."
+    },
+    "slide3": {
+      "eyebrow": "SINUN SÄÄNTÖSI",
+      "title": "Suojaa kaikki — tai vain valitsemasi",
+      "sub": "Kaksi tilaa sekä sivustokohtaiset säännöt. Verkkotunnussäännöt kattavat aliverkkotunnukset automaattisesti, joten example.com suojaa ne kaikki."
+    },
+    "slide4": {
+      "eyebrow": "YKSI KLIKKAUS",
+      "title": "Sivustoittain tai<br>välilehdittäin — heti",
+      "sub": "Suojaa tai sulje pois nykyinen sivusto suoraan työkalupalkista. Tai ohita yksittäinen välilehti, kunnes suljet sen. Verkkotunnussäännöt kattavat myös aliverkkotunnukset."
+    },
+    "slide5": {
+      "eyebrow": "YKSITYINEN LÄHTÖKOHTAISESTI",
+      "title": "Kevyt, yksityinen,<br>yli 50 kielellä",
+      "sub": "Ei seurantaa, ei analytiikkaa, ei palvelimia — kaikki pysyy selaimessasi. Vaalea, tumma tai automaattinen teema, täysin lokalisoitu."
+    }
+  },
+  "fil": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Pigilan ang Chrome sa<br>pag-reload ng iyong mga tab",
+      "sub": "Ina-discard ng Memory Saver ng Chrome ang mga idle na tab at nire-reload ang mga ito mula sa simula kapag bumalik ka. Panatilihin ang mahahalagang tab kung saan mo mismo iniwan."
+    },
+    "slide2": {
+      "eyebrow": "BAWAT TAB, ISANG LUGAR",
+      "title": "Tingnan at kontrolin ang bawat bukas na tab",
+      "sub": "Isang live na listahan ng lahat ng iyong tab — nakagrupo ayon sa site, mahahanap, may stats. I-flip ang switch para panatilihing aktibo ang anumang tab, o hayaang i-discard ito ng Chrome."
+    },
+    "slide3": {
+      "eyebrow": "IYONG MGA PATAKARAN",
+      "title": "Protektahan lahat — o ang piliin mo lang",
+      "sub": "Dalawang mode plus per-site na patakaran. Awtomatikong saklaw ng mga domain rule ang mga subdomain, kaya saklaw ng example.com ang lahat nito."
+    },
+    "slide4": {
+      "eyebrow": "ISANG CLICK",
+      "title": "Per site o<br>per tab — agad",
+      "sub": "Protektahan o i-exclude ang kasalukuyang site diretso mula sa toolbar. O i-override ang isang tab hanggang isara mo ito. Saklaw din ng mga domain rule ang mga subdomain."
+    },
+    "slide5": {
+      "eyebrow": "PRIBADO SA DISENYO",
+      "title": "Magaan, pribado,<br>sa 50+ na wika",
+      "sub": "Walang tracking, walang analytics, walang server — nananatili lahat sa iyong browser. Light, dark o auto na tema, ganap na naka-localize."
+    }
+  },
+  "fr": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Empêchez Chrome de<br>recharger vos onglets",
+      "sub": "L'Économiseur de mémoire de Chrome décharge les onglets inactifs et les recharge de zéro à votre retour. Gardez les onglets qui comptent exactement là où vous les avez laissés."
+    },
+    "slide2": {
+      "eyebrow": "CHAQUE ONGLET, UN SEUL ENDROIT",
+      "title": "Voyez et contrôlez chaque onglet ouvert",
+      "sub": "Une liste en direct de tous vos onglets — groupés par site, avec recherche et statistiques. Un interrupteur pour garder un onglet actif, ou laissez Chrome le décharger."
+    },
+    "slide3": {
+      "eyebrow": "VOS RÈGLES",
+      "title": "Tout protéger — ou seulement ce que vous choisissez",
+      "sub": "Deux modes plus des règles par site. Les règles de domaine couvrent automatiquement les sous-domaines : example.com protège l'ensemble."
+    },
+    "slide4": {
+      "eyebrow": "EN UN CLIC",
+      "title": "Par site ou<br>par onglet — instantanément",
+      "sub": "Protégez ou excluez le site actuel directement depuis la barre d'outils. Ou modifiez un seul onglet jusqu'à sa fermeture. Les règles de domaine couvrent aussi les sous-domaines."
+    },
+    "slide5": {
+      "eyebrow": "PRIVÉ PAR CONCEPTION",
+      "title": "Léger, privé,<br>en 50+ langues",
+      "sub": "Aucun suivi, aucune analyse, aucun serveur — tout reste dans votre navigateur. Thème clair, sombre ou automatique, entièrement localisé."
+    }
+  },
+  "gu": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome ને તમારી ટૅબ<br>ફરી લોડ કરતું અટકાવો",
+      "sub": "Chrome નું મેમરી સેવર નિષ્ક્રિય ટૅબ કાઢી નાખે છે અને તમે પાછા ફરો ત્યારે શરૂઆતથી ફરી લોડ કરે છે. મહત્વની ટૅબ બરાબર ત્યાં જ રાખો જ્યાં તમે મૂકી હતી."
+    },
+    "slide2": {
+      "eyebrow": "દરેક ટૅબ, એક જ જગ્યાએ",
+      "title": "દરેક ખુલ્લી ટૅબ જુઓ અને નિયંત્રિત કરો",
+      "sub": "તમારી બધી ટૅબની જીવંત યાદી — સાઇટ પ્રમાણે જૂથબદ્ધ, શોધી શકાય તેવી, આંકડા સાથે. કોઈપણ ટૅબ સક્રિય રાખવા સ્વિચ ફેરવો, અથવા Chrome ને તે કાઢી નાખવા દો."
+    },
+    "slide3": {
+      "eyebrow": "તમારા નિયમો",
+      "title": "બધું સુરક્ષિત કરો — અથવા ફક્ત તમે પસંદ કરો તે",
+      "sub": "બે મોડ સાથે સાઇટ-દીઠ નિયમો. ડોમેન નિયમો આપમેળે સબડોમેન આવરી લે છે, તેથી example.com તે બધાને સુરક્ષિત કરે છે."
+    },
+    "slide4": {
+      "eyebrow": "એક ક્લિક",
+      "title": "સાઇટ-દીઠ કે<br>ટૅબ-દીઠ — તરત જ",
+      "sub": "ટૂલબારથી સીધી જ વર્તમાન સાઇટ સુરક્ષિત કરો અથવા બાકાત રાખો. અથવા એક ટૅબ બંધ ન કરો ત્યાં સુધી તેને ઓવરરાઇડ કરો. ડોમેન નિયમો સબડોમેન પણ આવરી લે છે."
+    },
+    "slide5": {
+      "eyebrow": "ડિઝાઇનથી જ ખાનગી",
+      "title": "હલકું, ખાનગી,<br>50+ ભાષાઓમાં",
+      "sub": "કોઈ ટ્રેકિંગ નહીં, કોઈ એનાલિટિક્સ નહીં, કોઈ સર્વર નહીં — બધું તમારા બ્રાઉઝરમાં જ રહે છે. લાઇટ, ડાર્ક કે ઓટો થીમ, સંપૂર્ણ સ્થાનિકીકૃત."
+    }
+  },
+  "he": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "מנעו מ-Chrome<br>לטעון מחדש את הלשוניות",
+      "sub": "חוסך הזיכרון של Chrome משחרר לשוניות לא פעילות וטוען אותן מחדש מאפס כשחוזרים אליהן. השאירו את הלשוניות שחשובות לכם בדיוק במקום שבו עזבתם."
+    },
+    "slide2": {
+      "eyebrow": "כל לשונית, במקום אחד",
+      "title": "ראו ושלטו בכל לשונית פתוחה",
+      "sub": "רשימה חיה של כל הלשוניות שלכם — מקובצת לפי אתר, ניתנת לחיפוש, עם נתונים. הפעילו מתג כדי לשמור כל לשונית פעילה, או הניחו ל-Chrome לבטל את טעינתה."
+    },
+    "slide3": {
+      "eyebrow": "הכללים שלכם",
+      "title": "הגנו על הכול — או רק על מה שתבחרו",
+      "sub": "שני מצבים ועוד כללים לכל אתר. כללי דומיין מכסים אוטומטית גם תת-דומיינים, כך ש-example.com מגן על כולם."
+    },
+    "slide4": {
+      "eyebrow": "בלחיצה אחת",
+      "title": "לכל אתר או<br>לכל לשונית — מיד",
+      "sub": "הגנו על האתר הנוכחי או החריגו אותו ישירות מסרגל הכלים. או עקפו לשונית בודדת עד שתסגרו אותה. כללי דומיין מכסים גם תת-דומיינים."
+    },
+    "slide5": {
+      "eyebrow": "פרטי מעצם התכנון",
+      "title": "קליל, פרטי,<br>ביותר מ-50 שפות",
+      "sub": "ללא מעקב, ללא ניתוח נתונים, ללא שרתים — הכול נשאר בדפדפן שלכם. ערכת נושא בהירה, כהה או אוטומטית, מתורגם במלואו."
+    }
+  },
+  "hi": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome को आपके टैब<br>रीलोड करने से रोकें",
+      "sub": "Chrome का मेमोरी सेवर निष्क्रिय टैब हटा देता है और लौटने पर उन्हें फिर से शुरू से लोड करता है। जो टैब मायने रखते हैं उन्हें ठीक वहीं रखें जहाँ आपने छोड़ा था।"
+    },
+    "slide2": {
+      "eyebrow": "हर टैब, एक जगह",
+      "title": "हर खुले टैब को देखें और नियंत्रित करें",
+      "sub": "आपके सभी टैब की लाइव सूची — साइट के अनुसार समूहित, खोजने योग्य, आँकड़ों के साथ। किसी भी टैब को सक्रिय रखने के लिए स्विच पलटें, या Chrome को उसे हटाने दें।"
+    },
+    "slide3": {
+      "eyebrow": "आपके नियम",
+      "title": "सब कुछ सुरक्षित करें — या सिर्फ़ अपनी पसंद",
+      "sub": "दो मोड के साथ प्रति-साइट नियम। डोमेन नियम स्वतः सबडोमेन को कवर करते हैं, इसलिए example.com सब कुछ सुरक्षित करता है।"
+    },
+    "slide4": {
+      "eyebrow": "एक क्लिक",
+      "title": "प्रति साइट या<br>प्रति टैब — तुरंत",
+      "sub": "मौजूदा साइट को सीधे टूलबार से सुरक्षित करें या बाहर रखें। या किसी एक टैब को बंद होने तक ओवरराइड करें। डोमेन नियम सबडोमेन को भी कवर करते हैं।"
+    },
+    "slide5": {
+      "eyebrow": "डिज़ाइन से ही निजी",
+      "title": "हल्का, निजी,<br>50+ भाषाओं में",
+      "sub": "कोई ट्रैकिंग नहीं, कोई एनालिटिक्स नहीं, कोई सर्वर नहीं — सब कुछ आपके ब्राउज़र में रहता है। लाइट, डार्क या स्वचालित थीम, पूरी तरह स्थानीयकृत।"
+    }
+  },
+  "hr": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Spriječite Chrome da<br>ponovno učitava kartice",
+      "sub": "Chromeova Ušteda memorije odbacuje neaktivne kartice i ponovno ih učitava od početka kada se vratite. Zadržite važne kartice točno ondje gdje ste ih ostavili."
+    },
+    "slide2": {
+      "eyebrow": "SVAKA KARTICA, JEDNO MJESTO",
+      "title": "Pregledajte i upravljajte svakom karticom",
+      "sub": "Popis svih kartica uživo — grupiran po stranici, pretraživ, sa statistikom. Prebacite prekidač da karticu održite aktivnom ili pustite Chrome da je odbaci."
+    },
+    "slide3": {
+      "eyebrow": "VAŠA PRAVILA",
+      "title": "Zaštitite sve — ili samo ono što odaberete",
+      "sub": "Dva načina rada uz pravila po stranici. Pravila domene automatski obuhvaćaju poddomene, pa example.com štiti sve."
+    },
+    "slide4": {
+      "eyebrow": "JEDAN KLIK",
+      "title": "Po stranici ili<br>po kartici — odmah",
+      "sub": "Zaštitite ili isključite trenutnu stranicu izravno s alatne trake. Ili nadjačajte jednu karticu dok je ne zatvorite. Pravila domene obuhvaćaju i poddomene."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATNO PO DIZAJNU",
+      "title": "Lagano, privatno,<br>na 50+ jezika",
+      "sub": "Bez praćenja, bez analitike, bez poslužitelja — sve ostaje u vašem pregledniku. Svijetla, tamna ili automatska tema, potpuno lokalizirano."
+    }
+  },
+  "hu": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Akadályozza meg, hogy a Chrome<br>újratöltse a lapjait",
+      "sub": "A Chrome Memóriatakarékos funkciója eltávolítja a tétlen lapokat, és visszatéréskor a nulláról tölti be őket újra. Tartsa a fontos lapokat pontosan ott, ahol hagyta."
+    },
+    "slide2": {
+      "eyebrow": "MINDEN LAP, EGY HELYEN",
+      "title": "Lásson és vezéreljen minden nyitott lapot",
+      "sub": "Az összes lap élő listája — webhelyenként csoportosítva, kereshetően, statisztikákkal. Billentse a kapcsolót, hogy bármely lapot életben tartson, vagy hagyja, hogy a Chrome eldobja."
+    },
+    "slide3": {
+      "eyebrow": "AZ ÖN SZABÁLYAI",
+      "title": "Védjen meg mindent — vagy csak amit szeretne",
+      "sub": "Két mód, valamint webhelyenkénti szabályok. A domainszabályok automatikusan lefedik az aldomaineket, így az example.com mindent megvéd."
+    },
+    "slide4": {
+      "eyebrow": "EGYETLEN KATTINTÁS",
+      "title": "Webhelyenként vagy<br>laponként — azonnal",
+      "sub": "Védje meg vagy zárja ki az aktuális webhelyet közvetlenül az eszköztárról. Vagy írjon felül egyetlen lapot, amíg be nem zárja. A domainszabályok az aldomaineket is lefedik."
+    },
+    "slide5": {
+      "eyebrow": "ALAPVETŐEN ADATVÉDŐ",
+      "title": "Könnyű, adatvédő,<br>50+ nyelven",
+      "sub": "Nincs követés, nincs analitika, nincs szerver — minden a böngészőjében marad. Világos, sötét vagy automatikus téma, teljesen honosítva."
+    }
+  },
+  "id": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Hentikan Chrome dari<br>memuat ulang tab Anda",
+      "sub": "Penghemat Memori Chrome membuang tab yang tidak aktif dan memuatnya ulang dari awal saat Anda kembali. Jaga tab yang penting persis di tempat Anda meninggalkannya."
+    },
+    "slide2": {
+      "eyebrow": "SETIAP TAB, SATU TEMPAT",
+      "title": "Lihat dan kendalikan setiap tab terbuka",
+      "sub": "Daftar langsung semua tab Anda — dikelompokkan per situs, dapat dicari, dengan statistik. Geser sakelar untuk menjaga tab apa pun tetap aktif, atau biarkan Chrome membuangnya."
+    },
+    "slide3": {
+      "eyebrow": "ATURAN ANDA",
+      "title": "Lindungi semuanya — atau hanya yang Anda pilih",
+      "sub": "Dua mode plus aturan per situs. Aturan domain mencakup subdomain secara otomatis, jadi example.com melindungi semuanya."
+    },
+    "slide4": {
+      "eyebrow": "SATU KLIK",
+      "title": "Per situs atau<br>per tab — seketika",
+      "sub": "Lindungi atau kecualikan situs saat ini langsung dari bilah alat. Atau ganti satu tab sampai Anda menutupnya. Aturan domain juga mencakup subdomain."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT SEJAK AWAL",
+      "title": "Ringan, privat,<br>dalam 50+ bahasa",
+      "sub": "Tanpa pelacakan, tanpa analitik, tanpa server — semuanya tetap di browser Anda. Tema terang, gelap, atau otomatis, sepenuhnya dilokalkan."
+    }
+  },
+  "it": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Impedisci a Chrome di<br>ricaricare le tue schede",
+      "sub": "Il Risparmio memoria di Chrome elimina le schede inattive e le ricarica da zero quando torni. Mantieni le schede che contano esattamente dove le hai lasciate."
+    },
+    "slide2": {
+      "eyebrow": "OGNI SCHEDA, UN SOLO POSTO",
+      "title": "Vedi e controlla ogni scheda aperta",
+      "sub": "Un elenco in tempo reale di tutte le tue schede — raggruppate per sito, ricercabili, con statistiche. Aziona un interruttore per mantenere attiva una scheda, o lascia che Chrome la elimini."
+    },
+    "slide3": {
+      "eyebrow": "LE TUE REGOLE",
+      "title": "Proteggi tutto — o solo ciò che scegli",
+      "sub": "Due modalità più regole per sito. Le regole di dominio coprono automaticamente i sottodomini, così example.com li protegge tutti."
+    },
+    "slide4": {
+      "eyebrow": "UN CLIC",
+      "title": "Per sito o<br>per scheda — all'istante",
+      "sub": "Proteggi o escludi il sito attuale direttamente dalla barra degli strumenti. Oppure sovrascrivi una singola scheda finché non la chiudi. Le regole di dominio coprono anche i sottodomini."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATO PER NATURA",
+      "title": "Leggero, privato,<br>in 50+ lingue",
+      "sub": "Nessun tracciamento, nessuna analisi, nessun server — tutto resta nel tuo browser. Tema chiaro, scuro o automatico, completamente localizzato."
+    }
+  },
+  "ja": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome によるタブの<br>再読み込みを防ぐ",
+      "sub": "Chrome のメモリセーバーはアイドル状態のタブを破棄し、戻ると最初から再読み込みします。大切なタブは、離れたときのままに保ちましょう。"
+    },
+    "slide2": {
+      "eyebrow": "すべてのタブを一か所に",
+      "title": "開いているタブをすべて把握・管理",
+      "sub": "開いているすべてのタブをリアルタイムで一覧表示 — サイトごとにまとめ、検索や統計にも対応。スイッチひとつでタブを保持するか、Chrome に破棄させるかを選べます。"
+    },
+    "slide3": {
+      "eyebrow": "あなたのルール",
+      "title": "すべてを保護 — または選んだものだけ",
+      "sub": "2 つのモードとサイトごとのルール。ドメインルールはサブドメインも自動でカバーするので、example.com ならそのすべてを保護します。"
+    },
+    "slide4": {
+      "eyebrow": "ワンクリック",
+      "title": "サイト単位でも<br>タブ単位でも、すぐに",
+      "sub": "ツールバーから今のサイトを保護または除外。あるいは閉じるまで 1 つのタブだけを上書き。ドメインルールはサブドメインもカバーします。"
+    },
+    "slide5": {
+      "eyebrow": "プライバシー設計",
+      "title": "軽量・プライベート、<br>50+ 言語に対応",
+      "sub": "トラッキングも分析もサーバーもなし — すべてブラウザ内で完結。ライト／ダーク／自動テーマ、完全ローカライズ済み。"
+    }
+  },
+  "kn": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "ನಿಮ್ಮ ಟ್ಯಾಬ್‌ಗಳನ್ನು Chrome<br>ಮರುಲೋಡ್ ಮಾಡದಂತೆ ತಡೆಯಿರಿ",
+      "sub": "Chrome ನ ಮೆಮೊರಿ ಸೇವರ್ ಜಡ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತ್ಯಜಿಸುತ್ತದೆ ಮತ್ತು ನೀವು ಮರಳಿದಾಗ ಅವುಗಳನ್ನು ಮೊದಲಿನಿಂದ ಮರುಲೋಡ್ ಮಾಡುತ್ತದೆ. ಮುಖ್ಯವಾದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ನೀವು ಬಿಟ್ಟ ಸ್ಥಿತಿಯಲ್ಲೇ ಇರಿಸಿ."
+    },
+    "slide2": {
+      "eyebrow": "ಪ್ರತಿ ಟ್ಯಾಬ್, ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ",
+      "title": "ಪ್ರತಿ ತೆರೆದ ಟ್ಯಾಬ್ ಅನ್ನು ನೋಡಿ ಮತ್ತು ನಿಯಂತ್ರಿಸಿ",
+      "sub": "ನಿಮ್ಮ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳ ತಕ್ಷಣದ ಪಟ್ಟಿ — ಸೈಟ್‌ವಾರು ಗುಂಪು, ಹುಡುಕಬಹುದಾದ, ಅಂಕಿಅಂಶಗಳೊಂದಿಗೆ. ಯಾವುದೇ ಟ್ಯಾಬ್ ಅನ್ನು ಸಕ್ರಿಯವಾಗಿ ಇರಿಸಲು ಸ್ವಿಚ್ ಹೊರಳಿಸಿ, ಅಥವಾ Chrome ಅದನ್ನು ತ್ಯಜಿಸಲು ಬಿಡಿ."
+    },
+    "slide3": {
+      "eyebrow": "ನಿಮ್ಮ ನಿಯಮಗಳು",
+      "title": "ಎಲ್ಲವನ್ನೂ ರಕ್ಷಿಸಿ — ಅಥವಾ ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ್ದನ್ನು ಮಾತ್ರ",
+      "sub": "ಎರಡು ಮೋಡ್‌ಗಳು ಮತ್ತು ಪ್ರತಿ ಸೈಟ್‌ಗೆ ನಿಯಮಗಳು. ಡೊಮೇನ್ ನಿಯಮಗಳು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಉಪಡೊಮೇನ್‌ಗಳನ್ನೂ ಒಳಗೊಳ್ಳುತ್ತವೆ — ಹಾಗಾಗಿ example.com ಎಲ್ಲವನ್ನೂ ರಕ್ಷಿಸುತ್ತದೆ."
+    },
+    "slide4": {
+      "eyebrow": "ಒಂದೇ ಕ್ಲಿಕ್",
+      "title": "ಸೈಟ್‌ವಾರು ಅಥವಾ<br>ಟ್ಯಾಬ್‌ವಾರು — ತಕ್ಷಣ",
+      "sub": "ಟೂಲ್‌ಬಾರ್‌ನಿಂದ ನೇರವಾಗಿ ಪ್ರಸ್ತುತ ಸೈಟ್ ಅನ್ನು ರಕ್ಷಿಸಿ ಅಥವಾ ಹೊರಗಿಡಿ. ಅಥವಾ ಒಂದು ಟ್ಯಾಬ್ ಅನ್ನು ನೀವು ಮುಚ್ಚುವವರೆಗೆ ಅತಿಕ್ರಮಿಸಿ. ಡೊಮೇನ್ ನಿಯಮಗಳು ಉಪಡೊಮೇನ್‌ಗಳನ್ನೂ ಒಳಗೊಳ್ಳುತ್ತವೆ."
+    },
+    "slide5": {
+      "eyebrow": "ವಿನ್ಯಾಸದಿಂದಲೇ ಖಾಸಗಿ",
+      "title": "ಹಗುರ, ಖಾಸಗಿ,<br>50+ ಭಾಷೆಗಳಲ್ಲಿ",
+      "sub": "ಯಾವುದೇ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ, ಅನಾಲಿಟಿಕ್ಸ್ ಇಲ್ಲ, ಸರ್ವರ್‌ಗಳಿಲ್ಲ — ಎಲ್ಲವೂ ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ. ತಿಳಿ, ಗಾಢ ಅಥವಾ ಸ್ವಯಂಚಾಲಿತ ಥೀಮ್, ಸಂಪೂರ್ಣವಾಗಿ ಸ್ಥಳೀಯಗೊಳಿಸಲಾಗಿದೆ."
+    }
+  },
+  "ko": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome가 탭을<br>새로고침하지 못하게",
+      "sub": "Chrome의 메모리 절약 기능은 유휴 탭을 폐기하고 돌아오면 처음부터 다시 로드합니다. 중요한 탭은 떠났던 그대로 유지하세요."
+    },
+    "slide2": {
+      "eyebrow": "모든 탭, 한곳에",
+      "title": "열린 모든 탭을 보고 제어하세요",
+      "sub": "모든 탭의 실시간 목록 — 사이트별 그룹화, 검색, 통계 제공. 스위치 하나로 어떤 탭이든 살려 두거나 Chrome이 폐기하도록 하세요."
+    },
+    "slide3": {
+      "eyebrow": "내 규칙대로",
+      "title": "전부 보호 — 또는 원하는 것만",
+      "sub": "두 가지 모드와 사이트별 규칙. 도메인 규칙은 하위 도메인까지 자동으로 포함하므로 example.com은 전체를 보호합니다."
+    },
+    "slide4": {
+      "eyebrow": "원클릭",
+      "title": "사이트별 또는<br>탭별로 — 즉시",
+      "sub": "툴바에서 바로 현재 사이트를 보호하거나 제외하세요. 또는 탭을 닫을 때까지 단일 탭만 재정의할 수도 있습니다. 도메인 규칙은 하위 도메인도 포함합니다."
+    },
+    "slide5": {
+      "eyebrow": "설계부터 프라이빗",
+      "title": "가볍고 프라이빗,<br>50+ 개 언어 지원",
+      "sub": "추적도, 분석도, 서버도 없습니다 — 모든 것이 브라우저 안에 머뭅니다. 라이트, 다크, 자동 테마, 완전 현지화."
+    }
+  },
+  "lt": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Neleiskite „Chrome“ iš naujo<br>įkelti jūsų kortelių",
+      "sub": "„Chrome“ atminties taupymo priemonė atmeta neaktyvias korteles ir, kai grįžtate, įkelia jas iš naujo. Palikite svarbias korteles būtent ten, kur jas palikote."
+    },
+    "slide2": {
+      "eyebrow": "VISOS KORTELĖS VIENOJE VIETOJE",
+      "title": "Matykite ir valdykite kiekvieną atvirą kortelę",
+      "sub": "Tiesioginis visų kortelių sąrašas — sugrupuotas pagal svetainę, su paieška ir statistika. Perjunkite jungiklį, kad kortelė liktų aktyvi, arba leiskite „Chrome“ ją atmesti."
+    },
+    "slide3": {
+      "eyebrow": "JŪSŲ TAISYKLĖS",
+      "title": "Apsaugokite viską — arba tik tai, ką pasirenkate",
+      "sub": "Du režimai ir taisyklės pagal svetainę. Domenų taisyklės automatiškai apima subdomenus, todėl example.com apsaugo visą svetainę."
+    },
+    "slide4": {
+      "eyebrow": "VIENU SPUSTELĖJIMU",
+      "title": "Pagal svetainę ar<br>pagal kortelę — iškart",
+      "sub": "Apsaugokite arba išskirkite dabartinę svetainę tiesiai iš įrankių juostos. Arba pakeiskite vieną kortelę, kol ją uždarysite. Domenų taisyklės apima ir subdomenus."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATU IŠ PRIGIMTIES",
+      "title": "Lengva, privatu,<br>50+ kalbų",
+      "sub": "Jokio sekimo, jokios analizės, jokių serverių — viskas lieka jūsų naršyklėje. Šviesi, tamsi ar automatinė tema, visiškai išversta."
+    }
+  },
+  "lv": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Neļaujiet pārlūkam Chrome<br>pārlādēt jūsu cilnes",
+      "sub": "Chrome Atmiņas taupītājs izmet neaktīvās cilnes un, kad atgriežaties, ielādē tās no jauna. Saglabājiet svarīgākās cilnes tieši tā, kā tās atstājāt."
+    },
+    "slide2": {
+      "eyebrow": "VISAS CILNES VIENUVIET",
+      "title": "Skatiet un vadiet katru atvērto cilni",
+      "sub": "Tiešraides saraksts ar visām jūsu cilnēm — grupēts pa vietnēm, ar meklēšanu un statistiku. Pārslēdziet slēdzi, lai saglabātu jebkuru cilni aktīvu, vai ļaujiet Chrome to izmest."
+    },
+    "slide3": {
+      "eyebrow": "JŪSU NOTEIKUMI",
+      "title": "Aizsargājiet visu — vai tikai izvēlēto",
+      "sub": "Divi režīmi un noteikumi pa vietnēm. Domēna noteikumi automātiski aptver apakšdomēnus, tāpēc example.com aizsargā to visu."
+    },
+    "slide4": {
+      "eyebrow": "VIENS KLIKŠĶIS",
+      "title": "Pa vietnei vai<br>pa cilnei — uzreiz",
+      "sub": "Aizsargājiet vai izslēdziet pašreizējo vietni tieši no rīkjoslas. Vai pārvadiet vienu cilni, līdz to aizverat. Domēna noteikumi aptver arī apakšdomēnus."
+    },
+    "slide5": {
+      "eyebrow": "PRIVĀTI JAU PĒC BŪTĪBAS",
+      "title": "Viegli, privāti,<br>50+ valodās",
+      "sub": "Nekādas izsekošanas, analītikas vai serveru — viss paliek jūsu pārlūkā. Gaišs, tumšs vai automātisks motīvs, pilnībā lokalizēts."
+    }
+  },
+  "ml": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome നിങ്ങളുടെ ടാബുകൾ<br>റീലോഡ് ചെയ്യുന്നത് തടയുക",
+      "sub": "Chrome-ന്റെ മെമ്മറി സേവർ നിഷ്ക്രിയ ടാബുകൾ ഉപേക്ഷിക്കുകയും നിങ്ങൾ മടങ്ങിയെത്തുമ്പോൾ അവ ആദ്യം മുതൽ വീണ്ടും ലോഡ് ചെയ്യുകയും ചെയ്യുന്നു. പ്രധാനപ്പെട്ട ടാബുകൾ നിങ്ങൾ വിട്ടിടത്തുതന്നെ നിലനിർത്തുക."
+    },
+    "slide2": {
+      "eyebrow": "എല്ലാ ടാബും, ഒരിടത്ത്",
+      "title": "തുറന്നിരിക്കുന്ന ഓരോ ടാബും കാണുകയും നിയന്ത്രിക്കുകയും ചെയ്യുക",
+      "sub": "നിങ്ങളുടെ എല്ലാ ടാബുകളുടെയും തത്സമയ പട്ടിക — സൈറ്റനുസരിച്ച് ഗ്രൂപ്പുചെയ്ത, തിരയാവുന്ന, സ്ഥിതിവിവരക്കണക്കുകളോടെ. ഏതെങ്കിലും ടാബ് സജീവമായി നിലനിർത്താൻ ഒരു സ്വിച്ച് മാറ്റുക, അല്ലെങ്കിൽ Chrome അത് ഉപേക്ഷിക്കാൻ അനുവദിക്കുക."
+    },
+    "slide3": {
+      "eyebrow": "നിങ്ങളുടെ നിയമങ്ങൾ",
+      "title": "എല്ലാം പരിരക്ഷിക്കുക — അല്ലെങ്കിൽ നിങ്ങൾ തിരഞ്ഞെടുക്കുന്നത് മാത്രം",
+      "sub": "രണ്ട് മോഡുകളും ഓരോ സൈറ്റിനുമുള്ള നിയമങ്ങളും. ഡൊമെയ്ൻ നിയമങ്ങൾ സ്വയമേവ സബ്‌ഡൊമെയ്‌നുകളെയും ഉൾക്കൊള്ളുന്നു, അതിനാൽ example.com അതെല്ലാം പരിരക്ഷിക്കുന്നു."
+    },
+    "slide4": {
+      "eyebrow": "ഒറ്റ ക്ലിക്ക്",
+      "title": "സൈറ്റനുസരിച്ച് അല്ലെങ്കിൽ<br>ടാബനുസരിച്ച് — തൽക്ഷണം",
+      "sub": "ടൂൾബാറിൽ നിന്ന് നേരിട്ട് നിലവിലെ സൈറ്റ് പരിരക്ഷിക്കുകയോ ഒഴിവാക്കുകയോ ചെയ്യുക. അല്ലെങ്കിൽ നിങ്ങൾ അടയ്ക്കുന്നതുവരെ ഒരൊറ്റ ടാബ് മറികടക്കുക. ഡൊമെയ്ൻ നിയമങ്ങൾ സബ്‌ഡൊമെയ്‌നുകളെയും ഉൾക്കൊള്ളുന്നു."
+    },
+    "slide5": {
+      "eyebrow": "രൂപകൽപ്പനയിൽത്തന്നെ സ്വകാര്യം",
+      "title": "ലളിതം, സ്വകാര്യം,<br>50+ ഭാഷകളിൽ",
+      "sub": "ട്രാക്കിംഗ് ഇല്ല, അനലിറ്റിക്സ് ഇല്ല, സെർവറുകൾ ഇല്ല — എല്ലാം നിങ്ങളുടെ ബ്രൗസറിൽത്തന്നെ നിലനിൽക്കുന്നു. ഇളം, ഇരുണ്ട അല്ലെങ്കിൽ സ്വയമേവ തീം, പൂർണ്ണമായി പ്രാദേശികവൽക്കരിച്ചത്."
+    }
+  },
+  "mr": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome ला तुमचे टॅब<br>रीलोड करण्यापासून रोखा",
+      "sub": "Chrome चे मेमरी सेव्हर निष्क्रिय टॅब डिस्कार्ड करते आणि तुम्ही परत आल्यावर ते सुरुवातीपासून रीलोड करते. महत्त्वाचे टॅब तुम्ही सोडले होते तिथेच ठेवा."
+    },
+    "slide2": {
+      "eyebrow": "प्रत्येक टॅब, एकाच ठिकाणी",
+      "title": "प्रत्येक उघडा टॅब पाहा आणि नियंत्रित करा",
+      "sub": "तुमच्या सर्व टॅबची थेट यादी — साइटनुसार गटबद्ध, शोधण्यायोग्य, आकडेवारीसह. कोणताही टॅब जिवंत ठेवण्यासाठी स्विच बदला, किंवा Chrome ला तो डिस्कार्ड करू द्या."
+    },
+    "slide3": {
+      "eyebrow": "तुमचे नियम",
+      "title": "सर्व काही संरक्षित करा — किंवा फक्त तुम्ही निवडाल ते",
+      "sub": "दोन मोड आणि प्रति-साइट नियम. डोमेन नियम सबडोमेनना आपोआप कव्हर करतात, त्यामुळे example.com सर्व काही संरक्षित करते."
+    },
+    "slide4": {
+      "eyebrow": "एका क्लिकमध्ये",
+      "title": "प्रति साइट किंवा<br>प्रति टॅब — तत्काळ",
+      "sub": "टूलबारवरूनच सध्याची साइट संरक्षित करा किंवा वगळा. किंवा एकच टॅब बंद करेपर्यंत ओव्हरराइड करा. डोमेन नियम सबडोमेनही कव्हर करतात."
+    },
+    "slide5": {
+      "eyebrow": "रचनेनेच खाजगी",
+      "title": "हलके, खाजगी,<br>50+ भाषांमध्ये",
+      "sub": "कोणतेही ट्रॅकिंग नाही, अॅनालिटिक्स नाही, सर्व्हर नाहीत — सर्व काही तुमच्या ब्राउझरमध्येच राहते. लाइट, डार्क किंवा स्वयं थीम, पूर्णपणे स्थानिकीकृत."
+    }
+  },
+  "ms": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Halang Chrome daripada<br>memuat semula tab anda",
+      "sub": "Penjimat Memori Chrome melupuskan tab melahu dan memuatkannya semula dari awal apabila anda kembali. Kekalkan tab penting tepat di tempat anda meninggalkannya."
+    },
+    "slide2": {
+      "eyebrow": "SETIAP TAB, SATU TEMPAT",
+      "title": "Lihat dan kawal setiap tab dibuka",
+      "sub": "Senarai langsung semua tab anda — dikumpulkan mengikut tapak, boleh dicari, dengan statistik. Alih suis untuk mengekalkan mana-mana tab hidup, atau biarkan Chrome melupuskannya."
+    },
+    "slide3": {
+      "eyebrow": "PERATURAN ANDA",
+      "title": "Lindungi semuanya — atau hanya pilihan anda",
+      "sub": "Dua mod serta peraturan setiap tapak. Peraturan domain merangkumi subdomain secara automatik, jadi example.com melindungi kesemuanya."
+    },
+    "slide4": {
+      "eyebrow": "SATU KLIK",
+      "title": "Setiap tapak atau<br>setiap tab — serta-merta",
+      "sub": "Lindungi atau kecualikan tapak semasa terus dari bar alat. Atau atasi satu tab sehingga anda menutupnya. Peraturan domain turut merangkumi subdomain."
+    },
+    "slide5": {
+      "eyebrow": "PERIBADI SECARA REKA BENTUK",
+      "title": "Ringan, peribadi,<br>dalam 50+ bahasa",
+      "sub": "Tiada penjejakan, tiada analitik, tiada pelayan — semuanya kekal dalam pelayar anda. Tema cerah, gelap atau auto, disetempatkan sepenuhnya."
+    }
+  },
+  "nl": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Voorkom dat Chrome<br>je tabbladen herlaadt",
+      "sub": "De Geheugenbespaarder van Chrome verwijdert inactieve tabbladen en laadt ze opnieuw vanaf nul wanneer je terugkomt. Houd de tabbladen die ertoe doen precies zoals je ze achterliet."
+    },
+    "slide2": {
+      "eyebrow": "ELK TABBLAD, ÉÉN PLEK",
+      "title": "Bekijk en beheer elk open tabblad",
+      "sub": "Een live lijst van al je tabbladen — gegroepeerd per site, doorzoekbaar, met statistieken. Zet een schakelaar om om een tabblad actief te houden, of laat Chrome het verwijderen."
+    },
+    "slide3": {
+      "eyebrow": "JOUW REGELS",
+      "title": "Bescherm alles — of alleen wat je kiest",
+      "sub": "Twee modi plus regels per site. Domeinregels dekken automatisch de subdomeinen, dus example.com beschermt alles."
+    },
+    "slide4": {
+      "eyebrow": "ÉÉN KLIK",
+      "title": "Per site of<br>per tabblad — direct",
+      "sub": "Bescherm of sluit de huidige site uit, rechtstreeks vanuit de werkbalk. Of overschrijf één tabblad tot je het sluit. Domeinregels dekken ook subdomeinen."
+    },
+    "slide5": {
+      "eyebrow": "PRIVÉ VAN NATURE",
+      "title": "Licht, privé,<br>in 50+ talen",
+      "sub": "Geen tracking, geen analytics, geen servers — alles blijft in je browser. Licht, donker of automatisch thema, volledig vertaald."
+    }
+  },
+  "no": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Hindre at Chrome<br>laster fanene dine på nytt",
+      "sub": "Chromes Minnesparing forkaster inaktive faner og laster dem inn igjen fra bunnen av når du bytter tilbake. Hold fanene som betyr noe nøyaktig der du forlot dem."
+    },
+    "slide2": {
+      "eyebrow": "HVER FANE, ÉTT STED",
+      "title": "Se og styr hver åpne fane",
+      "sub": "En sanntidsliste over alle fanene dine — gruppert etter nettsted, søkbar, med statistikk. Vipp en bryter for å holde en fane aktiv, eller la Chrome forkaste den."
+    },
+    "slide3": {
+      "eyebrow": "DINE REGLER",
+      "title": "Beskytt alt — eller bare det du velger",
+      "sub": "To moduser pluss regler per nettsted. Domeneregler dekker underdomener automatisk, så example.com beskytter alt."
+    },
+    "slide4": {
+      "eyebrow": "ETT KLIKK",
+      "title": "Per nettsted eller<br>per fane — umiddelbart",
+      "sub": "Beskytt eller ekskluder gjeldende nettsted rett fra verktøylinjen. Eller overstyr én fane til du lukker den. Domeneregler dekker også underdomener."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT FRA BUNNEN AV",
+      "title": "Lett, privat,<br>på 50+ språk",
+      "sub": "Ingen sporing, ingen analyse, ingen servere — alt blir værende i nettleseren din. Lyst, mørkt eller automatisk tema, fullstendig oversatt."
+    }
+  },
+  "pl": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Powstrzymaj Chrome<br>przed przeładowywaniem kart",
+      "sub": "Oszczędzanie pamięci w Chrome odrzuca nieaktywne karty i wczytuje je od nowa po powrocie. Zachowaj ważne karty dokładnie tam, gdzie je zostawiłeś."
+    },
+    "slide2": {
+      "eyebrow": "KAŻDA KARTA, JEDNO MIEJSCE",
+      "title": "Zobacz i kontroluj każdą otwartą kartę",
+      "sub": "Lista wszystkich kart na żywo — pogrupowana według witryn, z wyszukiwaniem i statystykami. Przełącz, aby utrzymać dowolną kartę aktywną, lub pozwól Chrome ją odrzucić."
+    },
+    "slide3": {
+      "eyebrow": "TWOJE REGUŁY",
+      "title": "Chroń wszystko — lub tylko to, co wybierzesz",
+      "sub": "Dwa tryby plus reguły dla witryn. Reguły domen automatycznie obejmują subdomeny, więc example.com chroni całość."
+    },
+    "slide4": {
+      "eyebrow": "JEDNO KLIKNIĘCIE",
+      "title": "Dla witryny lub<br>dla karty — natychmiast",
+      "sub": "Chroń lub wyklucz bieżącą witrynę prosto z paska narzędzi. Albo nadpisz pojedynczą kartę do jej zamknięcia. Reguły domen obejmują też subdomeny."
+    },
+    "slide5": {
+      "eyebrow": "PRYWATNOŚĆ U PODSTAW",
+      "title": "Lekka, prywatna,<br>w 50+ językach",
+      "sub": "Brak śledzenia, brak analityki, brak serwerów — wszystko zostaje w Twojej przeglądarce. Motyw jasny, ciemny lub auto, w pełni przetłumaczona."
+    }
+  },
+  "pt_BR": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Impeça o Chrome de<br>recarregar suas abas",
+      "sub": "A Economia de memória do Chrome descarta abas ociosas e as recarrega do zero quando você volta. Mantenha as abas que importam exatamente onde você as deixou."
+    },
+    "slide2": {
+      "eyebrow": "CADA ABA, UM SÓ LUGAR",
+      "title": "Veja e controle cada aba aberta",
+      "sub": "Uma lista ao vivo de todas as suas abas — agrupada por site, pesquisável e com estatísticas. Acione um interruptor para manter qualquer aba ativa, ou deixe o Chrome descartá-la."
+    },
+    "slide3": {
+      "eyebrow": "SUAS REGRAS",
+      "title": "Proteja tudo — ou só o que você escolher",
+      "sub": "Dois modos mais regras por site. As regras de domínio abrangem subdomínios automaticamente, então example.com protege tudo."
+    },
+    "slide4": {
+      "eyebrow": "UM CLIQUE",
+      "title": "Por site ou<br>por aba — na hora",
+      "sub": "Proteja ou exclua o site atual direto da barra de ferramentas. Ou substitua uma única aba até você fechá-la. As regras de domínio também abrangem subdomínios."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR NATUREZA",
+      "title": "Leve, privado,<br>em 50+ idiomas",
+      "sub": "Sem rastreamento, sem análises, sem servidores — tudo fica no seu navegador. Tema claro, escuro ou automático, totalmente traduzido."
+    }
+  },
+  "pt_PT": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Impeça o Chrome de<br>recarregar os seus separadores",
+      "sub": "A Poupança de Memória do Chrome descarrega os separadores inativos e recarrega-os do zero quando regressa. Mantenha os separadores que importam exatamente onde os deixou."
+    },
+    "slide2": {
+      "eyebrow": "TODOS OS SEPARADORES NUM SÓ SÍTIO",
+      "title": "Veja e controle cada separador aberto",
+      "sub": "Uma lista ao vivo de todos os seus separadores — agrupados por site, pesquisáveis e com estatísticas. Acione um interruptor para manter qualquer separador ativo ou deixe o Chrome descartá-lo."
+    },
+    "slide3": {
+      "eyebrow": "AS SUAS REGRAS",
+      "title": "Proteja tudo — ou apenas o que escolher",
+      "sub": "Dois modos e regras por site. As regras de domínio abrangem automaticamente os subdomínios, por isso example.com protege tudo."
+    },
+    "slide4": {
+      "eyebrow": "UM CLIQUE",
+      "title": "Por site ou<br>por separador — num instante",
+      "sub": "Proteja ou exclua o site atual diretamente da barra de ferramentas. Ou substitua um único separador até o fechar. As regras de domínio também abrangem os subdomínios."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR CONCEÇÃO",
+      "title": "Leve, privado,<br>em mais de 50 idiomas",
+      "sub": "Sem rastreio, sem análises, sem servidores — tudo fica no seu navegador. Tema claro, escuro ou automático, totalmente traduzido."
+    }
+  },
+  "ro": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Împiedică Chrome să-ți<br>reîncarce filele",
+      "sub": "Economizorul de memorie din Chrome descarcă filele inactive și le reîncarcă de la zero când revii. Păstrează filele care contează exact acolo unde le-ai lăsat."
+    },
+    "slide2": {
+      "eyebrow": "TOATE FILELE, ÎNTR-UN LOC",
+      "title": "Vezi și controlează fiecare filă deschisă",
+      "sub": "O listă în timp real cu toate filele tale — grupate pe site, cu căutare și statistici. Apasă un comutator ca să menții activă orice filă sau las-o pe Chrome să o elimine."
+    },
+    "slide3": {
+      "eyebrow": "REGULILE TALE",
+      "title": "Protejează tot — sau doar ce alegi tu",
+      "sub": "Două moduri plus reguli pe site. Regulile de domeniu acoperă automat subdomeniile, așa că example.com protejează tot."
+    },
+    "slide4": {
+      "eyebrow": "UN SINGUR CLIC",
+      "title": "Pe site sau<br>pe filă — instantaneu",
+      "sub": "Protejează sau exclude site-ul curent direct din bara de instrumente. Sau înlocuiește setarea unei singure file până o închizi. Regulile de domeniu acoperă și subdomeniile."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT PRIN CONCEPȚIE",
+      "title": "Ușor, privat,<br>în peste 50 de limbi",
+      "sub": "Fără urmărire, fără analize, fără servere — totul rămâne în browserul tău. Temă deschisă, întunecată sau automată, complet tradus."
+    }
+  },
+  "ru": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Запретите Chrome<br>перезагружать ваши вкладки",
+      "sub": "Экономия памяти в Chrome выгружает неактивные вкладки и перезагружает их с нуля, когда вы возвращаетесь. Сохраните важные вкладки именно там, где вы их оставили."
+    },
+    "slide2": {
+      "eyebrow": "ВСЕ ВКЛАДКИ В ОДНОМ МЕСТЕ",
+      "title": "Просматривайте и контролируйте каждую открытую вкладку",
+      "sub": "Живой список всех ваших вкладок — сгруппированы по сайтам, с поиском и статистикой. Включите переключатель, чтобы сохранить любую вкладку активной, или позвольте Chrome выгрузить её."
+    },
+    "slide3": {
+      "eyebrow": "ВАШИ ПРАВИЛА",
+      "title": "Защищайте всё — или только то, что выберете",
+      "sub": "Два режима плюс правила для отдельных сайтов. Правила для домена автоматически распространяются на поддомены, поэтому example.com защищает всё целиком."
+    },
+    "slide4": {
+      "eyebrow": "ОДИН КЛИК",
+      "title": "Для сайта или<br>вкладки — мгновенно",
+      "sub": "Защитите или исключите текущий сайт прямо с панели инструментов. Или переопределите отдельную вкладку, пока не закроете её. Правила для домена охватывают и поддомены."
+    },
+    "slide5": {
+      "eyebrow": "ПРИВАТНОСТЬ ПО УМОЛЧАНИЮ",
+      "title": "Лёгкое, приватное,<br>на 50+ языках",
+      "sub": "Никакого отслеживания, аналитики и серверов — всё остаётся в вашем браузере. Светлая, тёмная или автоматическая тема, полностью локализовано."
+    }
+  },
+  "sk": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Zabráňte Chrome,<br>aby znovu načítaval vaše karty",
+      "sub": "Šetrič pamäte v prehliadači Chrome zahadzuje nečinné karty a po návrate ich znova načíta od začiatku. Ponechajte si karty, na ktorých záleží, presne tam, kde ste ich nechali."
+    },
+    "slide2": {
+      "eyebrow": "VŠETKY KARTY NA JEDNOM MIESTE",
+      "title": "Zobrazte a ovládajte každú otvorenú kartu",
+      "sub": "Živý zoznam všetkých vašich kariet — zoskupené podľa stránok, s vyhľadávaním a štatistikami. Prepnutím prepínača udržíte ľubovoľnú kartu aktívnu alebo ju necháte Chrome zahodiť."
+    },
+    "slide3": {
+      "eyebrow": "VAŠE PRAVIDLÁ",
+      "title": "Chráňte všetko — alebo len to, čo si zvolíte",
+      "sub": "Dva režimy plus pravidlá pre jednotlivé stránky. Pravidlá pre doménu automaticky pokrývajú aj subdomény, takže example.com chráni úplne všetko."
+    },
+    "slide4": {
+      "eyebrow": "JEDNO KLIKNUTIE",
+      "title": "Pre stránku alebo<br>kartu — okamžite",
+      "sub": "Ochráňte alebo vylúčte aktuálnu stránku priamo z panela s nástrojmi. Alebo prepíšte nastavenie jednej karty, kým ju nezavriete. Pravidlá pre doménu pokrývajú aj subdomény."
+    },
+    "slide5": {
+      "eyebrow": "SÚKROMIE OD ZÁKLADU",
+      "title": "Ľahké, súkromné,<br>v 50+ jazykoch",
+      "sub": "Žiadne sledovanie, žiadne analytiky, žiadne servery — všetko zostáva vo vašom prehliadači. Svetlá, tmavá alebo automatická téma, plne preložené."
+    }
+  },
+  "sl": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Preprečite Chromu,<br>da znova nalaga vaše zavihke",
+      "sub": "Chromov varčevalnik pomnilnika opušča nedejavne zavihke in jih ob vrnitvi znova naloži od začetka. Ohranite zavihke, ki so pomembni, točno tam, kjer ste jih pustili."
+    },
+    "slide2": {
+      "eyebrow": "VSI ZAVIHKI NA ENEM MESTU",
+      "title": "Oglejte si in nadzirajte vsak odprt zavihek",
+      "sub": "Živ seznam vseh vaših zavihkov — združeni po straneh, z iskanjem in statistiko. Preklopite stikalo, da ohranite kateri koli zavihek aktiven, ali pustite, da ga Chrome opusti."
+    },
+    "slide3": {
+      "eyebrow": "VAŠA PRAVILA",
+      "title": "Zaščitite vse — ali samo tisto, kar izberete",
+      "sub": "Dva načina in pravila za posamezne strani. Pravila za domeno samodejno zajamejo poddomene, zato example.com zaščiti vse."
+    },
+    "slide4": {
+      "eyebrow": "EN KLIK",
+      "title": "Za stran ali<br>zavihek — v trenutku",
+      "sub": "Zaščitite ali izključite trenutno stran kar iz orodne vrstice. Ali preglasite posamezen zavihek, dokler ga ne zaprete. Pravila za domeno zajamejo tudi poddomene."
+    },
+    "slide5": {
+      "eyebrow": "ZASEBNOST PO ZASNOVI",
+      "title": "Lahko, zasebno,<br>v 50+ jezikih",
+      "sub": "Brez sledenja, brez analitike, brez strežnikov — vse ostane v vašem brskalniku. Svetla, temna ali samodejna tema, popolnoma prevedeno."
+    }
+  },
+  "sr": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Спречите Chrome да<br>поново учитава ваше картице",
+      "sub": "Chrome-ова Уштеда меморије одбацује неактивне картице и поново их учитава из почетка када се вратите. Задржите важне картице тачно тамо где сте их оставили."
+    },
+    "slide2": {
+      "eyebrow": "СВЕ КАРТИЦЕ НА ЈЕДНОМ МЕСТУ",
+      "title": "Видите и контролишите сваку отворену картицу",
+      "sub": "Живи списак свих ваших картица — груписане по сајту, са претрагом и статистиком. Укључите прекидач да одржите било коју картицу активном или пустите Chrome да је одбаци."
+    },
+    "slide3": {
+      "eyebrow": "ВАША ПРАВИЛА",
+      "title": "Заштитите све — или само оно што изаберете",
+      "sub": "Два режима плус правила по сајту. Правила за домен аутоматски обухватају поддомене, па example.com штити све."
+    },
+    "slide4": {
+      "eyebrow": "ЈЕДАН КЛИК",
+      "title": "По сајту или<br>по картици — одмах",
+      "sub": "Заштитите или искључите тренутни сајт право из траке са алаткама. Или замените подешавање једне картице док је не затворите. Правила за домен обухватају и поддомене."
+    },
+    "slide5": {
+      "eyebrow": "ПРИВАТНОСТ ПО ДИЗАЈНУ",
+      "title": "Лагано, приватно,<br>на 50+ језика",
+      "sub": "Без праћења, без аналитике, без сервера — све остаје у вашем прегледачу. Светла, тамна или аутоматска тема, потпуно преведено."
+    }
+  },
+  "sv": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Stoppa Chrome från att<br>ladda om dina flikar",
+      "sub": "Chromes Minnesbesparing rensar bort inaktiva flikar och laddar om dem från början när du växlar tillbaka. Håll flikarna som betyder något exakt där du lämnade dem."
+    },
+    "slide2": {
+      "eyebrow": "ALLA FLIKAR, ETT STÄLLE",
+      "title": "Se och styr varje öppen flik",
+      "sub": "En liveuppdaterad lista över alla dina flikar — grupperade efter webbplats, sökbara, med statistik. Slå om en brytare för att hålla en flik aktiv, eller låt Chrome rensa bort den."
+    },
+    "slide3": {
+      "eyebrow": "DINA REGLER",
+      "title": "Skydda allt — eller bara det du väljer",
+      "sub": "Två lägen plus regler per webbplats. Domänregler täcker underdomäner automatiskt, så example.com skyddar allt."
+    },
+    "slide4": {
+      "eyebrow": "ETT KLICK",
+      "title": "Per webbplats eller<br>per flik — direkt",
+      "sub": "Skydda eller undanta den aktuella webbplatsen direkt från verktygsfältet. Eller åsidosätt en enskild flik tills du stänger den. Domänregler täcker även underdomäner."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT FRÅN GRUNDEN",
+      "title": "Lätt, privat och<br>på 50+ språk",
+      "sub": "Ingen spårning, ingen analys, inga servrar — allt stannar i din webbläsare. Ljust, mörkt eller automatiskt tema, fullt lokaliserad."
+    }
+  },
+  "sw": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Zuia Chrome<br>kupakia tena vichupo vyako",
+      "sub": "Kihifadhi Kumbukumbu cha Chrome hutupa vichupo visivyotumika na huvipakia tena tangu mwanzo unaporudi. Weka vichupo muhimu pale ulipoviacha."
+    },
+    "slide2": {
+      "eyebrow": "KILA CHUPO, SEHEMU MOJA",
+      "title": "Ona na udhibiti kila chupo kilichofunguliwa",
+      "sub": "Orodha hai ya vichupo vyako vyote — vimepangwa kwa tovuti, vinavyotafutika, na takwimu. Geuza swichi ili kuweka chupo chochote hai, au mruhusu Chrome akitupe."
+    },
+    "slide3": {
+      "eyebrow": "SHERIA ZAKO",
+      "title": "Linda kila kitu — au kile tu unachochagua",
+      "sub": "Hali mbili pamoja na sheria za kila tovuti. Sheria za kikoa hufunika vikoa vidogo kiotomatiki, hivyo example.com hulinda yote."
+    },
+    "slide4": {
+      "eyebrow": "BONYEZA MARA MOJA",
+      "title": "Kwa tovuti au<br>kwa chupo — papo hapo",
+      "sub": "Linda au ondoa tovuti ya sasa moja kwa moja kutoka kwenye upau wa zana. Au tengua chupo kimoja hadi ukifunge. Sheria za kikoa hufunika vikoa vidogo pia."
+    },
+    "slide5": {
+      "eyebrow": "FARAGHA TANGU MWANZO",
+      "title": "Nyepesi, ya faragha,<br>katika lugha 50+",
+      "sub": "Hakuna ufuatiliaji, hakuna uchanganuzi, hakuna seva — kila kitu hubaki kwenye kivinjari chako. Mandhari nyepesi, nyeusi au otomatiki, imetafsiriwa kikamilifu."
+    }
+  },
+  "ta": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "உங்கள் தாவல்களை Chrome<br>மீண்டும் ஏற்றுவதைத் தடுக்கவும்",
+      "sub": "Chrome இன் Memory Saver செயலற்ற தாவல்களை நீக்கி, நீங்கள் திரும்பும்போது அவற்றை முதலிலிருந்து மீண்டும் ஏற்றுகிறது. முக்கியமான தாவல்களை நீங்கள் விட்ட இடத்திலேயே வைத்திருங்கள்."
+    },
+    "slide2": {
+      "eyebrow": "எல்லா தாவல்களும், ஒரே இடத்தில்",
+      "title": "திறந்த ஒவ்வொரு தாவலையும் பார்த்து கட்டுப்படுத்துங்கள்",
+      "sub": "உங்கள் அனைத்து தாவல்களின் நேரடி பட்டியல் — தளம் வாரியாக தொகுக்கப்பட்டு, தேடக்கூடியதாக, புள்ளிவிவரங்களுடன். எந்தத் தாவலையும் செயலில் வைக்க ஒரு சுவிட்சை மாற்றுங்கள், அல்லது Chrome அதை நீக்க அனுமதியுங்கள்."
+    },
+    "slide3": {
+      "eyebrow": "உங்கள் விதிகள்",
+      "title": "எல்லாவற்றையும் பாதுகாக்கவும் — அல்லது நீங்கள் தேர்ந்தெடுப்பதை மட்டும்",
+      "sub": "இரண்டு பயன்முறைகள் மற்றும் தளம் வாரியான விதிகள். டொமைன் விதிகள் துணை டொமைன்களைத் தானாகவே உள்ளடக்குகின்றன, எனவே example.com அனைத்தையும் பாதுகாக்கிறது."
+    },
+    "slide4": {
+      "eyebrow": "ஒரே கிளிக்",
+      "title": "தளம் வாரியாக அல்லது<br>தாவல் வாரியாக — உடனடியாக",
+      "sub": "நடப்புத் தளத்தை கருவிப்பட்டியில் இருந்து நேரடியாகப் பாதுகாக்கவும் அல்லது விலக்கவும். அல்லது நீங்கள் மூடும் வரை ஒரே தாவலை மீறவும். டொமைன் விதிகள் துணை டொமைன்களையும் உள்ளடக்குகின்றன."
+    },
+    "slide5": {
+      "eyebrow": "வடிவமைப்பிலேயே தனிப்பட்டது",
+      "title": "எளிதானது, தனிப்பட்டது,<br>50+ மொழிகளில்",
+      "sub": "கண்காணிப்பு இல்லை, பகுப்பாய்வு இல்லை, சேவையகங்கள் இல்லை — அனைத்தும் உங்கள் உலாவியிலேயே இருக்கும். வெளிர், அடர் அல்லது தானியங்கி தீம், முழுமையாக உள்ளூராக்கப்பட்டது."
+    }
+  },
+  "te": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "మీ ట్యాబ్‌లను Chrome<br>రీలోడ్ చేయకుండా ఆపండి",
+      "sub": "Chrome యొక్క Memory Saver నిష్క్రియ ట్యాబ్‌లను తొలగించి, మీరు తిరిగి మారినప్పుడు వాటిని మొదటి నుండి రీలోడ్ చేస్తుంది. ముఖ్యమైన ట్యాబ్‌లను మీరు వదిలిన చోటే సరిగ్గా ఉంచండి."
+    },
+    "slide2": {
+      "eyebrow": "ప్రతి ట్యాబ్, ఒకే చోట",
+      "title": "తెరిచిన ప్రతి ట్యాబ్‌ను చూడండి, నియంత్రించండి",
+      "sub": "మీ అన్ని ట్యాబ్‌ల లైవ్ జాబితా — సైట్‌వారీగా సమూహపరచబడి, శోధించదగినవి, గణాంకాలతో. ఏ ట్యాబ్‌నైనా సజీవంగా ఉంచడానికి స్విచ్ మార్చండి, లేదా Chrome దాన్ని తొలగించనివ్వండి."
+    },
+    "slide3": {
+      "eyebrow": "మీ నియమాలు",
+      "title": "ప్రతిదాన్ని రక్షించండి — లేదా మీరు ఎంచుకున్నదాన్ని మాత్రమే",
+      "sub": "రెండు మోడ్‌లు, పైగా సైట్‌వారీ నియమాలు. డొమైన్ నియమాలు సబ్‌డొమైన్‌లను స్వయంచాలకంగా కవర్ చేస్తాయి, కాబట్టి example.com అన్నింటినీ రక్షిస్తుంది."
+    },
+    "slide4": {
+      "eyebrow": "ఒకే క్లిక్",
+      "title": "సైట్‌వారీగా లేదా<br>ట్యాబ్‌వారీగా — తక్షణమే",
+      "sub": "ప్రస్తుత సైట్‌ను టూల్‌బార్ నుండి నేరుగా రక్షించండి లేదా మినహాయించండి. లేదా మీరు మూసే వరకు ఒకే ట్యాబ్‌ను అధిగమించండి. డొమైన్ నియమాలు సబ్‌డొమైన్‌లను కూడా కవర్ చేస్తాయి."
+    },
+    "slide5": {
+      "eyebrow": "డిజైన్‌లోనే ప్రైవేట్",
+      "title": "తేలికైనది, ప్రైవేట్,<br>50+ భాషల్లో",
+      "sub": "ట్రాకింగ్ లేదు, విశ్లేషణలు లేవు, సర్వర్లు లేవు — ప్రతిదీ మీ బ్రౌజర్‌లోనే ఉంటుంది. లైట్, డార్క్ లేదా ఆటో థీమ్, పూర్తిగా స్థానికీకరించబడింది."
+    }
+  },
+  "th": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "หยุด Chrome ไม่ให้<br>โหลดแท็บของคุณใหม่",
+      "sub": "Memory Saver ของ Chrome จะยกเลิกการโหลดแท็บที่ไม่ได้ใช้งานและโหลดใหม่ตั้งแต่ต้นเมื่อคุณสลับกลับมา เก็บแท็บที่สำคัญไว้ตรงจุดที่คุณวางไว้พอดี"
+    },
+    "slide2": {
+      "eyebrow": "ทุกแท็บ ที่เดียว",
+      "title": "ดูและควบคุมทุกแท็บที่เปิดอยู่",
+      "sub": "รายการแท็บทั้งหมดแบบเรียลไทม์ — จัดกลุ่มตามเว็บไซต์ ค้นหาได้ พร้อมสถิติ พลิกสวิตช์เพื่อให้แท็บใดก็ตามทำงานอยู่ หรือปล่อยให้ Chrome ยกเลิกการโหลด"
+    },
+    "slide3": {
+      "eyebrow": "กฎของคุณ",
+      "title": "ปกป้องทุกอย่าง — หรือเฉพาะที่คุณเลือก",
+      "sub": "สองโหมดพร้อมกฎรายเว็บไซต์ กฎโดเมนครอบคลุมโดเมนย่อยโดยอัตโนมัติ ดังนั้น example.com จึงปกป้องได้ทั้งหมด"
+    },
+    "slide4": {
+      "eyebrow": "คลิกเดียว",
+      "title": "รายเว็บไซต์หรือ<br>รายแท็บ — ทันที",
+      "sub": "ปกป้องหรือยกเว้นเว็บไซต์ปัจจุบันได้จากแถบเครื่องมือโดยตรง หรือกำหนดเฉพาะแท็บเดียวจนกว่าคุณจะปิด กฎโดเมนครอบคลุมโดเมนย่อยด้วย"
+    },
+    "slide5": {
+      "eyebrow": "ออกแบบมาให้เป็นส่วนตัว",
+      "title": "เบา เป็นส่วนตัว<br>รองรับ 50+ ภาษา",
+      "sub": "ไม่มีการติดตาม ไม่มีการวิเคราะห์ ไม่มีเซิร์ฟเวอร์ — ทุกอย่างอยู่ในเบราว์เซอร์ของคุณ ธีมสว่าง มืด หรืออัตโนมัติ แปลครบทุกภาษา"
+    }
+  },
+  "tr": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome'un sekmelerinizi<br>yeniden yüklemesini durdurun",
+      "sub": "Chrome'un Bellek Tasarrufu özelliği boştaki sekmeleri kaldırır ve geri döndüğünüzde onları sıfırdan yeniden yükler. Önemli sekmeleri tam bıraktığınız yerde tutun."
+    },
+    "slide2": {
+      "eyebrow": "HER SEKME, TEK YERDE",
+      "title": "Açık her sekmeyi görün ve yönetin",
+      "sub": "Tüm sekmelerinizin canlı listesi — siteye göre gruplanmış, aranabilir, istatistiklerle. Herhangi bir sekmeyi etkin tutmak için anahtarı çevirin ya da Chrome'un kaldırmasına izin verin."
+    },
+    "slide3": {
+      "eyebrow": "KURALLAR SİZİN",
+      "title": "Her şeyi koruyun — ya da yalnızca seçtiğinizi",
+      "sub": "İki mod ve site bazlı kurallar. Alan adı kuralları alt alanları otomatik kapsar, böylece example.com tamamını korur."
+    },
+    "slide4": {
+      "eyebrow": "TEK TIKLA",
+      "title": "Site bazında veya<br>sekme bazında — anında",
+      "sub": "Geçerli siteyi doğrudan araç çubuğundan koruyun ya da hariç tutun. Veya kapatana kadar tek bir sekmeyi geçersiz kılın. Alan adı kuralları alt alanları da kapsar."
+    },
+    "slide5": {
+      "eyebrow": "TASARIMI GEREĞİ ÖZEL",
+      "title": "Hafif, gizli ve<br>50+ dilde",
+      "sub": "İzleme yok, analiz yok, sunucu yok — her şey tarayıcınızda kalır. Açık, koyu veya otomatik tema, tamamen yerelleştirilmiş."
+    }
+  },
+  "uk": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Не дозволяйте Chrome<br>перезавантажувати вкладки",
+      "sub": "Економія пам'яті в Chrome вивантажує неактивні вкладки й перезавантажує їх з нуля, коли ви повертаєтесь. Тримайте важливі вкладки саме там, де ви їх залишили."
+    },
+    "slide2": {
+      "eyebrow": "УСІ ВКЛАДКИ В ОДНОМУ МІСЦІ",
+      "title": "Переглядайте та контролюйте кожну вкладку",
+      "sub": "Живий список усіх вкладок — згрупований за сайтами, з пошуком і статистикою. Один перемикач — і вкладка лишається активною або Chrome її вивантажує."
+    },
+    "slide3": {
+      "eyebrow": "ВАШІ ПРАВИЛА",
+      "title": "Захищайте все — або лише те, що оберете",
+      "sub": "Два режими плюс правила для сайтів. Правила для доменів автоматично охоплюють піддомени, тож example.com захищає все одразу."
+    },
+    "slide4": {
+      "eyebrow": "ОДИН КЛІК",
+      "title": "За сайтом чи за<br>вкладкою — миттєво",
+      "sub": "Захистіть або виключіть поточний сайт прямо з панелі інструментів. Або змініть налаштування однієї вкладки до її закриття. Правила для доменів охоплюють і піддомени."
+    },
+    "slide5": {
+      "eyebrow": "КОНФІДЕНЦІЙНІСТЬ ЗА ЗАМОВЧУВАННЯМ",
+      "title": "Легке, приватне,<br>50+ мов",
+      "sub": "Жодного відстеження, жодної аналітики, жодних серверів — усе лишається у вашому браузері. Світла, темна чи авто тема, повністю локалізовано."
+    }
+  },
+  "vi": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Ngăn Chrome<br>tải lại các tab của bạn",
+      "sub": "Trình tiết kiệm bộ nhớ của Chrome dỡ bỏ các tab nhàn rỗi và tải lại từ đầu khi bạn quay lại. Giữ các tab quan trọng đúng như nơi bạn đã để lại."
+    },
+    "slide2": {
+      "eyebrow": "MỌI TAB, MỘT NƠI",
+      "title": "Xem và kiểm soát mọi tab đang mở",
+      "sub": "Danh sách trực tiếp tất cả các tab — nhóm theo trang, tìm kiếm được, kèm thống kê. Gạt một công tắc để giữ tab hoạt động, hoặc để Chrome dỡ bỏ nó."
+    },
+    "slide3": {
+      "eyebrow": "QUY TẮC CỦA BẠN",
+      "title": "Bảo vệ mọi thứ — hoặc chỉ thứ bạn chọn",
+      "sub": "Hai chế độ cùng quy tắc theo trang. Quy tắc theo tên miền tự động bao gồm tên miền phụ, nên example.com bảo vệ toàn bộ."
+    },
+    "slide4": {
+      "eyebrow": "MỘT CÚ NHẤP",
+      "title": "Theo trang hay theo<br>tab — tức thì",
+      "sub": "Bảo vệ hoặc loại trừ trang hiện tại ngay từ thanh công cụ. Hoặc ghi đè một tab cho đến khi bạn đóng nó. Quy tắc theo tên miền cũng bao gồm tên miền phụ."
+    },
+    "slide5": {
+      "eyebrow": "RIÊNG TƯ NGAY TỪ THIẾT KẾ",
+      "title": "Nhẹ, riêng tư,<br>hơn 50 ngôn ngữ",
+      "sub": "Không theo dõi, không phân tích, không máy chủ — mọi thứ ở lại trong trình duyệt của bạn. Giao diện Sáng, Tối hoặc Tự động, bản địa hóa đầy đủ."
+    }
+  },
+  "zh_CN": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "阻止 Chrome<br>重新加载你的标签页",
+      "sub": "Chrome 的内存节省程序会丢弃闲置标签页，并在你切回来时从头重新加载。让重要的标签页始终停留在你离开时的状态。"
+    },
+    "slide2": {
+      "eyebrow": "每个标签页，集中管理",
+      "title": "查看并掌控每个打开的标签页",
+      "sub": "所有标签页的实时列表——按网站分组、可搜索、带统计。一键拨动开关即可让任意标签页保持活动，或交给 Chrome 丢弃。"
+    },
+    "slide3": {
+      "eyebrow": "你的规则",
+      "title": "保护全部——或只保护你选择的",
+      "sub": "两种模式外加按网站规则。域名规则自动覆盖子域名，所以 example.com 会保护其下全部。"
+    },
+    "slide4": {
+      "eyebrow": "一键搞定",
+      "title": "按网站或<br>按标签页——即刻生效",
+      "sub": "直接从工具栏保护或排除当前网站。也可临时调整单个标签页，直到你关闭它为止。域名规则同样覆盖子域名。"
+    },
+    "slide5": {
+      "eyebrow": "隐私为本设计",
+      "title": "轻量、私密、<br>支持 50+ 种语言",
+      "sub": "无追踪、无分析、无服务器——一切都留在你的浏览器中。浅色、深色或自动主题，完全本地化。"
+    }
+  },
+  "zh_TW": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "阻止 Chrome<br>重新載入你的分頁",
+      "sub": "Chrome 的記憶體節省程式會捨棄閒置分頁，並在你切回時從頭重新載入。讓重要的分頁維持在你離開時的狀態。"
+    },
+    "slide2": {
+      "eyebrow": "每個分頁，集中管理",
+      "title": "檢視並掌控每個開啟的分頁",
+      "sub": "所有分頁的即時清單——依網站分組、可搜尋、附統計。一鍵切換開關即可讓任一分頁保持活動，或交給 Chrome 捨棄。"
+    },
+    "slide3": {
+      "eyebrow": "你的規則",
+      "title": "保護全部——或只保護你選擇的",
+      "sub": "兩種模式外加個別網站規則。網域規則自動涵蓋子網域，所以 example.com 會保護其下全部。"
+    },
+    "slide4": {
+      "eyebrow": "一鍵搞定",
+      "title": "依網站或<br>依分頁——即刻生效",
+      "sub": "直接從工具列保護或排除目前網站。也可暫時調整單一分頁，直到你關閉它為止。網域規則也涵蓋子網域。"
+    },
+    "slide5": {
+      "eyebrow": "隱私為本設計",
+      "title": "輕量、私密、<br>支援 50+ 種語言",
+      "sub": "不追蹤、不分析、無伺服器——一切都留在你的瀏覽器中。淺色、深色或自動主題，完整在地化。"
+    }
+  }
+}
