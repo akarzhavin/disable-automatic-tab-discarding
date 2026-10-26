@@ -536,15 +536,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "内部页面",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "保持活动",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "始终保持整个 $HOST$ 处于活动状态（永久站点规则）",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -566,23 +566,23 @@
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "已关闭",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "停止保持此已关闭标签页的活动状态（忘记它）",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "此分组包含固定的标签页。",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "此处固定的标签页未保持活动状态。",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "此处有 $COUNT$ 个标签页保持活动状态。",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {

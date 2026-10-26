@@ -536,15 +536,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "આંતરિક પૃષ્ઠો",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "સક્રિય રાખો",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "હંમેશાં સંપૂર્ણ $HOST$ સક્રિય રાખો (કાયમી સાઇટ નિયમ)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -566,23 +566,23 @@
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "બંધ",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "આ બંધ ટૅબને સક્રિય રાખવાનું બંધ કરો (ભૂલી જાઓ)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "આ જૂથમાં પિન કરેલી ટૅબ છે.",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "અહીંની પિન કરેલી ટૅબ સક્રિય રાખવામાં આવતી નથી.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "અહીં $COUNT$ ટૅબ સક્રિય રાખવામાં આવી છે.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {

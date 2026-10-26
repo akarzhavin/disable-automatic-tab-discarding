@@ -536,15 +536,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "Dahili sayfalar",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "Etkin tut",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "Her zaman tüm $HOST$ sitesini etkin tut (kalıcı site kuralı)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -566,23 +566,23 @@
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "Kapalı",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "Bu kapalı sekmeyi etkin tutmayı bırak (unut)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "Bu grupta sabitlenmiş sekmeler var.",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "Buradaki sabitlenmiş sekmeler etkin tutulmuyor.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "Burada $COUNT$ sekme etkin tutuluyor.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {

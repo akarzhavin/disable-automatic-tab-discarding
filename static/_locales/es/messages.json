@@ -536,15 +536,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "Páginas internas",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "Mantener activa",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "Mantener siempre activo todo $HOST$ (una regla de sitio permanente)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -566,23 +566,23 @@
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "Cerrada",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "Dejar de mantener activa esta pestaña cerrada (olvidarla)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "Este grupo tiene pestañas fijadas.",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "Las pestañas fijadas aquí no se mantienen activas.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "Aquí se mantienen activas $COUNT$ pestaña(s).",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
