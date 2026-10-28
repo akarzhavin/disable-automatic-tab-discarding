@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Disattiva l'eliminazione delle schede di Chrome ed evita ricaricamenti indesiderati delle schede. Regole per sito, controllo per scheda e statistiche in tempo reale.",
+    "message": "Disattiva l'eliminazione delle schede di Chrome, senza rallentamenti in background. Regole per sito e scheda, timer di spegnimento.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "Disattiva l'eliminazione automatica delle schede",
+    "message": "Disattiva lo scarto automatico delle schede",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Interruttore principale",
+    "message": "Metti in pausa o riprendi «Mantieni in memoria» per tutte le schede («Mantieni in esecuzione» non cambia)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Protezione attiva",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "In pausa",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "schede protette",
@@ -43,59 +39,17 @@
     "message": "Questa scheda",
     "description": "Heading for the current-tab card in the popup."
   },
-  "pageCantBeManaged": {
-    "message": "Questa pagina non può essere gestita",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Non disponibile qui",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Le pagine interne e delle estensioni vengono sempre lasciate intatte.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Protetta",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Eliminabile",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Proteggi questo sito",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Smetti di proteggere questo sito",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Escludi questo sito",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Siti protetti",
+    "message": "Siti mantenuti in memoria",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Siti esclusi",
+    "message": "Siti che Chrome può scartare",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Ancora nessun sito",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ altri",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Rimuovi $DOMAIN$",
@@ -140,7 +94,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "protette ora",
+    "message": "in memoria ora",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -170,11 +124,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Modalità di protezione",
+    "message": "Mantieni in memoria: quali siti",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Proteggi tutto",
+    "message": "Tutti i siti, tranne…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -182,7 +136,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Solo lista consentiti",
+    "message": "Solo siti scelti",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -198,7 +152,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Aziona un interruttore per mantenere attiva quella scheda o lasciare che Chrome la elimini. Un interruttore manuale ha la precedenza sulle regole del sito e dura finché la scheda non viene chiusa.",
+    "message": "Per ogni scheda: ▣ la mantiene in memoria, ⚡ la mantiene in esecuzione, «Mantieni viva» fa entrambe le cose. Una modifica manuale ha la precedenza sulle regole del sito finché la scheda non viene chiusa.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -209,36 +163,12 @@
     "message": "Nessuna scheda corrisponde alla ricerca.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Questa finestra · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Finestra $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Manuale",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Sospesa",
+    "message": "Scartata",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -262,23 +192,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "La protezione è in pausa per l'interruttore principale",
+    "message": "«Mantieni in memoria» è in pausa — riattivalo nel riquadro «Mantieni in memoria»",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Protetta — aziona per lasciare che Chrome elimini questa scheda",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Eliminabile — aziona per mantenere attiva questa scheda",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Solo questi siti vengono mantenuti attivi; tutto il resto può essere eliminato. Un dominio corrisponde anche ai suoi sottodomini — ad es. <code>example.com</code> copre <code>mail.example.com</code>.",
+    "message": "Chrome non scarterà le schede di questi siti. Un dominio include i suoi sottodomini: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Questi siti possono essere eliminati. Un dominio corrisponde anche ai suoi sottodomini — ad es. <code>example.com</code> copre <code>mail.example.com</code>.",
+    "message": "Tutte le altre schede restano in memoria; Chrome può scartare le schede di questi siti. Un dominio include i suoi sottodomini: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -300,30 +222,6 @@
   "remove": {
     "message": "Rimuovi",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Sempre per questo sito",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Mantieni sempre attivo $HOST$ (aggiunge una regola del sito)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Consenti sempre l'eliminazione di $HOST$ (aggiorna le regole del sito)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Ancora niente qui.",
@@ -354,7 +252,7 @@
     }
   },
   "footerTip": {
-    "message": "Suggerimento: apri <code>chrome://discards</code> per vedere la colonna <strong>Auto Discardable</strong> — le schede protette mostrano ✕. Nota: le eliminazioni manuali lì funzionano ancora; questo blocca solo l'eliminazione <em>automatica</em> per il risparmio di memoria di Chrome.",
+    "message": "Suggerimento: apri <code>chrome://discards</code> per vedere la colonna <strong>Auto Discardable</strong> — le schede mantenute in memoria mostrano ✕. Nota: gli scarti manuali lì funzionano ancora; l'estensione blocca solo lo scarto <em>automatico</em> per il risparmio di memoria di Chrome.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -362,11 +260,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Mantieni attive le schede che contano",
+    "message": "Mantieni vive le schede che contano",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Il Risparmio memoria di Chrome scarica le schede inattive per liberare RAM, per poi ricaricarle quando torni. Keep Tabs Alive ti consente di scegliere quali schede restano attive e pronte — evitando ricaricamenti e interruzioni indesiderate.",
+    "message": "Chrome risparmia risorse in due modi: scarta le schede che non usi e rallenta quelle che non vedi. Keep Tabs Alive impedisce entrambe le cose, scheda per scheda, solo dove vuoi tu.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -402,27 +300,23 @@
     "description": "Note under the welcome CTA."
   },
   "welcomeStep1": {
-    "message": "<strong>Aggiungila</strong> per l'accesso con un clic: fai clic sull'icona del puzzle <span class=\"puzzle\">🧩</span> nella barra degli strumenti, poi sulla puntina.",
+    "message": "<strong>Fissala</strong> per l'accesso con un clic: fai clic sull'icona del puzzle <span class=\"puzzle\">🧩</span> nella barra degli strumenti, poi sulla puntina.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
-  },
-  "welcomeStep2": {
-    "message": "<strong>Verifica in qualsiasi momento</strong> su <code>chrome://discards</code> — le schede protette mostrano ✕ nella colonna <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
   },
   "tourMasterTitle": {
     "message": "L'interruttore principale",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Attiva o disattiva tutta la protezione qui. Mentre è disattivata, ogni scheda può essere eliminata — le tue regole vengono conservate, solo messe in pausa.",
+    "message": "Da qui puoi mettere in pausa o riprendere <b>Mantieni in memoria</b> per tutte le schede. Quando l'interruttore è disattivato, qualsiasi scheda può essere scartata: le tue regole restano salvate, solo in pausa. Le schede che mantieni in esecuzione continuano a funzionare.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Scegli una modalità di protezione",
+    "message": "Quali siti mantenere in memoria",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Solo lista consentiti</b> mantiene attivi solo i siti che scegli (l'impostazione predefinita delicata). <b>Proteggi tutto</b> mantiene attiva ogni scheda tranne quelle che escludi.",
+    "message": "<b>Solo siti scelti</b> mantiene in memoria solo i siti che aggiungi all'elenco (l'impostazione predefinita, più leggera). <b>Tutti i siti, tranne…</b> mantiene in memoria ogni scheda tranne i siti che escludi. «Mantieni in esecuzione» si imposta per scheda, non qui.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -430,15 +324,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Ogni scheda aperta ha il proprio interruttore. Azionalo per mantenere attiva quella singola scheda o lasciarla sospendere — una scelta una tantum che dura finché la scheda non viene chiusa. La vuoi per sempre? Clicca su <b>Sempre per questo sito</b> accanto all'interruttore per trasformarla in una regola del sito permanente. Clicca su una riga per saltare alla scheda.",
+    "message": "Ogni scheda aperta ha il proprio interruttore <b>Mantieni in memoria</b>: una scelta una tantum che dura finché la scheda non viene chiusa. L'interruttore nell'intestazione di un sito fa lo stesso per l'intero sito, in modo permanente. Fai clic su una riga per passare alla scheda.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Imposta regole per sito",
+    "message": "Mantieni interi siti in memoria",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Aggiungi domini qui per proteggere (o escludere) interi siti in una volta. Un dominio copre anche i suoi sottodomini — <code>example.com</code> corrisponde a <code>mail.example.com</code>. Questo è il tour — riaprilo in qualsiasi momento dal pulsante ?.",
+    "message": "Aggiungi qui dei domini per mantenere interi siti in memoria (o per lasciare che Chrome li scarti). Un dominio include anche i suoi sottodomini: <code>example.com</code> corrisponde a <code>mail.example.com</code>. Il tour finisce qui: riaprilo quando vuoi con il pulsante ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -472,7 +366,7 @@
     }
   },
   "thisWebsite": {
-    "message": "Questo sito web",
+    "message": "Questo sito",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -487,54 +381,6 @@
     "message": "Le pagine interne non hanno regole per i siti — puoi comunque cambiare questa scheda.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "alwaysKeptAlive": {
-    "message": "Sempre attiva",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Sempre eliminabile",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ è salvato come regola del sito — clicca per rimuoverlo",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Rimosso — $HOST$ ora segue di nuovo l'impostazione predefinita della modalità.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Salvato — $HOST$ ora resterà sempre attivo. Vedi Regole del sito qui sotto.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Salvato — $HOST$ ora può sempre essere eliminato. Vedi Regole del sito qui sotto.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
   "internalPagesGroup": {
     "message": "Pagine interne",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Mantieni sempre attivo tutto $HOST$ (una regola del sito permanente)",
+    "message": "Mantieni sempre in memoria tutto $HOST$ (una regola del sito permanente)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "La protezione è in pausa — nessuna scheda viene mantenuta attiva.",
+    "message": "«Mantieni in memoria» è in pausa — Chrome può scartare qualsiasi scheda. «Mantieni in esecuzione» non cambia.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,19 +416,19 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Smetti di mantenere attiva questa scheda chiusa (dimenticala)",
+    "message": "Smetti di mantenere in memoria questa scheda chiusa (dimenticala)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "Questo gruppo contiene schede bloccate.",
+    "message": "Questo gruppo contiene schede fissate.",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Le schede bloccate qui non vengono mantenute attive.",
+    "message": "Le schede fissate qui non vengono mantenute in memoria.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "Qui vengono mantenute attive $COUNT$ schede.",
+    "message": "Qui sono mantenute in memoria $COUNT$ schede.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Impossibile avviare. Forse un'altra estensione o Chrome stesso sta già acquisendo questa scheda.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Mantieni in memoria",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Mantieni in esecuzione",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Tutto ciò che hai digitato resta",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "In background rallenta comunque",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Funziona anche in background.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Chat, timer e dati in tempo reale vanno avanti",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Consuma più batteria; Chrome mostra l'icona di condivisione dello schermo",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Perché una registrazione dello schermo?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "«Mantieni in esecuzione» simula una registrazione dello schermo",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome rallenta le schede che non vedi. Per evitarlo, l'estensione simula una registrazione dello schermo di questa scheda, così Chrome la considera in uso.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Non viene registrato nulla. L'immagine non viene mai letta, salvata o inviata da nessuna parte.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Solo questa scheda e solo finché l'interruttore è attivo. Chrome mostra un'icona di condivisione, quindi nulla avviene di nascosto.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Disattivalo quando vuoi, oppure chiudi la scheda.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Ho capito, attiva",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Non ora",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Ho capito",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Mantieni questa scheda in memoria finché non viene chiusa",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — schede mantenute in esecuzione",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive sta mantenendo in esecuzione questa scheda"
+  },
+  "bannerOff": {
+    "message": "Disattiva"
+  },
+  "bannerHide": {
+    "message": "Nascondi questa barra (la scheda resta in esecuzione)"
+  },
+  "tagRunning": {
+    "message": "In esecuzione"
+  },
+  "stopAll": {
+    "message": "Ferma tutte"
+  },
+  "timerLabel": {
+    "message": "Disattiva dopo"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 h"
+  },
+  "timer180": {
+    "message": "3 h"
+  },
+  "timerNone": {
+    "message": "Nessun timer"
+  },
+  "timerLeft": {
+    "message": "Si disattiva tra $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Nessun timer: resta attivo finché non lo disattivi"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "h"
+  },
+  "heldTitle": {
+    "message": "Ora in esecuzione"
+  },
+  "heldStop": {
+    "message": "Smetti di mantenere in esecuzione questa scheda"
+  },
+  "bannerUntil": {
+    "message": "fino a $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Prolunga di"
+  },
+  "memoryStop": {
+    "message": "Smetti di mantenere questa scheda in memoria"
+  },
+  "rowRunStart": {
+    "message": "Mantieni in esecuzione: attiva per questa scheda"
+  },
+  "rowRunStop": {
+    "message": "«Mantieni in esecuzione» è attivo: fai clic per fermarlo"
+  },
+  "tourRunTitle": {
+    "message": "Mantieni in esecuzione una pagina"
+  },
+  "tourRunBody": {
+    "message": "Ti serve una pagina che continui a funzionare mentre è nascosta, come una chat, un timer o dati in tempo reale? Apri la finestra dell'estensione su quella scheda e attiva <b>Mantieni in esecuzione</b>, oppure fai clic qui sull'icona del fulmine nella riga della scheda. Chrome allora considera la scheda in uso e non la rallenta. Simula una registrazione dello schermo (nulla viene registrato o inviato) e si disattiva da solo allo scadere del timer che scegli."
+  },
+  "aliveTitle": {
+    "message": "Mantieni viva"
+  },
+  "aliveTip": {
+    "message": "Mantieni questa scheda in memoria e in esecuzione, entrambe le cose insieme"
+  },
+  "aliveRowTip": {
+    "message": "Mantieni in memoria + Mantieni in esecuzione"
+  },
+  "captureReload": {
+    "message": "Ricarica pagina"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome lo consente solo dalla finestra dell'estensione su quella scheda. Vai alla scheda e fai clic sull'icona di Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "Vai alla scheda"
+  },
+  "groupRunPick": {
+    "message": "«Mantieni in esecuzione» funziona una scheda alla volta: scegli una scheda con il suo pulsante a forma di fulmine."
+  },
+  "groupRunStartTip": {
+    "message": "Mantieni in esecuzione: la pagina continua a funzionare a piena velocità anche in background"
+  },
+  "groupRunStopTip": {
+    "message": "Ferma «Mantieni in esecuzione» per le schede di questo sito"
+  },
+  "statRunningNow": {
+    "message": "in esecuzione"
+  },
+  "aliveOnTab": {
+    "message": "Attiva nella scheda"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome consente «Mantieni in esecuzione» solo dalla finestra dell'estensione su quella scheda: questo pulsante la apre lì."
+  },
+  "pendingTitle": {
+    "message": "Ancora un clic"
+  },
+  "pendingBody": {
+    "message": "Chiudi questa finestra e fai clic sull'icona di Keep Tabs Alive (lo scudo verde) nella barra degli strumenti, oppure sotto l'icona del puzzle 🧩. «Mantieni in esecuzione» si attiva da solo."
+  },
+  "handoffTitle": {
+    "message": "Attiva «Mantieni in esecuzione» nella scheda"
+  },
+  "handoffTitleAlive": {
+    "message": "Attiva «Mantieni viva» nella scheda"
+  },
+  "handoffStep1": {
+    "message": "Ti porteremo su «$TITLE$».",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Fai clic sull'icona lampeggiante di Keep Tabs Alive nella barra degli strumenti (lo scudo verde). Non la vedi? È sotto l'icona del puzzle 🧩."
+  },
+  "handoffStep3": {
+    "message": "La finestra indicherà l'interruttore «Mantieni in esecuzione»: fai clic e il gioco è fatto."
+  },
+  "handoffStep3Alive": {
+    "message": "La finestra indicherà l'interruttore «Mantieni in esecuzione»: fai clic e la scheda sarà mantenuta in memoria e in esecuzione."
+  },
+  "runDone": {
+    "message": "Fatto: questa scheda è mantenuta in esecuzione."
+  },
+  "aliveDone": {
+    "message": "Fatto: questa scheda è mantenuta viva, in memoria e in esecuzione."
+  },
+  "tapToTurnOn": {
+    "message": "Fai clic per attivare"
+  },
+  "heldMore": {
+    "message": "Tutte le schede sono nelle impostazioni →"
+  },
+  "groupInMemory": {
+    "message": "In memoria"
+  },
+  "memoryCardSub": {
+    "message": "Chrome non scarterà queste schede: ciò che hai digitato resta."
+  },
+  "runCardSub": {
+    "message": "Queste pagine continuano a funzionare a piena velocità, anche in background."
+  },
+  "colRunning": {
+    "message": "In esecuzione"
+  },
+  "runEmpty": {
+    "message": "Nessuna scheda è mantenuta in esecuzione. Attiva la modalità per una scheda con ⚡ nell'elenco qui sotto, oppure dalla finestra dell'estensione su quella scheda."
+  },
+  "wMemPromise": {
+    "message": "Chrome non scarterà la scheda."
+  },
+  "wMemDesc": {
+    "message": "Quando ci torni, tutto è esattamente dove l'avevi lasciato, senza ricaricare."
+  },
+  "wMemGain1": {
+    "message": "Testo digitato, bozze e moduli restano al loro posto"
+  },
+  "wMemGain2": {
+    "message": "Gratis: nessun consumo di batteria in più"
+  },
+  "wMemCost": {
+    "message": "In background la pagina può comunque rallentare"
+  },
+  "wGoodFor": {
+    "message": "Ideale per:"
+  },
+  "wMemFor": {
+    "message": "moduli lunghi, documenti, posta, dashboard che controlli ogni tanto"
+  },
+  "wRunPromise": {
+    "message": "La pagina continua a funzionare a piena velocità, anche quando non la vedi."
+  },
+  "wRunDesc": {
+    "message": "Chrome considera la scheda in uso, quindi nulla al suo interno si ferma mentre sei altrove."
+  },
+  "wRunGain1": {
+    "message": "Chat, risposte dell'IA, timer, musica e dati in tempo reale vanno avanti"
+  },
+  "wRunGain2": {
+    "message": "Si disattiva da solo con un timer, se vuoi"
+  },
+  "wRunCost": {
+    "message": "Usa più batteria; Chrome mostra l'icona di condivisione dello schermo, ma nulla viene registrato"
+  },
+  "wRunFor": {
+    "message": "chat e strumenti di IA, trading e monitoraggio, timer, caricamenti"
+  },
+  "wBoth": {
+    "message": "<strong>Servono entrambe?</strong> «Mantieni viva» attiva entrambe le modalità per una scheda con un solo clic."
+  },
+  "wStepsTitle": {
+    "message": "Come attivarle"
+  },
+  "wStep2": {
+    "message": "<strong>Su qualsiasi scheda, fai clic sull'icona</strong>: la sua finestra ha un interruttore per ogni modalità."
+  },
+  "wStep3": {
+    "message": "<strong>Nelle impostazioni</strong> vedi tutte le schede aperte e mantieni in memoria interi siti."
+  },
+  "wPrivacy": {
+    "message": "Nulla lascia il tuo browser: nessun tracciamento, nessun server. «Mantieni in esecuzione» non registra mai la pagina."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 h"
+  },
+  "timerAdd180": {
+    "message": "+3 h"
   }
 }

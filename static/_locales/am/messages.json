@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "የ Chrome ትር መጣልን ያጥፉ እና ያልተፈለገ የትር እንደገና መጫንን ይከላከሉ። በጣቢያ የተወሰኑ ሕጎች፣ በትር ቁጥጥር እና ቀጥታ ስታቲስቲክስ።",
+    "message": "የChrome ትር መጣልን ያጥፉ፣ ትሮች ከበስተጀርባ እንዳይዘገዩ ያድርጉ። በጣቢያ እና በትር ቁጥጥር፣ ራስ-ሰር ማጥፊያ ሰዓት ቆጣሪ።",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "ራስ-ሰር የትር መጣል አጥፋ",
+    "message": "ራስ-ሰር የትር መጣልን አጥፋ",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "ዋና ማብሪያ",
+    "message": "“በማህደረ ትውስታ አቆይ”ን ለሁሉም ትሮች አቁም ወይም ቀጥል (“እየሰራ አቆይ” አይቀየርም)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "ጥበቃ በርቷል",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "ቆሟል",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "ትሮች ተጠብቀዋል",
@@ -44,7 +40,7 @@
     "description": "Heading for the current-tab card in the popup."
   },
   "thisWebsite": {
-    "message": "ይህ ድረ-ገጽ",
+    "message": "ይህ ጣቢያ",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -56,62 +52,20 @@
     "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
   },
   "internalPageTabOnly": {
-    "message": "ውስጣዊ ገጾች የጣቢያ ሕጎች የላቸውም — አሁንም ይህን ትር መቀየር ይችላሉ።",
+    "message": "ውስጣዊ ገጾች የጣቢያ ደንቦች የላቸውም — አሁንም ይህን ትር መቀየር ይችላሉ።",
     "description": "Hint when the current page is internal: only the tab switch works."
-  },
-  "pageCantBeManaged": {
-    "message": "ይህ ገጽ ሊስተዳደር አይችልም",
-    "description": "Shown when the current tab is an internal/extension page."
   },
   "notAvailableHere": {
     "message": "እዚህ አይገኝም",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "የውስጥ እና የቅጥያ ገጾች ሁልጊዜ ሳይነኩ ይቀራሉ።",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "የተጠበቀ",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "ሊጣል የሚችል",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "ይህን ጣቢያ ጠብቅ",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "ይህን ጣቢያ መጠበቅ አቁም",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "ይህን ጣቢያ አግልል",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "የተጠበቁ ጣቢያዎች",
+    "message": "በማህደረ ትውስታ የሚቆዩ ጣቢያዎች",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "የተገለሉ ጣቢያዎች",
+    "message": "Chrome ሊጥላቸው የሚችሉ ጣቢያዎች",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "እስካሁን ጣቢያ የለም",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ ተጨማሪ",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ አስወግድ",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "አሁን የተጠበቁ",
+    "message": "አሁን በማህደረ ትውስታ",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "የመጠበቅ ሁነታ",
+    "message": "በማህደረ ትውስታ አቆይ፦ የትኞቹ ጣቢያዎች",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "ሁሉንም ጠብቅ",
+    "message": "ሁሉም ጣቢያዎች፣ ከዚህ በስተቀር…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "ነጭ ዝርዝር ብቻ",
+    "message": "የተመረጡ ጣቢያዎች ብቻ",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "ያንን ትር በህይወት ለማቆየት ወይም Chrome እንዲጥለው ለመፍቀድ መቀየሪያ ይቀይሩ። በእጅ የተደረገ መቀየሪያ የጣቢያ ሕጎችን ይሽራል እና ትሩ እስኪዘጋ ድረስ ይቆያል።",
+    "message": "በእያንዳንዱ ትር፦ ▣ በማህደረ ትውስታ ያቆየዋል፣ ⚡ እየሰራ ያቆየዋል፣ “በሕይወት አቆይ” ሁለቱንም ያደርጋል። በእጅ የተደረገ ለውጥ ትሩ እስኪዘጋ ድረስ ከጣቢያ ደንቦች ይበልጣል።",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "ከፍለጋዎ ጋር የሚዛመድ ትር የለም።",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "ይህ መስኮት · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "መስኮት $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "በእጅ",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "ተኝቷል",
+    "message": "ተጥሏል",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "ጥበቃ በዋናው መቀየሪያ ቆሟል",
+    "message": "“በማህደረ ትውስታ አቆይ” ቆሟል — በ“በማህደረ ትውስታ አቆይ” ካርድ ውስጥ መልሰው ያብሩት",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "የተጠበቀ — Chrome ይህን ትር እንዲጥለው ለመፍቀድ ይቀይሩ",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "ሊጣል የሚችል — ይህን ትር በህይወት ለማቆየት ይቀይሩ",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "እነዚህ ጣቢያዎች ብቻ በህይወት ይቆያሉ፤ ሌላው ሁሉ ሊጣል ይችላል። አንድ ጎራ ንዑስ ጎራዎቹንም ይዛመዳል — ለምሳሌ <code>example.com</code> <code>mail.example.com</code>ን ይሸፍናል።",
+    "message": "Chrome የእነዚህን ጣቢያዎች ትሮች አይጥልም። አንድ ጎራ ንዑስ ጎራዎቹን ይሸፍናል፦ <code>example.com</code> → <code>mail.example.com</code>።",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "እነዚህ ጣቢያዎች እንዲጣሉ ይፈቀድላቸዋል። አንድ ጎራ ንዑስ ጎራዎቹንም ይዛመዳል — ለምሳሌ <code>example.com</code> <code>mail.example.com</code>ን ይሸፍናል።",
+    "message": "ሌሎች ሁሉም ትሮች በማህደረ ትውስታ ይቆያሉ፤ Chrome እነዚህን ጣቢያዎች ሊጥላቸው ይችላል። አንድ ጎራ ንዑስ ጎራዎቹን ይሸፍናል፦ <code>example.com</code> → <code>mail.example.com</code>።",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "አስወግድ",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "ለዚህ ጣቢያ ሁልጊዜ",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$ን ሁልጊዜ በህይወት ጠብቅ (የጣቢያ ሕግ ይጨምራል)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$ ሁልጊዜ እንዲጣል ፍቀድ (የጣቢያ ሕጎችን ያዘምናል)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "ሁልጊዜ በህይወት ይቀመጣል",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "ሁልጊዜ ሊጣል የሚችል",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ እንደ የጣቢያ ሕግ ተቀምጧል — ለማስወገድ ይጫኑ",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "ተወግዷል — $HOST$ አሁን እንደገና የሁነታውን ነባሪ ይከተላል።",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "ተቀምጧል — $HOST$ አሁን ሁልጊዜ በህይወት ይቆያል። ከታች ያሉትን የጣቢያ ሕጎች ይመልከቱ።",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "ተቀምጧል — $HOST$ አሁን ሁልጊዜ ሊጣል ይችላል። ከታች ያሉትን የጣቢያ ሕጎች ይመልከቱ።",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "እዚህ እስካሁን ምንም የለም።",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "ጠቃሚ ምክር፡ <strong>Auto Discardable</strong> ዓምድ ለማየት <code>chrome://discards</code>ን ይክፈቱ — የተጠበቁ ትሮች ✕ ያሳያሉ። ማስታወሻ፡ እዚያ ያለው በእጅ መጣል አሁንም ይሰራል፤ ይህ የChrome <em>ራስ-ሰር</em> የማስታወሻ ቆጣቢ መጣልን ብቻ ይከለክላል።",
+    "message": "ጠቃሚ ምክር፡ <code>chrome://discards</code>ን ይክፈቱና <strong>Auto Discardable</strong> ዓምድን ይመልከቱ — በማህደረ ትውስታ የሚቆዩ ትሮች ✕ ያሳያሉ። ማስታወሻ፡ እዚያ በእጅ መጣል አሁንም ይሰራል፤ ይህ የChrome <em>ራስ-ሰር</em> የማህደረ ትውስታ ቆጣቢ መጣልን ብቻ ይከለክላል።",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -430,7 +280,7 @@
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "የChrome ማህደረ ትውስታ ቆጣቢ ስራ ፈት ትሮችን RAM ለማስለቀቅ ያስወግዳል፣ ከዚያም ሲመለሱ እንደገና ይጭናቸዋል። Keep Tabs Alive የትኞቹ ትሮች ንቁ እና ዝግጁ ሆነው እንዲቆዩ እንዲመርጡ ያስችልዎታል — የማይፈለጉ ዳግም መጫኖችን እና መቋረጦችን ይከላከላል።",
+    "message": "Chrome ሀብቶችን በሁለት መንገድ ይቆጥባል፦ የማይጠቀሙባቸውን ትሮች ይጥላል፣ የማያዩዋቸውን ትሮች ደግሞ ያዘገያል። Keep Tabs Alive ሁለቱንም ያስቆማል — ትር በትር፣ በሚፈልጉበት ቦታ ብቻ።",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>ይሰኩት</strong> ለአንድ-ጠቅታ መዳረሻ፦ በመሣሪያ አሞሌ ውስጥ ያለውን <span class=\"puzzle\">🧩</span> የእንቆቅልሽ አዶ ጠቅ ያድርጉ፣ ከዚያም ሰኩን።",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>በማንኛውም ጊዜ ያረጋግጡ</strong> በ<code>chrome://discards</code> — የተጠበቁ ትሮች በ<em>Auto Discardable</em> አምድ ውስጥ ✕ ያሳያሉ።",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "ዋናው መቀየሪያ",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "ሁሉንም ጥበቃ እዚህ ያብሩ ወይም ያጥፉ። ጠፍቶ ሳለ እያንዳንዱ ትር ሊጣል ይችላል — ሕጎችዎ ይቆያሉ፣ ቆም ብለው ብቻ ነው።",
+    "message": "እዚህ ለሁሉም ትሮች <b>“በማህደረ ትውስታ አቆይ”</b>ን ማቆም ወይም መቀጠል ይችላሉ። ጠፍቶ ሳለ ማንኛውም ትር ሊጣል ይችላል — ደንቦችዎ አይጠፉም፣ ለጊዜው ብቻ ይቆማሉ። እየሰሩ እንዲቆዩ ያደረጓቸው ትሮች መስራታቸውን ይቀጥላሉ።",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "የመጠበቅ ሁነታ ይምረጡ",
+    "message": "የትኞቹን ጣቢያዎች በማህደረ ትውስታ ማቆየት",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>ነጭ ዝርዝር ብቻ</b> የመረጧቸውን ጣቢያዎች ብቻ በህይወት ያቆያል (ለስላሳው ነባሪ)። <b>ሁሉንም ጠብቅ</b> ከሚያገሏቸው በስተቀር እያንዳንዱን ትር በህይወት ያቆያል።",
+    "message": "<b>የተመረጡ ጣቢያዎች ብቻ</b> በዝርዝሩ ያስገቧቸውን ጣቢያዎች ብቻ በማህደረ ትውስታ ያቆያል (ለስላሳው ነባሪ)። <b>ሁሉም ጣቢያዎች፣ ከዚህ በስተቀር…</b> ከሚያገሏቸው ጣቢያዎች በስተቀር ሁሉንም ትሮች በማህደረ ትውስታ ያቆያል። “እየሰራ አቆይ” የሚዘጋጀው በእያንዳንዱ ትር ነው፣ እዚህ አይደለም።",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "እያንዳንዱ ክፍት ትር የራሱ መቀየሪያ አለው። ያንን ነጠላ ትር በህይወት ለማቆየት ወይም እንዲተኛ ለማድረግ ይቀይሩት — ትሩ እስኪዘጋ ድረስ የሚቆይ የአንድ ጊዜ ምርጫ። ለዘላለም ይፈልጉታል? ወደ ቋሚ የጣቢያ ሕግ ለመቀየር ከመቀየሪያው አጠገብ <b>ለዚህ ጣቢያ ሁልጊዜ</b>ን ይጫኑ። ወደ ትሩ ለመዝለል ረድፍ ይጫኑ።",
+    "message": "እያንዳንዱ የተከፈተ ትር የራሱ <b>“በማህደረ ትውስታ አቆይ”</b> መቀየሪያ አለው — ትሩ እስኪዘጋ ድረስ የሚቆይ የአንድ ጊዜ ምርጫ። በጣቢያ ራስጌ ያለው መቀየሪያ ለጠቅላላው ጣቢያ ይህንኑ በቋሚነት ያደርጋል። ወደ ትሩ ለመሄድ ረድፍን ጠቅ ያድርጉ።",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "በጣቢያ ሕጎችን ያዘጋጁ",
+    "message": "ሙሉ ጣቢያዎችን በማህደረ ትውስታ አቆይ",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "ሙሉ ጣቢያዎችን በአንድ ጊዜ ለመጠበቅ (ወይም ለማግለል) እዚህ ጎራዎችን ይጨምሩ። አንድ ጎራ ንዑስ ጎራዎቹንም ይሸፍናል — <code>example.com</code> <code>mail.example.com</code>ን ይዛመዳል። ይህ ጉብኝቱ ነው — ከ? ቁልፍ በማንኛውም ጊዜ እንደገና ይክፈቱት።",
+    "message": "ሙሉ ጣቢያዎችን በማህደረ ትውስታ ለማቆየት (ወይም Chrome እንዲጥላቸው ለመፍቀድ) እዚህ ጎራዎችን ያክሉ። ጎራ ንዑስ ጎራዎቹንም ይሸፍናል — <code>example.com</code> ከ<code>mail.example.com</code> ጋር ይዛመዳል። ጉብኝቱ ይህ ነው — በማንኛውም ጊዜ በ? አዝራር እንደገና ይክፈቱት።",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "ሁልጊዜ ሙሉ $HOST$ን በሕይወት አቆይ (ቋሚ የጣቢያ ደንብ)",
+    "message": "ሁልጊዜ ሙሉ $HOST$ን በማህደረ ትውስታ አቆይ (ቋሚ የጣቢያ ደንብ)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "ጥበቃ ቆሟል — ምንም ትሮች በሕይወት አይቆዩም።",
+    "message": "“በማህደረ ትውስታ አቆይ” ቆሟል — Chrome ማንኛውንም ትር ሊጥል ይችላል። “እየሰራ አቆይ” አይቀየርም።",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "ይህን የተዘጋ ትር በሕይወት ማቆየት አቁም (እርሳው)",
+    "message": "ይህን የተዘጋ ትር በማህደረ ትውስታ ማቆየት አቁም (እርሳው)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "እዚህ ያሉ የተሰኩ ትሮች በሕይወት እየተቆዩ አይደሉም።",
+    "message": "እዚህ ያሉ የተሰኩ ትሮች በማህደረ ትውስታ አይቆዩም።",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "እዚህ $COUNT$ ትር(ዎች) በሕይወት ይቆያሉ።",
+    "message": "እዚህ $COUNT$ ትር(ዎች) በማህደረ ትውስታ ይቆያሉ።",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "መጀመር አልተቻለም። ይህን ትር ሌላ ቅጥያ ወይም Chrome ራሱ እየቀረጸው ሊሆን ይችላል።",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "በማህደረ ትውስታ አቆይ",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "እየሰራ አቆይ",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "የተየቡት ሁሉ ይቆያል",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "ሲደበቅ አሁንም ይዘገያል",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "ሲደበቅም ይሰራል።",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "ውይይቶች፣ ቆጣሪዎች እና ቀጥታ ውሂብ መስራታቸውን ይቀጥላሉ",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "ተጨማሪ ባትሪ ይፈጃል፤ Chrome የማያ ገጽ ማጋራት አዶ ያሳያል",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "ለምን የማያ ገጽ ቀረጻ?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“እየሰራ አቆይ” የማያ ገጽ ቀረጻን ያስመስላል",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome የማያዩዋቸውን ትሮች ያዘገያል። ይህን ለመከላከል ቅጥያው የዚህን ትር የማያ ገጽ ቀረጻ ያስመስላል፣ ስለዚህ Chrome እንደሚጠቀሙበት አድርጎ ይቆጥረዋል።",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "ምንም አይቀረጽም። ምስሉ በጭራሽ አይነበብም፣ አይቀመጥም ወይም ወደ የትም አይላክም።",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "ይህ ትር ብቻ፣ እና መቀየሪያው በርቶ ሳለ ብቻ። Chrome የማጋራት አዶ ያሳያል፣ ስለዚህ ምንም በሚስጥር አይከናወንም።",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "በማንኛውም ጊዜ ያጥፉት፣ ወይም ትሩን ብቻ ይዝጉ።",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "ገባኝ፣ አብራ",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "አሁን አይደለም",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "ገባኝ",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "ይህን ትር እስኪዘጋ ድረስ በማህደረ ትውስታ አቆይ",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — ትሮችን እየሰሩ በማቆየት ላይ",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive ይህን ትር እየሰራ እያቆየው ነው"
+  },
+  "bannerOff": {
+    "message": "አጥፋ"
+  },
+  "bannerHide": {
+    "message": "ይህን አሞሌ ደብቅ (ትሩ መስራቱን ይቀጥላል)"
+  },
+  "tagRunning": {
+    "message": "በመስራት ላይ"
+  },
+  "stopAll": {
+    "message": "ሁሉንም አቁም"
+  },
+  "timerLabel": {
+    "message": "በራስ-ሰር ማጥፊያ፦"
+  },
+  "timer30": {
+    "message": "30 ደቂቃ"
+  },
+  "timer60": {
+    "message": "1 ሰዓት"
+  },
+  "timer180": {
+    "message": "3 ሰዓት"
+  },
+  "timerNone": {
+    "message": "ቆጣሪ የለም"
+  },
+  "timerLeft": {
+    "message": "በ$X$ ውስጥ ይጠፋል",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "ቆጣሪ የለም — እስኪያጠፉት ድረስ ይሰራል"
+  },
+  "unitMin": {
+    "message": "ደቂቃ"
+  },
+  "unitHour": {
+    "message": "ሰዓት"
+  },
+  "heldTitle": {
+    "message": "አሁን እየሰሩ የሚቆዩ"
+  },
+  "heldStop": {
+    "message": "ይህን ትር እየሰራ ማቆየት አቁም"
+  },
+  "bannerUntil": {
+    "message": "እስከ $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "አራዝም፦"
+  },
+  "memoryStop": {
+    "message": "ይህን ትር በማህደረ ትውስታ ማቆየት አቁም"
+  },
+  "rowRunStart": {
+    "message": "እየሰራ አቆይ — ለዚህ ትር አብራ"
+  },
+  "rowRunStop": {
+    "message": "“እየሰራ አቆይ” በርቷል — ለማቆም ጠቅ ያድርጉ"
+  },
+  "tourRunTitle": {
+    "message": "አንድ ገጽ እየሰራ አቆይ"
+  },
+  "tourRunBody": {
+    "message": "ገጽ ሲደበቅ መስራቱን እንዲቀጥል ይፈልጋሉ — ውይይት፣ ቆጣሪ፣ ቀጥታ ውሂብ? በዚያ ትር ላይ የቅጥያውን መስኮት ይክፈቱና <b>“እየሰራ አቆይ”</b>ን ያብሩ፣ ወይም እዚህ በትሩ ረድፍ ላይ ያለውን የመብረቅ አዶ ይጫኑ። ከዚያ Chrome ትሩን እንደሚጠቀሙበት አድርጎ ይቆጥረዋል፣ ስለዚህ አይዘገይም። የማያ ገጽ ቀረጻን ያስመስላል — ምንም አይቀረጽም ወይም አይላክም — እና በመረጡት ቆጣሪ መሠረት ራሱን ያጠፋል።"
+  },
+  "aliveTitle": {
+    "message": "በሕይወት አቆይ"
+  },
+  "aliveTip": {
+    "message": "ይህን ትር በማህደረ ትውስታ አቆይና እየሰራ አቆይ — ሁለቱንም በአንድ ጊዜ"
+  },
+  "aliveRowTip": {
+    "message": "“በማህደረ ትውስታ አቆይ” + “እየሰራ አቆይ”"
+  },
+  "captureReload": {
+    "message": "ገጹን እንደገና ጫን"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome ይህን የሚፈቅደው በዚያ ትር ላይ ካለው የቅጥያ መስኮት ብቻ ነው። ወደ ትሩ ይሂዱና የKeep Tabs Alive አዶውን ጠቅ ያድርጉ።"
+  },
+  "goToTab": {
+    "message": "ወደ ትር ሂድ"
+  },
+  "groupRunPick": {
+    "message": "“እየሰራ አቆይ” በአንድ ጊዜ በአንድ ትር ይሰራል — ትርን በመብረቅ አዝራሩ ይምረጡ።"
+  },
+  "groupRunStartTip": {
+    "message": "እየሰራ አቆይ፦ ገጹ ሲደበቅም በሙሉ ፍጥነት መስራቱን ይቀጥላል"
+  },
+  "groupRunStopTip": {
+    "message": "ለዚህ ጣቢያ ትሮች “እየሰራ አቆይ”ን አቁም"
+  },
+  "statRunningNow": {
+    "message": "እየሰሩ የሚቆዩ"
+  },
+  "aliveOnTab": {
+    "message": "በትሩ ላይ አብራ"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome “እየሰራ አቆይ”ን የሚፈቅደው በዚያ ትር ላይ ካለው የቅጥያ መስኮት ብቻ ነው — ይህ እዚያ ይከፍተዋል።"
+  },
+  "pendingTitle": {
+    "message": "አንድ ተጨማሪ ጠቅታ"
+  },
+  "pendingBody": {
+    "message": "ይህን መስኮት ይዝጉና በመሣሪያ አሞሌው ላይ (ወይም በእንቆቅልሽ አዶው 🧩 ስር) ያለውን የKeep Tabs Alive አዶ (አረንጓዴው ጋሻ) ጠቅ ያድርጉ። “እየሰራ አቆይ” በራሱ ይበራል።"
+  },
+  "handoffTitle": {
+    "message": "በትሩ ላይ “እየሰራ አቆይ”ን አብራ"
+  },
+  "handoffTitleAlive": {
+    "message": "በትሩ ላይ “በሕይወት አቆይ”ን አብራ"
+  },
+  "handoffStep1": {
+    "message": "ወደ “$TITLE$” እናዛውርዎታለን።",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "በመሣሪያ አሞሌው ላይ ብልጭ ድርግም የሚለውን የKeep Tabs Alive አዶ (አረንጓዴው ጋሻ) ጠቅ ያድርጉ። አላዩትም? በእንቆቅልሽ አዶው 🧩 ስር ነው።"
+  },
+  "handoffStep3": {
+    "message": "መስኮቱ “እየሰራ አቆይ” መቀየሪያውን ይጠቁማል — ጠቅ ያድርጉት፣ ይበራል።"
+  },
+  "handoffStep3Alive": {
+    "message": "መስኮቱ “እየሰራ አቆይ” መቀየሪያውን ይጠቁማል — ጠቅ ያድርጉት፣ ትሩ በማህደረ ትውስታ ይቆያል እንዲሁም እየሰራ ይቆያል።"
+  },
+  "runDone": {
+    "message": "ተጠናቋል — ይህ ትር እየሰራ እንዲቆይ ተደርጓል።"
+  },
+  "aliveDone": {
+    "message": "ተጠናቋል — ይህ ትር በሕይወት እንዲቆይ ተደርጓል፦ በማህደረ ትውስታ እና እየሰራ።"
+  },
+  "tapToTurnOn": {
+    "message": "ለማብራት ጠቅ ያድርጉ"
+  },
+  "heldMore": {
+    "message": "ሁሉም ትሮች በቅንብሮች ውስጥ ናቸው →"
+  },
+  "groupInMemory": {
+    "message": "በማህደረ ትውስታ"
+  },
+  "memoryCardSub": {
+    "message": "Chrome እነዚህን ትሮች አይጥላቸውም — የተየቡት ሁሉ ይቆያል።"
+  },
+  "runCardSub": {
+    "message": "እነዚህ ገጾች ሲደበቁም በሙሉ ፍጥነት መስራታቸውን ይቀጥላሉ።"
+  },
+  "colRunning": {
+    "message": "በመስራት ላይ"
+  },
+  "runEmpty": {
+    "message": "ምንም እየሰራ የሚቆይ የለም። ከታች ባለው ዝርዝር ውስጥ በ⚡ ወይም በዚያ ትር ላይ ካለው የቅጥያ መስኮት ለአንድ ትር ያብሩት።"
+  },
+  "wMemPromise": {
+    "message": "Chrome ትሩን አይጥለውም።"
+  },
+  "wMemDesc": {
+    "message": "ወደ እሱ ሲመለሱ ሁሉም ነገር ልክ እንደተዉት ነው — ዳግም መጫን የለም።"
+  },
+  "wMemGain1": {
+    "message": "የተየቡ ጽሑፎች፣ ረቂቆች እና ቅጾች ይቆያሉ"
+  },
+  "wMemGain2": {
+    "message": "ነፃ፦ ተጨማሪ ባትሪ አይፈጅም"
+  },
+  "wMemCost": {
+    "message": "ሲደበቅ ገጹ አሁንም ሊዘገይ ይችላል"
+  },
+  "wGoodFor": {
+    "message": "ለሚከተሉት ተስማሚ፦"
+  },
+  "wMemFor": {
+    "message": "ረጃጅም ቅጾች፣ ሰነዶች፣ ደብዳቤ፣ አልፎ አልፎ የሚመለከቷቸው ዳሽቦርዶች"
+  },
+  "wRunPromise": {
+    "message": "ገጹ በሙሉ ፍጥነት መስራቱን ይቀጥላል — እርስዎ ባያዩትም።"
+  },
+  "wRunDesc": {
+    "message": "Chrome ትሩን እንደሚጠቀሙበት አድርጎ ይቆጥረዋል፣ ስለዚህ ሌላ ቦታ ሳሉ በውስጡ ምንም አይቆምም።"
+  },
+  "wRunGain1": {
+    "message": "ውይይቶች፣ የAI መልሶች፣ ቆጣሪዎች፣ ሙዚቃ እና ቀጥታ ውሂብ መስራታቸውን ይቀጥላሉ"
+  },
+  "wRunGain2": {
+    "message": "ከፈለጉ በቆጣሪ ራሱን ያጠፋል"
+  },
+  "wRunCost": {
+    "message": "ተጨማሪ ባትሪ ይጠቀማል፤ Chrome የማያ ገጽ ማጋራት አዶውን ያሳያል — ምንም አይቀረጽም"
+  },
+  "wRunFor": {
+    "message": "ውይይቶች እና የAI መሣሪያዎች፣ ንግድ እና ክትትል፣ ቆጣሪዎች፣ ሰቀላዎች"
+  },
+  "wBoth": {
+    "message": "<strong>ሁለቱም ያስፈልጉዎታል?</strong> “በሕይወት አቆይ” ለአንድ ትር ሁለቱንም ሁነታዎች በአንድ ጠቅታ ያበራል።"
+  },
+  "wStepsTitle": {
+    "message": "እንዴት እንደሚያበሩ"
+  },
+  "wStep2": {
+    "message": "<strong>በማንኛውም ትር ላይ አዶውን ጠቅ ያድርጉ</strong> — መስኮቱ ለእያንዳንዱ ሁነታ መቀየሪያ አለው።"
+  },
+  "wStep3": {
+    "message": "<strong>በቅንብሮች ውስጥ</strong> ሁሉንም የተከፈቱ ትሮች ይመልከቱ፣ እንዲሁም ሙሉ ጣቢያዎችን በማህደረ ትውስታ ያቆዩ።"
+  },
+  "wPrivacy": {
+    "message": "ከአሳሽዎ ምንም አይወጣም፦ ክትትል የለም፣ አገልጋዮች የሉም። “እየሰራ አቆይ” ገጹን በጭራሽ አይቀርጽም።"
+  },
+  "timerAdd30": {
+    "message": "+30 ደቂቃ"
+  },
+  "timerAdd60": {
+    "message": "+1 ሰዓት"
+  },
+  "timerAdd180": {
+    "message": "+3 ሰዓት"
   }
 }

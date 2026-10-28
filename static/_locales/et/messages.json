@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Lülita välja Chrome'i kaartide sulgemine ja väldi soovimatuid kaartide taaslaadimisi. Saidipõhised reeglid, kaardipõhine juhtimine ja reaalajas statistika.",
+    "message": "Lülita välja Chrome'i vahekaartide mälust eemaldamine, et need taustal ei aeglustuks. Saidi- ja vahekaardipõhine juhtimine, taimer.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "Keela kaartide automaatne sulgemine",
+    "message": "Keela vahekaartide automaatne mälust eemaldamine",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Põhilüliti",
+    "message": "Peata või jätka funktsiooni „Hoia mälus“ kõigi vahekaartide jaoks („Hoia töös“ jääb puutumata)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Kaitse sees",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "Peatatud",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "kaitstud vahekaarti",
@@ -59,59 +55,17 @@
     "message": "Sisemistel lehtedel pole saidireegleid — selle vahekaardi saad siiski ümber lülitada.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "Seda lehte ei saa hallata",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Pole siin saadaval",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Sisemised ja laienduste lehed jäetakse alati puutumata.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Kaitstud",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Suletav",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Kaitse see sait",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Lõpeta selle saidi kaitsmine",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Jäta see sait välja",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Kaitstud saidid",
+    "message": "Mälus hoitavad saidid",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Väljajäetud saidid",
+    "message": "Saidid, mida Chrome võib mälust eemaldada",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Veel pole saite",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ veel",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Eemalda $DOMAIN$",
@@ -128,7 +82,7 @@
     "description": "Footer link from the popup to the options page."
   },
   "settingsTitle": {
-    "message": "Keep Tabs Alive — Seaded",
+    "message": "Keep Tabs Alive — Sätted",
     "description": "Document title of the settings page."
   },
   "welcomeTitle": {
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "praegu kaitstud",
+    "message": "praegu mälus",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Kaitserežiim",
+    "message": "Hoia mälus: millised saidid",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Kaitse kõike",
+    "message": "Kõik saidid, välja arvatud…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Ainult lubatud loend",
+    "message": "Ainult valitud saidid",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -206,55 +160,31 @@
     "description": "Description of the whitelist-only mode."
   },
   "openTabs": {
-    "message": "Avatud kaardid",
+    "message": "Avatud vahekaardid",
     "description": "Heading for the live list of open tabs."
   },
   "searchTabs": {
-    "message": "Otsi kaarte…",
+    "message": "Otsi vahekaarte…",
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Lülita lülitit, et hoida kaart elus või lasta Chrome'il see sulgeda. Käsitsi lüliti tühistab saidireeglid ja kehtib, kuni kaart suletakse.",
+    "message": "Iga vahekaardi puhul: ▣ hoiab selle mälus, ⚡ hoiab selle töös, „Hoia elus“ teeb mõlemat. Käsitsi tehtud muudatus kaalub saidireeglid üles, kuni vahekaart suletakse.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
-    "message": "Avatud kaarte pole.",
+    "message": "Avatud vahekaarte pole.",
     "description": "Empty state when there are no open tabs."
   },
   "noTabsMatch": {
-    "message": "Ükski kaart ei vasta otsingule.",
+    "message": "Ükski vahekaart ei vasta otsingule.",
     "description": "Empty state when a search returns no tabs."
-  },
-  "thisWindowCount": {
-    "message": "See aken · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Aken $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
   },
   "tagManual": {
     "message": "Käsitsi",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Magab",
+    "message": "Mälust eemaldatud",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -266,7 +196,7 @@
     "description": "Tag: this tab is playing audio."
   },
   "untitledTab": {
-    "message": "Pealkirjata kaart",
+    "message": "Pealkirjata vahekaart",
     "description": "Fallback title for a tab with no title."
   },
   "internalPage": {
@@ -274,27 +204,19 @@
     "description": "Fallback host label for internal pages."
   },
   "switchToThisTab": {
-    "message": "Mine sellele kaardile",
+    "message": "Mine sellele vahekaardile",
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Kaitse on põhilülitiga peatatud",
+    "message": "„Hoia mälus“ on peatatud — lülita see uuesti sisse kaardil „Hoia mälus“",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Kaitstud — lülita, et lasta Chrome'il see kaart sulgeda",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Suletav — lülita, et hoida see kaart elus",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Ainult need saidid hoitakse elus; kõik muu võidakse sulgeda. Domeen vastab ka oma alamdomeenidele — nt <code>example.com</code> hõlmab <code>mail.example.com</code>.",
+    "message": "Chrome ei eemalda nende saitide vahekaarte mälust. Domeen hõlmab ka selle alamdomeene: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Neid saite võib sulgeda. Domeen vastab ka oma alamdomeenidele — nt <code>example.com</code> hõlmab <code>mail.example.com</code>.",
+    "message": "Kõik muud vahekaardid jäävad mällu; Chrome võib need saidid mälust eemaldada. Domeen hõlmab ka selle alamdomeene: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "Eemalda",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Alati sellel saidil",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Hoia $HOST$ alati elus (lisab saidireegli)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Luba $HOST$ alati sulgeda (uuendab saidireegleid)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "Alati elus hoitud",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Alati suletav",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ on salvestatud saidireeglina — klõpsa selle eemaldamiseks",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Eemaldatud — $HOST$ järgib nüüd taas režiimi vaikesätet.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Salvestatud — $HOST$ jääb nüüd alati elus. Vaata allpool saidireegleid.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Salvestatud — $HOST$ võib nüüd alati sulgeda. Vaata allpool saidireegleid.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Siin pole veel midagi.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "Näpunäide: ava <code>chrome://discards</code>, et näha veergu <strong>Auto Discardable</strong> — kaitstud kaartidel kuvatakse ✕. Märkus: käsitsi sulgemine sealt töötab endiselt; see blokeerib ainult Chrome'i <em>automaatse</em> mälusäästliku sulgemise.",
+    "message": "Näpunäide: ava <code>chrome://discards</code>, et näha veergu <strong>Auto Discardable</strong> — mälus hoitavatel vahekaartidel kuvatakse ✕. Märkus: käsitsi mälust eemaldamine seal töötab endiselt; see blokeerib ainult Chrome'i <em>automaatse</em> mälusäästliku mälust eemaldamise.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Hoia olulised vahekaardid aktiivsena",
+    "message": "Hoia olulised vahekaardid elus",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome'i mälusäästja vabastab jõude seisvad vahekaardid RAM-i vabastamiseks ja laadib need taas, kui naased. Keep Tabs Alive laseb sul valida, millised vahekaardid jäävad aktiivseks ja valmis — vältides soovimatuid taaslaadimisi ja katkestusi.",
+    "message": "Chrome säästab ressursse kahel viisil: eemaldab mälust vahekaardid, mida sa ei kasuta, ja aeglustab neid, mida sa ei näe. Keep Tabs Alive takistab mõlemat – vahekaardi kaupa ja ainult seal, kus soovid.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,40 +319,36 @@
     "message": "<strong>Kinnita see</strong> üheklõpsuliseks juurdepääsuks: klõpsa tööriistaribal <span class=\"puzzle\">🧩</span> pusleikoonil ja seejärel kinnitusnõelal.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Kontrolli igal ajal</strong> aadressil <code>chrome://discards</code> — kaitstud vahekaardid kuvavad veerus <em>Auto Discardable</em> märki ✕.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "Põhilüliti",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Lülita kogu kaitse siin sisse või välja. Kui see on väljas, võib iga kaardi sulgeda — sinu reeglid säilivad, lihtsalt peatatuna.",
+    "message": "Siin saad peatada või jätkata funktsiooni <b>Hoia mälus</b> kõigi vahekaartide jaoks. Kui lüliti on väljas, võib iga vahekaardi mälust eemaldada – sinu reeglid säilivad, need on lihtsalt peatatud. Vahekaardid, mida hoitakse töös, töötavad edasi.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Vali kaitserežiim",
+    "message": "Milliseid saite mälus hoida",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Ainult lubatud loend</b> hoiab elus vaid sinu valitud saidid (õrn vaikevalik). <b>Kaitse kõike</b> hoiab iga kaardi elus peale väljajäetute.",
+    "message": "<b>Ainult valitud saidid</b> hoiab mälus vaid sinu valitud saite (leebe vaikevalik). <b>Kõik saidid, välja arvatud…</b> hoiab mälus kõiki vahekaarte, välja arvatud need saidid, mille sa välja jätad. „Hoia töös“ lülitatakse sisse vahekaardi kaupa, mitte siin.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
-    "message": "Halda kaarte ükshaaval",
+    "message": "Halda vahekaarte ükshaaval",
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Igal avatud kaardil on oma lüliti. Lülita seda, et hoida see üks kaart elus või lasta sel magada — ühekordne valik, mis kehtib kuni kaardi sulgemiseni. Soovid seda jäädavalt? Klõpsa lüliti kõrval <b>Alati sellel saidil</b>, et muuta see püsivaks saidireegliks. Klõpsa real, et kaardile hüpata.",
+    "message": "Igal avatud vahekaardil on oma lüliti <b>Hoia mälus</b> – ühekordne valik, mis kehtib kuni vahekaardi sulgemiseni. Saidi päises olev lüliti teeb sama kogu saidi jaoks püsivalt. Vahekaardile liikumiseks klõpsa real.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Sea reeglid saidi järgi",
+    "message": "Hoia terveid saite mälus",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Lisa siia domeene, et kaitsta (või välja jätta) terveid saite korraga. Domeen hõlmab ka oma alamdomeene — <code>example.com</code> vastab <code>mail.example.com</code>. See oligi ringkäik — ava see igal ajal ? nupust.",
+    "message": "Lisa siia domeene, et hoida terveid saite mälus (või lubada Chrome'il neid mälust eemaldada). Domeen hõlmab ka selle alamdomeene – <code>example.com</code> kehtib ka aadressile <code>mail.example.com</code>. Ringkäik on läbi – saad selle igal ajal uuesti avada nupuga ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Hoia kogu $HOST$ alati aktiivsena (püsiv saidireegel)",
+    "message": "Hoia kogu $HOST$ alati mälus (püsiv saidireegel)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Kaitse on peatatud — ühtegi vahekaarti ei hoita aktiivsena.",
+    "message": "„Hoia mälus“ on peatatud — Chrome võib iga vahekaardi mälust eemaldada. „Hoia töös“ jääb puutumata.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Lõpeta selle suletud vahekaardi aktiivsena hoidmine (unusta see)",
+    "message": "Lõpeta selle suletud vahekaardi mälus hoidmine (unusta see)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Kinnitatud vahekaarte siin ei hoita aktiivsena.",
+    "message": "Kinnitatud vahekaarte siin mälus ei hoita.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "Siin hoitakse aktiivsena $COUNT$ vahekaarti.",
+    "message": "Siin hoitakse mälus $COUNT$ vahekaarti.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Käivitamine ebaõnnestus. Võib-olla jäädvustab seda vahekaarti juba mõni muu laiendus või Chrome ise.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Hoia mälus",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Hoia töös",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Kõik, mida sisestasid, säilib",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Peidus olles aeglustub siiski",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Töötab ka siis, kui vahekaart on peidus.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Vestlused, taimerid ja reaalajas andmed töötavad edasi",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Suurem akukulu; Chrome näitab ekraanijagamise ikooni",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Miks ekraanisalvestus?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "„Hoia töös“ jäljendab ekraanisalvestust",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome aeglustab vahekaarte, mida sa ei näe. Selle vältimiseks jäljendab laiendus selle vahekaardi ekraanisalvestust, nii et Chrome peab seda kasutusel olevaks.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Midagi ei salvestata. Pilti ei loeta, ei salvestata ega saadeta kuhugi.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Ainult see vahekaart ja ainult siis, kui lüliti on sees. Chrome näitab jagamisikooni, nii et midagi ei toimu salaja.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Lülita see igal ajal välja või lihtsalt sulge vahekaart.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Selge, lülita sisse",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Mitte praegu",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Selge",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Hoia seda vahekaarti mälus, kuni see suletakse",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive – vahekaarte hoitakse töös",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive hoiab seda vahekaarti töös"
+  },
+  "bannerOff": {
+    "message": "Lülita välja"
+  },
+  "bannerHide": {
+    "message": "Peida see riba (vahekaart jääb tööle)"
+  },
+  "tagRunning": {
+    "message": "Töös"
+  },
+  "stopAll": {
+    "message": "Peata kõik"
+  },
+  "timerLabel": {
+    "message": "Lülita välja pärast"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 h"
+  },
+  "timer180": {
+    "message": "3 h"
+  },
+  "timerNone": {
+    "message": "Taimerita"
+  },
+  "timerLeft": {
+    "message": "Lülitub välja $X$ pärast",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Taimerita – töötab, kuni selle välja lülitad"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "h"
+  },
+  "heldTitle": {
+    "message": "Praegu töös hoitavad"
+  },
+  "heldStop": {
+    "message": "Lõpeta selle vahekaardi töös hoidmine"
+  },
+  "bannerUntil": {
+    "message": "kuni $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Pikenda"
+  },
+  "memoryStop": {
+    "message": "Lõpeta selle vahekaardi mälus hoidmine"
+  },
+  "rowRunStart": {
+    "message": "Hoia töös – lülita sisse selle vahekaardi jaoks"
+  },
+  "rowRunStop": {
+    "message": "„Hoia töös“ on sees – klõpsa väljalülitamiseks"
+  },
+  "tourRunTitle": {
+    "message": "Hoia lehte töös"
+  },
+  "tourRunBody": {
+    "message": "Kas vajad, et leht töötaks ka peidus olles – vestlus, taimer, reaalajas andmed? Ava sellel vahekaardil laienduse aken ja lülita sisse <b>Hoia töös</b> või vajuta siin vahekaardi real välguikooni. Chrome peab vahekaarti siis kasutusel olevaks ega aeglusta seda. See jäljendab ekraanisalvestust – midagi ei salvestata ega saadeta – ja lülitub sinu valitud taimeri lõppedes ise välja."
+  },
+  "aliveTitle": {
+    "message": "Hoia elus"
+  },
+  "aliveTip": {
+    "message": "Hoia seda vahekaarti mälus ja töös – mõlemat korraga"
+  },
+  "aliveRowTip": {
+    "message": "Hoia mälus + Hoia töös"
+  },
+  "captureReload": {
+    "message": "Laadi leht uuesti"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome lubab seda ainult laienduse aknast sellel vahekaardil. Mine vahekaardile ja klõpsa Keep Tabs Alive'i ikooni."
+  },
+  "goToTab": {
+    "message": "Mine vahekaardile"
+  },
+  "groupRunPick": {
+    "message": "„Hoia töös“ töötab korraga ainult ühel vahekaardil – vali vahekaart selle välgunupuga."
+  },
+  "groupRunStartTip": {
+    "message": "Hoia töös: leht töötab täiskiirusel ka peidus olles"
+  },
+  "groupRunStopTip": {
+    "message": "Peata „Hoia töös“ selle saidi vahekaartidel"
+  },
+  "statRunningNow": {
+    "message": "töös hoitud"
+  },
+  "aliveOnTab": {
+    "message": "Lülita vahekaardil sisse"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome lubab „Hoia töös“ sisse lülitada ainult laienduse aknast sellel vahekaardil – see nupp avab selle seal."
+  },
+  "pendingTitle": {
+    "message": "Veel üks klõps"
+  },
+  "pendingBody": {
+    "message": "Sulge see aken ja klõpsa tööriistaribal Keep Tabs Alive'i ikooni (roheline kilp) – või pusleikooni 🧩 all. „Hoia töös“ lülitub ise sisse."
+  },
+  "handoffTitle": {
+    "message": "Lülita vahekaardil sisse „Hoia töös“"
+  },
+  "handoffTitleAlive": {
+    "message": "Lülita vahekaardil sisse „Hoia elus“"
+  },
+  "handoffStep1": {
+    "message": "Suuname su vahekaardile „$TITLE$“.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Klõpsa tööriistaribal vilkuvat Keep Tabs Alive'i ikooni (roheline kilp). Ei näe seda? See on pusleikooni 🧩 all."
+  },
+  "handoffStep3": {
+    "message": "Aken näitab lülitit „Hoia töös“ – klõpsa sellel ja see on sees."
+  },
+  "handoffStep3Alive": {
+    "message": "Aken näitab lülitit „Hoia töös“ – klõpsa sellel ja vahekaart on mälus ja töös."
+  },
+  "runDone": {
+    "message": "Valmis – seda vahekaarti hoitakse töös."
+  },
+  "aliveDone": {
+    "message": "Valmis – see vahekaart on elus: mälus ja töös."
+  },
+  "tapToTurnOn": {
+    "message": "Klõpsa sisselülitamiseks"
+  },
+  "heldMore": {
+    "message": "Kõik vahekaardid on sätetes →"
+  },
+  "groupInMemory": {
+    "message": "Mälus"
+  },
+  "memoryCardSub": {
+    "message": "Chrome neid vahekaarte mälust ei eemalda – sisestatu säilib."
+  },
+  "runCardSub": {
+    "message": "Need lehed töötavad täiskiirusel ka peidus olles."
+  },
+  "colRunning": {
+    "message": "Töös"
+  },
+  "runEmpty": {
+    "message": "Ühtegi vahekaarti ei hoita töös. Lülita see vahekaardi jaoks sisse allolevas loendis nupuga ⚡ või laienduse aknast sellel vahekaardil."
+  },
+  "wMemPromise": {
+    "message": "Chrome ei eemalda vahekaarti mälust."
+  },
+  "wMemDesc": {
+    "message": "Tuled tagasi ja kõik on täpselt seal, kus pooleli jäi – ilma uuesti laadimata."
+  },
+  "wMemGain1": {
+    "message": "Sisestatud tekst, mustandid ja vormid säilivad"
+  },
+  "wMemGain2": {
+    "message": "Tasuta: lisaakukulu pole"
+  },
+  "wMemCost": {
+    "message": "Peidus olles võib leht ikkagi aeglustuda"
+  },
+  "wGoodFor": {
+    "message": "Sobib:"
+  },
+  "wMemFor": {
+    "message": "pikkade vormide, dokumentide, meili ja armatuurlaudade jaoks, mida aeg-ajalt vaatad"
+  },
+  "wRunPromise": {
+    "message": "Leht töötab täiskiirusel – ka siis, kui sa seda ei näe."
+  },
+  "wRunDesc": {
+    "message": "Chrome peab vahekaarti kasutusel olevaks, nii et miski selles ei peatu, kui oled mujal."
+  },
+  "wRunGain1": {
+    "message": "Vestlused, tehisintellekti vastused, taimerid, muusika ja reaalajas andmed töötavad edasi"
+  },
+  "wRunGain2": {
+    "message": "Soovi korral lülitub taimeriga ise välja"
+  },
+  "wRunCost": {
+    "message": "Kulutab rohkem akut; Chrome näitab ekraanijagamise ikooni – midagi ei salvestata"
+  },
+  "wRunFor": {
+    "message": "vestluste ja tehisintellekti tööriistade, kauplemise ja jälgimise, taimerite, üleslaadimiste jaoks"
+  },
+  "wBoth": {
+    "message": "<strong>Vajad mõlemat?</strong> „Hoia elus“ lülitab vahekaardil ühe klõpsuga sisse mõlemad režiimid."
+  },
+  "wStepsTitle": {
+    "message": "Kuidas sisse lülitada"
+  },
+  "wStep2": {
+    "message": "<strong>Klõpsa mis tahes vahekaardil ikooni</strong> – selle aknas on iga režiimi jaoks lüliti."
+  },
+  "wStep3": {
+    "message": "<strong>Sätetes</strong> näed kõiki avatud vahekaarte ja saad hoida terveid saite mälus."
+  },
+  "wPrivacy": {
+    "message": "Miski ei lahku sinu brauserist: ei jälgimist ega servereid. „Hoia töös“ ei salvesta lehte kunagi."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 h"
+  },
+  "timerAdd180": {
+    "message": "+3 h"
   }
 }

@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Chrome'un sekme atmasını devre dışı bırakın ve istenmeyen sekme yeniden yüklemelerini önleyin. Site bazlı kurallar, sekme bazlı denetim ve canlı istatistikler.",
+    "message": "Chrome’da sekmelerin atılmasını kapatın, arka planda yavaşlamasınlar. Site ve sekme bazlı kontrol, otomatik kapanma zamanlayıcısı.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "Otomatik sekme atmayı devre dışı bırak",
+    "message": "Sekmelerin otomatik olarak bellekten kaldırılmasını devre dışı bırak",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Ana anahtar",
+    "message": "Tüm sekmeler için “Bellekte tut” özelliğini duraklat veya sürdür (“Çalışır tut” etkilenmez)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Koruma açık",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "Duraklatıldı",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "sekme korunuyor",
@@ -59,59 +55,17 @@
     "message": "Dahili sayfaların site kuralları yoktur — yine de bu sekmeyi değiştirebilirsiniz.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "Bu sayfa yönetilemez",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Burada kullanılamaz",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Dahili sayfalar ve uzantı sayfaları her zaman dokunulmadan bırakılır.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Korunuyor",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Atılabilir",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Bu siteyi koru",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Bu siteyi korumayı bırak",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Bu siteyi hariç tut",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Korunan siteler",
+    "message": "Bellekte tutulan siteler",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Hariç tutulan siteler",
+    "message": "Chrome’un bellekten kaldırabileceği siteler",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Henüz site yok",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ daha",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ alanını kaldır",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "şu an korunuyor",
+    "message": "şu an bellekte",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Koruma modu",
+    "message": "Bellekte tut: hangi siteler",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Her şeyi koru",
+    "message": "Tüm siteler, şunlar hariç…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Yalnızca beyaz liste",
+    "message": "Yalnızca seçilen siteler",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "O sekmeyi canlı tutmak veya Chrome'un atmasına izin vermek için bir anahtarı çevirin. Manuel anahtar, site kurallarını geçersiz kılar ve sekme kapatılana kadar geçerli olur.",
+    "message": "Her sekme için: ▣ bellekte tutar, ⚡ çalışır tutar, “Canlı tut” ikisini birden yapar. Elle yapılan değişiklik, sekme kapanana kadar site kurallarından önce gelir.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "Aramanızla eşleşen sekme yok.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Bu pencere · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Pencere $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
-    "message": "Manuel",
+    "message": "Elle",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Uykuda",
+    "message": "Bellekten kaldırıldı",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Koruma ana anahtar tarafından duraklatıldı",
+    "message": "“Bellekte tut” duraklatıldı — “Bellekte tut” kartından yeniden açın",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Korunuyor — Chrome'un bu sekmeyi atmasına izin vermek için çevirin",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Atılabilir — bu sekmeyi canlı tutmak için çevirin",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Yalnızca bu siteler canlı tutulur; diğer her şey atılabilir. Bir alan adı, alt alan adlarıyla da eşleşir — örneğin <code>example.com</code>, <code>mail.example.com</code> alanını kapsar.",
+    "message": "Chrome bu sitelerin sekmelerini bellekten kaldırmaz. Bir alan adı alt alan adlarını da kapsar: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Bu sitelerin atılmasına izin verilir. Bir alan adı, alt alan adlarıyla da eşleşir — örneğin <code>example.com</code>, <code>mail.example.com</code> alanını kapsar.",
+    "message": "Diğer tüm sekmeler bellekte kalır; Chrome bu siteleri bellekten kaldırabilir. Bir alan adı alt alan adlarını da kapsar: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "Kaldır",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Bu site için her zaman",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$ alanını her zaman canlı tut (bir site kuralı ekler)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$ alanının her zaman atılmasına izin ver (site kurallarını günceller)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "Her zaman canlı tutulur",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Her zaman atılabilir",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ bir site kuralı olarak kaydedildi — kaldırmak için tıklayın",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Kaldırıldı — $HOST$ artık yeniden mod varsayılanını izliyor.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Kaydedildi — $HOST$ artık her zaman canlı kalacak. Aşağıdaki Site kurallarına bakın.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Kaydedildi — $HOST$ artık her zaman atılabilir. Aşağıdaki Site kurallarına bakın.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Burada henüz bir şey yok.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "İpucu: <strong>Auto Discardable</strong> sütununu görmek için <code>chrome://discards</code> adresini açın — korunan sekmeler ✕ gösterir. Not: oradaki manuel atmalar yine de çalışır; bu yalnızca Chrome'un <em>otomatik</em> bellek tasarrufu atmasını engeller.",
+    "message": "İpucu: <code>chrome://discards</code> adresini açıp <strong>Auto Discardable</strong> sütununa bakın — bellekte tutulan sekmeler ✕ gösterir. Not: oradan elle bellekten kaldırma yine de çalışır; bu yalnızca Chrome’un bellek tasarrufu için yaptığı <em>otomatik</em> kaldırmayı engeller.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Önemli sekmeleri etkin tutun",
+    "message": "Önemli sekmeleri canlı tutun",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome'un Bellek Tasarrufu özelliği, RAM'i boşaltmak için boştaki sekmeleri kaldırır ve geri döndüğünüzde yeniden yükler. Keep Tabs Alive, hangi sekmelerin etkin ve hazır kalacağını seçmenize olanak tanır — istenmeyen yeniden yüklemeleri ve kesintileri önler.",
+    "message": "Chrome iki yolla kaynak tasarrufu yapar: kullanmadığınız sekmeleri bellekten kaldırır ve görmediğiniz sekmeleri yavaşlatır. Keep Tabs Alive ikisini de engeller; sekme sekme ve yalnızca istediğiniz yerde.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "Tek tıklamayla erişim için <strong>sabitleyin</strong>: araç çubuğundaki <span class=\"puzzle\">🧩</span> yapboz simgesine, ardından raptiyeye tıklayın.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<code>chrome://discards</code> adresinde <strong>istediğiniz zaman doğrulayın</strong> — korunan sekmeler <em>Auto Discardable</em> sütununda ✕ gösterir.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "Ana anahtar",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Tüm korumayı buradan açın veya kapatın. Kapalıyken her sekme atılabilir — kurallarınız korunur, yalnızca duraklatılır.",
+    "message": "Buradan tüm sekmeler için <b>Bellekte tut</b> özelliğini duraklatın veya sürdürün. Kapalıyken herhangi bir sekme bellekten kaldırılabilir; kurallarınız korunur, yalnızca duraklatılır. Çalışır tuttuğunuz sekmeler çalışmaya devam eder.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Bir koruma modu seçin",
+    "message": "Hangi siteler bellekte tutulsun",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Yalnızca beyaz liste</b> yalnızca seçtiğiniz siteleri canlı tutar (yumuşak varsayılan). <b>Her şeyi koru</b> hariç tuttuklarınız dışında her sekmeyi canlı tutar.",
+    "message": "<b>Yalnızca seçilen siteler</b> sadece listelediğiniz siteleri bellekte tutar (varsayılan, daha yumuşak seçenek). <b>Tüm siteler, şunlar hariç…</b> hariç tuttuğunuz siteler dışındaki tüm sekmeleri bellekte tutar. “Çalışır tut” burada değil, sekme başına ayarlanır.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Her açık sekmenin kendi anahtarı vardır. O tek sekmeyi canlı tutmak veya uyumaya bırakmak için çevirin — sekme kapatılana kadar geçerli olan tek seferlik bir seçim. Kalıcı mı olsun? Bunu kalıcı bir site kuralına dönüştürmek için anahtarın yanındaki <b>Bu site için her zaman</b> seçeneğine tıklayın. Sekmeye geçmek için bir satıra tıklayın.",
+    "message": "Her açık sekmenin kendi <b>Bellekte tut</b> anahtarı vardır: sekme kapanana kadar geçerli, tek seferlik bir tercih. Bir sitenin başlığındaki anahtar aynı işi tüm site için kalıcı olarak yapar. Sekmeye gitmek için bir satıra tıklayın.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Site bazında kurallar belirleyin",
+    "message": "Siteleri bütünüyle bellekte tutun",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Tüm siteleri tek seferde korumak (veya hariç tutmak) için buraya alan adları ekleyin. Bir alan adı, alt alan adlarını da kapsar — <code>example.com</code>, <code>mail.example.com</code> ile eşleşir. Tur bu kadar — ? düğmesinden istediğiniz zaman yeniden açabilirsiniz.",
+    "message": "Siteleri bütünüyle bellekte tutmak (veya Chrome’un onları bellekten kaldırmasına izin vermek) için buraya alan adları ekleyin. Bir alan adı alt alan adlarını da kapsar: <code>example.com</code>, <code>mail.example.com</code> ile eşleşir. Tur bu kadar; ? düğmesiyle istediğiniz zaman yeniden açabilirsiniz.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Her zaman tüm $HOST$ sitesini etkin tut (kalıcı site kuralı)",
+    "message": "Her zaman tüm $HOST$ sitesini bellekte tut (kalıcı site kuralı)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Koruma duraklatıldı — hiçbir sekme etkin tutulmuyor.",
+    "message": "“Bellekte tut” duraklatıldı — Chrome herhangi bir sekmeyi bellekten kaldırabilir. “Çalışır tut” etkilenmez.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Bu kapalı sekmeyi etkin tutmayı bırak (unut)",
+    "message": "Bu kapalı sekmeyi bellekte tutmayı bırak (unut)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Buradaki sabitlenmiş sekmeler etkin tutulmuyor.",
+    "message": "Buradaki sabitlenmiş sekmeler bellekte tutulmuyor.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "Burada $COUNT$ sekme etkin tutuluyor.",
+    "message": "Burada $COUNT$ sekme bellekte tutuluyor.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Başlatılamadı. Başka bir uzantı veya Chrome bu sekmeyi zaten yakalıyor olabilir.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Bellekte tut",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Çalışır tut",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Yazdığınız her şey korunur",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Arka plandayken yine de yavaşlar",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Arka plandayken bile çalışır.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Sohbetler, zamanlayıcılar ve canlı veriler devam eder",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Daha fazla pil harcar; Chrome bir ekran paylaşımı simgesi gösterir",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Neden ekran kaydı?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“Çalışır tut” bir ekran kaydını taklit eder",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome görmediğiniz sekmeleri yavaşlatır. Bunu önlemek için uzantı bu sekmenin ekran kaydını taklit eder; böylece Chrome sekmeyi kullanımda sayar.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Hiçbir şey kaydedilmez. Görüntü asla okunmaz, saklanmaz veya bir yere gönderilmez.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Yalnızca bu sekme ve yalnızca anahtar açıkken. Chrome bir paylaşım simgesi gösterir, yani hiçbir şey gizlice olmaz.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "İstediğiniz zaman kapatabilirsiniz; sekmeyi kapatmak da yeterlidir.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Anladım, aç",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Şimdi değil",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Anladım",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Bu sekmeyi kapatılana kadar bellekte tut",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — sekmeler çalışır tutuluyor",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive bu sekmeyi çalışır tutuyor"
+  },
+  "bannerOff": {
+    "message": "Kapat"
+  },
+  "bannerHide": {
+    "message": "Bu çubuğu gizle (sekme çalışmaya devam eder)"
+  },
+  "tagRunning": {
+    "message": "Çalışıyor"
+  },
+  "stopAll": {
+    "message": "Tümünü durdur"
+  },
+  "timerLabel": {
+    "message": "Otomatik kapanma:"
+  },
+  "timer30": {
+    "message": "30 dk"
+  },
+  "timer60": {
+    "message": "1 sa"
+  },
+  "timer180": {
+    "message": "3 sa"
+  },
+  "timerNone": {
+    "message": "Zamanlayıcı yok"
+  },
+  "timerLeft": {
+    "message": "$X$ sonra kapanır",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Zamanlayıcı yok — siz kapatana kadar çalışır"
+  },
+  "unitMin": {
+    "message": "dk"
+  },
+  "unitHour": {
+    "message": "sa"
+  },
+  "heldTitle": {
+    "message": "Şu an çalışır tutulanlar"
+  },
+  "heldStop": {
+    "message": "Bu sekmeyi çalışır tutmayı bırak"
+  },
+  "bannerUntil": {
+    "message": "$X$ saatine kadar",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Uzat:"
+  },
+  "memoryStop": {
+    "message": "Bu sekmeyi bellekte tutmayı bırak"
+  },
+  "rowRunStart": {
+    "message": "Çalışır tut — bu sekme için aç"
+  },
+  "rowRunStop": {
+    "message": "“Çalışır tut” açık — durdurmak için tıklayın"
+  },
+  "tourRunTitle": {
+    "message": "Bir sayfayı çalışır tutun"
+  },
+  "tourRunBody": {
+    "message": "Bir sayfanın arka plandayken de çalışmasını mı istiyorsunuz: bir sohbet, bir zamanlayıcı, canlı veriler? O sekmede uzantı penceresini açıp <b>Çalışır tut</b> anahtarını etkinleştirin veya buradaki sekme satırında şimşek simgesine tıklayın. Chrome sekmeyi kullanımda sayar ve yavaşlatmaz. Bir ekran kaydını taklit eder; hiçbir şey kaydedilmez veya gönderilmez. Seçtiğiniz süre dolunca kendiliğinden kapanır."
+  },
+  "aliveTitle": {
+    "message": "Canlı tut"
+  },
+  "aliveTip": {
+    "message": "Bu sekmeyi hem bellekte hem çalışır tut — ikisi birden"
+  },
+  "aliveRowTip": {
+    "message": "Bellekte tut + Çalışır tut"
+  },
+  "captureReload": {
+    "message": "Sayfayı yenile"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome buna yalnızca o sekmedeki uzantı penceresinden izin verir. Sekmeye gidip Keep Tabs Alive simgesine tıklayın."
+  },
+  "goToTab": {
+    "message": "Sekmeye git"
+  },
+  "groupRunPick": {
+    "message": "“Çalışır tut” sekme sekme açılır — şimşek simgesiyle bir sekme seçin."
+  },
+  "groupRunStartTip": {
+    "message": "Çalışır tut: sayfa arka plandayken bile tam hızda çalışmaya devam eder"
+  },
+  "groupRunStopTip": {
+    "message": "Bu sitenin sekmeleri için “Çalışır tut” özelliğini durdur"
+  },
+  "statRunningNow": {
+    "message": "çalışır tutulan"
+  },
+  "aliveOnTab": {
+    "message": "Sekmede aç"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome “Çalışır tut” özelliğine yalnızca o sekmedeki uzantı penceresinden izin verir — bu düğme pencereyi orada açar."
+  },
+  "pendingTitle": {
+    "message": "Bir tık daha"
+  },
+  "pendingBody": {
+    "message": "Bu pencereyi kapatın ve araç çubuğundaki Keep Tabs Alive simgesine (yeşil kalkan) tıklayın — ya da yapboz 🧩 simgesinin altına bakın. “Çalışır tut” kendiliğinden açılır."
+  },
+  "handoffTitle": {
+    "message": "Sekmede “Çalışır tut” özelliğini açın"
+  },
+  "handoffTitleAlive": {
+    "message": "Sekmede “Canlı tut” özelliğini açın"
+  },
+  "handoffStep1": {
+    "message": "Sizi “$TITLE$” sekmesine geçireceğiz.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Araç çubuğunda yanıp sönen Keep Tabs Alive simgesine (yeşil kalkan) tıklayın. Görmüyor musunuz? Yapboz 🧩 simgesinin altında."
+  },
+  "handoffStep3": {
+    "message": "Pencere “Çalışır tut” anahtarını gösterecek — tıklayın, açılsın."
+  },
+  "handoffStep3Alive": {
+    "message": "Pencere “Çalışır tut” anahtarını gösterecek — tıklayın, sekme bellekte tutulsun ve çalışsın."
+  },
+  "runDone": {
+    "message": "Tamam — bu sekme çalışır tutuluyor."
+  },
+  "aliveDone": {
+    "message": "Tamam — bu sekme canlı tutuluyor: bellekte ve çalışıyor."
+  },
+  "tapToTurnOn": {
+    "message": "Açmak için tıklayın"
+  },
+  "heldMore": {
+    "message": "Tüm sekmeler Ayarlar’da →"
+  },
+  "groupInMemory": {
+    "message": "Bellekte"
+  },
+  "memoryCardSub": {
+    "message": "Chrome bu sekmeleri bellekten kaldırmaz — yazdıklarınız korunur."
+  },
+  "runCardSub": {
+    "message": "Bu sayfalar arka plandayken bile tam hızda çalışmaya devam eder."
+  },
+  "colRunning": {
+    "message": "Çalışıyor"
+  },
+  "runEmpty": {
+    "message": "Çalışır tutulan sekme yok. Aşağıdaki listede ⚡ ile veya ilgili sekmedeki uzantı penceresinden açın."
+  },
+  "wMemPromise": {
+    "message": "Chrome sekmeyi bellekten kaldırmaz."
+  },
+  "wMemDesc": {
+    "message": "Geri döndüğünüzde her şey bıraktığınız yerde durur — yeniden yükleme yok."
+  },
+  "wMemGain1": {
+    "message": "Yazılan metin, taslaklar ve formlar korunur"
+  },
+  "wMemGain2": {
+    "message": "Ücretsiz: ek pil harcamaz"
+  },
+  "wMemCost": {
+    "message": "Arka plandayken sayfa yine de yavaşlayabilir"
+  },
+  "wGoodFor": {
+    "message": "Şunlar için uygun:"
+  },
+  "wMemFor": {
+    "message": "uzun formlar, belgeler, e-posta, ara sıra baktığınız paneller"
+  },
+  "wRunPromise": {
+    "message": "Sayfa tam hızda çalışmaya devam eder — siz görmediğinizde bile."
+  },
+  "wRunDesc": {
+    "message": "Chrome sekmeyi kullanımda sayar, bu yüzden siz başka yerdeyken içindeki hiçbir şey duraklamaz."
+  },
+  "wRunGain1": {
+    "message": "Sohbetler, yapay zekâ yanıtları, zamanlayıcılar, müzik ve canlı veriler devam eder"
+  },
+  "wRunGain2": {
+    "message": "İsterseniz zamanlayıcıyla kendiliğinden kapanır"
+  },
+  "wRunCost": {
+    "message": "Daha fazla pil kullanır; Chrome ekran paylaşımı simgesini gösterir — hiçbir şey kaydedilmez"
+  },
+  "wRunFor": {
+    "message": "sohbetler ve yapay zekâ araçları, alım satım ve izleme, zamanlayıcılar, yüklemeler"
+  },
+  "wBoth": {
+    "message": "<strong>İkisi de mi lazım?</strong> “Canlı tut” bir sekme için iki modu tek tıkla açar."
+  },
+  "wStepsTitle": {
+    "message": "Nasıl açılır"
+  },
+  "wStep2": {
+    "message": "<strong>Herhangi bir sekmede simgeye tıklayın</strong> — penceresinde her mod için bir anahtar vardır."
+  },
+  "wStep3": {
+    "message": "<strong>Ayarlar’da</strong> tüm açık sekmeleri görebilir ve siteleri bütünüyle bellekte tutabilirsiniz."
+  },
+  "wPrivacy": {
+    "message": "Hiçbir şey tarayıcınızdan çıkmaz: izleme yok, sunucu yok. “Çalışır tut” sayfayı asla kaydetmez."
+  },
+  "timerAdd30": {
+    "message": "+30 dk"
+  },
+  "timerAdd60": {
+    "message": "+1 sa"
+  },
+  "timerAdd180": {
+    "message": "+3 sa"
   }
 }

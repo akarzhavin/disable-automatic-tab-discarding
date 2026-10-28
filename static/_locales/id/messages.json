@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Nonaktifkan pembuangan tab oleh Chrome dan cegah pemuatan ulang tab yang tidak diinginkan. Aturan per situs, kontrol per tab, dan statistik langsung.",
+    "message": "Nonaktifkan pembuangan tab di Chrome dan cegah tab melambat di latar belakang. Kontrol per situs dan per tab, timer mati otomatis.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -24,16 +24,12 @@
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Sakelar utama",
+    "message": "Jeda atau lanjutkan “Tetap di memori” untuk semua tab (“Tetap berjalan” tidak terpengaruh)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Perlindungan aktif",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "Dijeda",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "tab terlindungi",
@@ -43,59 +39,17 @@
     "message": "Tab ini",
     "description": "Heading for the current-tab card in the popup."
   },
-  "pageCantBeManaged": {
-    "message": "Halaman ini tidak dapat dikelola",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Tidak tersedia di sini",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Halaman internal dan ekstensi selalu dibiarkan tak tersentuh.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Terlindungi",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Dapat dibuang",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Lindungi situs ini",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Berhenti melindungi situs ini",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Kecualikan situs ini",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Situs terlindungi",
+    "message": "Situs yang dijaga di memori",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Situs yang dikecualikan",
+    "message": "Situs yang boleh dibuang Chrome",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Belum ada situs",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ lagi",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Hapus $DOMAIN$",
@@ -112,7 +66,7 @@
     "description": "Footer link from the popup to the options page."
   },
   "settingsTitle": {
-    "message": "Keep Tabs Alive — Setelan",
+    "message": "Keep Tabs Alive — Pengaturan",
     "description": "Document title of the settings page."
   },
   "welcomeTitle": {
@@ -140,7 +94,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "terlindungi saat ini",
+    "message": "di memori sekarang",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -170,11 +124,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Mode perlindungan",
+    "message": "Tetap di memori: situs mana",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Lindungi semua",
+    "message": "Semua situs, kecuali…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -182,7 +136,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Hanya daftar putih",
+    "message": "Hanya situs pilihan",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -198,7 +152,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Geser sakelar untuk menjaga tab tetap aktif atau biarkan Chrome membuangnya. Sakelar manual menggantikan aturan situs dan bertahan sampai tab ditutup.",
+    "message": "Per tab: ▣ menjaganya di memori, ⚡ menjaganya tetap berjalan, “Tetap hidup” melakukan keduanya. Perubahan manual lebih diutamakan daripada aturan situs sampai tab ditutup.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -209,36 +163,12 @@
     "message": "Tidak ada tab yang cocok dengan pencarian Anda.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Jendela ini · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Jendela $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Manual",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Tertidur",
+    "message": "Dibuang dari memori",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -262,23 +192,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Perlindungan dijeda oleh sakelar utama",
+    "message": "“Tetap di memori” dijeda — nyalakan kembali di kartu “Tetap di memori”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Terlindungi — geser untuk membiarkan Chrome membuang tab ini",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Dapat dibuang — geser untuk menjaga tab ini tetap aktif",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Hanya situs ini yang dijaga tetap aktif; lainnya dapat dibuang. Sebuah domain juga mencakup subdomainnya — mis. <code>example.com</code> mencakup <code>mail.example.com</code>.",
+    "message": "Chrome tidak akan membuang tab dari situs-situs ini. Satu domain mencakup subdomainnya: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Situs ini diizinkan untuk dibuang. Sebuah domain juga mencakup subdomainnya — mis. <code>example.com</code> mencakup <code>mail.example.com</code>.",
+    "message": "Semua tab lain tetap di memori; Chrome boleh membuang situs-situs ini. Satu domain mencakup subdomainnya: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -300,30 +222,6 @@
   "remove": {
     "message": "Hapus",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Selalu untuk situs ini",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Selalu jaga $HOST$ tetap aktif (menambah aturan situs)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Selalu izinkan $HOST$ dibuang (memperbarui aturan situs)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Belum ada apa-apa di sini.",
@@ -354,7 +252,7 @@
     }
   },
   "footerTip": {
-    "message": "Tips: buka <code>chrome://discards</code> untuk melihat kolom <strong>Auto Discardable</strong> — tab terlindungi menampilkan ✕. Catatan: pembuangan manual di sana tetap berfungsi; ini hanya memblokir pembuangan <em>otomatis</em> penghemat memori Chrome.",
+    "message": "Tips: buka <code>chrome://discards</code> untuk melihat kolom <strong>Auto Discardable</strong> — tab yang dijaga di memori menampilkan ✕. Catatan: pembuangan tab manual di sana tetap berfungsi; ini hanya memblokir pembuangan <em>otomatis</em> penghemat memori Chrome.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -362,11 +260,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Jaga tab penting tetap aktif",
+    "message": "Jaga tab penting tetap hidup",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Penghemat Memori Chrome membongkar tab yang tidak aktif untuk membebaskan RAM, lalu memuatnya ulang saat Anda kembali. Keep Tabs Alive memungkinkan Anda memilih tab mana yang tetap aktif dan siap — mencegah pemuatan ulang dan gangguan yang tidak diinginkan.",
+    "message": "Chrome menghemat sumber daya dengan dua cara: membuang tab yang tidak Anda gunakan, dan memperlambat tab yang tidak terlihat. Keep Tabs Alive menghentikan keduanya — tab demi tab, hanya di tempat yang Anda inginkan.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -405,24 +303,20 @@
     "message": "<strong>Sematkan</strong> untuk akses sekali klik: klik ikon teka-teki <span class=\"puzzle\">🧩</span> di bilah alat, lalu pin-nya.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Verifikasi kapan saja</strong> di <code>chrome://discards</code> — tab yang terlindungi menampilkan ✕ pada kolom <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "Sakelar utama",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Aktifkan atau nonaktifkan semua perlindungan di sini. Saat nonaktif, setiap tab bebas dibuang — aturan Anda tetap tersimpan, hanya dijeda.",
+    "message": "Jeda atau lanjutkan <b>“Tetap di memori”</b> untuk semua tab di sini. Saat dimatikan, tab mana pun bisa dibuang dari memori — aturan Anda tetap tersimpan, hanya dijeda. Tab yang Anda jaga tetap berjalan akan terus berjalan.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Pilih mode perlindungan",
+    "message": "Situs mana yang dijaga di memori",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Hanya daftar putih</b> hanya menjaga situs yang Anda pilih tetap aktif (default yang lembut). <b>Lindungi semua</b> menjaga setiap tab tetap aktif kecuali yang Anda kecualikan.",
+    "message": "<b>Hanya situs pilihan</b> hanya menjaga situs yang Anda daftarkan di memori (pilihan bawaan yang lebih lunak). <b>Semua situs, kecuali…</b> menjaga setiap tab di memori kecuali situs yang Anda kecualikan. “Tetap berjalan” diatur per tab, bukan di sini.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -430,15 +324,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Setiap tab terbuka memiliki sakelarnya sendiri. Geser untuk menjaga satu tab itu tetap aktif atau biarkan tidur — pilihan sekali pakai yang bertahan sampai tab ditutup. Ingin selamanya? Klik <b>Selalu untuk situs ini</b> di samping sakelar untuk menjadikannya aturan situs permanen. Klik baris untuk berpindah ke tab.",
+    "message": "Setiap tab yang terbuka punya sakelar <b>“Tetap di memori”</b> sendiri — pilihan sementara yang berlaku sampai tab ditutup. Sakelar di header situs melakukan hal yang sama untuk seluruh situs, secara permanen. Klik sebuah baris untuk beralih ke tab.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Atur aturan per situs",
+    "message": "Jaga seluruh situs di memori",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Tambahkan domain di sini untuk melindungi (atau mengecualikan) seluruh situs sekaligus. Sebuah domain juga mencakup subdomainnya — <code>example.com</code> cocok dengan <code>mail.example.com</code>. Itulah turnya — buka kembali kapan saja dari tombol ?.",
+    "message": "Tambahkan domain di sini untuk menjaga seluruh situs di memori (atau membiarkan Chrome membuangnya). Domain juga mencakup subdomainnya — <code>example.com</code> cocok dengan <code>mail.example.com</code>. Tur selesai — buka lagi kapan saja lewat tombol ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -472,7 +366,7 @@
     }
   },
   "thisWebsite": {
-    "message": "Situs web ini",
+    "message": "Situs ini",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -487,54 +381,6 @@
     "message": "Halaman internal tidak memiliki aturan situs — Anda tetap dapat mengganti tab ini.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "alwaysKeptAlive": {
-    "message": "Selalu tetap aktif",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Selalu dapat dibuang",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ disimpan sebagai aturan situs — klik untuk menghapusnya",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Dihapus — $HOST$ kini mengikuti default mode lagi.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Disimpan — $HOST$ kini akan selalu tetap aktif. Lihat Aturan situs di bawah.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Disimpan — $HOST$ kini selalu dapat dibuang. Lihat Aturan situs di bawah.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
   "internalPagesGroup": {
     "message": "Halaman internal",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Selalu jaga seluruh $HOST$ tetap aktif (aturan situs permanen)",
+    "message": "Selalu jaga seluruh $HOST$ di memori (aturan situs permanen)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Perlindungan dijeda — tidak ada tab yang dijaga tetap aktif.",
+    "message": "“Tetap di memori” dijeda — Chrome dapat membuang tab mana pun dari memori. “Tetap berjalan” tidak terpengaruh.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Berhenti menjaga tab yang ditutup ini tetap aktif (lupakan)",
+    "message": "Berhenti menjaga tab yang ditutup ini di memori (lupakan)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Tab yang disematkan di sini tidak dijaga tetap aktif.",
+    "message": "Tab yang disematkan di sini tidak dijaga di memori.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab di sini tetap aktif.",
+    "message": "$COUNT$ tab di sini dijaga di memori.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Tidak dapat dimulai. Mungkin ekstensi lain atau Chrome sendiri sudah menangkap tab ini.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Tetap di memori",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Tetap berjalan",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Semua yang Anda ketik tetap ada",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Masih melambat saat tersembunyi",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Tetap bekerja meski tersembunyi.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Obrolan, timer, dan data langsung terus berjalan",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Lebih boros baterai; Chrome menampilkan ikon berbagi layar",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Mengapa rekaman layar?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“Tetap berjalan” mensimulasikan rekaman layar",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome memperlambat tab yang tidak Anda lihat. Untuk mencegahnya, ekstensi mensimulasikan rekaman layar tab ini, sehingga Chrome menganggapnya sedang digunakan.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Tidak ada yang direkam. Gambar tidak pernah dibaca, disimpan, atau dikirim ke mana pun.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Hanya tab ini, dan hanya selama sakelar menyala. Chrome menampilkan ikon berbagi, jadi tidak ada yang terjadi diam-diam.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Matikan kapan saja, atau cukup tutup tab.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Mengerti, nyalakan",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Nanti saja",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Mengerti",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Jaga tab ini di memori sampai ditutup",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — menjaga tab tetap berjalan",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive menjaga tab ini tetap berjalan"
+  },
+  "bannerOff": {
+    "message": "Matikan"
+  },
+  "bannerHide": {
+    "message": "Sembunyikan bilah ini (tab tetap dijaga)"
+  },
+  "tagRunning": {
+    "message": "Berjalan"
+  },
+  "stopAll": {
+    "message": "Hentikan semua"
+  },
+  "timerLabel": {
+    "message": "Matikan otomatis setelah"
+  },
+  "timer30": {
+    "message": "30 mnt"
+  },
+  "timer60": {
+    "message": "1 jam"
+  },
+  "timer180": {
+    "message": "3 jam"
+  },
+  "timerNone": {
+    "message": "Tanpa timer"
+  },
+  "timerLeft": {
+    "message": "Mati dalam $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Tanpa timer — berjalan sampai Anda mematikannya"
+  },
+  "unitMin": {
+    "message": "mnt"
+  },
+  "unitHour": {
+    "message": "jam"
+  },
+  "heldTitle": {
+    "message": "Saat ini tetap berjalan"
+  },
+  "heldStop": {
+    "message": "Berhenti menjaga tab ini tetap berjalan"
+  },
+  "bannerUntil": {
+    "message": "sampai $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Perpanjang"
+  },
+  "memoryStop": {
+    "message": "Berhenti menjaga tab ini di memori"
+  },
+  "rowRunStart": {
+    "message": "Tetap berjalan — nyalakan untuk tab ini"
+  },
+  "rowRunStop": {
+    "message": "“Tetap berjalan” aktif — klik untuk menghentikan"
+  },
+  "tourRunTitle": {
+    "message": "Jaga halaman tetap berjalan"
+  },
+  "tourRunBody": {
+    "message": "Perlu halaman tetap bekerja saat tersembunyi — obrolan, timer, data langsung? Buka jendela ekstensi di tab itu dan nyalakan <b>“Tetap berjalan”</b>, atau klik ikon petir di baris tab di sini. Chrome lalu menganggap tab sedang digunakan, sehingga tidak diperlambat. Ini mensimulasikan rekaman layar — tidak ada yang direkam atau dikirim — dan mati sendiri setelah timer yang Anda pilih habis."
+  },
+  "aliveTitle": {
+    "message": "Tetap hidup"
+  },
+  "aliveTip": {
+    "message": "Jaga tab ini di memori dan tetap berjalan — keduanya sekaligus"
+  },
+  "aliveRowTip": {
+    "message": "“Tetap di memori” + “Tetap berjalan”"
+  },
+  "captureReload": {
+    "message": "Muat ulang halaman"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome hanya mengizinkan ini dari jendela ekstensi di tab tersebut. Beralihlah ke tab itu dan klik ikon Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "Beralih ke tab"
+  },
+  "groupRunPick": {
+    "message": "“Tetap berjalan” dinyalakan per tab — pilih tab dengan tombol petirnya."
+  },
+  "groupRunStartTip": {
+    "message": "Tetap berjalan: halaman terus bekerja dengan kecepatan penuh saat tersembunyi"
+  },
+  "groupRunStopTip": {
+    "message": "Hentikan “Tetap berjalan” untuk tab situs ini"
+  },
+  "statRunningNow": {
+    "message": "tetap berjalan"
+  },
+  "aliveOnTab": {
+    "message": "Nyalakan di tab"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome hanya mengizinkan “Tetap berjalan” dari jendela ekstensi di tab tersebut — ini membukanya di sana."
+  },
+  "pendingTitle": {
+    "message": "Satu klik lagi"
+  },
+  "pendingBody": {
+    "message": "Tutup jendela ini dan klik ikon Keep Tabs Alive (perisai hijau) di bilah alat — atau di bawah ikon teka-teki 🧩. “Tetap berjalan” menyala dengan sendirinya."
+  },
+  "handoffTitle": {
+    "message": "Nyalakan “Tetap berjalan” di tab"
+  },
+  "handoffTitleAlive": {
+    "message": "Nyalakan “Tetap hidup” di tab"
+  },
+  "handoffStep1": {
+    "message": "Kami akan memindahkan Anda ke “$TITLE$”.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Klik ikon Keep Tabs Alive yang berkedip di bilah alat (perisai hijau). Tidak terlihat? Ikon itu ada di bawah ikon teka-teki 🧩."
+  },
+  "handoffStep3": {
+    "message": "Jendela akan menunjuk sakelar “Tetap berjalan” — klik, dan fitur menyala."
+  },
+  "handoffStep3Alive": {
+    "message": "Jendela akan menunjuk sakelar “Tetap berjalan” — klik, dan tab dijaga di memori serta tetap berjalan."
+  },
+  "runDone": {
+    "message": "Selesai — tab ini dijaga tetap berjalan."
+  },
+  "aliveDone": {
+    "message": "Selesai — tab ini tetap hidup: di memori dan berjalan."
+  },
+  "tapToTurnOn": {
+    "message": "Klik untuk menyalakan"
+  },
+  "heldMore": {
+    "message": "Semua tab ada di Pengaturan →"
+  },
+  "groupInMemory": {
+    "message": "Di memori"
+  },
+  "memoryCardSub": {
+    "message": "Chrome tidak akan membuang tab ini — yang Anda ketik tetap ada."
+  },
+  "runCardSub": {
+    "message": "Halaman-halaman ini terus bekerja dengan kecepatan penuh, bahkan saat tersembunyi."
+  },
+  "colRunning": {
+    "message": "Berjalan"
+  },
+  "runEmpty": {
+    "message": "Tidak ada tab yang tetap berjalan. Nyalakan untuk tab dengan ⚡ di daftar di bawah, atau dari jendela ekstensi di tab tersebut."
+  },
+  "wMemPromise": {
+    "message": "Chrome tidak akan membuang tab ini."
+  },
+  "wMemDesc": {
+    "message": "Saat Anda kembali, semuanya persis seperti yang Anda tinggalkan — tanpa muat ulang."
+  },
+  "wMemGain1": {
+    "message": "Teks yang diketik, draf, dan formulir tetap ada"
+  },
+  "wMemGain2": {
+    "message": "Gratis: tidak menambah pemakaian baterai"
+  },
+  "wMemCost": {
+    "message": "Saat tersembunyi, halaman mungkin tetap melambat"
+  },
+  "wGoodFor": {
+    "message": "Cocok untuk:"
+  },
+  "wMemFor": {
+    "message": "formulir panjang, dokumen, email, dasbor yang sesekali Anda cek"
+  },
+  "wRunPromise": {
+    "message": "Halaman terus bekerja dengan kecepatan penuh — bahkan saat Anda tidak melihatnya."
+  },
+  "wRunDesc": {
+    "message": "Chrome menganggap tab sedang digunakan, sehingga tidak ada yang berhenti saat Anda berada di tempat lain."
+  },
+  "wRunGain1": {
+    "message": "Obrolan, jawaban AI, timer, musik, dan data langsung terus berjalan"
+  },
+  "wRunGain2": {
+    "message": "Mati sendiri lewat timer, jika Anda mau"
+  },
+  "wRunCost": {
+    "message": "Lebih boros baterai; Chrome menampilkan ikon berbagi layar — tidak ada yang direkam"
+  },
+  "wRunFor": {
+    "message": "obrolan dan alat AI, trading dan pemantauan, timer, unggahan"
+  },
+  "wBoth": {
+    "message": "<strong>Perlu keduanya?</strong> “Tetap hidup” menyalakan kedua mode untuk sebuah tab dengan satu klik."
+  },
+  "wStepsTitle": {
+    "message": "Cara menyalakannya"
+  },
+  "wStep2": {
+    "message": "<strong>Di tab mana pun, klik ikonnya</strong> — jendelanya punya sakelar untuk setiap mode."
+  },
+  "wStep3": {
+    "message": "<strong>Di Pengaturan</strong> lihat semua tab yang terbuka, dan jaga seluruh situs di memori."
+  },
+  "wPrivacy": {
+    "message": "Tidak ada yang keluar dari browser Anda: tanpa pelacakan, tanpa server. “Tetap berjalan” tidak pernah merekam halaman."
+  },
+  "timerAdd30": {
+    "message": "+30 mnt"
+  },
+  "timerAdd60": {
+    "message": "+1 jam"
+  },
+  "timerAdd180": {
+    "message": "+3 jam"
   }
 }

@@ -57,309 +57,10 @@ function loadPromoCopy(locale) {
 const t = loadMessages(LOCALE);
 const p = loadPromoCopy(LOCALE);
 
-// Letter-tile favicon as a data URI (no network needed, looks like a real favicon)
-const fav = (letter, color) =>
-  'data:image/svg+xml;utf8,' +
-  encodeURIComponent(
-    `<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'>` +
-      `<rect width='36' height='36' rx='8' fill='${color}'/>` +
-      `<text x='18' y='25' font-family='-apple-system,Arial' font-size='20' font-weight='700' fill='#fff' text-anchor='middle'>${letter}</text>` +
-    `</svg>`
-  );
-
-const FAV = {
-  github: fav('G', '#24292f'),
-  gmail: fav('M', '#ea4335'),
-  docs: fav('D', '#1a73e8'),
-  notion: fav('N', '#111111'),
-  figma: fav('F', '#a259ff'),
-  youtube: fav('Y', '#ff0000'),
-  reddit: fav('R', '#ff4500'),
-  jira: fav('J', '#0052cc'),
-};
-
-// shared <head> for a UI page; theme + one component sheet from the real extension
-const uiHead = (componentCss, dark) => `<!DOCTYPE html>
-<html lang="${htmlLang}"${dirAttr}${dark ? ' data-theme="dark"' : ''}>
-<head>
-<meta charset="UTF-8" />
-<link rel="stylesheet" href="${uiCss('theme.css')}" />
-<link rel="stylesheet" href="${uiCss(componentCss)}" />
-<style>
-  *{animation:none!important;transition:none!important}
-  html,body{background:transparent!important}
-</style>
-</head>`;
-
-const sw = (checked, lg) =>
-  `<label class="switch${lg ? ' switch--lg' : ''}"><input type="checkbox"${checked ? ' checked' : ''} /><span class="switch__track"><span class="switch__thumb"></span></span></label>`;
-
-const gearSvg = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="2"/><path d="M19.4 13a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 008 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 003.6 15a1.65 1.65 0 00-1.51-1H2a2 2 0 110-4h.09A1.65 1.65 0 003.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 008 4.6a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.2.6.74 1 1.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2"/></svg>`;
-const checkSvg = `<svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-const moonSvg = `<svg viewBox="0 0 24 24" fill="none"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 109.8 9.8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`;
-
-// ── Popup UI ─────────────────────────────────────────────────────────────
-function popup({ dark, host, hostFav, tabPath, count, siteOn, tabOn, noteState, noteText, pill }) {
-  return `${uiHead('popup.css', dark)}
-<body>
-  <div class="app" id="app" data-enabled="true">
-    <header class="header">
-      <div class="brand">
-        <img class="brand__logo" src="${uiIcon('icon48.png')}" alt="" width="22" height="22" />
-        <span class="brand__name">${t('brandName')}</span>
-      </div>
-      ${sw(true, true)}
-    </header>
-    <section class="card status">
-      <div class="status__main">
-        <span class="status__count">${count}</span>
-        <span class="status__label">${t('tabsProtected')}</span>
-      </div>
-      <div class="status__pill"><span class="dot"></span><span>${pill}</span></div>
-    </section>
-    <section class="card site">
-      <div class="ctl">
-        <div class="ctl__text">
-          <span class="ctl__head"><span class="ctl__label">${t('thisWebsite')}</span><span class="ctl__scope ctl__scope--site">${t('scopePermanent')}</span></span>
-          <span class="ctl__value"><img class="ctl__favicon" src="${hostFav}" width="14" height="14" /><span>${host}</span></span>
-        </div>
-        ${sw(siteOn)}
-      </div>
-      <div class="ctl">
-        <div class="ctl__text">
-          <span class="ctl__head"><span class="ctl__label">${t('thisTab')}</span><span class="ctl__scope ctl__scope--tab">${t('scopeTemporary')}</span></span>
-          <span class="ctl__value"><span>${tabPath}</span></span>
-        </div>
-        ${sw(tabOn)}
-      </div>
-    </section>
-    <section class="card note" data-state="${noteState}">
-      <span class="note__icon">${noteState === 'on' ? checkSvg : moonSvg}</span>
-      <span class="note__text">${noteText}</span>
-    </section>
-    <footer class="footer">
-      <button class="link">${gearSvg}<span>${t('settingsAndStats')}</span></button>
-    </footer>
-  </div>
-</body></html>`;
-}
-
-// ── Options building blocks ──────────────────────────────────────────────
-const topbar = (themeActive) => `
-  <header class="topbar">
-    <div class="brand">
-      <img class="brand__logo" src="${uiIcon('icon128.png')}" alt="" width="40" height="40" />
-      <div>
-        <h1 class="brand__name">${t('brandName')}</h1>
-        <p class="brand__sub">${t('brandSub')}</p>
-      </div>
-    </div>
-    <div class="topbar__controls">
-      <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M9.5 9.2a2.5 2.5 0 014.9.8c0 1.7-2.4 2-2.4 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="16.6" r="1.1" fill="currentColor"/></svg></button>
-      <div class="seg" role="radiogroup">
-        <button class="seg__btn" role="radio" aria-checked="${themeActive === 'auto'}">${t('themeAuto')}</button>
-        <button class="seg__btn" role="radio" aria-checked="${themeActive === 'light'}">${t('themeLight')}</button>
-        <button class="seg__btn" role="radio" aria-checked="${themeActive === 'dark'}">${t('themeDark')}</button>
-      </div>
-      ${sw(true, true)}
-    </div>
-  </header>`;
-
-const statbar = `
-  <section class="panel statbar">
-    <div class="stat"><span class="stat__num stat__num--accent">12</span><span class="stat__label">${t('statProtectedNow')}</span></div>
-    <div class="stat"><span class="stat__num">18</span><span class="stat__label">${t('statOpenTabs')}</span></div>
-    <div class="stat"><span class="stat__num">3,482</span><span class="stat__label">${t('statProtectOps')}</span></div>
-    <div class="stat"><span class="stat__num">27</span><span class="stat__label">${t('statDiscardsObserved')}</span></div>
-    <div class="statbar__meta"><span>${t('statsSince', { DATE: '2025-06-01' })}</span><button class="linklike">${t('reset')}</button></div>
-  </section>`;
-
-const modesPanel = `
-  <section class="panel">
-    <div class="panel__head"><h2 class="panel__title">${t('protectionMode')}</h2></div>
-    <div class="modes">
-      <label class="mode"><input type="radio" name="mode" checked /><div class="mode__body"><span class="mode__name">${t('modeProtectEverything')}</span><span class="mode__desc">${t('modeProtectEverythingDesc')}</span></div></label>
-      <label class="mode"><input type="radio" name="mode" /><div class="mode__body"><span class="mode__name">${t('modeWhitelistOnly')}</span><span class="mode__desc">${t('modeWhitelistOnlyDesc')}</span></div></label>
-    </div>
-  </section>`;
-
-const rulesPanel = `
-  <section class="panel">
-    <div class="panel__head"><h2 class="panel__title">${t('excludedSites')}</h2><span class="count-badge">2</span></div>
-    <p class="panel__desc">${t('listDescExclude')}</p>
-    <form class="adder"><input class="input" type="text" placeholder="${t('domainPlaceholderExclude')}" /><button class="btn" type="button">${t('add')}</button></form>
-    <ul class="domain-list">
-      <li class="domain-row"><span class="domain-row__name">youtube.com</span><button class="domain-row__remove">${t('remove')}</button></li>
-      <li class="domain-row"><span class="domain-row__name">reddit.com</span><button class="domain-row__remove">${t('remove')}</button></li>
-    </ul>
-  </section>`;
-
-const tabRow = (favicon, title, host, on, tag) => `
-        <li class="tab-row">
-          <span class="tab-row__main">
-            <img class="tab-row__favicon" src="${favicon}" />
-            <span class="tab-row__text">
-              <span class="tab-row__title">${title}</span>
-              <span class="tab-row__sub"><span class="tab-row__host">${host}</span>${tag ? `<span class="minitag minitag--manual">${tag}</span>` : ''}</span>
-            </span>
-          </span>
-          ${sw(on)}
-        </li>`;
-
-const chevron = `<svg class="tab-group__chevron" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-const pinSvg = `<svg viewBox="0 0 24 24" fill="none"><path d="M9 4h6l-1 6 3 3H7l3-3-1-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
-
-const tabsPanel = `
-  <main class="panel">
-    <div class="panel__head">
-      <h2 class="panel__title">${t('openTabs')}</h2>
-      <span class="count-badge">18</span>
-      <input class="input input--search" type="search" placeholder="${t('searchTabs')}" />
-    </div>
-    <p class="panel__desc">${t('openTabsDesc')}</p>
-    <div class="tab-groups">
-      <div class="tab-group is-expanded">
-        <div class="tab-group__head">
-          <button class="tab-group__toggle" aria-expanded="true">
-            ${chevron}
-            <span class="tab-group__icon"><img src="${FAV.github}" /></span>
-            <span class="tab-group__host">github.com</span>
-            <span class="tab-group__count">3</span>
-          </button>
-          <span class="tab-group__alive">${t('keepSiteAlive')}</span>
-          ${sw(true)}
-        </div>
-        <ul class="tab-list">
-          ${tabRow(FAV.github, 'anthropics/claude-code: Agentic coding tool', 'github.com', true, '')}
-          ${tabRow(FAV.github, 'Pull requests · your work', 'github.com', true, t('thisTab'))}
-          ${tabRow(FAV.github, 'Issues · keep-tabs-alive', 'github.com', true, '')}
-        </ul>
-      </div>
-      <div class="tab-group">
-        <div class="tab-group__head">
-          <button class="tab-group__toggle" aria-expanded="false">
-            ${chevron}
-            <span class="tab-group__icon"><img src="${FAV.gmail}" /></span>
-            <span class="tab-group__host">mail.google.com</span>
-            <span class="tab-group__count">2</span>
-          </button>
-          <span class="tab-group__active"><span class="dot"></span>2</span>
-          ${sw(true)}
-        </div>
-      </div>
-      <div class="tab-group">
-        <div class="tab-group__head">
-          <button class="tab-group__toggle" aria-expanded="false">
-            ${chevron}
-            <span class="tab-group__icon"><img src="${FAV.docs}" /></span>
-            <span class="tab-group__host">docs.google.com</span>
-            <span class="tab-group__count">4</span>
-          </button>
-          <span class="tab-group__active"><span class="dot"></span>4</span>
-          ${sw(true)}
-        </div>
-      </div>
-      <div class="tab-group">
-        <div class="tab-group__head">
-          <button class="tab-group__toggle" aria-expanded="false">
-            ${chevron}
-            <span class="tab-group__icon"><img src="${FAV.youtube}" /></span>
-            <span class="tab-group__host">youtube.com</span>
-            <span class="tab-group__count">1</span>
-          </button>
-          <span class="tab-group__pins">${pinSvg}1</span>
-          ${sw(false)}
-        </div>
-      </div>
-    </div>
-  </main>`;
-
-function optionsPage({ dark, bands }) {
-  return `${uiHead('options.css', dark)}
-<body>
-  <div class="page">
-    ${bands.join('\n')}
-  </div>
-</body></html>`;
-}
-
-// ── Welcome / first-run page ─────────────────────────────────────────────
-// Keeps the real page background (no transparent override) so it reads as a
-// genuine browser tab inside the window frame.
-function welcomePage({ dark }) {
-  return `<!DOCTYPE html>
-<html lang="${htmlLang}"${dirAttr}${dark ? ' data-theme="dark"' : ''}>
-<head>
-<meta charset="UTF-8" />
-<link rel="stylesheet" href="${uiCss('theme.css')}" />
-<link rel="stylesheet" href="${uiCss('welcome.css')}" />
-<style>*{animation:none!important;transition:none!important}</style>
-</head>
-<body>
-  <main class="welcome">
-    <header class="hero">
-      <div class="hero__badge"><img src="${uiIcon('icon128.png')}" alt="" width="72" height="72" /></div>
-      <p class="hero__eyebrow">${t('heroEyebrow')}</p>
-      <h1 class="hero__title">${t('heroTitle')}</h1>
-      <p class="hero__lead">${t('heroLead')}</p>
-    </header>
-    <section class="cards">
-      <article class="wcard">
-        <span class="wcard__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.4-3 7.4-7 8.5C8 21.4 5 18.4 5 14V6l7-3z" fill="currentColor" opacity="0.16"/><path d="M12 3l7 3v5c0 4.4-3 7.4-7 8.5C8 21.4 5 18.4 5 14V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <h3 class="wcard__title">${t('wcard1Title')}</h3>
-        <p class="wcard__text">${t('wcard1Text')}</p>
-      </article>
-      <article class="wcard">
-        <span class="wcard__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="10" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="15" cy="12" r="2.6" fill="currentColor"/></svg></span>
-        <h3 class="wcard__title">${t('wcard2Title')}</h3>
-        <p class="wcard__text">${t('wcard2Text')}</p>
-      </article>
-      <article class="wcard">
-        <span class="wcard__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.4 2.5 15.6 0 18M12 3c-2.5 2.4-2.5 15.6 0 18" stroke="currentColor" stroke-width="1.6"/></svg></span>
-        <h3 class="wcard__title">${t('wcard3Title')}</h3>
-        <p class="wcard__text">${t('wcard3Text')}</p>
-      </article>
-    </section>
-    <section class="actions">
-      <button class="btn btn--lg">${t('chooseYourSites')}</button>
-      <p class="actions__note">${t('actionsNote')}</p>
-    </section>
-  </main>
-</body></html>`;
-}
-
-// ── Write UI files ───────────────────────────────────────────────────────
-fs.writeFileSync(path.join(UI, 'popup-on.html'), popup({
-  dark: false, host: 'github.com', hostFav: FAV.github, tabPath: 'anthropics/claude-code: Agentic coding tool',
-  count: 12, siteOn: true, tabOn: true, noteState: 'on',
-  noteText: t('popupSummaryProtected'), pill: t('statusActive'),
-}));
-
-fs.writeFileSync(path.join(UI, 'popup-excluded.html'), popup({
-  dark: false, host: 'youtube.com', hostFav: FAV.youtube, tabPath: 'Rick Astley - Never Gonna Give You Up',
-  count: 12, siteOn: false, tabOn: false, noteState: 'off',
-  noteText: t('popupSummaryDiscardable'), pill: t('statusActive'),
-}));
-
-fs.writeFileSync(path.join(UI, 'popup-dark.html'), popup({
-  dark: true, host: 'notion.so', hostFav: FAV.notion, tabPath: 'Weekly planning — Notion',
-  count: 12, siteOn: true, tabOn: true, noteState: 'on',
-  noteText: t('popupSummaryProtected'), pill: t('statusActive'),
-}));
-
-fs.writeFileSync(path.join(UI, 'options-tabs.html'), optionsPage({
-  dark: false, bands: [topbar('light'), statbar, tabsPanel],
-}));
-
-fs.writeFileSync(path.join(UI, 'options-modes.html'), optionsPage({
-  dark: false, bands: [topbar('light'), modesPanel, rulesPanel],
-}));
-
-fs.writeFileSync(path.join(UI, 'options-dark.html'), optionsPage({
-  dark: true, bands: [topbar('dark'), statbar, tabsPanel],
-}));
-
-fs.writeFileSync(path.join(UI, 'welcome.html'), welcomePage({ dark: false }));
+// The UI pages (popup, settings, welcome) are NOT built here: render.mjs snapshots the
+// real extension pages from dist/ into <build>/ui/ before this runs (see snap.mjs).
+let UI_META = {};
+try { UI_META = JSON.parse(fs.readFileSync(path.join(UI, 'meta.json'), 'utf8')); } catch {}
 
 // ── Promo slides ─────────────────────────────────────────────────────────
 const slideHead = `<!DOCTYPE html><html lang="${htmlLang}"${dirAttr}><head><meta charset="UTF-8" />
@@ -381,7 +82,7 @@ function slideSide({ eyebrow, title, sub, ui, frameClass, accent }) {
         <div class="toolbar">
           <div class="toolbar__ext">
             <img src="${slideIcon('icon32.png')}" width="20" height="20" alt="" />
-            <span class="toolbar__badge">12</span>
+            <span class="toolbar__badge">4</span>
           </div>
         </div>
         <iframe src="${uiHref(ui)}" scrolling="no"></iframe>
@@ -392,7 +93,7 @@ function slideSide({ eyebrow, title, sub, ui, frameClass, accent }) {
 }
 
 // stack layout: copy top, wide window below (options)
-function slideStack({ eyebrow, title, sub, ui, scale, accent }) {
+function slideStack({ eyebrow, title, sub, ui, scale, accent, offset = 0 }) {
   return `${slideHead}
 <body class="${accent || ''}">
   <div class="slide slide--stack">
@@ -405,51 +106,46 @@ function slideStack({ eyebrow, title, sub, ui, scale, accent }) {
     <div class="window">
       <div class="window__bar"><span class="d red"></span><span class="d yel"></span><span class="d grn"></span><span class="window__url">${t('settingsTitle')}</span></div>
       <div class="window__view">
-        <iframe src="${uiHref(ui)}" scrolling="no" style="width:1200px;transform:scale(${scale});transform-origin:top left;"></iframe>
+        <iframe src="${uiHref(ui)}" scrolling="no" style="width:1200px;transform:scale(${scale});transform-origin:top left;margin-top:-${Math.round(offset * scale)}px;"></iframe>
       </div>
     </div>
   </div>
 </body></html>`;
 }
 
-fs.writeFileSync(path.join(OUT, 'slide1.html'), slideSide({
+fs.writeFileSync(path.join(OUT, 'slide2.html'), slideSide({
   accent: 'theme-1',
   eyebrow: p('slide1', 'eyebrow'),
   title: p('slide1', 'title'),
   sub: p('slide1', 'sub'),
-  ui: 'popup-on.html', frameClass: 'device--popup',
+  ui: 'popup-mem.html', frameClass: 'device--popup',
 }));
 
-fs.writeFileSync(path.join(OUT, 'slide2.html'), slideStack({
+// Keep running: the popup with its blue card and the list of held tabs.
+fs.writeFileSync(path.join(OUT, 'slide3.html'), slideSide({
   accent: 'theme-2',
   eyebrow: p('slide2', 'eyebrow'),
   title: p('slide2', 'title'),
   sub: p('slide2', 'sub'),
-  ui: 'options-tabs.html', scale: 0.92,
+  ui: 'popup-run.html', frameClass: 'device--popup',
 }));
 
-fs.writeFileSync(path.join(OUT, 'slide3.html'), slideStack({
+// Settings: the two mode cards at the top of the page.
+fs.writeFileSync(path.join(OUT, 'slide4.html'), slideStack({
   accent: 'theme-3',
   eyebrow: p('slide3', 'eyebrow'),
   title: p('slide3', 'title'),
   sub: p('slide3', 'sub'),
-  ui: 'options-modes.html', scale: 0.92,
+  ui: 'options.html', scale: 0.92, offset: 0,
 }));
 
-fs.writeFileSync(path.join(OUT, 'slide4.html'), slideSide({
+// The tab list with its aligned columns.
+fs.writeFileSync(path.join(OUT, 'slide5.html'), slideStack({
   accent: 'theme-4',
   eyebrow: p('slide4', 'eyebrow'),
   title: p('slide4', 'title'),
   sub: p('slide4', 'sub'),
-  ui: 'popup-excluded.html', frameClass: 'device--popup',
-}));
-
-fs.writeFileSync(path.join(OUT, 'slide5.html'), slideSide({
-  accent: 'theme-5',
-  eyebrow: p('slide5', 'eyebrow'),
-  title: p('slide5', 'title'),
-  sub: p('slide5', 'sub'),
-  ui: 'popup-dark.html', frameClass: 'device--popup device--dark',
+  ui: 'options.html', scale: 0.92, offset: Math.max(0, (UI_META.tabsTop || 0) - 24),
 }));
 
 // Welcome slide — the real onboarding page framed in a browser window, no extra copy.
@@ -468,9 +164,52 @@ function slideWelcome({ accent, ui }) {
 </body></html>`;
 }
 
-fs.writeFileSync(path.join(OUT, 'slide6.html'), slideWelcome({
-  accent: 'theme-2',
-  ui: 'welcome.html',
-}));
+// The closing slide: not a screenshot — the two modes explained as a poster.
+const chipSvg = `<svg viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="2.5" stroke="currentColor" stroke-width="1.6"/><rect x="9.5" y="9.5" width="5" height="5" rx="1" fill="currentColor"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+const boltSvg = `<svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
+const okSvg = `<svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const dashSvg = `<svg viewBox="0 0 24 24" fill="none"><path d="M6 12h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>`;
+
+function slideModes() {
+  const card = (cls, icon, name, promise, gain, cost, forWhat) => `
+      <article class="mode mode--${cls}">
+        <div class="mode__art"><span class="ring r3"></span><span class="ring r2"></span><span class="ring r1"></span><span class="mode__icon">${icon}</span></div>
+        <h2>${name}</h2>
+        <p class="mode__promise">${promise}</p>
+        <ul>
+          <li class="gain"><i>${okSvg}</i><span>${gain}</span></li>
+          <li class="cost"><i>${dashSvg}</i><span>${cost}</span></li>
+        </ul>
+        <p class="mode__for"><b>${t('wGoodFor')}</b> ${forWhat}</p>
+      </article>`;
+  return `${slideHead}
+<body class="theme-6">
+  <div class="slide slide--modes">
+    <div class="bg"></div>
+    <div class="modes__inner">
+    <h1 class="modes__title">${t('heroTitle')}</h1>
+    <div class="modes__row">
+      ${card('mem', chipSvg, t('memoryTitle'), t('wMemPromise'), t('wMemGain1'), t('wMemCost'), t('wMemFor'))}
+      <div class="modes__plus">+</div>
+      ${card('run', boltSvg, t('runTitle'), t('wRunPromise'), t('wRunGain1'), t('wRunCost'), t('wRunFor'))}
+    </div>
+    <div class="modes__both">
+      <span class="modes__chip">${chipSvg}</span><span class="modes__chip modes__chip--run">${boltSvg}</span>
+      <p>${t('wBoth')}</p>
+    </div>
+    </div>
+  </div>
+  <script>
+    // Long languages: shrink the poster's content until it fits the 800px frame.
+    (function () {
+      var inner = document.querySelector('.modes__inner'), z = 1;
+      function fits() { return document.querySelector('.modes__both').getBoundingClientRect().bottom <= 780; }
+      while (!fits() && z > 0.5) { z -= 0.03; inner.style.zoom = z; }
+    })();
+  </script>
+</body></html>`;
+}
+
+fs.writeFileSync(path.join(OUT, 'slide1.html'), slideModes());
 
 console.log('generated UI + slides for locale: ' + LOCALE);

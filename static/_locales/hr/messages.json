@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Onemogućite Chromeovo odbacivanje kartica i spriječite neželjeno ponovno učitavanje kartica. Pravila po stranici, upravljanje po kartici i statistika uživo.",
+    "message": "Isključite odbacivanje kartica u Chromeu. Kartice u pozadini ne usporavaju. Kontrola po web-mjestu i kartici, mjerač isključivanja.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "Onemogući automatsko odbacivanje kartica",
+    "message": "Onemogući automatsko uklanjanje kartica iz memorije",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Glavni prekidač",
+    "message": "Pauziraj ili nastavi „Zadrži u memoriji” za sve kartice („Neka radi” ostaje nepromijenjeno)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Zaštita uključena",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "Pauzirano",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "zaštićenih kartica",
@@ -44,7 +40,7 @@
     "description": "Heading for the current-tab card in the popup."
   },
   "thisWebsite": {
-    "message": "Ova web-stranica",
+    "message": "Ovo web-mjesto",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -59,59 +55,17 @@
     "message": "Interne stranice nemaju pravila za web-mjesta — ovu karticu i dalje možete prebaciti.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "Ovom stranicom nije moguće upravljati",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Nije dostupno ovdje",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Interne stranice i stranice proširenja uvijek ostaju netaknute.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Zaštićeno",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Može se odbaciti",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Zaštiti ovu stranicu",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Prestani štititi ovu stranicu",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Isključi ovu stranicu",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Zaštićene stranice",
+    "message": "Web-mjesta koja se drže u memoriji",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Isključene stranice",
+    "message": "Web-mjesta koja Chrome smije ukloniti iz memorije",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Još nema stranica",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ više",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Ukloni $DOMAIN$",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "trenutno zaštićeno",
+    "message": "sada u memoriji",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Način zaštite",
+    "message": "Zadrži u memoriji: koja web-mjesta",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Zaštiti sve",
+    "message": "Sva web-mjesta osim…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Samo popis dopuštenih",
+    "message": "Samo odabrana web-mjesta",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Prebacite prekidač da karticu održite aktivnom ili dopustite Chromeu da je odbaci. Ručni prekidač nadjačava pravila stranice i traje dok se kartica ne zatvori.",
+    "message": "Za svaku karticu: ▣ je drži u memoriji, ⚡ je pušta da radi, „Drži na životu” radi oboje. Ručna promjena ima prednost pred pravilima web-mjesta dok se kartica ne zatvori.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "Nijedna kartica ne odgovara pretrazi.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Ovaj prozor · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Prozor $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Ručno",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Uspavano",
+    "message": "Uklonjena iz memorije",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Zaštita je pauzirana glavnim prekidačem",
+    "message": "„Zadrži u memoriji” je pauzirano — ponovno ga uključite u odjeljku „Zadrži u memoriji”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Zaštićeno — prebacite da dopustite Chromeu odbaciti ovu karticu",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Može se odbaciti — prebacite da ovu karticu održite aktivnom",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Samo se ove stranice održavaju aktivnima; sve ostalo može biti odbačeno. Domena odgovara i svojim poddomenama — npr. <code>example.com</code> obuhvaća <code>mail.example.com</code>.",
+    "message": "Chrome neće ukloniti iz memorije kartice ovih web-mjesta. Domena obuhvaća svoje poddomene: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Ovim je stranicama dopušteno odbacivanje. Domena odgovara i svojim poddomenama — npr. <code>example.com</code> obuhvaća <code>mail.example.com</code>.",
+    "message": "Sve ostale kartice ostaju u memoriji; ova web-mjesta Chrome smije ukloniti iz memorije. Domena obuhvaća svoje poddomene: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "Ukloni",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Uvijek za ovu stranicu",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Uvijek održavaj $HOST$ aktivnim (dodaje pravilo stranice)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Uvijek dopusti odbacivanje za $HOST$ (ažurira pravila stranice)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "Uvijek održavano aktivnim",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Uvijek se može odbaciti",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ je spremljen kao pravilo stranice — kliknite za uklanjanje",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Uklonjeno — $HOST$ sada ponovno slijedi zadane postavke načina.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Spremljeno — $HOST$ će sada uvijek ostati aktivan. Pogledajte pravila stranica u nastavku.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Spremljeno — $HOST$ se sada uvijek može odbaciti. Pogledajte pravila stranica u nastavku.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Ovdje još nema ničega.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "Savjet: otvorite <code>chrome://discards</code> da vidite stupac <strong>Auto Discardable</strong> — zaštićene kartice prikazuju ✕. Napomena: ručna odbacivanja ondje i dalje rade; ovo blokira samo Chromeovo <em>automatsko</em> odbacivanje radi uštede memorije.",
+    "message": "Savjet: otvorite <code>chrome://discards</code> da vidite stupac <strong>Auto Discardable</strong> — kartice koje se drže u memoriji prikazuju ✕. Napomena: ručno uklanjanje iz memorije ondje i dalje radi; ovo blokira samo Chromeovo <em>automatsko</em> uklanjanje kartica radi uštede memorije.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Održite važne kartice aktivnima",
+    "message": "Održite važne kartice na životu",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chromeova Ušteda memorije isključuje neaktivne kartice radi oslobađanja RAM-a te ih ponovno učitava kada se vratite. Keep Tabs Alive omogućuje vam da odaberete koje kartice ostaju aktivne i spremne — sprječavajući neželjena ponovna učitavanja i prekide.",
+    "message": "Chrome štedi resurse na dva načina: uklanja iz memorije kartice koje ne koristite i usporava kartice koje ne vidite. Keep Tabs Alive zaustavlja oboje – karticu po karticu i samo gdje želite.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>Prikvačite je</strong> za pristup jednim klikom: kliknite ikonu slagalice <span class=\"puzzle\">🧩</span> na alatnoj traci, a zatim na pribadaču.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Provjerite bilo kada</strong> na <code>chrome://discards</code> — zaštićene kartice prikazuju ✕ u stupcu <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "Glavni prekidač",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Ovdje uključite ili isključite svu zaštitu. Dok je isključena, svaka se kartica može odbaciti — vaša su pravila sačuvana, samo pauzirana.",
+    "message": "Ovdje možete pauzirati ili nastaviti <b>„Zadrži u memoriji”</b> za sve kartice. Dok je prekidač isključen, bilo koja kartica može biti uklonjena iz memorije – vaša pravila ostaju sačuvana, samo pauzirana. Kartice s „Neka radi” i dalje rade.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Odaberite način zaštite",
+    "message": "Koja web-mjesta držati u memoriji",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Samo popis dopuštenih</b> održava aktivnima samo stranice koje odaberete (blaga zadana postavka). <b>Zaštiti sve</b> održava svaku karticu aktivnom osim onih koje isključite.",
+    "message": "<b>Samo odabrana web-mjesta</b> – u memoriji se drže samo web-mjesta s vašeg popisa (blaga zadana postavka). <b>Sva web-mjesta osim…</b> – u memoriji se drži svaka kartica osim kartica isključenih web-mjesta. „Neka radi” postavlja se po kartici, ne ovdje.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Svaka otvorena kartica ima vlastiti prekidač. Prebacite ga da tu pojedinačnu karticu održite aktivnom ili pustite da spava — jednokratni izbor koji traje dok se kartica ne zatvori. Želite to zauvijek? Kliknite <b>Uvijek za ovu stranicu</b> pokraj prekidača da to pretvorite u trajno pravilo stranice. Kliknite redak za prelazak na karticu.",
+    "message": "Svaka otvorena kartica ima vlastiti prekidač <b>„Zadrži u memoriji”</b> – jednokratan izbor koji vrijedi dok se kartica ne zatvori. Prekidač u zaglavlju web-mjesta radi isto za cijelo web-mjesto, trajno. Kliknite redak da biste prešli na karticu.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Postavite pravila po stranici",
+    "message": "Cijela web-mjesta u memoriji",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Ovdje dodajte domene da odjednom zaštitite (ili isključite) cijele stranice. Domena obuhvaća i svoje poddomene — <code>example.com</code> odgovara <code>mail.example.com</code>. To je obilazak — ponovno ga otvorite u bilo kojem trenutku gumbom ?.",
+    "message": "Dodajte ovdje domene da biste držali cijela web-mjesta u memoriji (ili dopustili Chromeu da ih ukloni iz memorije). Domena obuhvaća i svoje poddomene – <code>example.com</code> odgovara <code>mail.example.com</code>. To je kraj obilaska – ponovno ga otvorite bilo kada gumbom ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Uvijek održavaj cijeli $HOST$ aktivnim (trajno pravilo web-mjesta)",
+    "message": "Uvijek drži cijeli $HOST$ u memoriji (trajno pravilo web-mjesta)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Zaštita je pauzirana — nijedna kartica nije održavana aktivnom.",
+    "message": "„Zadrži u memoriji” je pauzirano — Chrome smije ukloniti iz memorije bilo koju karticu. „Neka radi” ostaje nepromijenjeno.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Prestani održavati ovu zatvorenu karticu aktivnom (zaboravi je)",
+    "message": "Prestani držati ovu zatvorenu karticu u memoriji (zaboravi je)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Prikvačene kartice ovdje se ne održavaju aktivnima.",
+    "message": "Prikvačene kartice ovdje se ne drže u memoriji.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "Ovdje se aktivnima održava $COUNT$ kartica.",
+    "message": "U memoriji se ovdje drži kartica: $COUNT$.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Pokretanje nije uspjelo. Ovu karticu možda već snima drugo proširenje ili Chrome.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Zadrži u memoriji",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Neka radi",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Sve što ste upisali ostaje",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "U pozadini se i dalje usporava",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Radi i kad je kartica skrivena.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Chatovi, mjerači vremena i podaci uživo nastavljaju raditi",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Veća potrošnja baterije; Chrome prikazuje ikonu dijeljenja zaslona",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Zašto snimanje zaslona?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "„Neka radi” simulira snimanje zaslona",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome usporava kartice koje ne vidite. Kako bi se to spriječilo, proširenje simulira snimanje zaslona ove kartice pa je Chrome smatra korištenom.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Ništa se ne snima. Slika se nikad ne čita, ne sprema niti se ikamo šalje.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Samo ova kartica i samo dok je prekidač uključen. Chrome prikazuje ikonu dijeljenja, pa se ništa ne događa potajno.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Isključite to bilo kada ili jednostavno zatvorite karticu.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Razumijem, uključi",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Ne sada",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Razumijem",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Zadrži ovu karticu u memoriji dok se ne zatvori",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive – neke kartice rade i u pozadini",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive održava rad ove kartice"
+  },
+  "bannerOff": {
+    "message": "Isključi"
+  },
+  "bannerHide": {
+    "message": "Sakrij ovu traku (kartica i dalje radi)"
+  },
+  "tagRunning": {
+    "message": "Radi"
+  },
+  "stopAll": {
+    "message": "Zaustavi sve"
+  },
+  "timerLabel": {
+    "message": "Automatsko isključivanje nakon"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 h"
+  },
+  "timer180": {
+    "message": "3 h"
+  },
+  "timerNone": {
+    "message": "Bez ograničenja"
+  },
+  "timerLeft": {
+    "message": "Isključit će se za $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Bez ograničenja – radi dok to ne isključite"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "h"
+  },
+  "heldTitle": {
+    "message": "Trenutačno rade"
+  },
+  "heldStop": {
+    "message": "Isključi „Neka radi” za ovu karticu"
+  },
+  "bannerUntil": {
+    "message": "do $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Produži za"
+  },
+  "memoryStop": {
+    "message": "Prestani držati ovu karticu u memoriji"
+  },
+  "rowRunStart": {
+    "message": "Neka radi – uključi za ovu karticu"
+  },
+  "rowRunStop": {
+    "message": "„Neka radi” je uključeno – kliknite za isključivanje"
+  },
+  "tourRunTitle": {
+    "message": "Neka stranica radi"
+  },
+  "tourRunBody": {
+    "message": "Trebate da stranica nastavi raditi dok je skrivena – chat, mjerač vremena, podaci uživo? Otvorite prozor proširenja na toj kartici i uključite <b>„Neka radi”</b> ili kliknite ikonu munje u retku kartice ovdje. Chrome tada karticu smatra korištenom pa je ne usporava. To simulira snimanje zaslona – ništa se ne snima niti šalje – a nakon vremena koje odaberete sam se isključuje."
+  },
+  "aliveTitle": {
+    "message": "Drži na životu"
+  },
+  "aliveTip": {
+    "message": "Zadrži ovu karticu u memoriji i pusti je da radi – oboje odjednom"
+  },
+  "aliveRowTip": {
+    "message": "Zadrži u memoriji + Neka radi"
+  },
+  "captureReload": {
+    "message": "Ponovno učitaj stranicu"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome to dopušta samo iz prozora proširenja na toj kartici. Idite na karticu i kliknite ikonu Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "Idi na karticu"
+  },
+  "groupRunPick": {
+    "message": "„Neka radi” uključuje se za jednu po jednu karticu – odaberite je gumbom s munjom."
+  },
+  "groupRunStartTip": {
+    "message": "Neka radi: stranica radi punom brzinom i kad je skrivena"
+  },
+  "groupRunStopTip": {
+    "message": "Zaustavi „Neka radi” za kartice ovog web-mjesta"
+  },
+  "statRunningNow": {
+    "message": "u radu"
+  },
+  "aliveOnTab": {
+    "message": "Uključi na kartici"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome dopušta „Neka radi” samo iz prozora proširenja na toj kartici – ovaj gumb ga tamo otvara."
+  },
+  "pendingTitle": {
+    "message": "Još jedan klik"
+  },
+  "pendingBody": {
+    "message": "Zatvorite ovaj prozor i kliknite ikonu Keep Tabs Alive (zeleni štit) na alatnoj traci – ili pod ikonom slagalice 🧩. Način „Neka radi” uključit će se sam."
+  },
+  "handoffTitle": {
+    "message": "Uključi „Neka radi” na kartici"
+  },
+  "handoffTitleAlive": {
+    "message": "Uključi „Drži na životu” na kartici"
+  },
+  "handoffStep1": {
+    "message": "Prebacit ćemo vas na „$TITLE$”.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Kliknite treperavu ikonu Keep Tabs Alive na alatnoj traci (zeleni štit). Ne vidite je? Nalazi se pod ikonom slagalice 🧩."
+  },
+  "handoffStep3": {
+    "message": "Prozor će pokazati prekidač „Neka radi” – kliknite ga i način će se uključiti."
+  },
+  "handoffStep3Alive": {
+    "message": "Prozor će pokazati prekidač „Neka radi” – kliknite ga i kartica će ostati u memoriji i raditi."
+  },
+  "runDone": {
+    "message": "Gotovo – ova kartica radi i u pozadini."
+  },
+  "aliveDone": {
+    "message": "Gotovo – ova kartica je živa: u memoriji je i radi."
+  },
+  "tapToTurnOn": {
+    "message": "Kliknite za uključivanje"
+  },
+  "heldMore": {
+    "message": "Sve kartice su u Postavkama →"
+  },
+  "groupInMemory": {
+    "message": "U memoriji"
+  },
+  "memoryCardSub": {
+    "message": "Chrome neće ukloniti ove kartice iz memorije – ono što ste upisali ostaje."
+  },
+  "runCardSub": {
+    "message": "Ove stranice rade punom brzinom, čak i kad su skrivene."
+  },
+  "colRunning": {
+    "message": "Radi"
+  },
+  "runEmpty": {
+    "message": "Nijedna kartica nema uključeno „Neka radi”. Uključite to za karticu pomoću ⚡ na popisu ispod ili u prozoru proširenja na toj kartici."
+  },
+  "wMemPromise": {
+    "message": "Chrome neće ukloniti karticu iz memorije."
+  },
+  "wMemDesc": {
+    "message": "Kad joj se vratite, sve je točno ondje gdje ste ostavili – bez ponovnog učitavanja."
+  },
+  "wMemGain1": {
+    "message": "Upisani tekst, skice i obrasci ostaju"
+  },
+  "wMemGain2": {
+    "message": "Besplatno: bez dodatne potrošnje baterije"
+  },
+  "wMemCost": {
+    "message": "Dok je kartica skrivena, stranica se i dalje može usporiti"
+  },
+  "wGoodFor": {
+    "message": "Prikladno za:"
+  },
+  "wMemFor": {
+    "message": "duge obrasce, dokumente, e-poštu, nadzorne ploče koje povremeno provjeravate"
+  },
+  "wRunPromise": {
+    "message": "Stranica radi punom brzinom – čak i kad je ne vidite."
+  },
+  "wRunDesc": {
+    "message": "Chrome karticu smatra korištenom pa se ništa u njoj ne zaustavlja dok ste drugdje."
+  },
+  "wRunGain1": {
+    "message": "Chatovi, odgovori umjetne inteligencije, mjerači vremena, glazba i podaci uživo nastavljaju raditi"
+  },
+  "wRunGain2": {
+    "message": "Po želji se sam isključuje nakon isteka vremena"
+  },
+  "wRunCost": {
+    "message": "Veća potrošnja baterije; Chrome prikazuje ikonu dijeljenja zaslona – ništa se ne snima"
+  },
+  "wRunFor": {
+    "message": "chatove i AI alate, trgovanje i nadzor, mjerače vremena, prijenose datoteka"
+  },
+  "wBoth": {
+    "message": "<strong>Trebate oboje?</strong> „Drži na životu” uključuje oba načina za karticu jednim klikom."
+  },
+  "wStepsTitle": {
+    "message": "Kako ih uključiti"
+  },
+  "wStep2": {
+    "message": "<strong>Na bilo kojoj kartici kliknite ikonu</strong> – u njezinu prozoru je prekidač za svaki način."
+  },
+  "wStep3": {
+    "message": "<strong>U Postavkama</strong> vidite sve otvorene kartice i možete držati u memoriji cijela web-mjesta."
+  },
+  "wPrivacy": {
+    "message": "Ništa ne napušta vaš preglednik: bez praćenja, bez poslužitelja. „Neka radi” nikad ne snima stranicu."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 h"
+  },
+  "timerAdd180": {
+    "message": "+3 h"
   }
 }

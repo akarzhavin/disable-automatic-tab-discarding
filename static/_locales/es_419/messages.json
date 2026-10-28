@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Desactiva el descarte de pestañas de Chrome y evita recargas de pestañas no deseadas. Reglas por sitio, control por pestaña y estadísticas en vivo.",
+    "message": "Desactiva el descarte de pestañas en Chrome y evita que se ralenticen en segundo plano. Control por sitio y pestaña, y temporizador.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -24,16 +24,12 @@
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Interruptor principal",
+    "message": "Pausar o reanudar “Mantener en memoria” en todas las pestañas (“Mantener en ejecución” no se ve afectado)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Protección activa",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "En pausa",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "pestañas protegidas",
@@ -59,59 +55,17 @@
     "message": "Las páginas internas no tienen reglas de sitio, pero aún puedes cambiar esta pestaña.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "Esta página no se puede administrar",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "No disponible aquí",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Las páginas internas y de extensiones nunca se modifican.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Protegida",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Descartable",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Proteger este sitio",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Dejar de proteger este sitio",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Excluir este sitio",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Sitios protegidos",
+    "message": "Sitios que se mantienen en memoria",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Sitios excluidos",
+    "message": "Sitios que Chrome puede descartar",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Aún no hay sitios",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ más",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Quitar $DOMAIN$",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "protegidas ahora",
+    "message": "en memoria ahora",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Modo de protección",
+    "message": "Mantener en memoria: qué sitios",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Proteger todo",
+    "message": "Todos los sitios, excepto…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Solo lista de permitidos",
+    "message": "Solo los sitios elegidos",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Acciona un interruptor para mantener esa pestaña activa o dejar que Chrome la descarte. Un interruptor manual prevalece sobre las reglas del sitio y dura hasta que se cierra la pestaña.",
+    "message": "Por pestaña: ▣ la mantiene en memoria, ⚡ la mantiene en ejecución y “Mantener viva” hace ambas cosas. Un cambio manual tiene prioridad sobre las reglas del sitio hasta que se cierra la pestaña.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "Ninguna pestaña coincide con tu búsqueda.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Esta ventana · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Ventana $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Manual",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Dormida",
+    "message": "Descartada",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "La protección está en pausa por el interruptor principal",
+    "message": "“Mantener en memoria” está en pausa: vuelve a activarlo en la tarjeta “Mantener en memoria”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Protegida — acciona para dejar que Chrome descarte esta pestaña",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Descartable — acciona para mantener esta pestaña activa",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Solo estos sitios se mantienen activos; todo lo demás puede descartarse. Un dominio también incluye sus subdominios; por ejemplo, <code>example.com</code> cubre <code>mail.example.com</code>.",
+    "message": "Chrome no descartará las pestañas de estos sitios. Un dominio incluye sus subdominios: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Estos sitios pueden descartarse. Un dominio también incluye sus subdominios; por ejemplo, <code>example.com</code> cubre <code>mail.example.com</code>.",
+    "message": "Las demás pestañas se mantienen en memoria; Chrome puede descartar estos sitios. Un dominio incluye sus subdominios: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "Quitar",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Siempre para este sitio",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Mantener siempre activo $HOST$ (agrega una regla de sitio)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Permitir siempre que se descarte $HOST$ (actualiza las reglas de sitio)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "Siempre activo",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Siempre descartable",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ está guardado como regla de sitio; haz clic para quitarlo",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Quitado — $HOST$ vuelve a seguir el valor predeterminado del modo.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Guardado — $HOST$ permanecerá siempre activo. Consulta Reglas por sitio más abajo.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Guardado — $HOST$ ya podrá descartarse siempre. Consulta Reglas por sitio más abajo.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Aún no hay nada aquí.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "Consejo: abre <code>chrome://discards</code> para ver la columna <strong>Auto Discardable</strong>; las pestañas protegidas muestran ✕. Nota: los descartes manuales ahí siguen funcionando; esto solo bloquea el descarte <em>automático</em> de Chrome para ahorrar memoria.",
+    "message": "Consejo: abre <code>chrome://discards</code> para ver la columna <strong>Auto Discardable</strong>; las pestañas mantenidas en memoria muestran ✕. Nota: los descartes manuales ahí siguen funcionando; esto solo bloquea el descarte <em>automático</em> de Chrome para ahorrar memoria.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Mantén activas las pestañas que importan",
+    "message": "Mantén vivas las pestañas que importan",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "El Ahorro de memoria de Chrome descarga las pestañas inactivas para liberar RAM y las vuelve a cargar cuando regresas. Keep Tabs Alive te permite elegir qué pestañas permanecen activas y listas, evitando recargas e interrupciones no deseadas.",
+    "message": "Chrome ahorra recursos de dos maneras: descarta las pestañas que no usas y ralentiza las que no ves. Keep Tabs Alive evita ambas cosas, pestaña por pestaña y solo donde tú quieras.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>Fíjala</strong> para acceder con un clic: haz clic en el icono de rompecabezas <span class=\"puzzle\">🧩</span> de la barra de herramientas y luego en la tachuela.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Verifícalo cuando quieras</strong> en <code>chrome://discards</code>: las pestañas protegidas muestran ✕ en la columna <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "El interruptor principal",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Activa o desactiva aquí toda la protección. Mientras está desactivada, cualquier pestaña puede descartarse; tus reglas se conservan, solo quedan en pausa.",
+    "message": "Pausa o reanuda <b>Mantener en memoria</b> para todas las pestañas desde aquí. Mientras esté desactivado, cualquier pestaña puede descartarse; tus reglas se conservan, solo quedan en pausa. Las pestañas con “Mantener en ejecución” siguen funcionando.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Elige un modo de protección",
+    "message": "Qué sitios mantener en memoria",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Solo lista de permitidos</b> mantiene activos únicamente los sitios que elijas (la opción predeterminada y más suave). <b>Proteger todo</b> mantiene activas todas las pestañas excepto las que excluyas.",
+    "message": "<b>Solo los sitios elegidos</b> mantiene en memoria únicamente los sitios que incluyas en la lista (la opción predeterminada y más suave). <b>Todos los sitios, excepto…</b> mantiene en memoria todas las pestañas salvo las de los sitios que excluyas. “Mantener en ejecución” se configura por pestaña, no aquí.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Cada pestaña abierta tiene su propio interruptor. Acciónalo para mantener activa esa pestaña en concreto o dejar que duerma; una elección puntual que dura hasta que se cierra la pestaña. ¿La quieres para siempre? Haz clic en <b>Siempre para este sitio</b> junto al interruptor para convertirla en una regla de sitio permanente. Haz clic en una fila para ir a la pestaña.",
+    "message": "Cada pestaña abierta tiene su propio interruptor de <b>Mantener en memoria</b>: una elección puntual que dura hasta que se cierra la pestaña. El interruptor del encabezado de un sitio hace lo mismo para todo el sitio, de forma permanente. Haz clic en una fila para ir a la pestaña.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Define reglas por sitio",
+    "message": "Mantén sitios completos en memoria",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Agrega dominios aquí para proteger (o excluir) sitios enteros de una vez. Un dominio también incluye sus subdominios; <code>example.com</code> coincide con <code>mail.example.com</code>. Ese es el recorrido; vuelve a abrirlo cuando quieras desde el botón ?.",
+    "message": "Agrega dominios aquí para mantener sitios completos en memoria (o para permitir que Chrome los descarte). Un dominio también incluye sus subdominios: <code>example.com</code> coincide con <code>mail.example.com</code>. Y eso es todo el recorrido; puedes volver a abrirlo cuando quieras con el botón ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Mantener siempre activo todo $HOST$ (una regla de sitio permanente)",
+    "message": "Mantener siempre en memoria todo $HOST$ (una regla de sitio permanente)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "La protección está en pausa: no se mantiene activa ninguna pestaña.",
+    "message": "“Mantener en memoria” está en pausa: Chrome puede descartar cualquier pestaña. “Mantener en ejecución” no se ve afectado.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Dejar de mantener activa esta pestaña cerrada (olvidarla)",
+    "message": "Dejar de mantener en memoria esta pestaña cerrada (olvidarla)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Las pestañas fijadas aquí no se mantienen activas.",
+    "message": "Las pestañas fijadas aquí no se mantienen en memoria.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "Aquí se mantienen activas $COUNT$ pestaña(s).",
+    "message": "Aquí se mantienen en memoria $COUNT$ pestaña(s).",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "No se pudo iniciar. Es posible que otra extensión o Chrome ya esté capturando esta pestaña.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Mantener en memoria",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Mantener en ejecución",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Todo lo que escribiste se conserva",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Sigue ralentizándose cuando está oculta",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Funciona incluso cuando está oculta.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Chats, temporizadores y datos en vivo siguen activos",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Más batería; Chrome muestra un icono de uso compartido de pantalla",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "¿Por qué una grabación de pantalla?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“Mantener en ejecución” simula una grabación de pantalla",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome ralentiza las pestañas que no ves. Para evitarlo, la extensión simula una grabación de pantalla de esta pestaña, así Chrome la considera en uso.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "No se graba nada. La imagen nunca se lee, se guarda ni se envía a ningún lado.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Solo esta pestaña y solo mientras el interruptor esté activado. Chrome muestra un icono de uso compartido, así que nada ocurre en secreto.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Desactívalo cuando quieras o simplemente cierra la pestaña.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Entendido, activar",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Ahora no",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Entendido",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Mantener esta pestaña en memoria hasta que se cierre",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive: pestañas en ejecución",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive mantiene esta pestaña en ejecución"
+  },
+  "bannerOff": {
+    "message": "Desactivar"
+  },
+  "bannerHide": {
+    "message": "Ocultar esta barra (la pestaña sigue en ejecución)"
+  },
+  "tagRunning": {
+    "message": "En ejecución"
+  },
+  "stopAll": {
+    "message": "Detener todo"
+  },
+  "timerLabel": {
+    "message": "Desactivar automáticamente en"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 h"
+  },
+  "timer180": {
+    "message": "3 h"
+  },
+  "timerNone": {
+    "message": "Sin temporizador"
+  },
+  "timerLeft": {
+    "message": "Se desactiva en $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Sin temporizador: sigue hasta que lo desactives"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "h"
+  },
+  "heldTitle": {
+    "message": "Ahora en ejecución"
+  },
+  "heldStop": {
+    "message": "Dejar de mantener esta pestaña en ejecución"
+  },
+  "bannerUntil": {
+    "message": "hasta $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Extender"
+  },
+  "memoryStop": {
+    "message": "Dejar de mantener esta pestaña en memoria"
+  },
+  "rowRunStart": {
+    "message": "Mantener en ejecución: activar para esta pestaña"
+  },
+  "rowRunStop": {
+    "message": "“Mantener en ejecución” está activado: haz clic para detenerlo"
+  },
+  "tourRunTitle": {
+    "message": "Mantén una página en ejecución"
+  },
+  "tourRunBody": {
+    "message": "¿Necesitas que una página siga funcionando mientras está oculta (un chat, un temporizador, datos en vivo)? Abre la ventana de la extensión en esa pestaña y activa <b>Mantener en ejecución</b>, o haz clic en el icono de rayo en la fila de la pestaña aquí. Así, Chrome considera la pestaña en uso y no la ralentiza. Simula una grabación de pantalla (no se graba ni se envía nada) y se desactiva solo cuando termina el temporizador que elijas."
+  },
+  "aliveTitle": {
+    "message": "Mantener viva"
+  },
+  "aliveTip": {
+    "message": "Mantener esta pestaña en memoria y en ejecución, ambas cosas a la vez"
+  },
+  "aliveRowTip": {
+    "message": "Mantener en memoria + Mantener en ejecución"
+  },
+  "captureReload": {
+    "message": "Recargar la página"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome solo permite esto desde la ventana de la extensión en esa pestaña. Ve a la pestaña y haz clic en el icono de Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "Ir a la pestaña"
+  },
+  "groupRunPick": {
+    "message": "“Mantener en ejecución” se activa pestaña por pestaña: elige una con su botón de rayo."
+  },
+  "groupRunStartTip": {
+    "message": "Mantener en ejecución: la página sigue funcionando a máxima velocidad aunque esté oculta"
+  },
+  "groupRunStopTip": {
+    "message": "Detener “Mantener en ejecución” en las pestañas de este sitio"
+  },
+  "statRunningNow": {
+    "message": "en ejecución"
+  },
+  "aliveOnTab": {
+    "message": "Activar en la pestaña"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome permite “Mantener en ejecución” solo desde la ventana de la extensión en esa pestaña; esto la abre allí."
+  },
+  "pendingTitle": {
+    "message": "Un clic más"
+  },
+  "pendingBody": {
+    "message": "Cierra esta ventana y haz clic en el icono de Keep Tabs Alive (el escudo verde) en la barra de herramientas, o debajo del icono de rompecabezas 🧩. “Mantener en ejecución” se activa solo."
+  },
+  "handoffTitle": {
+    "message": "Activa “Mantener en ejecución” en la pestaña"
+  },
+  "handoffTitleAlive": {
+    "message": "Activa “Mantener viva” en la pestaña"
+  },
+  "handoffStep1": {
+    "message": "Te llevaremos a “$TITLE$”.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Haz clic en el icono parpadeante de Keep Tabs Alive en la barra de herramientas (el escudo verde). ¿No lo ves? Está debajo del icono de rompecabezas 🧩."
+  },
+  "handoffStep3": {
+    "message": "La ventana señalará el interruptor de “Mantener en ejecución”: haz clic en él y listo."
+  },
+  "handoffStep3Alive": {
+    "message": "La ventana señalará el interruptor de “Mantener en ejecución”: haz clic en él y la pestaña quedará en memoria y en ejecución."
+  },
+  "runDone": {
+    "message": "Listo: esta pestaña se mantiene en ejecución."
+  },
+  "aliveDone": {
+    "message": "Listo: esta pestaña se mantiene viva, en memoria y en ejecución."
+  },
+  "tapToTurnOn": {
+    "message": "Haz clic para activar"
+  },
+  "heldMore": {
+    "message": "Todas las pestañas están en Configuración →"
+  },
+  "groupInMemory": {
+    "message": "En memoria"
+  },
+  "memoryCardSub": {
+    "message": "Chrome no descartará estas pestañas; lo que escribiste se conserva."
+  },
+  "runCardSub": {
+    "message": "Estas páginas siguen funcionando a máxima velocidad, incluso cuando están ocultas."
+  },
+  "colRunning": {
+    "message": "En ejecución"
+  },
+  "runEmpty": {
+    "message": "Ninguna pestaña se mantiene en ejecución. Actívalo en una pestaña con ⚡ en la lista de abajo o desde la ventana de la extensión en esa pestaña."
+  },
+  "wMemPromise": {
+    "message": "Chrome no descartará la pestaña."
+  },
+  "wMemDesc": {
+    "message": "Vuelves a ella y todo está exactamente donde lo dejaste, sin recargar."
+  },
+  "wMemGain1": {
+    "message": "El texto escrito, los borradores y los formularios se conservan"
+  },
+  "wMemGain2": {
+    "message": "Gratis: sin gasto extra de batería"
+  },
+  "wMemCost": {
+    "message": "Mientras está oculta, la página aún puede ralentizarse"
+  },
+  "wGoodFor": {
+    "message": "Ideal para:"
+  },
+  "wMemFor": {
+    "message": "formularios largos, documentos, correo, paneles que revisas de vez en cuando"
+  },
+  "wRunPromise": {
+    "message": "La página sigue funcionando a máxima velocidad, incluso cuando no la ves."
+  },
+  "wRunDesc": {
+    "message": "Chrome considera la pestaña en uso, así que nada se pausa mientras estás en otra parte."
+  },
+  "wRunGain1": {
+    "message": "Chats, respuestas de IA, temporizadores, música y datos en vivo siguen activos"
+  },
+  "wRunGain2": {
+    "message": "Se desactiva solo con un temporizador, si quieres"
+  },
+  "wRunCost": {
+    "message": "Usa más batería; Chrome muestra su icono de uso compartido de pantalla, pero no se graba nada"
+  },
+  "wRunFor": {
+    "message": "chats y herramientas de IA, trading y monitoreo, temporizadores, cargas de archivos"
+  },
+  "wBoth": {
+    "message": "<strong>¿Necesitas ambos?</strong> “Mantener viva” activa los dos modos para una pestaña con un clic."
+  },
+  "wStepsTitle": {
+    "message": "Cómo activarlos"
+  },
+  "wStep2": {
+    "message": "<strong>En cualquier pestaña, haz clic en el icono</strong>: su ventana tiene un interruptor para cada modo."
+  },
+  "wStep3": {
+    "message": "<strong>En Configuración</strong> verás todas las pestañas abiertas y podrás mantener sitios completos en memoria."
+  },
+  "wPrivacy": {
+    "message": "Nada sale de tu navegador: sin rastreo ni servidores. “Mantener en ejecución” nunca graba la página."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 h"
+  },
+  "timerAdd180": {
+    "message": "+3 h"
   }
 }

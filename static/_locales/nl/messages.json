@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Schakel het verwijderen van tabbladen door Chrome uit en voorkom ongewenst herladen van tabbladen. Regels per site, beheer per tabblad en live statistieken.",
+    "message": "Schakel het verwijderen van tabbladen in Chrome uit en voorkom vertraging op de achtergrond. Regels per site en tabblad, timer.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "Automatisch verwijderen van tabbladen uitschakelen",
+    "message": "Automatisch uit het geheugen verwijderen van tabbladen uitschakelen",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Hoofdschakelaar",
+    "message": "“In het geheugen houden” voor alle tabbladen onderbreken of hervatten (“Blijven draaien” blijft ongemoeid)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Bescherming aan",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "Gepauzeerd",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "tabbladen beschermd",
@@ -43,59 +39,17 @@
     "message": "Dit tabblad",
     "description": "Heading for the current-tab card in the popup."
   },
-  "pageCantBeManaged": {
-    "message": "Deze pagina kan niet worden beheerd",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Hier niet beschikbaar",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Interne en extensiepagina's blijven altijd ongemoeid.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Beschermd",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Verwijderbaar",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Deze site beschermen",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Deze site niet meer beschermen",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Deze site uitsluiten",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Beschermde sites",
+    "message": "Sites die in het geheugen blijven",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Uitgesloten sites",
+    "message": "Sites die Chrome mag verwijderen uit het geheugen",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Nog geen sites",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ meer",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ verwijderen",
@@ -140,7 +94,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "nu beschermd",
+    "message": "nu in het geheugen",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -170,11 +124,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Beschermingsmodus",
+    "message": "In het geheugen houden: welke sites",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Alles beschermen",
+    "message": "Alle sites, behalve…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -182,7 +136,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Alleen witte lijst",
+    "message": "Alleen gekozen sites",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -198,7 +152,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Zet een schakelaar om om dat tabblad actief te houden of door Chrome te laten verwijderen. Een handmatige schakelaar overschrijft de siteregels en blijft gelden tot het tabblad wordt gesloten.",
+    "message": "Per tabblad: ▣ houdt het in het geheugen, ⚡ laat het blijven draaien, “In leven houden” doet beide. Een handmatige wijziging gaat vóór de siteregels tot het tabblad wordt gesloten.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -209,36 +163,12 @@
     "message": "Geen tabbladen komen overeen met je zoekopdracht.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Dit venster · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Venster $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Handmatig",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Slaapstand",
+    "message": "Uit geheugen",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -262,23 +192,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Bescherming is gepauzeerd door de hoofdschakelaar",
+    "message": "“In het geheugen houden” is gepauzeerd — zet het weer aan in de kaart “In het geheugen houden”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Beschermd — zet om om Chrome dit tabblad te laten verwijderen",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Verwijderbaar — zet om om dit tabblad actief te houden",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Alleen deze sites worden actief gehouden; al het andere kan worden verwijderd. Een domein komt ook overeen met de subdomeinen — bijv. <code>example.com</code> dekt <code>mail.example.com</code>.",
+    "message": "Chrome verwijdert tabbladen van deze sites niet uit het geheugen. Een domein omvat ook de subdomeinen: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Deze sites mogen worden verwijderd. Een domein komt ook overeen met de subdomeinen — bijv. <code>example.com</code> dekt <code>mail.example.com</code>.",
+    "message": "Alle andere tabbladen blijven in het geheugen; Chrome mag deze sites wel verwijderen. Een domein omvat ook de subdomeinen: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -300,30 +222,6 @@
   "remove": {
     "message": "Verwijderen",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Altijd voor deze site",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$ altijd actief houden (voegt een siteregel toe)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$ altijd laten verwijderen (werkt siteregels bij)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Hier nog niets.",
@@ -354,7 +252,7 @@
     }
   },
   "footerTip": {
-    "message": "Tip: open <code>chrome://discards</code> om de kolom <strong>Auto Discardable</strong> te zien — beschermde tabbladen tonen ✕. Let op: handmatige verwijderingen daar werken nog steeds; dit blokkeert alleen het <em>automatisch</em> verwijderen door Chrome's geheugenbesparing.",
+    "message": "Tip: open <code>chrome://discards</code> om de kolom <strong>Auto Discardable</strong> te zien — tabbladen die in het geheugen blijven tonen ✕. Let op: handmatig uit het geheugen verwijderen werkt daar nog steeds; dit blokkeert alleen het <em>automatische</em> verwijderen door de geheugenbesparing van Chrome.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -362,11 +260,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Houd de tabbladen die ertoe doen actief",
+    "message": "Houd de tabbladen die ertoe doen in leven",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "De Geheugenbespaarder van Chrome ontlaadt inactieve tabbladen om RAM vrij te maken en laadt ze opnieuw wanneer je terugkomt. Met Keep Tabs Alive kies je welke tabbladen actief en klaar blijven — zo voorkom je ongewenste herladingen en onderbrekingen.",
+    "message": "Chrome bespaart op twee manieren resources: het verwijdert tabbladen die je niet gebruikt uit het geheugen en vertraagt tabbladen die je niet ziet. Keep Tabs Alive voorkomt allebei, per tabblad en alleen waar jij dat wilt.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -405,24 +303,20 @@
     "message": "<strong>Vastzetten</strong> voor toegang met één klik: klik op het <span class=\"puzzle\">🧩</span> puzzelpictogram in de werkbalk en daarna op de speld.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Controleer wanneer je wilt</strong> op <code>chrome://discards</code> — beschermde tabbladen tonen ✕ in de kolom <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "De hoofdschakelaar",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Zet hier alle bescherming aan of uit. Terwijl het uit staat, mag elk tabblad worden verwijderd — je regels blijven bewaard, alleen gepauzeerd.",
+    "message": "Onderbreek of hervat hier <b>In het geheugen houden</b> voor alle tabbladen. Zolang het uit staat, kan elk tabblad worden verwijderd; je regels blijven bewaard, ze zijn alleen onderbroken. Tabbladen met “Blijven draaien” blijven gewoon werken.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Kies een beschermingsmodus",
+    "message": "Welke sites in het geheugen houden",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Alleen witte lijst</b> houdt alleen de sites die je kiest actief (de zachte standaard). <b>Alles beschermen</b> houdt elk tabblad actief behalve de uitgesloten sites.",
+    "message": "<b>Alleen gekozen sites</b> houdt alleen de sites uit jouw lijst in het geheugen (de milde standaardoptie). <b>Alle sites, behalve…</b> houdt elk tabblad in het geheugen, behalve de sites die je uitsluit. “Blijven draaien” stel je per tabblad in, niet hier.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -430,15 +324,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Elk open tabblad heeft een eigen schakelaar. Zet hem om om dat ene tabblad actief te houden of te laten slapen — een eenmalige keuze die geldt tot het tabblad wordt gesloten. Wil je het voor altijd? Klik op <b>Altijd voor deze site</b> naast de schakelaar om er een permanente siteregel van te maken. Klik op een rij om naar het tabblad te springen.",
+    "message": "Elk open tabblad heeft een eigen schakelaar <b>In het geheugen houden</b>: een eenmalige keuze die geldt tot het tabblad wordt gesloten. De schakelaar in de kop van een site doet hetzelfde voor de hele site, blijvend. Klik op een rij om naar het tabblad te gaan.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Stel regels in per site",
+    "message": "Hele sites in het geheugen houden",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Voeg hier domeinen toe om hele sites tegelijk te beschermen (of uit te sluiten). Een domein dekt ook de subdomeinen — <code>example.com</code> komt overeen met <code>mail.example.com</code>. Dat was de rondleiding — open hem altijd opnieuw via de knop ?.",
+    "message": "Voeg hier domeinen toe om hele sites in het geheugen te houden (of om Chrome ze te laten verwijderen). Een domein omvat ook de subdomeinen: <code>example.com</code> komt overeen met <code>mail.example.com</code>. Dat was de rondleiding; open hem op elk moment opnieuw met de ?-knop.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -487,54 +381,6 @@
     "message": "Interne pagina's hebben geen siteregels — je kunt dit tabblad nog steeds wisselen.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "alwaysKeptAlive": {
-    "message": "Altijd actief gehouden",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Altijd verwijderbaar",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ is opgeslagen als siteregel — klik om te verwijderen",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Verwijderd — $HOST$ volgt nu weer de standaard van de modus.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Opgeslagen — $HOST$ blijft nu altijd actief. Zie Siteregels hieronder.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Opgeslagen — $HOST$ kan nu altijd worden verwijderd. Zie Siteregels hieronder.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
   "internalPagesGroup": {
     "message": "Interne pagina's",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Houd altijd de hele $HOST$ actief (een permanente siteregel)",
+    "message": "Houd altijd de hele $HOST$ in het geheugen (een permanente siteregel)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Bescherming is gepauzeerd — er worden geen tabbladen actief gehouden.",
+    "message": "“In het geheugen houden” is gepauzeerd — Chrome kan elk tabblad uit het geheugen verwijderen. “Blijven draaien” blijft ongemoeid.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop met dit gesloten tabblad actief te houden (vergeten)",
+    "message": "Dit gesloten tabblad niet langer in het geheugen houden (vergeten)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Vastgezette tabbladen worden hier niet actief gehouden.",
+    "message": "Vastgezette tabbladen worden hier niet in het geheugen gehouden.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "Hier worden $COUNT$ tabblad(en) actief gehouden.",
+    "message": "Hier worden $COUNT$ tabblad(en) in het geheugen gehouden.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Starten is niet gelukt. Mogelijk legt een andere extensie of Chrome dit tabblad al vast.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "In het geheugen houden",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Blijven draaien",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Alles wat je hebt getypt blijft behouden",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Wordt op de achtergrond nog steeds vertraagd",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Werkt ook op de achtergrond.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Chats, timers en live gegevens blijven doorlopen",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Meer batterijverbruik; Chrome toont een pictogram voor schermdelen",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Waarom een schermopname?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“Blijven draaien” simuleert een schermopname",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome vertraagt tabbladen die je niet ziet. Om dat te voorkomen simuleert de extensie een schermopname van dit tabblad, zodat Chrome het als in gebruik beschouwt.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Er wordt niets opgenomen. Het beeld wordt nooit gelezen, opgeslagen of ergens naartoe gestuurd.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Alleen dit tabblad en alleen zolang de schakelaar aan staat. Chrome toont een deelpictogram, dus er gebeurt niets in het geheim.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Zet het op elk moment uit, of sluit gewoon het tabblad.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Begrepen, inschakelen",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Niet nu",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Begrepen",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Dit tabblad in het geheugen houden tot het wordt gesloten",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — tabbladen blijven draaien",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive laat dit tabblad blijven draaien"
+  },
+  "bannerOff": {
+    "message": "Uitzetten"
+  },
+  "bannerHide": {
+    "message": "Deze balk verbergen (het tabblad blijft draaien)"
+  },
+  "tagRunning": {
+    "message": "Draait"
+  },
+  "stopAll": {
+    "message": "Alles stoppen"
+  },
+  "timerLabel": {
+    "message": "Automatisch uit na"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 u"
+  },
+  "timer180": {
+    "message": "3 u"
+  },
+  "timerNone": {
+    "message": "Geen timer"
+  },
+  "timerLeft": {
+    "message": "Gaat uit over $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Geen timer — blijft draaien tot je het uitzet"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "u"
+  },
+  "heldTitle": {
+    "message": "Nu blijven draaien"
+  },
+  "heldStop": {
+    "message": "Dit tabblad niet langer laten draaien"
+  },
+  "bannerUntil": {
+    "message": "tot $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Verlengen met"
+  },
+  "memoryStop": {
+    "message": "Dit tabblad niet langer in het geheugen houden"
+  },
+  "rowRunStart": {
+    "message": "Blijven draaien — inschakelen voor dit tabblad"
+  },
+  "rowRunStop": {
+    "message": "“Blijven draaien” staat aan — klik om te stoppen"
+  },
+  "tourRunTitle": {
+    "message": "Laat een pagina blijven draaien"
+  },
+  "tourRunBody": {
+    "message": "Moet een pagina blijven werken terwijl je hem niet ziet — een chat, een timer, live gegevens? Open het venster van de extensie op dat tabblad en zet <b>Blijven draaien</b> aan, of klik hier op het bliksempictogram in de rij van het tabblad. Chrome beschouwt het tabblad dan als in gebruik, waardoor het niet wordt vertraagd. Het simuleert een schermopname — er wordt niets opgenomen of verstuurd — en schakelt zichzelf uit zodra de gekozen timer afloopt."
+  },
+  "aliveTitle": {
+    "message": "In leven houden"
+  },
+  "aliveTip": {
+    "message": "Dit tabblad in het geheugen houden én laten blijven draaien — allebei tegelijk"
+  },
+  "aliveRowTip": {
+    "message": "In het geheugen houden + Blijven draaien"
+  },
+  "captureReload": {
+    "message": "Pagina herladen"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome staat dit alleen toe vanuit het venster van de extensie op dat tabblad. Ga naar het tabblad en klik op het Keep Tabs Alive-pictogram."
+  },
+  "goToTab": {
+    "message": "Naar tabblad"
+  },
+  "groupRunPick": {
+    "message": "“Blijven draaien” werkt per tabblad — kies een tabblad met het bliksempictogram."
+  },
+  "groupRunStartTip": {
+    "message": "Blijven draaien: de pagina blijft op volle snelheid werken, ook als je hem niet ziet"
+  },
+  "groupRunStopTip": {
+    "message": "“Blijven draaien” stoppen voor de tabbladen van deze site"
+  },
+  "statRunningNow": {
+    "message": "blijven draaien"
+  },
+  "aliveOnTab": {
+    "message": "Inschakelen op tabblad"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome staat “Blijven draaien” alleen toe vanuit het venster van de extensie op dat tabblad — hiermee open je het daar."
+  },
+  "pendingTitle": {
+    "message": "Nog één klik"
+  },
+  "pendingBody": {
+    "message": "Sluit dit venster en klik op het Keep Tabs Alive-pictogram (het groene schild) in de werkbalk — of onder het puzzelpictogram 🧩. “Blijven draaien” gaat vanzelf aan."
+  },
+  "handoffTitle": {
+    "message": "Zet “Blijven draaien” aan op het tabblad"
+  },
+  "handoffTitleAlive": {
+    "message": "Zet “In leven houden” aan op het tabblad"
+  },
+  "handoffStep1": {
+    "message": "We brengen je naar “$TITLE$”.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Klik op het knipperende Keep Tabs Alive-pictogram in de werkbalk (het groene schild). Zie je het niet? Het staat onder het puzzelpictogram 🧩."
+  },
+  "handoffStep3": {
+    "message": "Het venster wijst naar de schakelaar “Blijven draaien” — klik erop en het staat aan."
+  },
+  "handoffStep3Alive": {
+    "message": "Het venster wijst naar de schakelaar “Blijven draaien” — klik erop en het tabblad blijft in het geheugen en blijft draaien."
+  },
+  "runDone": {
+    "message": "Klaar — dit tabblad blijft draaien."
+  },
+  "aliveDone": {
+    "message": "Klaar — dit tabblad wordt in leven gehouden: het blijft in het geheugen en blijft draaien."
+  },
+  "tapToTurnOn": {
+    "message": "Klik om in te schakelen"
+  },
+  "heldMore": {
+    "message": "Alle tabbladen staan in Instellingen →"
+  },
+  "groupInMemory": {
+    "message": "In geheugen"
+  },
+  "memoryCardSub": {
+    "message": "Chrome verwijdert deze tabbladen niet — wat je hebt getypt blijft behouden."
+  },
+  "runCardSub": {
+    "message": "Deze pagina's blijven op volle snelheid werken, ook als je ze niet ziet."
+  },
+  "colRunning": {
+    "message": "Draait"
+  },
+  "runEmpty": {
+    "message": "Er blijft nu geen enkel tabblad draaien. Zet het aan voor een tabblad met ⚡ in de lijst hieronder, of via het venster van de extensie op dat tabblad."
+  },
+  "wMemPromise": {
+    "message": "Chrome verwijdert het tabblad niet uit het geheugen."
+  },
+  "wMemDesc": {
+    "message": "Kom je terug, dan staat alles precies waar je het hebt achtergelaten — zonder herladen."
+  },
+  "wMemGain1": {
+    "message": "Getypte tekst, concepten en formulieren blijven behouden"
+  },
+  "wMemGain2": {
+    "message": "Gratis: geen extra batterijverbruik"
+  },
+  "wMemCost": {
+    "message": "Zolang het tabblad verborgen is, kan de pagina nog steeds trager worden"
+  },
+  "wGoodFor": {
+    "message": "Geschikt voor:"
+  },
+  "wMemFor": {
+    "message": "lange formulieren, documenten, e-mail, dashboards die je af en toe checkt"
+  },
+  "wRunPromise": {
+    "message": "De pagina blijft op volle snelheid werken — ook als je hem niet ziet."
+  },
+  "wRunDesc": {
+    "message": "Chrome beschouwt het tabblad als in gebruik, dus er pauzeert niets terwijl je elders bent."
+  },
+  "wRunGain1": {
+    "message": "Chats, AI-antwoorden, timers, muziek en live gegevens blijven doorlopen"
+  },
+  "wRunGain2": {
+    "message": "Gaat desgewenst zelf uit via een timer"
+  },
+  "wRunCost": {
+    "message": "Verbruikt meer batterij; Chrome toont zijn pictogram voor schermdelen — er wordt niets opgenomen"
+  },
+  "wRunFor": {
+    "message": "chats en AI-tools, trading en monitoring, timers, uploads"
+  },
+  "wBoth": {
+    "message": "<strong>Beide nodig?</strong> “In leven houden” zet beide modi voor een tabblad aan met één klik."
+  },
+  "wStepsTitle": {
+    "message": "Zo zet je ze aan"
+  },
+  "wStep2": {
+    "message": "<strong>Klik op een willekeurig tabblad op het pictogram</strong> — in het venster staat een schakelaar voor elke modus."
+  },
+  "wStep3": {
+    "message": "<strong>In Instellingen</strong> zie je alle open tabbladen en kun je hele sites in het geheugen houden."
+  },
+  "wPrivacy": {
+    "message": "Niets verlaat je browser: geen tracking, geen servers. “Blijven draaien” neemt de pagina nooit op."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 u"
+  },
+  "timerAdd180": {
+    "message": "+3 u"
   }
 }

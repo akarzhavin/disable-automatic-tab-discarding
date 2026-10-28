@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Chrome ట్యాబ్ తొలగింపును నిలిపివేయండి మరియు అవాంఛిత ట్యాబ్ రీలోడ్‌లను నివారించండి. ప్రతి సైట్‌కు నియమాలు, ప్రతి ట్యాబ్‌కు నియంత్రణ మరియు ప్రత్యక్ష గణాంకాలు.",
+    "message": "Chrome ట్యాబ్ తొలగింపును నిలిపివేయండి, ట్యాబ్‌లు నేపథ్యంలో నెమ్మదించకుండా చూడండి. ప్రతి సైట్‌కు, ట్యాబ్‌కు నియమాలు, ఆటో-ఆఫ్ టైమర్.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "ఆటోమేటిక్ ట్యాబ్ తొలగింపును నిలిపివేయండి",
+    "message": "ట్యాబ్‌లను ఆటోమేటిక్‌గా మెమరీ నుండి తొలగించడాన్ని నిలిపివేయండి",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "మాస్టర్ స్విచ్",
+    "message": "అన్ని ట్యాబ్‌ల కోసం “మెమరీలో ఉంచండి”ని పాజ్ చేయండి లేదా తిరిగి ప్రారంభించండి (“నడుస్తూ ఉంచండి”పై ప్రభావం ఉండదు)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "రక్షణ ఆన్‌లో ఉంది",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "పాజ్ చేయబడింది",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "ట్యాబ్‌లు రక్షించబడ్డాయి",
@@ -44,7 +40,7 @@
     "description": "Heading for the current-tab card in the popup."
   },
   "thisWebsite": {
-    "message": "ఈ వెబ్‌సైట్",
+    "message": "ఈ సైట్",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -59,59 +55,17 @@
     "message": "అంతర్గత పేజీలకు సైట్ నియమాలు ఉండవు — మీరు ఇప్పటికీ ఈ ట్యాబ్‌ను మార్చవచ్చు.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "ఈ పేజీని నిర్వహించడం సాధ్యం కాదు",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "ఇక్కడ అందుబాటులో లేదు",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "అంతర్గత మరియు పొడిగింపు పేజీలు ఎల్లప్పుడూ తాకబడకుండా వదిలివేయబడతాయి.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "రక్షించబడింది",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "తొలగించదగినది",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "ఈ సైట్‌ను రక్షించండి",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "ఈ సైట్‌ను రక్షించడం ఆపండి",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "ఈ సైట్‌ను మినహాయించండి",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "రక్షించబడిన సైట్‌లు",
+    "message": "మెమరీలో ఉంచిన సైట్‌లు",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "మినహాయించబడిన సైట్‌లు",
+    "message": "Chrome మెమరీ నుండి తొలగించగల సైట్‌లు",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "ఇంకా సైట్‌లు లేవు",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ మరిన్ని",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ ను తీసివేయండి",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "ఇప్పుడు రక్షించబడింది",
+    "message": "ఇప్పుడు మెమరీలో",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "రక్షణ మోడ్",
+    "message": "మెమరీలో ఉంచండి: ఏ సైట్‌లు",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "ప్రతిదాన్ని రక్షించండి",
+    "message": "అన్ని సైట్‌లు, మినహాయింపులు తప్ప…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "వైట్‌లిస్ట్ మాత్రమే",
+    "message": "ఎంచుకున్న సైట్‌లు మాత్రమే",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "ఆ ట్యాబ్‌ను సజీవంగా ఉంచడానికి లేదా Chrome దాన్ని తొలగించడానికి అనుమతించడానికి స్విచ్‌ను మార్చండి. మాన్యువల్ స్విచ్ సైట్ నియమాలను అధిగమిస్తుంది మరియు ట్యాబ్ మూసివేయబడే వరకు ఉంటుంది.",
+    "message": "ప్రతి ట్యాబ్‌కు: ▣ దాన్ని మెమరీలో ఉంచుతుంది, ⚡ నడుస్తూ ఉంచుతుంది, “సజీవంగా ఉంచండి” రెండూ చేస్తుంది. ట్యాబ్ మూసే వరకు మాన్యువల్ మార్పు సైట్ నియమాల కంటే ముందుంటుంది.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "మీ శోధనకు సరిపోలే ట్యాబ్‌లు లేవు.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "ఈ విండో · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "విండో $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "మాన్యువల్",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "నిద్రలో",
+    "message": "మెమరీ నుండి తొలగించబడింది",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "ప్రధాన స్విచ్ ద్వారా రక్షణ పాజ్ చేయబడింది",
+    "message": "“మెమరీలో ఉంచండి” పాజ్ చేయబడింది — “మెమరీలో ఉంచండి” కార్డ్‌లో మళ్లీ ఆన్ చేయండి",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "రక్షించబడింది — ఈ ట్యాబ్‌ను Chrome తొలగించడానికి అనుమతించడానికి మార్చండి",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "తొలగించదగినది — ఈ ట్యాబ్‌ను సజీవంగా ఉంచడానికి మార్చండి",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "ఈ సైట్‌లు మాత్రమే సజీవంగా ఉంచబడతాయి; మిగతావన్నీ తొలగించబడవచ్చు. ఒక డొమైన్ దాని సబ్‌డొమైన్‌లకు కూడా సరిపోలుతుంది — ఉదా. <code>example.com</code> అనేది <code>mail.example.com</code> ను కవర్ చేస్తుంది.",
+    "message": "ఈ సైట్‌ల ట్యాబ్‌లను Chrome మెమరీ నుండి తొలగించదు. డొమైన్ దాని సబ్‌డొమైన్‌లను కూడా కవర్ చేస్తుంది: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "ఈ సైట్‌లు తొలగించబడటానికి అనుమతించబడతాయి. ఒక డొమైన్ దాని సబ్‌డొమైన్‌లకు కూడా సరిపోలుతుంది — ఉదా. <code>example.com</code> అనేది <code>mail.example.com</code> ను కవర్ చేస్తుంది.",
+    "message": "మిగతా ట్యాబ్‌లన్నీ మెమరీలోనే ఉంటాయి; ఈ సైట్‌లను Chrome మెమరీ నుండి తొలగించవచ్చు. డొమైన్ దాని సబ్‌డొమైన్‌లను కూడా కవర్ చేస్తుంది: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "తీసివేయి",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "ఈ సైట్‌కు ఎల్లప్పుడూ",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$ ను ఎల్లప్పుడూ సజీవంగా ఉంచండి (సైట్ నియమాన్ని జోడిస్తుంది)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$ ను ఎల్లప్పుడూ తొలగించడానికి అనుమతించండి (సైట్ నియమాలను నవీకరిస్తుంది)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "ఎల్లప్పుడూ సజీవంగా",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "ఎల్లప్పుడూ తొలగించదగినది",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ సైట్ నియమంగా సేవ్ చేయబడింది — తీసివేయడానికి క్లిక్ చేయండి",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "తీసివేయబడింది — $HOST$ ఇప్పుడు మళ్లీ మోడ్ డిఫాల్ట్‌ను అనుసరిస్తుంది.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "సేవ్ చేయబడింది — $HOST$ ఇప్పుడు ఎల్లప్పుడూ సజీవంగా ఉంటుంది. దిగువ సైట్ నియమాలను చూడండి.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "సేవ్ చేయబడింది — $HOST$ ఇప్పుడు ఎల్లప్పుడూ తొలగించబడవచ్చు. దిగువ సైట్ నియమాలను చూడండి.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "ఇక్కడ ఇంకా ఏమీ లేదు.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "చిట్కా: <strong>Auto Discardable</strong> కాలమ్‌ను చూడటానికి <code>chrome://discards</code> ను తెరవండి — రక్షించబడిన ట్యాబ్‌లు ✕ ను చూపుతాయి. గమనిక: అక్కడ మాన్యువల్ తొలగింపులు ఇప్పటికీ పనిచేస్తాయి; ఇది Chrome యొక్క <em>ఆటోమేటిక్</em> మెమరీ-సేవర్ తొలగింపును మాత్రమే నిరోధిస్తుంది.",
+    "message": "చిట్కా: <code>chrome://discards</code> ను తెరిచి <strong>Auto Discardable</strong> కాలమ్‌ను చూడండి — మెమరీలో ఉంచిన ట్యాబ్‌లు ✕ ను చూపుతాయి. గమనిక: అక్కడ మాన్యువల్‌గా మెమరీ నుండి తొలగించడం ఇప్పటికీ పనిచేస్తుంది; ఎక్స్‌టెన్షన్ Chrome యొక్క <em>ఆటోమేటిక్</em> మెమరీ-సేవర్ తొలగింపును మాత్రమే నిరోధిస్తుంది.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -430,7 +280,7 @@
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome యొక్క Memory Saver RAMను ఖాళీ చేయడానికి నిష్క్రియ ట్యాబ్‌లను అన్‌లోడ్ చేస్తుంది, ఆపై మీరు తిరిగి వచ్చినప్పుడు వాటిని రీలోడ్ చేస్తుంది. అవాంఛిత రీలోడ్‌లు మరియు అంతరాయాలను నివారిస్తూ, ఏ ట్యాబ్‌లు చురుకుగా మరియు సిద్ధంగా ఉండాలో ఎంచుకోవడానికి Keep Tabs Alive మిమ్మల్ని అనుమతిస్తుంది.",
+    "message": "Chrome రెండు విధాలుగా వనరులను ఆదా చేస్తుంది: మీరు వాడని ట్యాబ్‌లను మెమరీ నుండి తొలగిస్తుంది, మీకు కనిపించని ట్యాబ్‌లను నెమ్మది చేస్తుంది. Keep Tabs Alive రెండింటినీ ఆపుతుంది — ట్యాబ్ వారీగా, మీకు కావలసిన చోట మాత్రమే.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>పిన్ చేయండి</strong> ఒక-క్లిక్ యాక్సెస్ కోసం: టూల్‌బార్‌లోని <span class=\"puzzle\">🧩</span> పజిల్ చిహ్నాన్ని క్లిక్ చేసి, ఆపై పిన్‌ను నొక్కండి.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>ఎప్పుడైనా ధృవీకరించండి</strong> <code>chrome://discards</code> వద్ద — రక్షించబడిన ట్యాబ్‌లు <em>Auto Discardable</em> నిలువు వరుసలో ✕ చూపుతాయి.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "ప్రధాన స్విచ్",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "మొత్తం రక్షణను ఇక్కడ ఆన్ లేదా ఆఫ్ చేయండి. ఇది ఆఫ్‌లో ఉన్నప్పుడు, ప్రతి ట్యాబ్ తొలగించబడవచ్చు — మీ నియమాలు ఉంచబడతాయి, కేవలం పాజ్ చేయబడ్డాయి.",
+    "message": "ఇక్కడి నుండి అన్ని ట్యాబ్‌ల కోసం <b>మెమరీలో ఉంచండి</b>ని పాజ్ చేయండి లేదా తిరిగి ప్రారంభించండి. ఈ స్విచ్ ఆఫ్‌లో ఉన్నప్పుడు ఏ ట్యాబ్ అయినా మెమరీ నుండి తొలగించబడవచ్చు — మీ నియమాలు అలాగే ఉంటాయి, కేవలం పాజ్ అవుతాయి. మీరు నడుస్తూ ఉంచిన ట్యాబ్‌లు నడుస్తూనే ఉంటాయి.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "రక్షణ మోడ్‌ను ఎంచుకోండి",
+    "message": "ఏ సైట్‌లను మెమరీలో ఉంచాలి",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>వైట్‌లిస్ట్ మాత్రమే</b> మీరు ఎంచుకున్న సైట్‌లను మాత్రమే సజీవంగా ఉంచుతుంది (సున్నితమైన డిఫాల్ట్). <b>ప్రతిదాన్ని రక్షించండి</b> మీరు మినహాయించినవి తప్ప ప్రతి ట్యాబ్‌ను సజీవంగా ఉంచుతుంది.",
+    "message": "<b>ఎంచుకున్న సైట్‌లు మాత్రమే</b> మీరు జాబితాలో చేర్చిన సైట్‌లను మాత్రమే మెమరీలో ఉంచుతుంది (తేలికైన డిఫాల్ట్ ఎంపిక). <b>అన్ని సైట్‌లు, మినహాయింపులు తప్ప…</b> మీరు మినహాయించిన సైట్‌లు తప్ప ప్రతి ట్యాబ్‌ను మెమరీలో ఉంచుతుంది. “నడుస్తూ ఉంచండి” ఇక్కడ కాకుండా ప్రతి ట్యాబ్‌కు విడిగా సెట్ చేయబడుతుంది.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "ప్రతి తెరిచిన ట్యాబ్‌కు దాని స్వంత స్విచ్ ఉంది. ఆ ఒక్క ట్యాబ్‌ను సజీవంగా ఉంచడానికి లేదా నిద్రపోనివ్వడానికి దాన్ని మార్చండి — ట్యాబ్ మూసివేయబడే వరకు ఉండే ఒక్కసారి ఎంపిక. ఎల్లప్పుడూ కావాలా? దాన్ని శాశ్వత సైట్ నియమంగా మార్చడానికి స్విచ్ పక్కన ఉన్న <b>ఈ సైట్‌కు ఎల్లప్పుడూ</b> పై క్లిక్ చేయండి. ట్యాబ్‌కు వెళ్లడానికి వరుసపై క్లిక్ చేయండి.",
+    "message": "ప్రతి తెరిచిన ట్యాబ్‌కు దాని స్వంత <b>మెమరీలో ఉంచండి</b> స్విచ్ ఉంటుంది — ట్యాబ్ మూసే వరకు ఉండే ఒక్కసారి ఎంపిక. సైట్ హెడర్‌లోని స్విచ్ మొత్తం సైట్‌కు శాశ్వతంగా అదే చేస్తుంది. ట్యాబ్‌కు వెళ్లడానికి అడ్డు వరుసపై క్లిక్ చేయండి.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "సైట్ వారీగా నియమాలను సెట్ చేయండి",
+    "message": "మొత్తం సైట్‌లను మెమరీలో ఉంచండి",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "మొత్తం సైట్‌లను ఒకేసారి రక్షించడానికి (లేదా మినహాయించడానికి) ఇక్కడ డొమైన్‌లను జోడించండి. ఒక డొమైన్ దాని సబ్‌డొమైన్‌లను కూడా కవర్ చేస్తుంది — <code>example.com</code> అనేది <code>mail.example.com</code> కు సరిపోలుతుంది. అదే టూర్ — ? బటన్ నుండి ఎప్పుడైనా దాన్ని తిరిగి తెరవండి.",
+    "message": "మొత్తం సైట్‌లను మెమరీలో ఉంచడానికి (లేదా Chrome వాటిని మెమరీ నుండి తొలగించడానికి అనుమతించడానికి) ఇక్కడ డొమైన్‌లను జోడించండి. డొమైన్ దాని సబ్‌డొమైన్‌లను కూడా కవర్ చేస్తుంది — <code>example.com</code> అనేది <code>mail.example.com</code>కు సరిపోతుంది. టూర్ ఇంతటితో ముగిసింది — ? బటన్‌తో ఎప్పుడైనా మళ్లీ తెరవవచ్చు.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "ఎల్లప్పుడూ పూర్తి $HOST$ను సక్రియంగా ఉంచండి (శాశ్వత సైట్ నియమం)",
+    "message": "పూర్తి $HOST$ను ఎల్లప్పుడూ మెమరీలో ఉంచండి (శాశ్వత సైట్ నియమం)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "రక్షణ పాజ్ చేయబడింది — ఏ ట్యాబ్‌లు సజీవంగా ఉంచబడలేదు.",
+    "message": "“మెమరీలో ఉంచండి” పాజ్ చేయబడింది — Chrome ఏ ట్యాబ్‌నైనా మెమరీ నుండి తొలగించవచ్చు. “నడుస్తూ ఉంచండి”పై ప్రభావం ఉండదు.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "ఈ మూసివేసిన ట్యాబ్‌ను సక్రియంగా ఉంచడం ఆపండి (మర్చిపోండి)",
+    "message": "ఈ మూసివేసిన ట్యాబ్‌ను మెమరీలో ఉంచడం ఆపండి (మర్చిపోండి)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "ఇక్కడ పిన్ చేసిన ట్యాబ్‌లు సక్రియంగా ఉంచబడటం లేదు.",
+    "message": "ఇక్కడ పిన్ చేసిన ట్యాబ్‌లు మెమరీలో ఉంచబడటం లేదు.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "ఇక్కడ $COUNT$ ట్యాబ్‌లు సక్రియంగా ఉంచబడ్డాయి.",
+    "message": "ఇక్కడ $COUNT$ ట్యాబ్‌లు మెమరీలో ఉంచబడ్డాయి.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "ప్రారంభించలేకపోయింది. మరొక ఎక్స్‌టెన్షన్ లేదా Chrome ఇప్పటికే ఈ ట్యాబ్‌ను క్యాప్చర్ చేస్తుండవచ్చు.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "మెమరీలో ఉంచండి",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "నడుస్తూ ఉంచండి",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "మీరు టైప్ చేసినదంతా అలాగే ఉంటుంది",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "కనిపించనప్పుడు ఇప్పటికీ నెమ్మదిస్తుంది",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "దాచినప్పుడు కూడా పని చేస్తుంది.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "చాట్‌లు, టైమర్‌లు, లైవ్ డేటా కొనసాగుతాయి",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "ఎక్కువ బ్యాటరీ ఖర్చు; Chrome స్క్రీన్ షేరింగ్ చిహ్నాన్ని చూపుతుంది",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "స్క్రీన్ రికార్డింగ్ ఎందుకు?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“నడుస్తూ ఉంచండి” స్క్రీన్ రికార్డింగ్‌ను అనుకరిస్తుంది",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "మీకు కనిపించని ట్యాబ్‌లను Chrome నెమ్మది చేస్తుంది. దీన్ని నివారించడానికి, ఎక్స్‌టెన్షన్ ఈ ట్యాబ్ స్క్రీన్ రికార్డింగ్‌ను అనుకరిస్తుంది, తద్వారా Chrome దాన్ని వాడకంలో ఉన్నట్లు భావిస్తుంది.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "ఏదీ రికార్డ్ కాదు. చిత్రం ఎప్పుడూ చదవబడదు, సేవ్ చేయబడదు, ఎక్కడికీ పంపబడదు.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "ఈ ట్యాబ్ మాత్రమే, స్విచ్ ఆన్‌లో ఉన్నంత సేపు మాత్రమే. Chrome షేరింగ్ చిహ్నాన్ని చూపుతుంది, కాబట్టి ఏదీ రహస్యంగా జరగదు.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "ఎప్పుడైనా ఆఫ్ చేయండి, లేదా ట్యాబ్‌ను మూసివేయండి.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "అర్థమైంది, ఆన్ చేయండి",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "ఇప్పుడు కాదు",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "అర్థమైంది",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "ఈ ట్యాబ్ మూసే వరకు దాన్ని మెమరీలో ఉంచండి",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — ట్యాబ్‌లు నడుస్తూ ఉన్నాయి",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive ఈ ట్యాబ్‌ను నడుస్తూ ఉంచుతోంది"
+  },
+  "bannerOff": {
+    "message": "ఆఫ్ చేయండి"
+  },
+  "bannerHide": {
+    "message": "ఈ బార్‌ను దాచండి (ట్యాబ్ నడుస్తూనే ఉంటుంది)"
+  },
+  "tagRunning": {
+    "message": "నడుస్తోంది"
+  },
+  "stopAll": {
+    "message": "అన్నీ ఆపండి"
+  },
+  "timerLabel": {
+    "message": "ఆటో-ఆఫ్ సమయం"
+  },
+  "timer30": {
+    "message": "30 నిమి"
+  },
+  "timer60": {
+    "message": "1 గం"
+  },
+  "timer180": {
+    "message": "3 గం"
+  },
+  "timerNone": {
+    "message": "టైమర్ లేదు"
+  },
+  "timerLeft": {
+    "message": "$X$లో ఆఫ్ అవుతుంది",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "టైమర్ లేదు — మీరు ఆఫ్ చేసే వరకు నడుస్తుంది"
+  },
+  "unitMin": {
+    "message": "నిమి"
+  },
+  "unitHour": {
+    "message": "గం"
+  },
+  "heldTitle": {
+    "message": "ఇప్పుడు నడుస్తూ ఉంచినవి"
+  },
+  "heldStop": {
+    "message": "ఈ ట్యాబ్‌ను నడుస్తూ ఉంచడం ఆపండి"
+  },
+  "bannerUntil": {
+    "message": "$X$ వరకు",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "సమయం పొడిగించండి"
+  },
+  "memoryStop": {
+    "message": "ఈ ట్యాబ్‌ను మెమరీలో ఉంచడం ఆపండి"
+  },
+  "rowRunStart": {
+    "message": "నడుస్తూ ఉంచండి — ఈ ట్యాబ్ కోసం ఆన్ చేయండి"
+  },
+  "rowRunStop": {
+    "message": "“నడుస్తూ ఉంచండి” ఆన్‌లో ఉంది — ఆపడానికి క్లిక్ చేయండి"
+  },
+  "tourRunTitle": {
+    "message": "పేజీని నడుస్తూ ఉంచండి"
+  },
+  "tourRunBody": {
+    "message": "ఒక పేజీ దాచినప్పుడు కూడా పని చేస్తూ ఉండాలా — చాట్, టైమర్, లైవ్ డేటా? ఆ ట్యాబ్‌లో ఎక్స్‌టెన్షన్ విండో తెరిచి <b>నడుస్తూ ఉంచండి</b>ని ఆన్ చేయండి, లేదా ఇక్కడ ట్యాబ్ వరుసలోని మెరుపు చిహ్నంపై క్లిక్ చేయండి. అప్పుడు Chrome ఆ ట్యాబ్‌ను వాడకంలో ఉన్నట్లు భావిస్తుంది, కాబట్టి దాన్ని నెమ్మది చేయదు. ఇది స్క్రీన్ రికార్డింగ్‌ను అనుకరిస్తుంది — ఏదీ రికార్డ్ చేయబడదు, పంపబడదు — మీరు ఎంచుకున్న టైమర్ ముగిశాక తనంతట తానే ఆఫ్ అవుతుంది."
+  },
+  "aliveTitle": {
+    "message": "సజీవంగా ఉంచండి"
+  },
+  "aliveTip": {
+    "message": "ఈ ట్యాబ్‌ను మెమరీలో ఉంచి, నడుస్తూ కూడా ఉంచండి — రెండూ ఒకేసారి"
+  },
+  "aliveRowTip": {
+    "message": "మెమరీలో ఉంచండి + నడుస్తూ ఉంచండి"
+  },
+  "captureReload": {
+    "message": "పేజీని రీలోడ్ చేయండి"
+  },
+  "runNeedsPopup": {
+    "message": "ఆ ట్యాబ్‌లోని ఎక్స్‌టెన్షన్ విండో నుండి మాత్రమే Chrome దీన్ని అనుమతిస్తుంది. ట్యాబ్‌కు వెళ్లి Keep Tabs Alive చిహ్నంపై క్లిక్ చేయండి."
+  },
+  "goToTab": {
+    "message": "ట్యాబ్‌కు వెళ్లండి"
+  },
+  "groupRunPick": {
+    "message": "“నడుస్తూ ఉంచండి” ఒకేసారి ఒక ట్యాబ్‌కు పని చేస్తుంది — మెరుపు బటన్‌తో ట్యాబ్‌ను ఎంచుకోండి."
+  },
+  "groupRunStartTip": {
+    "message": "నడుస్తూ ఉంచండి: దాచినప్పుడు కూడా పేజీ పూర్తి వేగంతో పని చేస్తుంది"
+  },
+  "groupRunStopTip": {
+    "message": "ఈ సైట్ ట్యాబ్‌ల కోసం “నడుస్తూ ఉంచండి”ని ఆపండి"
+  },
+  "statRunningNow": {
+    "message": "నడుస్తూ ఉంచినవి"
+  },
+  "aliveOnTab": {
+    "message": "ట్యాబ్‌లో ఆన్ చేయండి"
+  },
+  "aliveOnTabTip": {
+    "message": "ఆ ట్యాబ్‌లోని ఎక్స్‌టెన్షన్ విండో నుండి మాత్రమే Chrome “నడుస్తూ ఉంచండి”ని అనుమతిస్తుంది — ఈ బటన్ దాన్ని అక్కడ తెరుస్తుంది."
+  },
+  "pendingTitle": {
+    "message": "మరో క్లిక్"
+  },
+  "pendingBody": {
+    "message": "ఈ విండోను మూసి, టూల్‌బార్‌లోని Keep Tabs Alive చిహ్నంపై (ఆకుపచ్చ షీల్డ్) క్లిక్ చేయండి — లేదా పజిల్ చిహ్నం 🧩 కింద చూడండి. “నడుస్తూ ఉంచండి” తనంతట తానే ఆన్ అవుతుంది."
+  },
+  "handoffTitle": {
+    "message": "ట్యాబ్‌లో “నడుస్తూ ఉంచండి”ని ఆన్ చేయండి"
+  },
+  "handoffTitleAlive": {
+    "message": "ట్యాబ్‌లో “సజీవంగా ఉంచండి”ని ఆన్ చేయండి"
+  },
+  "handoffStep1": {
+    "message": "మిమ్మల్ని “$TITLE$” ట్యాబ్‌కు తీసుకెళ్తాము.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "టూల్‌బార్‌లో మిణుకుమిణుకుమంటున్న Keep Tabs Alive చిహ్నంపై (ఆకుపచ్చ షీల్డ్) క్లిక్ చేయండి. కనిపించలేదా? అది పజిల్ చిహ్నం 🧩 కింద ఉంటుంది."
+  },
+  "handoffStep3": {
+    "message": "విండో “నడుస్తూ ఉంచండి” స్విచ్‌ను చూపుతుంది — దానిపై క్లిక్ చేస్తే, ఆన్ అవుతుంది."
+  },
+  "handoffStep3Alive": {
+    "message": "విండో “నడుస్తూ ఉంచండి” స్విచ్‌ను చూపుతుంది — దానిపై క్లిక్ చేస్తే, ట్యాబ్ మెమరీలో ఉండి నడుస్తూ ఉంటుంది."
+  },
+  "runDone": {
+    "message": "పూర్తయింది — ఈ ట్యాబ్ నడుస్తూ ఉంచబడింది."
+  },
+  "aliveDone": {
+    "message": "పూర్తయింది — ఈ ట్యాబ్ సజీవంగా ఉంచబడింది: మెమరీలో, నడుస్తూ."
+  },
+  "tapToTurnOn": {
+    "message": "ఆన్ చేయడానికి క్లిక్ చేయండి"
+  },
+  "heldMore": {
+    "message": "అన్ని ట్యాబ్‌లు సెట్టింగ్‌లలో ఉన్నాయి →"
+  },
+  "groupInMemory": {
+    "message": "మెమరీలో"
+  },
+  "memoryCardSub": {
+    "message": "ఈ ట్యాబ్‌లను Chrome మెమరీ నుండి తొలగించదు — మీరు టైప్ చేసినది అలాగే ఉంటుంది."
+  },
+  "runCardSub": {
+    "message": "ఈ పేజీలు దాచినప్పుడు కూడా పూర్తి వేగంతో పని చేస్తూనే ఉంటాయి."
+  },
+  "colRunning": {
+    "message": "నడుస్తోంది"
+  },
+  "runEmpty": {
+    "message": "ఏ ట్యాబ్ కూడా నడుస్తూ ఉంచబడలేదు. దిగువ జాబితాలో ⚡తో ఒక ట్యాబ్ కోసం ఆన్ చేయండి, లేదా ఆ ట్యాబ్‌లోని ఎక్స్‌టెన్షన్ విండో నుండి."
+  },
+  "wMemPromise": {
+    "message": "Chrome ట్యాబ్‌ను మెమరీ నుండి తొలగించదు."
+  },
+  "wMemDesc": {
+    "message": "తిరిగి వస్తే అంతా మీరు వదిలినట్లే ఉంటుంది — రీలోడ్ లేదు."
+  },
+  "wMemGain1": {
+    "message": "టైప్ చేసిన టెక్స్ట్, డ్రాఫ్ట్‌లు, ఫారమ్‌లు అలాగే ఉంటాయి"
+  },
+  "wMemGain2": {
+    "message": "ఉచితం: అదనపు బ్యాటరీ ఖర్చు లేదు"
+  },
+  "wMemCost": {
+    "message": "దాచినప్పుడు పేజీ ఇంకా నెమ్మదించవచ్చు"
+  },
+  "wGoodFor": {
+    "message": "వీటికి మంచిది:"
+  },
+  "wMemFor": {
+    "message": "పొడవైన ఫారమ్‌లు, పత్రాలు, మెయిల్, అప్పుడప్పుడు చూసే డాష్‌బోర్డ్‌లు"
+  },
+  "wRunPromise": {
+    "message": "పేజీ పూర్తి వేగంతో పని చేస్తూనే ఉంటుంది — మీకు కనిపించనప్పుడు కూడా."
+  },
+  "wRunDesc": {
+    "message": "Chrome ట్యాబ్‌ను వాడకంలో ఉన్నట్లు భావిస్తుంది, కాబట్టి మీరు వేరే చోట ఉన్నప్పుడు అందులో ఏదీ ఆగదు."
+  },
+  "wRunGain1": {
+    "message": "చాట్‌లు, AI సమాధానాలు, టైమర్‌లు, సంగీతం, లైవ్ డేటా కొనసాగుతాయి"
+  },
+  "wRunGain2": {
+    "message": "కావాలంటే టైమర్‌తో తనంతట తానే ఆఫ్ అవుతుంది"
+  },
+  "wRunCost": {
+    "message": "ఎక్కువ బ్యాటరీ వాడుతుంది; Chrome స్క్రీన్ షేరింగ్ చిహ్నాన్ని చూపుతుంది — ఏదీ రికార్డ్ కాదు"
+  },
+  "wRunFor": {
+    "message": "చాట్‌లు, AI సాధనాలు, ట్రేడింగ్, మానిటరింగ్, టైమర్‌లు, అప్‌లోడ్‌లు"
+  },
+  "wBoth": {
+    "message": "<strong>రెండూ కావాలా?</strong> “సజీవంగా ఉంచండి” ఒక్క క్లిక్‌తో ట్యాబ్‌కు రెండు మోడ్‌లనూ ఆన్ చేస్తుంది."
+  },
+  "wStepsTitle": {
+    "message": "వాటిని ఎలా ఆన్ చేయాలి"
+  },
+  "wStep2": {
+    "message": "<strong>ఏ ట్యాబ్‌లోనైనా చిహ్నంపై క్లిక్ చేయండి</strong> — దాని విండోలో ప్రతి మోడ్‌కు ఒక స్విచ్ ఉంటుంది."
+  },
+  "wStep3": {
+    "message": "<strong>సెట్టింగ్‌లలో</strong> తెరిచిన అన్ని ట్యాబ్‌లను చూడవచ్చు, మొత్తం సైట్‌లను మెమరీలో ఉంచవచ్చు."
+  },
+  "wPrivacy": {
+    "message": "ఏదీ మీ బ్రౌజర్ దాటి వెళ్లదు: ట్రాకింగ్ లేదు, సర్వర్‌లు లేవు. “నడుస్తూ ఉంచండి” పేజీని ఎప్పుడూ రికార్డ్ చేయదు."
+  },
+  "timerAdd30": {
+    "message": "+30 నిమి"
+  },
+  "timerAdd60": {
+    "message": "+1 గం"
+  },
+  "timerAdd180": {
+    "message": "+3 గం"
   }
 }

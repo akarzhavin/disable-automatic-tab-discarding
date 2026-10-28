@@ -15,102 +15,58 @@
       </div>
       <p class="hero__eyebrow" data-i18n="heroEyebrow">Welcome</p>
       <h1 class="hero__title" data-i18n="heroTitle">Keep the tabs that matter alive</h1>
-      <p class="hero__lead" data-i18n="heroLead">
-        Chrome's Memory Saver unloads idle tabs to free RAM, then reloads them when
-        you return. Keep Tabs Alive lets you choose which tabs stay active and
-        ready — preventing unwanted reloads and interruptions.
-      </p>
+      <p class="hero__lead" data-i18n="heroLead">Chrome saves resources two ways: it unloads tabs you aren't using, and it slows down tabs you can't see. Keep Tabs Alive stops each — tab by tab, only where you want it.</p>
     </header>
 
-    <section class="cards">
-      <article class="wcard">
-        <span class="wcard__icon">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 3l7 3v5c0 4.4-3 7.4-7 8.5C8 21.4 5 18.4 5 14V6l7-3z"
-                  fill="currentColor" opacity="0.16"/>
-            <path d="M12 3l7 3v5c0 4.4-3 7.4-7 8.5C8 21.4 5 18.4 5 14V6l7-3z"
-                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8"
-                  stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        <h3 class="wcard__title" data-i18n="wcard1Title">Tabs stay put</h3>
-        <p class="wcard__text" data-i18n="wcard1Text">
-          Open tabs stay ready to use, with their page state and ongoing work
-          intact — no unexpected reloads.
-        </p>
+    <!-- The two modes, one panel each -->
+    <section class="wmodes">
+      <article class="wmode wmode--mem">
+        <span class="wmode__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5" stroke="currentColor" stroke-width="1.7"/><rect x="9.5" y="9.5" width="5" height="5" rx="1" fill="currentColor"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <h2 class="wmode__title" data-i18n="memoryTitle">Keep in memory</h2>
+        <p class="wmode__promise" data-i18n="wMemPromise">Chrome won't unload the tab.</p>
+        <p class="wmode__desc" data-i18n="wMemDesc">Come back to it and everything is exactly where you left it — no reload.</p>
+        <ul class="wfacts">
+          <li class="wfact wfact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="wMemGain1">Typed text, drafts and forms stay</span></li>
+          <li class="wfact wfact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="wMemGain2">Free: no extra battery</span></li>
+          <li class="wfact wfact--cost"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 12h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span data-i18n="wMemCost">While hidden, the page may still slow down</span></li>
+        </ul>
+        <p class="wmode__for"><span data-i18n="wGoodFor">Good for:</span> <span data-i18n="wMemFor">long forms, documents, mail, dashboards you check now and then</span></p>
       </article>
 
-      <article class="wcard">
-        <span class="wcard__icon">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="3" y="7" width="18" height="10" rx="5"
-                  stroke="currentColor" stroke-width="1.6"/>
-            <circle cx="15" cy="12" r="2.6" fill="currentColor"/>
-          </svg>
-        </span>
-        <h3 class="wcard__title" data-i18n="wcard2Title">Per-tab switches</h3>
-        <p class="wcard__text" data-i18n="wcard2Text">
-          The settings page lists every open tab with its own switch. Keep one tab
-          alive or let another sleep — it overrides the rules just for that tab.
-        </p>
+      <article class="wmode wmode--run">
+        <span class="wmode__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+        <h2 class="wmode__title" data-i18n="runTitle">Keep running</h2>
+        <p class="wmode__promise" data-i18n="wRunPromise">The page keeps working at full speed — even when you can't see it.</p>
+        <p class="wmode__desc" data-i18n="wRunDesc">Chrome treats the tab as in use, so nothing in it pauses while you're elsewhere.</p>
+        <ul class="wfacts">
+          <li class="wfact wfact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="wRunGain1">Chats, AI answers, timers, music and live data keep going</span></li>
+          <li class="wfact wfact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="wRunGain2">Off by itself on a timer, if you like</span></li>
+          <li class="wfact wfact--cost"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 12h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span data-i18n="wRunCost">Uses more battery; Chrome shows its screen-sharing icon — nothing is recorded</span></li>
+        </ul>
+        <p class="wmode__for"><span data-i18n="wGoodFor">Good for:</span> <span data-i18n="wRunFor">chats and AI tools, trading and monitoring, timers, uploads</span></p>
       </article>
+    </section>
 
-      <article class="wcard">
-        <span class="wcard__icon">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
-            <path d="M3 12h18M12 3c2.5 2.4 2.5 15.6 0 18M12 3c-2.5 2.4-2.5 15.6 0 18"
-                  stroke="currentColor" stroke-width="1.6"/>
-          </svg>
-        </span>
-        <h3 class="wcard__title" data-i18n="wcard3Title">Site rules</h3>
-        <p class="wcard__text" data-i18n-html="wcard3Text">
-          Protect everything except a few sites, or whitelist only the ones you
-          choose. Rules match subdomains too — <code>example.com</code> covers all of it.
-        </p>
-      </article>
+    <!-- Both at once -->
+    <aside class="wboth">
+      <span class="wboth__icons" aria-hidden="true"><span class="wboth__mem"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5" stroke="currentColor" stroke-width="1.7"/><rect x="9.5" y="9.5" width="5" height="5" rx="1" fill="currentColor"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span class="wboth__plus">+</span><span class="wboth__run"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span></span>
+      <p data-i18n-html="wBoth"><strong>Need both?</strong> “Keep alive” turns on both modes for a tab in one click.</p>
+    </aside>
+
+    <!-- How to turn them on -->
+    <section class="wsteps">
+      <h2 class="wsteps__title" data-i18n="wStepsTitle">How to turn them on</h2>
+      <ol class="wsteps__list">
+        <li class="wstep"><span class="wstep__n">1</span><p data-i18n-html="welcomeStep1"><strong>Pin it</strong> for one-click access: click the <span class="puzzle">🧩</span> puzzle icon in the toolbar, then the pin.</p></li>
+        <li class="wstep"><span class="wstep__n">2</span><p data-i18n-html="wStep2"><strong>On any tab, click the icon</strong> — the window has a switch for each mode.</p></li>
+        <li class="wstep"><span class="wstep__n">3</span><p data-i18n-html="wStep3"><strong>In Settings</strong> see every open tab, and keep whole sites in memory.</p></li>
+      </ol>
     </section>
 
     <section class="actions">
       <button class="btn btn--lg" id="openOptions" data-i18n="chooseYourSites">Get Started</button>
-      <p class="actions__note" data-i18n="actionsNote">
-        Prefer to protect everything by default? You can switch modes in settings.
-      </p>
+      <p class="actions__note" data-i18n-html="wPrivacy">Nothing leaves your browser: no tracking, no servers. Keep running never records the page.</p>
     </section>
-
-    <footer class="welcome__footer">
-      <div class="steps">
-        <div class="step">
-          <span class="step__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M9 4h6l-1 6 3 3v2h-5v5l-1 1-1-1v-5H5v-2l3-3-1-6z"
-                    fill="currentColor" opacity="0.16"/>
-              <path d="M9 4h6l-1 6 3 3v2h-5v5l-1 1-1-1v-5H5v-2l3-3-1-6z"
-                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <p data-i18n-html="welcomeStep1">
-            <strong>Pin it</strong> for one-click access: click the
-            <span class="puzzle">🧩</span> puzzle icon in the toolbar, then the pin.
-          </p>
-        </div>
-        <div class="step">
-          <span class="step__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.16"/>
-              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M8.5 12.2l2.3 2.3 4.7-4.9" stroke="currentColor"
-                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <p data-i18n-html="welcomeStep2">
-            <strong>Verify any time</strong> at <code>chrome://discards</code> — protected
-            tabs show ✕ in the <em>Auto Discardable</em> column.
-          </p>
-        </div>
-      </div>
-    </footer>
   </main>
 
   <script type="module" src="welcome.js"></script>

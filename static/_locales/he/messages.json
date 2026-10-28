@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "השביתו את ביטול טעינת הלשוניות של Chrome ומנעו טעינה מחדש לא רצויה של לשוניות. כללים לכל אתר, שליטה לכל לשונית ונתונים בזמן אמת.",
+    "message": "בטלו את פריקת הכרטיסיות ב-Chrome ומנעו מהן להאט ברקע. שליטה לפי אתר וכרטיסייה, וטיימר לכיבוי אוטומטי.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "השבתת ביטול טעינת לשוניות אוטומטי",
+    "message": "השבתת ביטול טעינת כרטיסיות אוטומטי",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "מתג ראשי",
+    "message": "השהיה או חידוש של “להשאיר בזיכרון” בכל הכרטיסיות (“להמשיך לפעול” לא מושפע)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "הגנה פעילה",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "מושהה",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "כרטיסיות מוגנות",
@@ -59,59 +55,17 @@
     "message": "לדפים פנימיים אין כללי אתר — עדיין אפשר להחליף את מצב הכרטיסייה הזו.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "לא ניתן לנהל את הדף הזה",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "לא זמין כאן",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "דפים פנימיים ודפי תוספים תמיד נשארים ללא שינוי.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "מוגן",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "ניתן לביטול טעינה",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "הגן על האתר הזה",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "הפסק להגן על האתר הזה",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "החרג את האתר הזה",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "אתרים מוגנים",
+    "message": "אתרים שנשארים בזיכרון",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "אתרים מוחרגים",
+    "message": "אתרים ש-Chrome רשאי לפרוק מהזיכרון",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "אין עדיין אתרים",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "עוד $COUNT$+",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "הסר את $DOMAIN$",
@@ -136,7 +90,7 @@
     "description": "Document title of the welcome page."
   },
   "takeTour": {
-    "message": "התחל סיור",
+    "message": "התחלת סיור",
     "description": "Tooltip/label for the guided-tour button."
   },
   "themeLabel": {
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "מוגנות כעת",
+    "message": "בזיכרון כעת",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "מצב הגנה",
+    "message": "להשאיר בזיכרון: אילו אתרים",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "הגן על הכול",
+    "message": "כל האתרים, חוץ מ…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "רשימה לבנה בלבד",
+    "message": "רק אתרים שנבחרו",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -206,55 +160,31 @@
     "description": "Description of the whitelist-only mode."
   },
   "openTabs": {
-    "message": "לשוניות פתוחות",
+    "message": "כרטיסיות פתוחות",
     "description": "Heading for the live list of open tabs."
   },
   "searchTabs": {
-    "message": "חיפוש לשוניות…",
+    "message": "חיפוש כרטיסיות…",
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "הפעל מתג כדי לשמור את הלשונית פעילה או לאפשר ל-Chrome לבטל את טעינתה. מתג ידני גובר על כללי האתר ונשמר עד שהלשונית נסגרת.",
+    "message": "לכל כרטיסייה: ▣ משאיר אותה בזיכרון, ⚡ דואג שתמשיך לפעול, ו“לשמור בחיים” עושה את שניהם. שינוי ידני גובר על כללי האתר עד שהכרטיסייה נסגרת.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
-    "message": "אין לשוניות פתוחות.",
+    "message": "אין כרטיסיות פתוחות.",
     "description": "Empty state when there are no open tabs."
   },
   "noTabsMatch": {
-    "message": "אין לשוניות התואמות לחיפוש שלך.",
+    "message": "אין כרטיסיות התואמות לחיפוש שלכם.",
     "description": "Empty state when a search returns no tabs."
-  },
-  "thisWindowCount": {
-    "message": "החלון הזה · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "חלון $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
   },
   "tagManual": {
     "message": "ידני",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "ישנה",
+    "message": "נפרקה",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -266,7 +196,7 @@
     "description": "Tag: this tab is playing audio."
   },
   "untitledTab": {
-    "message": "לשונית ללא כותרת",
+    "message": "כרטיסייה ללא כותרת",
     "description": "Fallback title for a tab with no title."
   },
   "internalPage": {
@@ -274,27 +204,19 @@
     "description": "Fallback host label for internal pages."
   },
   "switchToThisTab": {
-    "message": "עבור ללשונית הזו",
+    "message": "עבור לכרטיסייה הזו",
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "ההגנה מושהית על ידי המתג הראשי",
+    "message": "“להשאיר בזיכרון” מושהה — הפעילו אותו שוב בכרטיס “להשאיר בזיכרון”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "מוגנת — הפעל כדי לאפשר ל-Chrome לבטל את טעינת הלשונית",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "ניתנת לביטול טעינה — הפעל כדי לשמור את הלשונית פעילה",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "רק האתרים האלה נשמרים פעילים; כל השאר עשויים להתבטל. דומיין תואם גם לתת-הדומיינים שלו — לדוגמה, <code>example.com</code> מכסה את <code>mail.example.com</code>.",
+    "message": "Chrome לא יפרוק כרטיסיות של האתרים האלה מהזיכרון. דומיין כולל גם את תת-הדומיינים שלו: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "אתרים אלה מורשים להתבטל. דומיין תואם גם לתת-הדומיינים שלו — לדוגמה, <code>example.com</code> מכסה את <code>mail.example.com</code>.",
+    "message": "כל שאר הכרטיסיות נשארות בזיכרון; Chrome רשאי לפרוק את האתרים האלה. דומיין כולל גם את תת-הדומיינים שלו: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -310,91 +232,19 @@
     "description": "Default placeholder for the domain input."
   },
   "add": {
-    "message": "הוסף",
+    "message": "הוספה",
     "description": "Button to add a domain."
   },
   "remove": {
-    "message": "הסר",
+    "message": "הסרה",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "תמיד עבור האתר הזה",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "תמיד שמור את $HOST$ פעיל (מוסיף כלל אתר)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "תמיד אפשר את ביטול הטעינה של $HOST$ (מעדכן כללי אתר)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "תמיד נשמר פעיל",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "תמיד ניתן לביטול טעינה",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ שמור ככלל אתר — לחץ כדי להסיר אותו",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "הוסר — $HOST$ שוב פועל לפי ברירת המחדל של המצב.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "נשמר — $HOST$ יישאר מעתה תמיד פעיל. ראה כללי אתר למטה.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "נשמר — ניתן מעתה תמיד לבטל את הטעינה של $HOST$. ראה כללי אתר למטה.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "אין כאן עדיין כלום.",
     "description": "Empty state for the domain list on the settings page."
   },
   "errorInvalidDomain": {
-    "message": "הזן דומיין תקין, לדוגמה example.com",
+    "message": "הזינו דומיין תקין, לדוגמה example.com",
     "description": "Validation error for an invalid domain."
   },
   "errorDomainExists": {
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "טיפ: פתח את <code>chrome://discards</code> כדי לראות את העמודה <strong>Auto Discardable</strong> — לשוניות מוגנות מציגות ✕. הערה: ביטולי טעינה ידניים שם עדיין פועלים; זה חוסם רק את ביטול הטעינה <em>האוטומטי</em> של חוסך הזיכרון ב-Chrome.",
+    "message": "טיפ: פתחו את <code>chrome://discards</code> כדי לראות את העמודה <strong>Auto Discardable</strong> — כרטיסיות שנשארות בזיכרון מציגות ✕. הערה: פריקה ידנית משם עדיין פועלת; הכלי חוסם רק את הפריקה <em>האוטומטית</em> של Chrome לחיסכון בזיכרון.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "שמרו על הכרטיסיות שחשובות לכם פעילות",
+    "message": "השאירו את הכרטיסיות החשובות לכם בחיים",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "חוסך הזיכרון של Chrome משחרר כרטיסיות לא פעילות כדי לפנות זיכרון RAM, ואז טוען אותן מחדש כשחוזרים אליהן. Keep Tabs Alive מאפשר לכם לבחור אילו כרטיסיות יישארו פעילות ומוכנות — ומונע טעינות מחדש והפרעות לא רצויות.",
+    "message": "Chrome חוסך במשאבים בשתי דרכים: הוא פורק מהזיכרון כרטיסיות שאינכם משתמשים בהן, ומאט כרטיסיות שאינכם רואים. Keep Tabs Alive עוצר את שתיהן — כרטיסייה אחר כרטיסייה, ורק איפה שתרצו.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,48 +319,44 @@
     "message": "<strong>הצמידו אותו</strong> לגישה בלחיצה אחת: לחצו על סמל הפאזל <span class=\"puzzle\">🧩</span> בסרגל הכלים, ואז על הסיכה.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>בדקו בכל עת</strong> בכתובת <code>chrome://discards</code> — כרטיסיות מוגנות מציגות ✕ בעמודה <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "המתג הראשי",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "כאן ניתן להפעיל או לכבות את כל ההגנה. כשהיא כבויה, כל לשונית חופשית להתבטל — הכללים שלך נשמרים, רק מושהים.",
+    "message": "כאן אפשר להשהות או לחדש את <b>להשאיר בזיכרון</b> לכל הכרטיסיות. כשהוא כבוי, כל כרטיסייה עלולה להיפרק מהזיכרון — הכללים שלכם נשמרים, רק מושהים. כרטיסיות עם “להמשיך לפעול” לא מושפעות וממשיכות לפעול.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "בחר מצב הגנה",
+    "message": "אילו אתרים להשאיר בזיכרון",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>רשימה לבנה בלבד</b> שומר פעילים רק את האתרים שאתה בוחר (ברירת המחדל העדינה). <b>הגן על הכול</b> שומר כל לשונית פעילה חוץ מאלה שאתה מחריג.",
+    "message": "<b>רק אתרים שנבחרו</b> — רק האתרים שתבחרו נשארים בזיכרון (ברירת המחדל המתונה). <b>כל האתרים, חוץ מ…</b> — כל הכרטיסיות נשארות בזיכרון, חוץ מאתרים שתחריגו. “להמשיך לפעול” מוגדר לכל כרטיסייה בנפרד, לא כאן.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
-    "message": "נהל לשוניות אחת אחת",
+    "message": "נהל כרטיסיות אחת אחת",
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "לכל לשונית פתוחה יש מתג משלה. הפעל אותו כדי לשמור את הלשונית הבודדת הזו פעילה או לאפשר לה לישון — בחירה חד-פעמית שנשמרת עד שהלשונית נסגרת. רוצה את זה לתמיד? לחץ על <b>תמיד עבור האתר הזה</b> ליד המתג כדי להפוך אותו לכלל אתר קבוע. לחץ על שורה כדי לקפוץ ללשונית.",
+    "message": "לכל כרטיסייה פתוחה יש מתג <b>להשאיר בזיכרון</b> משלה — בחירה חד-פעמית שנמשכת עד שהכרטיסייה נסגרת. המתג בכותרת של אתר עושה את אותו הדבר לאתר כולו, באופן קבוע. לחצו על שורה כדי לעבור לכרטיסייה.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "הגדר כללים לפי אתר",
+    "message": "להשאיר אתרים שלמים בזיכרון",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "הוסף כאן דומיינים כדי להגן (או להחריג) אתרים שלמים בבת אחת. דומיין מכסה גם את תת-הדומיינים שלו — <code>example.com</code> תואם ל-<code>mail.example.com</code>. זה הסיור — אפשר לפתוח אותו מחדש בכל עת באמצעות כפתור ה-?.",
+    "message": "הוסיפו כאן דומיינים כדי להשאיר אתרים שלמים בזיכרון (או כדי לאפשר ל-Chrome לפרוק אותם). דומיין כולל גם את תת-הדומיינים שלו — <code>example.com</code> תואם ל-<code>mail.example.com</code>. זה הסיור — אפשר לפתוח אותו שוב בכל עת מהכפתור ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
-    "message": "דלג",
+    "message": "דילוג",
     "description": "Tour: skip the tour."
   },
   "tourBack": {
-    "message": "חזור",
+    "message": "חזרה",
     "description": "Tour: go to the previous step."
   },
   "tourNext": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "תמיד לשמור על כל $HOST$ פעיל (כלל אתר קבוע)",
+    "message": "תמיד להשאיר את כל $HOST$ בזיכרון (כלל אתר קבוע)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,15 +408,15 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "ההגנה מושהית — אף כרטיסייה אינה נשמרת פעילה.",
+    "message": "“להשאיר בזיכרון” מושהה — Chrome עשוי לפרוק כל כרטיסייה מהזיכרון. “להמשיך לפעול” לא מושפע.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "סגור",
+    "message": "סגורה",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "להפסיק לשמור על הכרטיסייה הסגורה הזו פעילה (לשכוח אותה)",
+    "message": "להפסיק להשאיר את הכרטיסייה הסגורה הזו בזיכרון (לשכוח אותה)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "כרטיסיות מוצמדות כאן אינן נשמרות פעילות.",
+    "message": "כרטיסיות מוצמדות כאן אינן נשארות בזיכרון.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "כאן נשמרות פעילות $COUNT$ כרטיסיות.",
+    "message": "כאן נשארות בזיכרון $COUNT$ כרטיסיות.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "ההפעלה נכשלה. ייתכן שתוסף אחר או Chrome עצמו כבר לוכדים את הכרטיסייה הזו.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "להשאיר בזיכרון",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "להמשיך לפעול",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "כל מה שהקלדתם נשאר",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "ברקע היא עדיין מואטת",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "פועל גם כשהכרטיסייה מוסתרת.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "צ׳אטים, טיימרים ונתונים חיים ממשיכים לפעול",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "צורך יותר סוללה; Chrome מציג סמל שיתוף מסך",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "למה הקלטת מסך?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“להמשיך לפעול” מדמה הקלטת מסך",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome מאט כרטיסיות שאינכם רואים. כדי למנוע זאת, התוסף מדמה הקלטת מסך של הכרטיסייה הזו, ולכן Chrome רואה בה כרטיסייה בשימוש.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "שום דבר לא מוקלט. התמונה לעולם לא נקראת, נשמרת או נשלחת לשום מקום.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "רק הכרטיסייה הזו, ורק כשהמתג מופעל. Chrome מציג סמל שיתוף, כך שדבר לא קורה בסתר.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "אפשר לכבות בכל עת, או פשוט לסגור את הכרטיסייה.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "הבנתי, להפעיל",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "לא עכשיו",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "הבנתי",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "להשאיר את הכרטיסייה הזו בזיכרון עד שתיסגר",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — כרטיסיות ממשיכות לפעול",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive משאיר את הכרטיסייה הזו פועלת"
+  },
+  "bannerOff": {
+    "message": "כיבוי"
+  },
+  "bannerHide": {
+    "message": "הסתרת הסרגל (הכרטיסייה ממשיכה לפעול)"
+  },
+  "tagRunning": {
+    "message": "פועלת"
+  },
+  "stopAll": {
+    "message": "עצירת הכול"
+  },
+  "timerLabel": {
+    "message": "כיבוי אוטומטי אחרי"
+  },
+  "timer30": {
+    "message": "30 דק׳"
+  },
+  "timer60": {
+    "message": "שעה"
+  },
+  "timer180": {
+    "message": "3 שעות"
+  },
+  "timerNone": {
+    "message": "ללא טיימר"
+  },
+  "timerLeft": {
+    "message": "יכבה בעוד $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "ללא טיימר — פועל עד שתכבו אותו"
+  },
+  "unitMin": {
+    "message": "דק׳"
+  },
+  "unitHour": {
+    "message": "שע׳"
+  },
+  "heldTitle": {
+    "message": "ממשיכות לפעול כעת"
+  },
+  "heldStop": {
+    "message": "להפסיק את “להמשיך לפעול” בכרטיסייה הזו"
+  },
+  "bannerUntil": {
+    "message": "עד $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "הארכה:"
+  },
+  "memoryStop": {
+    "message": "להפסיק להשאיר את הכרטיסייה הזו בזיכרון"
+  },
+  "rowRunStart": {
+    "message": "להמשיך לפעול — הפעלה בכרטיסייה הזו"
+  },
+  "rowRunStop": {
+    "message": "“להמשיך לפעול” פועל — לחצו כדי לעצור"
+  },
+  "tourRunTitle": {
+    "message": "שהדף ימשיך לפעול"
+  },
+  "tourRunBody": {
+    "message": "צריכים שדף ימשיך לעבוד גם כשהוא מוסתר — צ׳אט, טיימר, נתונים חיים? פתחו את חלון התוסף באותה כרטיסייה והפעילו <b>להמשיך לפעול</b>, או לחצו על סמל הברק בשורה של הכרטיסייה כאן. Chrome יתייחס לכרטיסייה כאל כרטיסייה בשימוש, ולכן היא לא תואט. זה מדמה הקלטת מסך — שום דבר לא מוקלט או נשלח — והמצב כבה מעצמו כשהטיימר שבחרתם מסתיים."
+  },
+  "aliveTitle": {
+    "message": "לשמור בחיים"
+  },
+  "aliveTip": {
+    "message": "להשאיר את הכרטיסייה הזו בזיכרון ושתמשיך לפעול — שניהם יחד"
+  },
+  "aliveRowTip": {
+    "message": "להשאיר בזיכרון + להמשיך לפעול"
+  },
+  "captureReload": {
+    "message": "טעינה מחדש של הדף"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome מאפשר זאת רק מחלון התוסף בכרטיסייה עצמה. עברו לכרטיסייה ולחצו על סמל Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "מעבר לכרטיסייה"
+  },
+  "groupRunPick": {
+    "message": "“להמשיך לפעול” עובד כרטיסייה אחת בכל פעם — בחרו כרטיסייה בעזרת כפתור הברק."
+  },
+  "groupRunStartTip": {
+    "message": "להמשיך לפעול: הדף ממשיך לעבוד במהירות מלאה גם כשהוא מוסתר"
+  },
+  "groupRunStopTip": {
+    "message": "עצירת “להמשיך לפעול” בכרטיסיות של האתר הזה"
+  },
+  "statRunningNow": {
+    "message": "ממשיכות לפעול"
+  },
+  "aliveOnTab": {
+    "message": "הפעלה בכרטיסייה"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome מאפשר “להמשיך לפעול” רק מחלון התוסף בכרטיסייה עצמה — הכפתור פותח אותו שם."
+  },
+  "pendingTitle": {
+    "message": "עוד לחיצה אחת"
+  },
+  "pendingBody": {
+    "message": "סגרו את החלון הזה ולחצו על סמל Keep Tabs Alive (המגן הירוק) בסרגל הכלים — או מתחת לסמל הפאזל 🧩. “להמשיך לפעול” יופעל מעצמו."
+  },
+  "handoffTitle": {
+    "message": "הפעלת “להמשיך לפעול” בכרטיסייה"
+  },
+  "handoffTitleAlive": {
+    "message": "הפעלת “לשמור בחיים” בכרטיסייה"
+  },
+  "handoffStep1": {
+    "message": "נעביר אתכם אל “$TITLE$”.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "לחצו על סמל Keep Tabs Alive המהבהב בסרגל הכלים (המגן הירוק). לא רואים אותו? הוא מתחת לסמל הפאזל 🧩."
+  },
+  "handoffStep3": {
+    "message": "החלון יצביע על המתג “להמשיך לפעול” — לחצו עליו והמצב יופעל."
+  },
+  "handoffStep3Alive": {
+    "message": "החלון יצביע על המתג “להמשיך לפעול” — לחצו עליו והכרטיסייה תישאר בזיכרון וגם תמשיך לפעול."
+  },
+  "runDone": {
+    "message": "בוצע — הכרטיסייה הזו ממשיכה לפעול."
+  },
+  "aliveDone": {
+    "message": "בוצע — הכרטיסייה הזו נשמרת בחיים: בזיכרון ופועלת."
+  },
+  "tapToTurnOn": {
+    "message": "לחצו כדי להפעיל"
+  },
+  "heldMore": {
+    "message": "כל הכרטיסיות בהגדרות ←"
+  },
+  "groupInMemory": {
+    "message": "בזיכרון"
+  },
+  "memoryCardSub": {
+    "message": "Chrome לא יפרוק את הכרטיסיות האלה — מה שהקלדתם נשאר."
+  },
+  "runCardSub": {
+    "message": "הדפים האלה ממשיכים לעבוד במהירות מלאה, גם כשהם מוסתרים."
+  },
+  "colRunning": {
+    "message": "פועלת"
+  },
+  "runEmpty": {
+    "message": "אף כרטיסייה לא מוגדרת להמשיך לפעול. הפעילו באמצעות ⚡ ברשימה למטה, או מחלון התוסף בכרטיסייה הרצויה."
+  },
+  "wMemPromise": {
+    "message": "Chrome לא יפרוק את הכרטיסייה מהזיכרון."
+  },
+  "wMemDesc": {
+    "message": "חוזרים אליה וכל דבר במקומו בדיוק — בלי טעינה מחדש."
+  },
+  "wMemGain1": {
+    "message": "טקסט שהוקלד, טיוטות וטפסים נשארים"
+  },
+  "wMemGain2": {
+    "message": "בחינם: בלי צריכת סוללה נוספת"
+  },
+  "wMemCost": {
+    "message": "כשהדף מוסתר, הוא עדיין עלול להאט"
+  },
+  "wGoodFor": {
+    "message": "מתאים עבור:"
+  },
+  "wMemFor": {
+    "message": "טפסים ארוכים, מסמכים, דואר, לוחות בקרה שבודקים מדי פעם"
+  },
+  "wRunPromise": {
+    "message": "הדף ממשיך לעבוד במהירות מלאה — גם כשאינכם רואים אותו."
+  },
+  "wRunDesc": {
+    "message": "Chrome מחשיב את הכרטיסייה כנמצאת בשימוש, ולכן שום דבר בתוכה לא נעצר כשאתם במקום אחר."
+  },
+  "wRunGain1": {
+    "message": "צ׳אטים, תשובות בינה מלאכותית, טיימרים, מוזיקה ונתונים חיים ממשיכים לפעול"
+  },
+  "wRunGain2": {
+    "message": "מתכבה מעצמו לפי טיימר, אם תרצו"
+  },
+  "wRunCost": {
+    "message": "צורך יותר סוללה; Chrome מציג את סמל שיתוף המסך שלו — שום דבר לא מוקלט"
+  },
+  "wRunFor": {
+    "message": "צ׳אטים וכלי בינה מלאכותית, מסחר וניטור, טיימרים, העלאות"
+  },
+  "wBoth": {
+    "message": "<strong>צריכים את שניהם?</strong> “לשמור בחיים” מפעיל את שני המצבים לכרטיסייה בלחיצה אחת."
+  },
+  "wStepsTitle": {
+    "message": "איך מפעילים"
+  },
+  "wStep2": {
+    "message": "<strong>בכל כרטיסייה, לחצו על הסמל</strong> — בחלון שלו יש מתג לכל מצב."
+  },
+  "wStep3": {
+    "message": "<strong>בהגדרות</strong> רואים את כל הכרטיסיות הפתוחות, ואפשר להשאיר אתרים שלמים בזיכרון."
+  },
+  "wPrivacy": {
+    "message": "שום דבר לא עוזב את הדפדפן שלכם: בלי מעקב, בלי שרתים. “להמשיך לפעול” אף פעם לא מקליט את הדף."
+  },
+  "timerAdd30": {
+    "message": "+30 דק׳"
+  },
+  "timerAdd60": {
+    "message": "+שעה"
+  },
+  "timerAdd180": {
+    "message": "+3 שעות"
   }
 }

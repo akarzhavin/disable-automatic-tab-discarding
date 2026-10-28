@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Chrome의 탭 폐기를 비활성화하고 원치 않는 탭 새로고침을 방지하세요. 사이트별 규칙, 탭별 제어, 실시간 통계.",
+    "message": "Chrome의 탭 폐기를 비활성화해 탭이 백그라운드에서 느려지지 않게 하세요. 사이트별·탭별 제어, 자동 꺼짐 타이머.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "자동 탭 폐기 비활성화",
+    "message": "자동 탭 언로드 비활성화",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "마스터 스위치",
+    "message": "모든 탭의 '메모리에 유지'를 일시중지하거나 다시 시작합니다('계속 실행'에는 영향 없음)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "보호 켜짐",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "일시 중지됨",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "개 탭 보호됨",
@@ -59,59 +55,17 @@
     "message": "내부 페이지에는 사이트 규칙이 없지만, 이 탭은 전환할 수 있습니다.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "이 페이지는 관리할 수 없습니다",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "여기서는 사용할 수 없음",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "내부 페이지와 확장 프로그램 페이지는 항상 그대로 유지됩니다.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "보호됨",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "폐기 가능",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "이 사이트 보호",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "이 사이트 보호 중지",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "이 사이트 제외",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "보호된 사이트",
+    "message": "메모리에 유지할 사이트",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "제외된 사이트",
+    "message": "Chrome이 언로드해도 되는 사이트",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "아직 사이트가 없습니다",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "외 $COUNT$개",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ 제거",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "현재 보호 중",
+    "message": "현재 메모리에 유지",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "보호 모드",
+    "message": "메모리에 유지: 대상 사이트",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "모두 보호",
+    "message": "모든 사이트, 단…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "허용 목록만",
+    "message": "선택한 사이트만",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "스위치를 전환하여 해당 탭을 유지하거나 Chrome이 폐기하도록 할 수 있습니다. 수동 스위치는 사이트 규칙보다 우선하며 탭을 닫을 때까지 유지됩니다.",
+    "message": "탭마다: ▣은 메모리에 유지, ⚡는 계속 실행, '활성 유지'는 둘 다 적용합니다. 수동으로 바꾼 설정은 탭을 닫을 때까지 사이트 규칙보다 우선합니다.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "검색과 일치하는 탭이 없습니다.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "현재 창 · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "창 $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "수동",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "절전 중",
+    "message": "언로드됨",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "마스터 스위치에 의해 보호가 일시중지되었습니다",
+    "message": "'메모리에 유지'가 일시중지되었습니다 — '메모리에 유지' 카드에서 다시 켜세요",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "보호됨 — 전환하면 Chrome이 이 탭을 폐기할 수 있습니다",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "폐기 가능 — 전환하면 이 탭을 유지합니다",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "이 사이트들만 유지되며, 나머지는 폐기될 수 있습니다. 도메인은 하위 도메인에도 적용됩니다 — 예: <code>example.com</code>은 <code>mail.example.com</code>을 포함합니다.",
+    "message": "Chrome이 이 사이트의 탭을 언로드하지 않습니다. 도메인은 하위 도메인도 포함합니다. <code>example.com</code> → <code>mail.example.com</code>",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "이 사이트들은 폐기가 허용됩니다. 도메인은 하위 도메인에도 적용됩니다 — 예: <code>example.com</code>은 <code>mail.example.com</code>을 포함합니다.",
+    "message": "그 외 모든 탭은 메모리에 유지되며, 이 사이트는 Chrome이 언로드할 수 있습니다. 도메인은 하위 도메인도 포함합니다. <code>example.com</code> → <code>mail.example.com</code>",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "제거",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "이 사이트에 항상 적용",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$을(를) 항상 유지 (사이트 규칙 추가)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$이(가) 항상 폐기되도록 허용 (사이트 규칙 업데이트)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "저장됨 — $HOST$은(는) 이제 항상 유지됩니다. 아래의 사이트 규칙을 참고하세요.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "저장됨 — $HOST$은(는) 이제 항상 폐기될 수 있습니다. 아래의 사이트 규칙을 참고하세요.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "항상 유지됨",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "항상 폐기 가능",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$이(가) 사이트 규칙으로 저장되었습니다 — 클릭하여 제거하세요",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "제거됨 — $HOST$은(는) 이제 다시 모드 기본값을 따릅니다.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "아직 아무것도 없습니다.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "팁: <code>chrome://discards</code>를 열면 <strong>Auto Discardable</strong> 열을 볼 수 있습니다 — 보호된 탭에는 ✕가 표시됩니다. 참고: 거기서의 수동 폐기는 여전히 작동합니다. 이 기능은 Chrome의 <em>자동</em> 메모리 절약 폐기만 차단합니다.",
+    "message": "팁: <code>chrome://discards</code>를 열면 <strong>Auto Discardable</strong> 열을 볼 수 있습니다 — 메모리에 유지되는 탭에는 ✕가 표시됩니다. 참고: 거기서의 수동 언로드는 여전히 작동합니다. 이 기능은 Chrome의 <em>자동</em> 메모리 절약 언로드만 차단합니다.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -430,7 +280,7 @@
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome의 메모리 절약 기능은 유휴 탭을 언로드하여 RAM을 확보한 뒤, 돌아오면 다시 로드합니다. Keep Tabs Alive는 어떤 탭을 활성 상태로 준비해 둘지 선택할 수 있게 해 줍니다 — 원치 않는 새로고침과 중단을 방지합니다.",
+    "message": "Chrome은 두 가지 방식으로 리소스를 절약합니다. 사용하지 않는 탭을 언로드하고, 보이지 않는 탭의 속도를 늦춥니다. Keep Tabs Alive는 이 둘을 모두 막아 줍니다. 탭별로, 원하는 곳에만 적용할 수 있습니다.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "원클릭 액세스를 위해 <strong>고정하세요</strong>: 툴바의 <span class=\"puzzle\">🧩</span> 퍼즐 아이콘을 클릭한 다음 핀을 클릭하세요.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<code>chrome://discards</code>에서 <strong>언제든지 확인하세요</strong> — 보호된 탭은 <em>Auto Discardable</em> 열에 ✕로 표시됩니다.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "마스터 스위치",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "여기서 모든 보호를 켜거나 끌 수 있습니다. 꺼져 있는 동안에는 모든 탭이 폐기될 수 있습니다 — 규칙은 유지되며 일시중지될 뿐입니다.",
+    "message": "여기에서 모든 탭의 <b>메모리에 유지</b>를 일시중지하거나 다시 시작합니다. 꺼져 있는 동안에는 어떤 탭이든 언로드될 수 있으며, 규칙은 삭제되지 않고 일시중지될 뿐입니다. '계속 실행'으로 유지 중인 탭은 계속 실행됩니다.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "보호 모드 선택",
+    "message": "메모리에 유지할 사이트",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>허용 목록만</b>은 선택한 사이트만 유지합니다(부드러운 기본값). <b>모두 보호</b>는 제외한 사이트를 제외하고 모든 탭을 유지합니다.",
+    "message": "<b>선택한 사이트만</b>은 목록에 추가한 사이트만 메모리에 유지합니다(부담 없는 기본값). <b>모든 사이트, 단…</b>은 직접 제외한 사이트를 빼고 모든 탭을 메모리에 유지합니다. '계속 실행'은 여기가 아니라 탭별로 설정합니다.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "열린 모든 탭에는 각자의 스위치가 있습니다. 전환하여 그 탭 하나만 유지하거나 절전 상태로 둘 수 있으며 — 탭을 닫을 때까지 유지되는 일회성 선택입니다. 계속 유지하고 싶으신가요? 스위치 옆의 <b>이 사이트에 항상 적용</b>을 클릭하면 영구 사이트 규칙이 됩니다. 행을 클릭하면 해당 탭으로 이동합니다.",
+    "message": "열려 있는 탭마다 고유한 <b>메모리에 유지</b> 스위치가 있으며, 탭을 닫을 때까지만 적용되는 일회성 선택입니다. 사이트 헤더의 스위치는 사이트 전체에 같은 설정을 영구적으로 적용합니다. 행을 클릭하면 해당 탭으로 이동합니다.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "사이트별 규칙 설정",
+    "message": "사이트 전체를 메모리에 유지",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "여기에 도메인을 추가하면 전체 사이트를 한 번에 보호(또는 제외)할 수 있습니다. 도메인은 하위 도메인도 포함합니다 — <code>example.com</code>은 <code>mail.example.com</code>과 일치합니다. 여기까지가 둘러보기입니다 — ? 버튼에서 언제든지 다시 열 수 있습니다.",
+    "message": "사이트 전체를 메모리에 유지하려면(또는 Chrome이 언로드하도록 허용하려면) 여기에 도메인을 추가하세요. 도메인은 하위 도메인도 포함하므로 <code>example.com</code>은 <code>mail.example.com</code>과 일치합니다. 둘러보기는 여기까지입니다. ? 버튼으로 언제든 다시 열 수 있습니다.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -540,11 +386,11 @@
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "활성 유지",
+    "message": "메모리에 유지",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "항상 전체 $HOST$를 활성 상태로 유지 (영구 사이트 규칙)",
+    "message": "항상 전체 $HOST$를 메모리에 유지 (영구 사이트 규칙)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "보호가 일시 중지되었습니다 — 유지되는 탭이 없습니다.",
+    "message": "'메모리에 유지'가 일시중지되었습니다 — Chrome이 어떤 탭이든 언로드할 수 있습니다. '계속 실행'에는 영향이 없습니다.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "이 닫힌 탭을 활성 상태로 유지하지 않기 (잊어버리기)",
+    "message": "이 닫힌 탭을 더 이상 메모리에 유지하지 않기 (잊어버리기)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "여기의 고정된 탭은 활성 상태로 유지되지 않습니다.",
+    "message": "여기의 고정된 탭은 메모리에 유지되지 않습니다.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "여기에서 $COUNT$개의 탭이 활성 상태로 유지됩니다.",
+    "message": "여기에서 $COUNT$개의 탭이 메모리에 유지됩니다.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "시작하지 못했습니다. 다른 확장 프로그램이나 Chrome이 이미 이 탭을 캡처 중일 수 있습니다.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "메모리에 유지",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "계속 실행",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "입력한 내용이 그대로 유지됩니다",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "백그라운드에서는 여전히 느려집니다",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "숨겨져 있어도 작동합니다.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "채팅, 타이머, 실시간 데이터가 계속 동작합니다",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "배터리 소모 증가, Chrome에 화면 공유 아이콘이 표시됩니다",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "왜 화면 녹화인가요?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "'계속 실행'은 화면 녹화를 시뮬레이션합니다",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome은 보이지 않는 탭의 속도를 늦춥니다. 이를 막기 위해 확장 프로그램이 이 탭의 화면 녹화를 시뮬레이션하여 Chrome이 사용 중인 탭으로 인식하게 합니다.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "아무것도 녹화되지 않습니다. 화면 이미지는 읽히지도, 저장되지도, 어디로 전송되지도 않습니다.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "이 탭만, 스위치가 켜져 있는 동안에만 적용됩니다. Chrome이 공유 아이콘을 표시하므로 몰래 이루어지는 일은 없습니다.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "언제든 끌 수 있고, 탭을 닫기만 해도 됩니다.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "확인, 켜기",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "나중에",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "확인",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "이 탭을 닫을 때까지 메모리에 유지",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — 탭을 계속 실행 중",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive가 이 탭을 계속 실행 중입니다"
+  },
+  "bannerOff": {
+    "message": "끄기"
+  },
+  "bannerHide": {
+    "message": "이 막대 숨기기(탭은 계속 실행됨)"
+  },
+  "tagRunning": {
+    "message": "실행 중"
+  },
+  "stopAll": {
+    "message": "모두 중지"
+  },
+  "timerLabel": {
+    "message": "자동 종료"
+  },
+  "timer30": {
+    "message": "30분"
+  },
+  "timer60": {
+    "message": "1시간"
+  },
+  "timer180": {
+    "message": "3시간"
+  },
+  "timerNone": {
+    "message": "타이머 없음"
+  },
+  "timerLeft": {
+    "message": "$X$ 후 꺼짐",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "타이머 없음 — 끌 때까지 계속 실행됩니다"
+  },
+  "unitMin": {
+    "message": "분"
+  },
+  "unitHour": {
+    "message": "시간"
+  },
+  "heldTitle": {
+    "message": "지금 계속 실행 중"
+  },
+  "heldStop": {
+    "message": "이 탭 계속 실행 중지"
+  },
+  "bannerUntil": {
+    "message": "$X$까지",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "연장"
+  },
+  "memoryStop": {
+    "message": "이 탭 메모리 유지 중지"
+  },
+  "rowRunStart": {
+    "message": "계속 실행 — 이 탭에 켜기"
+  },
+  "rowRunStop": {
+    "message": "'계속 실행' 켜짐 — 클릭하여 끄기"
+  },
+  "tourRunTitle": {
+    "message": "페이지를 계속 실행"
+  },
+  "tourRunBody": {
+    "message": "채팅, 타이머, 실시간 데이터처럼 숨겨져 있어도 계속 작동해야 하는 페이지가 있나요? 해당 탭에서 확장 프로그램 창을 열어 <b>계속 실행</b>을 켜거나, 여기 탭 행의 번개 아이콘을 누르세요. 그러면 Chrome이 탭을 사용 중으로 인식하여 속도를 늦추지 않습니다. 화면 녹화를 시뮬레이션하는 방식이며 아무것도 녹화되거나 전송되지 않고, 선택한 타이머가 지나면 저절로 꺼집니다."
+  },
+  "aliveTitle": {
+    "message": "활성 유지"
+  },
+  "aliveTip": {
+    "message": "이 탭을 메모리에 유지하면서 계속 실행합니다. 둘 다 한 번에 적용됩니다"
+  },
+  "aliveRowTip": {
+    "message": "메모리에 유지 + 계속 실행"
+  },
+  "captureReload": {
+    "message": "페이지 새로고침"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome에서는 해당 탭의 확장 프로그램 창에서만 가능합니다. 탭으로 이동하여 Keep Tabs Alive 아이콘을 클릭하세요."
+  },
+  "goToTab": {
+    "message": "탭으로 이동"
+  },
+  "groupRunPick": {
+    "message": "'계속 실행'은 한 번에 탭 하나씩 적용됩니다. 번개 버튼으로 탭을 선택하세요."
+  },
+  "groupRunStartTip": {
+    "message": "계속 실행: 숨겨져 있어도 페이지가 최고 속도로 계속 작동합니다"
+  },
+  "groupRunStopTip": {
+    "message": "이 사이트 탭의 '계속 실행' 중지"
+  },
+  "statRunningNow": {
+    "message": "계속 실행 중"
+  },
+  "aliveOnTab": {
+    "message": "탭에서 켜기"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome에서는 해당 탭의 확장 프로그램 창에서만 '계속 실행'을 켤 수 있습니다. 이 버튼이 그 창을 엽니다."
+  },
+  "pendingTitle": {
+    "message": "한 번만 더 클릭"
+  },
+  "pendingBody": {
+    "message": "이 창을 닫고 툴바의 Keep Tabs Alive 아이콘(녹색 방패)을 클릭하세요. 퍼즐 아이콘 🧩 아래에 있을 수도 있습니다. '계속 실행'이 저절로 켜집니다."
+  },
+  "handoffTitle": {
+    "message": "탭에서 '계속 실행' 켜기"
+  },
+  "handoffTitleAlive": {
+    "message": "탭에서 '활성 유지' 켜기"
+  },
+  "handoffStep1": {
+    "message": "\"$TITLE$\" 탭으로 이동합니다.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "툴바에서 깜빡이는 Keep Tabs Alive 아이콘(녹색 방패)을 클릭하세요. 보이지 않나요? 퍼즐 아이콘 🧩 아래에 있습니다."
+  },
+  "handoffStep3": {
+    "message": "창에 '계속 실행' 스위치가 표시됩니다. 클릭하면 켜집니다."
+  },
+  "handoffStep3Alive": {
+    "message": "창에 '계속 실행' 스위치가 표시됩니다. 클릭하면 탭이 메모리에 유지되고 계속 실행됩니다."
+  },
+  "runDone": {
+    "message": "완료 — 이 탭이 계속 실행됩니다."
+  },
+  "aliveDone": {
+    "message": "완료 — 이 탭이 활성 유지 상태입니다. 메모리에 유지되고 계속 실행됩니다."
+  },
+  "tapToTurnOn": {
+    "message": "클릭하여 켜기"
+  },
+  "heldMore": {
+    "message": "모든 탭은 설정에서 확인 →"
+  },
+  "groupInMemory": {
+    "message": "메모리 유지"
+  },
+  "memoryCardSub": {
+    "message": "Chrome이 이 탭들을 언로드하지 않으므로 입력한 내용이 그대로 유지됩니다."
+  },
+  "runCardSub": {
+    "message": "이 페이지들은 숨겨져 있어도 최고 속도로 계속 작동합니다."
+  },
+  "colRunning": {
+    "message": "실행 중"
+  },
+  "runEmpty": {
+    "message": "계속 실행 중인 탭이 없습니다. 아래 목록에서 ⚡로 탭에 켜거나, 해당 탭의 확장 프로그램 창에서 켜세요."
+  },
+  "wMemPromise": {
+    "message": "Chrome이 탭을 언로드하지 않습니다."
+  },
+  "wMemDesc": {
+    "message": "돌아오면 모든 것이 두고 간 그대로 있습니다. 새로고침도 없습니다."
+  },
+  "wMemGain1": {
+    "message": "입력한 텍스트, 임시 저장본, 양식이 유지됩니다"
+  },
+  "wMemGain2": {
+    "message": "무료: 배터리를 추가로 쓰지 않습니다"
+  },
+  "wMemCost": {
+    "message": "숨겨져 있는 동안 페이지가 여전히 느려질 수 있습니다"
+  },
+  "wGoodFor": {
+    "message": "추천 용도:"
+  },
+  "wMemFor": {
+    "message": "긴 양식, 문서, 메일, 가끔 확인하는 대시보드"
+  },
+  "wRunPromise": {
+    "message": "보이지 않는 동안에도 페이지가 최고 속도로 계속 작동합니다."
+  },
+  "wRunDesc": {
+    "message": "Chrome이 탭을 사용 중으로 인식하므로 다른 곳에 있는 동안에도 탭 안의 어떤 것도 멈추지 않습니다."
+  },
+  "wRunGain1": {
+    "message": "채팅, AI 답변, 타이머, 음악, 실시간 데이터가 계속 동작합니다"
+  },
+  "wRunGain2": {
+    "message": "원하면 타이머로 저절로 꺼집니다"
+  },
+  "wRunCost": {
+    "message": "배터리를 더 소모하며 Chrome에 화면 공유 아이콘이 표시됩니다. 아무것도 녹화되지 않습니다"
+  },
+  "wRunFor": {
+    "message": "채팅 및 AI 도구, 트레이딩과 모니터링, 타이머, 업로드"
+  },
+  "wBoth": {
+    "message": "<strong>둘 다 필요하신가요?</strong> '활성 유지'는 한 번의 클릭으로 탭에 두 모드를 모두 켭니다."
+  },
+  "wStepsTitle": {
+    "message": "켜는 방법"
+  },
+  "wStep2": {
+    "message": "<strong>아무 탭에서나 아이콘을 클릭하세요.</strong> 창에 각 모드의 스위치가 있습니다."
+  },
+  "wStep3": {
+    "message": "<strong>설정에서</strong> 열려 있는 모든 탭을 확인하고 사이트 전체를 메모리에 유지할 수 있습니다."
+  },
+  "wPrivacy": {
+    "message": "브라우저 밖으로 나가는 것은 없습니다. 추적도, 서버도 없습니다. '계속 실행'은 페이지를 절대 녹화하지 않습니다."
+  },
+  "timerAdd30": {
+    "message": "+30분"
+  },
+  "timerAdd60": {
+    "message": "+1시간"
+  },
+  "timerAdd180": {
+    "message": "+3시간"
   }
 }

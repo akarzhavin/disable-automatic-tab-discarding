@@ -5,7 +5,7 @@
   "short_name": "__MSG_appShortName__",
   "version": "1.1.0",
   "description": "__MSG_appDesc__",
-  "permissions": ["tabs", "storage"],
+  "permissions": ["tabs", "storage", "activeTab", "scripting", "tabCapture", "offscreen"],
   "background": {
     "service_worker": "background.js",
     "type": "module"

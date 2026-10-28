@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Изключете освобождаването на раздели от Chrome и предотвратете нежеланото им презареждане. Правила за всеки сайт, управление за всеки раздел и статистика на живо.",
+    "message": "Изключете освобождаването на раздели в Chrome и спрете забавянето им във фон. Правила за сайтове и раздели, таймер.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -24,16 +24,12 @@
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Главен превключвател",
+    "message": "Пауза или възобновяване на „Запазване в паметта“ за всички раздели („Без заспиване“ не се засяга)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Защитата е включена",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "На пауза",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "защитени раздела",
@@ -44,7 +40,7 @@
     "description": "Heading for the current-tab card in the popup."
   },
   "thisWebsite": {
-    "message": "Този уебсайт",
+    "message": "Този сайт",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -59,59 +55,17 @@
     "message": "Вътрешните страници нямат правила за сайт — все пак можете да превключите този раздел.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "Тази страница не може да се управлява",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Не е налично тук",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Вътрешните страници и страниците на разширения винаги остават недокоснати.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Защитен",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Освобождаем",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Защити този сайт",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Спри защитата на този сайт",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Изключи този сайт",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Защитени сайтове",
+    "message": "Сайтове, запазени в паметта",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Изключени сайтове",
+    "message": "Сайтове, които Chrome може да освобождава",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Все още няма сайтове",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ още",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Премахни $DOMAIN$",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "защитени сега",
+    "message": "сега в паметта",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Режим на защита",
+    "message": "Запазване в паметта: кои сайтове",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Защити всичко",
+    "message": "Всички сайтове, освен…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Само от списъка",
+    "message": "Само избрани сайтове",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Превключи, за да поддържаш този раздел активен или да позволиш на Chrome да го освободи. Ръчният превключвател заменя правилата за сайта и важи, докато разделът се затвори.",
+    "message": "За всеки раздел: ▣ го запазва в паметта, ⚡ не му позволява да заспи, а „Поддържане живо“ прави и двете. Ръчната промяна има предимство пред правилата на сайта, докато разделът не бъде затворен.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "Няма раздели, отговарящи на търсенето ви.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Този прозорец · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Прозорец $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Ръчно",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Заспал",
+    "message": "Освободен",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Защитата е на пауза от главния превключвател",
+    "message": "„Запазване в паметта“ е на пауза — включете го отново в картата „Запазване в паметта“",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Защитен — превключи, за да позволиш на Chrome да освободи този раздел",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Освобождаем — превключи, за да поддържаш този раздел активен",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Само тези сайтове остават активни; всичко останало може да бъде освободено. Домейнът съвпада и с поддомейните си — напр. <code>example.com</code> покрива <code>mail.example.com</code>.",
+    "message": "Chrome няма да освобождава разделите на тези сайтове. Домейнът обхваща и поддомейните си: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "На тези сайтове е разрешено да бъдат освобождавани. Домейнът съвпада и с поддомейните си — напр. <code>example.com</code> покрива <code>mail.example.com</code>.",
+    "message": "Всички останали раздели остават в паметта; тези сайтове Chrome може да освобождава. Домейнът обхваща и поддомейните си: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "Премахни",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Винаги за този сайт",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Винаги поддържай $HOST$ активен (добавя правило за сайт)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Винаги позволявай $HOST$ да бъде освободен (обновява правилата за сайта)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "Винаги активен",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Винаги освобождаем",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ е запазен като правило за сайт — щракнете, за да го премахнете",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Премахнато — $HOST$ вече отново следва настройката по подразбиране на режима.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Запазено — $HOST$ вече винаги ще остава активен. Вижте Правила за сайтове по-долу.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Запазено — $HOST$ вече винаги може да бъде освободен. Вижте Правила за сайтове по-долу.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Тук още няма нищо.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "Съвет: отворете <code>chrome://discards</code>, за да видите колоната <strong>Auto Discardable</strong> — защитените раздели показват ✕. Забележка: ръчното освобождаване там все още работи; това блокира само <em>автоматичното</em> освобождаване за пестене на памет на Chrome.",
+    "message": "Съвет: отворете <code>chrome://discards</code>, за да видите колоната <strong>Auto Discardable</strong> — разделите, запазени в паметта, показват ✕. Забележка: ръчното освобождаване там все още работи; това блокира само <em>автоматичното</em> освобождаване на Chrome за пестене на памет.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Поддържайте важните раздели активни",
+    "message": "Поддържайте важните раздели живи",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Спестяването на памет на Chrome разтоварва неактивните раздели, за да освободи RAM, а след това ги презарежда, когато се върнете. Keep Tabs Alive ви позволява да изберете кои раздели да останат активни и готови — предотвратявайки нежелани презареждания и прекъсвания.",
+    "message": "Chrome спестява ресурси по два начина: освобождава разделите, които не използвате, и забавя тези, които не виждате. Keep Tabs Alive спира и двете — раздел по раздел и само където искате.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -466,27 +316,23 @@
     "description": "Note under the welcome CTA."
   },
   "welcomeStep1": {
-    "message": "<strong>Закачете го</strong> за достъп с едно кликване: щракнете върху иконата на пъзел <span class=\"puzzle\">🧩</span> в лентата с инструменти, след което върху карфицата.",
+    "message": "<strong>Закачете го</strong> за достъп с едно кликване: щракнете върху иконата с пъзел <span class=\"puzzle\">🧩</span> в лентата с инструменти, след което върху карфицата.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
-  },
-  "welcomeStep2": {
-    "message": "<strong>Проверявайте по всяко време</strong> на <code>chrome://discards</code> — защитените раздели показват ✕ в колоната <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
   },
   "tourMasterTitle": {
     "message": "Главният превключвател",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Включете или изключете цялата защита оттук. Докато е изключена, всеки раздел може да бъде освободен — правилата ви се запазват, само са на пауза.",
+    "message": "Тук можете да спрете или възобновите <b>„Запазване в паметта“</b> за всички раздели. Докато е изключено, всеки раздел може да бъде освободен — правилата ви се запазват, само са на пауза. Разделите с „Без заспиване“ продължават да работят.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Изберете режим на защита",
+    "message": "Кои сайтове да се запазват в паметта",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Само от списъка</b> поддържа активни само избраните от вас сайтове (меката настройка по подразбиране). <b>Защити всичко</b> поддържа всеки раздел активен с изключение на тези, които изключите.",
+    "message": "<b>Само избрани сайтове</b> запазва в паметта само избраните от вас сайтове (меката настройка по подразбиране). <b>Всички сайтове, освен…</b> запазва в паметта всички раздели, освен изключените от вас. „Без заспиване“ се включва за отделни раздели, а не тук.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Всеки отворен раздел има собствен превключвател. Превключете го, за да поддържате този раздел активен или да го оставите да заспи — еднократен избор, който важи, докато разделът се затвори. Искате го завинаги? Щракнете <b>Винаги за този сайт</b> до превключвателя, за да го превърнете в постоянно правило за сайт. Щракнете върху ред, за да преминете към раздела.",
+    "message": "Всеки отворен раздел има собствен превключвател <b>„Запазване в паметта“</b> — еднократен избор, който важи до затварянето на раздела. Превключвателят в заглавието на сайта прави същото за целия сайт, завинаги. Щракнете върху ред, за да преминете към раздела.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Задайте правила по сайт",
+    "message": "Цели сайтове в паметта",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Добавете домейни тук, за да защитите (или изключите) цели сайтове наведнъж. Домейнът покрива и поддомейните си — <code>example.com</code> съвпада с <code>mail.example.com</code>. Това беше обиколката — отворете я отново по всяко време от бутона ?.",
+    "message": "Добавяйте тук домейни, за да запазвате цели сайтове в паметта (или да позволите на Chrome да ги освобождава). Домейнът обхваща и поддомейните си — <code>example.com</code> съвпада с <code>mail.example.com</code>. Това е цялата обиколка — можете да я отворите отново по всяко време с бутона ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Винаги поддържай целия $HOST$ активен (постоянно правило за сайт)",
+    "message": "Винаги запазвай целия $HOST$ в паметта (постоянно правило за сайт)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Защитата е на пауза — няма раздели, които да се поддържат активни.",
+    "message": "„Запазване в паметта“ е на пауза — Chrome може да освободи всеки раздел. „Без заспиване“ не се засяга.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Спри да поддържаш този затворен раздел активен (забрави го)",
+    "message": "Спри да запазваш този затворен раздел в паметта (забрави го)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Закачените раздели тук не се поддържат активни.",
+    "message": "Закачените раздели тук не се запазват в паметта.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "Тук се поддържат активни $COUNT$ раздел(а).",
+    "message": "Тук $COUNT$ раздел(а) са запазени в паметта.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Неуспешно стартиране. Възможно е друго разширение или самият Chrome вече да улавя този раздел.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Запазване в паметта",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Без заспиване",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Всичко, което сте въвели, се запазва",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Във фонов режим пак ще се забавя",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Работи дори когато не се вижда.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Чатовете, таймерите и данните на живо продължават да работят",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "По-голям разход на батерия; Chrome показва икона за споделяне на екрана",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Защо запис на екрана?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "„Без заспиване“ симулира запис на екрана",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome забавя разделите, които не виждате. За да се избегне това, разширението симулира запис на екрана на този раздел и Chrome го смята за използван.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Нищо не се записва. Изображението никога не се чете, не се запазва и не се изпраща никъде.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Само този раздел и само докато превключвателят е включен. Chrome показва икона за споделяне, така че нищо не става тайно.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Можете да го изключите по всяко време или просто да затворите раздела.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Разбрах, включи",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Не сега",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Разбрах",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Запазване на този раздел в паметта, докато не бъде затворен",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — има раздели без заспиване",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive не позволява на този раздел да заспи"
+  },
+  "bannerOff": {
+    "message": "Изключване"
+  },
+  "bannerHide": {
+    "message": "Скриване на тази лента (режимът остава включен)"
+  },
+  "tagRunning": {
+    "message": "Работи"
+  },
+  "stopAll": {
+    "message": "Спри всички"
+  },
+  "timerLabel": {
+    "message": "Автоизключване след"
+  },
+  "timer30": {
+    "message": "30 мин"
+  },
+  "timer60": {
+    "message": "1 ч"
+  },
+  "timer180": {
+    "message": "3 ч"
+  },
+  "timerNone": {
+    "message": "Без таймер"
+  },
+  "timerLeft": {
+    "message": "Ще се изключи след $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Без таймер — работи, докато не го изключите"
+  },
+  "unitMin": {
+    "message": "мин"
+  },
+  "unitHour": {
+    "message": "ч"
+  },
+  "heldTitle": {
+    "message": "Сега без заспиване"
+  },
+  "heldStop": {
+    "message": "Спиране на „Без заспиване“ за този раздел"
+  },
+  "bannerUntil": {
+    "message": "до $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Удължаване с"
+  },
+  "memoryStop": {
+    "message": "Спиране на запазването на този раздел в паметта"
+  },
+  "rowRunStart": {
+    "message": "Без заспиване — включване за този раздел"
+  },
+  "rowRunStop": {
+    "message": "„Без заспиване“ е включено — щракнете, за да изключите"
+  },
+  "tourRunTitle": {
+    "message": "Нека страницата работи"
+  },
+  "tourRunBody": {
+    "message": "Трябва ли ви страница, която да работи и докато не се вижда — чат, таймер, данни на живо? Отворете прозореца на разширението в този раздел и включете <b>„Без заспиване“</b> или натиснете иконата с мълния в реда на раздела тук. Chrome ще смята раздела за използван и няма да го забавя. Това симулира запис на екрана — нищо не се записва и не се изпраща — и се изключва автоматично, когато изтече избраният от вас таймер."
+  },
+  "aliveTitle": {
+    "message": "Поддържане живо"
+  },
+  "aliveTip": {
+    "message": "Този раздел остава в паметта и не заспива — и двете наведнъж"
+  },
+  "aliveRowTip": {
+    "message": "Запазване в паметта + Без заспиване"
+  },
+  "captureReload": {
+    "message": "Презареждане на страницата"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome позволява това само от прозореца на разширението в самия раздел. Преминете към раздела и щракнете върху иконата на Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "Към раздела"
+  },
+  "groupRunPick": {
+    "message": "„Без заспиване“ работи за един раздел наведнъж — изберете го с бутона с мълния."
+  },
+  "groupRunStartTip": {
+    "message": "Без заспиване: страницата работи с пълна скорост, дори когато не се вижда"
+  },
+  "groupRunStopTip": {
+    "message": "Спиране на „Без заспиване“ за разделите на този сайт"
+  },
+  "statRunningNow": {
+    "message": "без заспиване"
+  },
+  "aliveOnTab": {
+    "message": "Включване в раздела"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome позволява „Без заспиване“ само от прозореца на разширението в самия раздел — този бутон го отваря там."
+  },
+  "pendingTitle": {
+    "message": "Още едно щракване"
+  },
+  "pendingBody": {
+    "message": "Затворете този прозорец и щракнете върху иконата на Keep Tabs Alive (зеления щит) в лентата с инструменти — или под иконата с пъзел 🧩. „Без заспиване“ ще се включи автоматично."
+  },
+  "handoffTitle": {
+    "message": "Включване на „Без заспиване“ в раздела"
+  },
+  "handoffTitleAlive": {
+    "message": "Включване на „Поддържане живо“ в раздела"
+  },
+  "handoffStep1": {
+    "message": "Ще ви прехвърлим към „$TITLE$“.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Щракнете върху мигащата икона на Keep Tabs Alive в лентата с инструменти (зеления щит). Не я виждате? Тя е под иконата с пъзел 🧩."
+  },
+  "handoffStep3": {
+    "message": "Прозорецът ще посочи превключвателя „Без заспиване“ — щракнете върху него и е включено."
+  },
+  "handoffStep3Alive": {
+    "message": "Прозорецът ще посочи превключвателя „Без заспиване“ — щракнете върху него и разделът ще е в паметта и няма да заспива."
+  },
+  "runDone": {
+    "message": "Готово — този раздел не заспива."
+  },
+  "aliveDone": {
+    "message": "Готово — този раздел е жив: в паметта и без заспиване."
+  },
+  "tapToTurnOn": {
+    "message": "Щракнете, за да включите"
+  },
+  "heldMore": {
+    "message": "Всички раздели са в настройките →"
+  },
+  "groupInMemory": {
+    "message": "В паметта"
+  },
+  "memoryCardSub": {
+    "message": "Chrome няма да освобождава тези раздели — въведеното от вас се запазва."
+  },
+  "runCardSub": {
+    "message": "Тези страници работят с пълна скорост, дори когато не се виждат."
+  },
+  "colRunning": {
+    "message": "Без заспиване"
+  },
+  "runEmpty": {
+    "message": "Няма раздели с „Без заспиване“. Включете го за раздел с ⚡ в списъка по-долу или от прозореца на разширението в самия раздел."
+  },
+  "wMemPromise": {
+    "message": "Chrome няма да освободи раздела."
+  },
+  "wMemDesc": {
+    "message": "Връщате се и всичко е точно както сте го оставили — без презареждане."
+  },
+  "wMemGain1": {
+    "message": "Въведеният текст, черновите и формулярите се запазват"
+  },
+  "wMemGain2": {
+    "message": "Безплатно: без допълнителен разход на батерия"
+  },
+  "wMemCost": {
+    "message": "Докато разделът не се вижда, страницата все пак може да се забавя"
+  },
+  "wGoodFor": {
+    "message": "Подходящо за:"
+  },
+  "wMemFor": {
+    "message": "дълги формуляри, документи, поща, табла, които проверявате от време на време"
+  },
+  "wRunPromise": {
+    "message": "Страницата работи с пълна скорост — дори когато не я виждате."
+  },
+  "wRunDesc": {
+    "message": "Chrome смята раздела за използван, затова нищо в него не спира, докато сте другаде."
+  },
+  "wRunGain1": {
+    "message": "Чатове, отговори от ИИ, таймери, музика и данни на живо продължават да работят"
+  },
+  "wRunGain2": {
+    "message": "Може да се изключва сам по таймер"
+  },
+  "wRunCost": {
+    "message": "Използва повече батерия; Chrome показва иконата за споделяне на екрана — нищо не се записва"
+  },
+  "wRunFor": {
+    "message": "чатове и ИИ инструменти, търговия и наблюдение, таймери, качвания"
+  },
+  "wBoth": {
+    "message": "<strong>Трябват ви и двете?</strong> „Поддържане живо“ включва и двата режима за раздел с едно щракване."
+  },
+  "wStepsTitle": {
+    "message": "Как да ги включите"
+  },
+  "wStep2": {
+    "message": "<strong>На всеки раздел щракнете върху иконата</strong> — в прозореца има превключвател за всеки режим."
+  },
+  "wStep3": {
+    "message": "<strong>В настройките</strong> виждате всички отворени раздели и можете да запазвате в паметта цели сайтове."
+  },
+  "wPrivacy": {
+    "message": "Нищо не напуска браузъра ви: без проследяване и без сървъри. „Без заспиване“ никога не записва страницата."
+  },
+  "timerAdd30": {
+    "message": "+30 мин"
+  },
+  "timerAdd60": {
+    "message": "+1 ч"
+  },
+  "timerAdd180": {
+    "message": "+3 ч"
   }
 }

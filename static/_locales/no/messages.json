@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Slå av Chromes forkasting av faner og unngå uønsket ny innlasting av faner. Regler per nettsted, kontroll per fane og sanntidsstatistikk.",
+    "message": "Slå av Chromes forkasting av faner, så fanene ikke går tregt i bakgrunnen. Kontroll per nettsted og per fane, auto-av-timer.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "Slå av automatisk forkasting av faner",
+    "message": "Slå av automatisk fjerning av faner fra minnet",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Hovedbryter",
+    "message": "Sett «Hold i minnet» på pause eller gjenoppta for alle faner («Hold i gang» påvirkes ikke)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Beskyttelse på",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "På pause",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "faner beskyttet",
@@ -43,59 +39,17 @@
     "message": "Denne fanen",
     "description": "Heading for the current-tab card in the popup."
   },
-  "pageCantBeManaged": {
-    "message": "Denne siden kan ikke administreres",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Ikke tilgjengelig her",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Interne sider og utvidelsessider blir alltid latt være i fred.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Beskyttet",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Kan forkastes",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Beskytt dette nettstedet",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Slutt å beskytte dette nettstedet",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Ekskluder dette nettstedet",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Beskyttede nettsteder",
+    "message": "Nettsteder som holdes i minnet",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Ekskluderte nettsteder",
+    "message": "Nettsteder Chrome kan fjerne fra minnet",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Ingen nettsteder ennå",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ til",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Fjern $DOMAIN$",
@@ -140,7 +94,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "beskyttet nå",
+    "message": "i minnet nå",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -170,11 +124,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Beskyttelsesmodus",
+    "message": "Hold i minnet: hvilke nettsteder",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Beskytt alt",
+    "message": "Alle nettsteder, unntatt…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -182,7 +136,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Bare hvitliste",
+    "message": "Bare valgte nettsteder",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -198,7 +152,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Vipp en bryter for å holde den fanen aktiv eller la Chrome forkaste den. En manuell bryter overstyrer nettstedsreglene og varer til fanen lukkes.",
+    "message": "For hver fane: ▣ holder den i minnet, ⚡ holder den i gang, «Hold i live» gjør begge deler. En manuell endring går foran nettstedsreglene til fanen lukkes.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -209,36 +163,12 @@
     "message": "Ingen faner samsvarer med søket ditt.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Dette vinduet · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Vindu $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Manuell",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "I dvale",
+    "message": "Fjernet fra minnet",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -262,23 +192,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Beskyttelse er satt på pause av hovedbryteren",
+    "message": "«Hold i minnet» er satt på pause — slå det på igjen i kortet «Hold i minnet»",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Beskyttet — vipp for å la Chrome forkaste denne fanen",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Kan forkastes — vipp for å holde denne fanen aktiv",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Bare disse nettstedene holdes aktive; alt annet kan forkastes. Et domene samsvarer også med underdomenene — f.eks. dekker <code>example.com</code> <code>mail.example.com</code>.",
+    "message": "Chrome fjerner ikke fanene til disse nettstedene fra minnet. Et domene dekker underdomenene sine: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Disse nettstedene får lov til å bli forkastet. Et domene samsvarer også med underdomenene — f.eks. dekker <code>example.com</code> <code>mail.example.com</code>.",
+    "message": "Alle andre faner blir i minnet; Chrome kan fjerne disse nettstedene fra minnet. Et domene dekker underdomenene sine: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -300,30 +222,6 @@
   "remove": {
     "message": "Fjern",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Alltid for dette nettstedet",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Hold alltid $HOST$ aktiv (legger til en nettstedsregel)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "La alltid $HOST$ bli forkastet (oppdaterer nettstedsregler)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Ingenting her ennå.",
@@ -354,7 +252,7 @@
     }
   },
   "footerTip": {
-    "message": "Tips: åpne <code>chrome://discards</code> for å se kolonnen <strong>Auto Discardable</strong> — beskyttede faner viser ✕. Merk: manuelle forkastinger der fungerer fortsatt; dette blokkerer bare Chromes <em>automatiske</em> minnesparende forkasting.",
+    "message": "Tips: åpne <code>chrome://discards</code> for å se kolonnen <strong>Auto Discardable</strong> — faner som holdes i minnet viser ✕. Merk: manuell fjerning fra minnet der fungerer fortsatt; dette blokkerer bare Chromes <em>automatiske</em> minnesparende fjerning av faner.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -362,11 +260,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Hold fanene som betyr noe, aktive",
+    "message": "Hold fanene som betyr noe, i live",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chromes Minnesparing laster ut inaktive faner for å frigjøre RAM, og laster dem inn igjen når du kommer tilbake. Keep Tabs Alive lar deg velge hvilke faner som forblir aktive og klare — slik unngår du uønskede oppdateringer og avbrudd.",
+    "message": "Chrome sparer ressurser på to måter: det fjerner faner du ikke bruker fra minnet, og bremser faner du ikke ser. Keep Tabs Alive stopper begge deler – fane for fane, og bare der du vil.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -405,24 +303,20 @@
     "message": "<strong>Fest den</strong> for tilgang med ett klikk: klikk på <span class=\"puzzle\">🧩</span> puslespillikonet i verktøylinjen, og deretter på nålen.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Kontroller når som helst</strong> på <code>chrome://discards</code> — beskyttede faner viser ✕ i kolonnen <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "Hovedbryteren",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Slå all beskyttelse på eller av her. Mens den er av, kan alle faner forkastes — reglene dine beholdes, bare satt på pause.",
+    "message": "Her kan du sette <b>Hold i minnet</b> på pause eller gjenoppta det for alle faner. Når den er av, kan hvilken som helst fane fjernes fra minnet – reglene dine beholdes, de er bare satt på pause. Faner du holder i gang, fortsetter å kjøre.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Velg en beskyttelsesmodus",
+    "message": "Hvilke nettsteder skal holdes i minnet",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Bare hvitliste</b> holder bare nettstedene du velger aktive (den skånsomme standarden). <b>Beskytt alt</b> holder alle faner aktive bortsett fra dem du ekskluderer.",
+    "message": "<b>Bare valgte nettsteder</b> holder bare nettstedene du velger, i minnet (den skånsomme standarden). <b>Alle nettsteder, unntatt…</b> holder alle faner i minnet unntatt nettstedene du ekskluderer. «Hold i gang» slås på per fane, ikke her.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -430,15 +324,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Hver åpne fane har sin egen bryter. Vipp den for å holde den ene fanen aktiv eller la den sove — et engangsvalg som varer til fanen lukkes. Vil du ha det for alltid? Klikk på <b>Alltid for dette nettstedet</b> ved siden av bryteren for å gjøre det til en permanent nettstedsregel. Klikk på en rad for å hoppe til fanen.",
+    "message": "Hver åpne fane har sin egen <b>Hold i minnet</b>-bryter – et engangsvalg som varer til fanen lukkes. Bryteren i overskriften til et nettsted gjør det samme for hele nettstedet, permanent. Klikk på en rad for å hoppe til fanen.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Angi regler per nettsted",
+    "message": "Hold hele nettsteder i minnet",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Legg til domener her for å beskytte (eller ekskludere) hele nettsteder på én gang. Et domene dekker også underdomenene — <code>example.com</code> samsvarer med <code>mail.example.com</code>. Det var omvisningen — åpne den igjen når som helst fra ?-knappen.",
+    "message": "Legg til domener her for å holde hele nettsteder i minnet (eller la Chrome fjerne dem fra minnet). Et domene dekker også underdomenene sine – <code>example.com</code> samsvarer med <code>mail.example.com</code>. Det var omvisningen – åpne den igjen når som helst med ?-knappen.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -487,64 +381,16 @@
     "message": "Interne sider har ingen nettstedsregler — du kan likevel bytte for denne fanen.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "alwaysKeptAlive": {
-    "message": "Alltid holdt aktiv",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Alltid forkastbar",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ er lagret som en nettstedsregel — klikk for å fjerne den",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Fjernet — $HOST$ følger nå standardinnstillingen for modusen igjen.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Lagret — $HOST$ vil nå alltid være aktiv. Se Nettstedsregler nedenfor.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Lagret — $HOST$ kan nå alltid forkastes. Se Nettstedsregler nedenfor.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
   "internalPagesGroup": {
     "message": "Interne sider",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Hold aktiv",
+    "message": "Hold i minnet",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Hold alltid hele $HOST$ aktiv (en permanent nettstedsregel)",
+    "message": "Hold alltid hele $HOST$ i minnet (en permanent nettstedsregel)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Beskyttelsen er satt på pause — ingen faner holdes aktive.",
+    "message": "«Hold i minnet» er satt på pause — Chrome kan fjerne hvilken som helst fane fra minnet. «Hold i gang» påvirkes ikke.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Slutt å holde denne lukkede fanen aktiv (glem den)",
+    "message": "Slutt å holde denne lukkede fanen i minnet (glem den)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Festede faner her holdes ikke aktive.",
+    "message": "Festede faner her holdes ikke i minnet.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ fane(r) holdes aktive her.",
+    "message": "$COUNT$ fane(r) holdes i minnet her.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Kunne ikke starte. Kanskje fanger en annen utvidelse eller Chrome selv allerede inn denne fanen.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Hold i minnet",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Hold i gang",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Alt du har skrevet, blir værende",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Blir likevel tregere når fanen er skjult",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Fungerer selv når fanen er skjult.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Chatter, tidsur og sanntidsdata fortsetter",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Mer batteribruk; Chrome viser et ikon for skjermdeling",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Hvorfor et skjermopptak?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "«Hold i gang» simulerer et skjermopptak",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome bremser faner du ikke ser. For å hindre det simulerer utvidelsen et skjermopptak av denne fanen, slik at Chrome behandler den som i bruk.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Ingenting tas opp. Bildet leses, lagres eller sendes aldri noe sted.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Bare denne fanen, og bare mens bryteren er på. Chrome viser et delingsikon, så ingenting skjer i det skjulte.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Slå det av når som helst, eller bare lukk fanen.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Jeg forstår, slå på",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Ikke nå",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Greit",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Hold denne fanen i minnet til den lukkes",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive – holder faner i gang",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive holder denne fanen i gang"
+  },
+  "bannerOff": {
+    "message": "Slå av"
+  },
+  "bannerHide": {
+    "message": "Skjul denne linjen (fanen holdes fortsatt i gang)"
+  },
+  "tagRunning": {
+    "message": "Kjører"
+  },
+  "stopAll": {
+    "message": "Stopp alle"
+  },
+  "timerLabel": {
+    "message": "Slå av automatisk etter"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 t"
+  },
+  "timer180": {
+    "message": "3 t"
+  },
+  "timerNone": {
+    "message": "Ingen tidsur"
+  },
+  "timerLeft": {
+    "message": "Slås av om $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Ingen tidsur – kjører til du slår det av"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "t"
+  },
+  "heldTitle": {
+    "message": "Holdes i gang nå"
+  },
+  "heldStop": {
+    "message": "Slutt å holde denne fanen i gang"
+  },
+  "bannerUntil": {
+    "message": "til $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Forleng med"
+  },
+  "memoryStop": {
+    "message": "Slutt å holde denne fanen i minnet"
+  },
+  "rowRunStart": {
+    "message": "Hold i gang – slå på for denne fanen"
+  },
+  "rowRunStop": {
+    "message": "«Hold i gang» er på – klikk for å stoppe"
+  },
+  "tourRunTitle": {
+    "message": "Hold en side i gang"
+  },
+  "tourRunBody": {
+    "message": "Trenger du at en side fortsetter å fungere mens den er skjult – en chat, et tidsur, sanntidsdata? Åpne utvidelsesvinduet på den fanen og slå på <b>Hold i gang</b>, eller trykk på lynikonet i fanens rad her. Da behandler Chrome fanen som i bruk, så den bremses ikke. Det simulerer et skjermopptak – ingenting tas opp eller sendes – og slår seg selv av når tidsuret du velger, går ut."
+  },
+  "aliveTitle": {
+    "message": "Hold i live"
+  },
+  "aliveTip": {
+    "message": "Hold denne fanen i minnet og i gang – begge deler samtidig"
+  },
+  "aliveRowTip": {
+    "message": "Hold i minnet + Hold i gang"
+  },
+  "captureReload": {
+    "message": "Last siden på nytt"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome tillater dette bare fra utvidelsens vindu på den fanen. Gå til fanen og klikk på Keep Tabs Alive-ikonet."
+  },
+  "goToTab": {
+    "message": "Gå til fane"
+  },
+  "groupRunPick": {
+    "message": "«Hold i gang» fungerer for én fane om gangen – velg en fane med lynknappen."
+  },
+  "groupRunStartTip": {
+    "message": "Hold i gang: siden fortsetter å kjøre i full fart selv når den er skjult"
+  },
+  "groupRunStopTip": {
+    "message": "Stopp «Hold i gang» for fanene på dette nettstedet"
+  },
+  "statRunningNow": {
+    "message": "holdes i gang"
+  },
+  "aliveOnTab": {
+    "message": "Slå på i fanen"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome tillater «Hold i gang» bare fra utvidelsens vindu på den fanen – dette åpner det der."
+  },
+  "pendingTitle": {
+    "message": "Ett klikk til"
+  },
+  "pendingBody": {
+    "message": "Lukk dette vinduet og klikk på Keep Tabs Alive-ikonet (det grønne skjoldet) i verktøylinjen – eller under puslespillikonet 🧩. «Hold i gang» slår seg på av seg selv."
+  },
+  "handoffTitle": {
+    "message": "Slå på «Hold i gang» i fanen"
+  },
+  "handoffTitleAlive": {
+    "message": "Slå på «Hold i live» i fanen"
+  },
+  "handoffStep1": {
+    "message": "Vi tar deg til «$TITLE$».",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Klikk på det blinkende Keep Tabs Alive-ikonet i verktøylinjen (det grønne skjoldet). Ser du det ikke? Det ligger under puslespillikonet 🧩."
+  },
+  "handoffStep3": {
+    "message": "Vinduet peker på «Hold i gang»-bryteren – klikk på den, så er den på."
+  },
+  "handoffStep3Alive": {
+    "message": "Vinduet peker på «Hold i gang»-bryteren – klikk på den, så holdes fanen i minnet og i gang."
+  },
+  "runDone": {
+    "message": "Ferdig – denne fanen holdes i gang."
+  },
+  "aliveDone": {
+    "message": "Ferdig – denne fanen holdes i live: i minnet og i gang."
+  },
+  "tapToTurnOn": {
+    "message": "Klikk for å slå på"
+  },
+  "heldMore": {
+    "message": "Alle faner finner du i Innstillinger →"
+  },
+  "groupInMemory": {
+    "message": "I minnet"
+  },
+  "memoryCardSub": {
+    "message": "Chrome fjerner ikke disse fanene fra minnet – det du har skrevet, blir værende."
+  },
+  "runCardSub": {
+    "message": "Disse sidene fortsetter å kjøre i full fart, selv når de er skjult."
+  },
+  "colRunning": {
+    "message": "Kjører"
+  },
+  "runEmpty": {
+    "message": "Ingen faner holdes i gang. Slå det på for en fane med ⚡ i listen under, eller fra utvidelsens vindu på den fanen."
+  },
+  "wMemPromise": {
+    "message": "Chrome fjerner ikke fanen fra minnet."
+  },
+  "wMemDesc": {
+    "message": "Kom tilbake, så er alt akkurat der du forlot det – uten å laste inn på nytt."
+  },
+  "wMemGain1": {
+    "message": "Skrevet tekst, utkast og skjemaer blir værende"
+  },
+  "wMemGain2": {
+    "message": "Gratis: ingen ekstra batteribruk"
+  },
+  "wMemCost": {
+    "message": "Mens siden er skjult, kan den fortsatt bli tregere"
+  },
+  "wGoodFor": {
+    "message": "Passer for:"
+  },
+  "wMemFor": {
+    "message": "lange skjemaer, dokumenter, e-post og dashbord du sjekker innimellom"
+  },
+  "wRunPromise": {
+    "message": "Siden fortsetter å kjøre i full fart – selv når du ikke ser den."
+  },
+  "wRunDesc": {
+    "message": "Chrome behandler fanen som i bruk, så ingenting i den stopper mens du er andre steder."
+  },
+  "wRunGain1": {
+    "message": "Chatter, KI-svar, tidsur, musikk og sanntidsdata fortsetter"
+  },
+  "wRunGain2": {
+    "message": "Slår seg av automatisk med et tidsur, hvis du vil"
+  },
+  "wRunCost": {
+    "message": "Bruker mer batteri; Chrome viser ikonet for skjermdeling – ingenting tas opp"
+  },
+  "wRunFor": {
+    "message": "chatter og KI-verktøy, trading og overvåking, tidsur, opplastinger"
+  },
+  "wBoth": {
+    "message": "<strong>Trenger du begge deler?</strong> «Hold i live» slår på begge modusene for en fane med ett klikk."
+  },
+  "wStepsTitle": {
+    "message": "Slik slår du dem på"
+  },
+  "wStep2": {
+    "message": "<strong>Klikk på ikonet på en hvilken som helst fane</strong> – vinduet har en bryter for hver modus."
+  },
+  "wStep3": {
+    "message": "<strong>I Innstillinger</strong> ser du alle åpne faner og kan holde hele nettsteder i minnet."
+  },
+  "wPrivacy": {
+    "message": "Ingenting forlater nettleseren din: ingen sporing, ingen servere. «Hold i gang» tar aldri opp siden."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 t"
+  },
+  "timerAdd180": {
+    "message": "+3 t"
   }
 }

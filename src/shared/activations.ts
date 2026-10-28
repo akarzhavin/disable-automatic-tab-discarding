@@ -130,12 +130,20 @@ export async function hydrateOverrides(
     }
   }
 
+  // A memory already carried by a live tab belongs to that tab. Without this, flipping one
+  // tab would spread to every other open tab on the same URL (duplicates, same doc).
+  const owned = new Set<string>();
+  for (const entry of Object.values(overrides)) {
+    if (entry && typeof entry === "object" && entry.key) owned.add(entry.key);
+  }
+
   for (const tab of tabs) {
     if (tab.id == null || tab.discarded) continue;
     if (overrides[tab.id] !== undefined) continue; // a live override wins
     const key = activationKey(tab.url);
     const entry = key ? all[key] : undefined;
-    if (!entry || !key) continue;
+    if (!entry || !key || owned.has(key)) continue;
+    owned.add(key); // restore one tab per memory, e.g. after a browser restart
     overrides[tab.id] = { value: entry.value, key };
     entry.expiresAt = now + ACTIVATION_TTL_MS; // re-anchor: "7 days from this open"
     changed = true;

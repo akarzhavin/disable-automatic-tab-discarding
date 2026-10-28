@@ -60,6 +60,26 @@ export const SETTINGS_KEY = "settings";
 export const STATS_KEY = "stats";
 export const OVERRIDES_KEY = "tabOverrides";
 export const ACTIVATIONS_KEY = "urlActivations";
+/** Ids of tabs currently held awake by a self-capture. Stored in chrome.storage.session. */
+export const CAPTURES_KEY = "captureTabs";
+/**
+ * Tabs the popup was opened on since their last load — Chrome lets us start a capture only
+ * on those (the activeTab grant). Stored in chrome.storage.session; cleared on reload/close.
+ */
+export const INVOKED_KEY = "invokedTabs";
+/**
+ * "Finish turning this on in the popup": set by Settings when it sends the user to a tab,
+ * picked up by the popup when it opens there. Stored in chrome.storage.session.
+ */
+export const PENDING_KEY = "pendingStart";
+/** tabId → epoch ms when its capture auto-stops (0 = no timer). Stored in chrome.storage.session. */
+export const CAPTURE_ENDS_KEY = "captureEnds";
+/** Chosen auto-off delay for "Keep running", in minutes (0 = none). Stored in chrome.storage.local. */
+export const CAPTURE_MINUTES_KEY = "captureMinutes";
+/** Auto-off delay preselected until the user picks another. */
+export const DEFAULT_CAPTURE_MINUTES = 0; // no timer
+/** Set once the user has confirmed the "simulated screen recording" explanation (storage.local). */
+export const CAPTURE_CONSENT_KEY = "captureConsent";
 
 /** How long a remembered per-tab activation lives, measured from the last open. */
 export const ACTIVATION_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days

@@ -32,58 +32,66 @@
           <button class="seg__btn" data-theme="light" role="radio" data-i18n="themeLight">Light</button>
           <button class="seg__btn" data-theme="dark" role="radio" data-i18n="themeDark">Dark</button>
         </div>
-        <label class="switch switch--lg" id="masterSwitch" data-i18n-title="masterSwitchTitle" title="Master switch">
-          <input type="checkbox" id="masterToggle" />
-          <span class="switch__track"><span class="switch__thumb"></span></span>
-        </label>
       </div>
     </header>
 
-    <!-- Stats strip -->
-    <section class="panel statbar">
-      <div class="stat">
-        <span class="stat__num stat__num--accent" id="statProtected">0</span>
-        <span class="stat__label" data-i18n="statProtectedNow">protected now</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num" id="statOpen">0</span>
-        <span class="stat__label" data-i18n="statOpenTabs">open tabs</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num" id="statOps">0</span>
-        <span class="stat__label" data-i18n="statProtectOps">protect operations</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num" id="statDiscards">0</span>
-        <span class="stat__label" data-i18n="statDiscardsObserved">discards observed</span>
-      </div>
-      <div class="statbar__meta">
-        <span id="statsSince">&nbsp;</span>
-        <button class="linklike" id="resetStats" data-i18n="reset">Reset</button>
-      </div>
-    </section>
+    <!-- The two things the extension does, one card each -->
+    <section class="modes-band">
+      <!-- Keep in memory: rules, pause, sites -->
+      <article class="mcard mcard--mem" id="modePanel">
+        <header class="mcard__head">
+          <span class="mcard__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="2.5" stroke="currentColor" stroke-width="1.7"/><rect x="9.5" y="9.5" width="5" height="5" rx="1" fill="currentColor"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <div class="mcard__titles">
+            <h2 class="mcard__title" data-i18n="memoryTitle">Keep in memory</h2>
+            <p class="mcard__sub" data-i18n="memoryCardSub">Chrome won't unload these tabs — what you typed stays.</p>
+          </div>
+          <label class="switch switch--lg" id="masterSwitch" data-i18n-title="masterSwitchTitle" title="Master switch">
+            <input type="checkbox" id="masterToggle" />
+            <span class="switch__track"><span class="switch__thumb"></span></span>
+          </label>
+        </header>
+        <p class="mcard__count"><span class="mcard__num" id="statProtected">0</span> <span data-i18n="statProtectedNow">in memory now</span></p>
 
-    <!-- Protection mode -->
-    <section class="panel" id="modePanel">
-      <div class="panel__head">
-        <h2 class="panel__title" data-i18n="protectionMode">Protection mode</h2>
-      </div>
-      <div class="modes">
-        <label class="mode" data-mode="exclude">
-          <input type="radio" name="mode" value="exclude" />
-          <div class="mode__body">
-            <span class="mode__name" data-i18n="modeProtectEverything">Protect everything</span>
-            <span class="mode__desc" data-i18n="modeProtectEverythingDesc">Keep all tabs alive, except the sites you exclude.</span>
+        <div class="mcard__block" id="rulesPanel">
+          <div class="rule-seg" role="radiogroup" data-i18n-aria-label="protectionMode" aria-label="Which sites">
+            <label class="mode rule-seg__opt" data-mode="whitelist">
+              <input type="radio" name="mode" value="whitelist" />
+              <span class="mode__name" data-i18n="modeWhitelistOnly">Whitelist only</span>
+            </label>
+            <label class="mode rule-seg__opt" data-mode="exclude">
+              <input type="radio" name="mode" value="exclude" />
+              <span class="mode__name" data-i18n="modeProtectEverything">Protect everything</span>
+            </label>
           </div>
-        </label>
-        <label class="mode" data-mode="whitelist">
-          <input type="radio" name="mode" value="whitelist" />
-          <div class="mode__body">
-            <span class="mode__name" data-i18n="modeWhitelistOnly">Whitelist only</span>
-            <span class="mode__desc" data-i18n="modeWhitelistOnlyDesc">Only keep the sites you list alive.</span>
+          <div class="rules__head">
+            <h3 class="rules__title" id="listTitle" data-i18n="excludedSites">Excluded sites</h3>
+            <span class="count-badge" id="rulesCount">0</span>
           </div>
-        </label>
-      </div>
+          <p class="rules__desc" id="listDesc" data-i18n-html="listDescExclude">These sites are allowed to be discarded.</p>
+          <form class="adder" id="domainForm">
+            <input class="input" id="domainInput" type="text" placeholder="example.com" data-i18n-placeholder="domainPlaceholderDefault" autocomplete="off" spellcheck="false" />
+            <button class="btn" type="submit" data-i18n="add">Add</button>
+          </form>
+          <p class="adder__error" id="domainError" hidden></p>
+          <ul class="domain-list" id="domainList"></ul>
+          <p class="domain-list__empty" id="domainEmpty" data-i18n="nothingHereYet">Nothing here yet.</p>
+        </div>
+      </article>
+
+      <!-- Keep running: what's held right now -->
+      <article class="mcard mcard--run" id="runPanel">
+        <header class="mcard__head">
+          <span class="mcard__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+          <div class="mcard__titles">
+            <h2 class="mcard__title" data-i18n="runTitle">Keep running</h2>
+            <p class="mcard__sub" data-i18n="runCardSub">These pages keep working at full speed, even when hidden.</p>
+          </div>
+          <button class="mcard__stop" id="stopAll" type="button" data-i18n="stopAll" hidden>Stop all</button>
+        </header>
+        <p class="mcard__count"><span class="mcard__num" id="statRunning">0</span> <span data-i18n="statRunningNow">kept running</span></p>
+        <ul class="run-list" id="runList"></ul>
+        <p class="run-empty" id="runEmpty" data-i18n="runEmpty">Nothing is kept running.</p>
+      </article>
     </section>
 
     <!-- Open tabs -->
@@ -105,28 +113,14 @@
         Flip a switch to keep that tab alive or let Chrome discard it. A manual switch
         overrides the site rules and lasts until the tab is closed.
       </p>
+      <div class="cols-head" aria-hidden="true">
+        <span class="col col--mem" data-i18n="groupInMemory">In memory</span>
+        <span class="col col--run" data-i18n="colRunning">Running</span>
+        <span class="col col--alive" data-i18n="aliveTitle">Keep alive</span>
+      </div>
       <div class="tab-groups" id="tabGroups"></div>
       <p class="tab-groups__empty" id="tabsEmpty" hidden>No open tabs.</p>
     </main>
-
-    <!-- Site rules -->
-    <section class="panel" id="rulesPanel">
-      <div class="panel__head">
-        <h2 class="panel__title" id="listTitle" data-i18n="excludedSites">Excluded sites</h2>
-        <span class="count-badge" id="rulesCount">0</span>
-      </div>
-      <p class="panel__desc" id="listDesc" data-i18n-html="listDescExclude">
-        These sites are allowed to be discarded. A domain also matches its subdomains —
-        e.g. <code>example.com</code> covers <code>mail.example.com</code>.
-      </p>
-      <form class="adder" id="domainForm">
-        <input class="input" id="domainInput" type="text" placeholder="example.com" data-i18n-placeholder="domainPlaceholderDefault" autocomplete="off" spellcheck="false" />
-        <button class="btn" type="submit" data-i18n="add">Add</button>
-      </form>
-      <p class="adder__error" id="domainError" hidden></p>
-      <ul class="domain-list" id="domainList"></ul>
-      <p class="domain-list__empty" id="domainEmpty" data-i18n="nothingHereYet">Nothing here yet.</p>
-    </section>
 
     <footer class="page__footer">
       <p data-i18n-html="footerTip">

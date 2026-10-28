@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Chrome-এর ট্যাব ডিসকার্ড বন্ধ করুন এবং অবাঞ্ছিত ট্যাব রিলোড প্রতিরোধ করুন। প্রতি-সাইট নিয়ম, প্রতি-ট্যাব নিয়ন্ত্রণ এবং লাইভ পরিসংখ্যান।",
+    "message": "Chrome-এ ট্যাব বাতিল বন্ধ করুন, ব্যাকগ্রাউন্ডে ট্যাব ধীর হবে না। সাইট ও ট্যাব অনুযায়ী নিয়ম, স্বয়ংক্রিয় বন্ধের টাইমার।",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "স্বয়ংক্রিয় ট্যাব বাতিল করা নিষ্ক্রিয় করুন",
+    "message": "ট্যাব স্বয়ংক্রিয়ভাবে মেমরি থেকে সরানো নিষ্ক্রিয় করুন",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "মাস্টার সুইচ",
+    "message": "সব ট্যাবের জন্য “মেমরিতে রাখুন” বিরতি দিন বা আবার চালু করুন (“চলমান রাখুন” প্রভাবিত হয় না)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "সুরক্ষা চালু",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "বিরতিতে",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "টি ট্যাব সুরক্ষিত",
@@ -59,59 +55,17 @@
     "message": "অভ্যন্তরীণ পৃষ্ঠাগুলোর জন্য সাইট নিয়ম নেই — তবে আপনি এই ট্যাবটি এখনও পরিবর্তন করতে পারেন।",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "এই পৃষ্ঠাটি পরিচালনা করা যাবে না",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "এখানে উপলব্ধ নয়",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "অভ্যন্তরীণ এবং এক্সটেনশন পৃষ্ঠাগুলো সর্বদা অস্পর্শিত রাখা হয়।",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "সুরক্ষিত",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "বাতিলযোগ্য",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "এই সাইটটি সুরক্ষিত করুন",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "এই সাইটটি সুরক্ষিত করা বন্ধ করুন",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "এই সাইটটি বাদ দিন",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "সুরক্ষিত সাইট",
+    "message": "মেমরিতে রাখা সাইট",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "বাদ দেওয়া সাইট",
+    "message": "যেসব সাইট Chrome মেমরি থেকে সরাতে পারে",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "এখনও কোনো সাইট নেই",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ আরও",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ সরান",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "এখন সুরক্ষিত",
+    "message": "এখন মেমরিতে",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "সুরক্ষা মোড",
+    "message": "মেমরিতে রাখুন: কোন সাইট",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "সবকিছু সুরক্ষিত করুন",
+    "message": "সব সাইট, এগুলো বাদে…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "শুধুমাত্র শ্বেততালিকা",
+    "message": "শুধু বেছে নেওয়া সাইট",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "সেই ট্যাবটি সক্রিয় রাখতে বা Chrome-কে এটি বাতিল করতে দিতে একটি সুইচ চালু/বন্ধ করুন। একটি ম্যানুয়াল সুইচ সাইটের নিয়মকে অগ্রাহ্য করে এবং ট্যাবটি বন্ধ না হওয়া পর্যন্ত স্থায়ী হয়।",
+    "message": "প্রতিটি ট্যাবের জন্য: ▣ মেমরিতে রাখে, ⚡ চলমান রাখে, “সজীব রাখুন” দুটোই করে। ট্যাব বন্ধ না হওয়া পর্যন্ত হাতে করা পরিবর্তন সাইটের নিয়মের চেয়ে অগ্রাধিকার পায়।",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "আপনার অনুসন্ধানের সাথে কোনো ট্যাব মেলে না।",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "এই উইন্ডো · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "উইন্ডো $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "ম্যানুয়াল",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "ঘুমন্ত",
+    "message": "মেমরি থেকে সরানো",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "মাস্টার সুইচ দ্বারা সুরক্ষা বিরতিতে আছে",
+    "message": "“মেমরিতে রাখুন” বিরতিতে আছে — “মেমরিতে রাখুন” কার্ডে আবার চালু করুন",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "সুরক্ষিত — Chrome-কে এই ট্যাবটি বাতিল করতে দিতে টগল করুন",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "বাতিলযোগ্য — এই ট্যাবটি সক্রিয় রাখতে টগল করুন",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "শুধুমাত্র এই সাইটগুলো সক্রিয় রাখা হয়; বাকি সবকিছু বাতিল হতে পারে। একটি ডোমেইন তার সাবডোমেইনের সাথেও মেলে — যেমন <code>example.com</code> <code>mail.example.com</code>-কে অন্তর্ভুক্ত করে।",
+    "message": "Chrome এই সাইটগুলোর ট্যাব মেমরি থেকে সরাবে না। একটি ডোমেন তার সাবডোমেনগুলোও কভার করে: <code>example.com</code> → <code>mail.example.com</code>।",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "এই সাইটগুলো বাতিল হওয়ার অনুমতি আছে। একটি ডোমেইন তার সাবডোমেইনের সাথেও মেলে — যেমন <code>example.com</code> <code>mail.example.com</code>-কে অন্তর্ভুক্ত করে।",
+    "message": "অন্য সব ট্যাব মেমরিতে থাকে; এই সাইটগুলো Chrome মেমরি থেকে সরাতে পারে। একটি ডোমেন তার সাবডোমেনগুলোও কভার করে: <code>example.com</code> → <code>mail.example.com</code>।",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "সরান",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "এই সাইটের জন্য সর্বদা",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$ সর্বদা সক্রিয় রাখুন (একটি সাইট নিয়ম যোগ করে)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$ সর্বদা বাতিল হতে দিন (সাইট নিয়ম আপডেট করে)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "সর্বদা সক্রিয়",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "সর্বদা বাতিলযোগ্য",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ একটি সাইট নিয়ম হিসেবে সংরক্ষিত আছে — সরাতে ক্লিক করুন",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "সরানো হয়েছে — $HOST$ এখন আবার মোডের ডিফল্ট অনুসরণ করে।",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "সংরক্ষিত — $HOST$ এখন সর্বদা সক্রিয় থাকবে। নিচে সাইট নিয়ম দেখুন।",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "সংরক্ষিত — $HOST$ এখন সর্বদা বাতিল হতে পারে। নিচে সাইট নিয়ম দেখুন।",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "এখানে এখনও কিছু নেই।",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "টিপ: <strong>Auto Discardable</strong> কলামটি দেখতে <code>chrome://discards</code> খুলুন — সুরক্ষিত ট্যাবগুলো ✕ দেখায়। দ্রষ্টব্য: সেখানে ম্যানুয়াল বাতিল এখনও কাজ করে; এটি শুধুমাত্র Chrome-এর <em>স্বয়ংক্রিয়</em> মেমরি-সংরক্ষণকারী বাতিল ব্লক করে।",
+    "message": "টিপ: <code>chrome://discards</code> খুলে <strong>Auto Discardable</strong> কলামটি দেখুন — মেমরিতে রাখা ট্যাবগুলো ✕ দেখায়। দ্রষ্টব্য: সেখানে ম্যানুয়ালি মেমরি থেকে সরানো এখনও কাজ করে; এটি শুধু মেমরি সংরক্ষণের জন্য Chrome-এর <em>স্বয়ংক্রিয়ভাবে</em> ট্যাব মেমরি থেকে সরানো আটকায়।",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "গুরুত্বপূর্ণ ট্যাবগুলোকে সক্রিয় রাখুন",
+    "message": "গুরুত্বপূর্ণ ট্যাবগুলোকে সজীব রাখুন",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome-এর Memory Saver RAM খালি করতে নিষ্ক্রিয় ট্যাবগুলো আনলোড করে, তারপর আপনি ফিরে এলে পুনরায় লোড করে। Keep Tabs Alive আপনাকে বেছে নিতে দেয় কোন ট্যাবগুলো সক্রিয় ও প্রস্তুত থাকবে — অবাঞ্ছিত রিলোড ও বাধা প্রতিরোধ করে।",
+    "message": "Chrome দুইভাবে রিসোর্স বাঁচায়: যে ট্যাব আপনি ব্যবহার করছেন না তা মেমরি থেকে সরিয়ে দেয়, আর যে ট্যাব দেখা যায় না তা ধীর করে দেয়। Keep Tabs Alive দুটোই থামায় — ট্যাব ধরে ধরে, শুধু যেখানে আপনি চান।",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "এক-ক্লিকে অ্যাক্সেসের জন্য <strong>পিন করুন</strong>: টুলবারে <span class=\"puzzle\">🧩</span> পাজল আইকনে ক্লিক করুন, তারপর পিনে।",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>যেকোনো সময় যাচাই করুন</strong> <code>chrome://discards</code>-এ — সুরক্ষিত ট্যাবগুলো <em>Auto Discardable</em> কলামে ✕ দেখায়।",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "মাস্টার সুইচ",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "এখান থেকে সমস্ত সুরক্ষা চালু বা বন্ধ করুন। এটি বন্ধ থাকাকালীন, প্রতিটি ট্যাব বাতিল হতে পারে — আপনার নিয়মগুলো রাখা হয়, শুধু বিরতিতে থাকে।",
+    "message": "এখান থেকে সব ট্যাবের জন্য <b>মেমরিতে রাখুন</b> বিরতি দিন বা আবার চালু করুন। বন্ধ থাকলে যেকোনো ট্যাব মেমরি থেকে সরানো হতে পারে — আপনার নিয়মগুলো থেকে যায়, শুধু বিরতিতে থাকে। যে ট্যাবগুলো চলমান রাখা হয়েছে সেগুলো চলতেই থাকে।",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "একটি সুরক্ষা মোড বেছে নিন",
+    "message": "কোন সাইটগুলো মেমরিতে রাখবেন",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>শুধুমাত্র শ্বেততালিকা</b> শুধু আপনার পছন্দের সাইটগুলো সক্রিয় রাখে (মৃদু ডিফল্ট)। <b>সবকিছু সুরক্ষিত করুন</b> আপনি যেগুলো বাদ দেন সেগুলো ছাড়া প্রতিটি ট্যাব সক্রিয় রাখে।",
+    "message": "<b>শুধু বেছে নেওয়া সাইট</b> আপনার তালিকার সাইটগুলোকেই মেমরিতে রাখে (মৃদু, ডিফল্ট বিকল্প)। <b>সব সাইট, এগুলো বাদে…</b> আপনার বাদ দেওয়া সাইট ছাড়া বাকি সব ট্যাব মেমরিতে রাখে। “চলমান রাখুন” এখানে নয়, প্রতিটি ট্যাবের জন্য আলাদাভাবে ঠিক করা হয়।",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "প্রতিটি খোলা ট্যাবের নিজস্ব সুইচ আছে। সেই একক ট্যাবটি সক্রিয় রাখতে বা ঘুমাতে দিতে এটি টগল করুন — একটি এককালীন পছন্দ যা ট্যাবটি বন্ধ না হওয়া পর্যন্ত স্থায়ী হয়। এটি চিরকালের জন্য চান? একটি স্থায়ী সাইট নিয়মে পরিণত করতে সুইচের পাশে <b>এই সাইটের জন্য সর্বদা</b>-তে ক্লিক করুন। ট্যাবে যেতে একটি সারিতে ক্লিক করুন।",
+    "message": "প্রতিটি খোলা ট্যাবের নিজস্ব <b>মেমরিতে রাখুন</b> সুইচ আছে — একবারের পছন্দ, যা ট্যাব বন্ধ না হওয়া পর্যন্ত থাকে। সাইটের হেডারের সুইচটি পুরো সাইটের জন্য একই কাজ করে, স্থায়ীভাবে। ট্যাবে যেতে একটি সারিতে ক্লিক করুন।",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "সাইট অনুযায়ী নিয়ম সেট করুন",
+    "message": "পুরো সাইট মেমরিতে রাখুন",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "একবারে সম্পূর্ণ সাইট সুরক্ষিত (বা বাদ দিতে) করতে এখানে ডোমেইন যোগ করুন। একটি ডোমেইন তার সাবডোমেইনও অন্তর্ভুক্ত করে — <code>example.com</code> <code>mail.example.com</code>-এর সাথে মেলে। এটাই ট্যুর — ? বোতাম থেকে যেকোনো সময় এটি পুনরায় খুলুন।",
+    "message": "পুরো সাইট মেমরিতে রাখতে (বা Chrome-কে সেগুলো মেমরি থেকে সরাতে দিতে) এখানে ডোমেন যোগ করুন। একটি ডোমেন তার সাবডোমেনগুলোও কভার করে — <code>example.com</code> নিয়মটি <code>mail.example.com</code>-এও প্রযোজ্য। ট্যুর এটুকুই — যেকোনো সময় ? বোতাম দিয়ে আবার খুলুন।",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "সর্বদা সম্পূর্ণ $HOST$ সক্রিয় রাখুন (একটি স্থায়ী সাইট নিয়ম)",
+    "message": "$HOST$-এর সবকিছু সবসময় মেমরিতে রাখুন (একটি স্থায়ী সাইট নিয়ম)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "সুরক্ষা বিরতিতে আছে — কোনো ট্যাব সক্রিয় রাখা হচ্ছে না।",
+    "message": "“মেমরিতে রাখুন” বিরতিতে আছে — Chrome যেকোনো ট্যাব মেমরি থেকে সরাতে পারে। “চলমান রাখুন” প্রভাবিত হয় না।",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "এই বন্ধ ট্যাবটি সক্রিয় রাখা বন্ধ করুন (ভুলে যান)",
+    "message": "এই বন্ধ ট্যাবটি মেমরিতে রাখা বন্ধ করুন (ভুলে যান)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "এখানে পিন করা ট্যাবগুলি সক্রিয় রাখা হচ্ছে না।",
+    "message": "এখানে পিন করা ট্যাবগুলো মেমরিতে রাখা হচ্ছে না।",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "এখানে $COUNT$টি ট্যাব সক্রিয় রাখা হয়েছে।",
+    "message": "এখানে $COUNT$টি ট্যাব মেমরিতে রাখা হয়েছে।",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "শুরু করা যায়নি। হয়তো অন্য কোনো এক্সটেনশন বা Chrome ইতিমধ্যে এই ট্যাব ক্যাপচার করছে।",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "মেমরিতে রাখুন",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "চলমান রাখুন",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "আপনার টাইপ করা সবকিছু থেকে যায়",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "লুকানো অবস্থায় তবুও ধীর হয়",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "লুকানো থাকলেও কাজ করে।",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "চ্যাট, টাইমার ও লাইভ ডেটা চলতে থাকে",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "বেশি ব্যাটারি লাগে; Chrome স্ক্রিন শেয়ারিং আইকন দেখায়",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "স্ক্রিন রেকর্ডিং কেন?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“চলমান রাখুন” স্ক্রিন রেকর্ডিং অনুকরণ করে",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome যে ট্যাব আপনি দেখছেন না তা ধীর করে দেয়। তা ঠেকাতে এক্সটেনশনটি এই ট্যাবের স্ক্রিন রেকর্ডিং অনুকরণ করে, ফলে Chrome ট্যাবটিকে ব্যবহারে আছে বলে ধরে।",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "কিছুই রেকর্ড হয় না। ছবিটি কখনও পড়া, সংরক্ষণ বা কোথাও পাঠানো হয় না।",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "শুধু এই ট্যাব, আর শুধু সুইচ চালু থাকা পর্যন্ত। Chrome একটি শেয়ারিং আইকন দেখায়, তাই গোপনে কিছু ঘটে না।",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "যেকোনো সময় বন্ধ করুন, বা শুধু ট্যাবটি বন্ধ করে দিন।",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "বুঝেছি, চালু করুন",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "এখন নয়",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "বুঝেছি",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "এই ট্যাবটি বন্ধ না হওয়া পর্যন্ত মেমরিতে রাখুন",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — ট্যাব চলমান রাখা হচ্ছে",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive এই ট্যাবটি চলমান রাখছে"
+  },
+  "bannerOff": {
+    "message": "বন্ধ করুন"
+  },
+  "bannerHide": {
+    "message": "এই বারটি লুকান (ট্যাবটি চলতেই থাকবে)"
+  },
+  "tagRunning": {
+    "message": "চলমান"
+  },
+  "stopAll": {
+    "message": "সব বন্ধ করুন"
+  },
+  "timerLabel": {
+    "message": "নিজে থেকে বন্ধ হবে:"
+  },
+  "timer30": {
+    "message": "30 মিনিট"
+  },
+  "timer60": {
+    "message": "1 ঘণ্টা"
+  },
+  "timer180": {
+    "message": "3 ঘণ্টা"
+  },
+  "timerNone": {
+    "message": "টাইমার নেই"
+  },
+  "timerLeft": {
+    "message": "$X$ পরে বন্ধ হবে",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "টাইমার নেই — আপনি বন্ধ না করা পর্যন্ত চলবে"
+  },
+  "unitMin": {
+    "message": "মিনিট"
+  },
+  "unitHour": {
+    "message": "ঘণ্টা"
+  },
+  "heldTitle": {
+    "message": "এখন চলমান রাখা ট্যাব"
+  },
+  "heldStop": {
+    "message": "এই ট্যাব চলমান রাখা বন্ধ করুন"
+  },
+  "bannerUntil": {
+    "message": "$X$ পর্যন্ত",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "সময় বাড়ান:"
+  },
+  "memoryStop": {
+    "message": "এই ট্যাব মেমরিতে রাখা বন্ধ করুন"
+  },
+  "rowRunStart": {
+    "message": "চলমান রাখুন — এই ট্যাবের জন্য চালু করুন"
+  },
+  "rowRunStop": {
+    "message": "“চলমান রাখুন” চালু আছে — বন্ধ করতে ক্লিক করুন"
+  },
+  "tourRunTitle": {
+    "message": "একটি পৃষ্ঠা চলমান রাখুন"
+  },
+  "tourRunBody": {
+    "message": "আপনি কি চান কোনো পৃষ্ঠা লুকানো অবস্থায়ও কাজ করে যাক — চ্যাট, টাইমার, লাইভ ডেটা? ওই ট্যাবে এক্সটেনশন উইন্ডো খুলে <b>চলমান রাখুন</b> চালু করুন, অথবা এখানে ট্যাবের সারির বিদ্যুৎ আইকনে ক্লিক করুন। তখন Chrome ট্যাবটিকে ব্যবহারে আছে বলে ধরে, তাই এটি ধীর হয় না। এটি স্ক্রিন রেকর্ডিং অনুকরণ করে — কিছুই রেকর্ড বা পাঠানো হয় না — আর আপনার বেছে নেওয়া সময় শেষ হলে নিজে থেকেই বন্ধ হয়ে যায়।"
+  },
+  "aliveTitle": {
+    "message": "সজীব রাখুন"
+  },
+  "aliveTip": {
+    "message": "এই ট্যাব মেমরিতে রাখুন এবং চলমানও রাখুন — একসাথে দুটোই"
+  },
+  "aliveRowTip": {
+    "message": "মেমরিতে রাখুন + চলমান রাখুন"
+  },
+  "captureReload": {
+    "message": "পৃষ্ঠা রিলোড করুন"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome শুধু ওই ট্যাবের এক্সটেনশন উইন্ডো থেকেই এর অনুমতি দেয়। ট্যাবে গিয়ে Keep Tabs Alive আইকনে ক্লিক করুন।"
+  },
+  "goToTab": {
+    "message": "ট্যাবে যান"
+  },
+  "groupRunPick": {
+    "message": "“চলমান রাখুন” একবারে একটি ট্যাবের জন্য কাজ করে — বিদ্যুৎ আইকনের বোতাম দিয়ে একটি ট্যাব বেছে নিন।"
+  },
+  "groupRunStartTip": {
+    "message": "চলমান রাখুন: লুকানো থাকলেও পৃষ্ঠা পূর্ণ গতিতে কাজ করে"
+  },
+  "groupRunStopTip": {
+    "message": "এই সাইটের ট্যাবগুলোর জন্য “চলমান রাখুন” বন্ধ করুন"
+  },
+  "statRunningNow": {
+    "message": "এখন চলমান"
+  },
+  "aliveOnTab": {
+    "message": "ট্যাবে চালু করুন"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome শুধু ওই ট্যাবের এক্সটেনশন উইন্ডো থেকেই “চলমান রাখুন”-এর অনুমতি দেয় — এই বোতাম সেখানে উইন্ডোটি খুলে দেয়।"
+  },
+  "pendingTitle": {
+    "message": "আরও একটি ক্লিক"
+  },
+  "pendingBody": {
+    "message": "এই উইন্ডো বন্ধ করে টুলবারে Keep Tabs Alive আইকনে (সবুজ ঢাল) ক্লিক করুন — বা পাজল 🧩 আইকনের নিচে দেখুন। “চলমান রাখুন” নিজে থেকেই চালু হবে।"
+  },
+  "handoffTitle": {
+    "message": "ট্যাবে “চলমান রাখুন” চালু করুন"
+  },
+  "handoffTitleAlive": {
+    "message": "ট্যাবে “সজীব রাখুন” চালু করুন"
+  },
+  "handoffStep1": {
+    "message": "আমরা আপনাকে “$TITLE$” ট্যাবে নিয়ে যাব।",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "টুলবারে জ্বলে-নিভে থাকা Keep Tabs Alive আইকনে (সবুজ ঢাল) ক্লিক করুন। দেখতে পাচ্ছেন না? এটি পাজল 🧩 আইকনের নিচে আছে।"
+  },
+  "handoffStep3": {
+    "message": "উইন্ডোটি “চলমান রাখুন” সুইচ দেখিয়ে দেবে — ক্লিক করুন, চালু হয়ে যাবে।"
+  },
+  "handoffStep3Alive": {
+    "message": "উইন্ডোটি “চলমান রাখুন” সুইচ দেখিয়ে দেবে — ক্লিক করুন, ট্যাবটি মেমরিতে থাকবে এবং চলতে থাকবে।"
+  },
+  "runDone": {
+    "message": "হয়ে গেছে — এই ট্যাব চলমান রাখা হয়েছে।"
+  },
+  "aliveDone": {
+    "message": "হয়ে গেছে — এই ট্যাব সজীব রাখা হয়েছে: মেমরিতে এবং চলমান।"
+  },
+  "tapToTurnOn": {
+    "message": "চালু করতে ক্লিক করুন"
+  },
+  "heldMore": {
+    "message": "সব ট্যাব সেটিংসে →"
+  },
+  "groupInMemory": {
+    "message": "মেমরিতে"
+  },
+  "memoryCardSub": {
+    "message": "Chrome এই ট্যাবগুলো মেমরি থেকে সরাবে না — আপনার টাইপ করা সবকিছু থেকে যাবে।"
+  },
+  "runCardSub": {
+    "message": "এই পৃষ্ঠাগুলো লুকানো থাকলেও পূর্ণ গতিতে কাজ করে।"
+  },
+  "colRunning": {
+    "message": "চলমান"
+  },
+  "runEmpty": {
+    "message": "এখন কোনো ট্যাব চলমান রাখা হচ্ছে না। নিচের তালিকায় ⚡ দিয়ে, বা ওই ট্যাবের এক্সটেনশন উইন্ডো থেকে চালু করুন।"
+  },
+  "wMemPromise": {
+    "message": "Chrome ট্যাবটি মেমরি থেকে সরাবে না।"
+  },
+  "wMemDesc": {
+    "message": "ফিরে এলে সবকিছু ঠিক যেখানে রেখেছিলেন সেখানেই পাবেন — রিলোড ছাড়া।"
+  },
+  "wMemGain1": {
+    "message": "টাইপ করা লেখা, খসড়া ও ফর্ম থেকে যায়"
+  },
+  "wMemGain2": {
+    "message": "বিনামূল্যে: বাড়তি ব্যাটারি লাগে না"
+  },
+  "wMemCost": {
+    "message": "লুকানো অবস্থায় পৃষ্ঠা তবুও ধীর হতে পারে"
+  },
+  "wGoodFor": {
+    "message": "যেগুলোর জন্য উপযুক্ত:"
+  },
+  "wMemFor": {
+    "message": "লম্বা ফর্ম, ডকুমেন্ট, মেইল, মাঝেমধ্যে দেখা ড্যাশবোর্ড"
+  },
+  "wRunPromise": {
+    "message": "পৃষ্ঠা পূর্ণ গতিতে কাজ করে — আপনি না দেখলেও।"
+  },
+  "wRunDesc": {
+    "message": "Chrome ট্যাবটিকে ব্যবহারে আছে বলে ধরে, তাই আপনি অন্য কোথাও থাকলেও এর ভেতরে কিছু থামে না।"
+  },
+  "wRunGain1": {
+    "message": "চ্যাট, এআই-এর উত্তর, টাইমার, গান ও লাইভ ডেটা চলতে থাকে"
+  },
+  "wRunGain2": {
+    "message": "চাইলে টাইমারে নিজে থেকেই বন্ধ হয়"
+  },
+  "wRunCost": {
+    "message": "বেশি ব্যাটারি লাগে; Chrome স্ক্রিন শেয়ারিং আইকন দেখায় — কিছুই রেকর্ড হয় না"
+  },
+  "wRunFor": {
+    "message": "চ্যাট ও এআই টুল, ট্রেডিং ও মনিটরিং, টাইমার, আপলোড"
+  },
+  "wBoth": {
+    "message": "<strong>দুটোই দরকার?</strong> “সজীব রাখুন” এক ক্লিকে একটি ট্যাবের দুটি মোডই চালু করে।"
+  },
+  "wStepsTitle": {
+    "message": "কীভাবে চালু করবেন"
+  },
+  "wStep2": {
+    "message": "<strong>যেকোনো ট্যাবে আইকনে ক্লিক করুন</strong> — এর উইন্ডোতে প্রতিটি মোডের জন্য একটি সুইচ আছে।"
+  },
+  "wStep3": {
+    "message": "<strong>সেটিংসে</strong> সব খোলা ট্যাব দেখা যায়, আর পুরো সাইট মেমরিতে রাখা যায়।"
+  },
+  "wPrivacy": {
+    "message": "কিছুই আপনার ব্রাউজারের বাইরে যায় না: ট্র্যাকিং নেই, সার্ভার নেই। “চলমান রাখুন” কখনও পৃষ্ঠা রেকর্ড করে না।"
+  },
+  "timerAdd30": {
+    "message": "+30 মিনিট"
+  },
+  "timerAdd60": {
+    "message": "+1 ঘণ্টা"
+  },
+  "timerAdd180": {
+    "message": "+3 ঘণ্টা"
   }
 }

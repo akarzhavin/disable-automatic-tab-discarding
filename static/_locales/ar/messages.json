@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "عطّل تخلص Chrome من علامات التبويب وامنع إعادة تحميلها غير المرغوبة. قواعد لكل موقع، وتحكم لكل علامة تبويب، وإحصاءات مباشرة.",
+    "message": "عطّل تخلص Chrome من علامات التبويب ولا تدعها تتباطأ في الخلفية. قواعد لكل موقع ولكل علامة تبويب، ومؤقت للإيقاف التلقائي.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "تعطيل التخلص التلقائي من علامات التبويب",
+    "message": "تعطيل إلغاء تحميل علامات التبويب تلقائيًا",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "المفتاح الرئيسي",
+    "message": "إيقاف «الإبقاء في الذاكرة» مؤقتًا أو استئنافه لكل علامات التبويب (لا يتأثر «إبقاء التشغيل»)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "الحماية مُفعّلة",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "متوقف مؤقتًا",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "علامة تبويب محمية",
@@ -59,59 +55,17 @@
     "message": "الصفحات الداخلية ليس لها قواعد للموقع — لا يزال بإمكانك تبديل علامة التبويب هذه.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "لا يمكن إدارة هذه الصفحة",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "غير متاح هنا",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "تُترك الصفحات الداخلية وصفحات الإضافات دائمًا دون تغيير.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "محمي",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "قابل للتخلص",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "حماية هذا الموقع",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "إيقاف حماية هذا الموقع",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "استبعاد هذا الموقع",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "المواقع المحمية",
+    "message": "المواقع المُبقاة في الذاكرة",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "المواقع المستبعدة",
+    "message": "المواقع التي يجوز لـ Chrome إلغاء تحميلها",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "لا توجد مواقع بعد",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ أخرى",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "إزالة $DOMAIN$",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "محمية الآن",
+    "message": "في الذاكرة الآن",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "وضع الحماية",
+    "message": "الإبقاء في الذاكرة: أي المواقع",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "حماية كل شيء",
+    "message": "كل المواقع، باستثناء…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "القائمة المسموح بها فقط",
+    "message": "مواقع مختارة فقط",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "بدّل المفتاح لإبقاء علامة التبويب تلك نشطة أو السماح لـ Chrome بالتخلص منها. يتجاوز المفتاح اليدوي قواعد الموقع ويستمر حتى إغلاق علامة التبويب.",
+    "message": "لكل علامة تبويب: ▣ للإبقاء في الذاكرة، ⚡ لإبقاء التشغيل، و«الإبقاء الكامل» يفعل الاثنين معًا. التغيير اليدوي له الأولوية على قواعد الموقع حتى تُغلق علامة التبويب.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "لا توجد علامات تبويب مطابقة لبحثك.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "هذه النافذة · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "النافذة $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "يدوي",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "نائم",
+    "message": "مُلغاة التحميل",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -262,7 +192,7 @@
     "description": "Tag: this tab is pinned."
   },
   "tagPlaying": {
-    "message": "قيد التشغيل",
+    "message": "يشغّل صوتًا",
     "description": "Tag: this tab is playing audio."
   },
   "untitledTab": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "الحماية متوقفة مؤقتًا بواسطة المفتاح الرئيسي",
+    "message": "«الإبقاء في الذاكرة» متوقف مؤقتًا — أعد تفعيله من بطاقة «الإبقاء في الذاكرة»",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "محمي — بدّل للسماح لـ Chrome بالتخلص من علامة التبويب هذه",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "قابل للتخلص — بدّل لإبقاء علامة التبويب هذه نشطة",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "تبقى هذه المواقع فقط نشطة؛ وقد يتم التخلص من كل ما عداها. يطابق النطاق نطاقاته الفرعية أيضًا — مثلاً <code>example.com</code> يشمل <code>mail.example.com</code>.",
+    "message": "لن يلغي Chrome تحميل علامات تبويب هذه المواقع. يشمل النطاق نطاقاته الفرعية: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "يُسمح بالتخلص من هذه المواقع. يطابق النطاق نطاقاته الفرعية أيضًا — مثلاً <code>example.com</code> يشمل <code>mail.example.com</code>.",
+    "message": "تبقى كل علامات التبويب الأخرى في الذاكرة، أما هذه المواقع فيجوز لـ Chrome إلغاء تحميلها. يشمل النطاق نطاقاته الفرعية: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "إزالة",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "دائمًا لهذا الموقع",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "أبقِ $HOST$ نشطًا دائمًا (يضيف قاعدة موقع)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "اسمح دائمًا بالتخلص من $HOST$ (يحدّث قواعد الموقع)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "نشط دائمًا",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "قابل للتخلص دائمًا",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "تم حفظ $HOST$ كقاعدة موقع — انقر لإزالتها",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "تمت الإزالة — يتبع $HOST$ الآن إعداد الوضع الافتراضي من جديد.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "تم الحفظ — سيبقى $HOST$ الآن نشطًا دائمًا. راجع قواعد المواقع أدناه.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "تم الحفظ — يمكن الآن التخلص من $HOST$ دائمًا. راجع قواعد المواقع أدناه.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "لا يوجد شيء هنا بعد.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "نصيحة: افتح <code>chrome://discards</code> لرؤية عمود <strong>Auto Discardable</strong> — تعرض علامات التبويب المحمية ✕. ملاحظة: لا يزال التخلص اليدوي هناك يعمل؛ هذا يحظر فقط التخلص <em>التلقائي</em> لتوفير الذاكرة في Chrome.",
+    "message": "نصيحة: افتح <code>chrome://discards</code> لرؤية عمود <strong>Auto Discardable</strong> — تعرض علامات التبويب المُبقاة في الذاكرة ✕. ملاحظة: يظل إلغاء التحميل اليدوي هناك يعمل؛ الإضافة تحظر فقط إلغاء تحميل Chrome <em>التلقائي</em> لتوفير الذاكرة.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -430,7 +280,7 @@
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "يُفرغ موفّر الذاكرة في Chrome علامات التبويب الخاملة لتحرير ذاكرة الوصول العشوائي، ثم يعيد تحميلها عند عودتك. يتيح لك Keep Tabs Alive اختيار علامات التبويب التي تبقى نشطة وجاهزة — مما يمنع عمليات إعادة التحميل والمقاطعات غير المرغوب فيها.",
+    "message": "يوفّر Chrome الموارد بطريقتين: يلغي تحميل علامات التبويب التي لا تستخدمها، ويبطّئ علامات التبويب التي لا تراها. يوقف Keep Tabs Alive الأمرين كليهما، لكل علامة تبويب على حدة وفي الأماكن التي تريدها فقط.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>ثبّته</strong> للوصول بنقرة واحدة: انقر على أيقونة اللغز <span class=\"puzzle\">🧩</span> في شريط الأدوات، ثم على الدبوس.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>تحقّق في أي وقت</strong> على <code>chrome://discards</code> — تُظهر علامات التبويب المحمية ✕ في عمود <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "المفتاح الرئيسي",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "شغّل أو أوقف كل الحماية من هنا. أثناء إيقافه، يمكن التخلص من كل علامة تبويب — تُحفظ قواعدك، لكنها متوقفة فقط.",
+    "message": "من هنا يمكنك إيقاف <b>الإبقاء في الذاكرة</b> مؤقتًا أو استئنافه لكل علامات التبويب. وأثناء إيقاف المفتاح يجوز إلغاء تحميل أي علامة تبويب؛ قواعدك محفوظة ولكنها متوقفة مؤقتًا. أما علامات التبويب المفعّل لها «إبقاء التشغيل» فتواصل العمل.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "اختر وضع حماية",
+    "message": "أي المواقع تُبقى في الذاكرة",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>القائمة المسموح بها فقط</b> تبقي المواقع التي تختارها فقط نشطة (الإعداد الافتراضي اللطيف). <b>حماية كل شيء</b> تبقي كل علامة تبويب نشطة باستثناء التي تستبعدها.",
+    "message": "<b>مواقع مختارة فقط</b> يُبقي في الذاكرة المواقع التي تدرجها فقط (الوضع الافتراضي الأخف). أما <b>كل المواقع، باستثناء…</b> فيُبقي كل علامات التبويب في الذاكرة عدا المواقع التي تستثنيها. و«إبقاء التشغيل» يُضبط لكل علامة تبويب على حدة، لا من هنا.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "كل علامة تبويب مفتوحة لها مفتاحها الخاص. بدّله لإبقاء تلك العلامة الواحدة نشطة أو دعها تنام — خيار لمرة واحدة يستمر حتى إغلاق العلامة. تريده دائمًا؟ انقر <b>دائمًا لهذا الموقع</b> بجوار المفتاح لتحويله إلى قاعدة موقع دائمة. انقر صفًا للانتقال إلى علامة التبويب.",
+    "message": "لكل علامة تبويب مفتوحة مفتاح <b>الإبقاء في الذاكرة</b> الخاص بها، وهو اختيار لمرة واحدة يدوم حتى تُغلق علامة التبويب. أما المفتاح في رأس الموقع فيفعل الأمر نفسه للموقع كله، بشكل دائم. انقر على صف للانتقال إلى علامة التبويب.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "حدّد القواعد حسب الموقع",
+    "message": "إبقاء مواقع كاملة في الذاكرة",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "أضف النطاقات هنا لحماية (أو استبعاد) مواقع كاملة دفعة واحدة. يشمل النطاق نطاقاته الفرعية أيضًا — <code>example.com</code> يطابق <code>mail.example.com</code>. هذه هي الجولة — أعد فتحها في أي وقت من زر ?.",
+    "message": "أضف النطاقات هنا لإبقاء مواقع كاملة في الذاكرة (أو للسماح لـ Chrome بإلغاء تحميلها). يشمل النطاق نطاقاته الفرعية أيضًا — فالنطاق <code>example.com</code> يطابق <code>mail.example.com</code>. هذه نهاية الجولة — يمكنك فتحها مجددًا في أي وقت بالزر ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -544,7 +390,7 @@
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "إبقاء كامل $HOST$ نشطًا دائمًا (قاعدة موقع دائمة)",
+    "message": "إبقاء كامل $HOST$ في الذاكرة دائمًا (قاعدة موقع دائمة)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "الحماية متوقفة مؤقتًا — لا يتم الإبقاء على أي علامة تبويب نشطة.",
+    "message": "«الإبقاء في الذاكرة» متوقف مؤقتًا — قد يلغي Chrome تحميل أي علامة تبويب. «إبقاء التشغيل» لا يتأثر.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "التوقف عن إبقاء علامة التبويب المغلقة هذه نشطة (نسيانها)",
+    "message": "التوقف عن إبقاء علامة التبويب المغلقة هذه في الذاكرة (نسيانها)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "علامات التبويب المثبتة هنا لا يتم إبقاؤها نشطة.",
+    "message": "علامات التبويب المثبتة هنا غير مُبقاة في الذاكرة.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "يتم إبقاء $COUNT$ علامة تبويب نشطة هنا.",
+    "message": "$COUNT$ من علامات التبويب هنا مُبقاة في الذاكرة.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "تعذّر البدء. ربما توجد إضافة أخرى أو Chrome نفسه يلتقط علامة التبويب هذه بالفعل.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "الإبقاء في الذاكرة",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "إبقاء التشغيل",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "يبقى كل ما كتبته",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "تظل تتباطأ في الخلفية",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "تعمل حتى وهي مخفية.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "تستمر المحادثات والمؤقتات والبيانات المباشرة",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "استهلاك أكبر للبطارية؛ يعرض Chrome أيقونة مشاركة الشاشة",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "لماذا تسجيل الشاشة؟",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "«إبقاء التشغيل» يحاكي تسجيل الشاشة",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "يبطّئ Chrome علامات التبويب التي لا تراها. ولمنع ذلك، تحاكي الإضافة تسجيل شاشة لعلامة التبويب هذه، فيعاملها Chrome على أنها قيد الاستخدام.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "لا يُسجَّل أي شيء. لا تُقرأ الصورة ولا تُحفظ ولا تُرسل إلى أي مكان.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "علامة التبويب هذه فقط، وفقط ما دام المفتاح مفعّلًا. يعرض Chrome أيقونة مشاركة، فلا شيء يحدث في الخفاء.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "أوقفه في أي وقت، أو أغلق علامة التبويب ببساطة.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "فهمت، فعّل",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "ليس الآن",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "حسنًا",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "إبقاء علامة التبويب هذه في الذاكرة حتى تُغلق",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — توجد علامات تبويب مُبقاة قيد التشغيل",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "يُبقي Keep Tabs Alive علامة التبويب هذه قيد التشغيل"
+  },
+  "bannerOff": {
+    "message": "إيقاف"
+  },
+  "bannerHide": {
+    "message": "إخفاء هذا الشريط (تبقى علامة التبويب قيد التشغيل)"
+  },
+  "tagRunning": {
+    "message": "قيد التشغيل"
+  },
+  "stopAll": {
+    "message": "إيقاف الكل"
+  },
+  "timerLabel": {
+    "message": "إيقاف تلقائي بعد"
+  },
+  "timer30": {
+    "message": "30 د"
+  },
+  "timer60": {
+    "message": "1 س"
+  },
+  "timer180": {
+    "message": "3 س"
+  },
+  "timerNone": {
+    "message": "بلا مؤقت"
+  },
+  "timerLeft": {
+    "message": "يتوقف خلال $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "بلا مؤقت — يستمر حتى توقفه"
+  },
+  "unitMin": {
+    "message": "د"
+  },
+  "unitHour": {
+    "message": "س"
+  },
+  "heldTitle": {
+    "message": "قيد التشغيل الآن"
+  },
+  "heldStop": {
+    "message": "إيقاف إبقاء علامة التبويب هذه قيد التشغيل"
+  },
+  "bannerUntil": {
+    "message": "حتى $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "تمديد بمقدار"
+  },
+  "memoryStop": {
+    "message": "إيقاف إبقاء علامة التبويب هذه في الذاكرة"
+  },
+  "rowRunStart": {
+    "message": "إبقاء التشغيل — تفعيله لعلامة التبويب هذه"
+  },
+  "rowRunStop": {
+    "message": "«إبقاء التشغيل» قيد التفعيل — انقر لإيقافه"
+  },
+  "tourRunTitle": {
+    "message": "أبقِ صفحة قيد التشغيل"
+  },
+  "tourRunBody": {
+    "message": "هل تريد أن تواصل صفحة عملها وهي مخفية، كمحادثة أو مؤقت أو بيانات مباشرة؟ افتح نافذة الإضافة في علامة التبويب تلك وفعّل <b>إبقاء التشغيل</b>، أو انقر هنا على أيقونة البرق في صف علامة التبويب. عندها يعامل Chrome علامة التبويب على أنها قيد الاستخدام فلا يبطّئها. وهو يحاكي تسجيل الشاشة — لا يُسجَّل شيء ولا يُرسل — ويتوقف تلقائيًا عند انتهاء المؤقت الذي تختاره."
+  },
+  "aliveTitle": {
+    "message": "الإبقاء الكامل"
+  },
+  "aliveTip": {
+    "message": "إبقاء علامة التبويب هذه في الذاكرة وقيد التشغيل — الاثنان معًا"
+  },
+  "aliveRowTip": {
+    "message": "الإبقاء في الذاكرة + إبقاء التشغيل"
+  },
+  "captureReload": {
+    "message": "إعادة تحميل الصفحة"
+  },
+  "runNeedsPopup": {
+    "message": "لا يسمح Chrome بذلك إلا من نافذة الإضافة في علامة التبويب نفسها. انتقل إلى علامة التبويب وانقر على أيقونة Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "انتقال إلى علامة التبويب"
+  },
+  "groupRunPick": {
+    "message": "«إبقاء التشغيل» يعمل لعلامة تبويب واحدة في كل مرة — اختر علامة التبويب بزر البرق الخاص بها."
+  },
+  "groupRunStartTip": {
+    "message": "إبقاء التشغيل: تواصل الصفحة العمل بكامل السرعة وهي مخفية"
+  },
+  "groupRunStopTip": {
+    "message": "إيقاف «إبقاء التشغيل» لعلامات تبويب هذا الموقع"
+  },
+  "statRunningNow": {
+    "message": "قيد التشغيل"
+  },
+  "aliveOnTab": {
+    "message": "التفعيل في علامة التبويب"
+  },
+  "aliveOnTabTip": {
+    "message": "لا يسمح Chrome بـ«إبقاء التشغيل» إلا من نافذة الإضافة في علامة التبويب نفسها — وهذا الزر يفتحها هناك."
+  },
+  "pendingTitle": {
+    "message": "نقرة واحدة أخرى"
+  },
+  "pendingBody": {
+    "message": "أغلق هذه النافذة وانقر على أيقونة Keep Tabs Alive (الدرع الأخضر) في شريط الأدوات — أو تحت أيقونة اللغز 🧩. سيُفعَّل «إبقاء التشغيل» تلقائيًا."
+  },
+  "handoffTitle": {
+    "message": "تفعيل «إبقاء التشغيل» في علامة التبويب"
+  },
+  "handoffTitleAlive": {
+    "message": "تفعيل «الإبقاء الكامل» في علامة التبويب"
+  },
+  "handoffStep1": {
+    "message": "سننقلك إلى «$TITLE$».",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "انقر على أيقونة Keep Tabs Alive الوامضة في شريط الأدوات (الدرع الأخضر). لا تراها؟ إنها تحت أيقونة اللغز 🧩."
+  },
+  "handoffStep3": {
+    "message": "ستشير النافذة إلى مفتاح «إبقاء التشغيل» — انقر عليه ويبدأ العمل."
+  },
+  "handoffStep3Alive": {
+    "message": "ستشير النافذة إلى مفتاح «إبقاء التشغيل» — انقر عليه فتبقى علامة التبويب في الذاكرة وقيد التشغيل."
+  },
+  "runDone": {
+    "message": "تم — تبقى علامة التبويب هذه قيد التشغيل."
+  },
+  "aliveDone": {
+    "message": "تم — تبقى علامة التبويب هذه في الذاكرة وقيد التشغيل معًا."
+  },
+  "tapToTurnOn": {
+    "message": "انقر للتفعيل"
+  },
+  "heldMore": {
+    "message": "كل علامات التبويب في الإعدادات ←"
+  },
+  "groupInMemory": {
+    "message": "في الذاكرة"
+  },
+  "memoryCardSub": {
+    "message": "لن يلغي Chrome تحميل علامات التبويب هذه — يبقى ما كتبته."
+  },
+  "runCardSub": {
+    "message": "تواصل هذه الصفحات العمل بكامل السرعة حتى وهي مخفية."
+  },
+  "colRunning": {
+    "message": "قيد التشغيل"
+  },
+  "runEmpty": {
+    "message": "لا توجد علامة تبويب قيد إبقاء التشغيل. فعّل الوضع لعلامة تبويب بزر ⚡ في القائمة أدناه، أو من نافذة الإضافة في علامة التبويب تلك."
+  },
+  "wMemPromise": {
+    "message": "لن يلغي Chrome تحميل علامة التبويب."
+  },
+  "wMemDesc": {
+    "message": "عُد إليها وستجد كل شيء كما تركته تمامًا — دون إعادة تحميل."
+  },
+  "wMemGain1": {
+    "message": "يبقى النص المكتوب والمسودات والنماذج"
+  },
+  "wMemGain2": {
+    "message": "مجاني: دون استهلاك إضافي للبطارية"
+  },
+  "wMemCost": {
+    "message": "عند إخفائها قد تظل الصفحة تتباطأ"
+  },
+  "wGoodFor": {
+    "message": "مناسب لـ:"
+  },
+  "wMemFor": {
+    "message": "النماذج الطويلة والمستندات والبريد ولوحات المعلومات التي تتفقدها بين حين وآخر"
+  },
+  "wRunPromise": {
+    "message": "تواصل الصفحة العمل بكامل السرعة — حتى عندما لا تراها."
+  },
+  "wRunDesc": {
+    "message": "يعامل Chrome علامة التبويب على أنها قيد الاستخدام، فلا يتوقف فيها شيء وأنت في مكان آخر."
+  },
+  "wRunGain1": {
+    "message": "تستمر المحادثات وإجابات الذكاء الاصطناعي والمؤقتات والموسيقى والبيانات المباشرة"
+  },
+  "wRunGain2": {
+    "message": "يتوقف تلقائيًا بمؤقت، إن شئت"
+  },
+  "wRunCost": {
+    "message": "يستهلك بطارية أكثر؛ يعرض Chrome أيقونة مشاركة الشاشة — لا شيء يُسجَّل"
+  },
+  "wRunFor": {
+    "message": "المحادثات وأدوات الذكاء الاصطناعي والتداول والمراقبة والمؤقتات وعمليات الرفع"
+  },
+  "wBoth": {
+    "message": "<strong>تحتاج إلى الاثنين؟</strong> «الإبقاء الكامل» يفعّل الوضعين لعلامة تبويب بنقرة واحدة."
+  },
+  "wStepsTitle": {
+    "message": "كيفية التفعيل"
+  },
+  "wStep2": {
+    "message": "<strong>في أي علامة تبويب، انقر على الأيقونة</strong> — في نافذتها مفتاح لكل وضع."
+  },
+  "wStep3": {
+    "message": "<strong>في الإعدادات</strong> ترى كل علامات التبويب المفتوحة، ويمكنك إبقاء مواقع كاملة في الذاكرة."
+  },
+  "wPrivacy": {
+    "message": "لا شيء يغادر متصفحك: لا تتبع ولا خوادم. «إبقاء التشغيل» لا يسجّل الصفحة أبدًا."
+  },
+  "timerAdd30": {
+    "message": "+30 د"
+  },
+  "timerAdd60": {
+    "message": "+1 س"
+  },
+  "timerAdd180": {
+    "message": "+3 س"
   }
 }

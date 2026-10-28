@@ -17,11 +17,13 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import http from 'node:http';
+import { snapshotUi } from './snap.mjs';
 
 const PROMO = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(PROMO, '..');
 const LOCALES_DIR = path.join(ROOT, 'static', '_locales');
-const SLIDES = [1, 2, 3, 4, 5, 6];
+const SLIDES = [1, 2, 3, 4, 5];
 
 let argv = process.argv.slice(2);
 let jobs = Math.min(os.cpus().length, 8);
@@ -29,6 +31,18 @@ if (argv[0] === '-j') { jobs = parseInt(argv[1], 10); argv = argv.slice(2); }
 const locales = argv.length
   ? argv
   : fs.readdirSync(LOCALES_DIR).filter((d) => fs.statSync(path.join(LOCALES_DIR, d)).isDirectory());
+
+// The UI in the slides is the shipped extension: build it, serve dist/, snapshot the pages.
+const DIST = path.join(ROOT, 'dist');
+execFileSync('npm', ['run', 'build'], { cwd: ROOT, stdio: 'ignore' });
+const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.svg': 'image/svg+xml' };
+const server = http.createServer((req, res) => {
+  const file = path.join(DIST, decodeURIComponent(new URL(req.url, 'http://x').pathname));
+  if (!file.startsWith(DIST) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); return res.end(); }
+  res.writeHead(200, { 'content-type': MIME[path.extname(file)] || 'application/octet-stream' });
+  fs.createReadStream(file).pipe(res);
+}).listen(0);
+const BASE = `http://127.0.0.1:${server.address().port}`;
 
 const browser = await chromium.launch({ args: ['--allow-file-access-from-files'] });
 
@@ -38,6 +52,7 @@ async function renderLocale(loc) {
   fs.mkdirSync(build, { recursive: true });
   fs.mkdirSync(path.join(PROMO, 'shots', loc), { recursive: true });
   fs.mkdirSync(path.join(PROMO, 'out', loc), { recursive: true });
+  await snapshotUi(browser, BASE, DIST, loc, path.join(build, 'ui'));
   execFileSync('node', [path.join(PROMO, 'gen.cjs'), loc, build], { stdio: 'ignore' });
 
   const ctx = await browser.newContext({
@@ -69,5 +84,6 @@ async function worker() {
 }
 await Promise.all(Array.from({ length: Math.min(jobs, locales.length) }, worker));
 await browser.close();
+server.close();
 try { fs.rmdirSync(path.join(PROMO, 'build')); } catch {}
 console.log('done');

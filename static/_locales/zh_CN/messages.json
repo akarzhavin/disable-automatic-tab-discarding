@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "禁用 Chrome 的标签页丢弃，防止标签页被意外重新加载。支持按站点规则、按标签页控制以及实时统计。",
+    "message": "禁用 Chrome 标签页丢弃，让标签页在后台也不卡顿。支持按站点和按标签页控制，并带自动关闭定时器。",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -24,16 +24,12 @@
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "总开关",
+    "message": "暂停或恢复所有标签页的“保留在内存”（不影响“保持运行”）",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "保护已开启",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "已暂停",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "个标签页受保护",
@@ -44,7 +40,7 @@
     "description": "Heading for the current-tab card in the popup."
   },
   "thisWebsite": {
-    "message": "此网站",
+    "message": "此站点",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -56,62 +52,20 @@
     "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
   },
   "internalPageTabOnly": {
-    "message": "内部页面没有网站规则——但你仍可以单独切换此标签页。",
+    "message": "内部页面没有站点规则——但你仍可以单独切换此标签页。",
     "description": "Hint when the current page is internal: only the tab switch works."
-  },
-  "pageCantBeManaged": {
-    "message": "无法管理此页面",
-    "description": "Shown when the current tab is an internal/extension page."
   },
   "notAvailableHere": {
     "message": "此处不可用",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "内部页面和扩展页面始终保持不变。",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "受保护",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "可丢弃",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "保护此站点",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "停止保护此站点",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "排除此站点",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "受保护的站点",
+    "message": "保留在内存中的站点",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "已排除的站点",
+    "message": "Chrome 可丢弃的站点",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "暂无站点",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "还有 $COUNT$ 个",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "移除 $DOMAIN$",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "当前受保护",
+    "message": "个标签页在内存中",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "保护模式",
+    "message": "保留在内存：哪些站点",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "保护全部",
+    "message": "全部站点（可排除）",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "仅白名单",
+    "message": "仅选定站点",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "拨动开关即可保持该标签页活动，或让 Chrome 丢弃它。手动开关会覆盖站点规则，并在标签页关闭前一直有效。",
+    "message": "针对每个标签页：▣ 保留在内存，⚡ 保持运行，“保持活跃”两者兼顾。在标签页关闭前，手动更改优先于站点规则。",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "没有匹配搜索的标签页。",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "当前窗口 · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "窗口 $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "手动",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "已休眠",
+    "message": "已丢弃",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "保护已被总开关暂停",
+    "message": "“保留在内存”已暂停——请在“保留在内存”卡片中重新开启",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "受保护 — 拨动以让 Chrome 丢弃此标签页",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "可丢弃 — 拨动以保持此标签页活动",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "仅这些站点保持活动；其余站点可能被丢弃。域名也会匹配其子域名 — 例如 <code>example.com</code> 涵盖 <code>mail.example.com</code>。",
+    "message": "Chrome 不会丢弃这些站点的标签页。域名涵盖其子域名：<code>example.com</code> → <code>mail.example.com</code>。",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "这些站点允许被丢弃。域名也会匹配其子域名 — 例如 <code>example.com</code> 涵盖 <code>mail.example.com</code>。",
+    "message": "其他所有标签页都保留在内存中；Chrome 可以丢弃这些站点。域名涵盖其子域名：<code>example.com</code> → <code>mail.example.com</code>。",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "移除",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "始终用于此站点",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "始终保持 $HOST$ 活动（添加一条站点规则）",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "始终允许丢弃 $HOST$（更新站点规则）",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "始终保持活动",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "始终可丢弃",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ 已保存为站点规则 — 点击即可移除",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "已移除 — $HOST$ 现在重新遵循模式默认设置。",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "已保存 — $HOST$ 现在将始终保持活动。请查看下方的站点规则。",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "已保存 — $HOST$ 现在始终可被丢弃。请查看下方的站点规则。",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "这里还没有内容。",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "提示：打开 <code>chrome://discards</code> 查看 <strong>Auto Discardable</strong> 列 — 受保护的标签页显示 ✕。注意：在那里手动丢弃仍然有效；本扩展只阻止 Chrome 为节省内存而进行的<em>自动</em>丢弃。",
+    "message": "提示：打开 <code>chrome://discards</code> 查看 <strong>Auto Discardable</strong> 列——保留在内存中的标签页显示 ✕。注意：在那里手动丢弃仍然有效；本扩展程序只阻止 Chrome 为节省内存而进行的<em>自动</em>丢弃。",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "让重要的标签页保持活动",
+    "message": "让重要的标签页保持活跃",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome 的内存节省程序会卸载闲置标签页以释放内存，待你返回时再重新加载它们。Keep Tabs Alive 让你选择哪些标签页保持活动并随时可用——避免不必要的重新加载和中断。",
+    "message": "Chrome 通过两种方式节省资源：丢弃你未使用的标签页，并减慢你看不到的标签页。Keep Tabs Alive 可以阻止这两种行为——逐个标签页，只在你需要的地方生效。",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>固定它</strong>以便一键访问：点击工具栏中的拼图图标 <span class=\"puzzle\">🧩</span>，然后点击图钉。",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>随时验证</strong>，访问 <code>chrome://discards</code>——受保护的标签页会在 <em>Auto Discardable</em> 列中显示 ✕。",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "总开关",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "在此处开启或关闭全部保护。关闭时，每个标签页都可能被丢弃 — 你的规则会被保留，只是暂停。",
+    "message": "在此暂停或恢复所有标签页的<b>“保留在内存”</b>。开关关闭期间，任何标签页都可能被丢弃——你的规则会保留，只是暂停生效。已开启“保持运行”的标签页会继续运行。",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "选择一种保护模式",
+    "message": "哪些站点保留在内存中",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>仅白名单</b>只让你选择的站点保持活动（温和的默认选项）。<b>保护全部</b>让每个标签页保持活动，但排除你指定的站点。",
+    "message": "<b>仅选定站点</b>只将你列出的站点保留在内存中（较温和的默认设置）。<b>全部站点（可排除）</b>会将除你排除的站点之外的所有标签页保留在内存中。“保持运行”需针对单个标签页开启，不在此处设置。",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "每个打开的标签页都有各自的开关。拨动它，让单个标签页保持活动或让它休眠 — 这是一次性选择，在标签页关闭前一直有效。想要永久生效？点击开关旁的<b>始终用于此站点</b>，将其变为永久的站点规则。点击某一行可跳转到该标签页。",
+    "message": "每个打开的标签页都有自己的<b>“保留在内存”</b>开关——一次性选择，持续到标签页关闭。站点标题处的开关对整个站点执行相同操作，且永久有效。点击某一行即可跳转到该标签页。",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "按站点设置规则",
+    "message": "将整个站点保留在内存中",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "在此处添加域名，可一次性保护（或排除）整个站点。域名也涵盖其子域名 — <code>example.com</code> 匹配 <code>mail.example.com</code>。导览到此结束 — 随时可通过 ? 按钮重新打开。",
+    "message": "在此添加域名，即可将整个站点保留在内存中（或允许 Chrome 丢弃它们）。域名同样涵盖其子域名——<code>example.com</code> 可匹配 <code>mail.example.com</code>。导览到此结束——随时可通过 ? 按钮重新打开。",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -540,11 +386,11 @@
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "保持活动",
+    "message": "保留在内存",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "始终保持整个 $HOST$ 处于活动状态（永久站点规则）",
+    "message": "始终将整个 $HOST$ 保留在内存中（永久站点规则）",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,7 +408,7 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "保护已暂停——没有标签页保持活动。",
+    "message": "“保留在内存”已暂停——Chrome 可能丢弃任何标签页。“保持运行”不受影响。",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
@@ -570,7 +416,7 @@
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "停止保持此已关闭标签页的活动状态（忘记它）",
+    "message": "不再将此已关闭的标签页保留在内存中（忘记它）",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
@@ -578,11 +424,11 @@
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "此处固定的标签页未保持活动状态。",
+    "message": "此处固定的标签页不会保留在内存中。",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "此处有 $COUNT$ 个标签页保持活动状态。",
+    "message": "此处有 $COUNT$ 个标签页保留在内存中。",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "无法启动。可能是其他扩展程序或 Chrome 本身已在捕获此标签页。",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "保留在内存",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "保持运行",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "你输入的内容都会保留",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "隐藏时仍会变慢",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "即使隐藏也能正常工作。",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "聊天、计时器和实时数据持续运行",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "更耗电；Chrome 会显示屏幕共享图标",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "为什么要录制屏幕？",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“保持运行”会模拟屏幕录制",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome 会减慢你看不到的标签页。为避免这种情况，扩展程序会模拟对此标签页的屏幕录制，让 Chrome 认为它正在使用中。",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "不会录制任何内容。画面绝不会被读取、保存或发送到任何地方。",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "仅限此标签页，且仅在开关开启时。Chrome 会显示共享图标，因此不会有任何操作在暗中进行。",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "随时可以关掉此功能，或直接关闭标签页。",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "我明白了，开启",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "暂不",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "知道了",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "将此标签页保留在内存中，直到关闭",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — 正在保持标签页运行",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive 正在保持此标签页运行"
+  },
+  "bannerOff": {
+    "message": "关闭"
+  },
+  "bannerHide": {
+    "message": "隐藏此栏（标签页仍保持运行）"
+  },
+  "tagRunning": {
+    "message": "运行中"
+  },
+  "stopAll": {
+    "message": "全部停止"
+  },
+  "timerLabel": {
+    "message": "定时关闭"
+  },
+  "timer30": {
+    "message": "30 分钟"
+  },
+  "timer60": {
+    "message": "1 小时"
+  },
+  "timer180": {
+    "message": "3 小时"
+  },
+  "timerNone": {
+    "message": "无定时"
+  },
+  "timerLeft": {
+    "message": "将在 $X$ 后关闭",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "无定时——持续运行，直到你关闭"
+  },
+  "unitMin": {
+    "message": "分钟"
+  },
+  "unitHour": {
+    "message": "小时"
+  },
+  "heldTitle": {
+    "message": "当前保持运行"
+  },
+  "heldStop": {
+    "message": "停止保持此标签页运行"
+  },
+  "bannerUntil": {
+    "message": "至 $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "延长"
+  },
+  "memoryStop": {
+    "message": "停止将此标签页保留在内存中"
+  },
+  "rowRunStart": {
+    "message": "“保持运行”——为此标签页开启"
+  },
+  "rowRunStop": {
+    "message": "“保持运行”已开启——点击关闭"
+  },
+  "tourRunTitle": {
+    "message": "让页面保持运行"
+  },
+  "tourRunBody": {
+    "message": "需要页面在隐藏时继续工作——聊天、计时器、实时数据？在该标签页上打开扩展程序窗口并开启<b>“保持运行”</b>，或点击此处该标签页所在行的闪电图标。Chrome 随后会认为该标签页正在使用，因此不会将其减慢。它只是模拟屏幕录制——不会录制或发送任何内容——并会在你设定的时间到达后自动关闭。"
+  },
+  "aliveTitle": {
+    "message": "保持活跃"
+  },
+  "aliveTip": {
+    "message": "将此标签页保留在内存并保持运行——两者同时进行"
+  },
+  "aliveRowTip": {
+    "message": "“保留在内存” + “保持运行”"
+  },
+  "captureReload": {
+    "message": "重新加载页面"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome 只允许在该标签页上从扩展程序窗口执行此操作。请前往该标签页并点击 Keep Tabs Alive 图标。"
+  },
+  "goToTab": {
+    "message": "转到标签页"
+  },
+  "groupRunPick": {
+    "message": "“保持运行”一次只对一个标签页生效——请用闪电按钮选择标签页。"
+  },
+  "groupRunStartTip": {
+    "message": "“保持运行”：页面即使隐藏也会全速运行"
+  },
+  "groupRunStopTip": {
+    "message": "关闭此站点标签页的“保持运行”"
+  },
+  "statRunningNow": {
+    "message": "个标签页保持运行"
+  },
+  "aliveOnTab": {
+    "message": "在标签页中开启"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome 只允许在该标签页上从扩展程序窗口使用“保持运行”——此按钮会在那里打开它。"
+  },
+  "pendingTitle": {
+    "message": "再点击一次"
+  },
+  "pendingBody": {
+    "message": "关闭此窗口，然后点击工具栏中的 Keep Tabs Alive 图标（绿色盾牌）——或在拼图图标 🧩 下方。“保持运行”会自动开启。"
+  },
+  "handoffTitle": {
+    "message": "在标签页中开启“保持运行”"
+  },
+  "handoffTitleAlive": {
+    "message": "在标签页中开启“保持活跃”"
+  },
+  "handoffStep1": {
+    "message": "我们将带你切换到“$TITLE$”。",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "点击工具栏中闪烁的 Keep Tabs Alive 图标（绿色盾牌）。没看到？它在拼图图标 🧩 下方。"
+  },
+  "handoffStep3": {
+    "message": "窗口会指向“保持运行”开关——点击它即可开启。"
+  },
+  "handoffStep3Alive": {
+    "message": "窗口会指向“保持运行”开关——点击它，该标签页就会保留在内存并保持运行。"
+  },
+  "runDone": {
+    "message": "完成——此标签页将保持运行。"
+  },
+  "aliveDone": {
+    "message": "完成——此标签页已保持活跃：保留在内存并保持运行。"
+  },
+  "tapToTurnOn": {
+    "message": "点击开启"
+  },
+  "heldMore": {
+    "message": "所有标签页都在设置中 →"
+  },
+  "groupInMemory": {
+    "message": "在内存中"
+  },
+  "memoryCardSub": {
+    "message": "Chrome 不会丢弃这些标签页——你输入的内容都会保留。"
+  },
+  "runCardSub": {
+    "message": "这些页面即使隐藏也会全速运行。"
+  },
+  "colRunning": {
+    "message": "运行中"
+  },
+  "runEmpty": {
+    "message": "当前没有保持运行的标签页。请在下方列表中用 ⚡ 为标签页开启，或在该标签页上从扩展程序窗口开启。"
+  },
+  "wMemPromise": {
+    "message": "Chrome 不会丢弃该标签页。"
+  },
+  "wMemDesc": {
+    "message": "回来时一切如初——无需重新加载。"
+  },
+  "wMemGain1": {
+    "message": "输入的文字、草稿和表单都会保留"
+  },
+  "wMemGain2": {
+    "message": "免费：不额外耗电"
+  },
+  "wMemCost": {
+    "message": "隐藏时，页面仍可能变慢"
+  },
+  "wGoodFor": {
+    "message": "适用于："
+  },
+  "wMemFor": {
+    "message": "长表单、文档、邮件、你偶尔查看的仪表盘"
+  },
+  "wRunPromise": {
+    "message": "页面全速运行——即使你看不到它。"
+  },
+  "wRunDesc": {
+    "message": "Chrome 认为该标签页正在使用，因此你在别处时其中的内容不会暂停。"
+  },
+  "wRunGain1": {
+    "message": "聊天、AI 回复、计时器、音乐和实时数据持续运行"
+  },
+  "wRunGain2": {
+    "message": "如有需要，可通过定时自动关闭"
+  },
+  "wRunCost": {
+    "message": "更耗电；Chrome 会显示其屏幕共享图标——不会录制任何内容"
+  },
+  "wRunFor": {
+    "message": "聊天和 AI 工具、交易和监控、计时器、上传"
+  },
+  "wBoth": {
+    "message": "<strong>两者都需要？</strong>“保持活跃”可一键为标签页开启两种模式。"
+  },
+  "wStepsTitle": {
+    "message": "如何开启"
+  },
+  "wStep2": {
+    "message": "<strong>在任意标签页上点击图标</strong>——扩展程序窗口中每种模式都有一个开关。"
+  },
+  "wStep3": {
+    "message": "<strong>在设置中</strong>可查看所有打开的标签页，并将整个站点保留在内存中。"
+  },
+  "wPrivacy": {
+    "message": "没有任何内容会离开你的浏览器：无跟踪，无服务器。“保持运行”绝不会录制页面。"
+  },
+  "timerAdd30": {
+    "message": "+30 分钟"
+  },
+  "timerAdd60": {
+    "message": "+1 小时"
+  },
+  "timerAdd180": {
+    "message": "+3 小时"
   }
 }
