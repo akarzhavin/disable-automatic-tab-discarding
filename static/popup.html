@@ -8,32 +8,69 @@
   <link rel="stylesheet" href="css/popup.css" />
 </head>
 <body>
-  <div class="app" id="app">
+  <div class="app" id="app" data-view="main">
     <!-- Header -->
     <header class="header">
       <div class="brand">
         <img class="brand__logo" src="icons/icon48.png" alt="" width="22" height="22" />
+        <span class="live" id="liveBadge" hidden data-i18n-title="heldTitle" title="Kept running now">
+          <span class="live__ring"></span><span class="live__ring live__ring--2"></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" fill="currentColor"/></svg>
+        </span>
         <span class="brand__name" data-i18n="brandName">Keep Tabs Alive</span>
       </div>
-      <label class="switch switch--lg" data-i18n-title="masterSwitchTitle" title="Master switch">
-        <input type="checkbox" id="masterToggle" />
-        <span class="switch__track"><span class="switch__thumb"></span></span>
-      </label>
+      <div class="header__right">
+
+        <label class="alive" data-i18n-title="aliveTip" title="Keep this tab in memory and keep it running — both at once">
+          <span class="alive__label" data-i18n="aliveTitle" data-i18n-title="aliveTitle">Keep alive</span>
+          <span class="switch">
+            <input type="checkbox" id="aliveToggle" />
+            <span class="switch__track"><span class="switch__thumb"></span></span>
+          </span>
+        </label>
+      </div>
     </header>
 
-    <!-- Status card -->
-    <section class="card status" id="statusCard">
-      <div class="status__main">
-        <span class="status__count" id="protectedCount">0</span>
-        <span class="status__label" data-i18n="tabsProtected">tabs protected</span>
+    <!-- Every tab currently held by Keep running -->
+    <section class="card held" id="heldCard" hidden>
+      <div class="held__sect" id="runSect" hidden>
+        <h2 class="held__title held__title--run">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" fill="currentColor"/></svg>
+          <span data-i18n="runTitle">Keep running</span> <span class="held__count" id="heldCount">0</span>
+        </h2>
+        <ul class="held__list" id="heldList"></ul>
       </div>
-      <div class="status__pill" id="statusPill">
-        <span class="dot"></span><span id="statusText">Active</span>
+      <div class="held__sect" id="memSect" hidden>
+        <h2 class="held__title held__title--mem">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5" stroke="currentColor" stroke-width="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1" fill="currentColor"/></svg>
+          <span data-i18n="memoryTitle">Keep in memory</span> <span class="held__count" id="memCount">0</span>
+        </h2>
+        <ul class="held__list" id="memList"></ul>
       </div>
+      <button type="button" class="held__more" id="heldMore" data-i18n="heldMore">All tabs are in Settings →</button>
     </section>
 
-    <!-- Current tab: site-level + tab-level switches -->
-    <section class="card site">
+
+    <!-- Keep in memory: Chrome won't unload the tab -->
+    <section class="card feature feature--memory" id="memCard" data-state="off">
+      <header class="feature__head">
+        <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5" stroke="currentColor" stroke-width="1.7"/><rect x="9.5" y="9.5" width="5" height="5" rx="1" fill="currentColor"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <div class="feature__titles">
+          <h2 class="feature__title" data-i18n="memoryTitle">Keep in memory</h2>
+          <p class="feature__sub feature__sub--tab">
+            <span class="ctl__scope ctl__scope--tab" data-i18n="thisTab">This tab</span>
+            <span id="tabPath">—</span>
+          </p>
+        </div>
+        <label class="switch switch--lg" data-i18n-title="memoryTabTip" title="Keep this tab in memory until it is closed">
+          <input type="checkbox" id="tabToggle" />
+          <span class="switch__track"><span class="switch__thumb"></span></span>
+        </label>
+      </header>
+      <ul class="facts">
+        <li class="fact fact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="memoryGain">Everything you typed stays</span></li>
+        <li class="fact fact--cost"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 12h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span data-i18n="memoryCost">Still slows down when hidden</span></li>
+      </ul>
       <div class="ctl">
         <div class="ctl__text">
           <span class="ctl__head">
@@ -50,26 +87,75 @@
           <span class="switch__track"><span class="switch__thumb"></span></span>
         </label>
       </div>
-      <div class="ctl">
-        <div class="ctl__text">
-          <span class="ctl__head">
-            <span class="ctl__label" data-i18n="thisTab">This tab</span>
-            <span class="ctl__scope ctl__scope--tab" data-i18n="scopeTemporary">Temporary</span>
-          </span>
-          <span class="ctl__value"><span id="tabPath">—</span></span>
-        </div>
-        <label class="switch">
-          <input type="checkbox" id="tabToggle" />
-          <span class="switch__track"><span class="switch__thumb"></span></span>
-        </label>
-      </div>
       <p class="site__hint" id="siteHint" hidden></p>
+      <p class="site__hint" id="pausedHint" hidden data-i18n="popupSummaryPaused">Protection is paused — no tabs are kept alive.</p>
     </section>
 
-    <!-- Current-tab protection summary -->
-    <section class="card note" id="protectNote" data-state="off">
-      <span class="note__icon" id="protectIcon"></span>
-      <span class="note__text" id="protectText">—</span>
+    <!-- Keep running: the page itself keeps working while hidden -->
+    <section class="card feature feature--run" id="runCard" data-on="false">
+      <header class="feature__head">
+        <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+        <div class="feature__titles">
+          <h2 class="feature__title">
+            <span data-i18n="runTitle">Keep running</span>
+            <button type="button" class="help" id="runHelp" data-i18n-title="runHelpTitle" data-i18n-aria-label="runHelpTitle" title="Why a screen recording?" aria-label="Why a screen recording?"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M9.6 9.4a2.5 2.5 0 114 2c-.9.6-1.6 1.1-1.6 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="16.9" r="1" fill="currentColor"/></svg></button>
+          </h2>
+          <p class="feature__sub" data-i18n="runSub">Works even when hidden.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="runToggle" />
+          <span class="switch__track"><span class="switch__thumb"></span></span>
+        </label>
+      </header>
+      <ul class="facts">
+        <li class="fact fact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="runGain">Chats, timers and live data keep going</span></li>
+        <li class="fact fact--cost"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 12h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span data-i18n="runCost">Uses more battery; Chrome shows a screen-sharing icon</span></li>
+      </ul>
+      <p class="done-note" id="doneNote" hidden role="status"></p>
+      <!-- One click left: Chrome only lets Keep running start from the toolbar icon -->
+      <div class="pending-step" id="pendingStep" hidden role="status">
+        <span class="pending-step__icon" aria-hidden="true">
+          <img src="icons/icon32.png" alt="" width="26" height="26" />
+        </span>
+        <div class="pending-step__text">
+          <strong data-i18n="pendingTitle">One more click</strong>
+          <span data-i18n="pendingBody">Close this window and click the Keep Tabs Alive icon (the green shield) in the toolbar — or under the puzzle-piece 🧩. Keep running turns on by itself.</span>
+        </div>
+      </div>
+      <p class="timer__left" id="timerLeft" hidden></p>
+      <div class="timer" id="timerPick" role="radiogroup" data-i18n-aria-label="timerLabel" aria-label="Auto-off after">
+        <span class="timer__label" id="timerLabel" data-i18n="timerLabel">Auto-off after</span>
+        <div class="timer__chips">
+          <button type="button" class="chip" role="radio" data-min="30" data-i18n="timer30" id="chip30">30 min</button>
+          <button type="button" class="chip" role="radio" data-min="60" data-i18n="timer60" id="chip60">1 h</button>
+          <button type="button" class="chip" role="radio" data-min="180" data-i18n="timer180" id="chip180">3 h</button>
+          <button type="button" class="chip" role="radio" data-min="0" data-i18n="timerNone" id="chip0">No timer</button>
+        </div>
+      </div>
+      <p class="site__hint" id="captureNote" hidden></p>
+    </section>
+
+    <!-- Explainer + first-use confirmation for the simulated screen recording -->
+    <section class="card feature feature--run info" id="runInfo">
+      <header class="feature__head">
+        <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M9.6 9.4a2.5 2.5 0 114 2c-.9.6-1.6 1.1-1.6 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="16.9" r="1" fill="currentColor"/></svg></span>
+        <div class="feature__titles">
+          <h2 class="feature__title" id="infoTitle">—</h2>
+        </div>
+      </header>
+      <p class="info__lead" data-i18n="runHelpLead">Chrome slows down tabs you can't see. To prevent that, the extension simulates a screen recording of this tab, so Chrome treats it as in use.</p>
+      <ul class="facts info__points">
+        <li class="fact fact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="runHelpPoint1">Nothing is recorded. The picture is never read, saved or sent anywhere.</span></li>
+        <li class="fact fact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="runHelpPoint2">Only this tab, and only while the switch is on. Chrome shows a sharing icon, so nothing happens in secret.</span></li>
+        <li class="fact fact--gain"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="runHelpPoint3">Turn it off any time, or just close the tab.</span></li>
+      </ul>
+      <div class="info__actions info__actions--consent">
+        <button type="button" class="btn btn--ghost" id="consentCancel" data-i18n="consentCancel">Not now</button>
+        <button type="button" class="btn btn--warn" id="consentOk" data-i18n="consentOk">I understand, turn on</button>
+      </div>
+      <div class="info__actions info__actions--help">
+        <button type="button" class="btn btn--ghost" id="helpClose" data-i18n="helpClose">Got it</button>
+      </div>
     </section>
 
     <!-- Footer -->

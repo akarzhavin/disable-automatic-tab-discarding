@@ -1,0 +1,1433 @@
+{
+  "en": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Stop Chrome from<br>reloading your tabs",
+      "sub": "Chrome's Memory Saver discards idle tabs and reloads them from scratch when you switch back. Keep the tabs that matter exactly where you left them."
+    },
+    "slide2": {
+      "eyebrow": "KEEP RUNNING",
+      "title": "Pages that keep working<br>when you can't see them",
+      "sub": "Chats, AI answers, timers and live data don't pause in the background. Turn it on per tab, with an auto-off timer. Nothing is recorded."
+    },
+    "slide3": {
+      "eyebrow": "TWO MODES",
+      "title": "Keep in memory.<br>Keep running.",
+      "sub": "Tabs kept in memory are never unloaded; tabs kept running work at full speed even when hidden. Rules for whole sites, one Keep alive switch for both."
+    },
+    "slide4": {
+      "eyebrow": "EVERY TAB, ONE PLACE",
+      "title": "See and control every open tab",
+      "sub": "A live list of all your tabs, grouped by site and searchable. Keep any tab in memory, keep it running, or do both with one switch."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATE BY DESIGN",
+      "title": "Lightweight, private,<br>in 50+ languages",
+      "sub": "No tracking, no analytics, no servers — everything stays in your browser. Light, dark or auto theme, fully localized."
+    }
+  },
+  "af": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Keer dat Chrome jou<br>oortjies herlaai",
+      "sub": "Chrome se Geheuebespaarder gooi ledige oortjies weg en herlaai hulle van voor af wanneer jy terugskakel. Hou die oortjies wat saak maak presies waar jy hulle gelos het."
+    },
+    "slide2": {
+      "eyebrow": "HOU AAN DIE GANG",
+      "title": "Bladsye wat aanhou werk<br>as jy hulle nie sien nie",
+      "sub": "Kletse, KI-antwoorde, timers en lewendige data pouseer nie in die agtergrond nie. Skakel dit per oortjie aan, met 'n outo-af-timer. Niks word aangeteken nie."
+    },
+    "slide3": {
+      "eyebrow": "TWEE MODUSSE",
+      "title": "Hou in geheue.<br>Hou aan die gang.",
+      "sub": "Oortjies in geheue word nooit ontlaai nie; oortjies wat aan die gang gehou word, werk teen volle spoed selfs wanneer hulle versteek is. Reëls vir hele webwerwe, een «Hou lewend»-skakelaar vir albei."
+    },
+    "slide4": {
+      "eyebrow": "ELKE OORTJIE, ÉÉN PLEK",
+      "title": "Sien en beheer elke oop oortjie",
+      "sub": "'n Lewendige lys van al jou oortjies, gegroepeer volgens webwerf en deursoekbaar. Hou enige oortjie in geheue, hou dit aan die gang, of albei met een skakelaar."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAAT VAN ONTWERP",
+      "title": "Lig, privaat,<br>in 50+ tale",
+      "sub": "Geen nasporing, geen analise, geen bedieners nie — alles bly in jou blaaier. Lig-, donker- of outo-tema, ten volle gelokaliseer."
+    }
+  },
+  "am": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome ትሮችዎን<br>እንዳይጭን ያስቁሙት",
+      "sub": "የChrome ማህደረ ትውስታ ቆጣቢ ስራ ፈት ትሮችን ያስወግዳል እና ሲመለሱ ከባዶ እንደገና ይጭናቸዋል። አስፈላጊ የሆኑትን ትሮች በትክክል በተዉበት ቦታ ያቆዩ።"
+    },
+    "slide2": {
+      "eyebrow": "እየሰራ አቆይ",
+      "title": "ገጾች ባይታዩም<br>መስራታቸውን ይቀጥላሉ",
+      "sub": "ውይይቶች፣ የAI ምላሾች፣ ሰዓት ቆጣሪዎችና ቀጥታ ውሂብ ከበስተጀርባ አይቆሙም። ለእያንዳንዱ ትር ያብሩ፣ ከራስ-ሰር ማጥፊያ ሰዓት ቆጣሪ ጋር። ምንም አይቀዳም።"
+    },
+    "slide3": {
+      "eyebrow": "ሁለት ሁነታዎች",
+      "title": "በማህደረ ትውስታ አቆይ።<br>እየሰራ አቆይ።",
+      "sub": "በማህደረ ትውስታ የሚቆዩ ትሮች በፍጹም አይጣሉም፤ እየሰሩ የሚቆዩ ትሮች ተደብቀውም በሙሉ ፍጥነት ይሰራሉ። ለሙሉ ጣቢያዎች ሕጎች፣ ለሁለቱም አንድ «በሕይወት አቆይ» መቀየሪያ።"
+    },
+    "slide4": {
+      "eyebrow": "ሁሉም ትሮች በአንድ ቦታ",
+      "title": "እያንዳንዱን ክፍት ትር ይመልከቱ እና ይቆጣጠሩ",
+      "sub": "የሁሉም ትሮችዎ ቀጥታ ዝርዝር፣ በጣቢያ የተቧደነ እና ሊፈለግ የሚችል። ማንኛውንም ትር በማህደረ ትውስታ ያቆዩ፣ እየሰራ ያቆዩ፣ ወይም ሁለቱንም በአንድ መቀየሪያ ያድርጉ።"
+    },
+    "slide5": {
+      "eyebrow": "በንድፍ የግል",
+      "title": "ቀላል፣ የግል፣<br>በ50+ ቋንቋዎች",
+      "sub": "ክትትል የለም፣ ትንታኔ የለም፣ አገልጋዮች የሉም — ሁሉም ነገር በአሳሽዎ ውስጥ ይቆያል። ብሩህ፣ ጨለማ ወይም ራስ-ሰር ገጽታ፣ ሙሉ በሙሉ የተተረጎመ።"
+    }
+  },
+  "ar": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "أوقِف Chrome عن<br>إعادة تحميل علامات تبويبك",
+      "sub": "يتخلص موفّر الذاكرة في Chrome من علامات التبويب الخاملة ويعيد تحميلها من جديد عند رجوعك إليها. أبقِ علامات التبويب المهمة تمامًا حيث تركتها."
+    },
+    "slide2": {
+      "eyebrow": "إبقاء التشغيل",
+      "title": "صفحات تواصل العمل<br>حتى حين لا تراها",
+      "sub": "الدردشات وردود الذكاء الاصطناعي والمؤقتات والبيانات الحية لا تتوقف في الخلفية. فعّلها لكل علامة تبويب مع مؤقت للإيقاف التلقائي. لا يُسجَّل أي شيء."
+    },
+    "slide3": {
+      "eyebrow": "وضعان",
+      "title": "الإبقاء في الذاكرة.<br>إبقاء التشغيل.",
+      "sub": "علامات التبويب المُبقاة في الذاكرة لا يُلغى تحميلها أبدًا، والمُبقاة قيد التشغيل تعمل بكامل سرعتها حتى وهي مخفية. قواعد لمواقع كاملة، ومفتاح «الإبقاء الكامل» واحد للوضعين."
+    },
+    "slide4": {
+      "eyebrow": "كل علامات التبويب في مكان واحد",
+      "title": "شاهد كل علامة تبويب مفتوحة وتحكّم بها",
+      "sub": "قائمة حية بجميع علامات التبويب، مجمّعة حسب الموقع وقابلة للبحث. أبقِ أي علامة في الذاكرة، أو أبقِ تشغيلها، أو فعّل الاثنين بمفتاح واحد."
+    },
+    "slide5": {
+      "eyebrow": "خصوصية بالتصميم",
+      "title": "خفيف وخاص،<br>بأكثر من 50 لغة",
+      "sub": "لا تتبّع، ولا تحليلات، ولا خوادم — يبقى كل شيء داخل متصفحك. سمة فاتحة أو داكنة أو تلقائية، ومُعرّب بالكامل."
+    }
+  },
+  "bg": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Спрете Chrome да<br>презарежда разделите ви",
+      "sub": "Спестяването на памет на Chrome освобождава неактивните раздели и ги презарежда отначало, когато се върнете. Запазете важните раздели точно там, където сте ги оставили."
+    },
+    "slide2": {
+      "eyebrow": "БЕЗ ЗАСПИВАНЕ",
+      "title": "Страниците работят,<br>дори когато не се виждат",
+      "sub": "Чатове, отговори на ИИ, таймери и данни на живо не спират на заден план. Включвайте за отделен раздел, с таймер за автоматично изключване. Нищо не се записва."
+    },
+    "slide3": {
+      "eyebrow": "ДВА РЕЖИМА",
+      "title": "Запазване в паметта.<br>Без заспиване.",
+      "sub": "Разделите в паметта никога не се освобождават, а тези без заспиване работят с пълна скорост дори скрити. Правила за цели сайтове и един превключвател „Поддържане живо“ за двата режима."
+    },
+    "slide4": {
+      "eyebrow": "ВСИЧКИ РАЗДЕЛИ НА ЕДНО МЯСТО",
+      "title": "Виждайте и управлявайте всеки отворен раздел",
+      "sub": "Списък на живо с всички раздели, групирани по сайт, с търсене. Запазвайте раздел в паметта, не го оставяйте да заспива или включете и двете с един превключвател."
+    },
+    "slide5": {
+      "eyebrow": "ПОВЕРИТЕЛНОСТ ПО ДИЗАЙН",
+      "title": "Лек, поверителен,<br>на 50+ езика",
+      "sub": "Без проследяване, без анализи, без сървъри — всичко остава в браузъра ви. Светла, тъмна или автоматична тема, напълно локализиран."
+    }
+  },
+  "bn": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome-কে আপনার ট্যাব<br>পুনরায় লোড করা থেকে থামান",
+      "sub": "Chrome-এর Memory Saver নিষ্ক্রিয় ট্যাব বাতিল করে এবং আপনি ফিরে এলে সেগুলো শুরু থেকে পুনরায় লোড করে। গুরুত্বপূর্ণ ট্যাবগুলো ঠিক যেখানে রেখেছিলেন সেখানেই রাখুন।"
+    },
+    "slide2": {
+      "eyebrow": "চলমান রাখুন",
+      "title": "চোখের আড়ালেও পেজ<br>কাজ করতে থাকে",
+      "sub": "চ্যাট, AI-এর উত্তর, টাইমার ও লাইভ ডেটা ব্যাকগ্রাউন্ডে থেমে যায় না। প্রতিটি ট্যাবের জন্য আলাদাভাবে চালু করুন, সঙ্গে স্বয়ংক্রিয় বন্ধের টাইমার। কিছুই রেকর্ড হয় না।"
+    },
+    "slide3": {
+      "eyebrow": "দুটি মোড",
+      "title": "মেমরিতে রাখুন।<br>চলমান রাখুন।",
+      "sub": "মেমরিতে রাখা ট্যাব কখনও সরানো হয় না; চলমান রাখা ট্যাব লুকানো অবস্থাতেও পূর্ণ গতিতে চলে। পুরো সাইটের জন্য নিয়ম, আর দুটির জন্যই একটি “সজীব রাখুন” সুইচ।"
+    },
+    "slide4": {
+      "eyebrow": "সব ট্যাব, এক জায়গায়",
+      "title": "খোলা প্রতিটি ট্যাব দেখুন ও নিয়ন্ত্রণ করুন",
+      "sub": "সব ট্যাবের লাইভ তালিকা, সাইট অনুযায়ী সাজানো ও অনুসন্ধানযোগ্য। যেকোনো ট্যাব মেমরিতে রাখুন, চলমান রাখুন, কিংবা একটি সুইচে দুটোই করুন।"
+    },
+    "slide5": {
+      "eyebrow": "নকশায় গোপনীয়তা",
+      "title": "হালকা, গোপন,<br>50+ ভাষায়",
+      "sub": "কোনো ট্র্যাকিং নেই, অ্যানালিটিক্স নেই, সার্ভার নেই — সবকিছু আপনার ব্রাউজারেই থাকে। হালকা, গাঢ় বা স্বয়ংক্রিয় থিম, সম্পূর্ণ স্থানীয়করণ করা।"
+    }
+  },
+  "ca": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Evita que Chrome<br>recarregui les pestanyes",
+      "sub": "L'Estalvi de memòria de Chrome descarta les pestanyes inactives i les torna a carregar des de zero quan hi tornes. Mantén les pestanyes que importen exactament on les vas deixar."
+    },
+    "slide2": {
+      "eyebrow": "MANTENIR EN EXECUCIÓ",
+      "title": "Pàgines que segueixen treballant<br>encara que no les vegis",
+      "sub": "Xats, respostes d'IA, temporitzadors i dades en directe no s'aturen en segon pla. Activa-ho per pestanya, amb temporitzador d'apagada automàtica. No es registra res."
+    },
+    "slide3": {
+      "eyebrow": "DOS MODES",
+      "title": "Mantenir en memòria.<br>Mantenir en execució.",
+      "sub": "Les pestanyes en memòria no es descarten mai; les que es mantenen en execució van a tota velocitat fins i tot amagades. Regles per a llocs sencers i un sol interruptor «Mantenir viva» per als dos modes."
+    },
+    "slide4": {
+      "eyebrow": "TOTES LES PESTANYES, UN SOL LLOC",
+      "title": "Veu i controla cada pestanya oberta",
+      "sub": "Una llista en directe de totes les pestanyes, agrupades per lloc i amb cerca. Mantén qualsevol pestanya en memòria, en execució o totes dues coses amb un sol interruptor."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT PER DISSENY",
+      "title": "Lleuger, privat,<br>en 50+ idiomes",
+      "sub": "Sense seguiment, sense analítiques, sense servidors — tot es queda al teu navegador. Tema clar, fosc o automàtic, totalment localitzat."
+    }
+  },
+  "cs": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Zabraňte Chromu<br>ve znovunačítání karet",
+      "sub": "Spořič paměti v Chromu zahazuje nečinné karty a po přepnutí zpět je načítá od začátku. Udržte důležité karty přesně tam, kde jste je nechali."
+    },
+    "slide2": {
+      "eyebrow": "NECHAT BĚŽET",
+      "title": "Stránky fungují dál,<br>i když je nevidíte",
+      "sub": "Chaty, odpovědi AI, časovače a živá data se na pozadí nezastaví. Zapněte to pro jednotlivou kartu, s časovačem automatického vypnutí. Nic se nezaznamenává."
+    },
+    "slide3": {
+      "eyebrow": "DVA REŽIMY",
+      "title": "Držet v paměti.<br>Nechat běžet.",
+      "sub": "Karty držené v paměti se nikdy neuvolní, karty ponechané v běhu jedou naplno, i když jsou skryté. Pravidla pro celé weby a jeden přepínač Držet naživu pro oba režimy."
+    },
+    "slide4": {
+      "eyebrow": "VŠECHNY KARTY NA JEDNOM MÍSTĚ",
+      "title": "Přehled a kontrola nad každou otevřenou kartou",
+      "sub": "Živý seznam všech karet, seskupený podle webů a s vyhledáváním. Držte libovolnou kartu v paměti, nechte ji běžet, nebo obojí jedním přepínačem."
+    },
+    "slide5": {
+      "eyebrow": "SOUKROMÍ V ZÁKLADU",
+      "title": "Lehký, soukromý,<br>ve více než 50 jazycích",
+      "sub": "Žádné sledování, žádná analytika, žádné servery — vše zůstává ve vašem prohlížeči. Světlý, tmavý nebo automatický motiv, plně lokalizováno."
+    }
+  },
+  "da": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Stop Chrome fra<br>at genindlæse dine faner",
+      "sub": "Chromes Hukommelsesbesparelse fjerner inaktive faner og indlæser dem forfra, når du vender tilbage. Hold de faner, der betyder noget, præcis hvor du forlod dem."
+    },
+    "slide2": {
+      "eyebrow": "HOLD KØRENDE",
+      "title": "Sider, der bliver ved med at virke,<br>selv når du ikke ser dem",
+      "sub": "Chats, AI-svar, timere og live-data går ikke i stå i baggrunden. Slå det til pr. fane, med en timer til automatisk slukning. Intet bliver optaget."
+    },
+    "slide3": {
+      "eyebrow": "TO TILSTANDE",
+      "title": "Hold i hukommelsen.<br>Hold kørende.",
+      "sub": "Faner i hukommelsen bliver aldrig fjernet; faner, der holdes kørende, kører med fuld fart, også når de er skjult. Regler for hele websteder og én »Hold i live«-kontakt til begge."
+    },
+    "slide4": {
+      "eyebrow": "ALLE FANER ÉT STED",
+      "title": "Se og styr hver eneste åbne fane",
+      "sub": "En live liste over alle dine faner, grupperet efter websted og med søgning. Hold en fane i hukommelsen, hold den kørende, eller gør begge dele med én kontakt."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT FRA BUNDEN",
+      "title": "Let, privat<br>og på 50+ sprog",
+      "sub": "Ingen sporing, ingen analyse, ingen servere — alt bliver i din browser. Lyst, mørkt eller automatisk tema, fuldt oversat."
+    }
+  },
+  "de": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Verhindere, dass Chrome<br>deine Tabs neu lädt",
+      "sub": "Chromes Speichersparmodus verwirft inaktive Tabs und lädt sie beim Zurückwechseln von Grund auf neu. Halte die wichtigen Tabs genau dort, wo du sie verlassen hast."
+    },
+    "slide2": {
+      "eyebrow": "Weiterlaufen lassen",
+      "title": "Seiten arbeiten weiter,<br>auch wenn du sie nicht siehst",
+      "sub": "Chats, KI-Antworten, Timer und Live-Daten stehen im Hintergrund nicht still. Pro Tab aktivierbar, mit Auto-Aus-Timer. Es wird nichts aufgezeichnet."
+    },
+    "slide3": {
+      "eyebrow": "Zwei Modi",
+      "title": "Im Speicher halten.<br>Weiterlaufen lassen.",
+      "sub": "Tabs im Speicher werden nie entladen; weiterlaufende Tabs arbeiten auch versteckt mit voller Geschwindigkeit. Regeln für ganze Websites, ein Schalter „Am Leben halten“ für beides."
+    },
+    "slide4": {
+      "eyebrow": "Alle Tabs an einem Ort",
+      "title": "Alle offenen Tabs im Blick und unter Kontrolle",
+      "sub": "Eine Live-Liste aller Tabs, nach Website gruppiert und durchsuchbar. Halte jeden Tab im Speicher, lass ihn weiterlaufen oder beides mit einem Schalter."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT VON GRUND AUF",
+      "title": "Leicht, privat,<br>in 50+ Sprachen",
+      "sub": "Kein Tracking, keine Analyse, keine Server — alles bleibt in deinem Browser. Helles, dunkles oder automatisches Design, vollständig lokalisiert."
+    }
+  },
+  "el": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Σταματήστε το Chrome<br>από το να επαναφορτώνει τις καρτέλες σας",
+      "sub": "Η Εξοικονόμηση μνήμης του Chrome απορρίπτει τις ανενεργές καρτέλες και τις φορτώνει από την αρχή όταν επιστρέφετε. Κρατήστε τις καρτέλες που έχουν σημασία ακριβώς εκεί που τις αφήσατε."
+    },
+    "slide2": {
+      "eyebrow": "ΔΙΑΤΗΡΗΣΗ ΛΕΙΤΟΥΡΓΙΑΣ",
+      "title": "Σελίδες που συνεχίζουν να δουλεύουν<br>ακόμα κι όταν δεν τις βλέπετε",
+      "sub": "Συνομιλίες, απαντήσεις ΤΝ, χρονόμετρα και ζωντανά δεδομένα δεν σταματούν στο παρασκήνιο. Ενεργοποιήστε το ανά καρτέλα, με χρονοδιακόπτη αυτόματης απενεργοποίησης. Τίποτα δεν καταγράφεται."
+    },
+    "slide3": {
+      "eyebrow": "ΔΥΟ ΛΕΙΤΟΥΡΓΙΕΣ",
+      "title": "Διατήρηση στη μνήμη.<br>Διατήρηση λειτουργίας.",
+      "sub": "Οι καρτέλες που διατηρούνται στη μνήμη δεν απορρίπτονται ποτέ· όσες διατηρούνται σε λειτουργία τρέχουν με πλήρη ταχύτητα ακόμα και κρυμμένες. Κανόνες για ολόκληρους ιστότοπους και ένας διακόπτης «Πλήρης διατήρηση» και για τα δύο."
+    },
+    "slide4": {
+      "eyebrow": "ΟΛΕΣ ΟΙ ΚΑΡΤΕΛΕΣ ΣΕ ΕΝΑ ΣΗΜΕΙΟ",
+      "title": "Δείτε και ελέγξτε κάθε ανοιχτή καρτέλα",
+      "sub": "Ζωντανή λίστα όλων των καρτελών, ομαδοποιημένων ανά ιστότοπο και με αναζήτηση. Διατηρήστε οποιαδήποτε καρτέλα στη μνήμη, σε λειτουργία ή και τα δύο με έναν διακόπτη."
+    },
+    "slide5": {
+      "eyebrow": "ΙΔΙΩΤΙΚΟ ΕΞ ΑΡΧΗΣ",
+      "title": "Ελαφρύ, ιδιωτικό,<br>σε 50+ γλώσσες",
+      "sub": "Καμία παρακολούθηση, κανένα analytics, κανένας διακομιστής — όλα παραμένουν στο πρόγραμμα περιήγησής σας. Φωτεινό, σκούρο ή αυτόματο θέμα, πλήρως μεταφρασμένο."
+    }
+  },
+  "es": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Evita que Chrome<br>recargue tus pestañas",
+      "sub": "El Ahorro de memoria de Chrome descarta las pestañas inactivas y las recarga desde cero cuando vuelves. Mantén las pestañas que importan justo donde las dejaste."
+    },
+    "slide2": {
+      "eyebrow": "MANTENER EN MARCHA",
+      "title": "Páginas que siguen funcionando<br>aunque no las veas",
+      "sub": "Chats, respuestas de IA, temporizadores y datos en vivo no se detienen en segundo plano. Actívalo por pestaña, con temporizador de apagado automático. No se registra nada."
+    },
+    "slide3": {
+      "eyebrow": "DOS MODOS",
+      "title": "Mantener en memoria.<br>Mantener en marcha.",
+      "sub": "Las pestañas en memoria nunca se descartan; las que se mantienen en marcha funcionan a plena velocidad aunque estén ocultas. Reglas para sitios enteros y un solo interruptor «Mantener viva» para ambos."
+    },
+    "slide4": {
+      "eyebrow": "TODAS LAS PESTAÑAS EN UN SITIO",
+      "title": "Mira y controla cada pestaña abierta",
+      "sub": "Una lista en vivo de todas tus pestañas, agrupadas por sitio y con búsqueda. Mantén cualquier pestaña en memoria, en marcha o ambas cosas con un solo interruptor."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR DISEÑO",
+      "title": "Ligero, privado<br>y en más de 50 idiomas",
+      "sub": "Sin seguimiento, sin analíticas, sin servidores: todo se queda en tu navegador. Tema claro, oscuro o automático, totalmente localizado."
+    }
+  },
+  "es_419": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Evita que Chrome<br>recargue tus pestañas",
+      "sub": "El Ahorro de memoria de Chrome descarta las pestañas inactivas y las recarga desde cero cuando vuelves. Mantén las pestañas que importan justo donde las dejaste."
+    },
+    "slide2": {
+      "eyebrow": "MANTENER EN EJECUCIÓN",
+      "title": "Páginas que siguen trabajando<br>aunque no las veas",
+      "sub": "Los chats, las respuestas de IA, los temporizadores y los datos en vivo no se detienen en segundo plano. Actívalo por pestaña, con temporizador de apagado automático. No se graba nada."
+    },
+    "slide3": {
+      "eyebrow": "DOS MODOS",
+      "title": "Mantener en memoria.<br>Mantener en ejecución.",
+      "sub": "Las pestañas en memoria nunca se descartan; las que se mantienen en ejecución van a toda velocidad aunque estén ocultas. Reglas para sitios completos y un solo interruptor “Mantener viva” para ambos."
+    },
+    "slide4": {
+      "eyebrow": "TODAS LAS PESTAÑAS, EN UN SOLO LUGAR",
+      "title": "Mira y controla cada pestaña abierta",
+      "sub": "Una lista en vivo de todas tus pestañas, agrupadas por sitio y con búsqueda. Mantén cualquier pestaña en memoria, en ejecución, o ambas cosas con un solo interruptor."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR DISEÑO",
+      "title": "Liviano, privado<br>y en más de 50 idiomas",
+      "sub": "Sin seguimiento, sin analíticas, sin servidores: todo se queda en tu navegador. Tema claro, oscuro o automático, totalmente localizado."
+    }
+  },
+  "et": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Takista Chrome'il<br>vahekaarte taaslaadida",
+      "sub": "Chrome'i mälusäästja hülgab jõude seisvad vahekaardid ja laadib need tagasi tulles nullist uuesti. Hoia olulised vahekaardid täpselt seal, kuhu need jätsid."
+    },
+    "slide2": {
+      "eyebrow": "HOIA TÖÖS",
+      "title": "Lehed töötavad edasi,<br>ka kui neid ei näe",
+      "sub": "Vestlused, tehisintellekti vastused, taimerid ja reaalajas andmed ei jää taustal seisma. Lülita sisse vahekaardi kaupa, koos automaatse väljalülituse taimeriga. Midagi ei salvestata."
+    },
+    "slide3": {
+      "eyebrow": "KAKS REŽIIMI",
+      "title": "Hoia mälus.<br>Hoia töös.",
+      "sub": "Mälus hoitud vahekaarte ei eemaldata kunagi; töös hoitud vahekaardid töötavad täie kiirusega ka peidetuna. Reeglid tervetele saitidele ja üks lüliti „Hoia elus“ mõlema režiimi jaoks."
+    },
+    "slide4": {
+      "eyebrow": "KÕIK VAHEKAARDID ÜHES KOHAS",
+      "title": "Näe ja juhi iga avatud vahekaarti",
+      "sub": "Reaalajas loend kõigist vahekaartidest, grupeeritud saitide kaupa ja otsinguga. Hoia mis tahes vahekaart mälus, töös või mõlemat ühe lülitiga."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAATSUS ALGUSEST",
+      "title": "Kerge, privaatne,<br>50+ keeles",
+      "sub": "Ei mingit jälgimist, analüütikat ega servereid — kõik jääb sinu brauserisse. Hele, tume või automaatne teema, täielikult tõlgitud."
+    }
+  },
+  "fa": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "از بارگذاری دوبارهٔ زبانه‌ها<br>توسط Chrome جلوگیری کنید",
+      "sub": "صرفه‌جوی حافظهٔ Chrome زبانه‌های بی‌کار را تخلیه می‌کند و هنگام بازگشت آن‌ها را از نو بارگذاری می‌کند. زبانه‌های مهم را دقیقاً همان‌جا که رها کرده‌اید نگه دارید."
+    },
+    "slide2": {
+      "eyebrow": "ادامهٔ اجرا",
+      "title": "صفحه‌ها کار می‌کنند،<br>حتی وقتی دیده نمی‌شوند",
+      "sub": "گفت‌وگوها، پاسخ‌های هوش مصنوعی، زمان‌سنج‌ها و داده‌های زنده در پس‌زمینه متوقف نمی‌شوند. برای هر زبانه جداگانه و با زمان‌سنج خاموشی خودکار روشن کنید. هیچ‌چیز ثبت نمی‌شود."
+    },
+    "slide3": {
+      "eyebrow": "دو حالت",
+      "title": "نگه داشتن در حافظه.<br>ادامهٔ اجرا.",
+      "sub": "زبانه‌هایی که در حافظه نگه داشته شوند هرگز خارج نمی‌شوند و زبانه‌های در حال اجرا حتی وقتی پنهان‌اند با تمام سرعت کار می‌کنند. قانون برای کل سایت‌ها و یک کلید «زنده نگه داشتن» برای هر دو حالت."
+    },
+    "slide4": {
+      "eyebrow": "همهٔ زبانه‌ها در یک جا",
+      "title": "همهٔ زبانه‌های باز را ببینید و کنترل کنید",
+      "sub": "فهرستی زنده از همهٔ زبانه‌ها، گروه‌بندی‌شده بر اساس سایت و با قابلیت جست‌وجو. هر زبانه را در حافظه نگه دارید، اجرایش را ادامه دهید یا با یک کلید هر دو را فعال کنید."
+    },
+    "slide5": {
+      "eyebrow": "حریم خصوصی در طراحی",
+      "title": "سبک، خصوصی،<br>به بیش از ۵۰ زبان",
+      "sub": "بدون ردیابی، بدون آنالیز، بدون سرور — همه چیز در مرورگر شما می‌ماند. پوستهٔ روشن، تیره یا خودکار، کاملاً بومی‌سازی‌شده."
+    }
+  },
+  "fi": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Estä Chromea lataamasta<br>välilehtiäsi uudelleen",
+      "sub": "Chromen muistinsäästäjä poistaa käyttämättömät välilehdet ja lataa ne alusta, kun palaat. Pidä tärkeät välilehdet juuri siellä, mihin ne jätit."
+    },
+    "slide2": {
+      "eyebrow": "PIDÄ KÄYNNISSÄ",
+      "title": "Sivut toimivat edelleen,<br>vaikket näe niitä",
+      "sub": "Keskustelut, tekoälyn vastaukset, ajastimet ja livedata eivät pysähdy taustalla. Ota käyttöön välilehtikohtaisesti, automaattisella sammutusajastimella. Mitään ei tallenneta."
+    },
+    "slide3": {
+      "eyebrow": "KAKSI TILAA",
+      "title": "Pidä muistissa.<br>Pidä käynnissä.",
+      "sub": "Muistissa pidettyjä välilehtiä ei koskaan poisteta muistista; käynnissä pidetyt toimivat täysillä piilossakin. Säännöt kokonaisille sivustoille ja yksi Pidä elossa -kytkin molempiin."
+    },
+    "slide4": {
+      "eyebrow": "KAIKKI VÄLILEHDET YHDESSÄ",
+      "title": "Näe ja hallitse jokaista avointa välilehteä",
+      "sub": "Reaaliaikainen luettelo kaikista välilehdistä, ryhmiteltynä sivustoittain ja hakutoiminnolla. Pidä mikä tahansa välilehti muistissa, käynnissä tai molempia yhdellä kytkimellä."
+    },
+    "slide5": {
+      "eyebrow": "YKSITYINEN LÄHTÖKOHTAISESTI",
+      "title": "Kevyt, yksityinen,<br>yli 50 kielellä",
+      "sub": "Ei seurantaa, ei analytiikkaa, ei palvelimia — kaikki pysyy selaimessasi. Vaalea, tumma tai automaattinen teema, täysin lokalisoitu."
+    }
+  },
+  "fil": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Pigilan ang Chrome sa<br>pag-reload ng iyong mga tab",
+      "sub": "Ina-discard ng Memory Saver ng Chrome ang mga idle na tab at nire-reload ang mga ito mula sa simula kapag bumalik ka. Panatilihin ang mahahalagang tab kung saan mo mismo iniwan."
+    },
+    "slide2": {
+      "eyebrow": "PANATILIHING TUMATAKBO",
+      "title": "Patuloy na gumagana ang mga pahina<br>kahit hindi mo nakikita",
+      "sub": "Hindi humihinto sa background ang mga chat, sagot ng AI, timer, at live na data. I-on kada tab, may auto-off timer. Walang nire-record."
+    },
+    "slide3": {
+      "eyebrow": "DALAWANG MODE",
+      "title": "Panatilihin sa memorya.<br>Panatilihing tumatakbo.",
+      "sub": "Hindi kailanman ina-unload ang mga tab na nasa memorya; buong bilis ang takbo ng mga tab na pinananatiling tumatakbo kahit nakatago. May mga panuntunan para sa buong site, at isang switch na “Panatilihing buhay” para sa pareho."
+    },
+    "slide4": {
+      "eyebrow": "LAHAT NG TAB, ISANG LUGAR",
+      "title": "Tingnan at kontrolin ang bawat bukas na tab",
+      "sub": "Live na listahan ng lahat ng tab mo, naka-group kada site at mahahanap. Panatilihin ang anumang tab sa memorya, panatilihing tumatakbo, o gawin ang dalawa sa isang switch."
+    },
+    "slide5": {
+      "eyebrow": "PRIBADO SA DISENYO",
+      "title": "Magaan, pribado,<br>sa 50+ na wika",
+      "sub": "Walang tracking, walang analytics, walang server — nananatili lahat sa iyong browser. Light, dark o auto na tema, ganap na naka-localize."
+    }
+  },
+  "fr": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Empêchez Chrome de<br>recharger vos onglets",
+      "sub": "L'Économiseur de mémoire de Chrome décharge les onglets inactifs et les recharge de zéro à votre retour. Gardez les onglets qui comptent exactement là où vous les avez laissés."
+    },
+    "slide2": {
+      "eyebrow": "GARDER EN MARCHE",
+      "title": "Des pages qui continuent à tourner<br>même hors de votre vue",
+      "sub": "Chats, réponses d'IA, minuteurs et données en direct ne s'arrêtent pas en arrière-plan. Activez-le onglet par onglet, avec un minuteur d'arrêt automatique. Rien n'est enregistré."
+    },
+    "slide3": {
+      "eyebrow": "DEUX MODES",
+      "title": "Garder en mémoire.<br>Garder en marche.",
+      "sub": "Les onglets gardés en mémoire ne sont jamais déchargés ; ceux gardés en marche tournent à pleine vitesse même masqués. Des règles pour des sites entiers, un seul interrupteur « Garder en vie » pour les deux."
+    },
+    "slide4": {
+      "eyebrow": "TOUS LES ONGLETS AU MÊME ENDROIT",
+      "title": "Voyez et contrôlez chaque onglet ouvert",
+      "sub": "Une liste en direct de tous vos onglets, regroupés par site et avec recherche. Gardez n'importe quel onglet en mémoire, en marche, ou les deux d'un seul interrupteur."
+    },
+    "slide5": {
+      "eyebrow": "PRIVÉ PAR CONCEPTION",
+      "title": "Léger, privé,<br>en 50+ langues",
+      "sub": "Aucun suivi, aucune analyse, aucun serveur — tout reste dans votre navigateur. Thème clair, sombre ou automatique, entièrement localisé."
+    }
+  },
+  "gu": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome ને તમારી ટૅબ<br>ફરી લોડ કરતું અટકાવો",
+      "sub": "Chrome નું મેમરી સેવર નિષ્ક્રિય ટૅબ કાઢી નાખે છે અને તમે પાછા ફરો ત્યારે શરૂઆતથી ફરી લોડ કરે છે. મહત્વની ટૅબ બરાબર ત્યાં જ રાખો જ્યાં તમે મૂકી હતી."
+    },
+    "slide2": {
+      "eyebrow": "ચાલતું રાખો",
+      "title": "પેજ ચાલતાં રહે છે,<br>ભલે તમને દેખાતાં ન હોય",
+      "sub": "ચૅટ, AI જવાબો, ટાઇમર અને લાઇવ ડેટા બૅકગ્રાઉન્ડમાં અટકતા નથી. ટૅબ-દીઠ ચાલુ કરો, ઑટો-ઑફ ટાઇમર સાથે. કંઈ રેકોર્ડ થતું નથી."
+    },
+    "slide3": {
+      "eyebrow": "બે મોડ",
+      "title": "મેમરીમાં રાખો.<br>ચાલતું રાખો.",
+      "sub": "મેમરીમાં રાખેલા ટૅબ ક્યારેય અનલોડ થતા નથી; ચાલતા રાખેલા ટૅબ છુપાયેલા હોય ત્યારે પણ પૂરી ઝડપે ચાલે છે. આખી સાઇટ માટે નિયમો અને બંને માટે એક “જીવંત રાખો” સ્વિચ."
+    },
+    "slide4": {
+      "eyebrow": "દરેક ટૅબ, એક જ જગ્યાએ",
+      "title": "દરેક ખુલ્લો ટૅબ જુઓ અને નિયંત્રિત કરો",
+      "sub": "બધા ટૅબની લાઇવ યાદી, સાઇટ મુજબ ગોઠવેલી અને સર્ચ સાથે. કોઈપણ ટૅબને મેમરીમાં રાખો, ચાલતું રાખો, અથવા એક સ્વિચથી બંને કરો."
+    },
+    "slide5": {
+      "eyebrow": "ડિઝાઇનથી જ ખાનગી",
+      "title": "હલકું, ખાનગી,<br>50+ ભાષાઓમાં",
+      "sub": "કોઈ ટ્રેકિંગ નહીં, કોઈ એનાલિટિક્સ નહીં, કોઈ સર્વર નહીં — બધું તમારા બ્રાઉઝરમાં જ રહે છે. લાઇટ, ડાર્ક કે ઓટો થીમ, સંપૂર્ણ સ્થાનિકીકૃત."
+    }
+  },
+  "he": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "מנעו מ-Chrome<br>לטעון מחדש את הלשוניות",
+      "sub": "חוסך הזיכרון של Chrome משחרר לשוניות לא פעילות וטוען אותן מחדש מאפס כשחוזרים אליהן. השאירו את הלשוניות שחשובות לכם בדיוק במקום שבו עזבתם."
+    },
+    "slide2": {
+      "eyebrow": "להמשיך לפעול",
+      "title": "דפים שממשיכים לעבוד<br>גם כשלא רואים אותם",
+      "sub": "צ׳אטים, תשובות של AI, טיימרים ונתונים חיים לא נעצרים ברקע. מפעילים לכל כרטיסייה בנפרד, עם טיימר לכיבוי אוטומטי. שום דבר לא מוקלט."
+    },
+    "slide3": {
+      "eyebrow": "שני מצבים",
+      "title": "להשאיר בזיכרון.<br>להמשיך לפעול.",
+      "sub": "כרטיסיות שנשארות בזיכרון לא נפרקות לעולם; כרטיסיות שממשיכות לפעול עובדות במלוא המהירות גם כשהן מוסתרות. כללים לאתרים שלמים ומתג אחד, “לשמור בחיים”, לשני המצבים."
+    },
+    "slide4": {
+      "eyebrow": "כל הכרטיסיות במקום אחד",
+      "title": "רואים ושולטים בכל כרטיסייה פתוחה",
+      "sub": "רשימה חיה של כל הכרטיסיות, מקובצות לפי אתר וניתנות לחיפוש. אפשר להשאיר כל כרטיסייה בזיכרון, להמשיך להריץ אותה, או לעשות את שניהם במתג אחד."
+    },
+    "slide5": {
+      "eyebrow": "פרטי מעצם התכנון",
+      "title": "קליל, פרטי,<br>ביותר מ-50 שפות",
+      "sub": "ללא מעקב, ללא ניתוח נתונים, ללא שרתים — הכול נשאר בדפדפן שלכם. ערכת נושא בהירה, כהה או אוטומטית, מתורגם במלואו."
+    }
+  },
+  "hi": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome को आपके टैब<br>रीलोड करने से रोकें",
+      "sub": "Chrome का मेमोरी सेवर निष्क्रिय टैब हटा देता है और लौटने पर उन्हें फिर से शुरू से लोड करता है। जो टैब मायने रखते हैं उन्हें ठीक वहीं रखें जहाँ आपने छोड़ा था।"
+    },
+    "slide2": {
+      "eyebrow": "चलता रखें",
+      "title": "पेज चलते रहते हैं,<br>भले ही आपको दिखें नहीं",
+      "sub": "चैट, AI के जवाब, टाइमर और लाइव डेटा बैकग्राउंड में नहीं रुकते। हर टैब के लिए चालू करें, ऑटो-ऑफ़ टाइमर के साथ। कुछ भी रिकॉर्ड नहीं होता।"
+    },
+    "slide3": {
+      "eyebrow": "दो मोड",
+      "title": "मेमोरी में रखें।<br>चलता रखें।",
+      "sub": "मेमोरी में रखे टैब कभी अनलोड नहीं होते; चलता रखे गए टैब छिपे होने पर भी पूरी रफ़्तार से चलते हैं। पूरी साइटों के लिए नियम, और दोनों मोड के लिए एक “सक्रिय रखें” स्विच।"
+    },
+    "slide4": {
+      "eyebrow": "सभी टैब, एक जगह",
+      "title": "हर खुला टैब देखें और नियंत्रित करें",
+      "sub": "सभी टैब की लाइव सूची, साइट के हिसाब से समूहित और खोज के साथ। किसी भी टैब को मेमोरी में रखें, चलता रखें, या एक स्विच से दोनों करें।"
+    },
+    "slide5": {
+      "eyebrow": "डिज़ाइन से ही निजी",
+      "title": "हल्का, निजी,<br>50+ भाषाओं में",
+      "sub": "कोई ट्रैकिंग नहीं, कोई एनालिटिक्स नहीं, कोई सर्वर नहीं — सब कुछ आपके ब्राउज़र में रहता है। लाइट, डार्क या स्वचालित थीम, पूरी तरह स्थानीयकृत।"
+    }
+  },
+  "hr": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Spriječite Chrome da<br>ponovno učitava kartice",
+      "sub": "Chromeova Ušteda memorije odbacuje neaktivne kartice i ponovno ih učitava od početka kada se vratite. Zadržite važne kartice točno ondje gdje ste ih ostavili."
+    },
+    "slide2": {
+      "eyebrow": "NEKA RADI",
+      "title": "Stranice rade dalje,<br>i kad ih ne vidite",
+      "sub": "Chatovi, odgovori umjetne inteligencije, mjerači vremena i podaci uživo ne staju u pozadini. Uključite za pojedinu karticu, uz mjerač za automatsko isključivanje. Ništa se ne bilježi."
+    },
+    "slide3": {
+      "eyebrow": "DVA NAČINA",
+      "title": "Zadrži u memoriji.<br>Neka radi.",
+      "sub": "Kartice zadržane u memoriji nikad se ne uklanjaju, a kartice koje rade rade punom brzinom i kad su skrivene. Pravila za cijela web-mjesta i jedan prekidač Drži na životu za oba načina."
+    },
+    "slide4": {
+      "eyebrow": "SVE KARTICE NA JEDNOM MJESTU",
+      "title": "Pregled i kontrola svake otvorene kartice",
+      "sub": "Popis svih kartica uživo, grupiran po web-mjestima i s pretraživanjem. Zadržite bilo koju karticu u memoriji, neka radi ili oboje jednim prekidačem."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATNO PO DIZAJNU",
+      "title": "Lagano, privatno,<br>na 50+ jezika",
+      "sub": "Bez praćenja, bez analitike, bez poslužitelja — sve ostaje u vašem pregledniku. Svijetla, tamna ili automatska tema, potpuno lokalizirano."
+    }
+  },
+  "hu": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Akadályozza meg, hogy a Chrome<br>újratöltse a lapjait",
+      "sub": "A Chrome Memóriatakarékos funkciója eltávolítja a tétlen lapokat, és visszatéréskor a nulláról tölti be őket újra. Tartsa a fontos lapokat pontosan ott, ahol hagyta."
+    },
+    "slide2": {
+      "eyebrow": "ÉBREN TARTÁS",
+      "title": "Az oldalak akkor is működnek,<br>ha nem látja őket",
+      "sub": "A csevegések, MI-válaszok, időzítők és élő adatok nem állnak le a háttérben. Kapcsolja be laponként, automatikus kikapcsolási időzítővel. Semmi sem kerül rögzítésre."
+    },
+    "slide3": {
+      "eyebrow": "KÉT MÓD",
+      "title": "Memóriában tartás.<br>Ébren tartás.",
+      "sub": "A memóriában tartott lapokat a Chrome sosem dobja el; az ébren tartottak rejtve is teljes sebességgel futnak. Szabályok egész webhelyekre, egyetlen Életben tartás kapcsoló mindkettőhöz."
+    },
+    "slide4": {
+      "eyebrow": "MINDEN LAP EGY HELYEN",
+      "title": "Lásd és irányítsa az összes megnyitott lapot",
+      "sub": "Élő lista az összes lapról, webhelyenként csoportosítva, kereséssel. Tartsa bármelyik lapot memóriában, tartsa ébren, vagy mindkettőt egyetlen kapcsolóval."
+    },
+    "slide5": {
+      "eyebrow": "ALAPVETŐEN ADATVÉDŐ",
+      "title": "Könnyű, adatvédő,<br>50+ nyelven",
+      "sub": "Nincs követés, nincs analitika, nincs szerver — minden a böngészőjében marad. Világos, sötét vagy automatikus téma, teljesen honosítva."
+    }
+  },
+  "id": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Hentikan Chrome dari<br>memuat ulang tab Anda",
+      "sub": "Penghemat Memori Chrome membuang tab yang tidak aktif dan memuatnya ulang dari awal saat Anda kembali. Jaga tab yang penting persis di tempat Anda meninggalkannya."
+    },
+    "slide2": {
+      "eyebrow": "TETAP BERJALAN",
+      "title": "Halaman terus bekerja<br>meski tak terlihat",
+      "sub": "Obrolan, jawaban AI, timer, dan data langsung tidak berhenti di latar belakang. Aktifkan per tab, dengan timer mati otomatis. Tidak ada yang direkam."
+    },
+    "slide3": {
+      "eyebrow": "DUA MODE",
+      "title": "Tetap di memori.<br>Tetap berjalan.",
+      "sub": "Tab yang tetap di memori tidak pernah dibuang; tab yang tetap berjalan bekerja penuh meski tersembunyi. Aturan untuk seluruh situs, satu sakelar “Tetap hidup” untuk keduanya."
+    },
+    "slide4": {
+      "eyebrow": "SEMUA TAB, SATU TEMPAT",
+      "title": "Lihat dan kendalikan setiap tab terbuka",
+      "sub": "Daftar langsung semua tab Anda, dikelompokkan per situs dan bisa dicari. Biarkan tab tetap di memori, tetap berjalan, atau keduanya dengan satu sakelar."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT SEJAK AWAL",
+      "title": "Ringan, privat,<br>dalam 50+ bahasa",
+      "sub": "Tanpa pelacakan, tanpa analitik, tanpa server — semuanya tetap di browser Anda. Tema terang, gelap, atau otomatis, sepenuhnya dilokalkan."
+    }
+  },
+  "it": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Impedisci a Chrome di<br>ricaricare le tue schede",
+      "sub": "Il Risparmio memoria di Chrome elimina le schede inattive e le ricarica da zero quando torni. Mantieni le schede che contano esattamente dove le hai lasciate."
+    },
+    "slide2": {
+      "eyebrow": "MANTIENI IN ESECUZIONE",
+      "title": "Pagine che continuano a lavorare<br>anche quando non le vedi",
+      "sub": "Chat, risposte dell'IA, timer e dati in tempo reale non si fermano in background. Attivalo per singola scheda, con un timer di spegnimento automatico. Non viene registrato nulla."
+    },
+    "slide3": {
+      "eyebrow": "DUE MODALITÀ",
+      "title": "Mantieni in memoria.<br>Mantieni in esecuzione.",
+      "sub": "Le schede mantenute in memoria non vengono mai scartate; quelle mantenute in esecuzione girano a piena velocità anche quando sono nascoste. Regole per interi siti e un solo interruttore «Mantieni viva» per entrambe."
+    },
+    "slide4": {
+      "eyebrow": "TUTTE LE SCHEDE IN UN SOLO POSTO",
+      "title": "Vedi e controlla ogni scheda aperta",
+      "sub": "Un elenco in tempo reale di tutte le schede, raggruppate per sito e con ricerca. Mantieni qualsiasi scheda in memoria, in esecuzione o entrambe con un solo interruttore."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATO PER NATURA",
+      "title": "Leggero, privato,<br>in 50+ lingue",
+      "sub": "Nessun tracciamento, nessuna analisi, nessun server — tutto resta nel tuo browser. Tema chiaro, scuro o automatico, completamente localizzato."
+    }
+  },
+  "ja": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome によるタブの<br>再読み込みを防ぐ",
+      "sub": "Chrome のメモリセーバーはアイドル状態のタブを破棄し、戻ると最初から再読み込みします。大切なタブは、離れたときのままに保ちましょう。"
+    },
+    "slide2": {
+      "eyebrow": "動作を維持",
+      "title": "見えていなくても、<br>ページは動き続ける",
+      "sub": "チャット、AI の回答、タイマー、ライブデータはバックグラウンドでも止まりません。タブごとにオンにでき、自動オフタイマーも使えます。何も記録されません。"
+    },
+    "slide3": {
+      "eyebrow": "2 つのモード",
+      "title": "メモリに保持。<br>動作を維持。",
+      "sub": "メモリに保持したタブは破棄されず、動作を維持したタブは非表示でもフルスピードで動きます。サイト全体のルールと、両方に使える「完全維持」スイッチ。"
+    },
+    "slide4": {
+      "eyebrow": "すべてのタブを一か所で",
+      "title": "開いているタブをすべて確認・操作",
+      "sub": "すべてのタブをサイトごとにまとめたライブリストで、検索も可能。任意のタブをメモリに保持、動作を維持、またはスイッチ 1 つで両方に。"
+    },
+    "slide5": {
+      "eyebrow": "プライバシー設計",
+      "title": "軽量・プライベート、<br>50+ 言語に対応",
+      "sub": "トラッキングも分析もサーバーもなし — すべてブラウザ内で完結。ライト／ダーク／自動テーマ、完全ローカライズ済み。"
+    }
+  },
+  "kn": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "ನಿಮ್ಮ ಟ್ಯಾಬ್‌ಗಳನ್ನು Chrome<br>ಮರುಲೋಡ್ ಮಾಡದಂತೆ ತಡೆಯಿರಿ",
+      "sub": "Chrome ನ ಮೆಮೊರಿ ಸೇವರ್ ಜಡ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತ್ಯಜಿಸುತ್ತದೆ ಮತ್ತು ನೀವು ಮರಳಿದಾಗ ಅವುಗಳನ್ನು ಮೊದಲಿನಿಂದ ಮರುಲೋಡ್ ಮಾಡುತ್ತದೆ. ಮುಖ್ಯವಾದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ನೀವು ಬಿಟ್ಟ ಸ್ಥಿತಿಯಲ್ಲೇ ಇರಿಸಿ."
+    },
+    "slide2": {
+      "eyebrow": "ಚಾಲನೆಯಲ್ಲಿ ಇರಿಸಿ",
+      "title": "ಕಾಣದಿದ್ದರೂ ಪುಟಗಳು<br>ಕೆಲಸ ಮಾಡುತ್ತಲೇ ಇರುತ್ತವೆ",
+      "sub": "ಚಾಟ್‌ಗಳು, AI ಉತ್ತರಗಳು, ಟೈಮರ್‌ಗಳು ಮತ್ತು ಲೈವ್ ಡೇಟಾ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ನಿಲ್ಲುವುದಿಲ್ಲ. ಪ್ರತಿ ಟ್ಯಾಬ್‌ಗೆ ಪ್ರತ್ಯೇಕವಾಗಿ ಆನ್ ಮಾಡಿ, ಸ್ವಯಂ-ಆಫ್ ಟೈಮರ್‌ನೊಂದಿಗೆ. ಏನನ್ನೂ ರೆಕಾರ್ಡ್ ಮಾಡುವುದಿಲ್ಲ."
+    },
+    "slide3": {
+      "eyebrow": "ಎರಡು ಮೋಡ್‌ಗಳು",
+      "title": "ಮೆಮೊರಿಯಲ್ಲಿ ಇರಿಸಿ.<br>ಚಾಲನೆಯಲ್ಲಿ ಇರಿಸಿ.",
+      "sub": "ಮೆಮೊರಿಯಲ್ಲಿ ಇರಿಸಿದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಎಂದಿಗೂ ಅನ್‌ಲೋಡ್ ಮಾಡುವುದಿಲ್ಲ; ಚಾಲನೆಯಲ್ಲಿರುವ ಟ್ಯಾಬ್‌ಗಳು ಮರೆಯಾಗಿದ್ದರೂ ಪೂರ್ಣ ವೇಗದಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತವೆ. ಇಡೀ ಸೈಟ್‌ಗಳಿಗೆ ನಿಯಮಗಳು, ಎರಡಕ್ಕೂ ಒಂದೇ “ಜೀವಂತವಾಗಿ ಇರಿಸಿ” ಸ್ವಿಚ್."
+    },
+    "slide4": {
+      "eyebrow": "ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳು, ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ",
+      "title": "ತೆರೆದ ಪ್ರತಿ ಟ್ಯಾಬ್ ನೋಡಿ, ನಿಯಂತ್ರಿಸಿ",
+      "sub": "ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳ ಲೈವ್ ಪಟ್ಟಿ, ಸೈಟ್ ಪ್ರಕಾರ ಗುಂಪು ಮಾಡಿ, ಹುಡುಕಬಹುದು. ಯಾವುದೇ ಟ್ಯಾಬ್ ಅನ್ನು ಮೆಮೊರಿಯಲ್ಲಿ ಇರಿಸಿ, ಚಾಲನೆಯಲ್ಲಿ ಇರಿಸಿ, ಅಥವಾ ಒಂದೇ ಸ್ವಿಚ್‌ನಿಂದ ಎರಡನ್ನೂ ಮಾಡಿ."
+    },
+    "slide5": {
+      "eyebrow": "ವಿನ್ಯಾಸದಿಂದಲೇ ಖಾಸಗಿ",
+      "title": "ಹಗುರ, ಖಾಸಗಿ,<br>50+ ಭಾಷೆಗಳಲ್ಲಿ",
+      "sub": "ಯಾವುದೇ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ, ಅನಾಲಿಟಿಕ್ಸ್ ಇಲ್ಲ, ಸರ್ವರ್‌ಗಳಿಲ್ಲ — ಎಲ್ಲವೂ ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ. ತಿಳಿ, ಗಾಢ ಅಥವಾ ಸ್ವಯಂಚಾಲಿತ ಥೀಮ್, ಸಂಪೂರ್ಣವಾಗಿ ಸ್ಥಳೀಯಗೊಳಿಸಲಾಗಿದೆ."
+    }
+  },
+  "ko": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome가 탭을<br>새로고침하지 못하게",
+      "sub": "Chrome의 메모리 절약 기능은 유휴 탭을 폐기하고 돌아오면 처음부터 다시 로드합니다. 중요한 탭은 떠났던 그대로 유지하세요."
+    },
+    "slide2": {
+      "eyebrow": "계속 실행",
+      "title": "보이지 않아도<br>페이지는 계속 작동합니다",
+      "sub": "채팅, AI 답변, 타이머, 실시간 데이터가 백그라운드에서도 멈추지 않습니다. 탭마다 켤 수 있고 자동 꺼짐 타이머도 지원합니다. 아무것도 기록하지 않습니다."
+    },
+    "slide3": {
+      "eyebrow": "두 가지 모드",
+      "title": "메모리에 유지.<br>계속 실행.",
+      "sub": "메모리에 유지한 탭은 절대 언로드되지 않고, 계속 실행 중인 탭은 숨겨져 있어도 최고 속도로 작동합니다. 사이트 전체에 규칙을 적용하고, 두 모드를 하나의 '활성 유지' 스위치로 제어하세요."
+    },
+    "slide4": {
+      "eyebrow": "모든 탭을 한곳에서",
+      "title": "열린 모든 탭을 보고 제어하세요",
+      "sub": "모든 탭의 실시간 목록을 사이트별로 묶어 검색할 수 있습니다. 원하는 탭을 메모리에 유지하거나 계속 실행하거나, 스위치 하나로 둘 다 적용하세요."
+    },
+    "slide5": {
+      "eyebrow": "설계부터 프라이빗",
+      "title": "가볍고 프라이빗,<br>50+ 개 언어 지원",
+      "sub": "추적도, 분석도, 서버도 없습니다 — 모든 것이 브라우저 안에 머뭅니다. 라이트, 다크, 자동 테마, 완전 현지화."
+    }
+  },
+  "lt": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Neleiskite „Chrome“ iš naujo<br>įkelti jūsų kortelių",
+      "sub": "„Chrome“ atminties taupymo priemonė atmeta neaktyvias korteles ir, kai grįžtate, įkelia jas iš naujo. Palikite svarbias korteles būtent ten, kur jas palikote."
+    },
+    "slide2": {
+      "eyebrow": "PALIKTI VEIKTI",
+      "title": "Puslapiai veikia,<br>net kai jų nematote",
+      "sub": "Pokalbiai, DI atsakymai, laikmačiai ir tiesioginiai duomenys fone nesustoja. Įjunkite atskirai kortelei, su automatinio išjungimo laikmačiu. Niekas neįrašoma."
+    },
+    "slide3": {
+      "eyebrow": "DU REŽIMAI",
+      "title": "Laikyti atmintyje.<br>Palikti veikti.",
+      "sub": "Atmintyje laikomos kortelės niekada neiškeliamos, o veikti paliktos kortelės dirba visu greičiu net paslėptos. Taisyklės ištisoms svetainėms ir vienas jungiklis Laikyti gyvą abiem režimams."
+    },
+    "slide4": {
+      "eyebrow": "VISOS KORTELĖS VIENOJE VIETOJE",
+      "title": "Matykite ir valdykite kiekvieną atvirą kortelę",
+      "sub": "Tiesioginis visų kortelių sąrašas, sugrupuotas pagal svetaines, su paieška. Laikykite bet kurią kortelę atmintyje, palikite veikti arba abu režimus įjunkite vienu jungikliu."
+    },
+    "slide5": {
+      "eyebrow": "PRIVATU IŠ PRIGIMTIES",
+      "title": "Lengva, privatu,<br>50+ kalbų",
+      "sub": "Jokio sekimo, jokios analizės, jokių serverių — viskas lieka jūsų naršyklėje. Šviesi, tamsi ar automatinė tema, visiškai išversta."
+    }
+  },
+  "lv": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Neļaujiet pārlūkam Chrome<br>pārlādēt jūsu cilnes",
+      "sub": "Chrome Atmiņas taupītājs izmet neaktīvās cilnes un, kad atgriežaties, ielādē tās no jauna. Saglabājiet svarīgākās cilnes tieši tā, kā tās atstājāt."
+    },
+    "slide2": {
+      "eyebrow": "TURĒT DARBĪBĀ",
+      "title": "Lapas turpina darboties,<br>kad jūs tās neredzat",
+      "sub": "Tērzēšanas, MI atbildes, taimeri un tiešie dati fonā neapstājas. Ieslēdziet katrai cilnei, ar automātiskās izslēgšanas taimeri. Nekas netiek ierakstīts."
+    },
+    "slide3": {
+      "eyebrow": "DIVI REŽĪMI",
+      "title": "Paturēt atmiņā.<br>Turēt darbībā.",
+      "sub": "Atmiņā paturētās cilnes netiek izmestas nekad; darbībā turētās cilnes strādā pilnā ātrumā arī paslēptas. Noteikumi veselām vietnēm, viens slēdzis «Paturēt dzīvu» abiem režīmiem."
+    },
+    "slide4": {
+      "eyebrow": "VISAS CILNES VIENĀ VIETĀ",
+      "title": "Redziet un pārvaldiet katru atvērto cilni",
+      "sub": "Tiešraides saraksts ar visām cilnēm, sagrupētām pa vietnēm, ar meklēšanu. Paturiet jebkuru cilni atmiņā, turiet darbībā vai izmantojiet abus režīmus ar vienu slēdzi."
+    },
+    "slide5": {
+      "eyebrow": "PRIVĀTI JAU PĒC BŪTĪBAS",
+      "title": "Viegli, privāti,<br>50+ valodās",
+      "sub": "Nekādas izsekošanas, analītikas vai serveru — viss paliek jūsu pārlūkā. Gaišs, tumšs vai automātisks motīvs, pilnībā lokalizēts."
+    }
+  },
+  "ml": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome നിങ്ങളുടെ ടാബുകൾ<br>റീലോഡ് ചെയ്യുന്നത് തടയുക",
+      "sub": "Chrome-ന്റെ മെമ്മറി സേവർ നിഷ്ക്രിയ ടാബുകൾ ഉപേക്ഷിക്കുകയും നിങ്ങൾ മടങ്ങിയെത്തുമ്പോൾ അവ ആദ്യം മുതൽ വീണ്ടും ലോഡ് ചെയ്യുകയും ചെയ്യുന്നു. പ്രധാനപ്പെട്ട ടാബുകൾ നിങ്ങൾ വിട്ടിടത്തുതന്നെ നിലനിർത്തുക."
+    },
+    "slide2": {
+      "eyebrow": "പ്രവർത്തനം നിലനിർത്തുക",
+      "title": "കാണാത്തപ്പോഴും പേജുകൾ<br>പ്രവർത്തിച്ചുകൊണ്ടിരിക്കും",
+      "sub": "ചാറ്റുകൾ, AI ഉത്തരങ്ങൾ, ടൈമറുകൾ, തത്സമയ ഡാറ്റ എന്നിവ പശ്ചാത്തലത്തിൽ നിലയ്ക്കില്ല. ഓരോ ടാബിനും ഓൺ ചെയ്യാം, ഓട്ടോ-ഓഫ് ടൈമറോടെ. ഒന്നും റെക്കോർഡ് ചെയ്യില്ല."
+    },
+    "slide3": {
+      "eyebrow": "രണ്ട് മോഡുകൾ",
+      "title": "മെമ്മറിയിൽ നിലനിർത്തുക.<br>പ്രവർത്തനം നിലനിർത്തുക.",
+      "sub": "മെമ്മറിയിൽ നിലനിർത്തിയ ടാബുകൾ ഒരിക്കലും അൺലോഡ് ചെയ്യില്ല; പ്രവർത്തനം നിലനിർത്തിയ ടാബുകൾ മറഞ്ഞിരിക്കുമ്പോഴും മുഴുവൻ വേഗത്തിൽ പ്രവർത്തിക്കും. മുഴുവൻ സൈറ്റുകൾക്കും നിയമങ്ങൾ, രണ്ടിനും ഒരൊറ്റ “സജീവമായി നിലനിർത്തുക” സ്വിച്ച്."
+    },
+    "slide4": {
+      "eyebrow": "എല്ലാ ടാബുകളും ഒരിടത്ത്",
+      "title": "തുറന്ന ഓരോ ടാബും കാണുക, നിയന്ത്രിക്കുക",
+      "sub": "നിങ്ങളുടെ എല്ലാ ടാബുകളുടെയും തത്സമയ പട്ടിക, സൈറ്റ് അനുസരിച്ച് ഗ്രൂപ്പ് ചെയ്തത്, തിരയാവുന്നത്. ഏത് ടാബും മെമ്മറിയിൽ നിലനിർത്താം, പ്രവർത്തനം നിലനിർത്താം, അല്ലെങ്കിൽ ഒറ്റ സ്വിച്ചിൽ രണ്ടും."
+    },
+    "slide5": {
+      "eyebrow": "രൂപകൽപ്പനയിൽത്തന്നെ സ്വകാര്യം",
+      "title": "ലളിതം, സ്വകാര്യം,<br>50+ ഭാഷകളിൽ",
+      "sub": "ട്രാക്കിംഗ് ഇല്ല, അനലിറ്റിക്സ് ഇല്ല, സെർവറുകൾ ഇല്ല — എല്ലാം നിങ്ങളുടെ ബ്രൗസറിൽത്തന്നെ നിലനിൽക്കുന്നു. ഇളം, ഇരുണ്ട അല്ലെങ്കിൽ സ്വയമേവ തീം, പൂർണ്ണമായി പ്രാദേശികവൽക്കരിച്ചത്."
+    }
+  },
+  "mr": {
+    "slide1": {
+      "eyebrow": "Keep Tabs Alive",
+      "title": "Chrome ला तुमचे टॅब<br>रीलोड करण्यापासून रोखा",
+      "sub": "Chrome चे मेमरी सेव्हर निष्क्रिय टॅब डिस्कार्ड करते आणि तुम्ही परत आल्यावर ते सुरुवातीपासून रीलोड करते. महत्त्वाचे टॅब तुम्ही सोडले होते तिथेच ठेवा."
+    },
+    "slide2": {
+      "eyebrow": "कार्यरत ठेवा",
+      "title": "तुम्हाला न दिसतानाही<br>पेजेस चालू राहतात",
+      "sub": "चॅट, AI ची उत्तरे, टायमर आणि लाइव्ह डेटा पार्श्वभूमीत थांबत नाहीत. ऑटो-ऑफ टायमरसह प्रत्येक टॅबसाठी चालू करा. काहीही रेकॉर्ड केले जात नाही."
+    },
+    "slide3": {
+      "eyebrow": "दोन मोड",
+      "title": "मेमरीत ठेवा.<br>कार्यरत ठेवा.",
+      "sub": "मेमरीत ठेवलेले टॅब कधीही काढून टाकले जात नाहीत; कार्यरत ठेवलेले टॅब लपलेले असतानाही पूर्ण वेगाने चालतात. संपूर्ण साइट्ससाठी नियम आणि दोन्हींसाठी एकच “जिवंत ठेवा” स्विच."
+    },
+    "slide4": {
+      "eyebrow": "सर्व टॅब एकाच ठिकाणी",
+      "title": "प्रत्येक उघडा टॅब पाहा आणि नियंत्रित करा",
+      "sub": "सर्व टॅबची लाइव्ह यादी, साइटनुसार गटबद्ध आणि शोधता येण्याजोगी. कोणताही टॅब मेमरीत ठेवा, कार्यरत ठेवा किंवा एकाच स्विचने दोन्ही करा."
+    },
+    "slide5": {
+      "eyebrow": "रचनेनेच खाजगी",
+      "title": "हलके, खाजगी,<br>50+ भाषांमध्ये",
+      "sub": "कोणतेही ट्रॅकिंग नाही, अॅनालिटिक्स नाही, सर्व्हर नाहीत — सर्व काही तुमच्या ब्राउझरमध्येच राहते. लाइट, डार्क किंवा स्वयं थीम, पूर्णपणे स्थानिकीकृत."
+    }
+  },
+  "ms": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Halang Chrome daripada<br>memuat semula tab anda",
+      "sub": "Penjimat Memori Chrome melupuskan tab melahu dan memuatkannya semula dari awal apabila anda kembali. Kekalkan tab penting tepat di tempat anda meninggalkannya."
+    },
+    "slide2": {
+      "eyebrow": "KEKAL BERJALAN",
+      "title": "Halaman terus berfungsi<br>walaupun anda tidak melihatnya",
+      "sub": "Sembang, jawapan AI, pemasa dan data langsung tidak berhenti di latar belakang. Hidupkan bagi setiap tab, dengan pemasa auto-mati. Tiada apa-apa dirakam."
+    },
+    "slide3": {
+      "eyebrow": "DUA MOD",
+      "title": "Kekal dalam memori.<br>Kekal berjalan.",
+      "sub": "Tab yang kekal dalam memori tidak pernah dinyahmuat; tab yang kekal berjalan beroperasi pada kelajuan penuh walaupun tersembunyi. Peraturan untuk seluruh tapak dan satu suis “Kekal hidup” untuk kedua-duanya."
+    },
+    "slide4": {
+      "eyebrow": "SEMUA TAB, SATU TEMPAT",
+      "title": "Lihat dan kawal setiap tab yang dibuka",
+      "sub": "Senarai langsung semua tab anda, dikumpulkan mengikut tapak dan boleh dicari. Kekalkan mana-mana tab dalam memori, kekal berjalan, atau kedua-duanya dengan satu suis."
+    },
+    "slide5": {
+      "eyebrow": "PERIBADI SECARA REKA BENTUK",
+      "title": "Ringan, peribadi,<br>dalam 50+ bahasa",
+      "sub": "Tiada penjejakan, tiada analitik, tiada pelayan — semuanya kekal dalam pelayar anda. Tema cerah, gelap atau auto, disetempatkan sepenuhnya."
+    }
+  },
+  "nl": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Voorkom dat Chrome<br>je tabbladen herlaadt",
+      "sub": "De Geheugenbespaarder van Chrome verwijdert inactieve tabbladen en laadt ze opnieuw vanaf nul wanneer je terugkomt. Houd de tabbladen die ertoe doen precies zoals je ze achterliet."
+    },
+    "slide2": {
+      "eyebrow": "BLIJVEN DRAAIEN",
+      "title": "Pagina's die blijven werken<br>ook als je ze niet ziet",
+      "sub": "Chats, AI-antwoorden, timers en live gegevens staan niet stil op de achtergrond. Zet het aan per tabblad, met een timer voor automatisch uitschakelen. Er wordt niets opgenomen."
+    },
+    "slide3": {
+      "eyebrow": "TWEE MODI",
+      "title": "In het geheugen houden.<br>Blijven draaien.",
+      "sub": "Tabbladen in het geheugen worden nooit verwijderd; tabbladen die blijven draaien werken op volle snelheid, ook als ze verborgen zijn. Regels voor hele sites en één schakelaar, “In leven houden”, voor beide."
+    },
+    "slide4": {
+      "eyebrow": "ALLE TABBLADEN OP ÉÉN PLEK",
+      "title": "Zie en beheer elk open tabblad",
+      "sub": "Een live lijst van al je tabbladen, gegroepeerd per site en doorzoekbaar. Houd elk tabblad in het geheugen, laat het blijven draaien, of doe beide met één schakelaar."
+    },
+    "slide5": {
+      "eyebrow": "PRIVÉ VAN NATURE",
+      "title": "Licht, privé,<br>in 50+ talen",
+      "sub": "Geen tracking, geen analytics, geen servers — alles blijft in je browser. Licht, donker of automatisch thema, volledig vertaald."
+    }
+  },
+  "no": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Hindre at Chrome<br>laster fanene dine på nytt",
+      "sub": "Chromes Minnesparing forkaster inaktive faner og laster dem inn igjen fra bunnen av når du bytter tilbake. Hold fanene som betyr noe nøyaktig der du forlot dem."
+    },
+    "slide2": {
+      "eyebrow": "HOLD I GANG",
+      "title": "Sider som fortsetter å jobbe<br>selv når du ikke ser dem",
+      "sub": "Chatter, KI-svar, tidtakere og live-data stopper ikke i bakgrunnen. Slå på per fane, med auto-av-timer. Ingenting registreres."
+    },
+    "slide3": {
+      "eyebrow": "TO MODUSER",
+      "title": "Hold i minnet.<br>Hold i gang.",
+      "sub": "Faner som holdes i minnet blir aldri forkastet; faner som holdes i gang kjører i full fart selv når de er skjult. Regler for hele nettsteder og én «Hold i live»-bryter for begge moduser."
+    },
+    "slide4": {
+      "eyebrow": "ALLE FANER PÅ ÉN PLASS",
+      "title": "Se og styr hver eneste åpne fane",
+      "sub": "En live liste over alle fanene dine, gruppert etter nettsted og søkbar. Hold en hvilken som helst fane i minnet, hold den i gang, eller gjør begge deler med én bryter."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT FRA BUNNEN AV",
+      "title": "Lett, privat,<br>på 50+ språk",
+      "sub": "Ingen sporing, ingen analyse, ingen servere — alt blir værende i nettleseren din. Lyst, mørkt eller automatisk tema, fullstendig oversatt."
+    }
+  },
+  "pl": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Powstrzymaj Chrome<br>przed przeładowywaniem kart",
+      "sub": "Oszczędzanie pamięci w Chrome odrzuca nieaktywne karty i wczytuje je od nowa po powrocie. Zachowaj ważne karty dokładnie tam, gdzie je zostawiłeś."
+    },
+    "slide2": {
+      "eyebrow": "NIE USYPIAJ",
+      "title": "Strony działają,<br>nawet gdy ich nie widać",
+      "sub": "Czaty, odpowiedzi AI, minutniki i dane na żywo nie zatrzymują się w tle. Włącz dla pojedynczej karty, z licznikiem automatycznego wyłączenia. Nic nie jest zapisywane."
+    },
+    "slide3": {
+      "eyebrow": "DWA TRYBY",
+      "title": "Trzymaj w pamięci.<br>Nie usypiaj.",
+      "sub": "Karty trzymane w pamięci nigdy nie są zwalniane, a karty, których nie usypiasz, działają pełną prędkością, nawet gdy są ukryte. Reguły dla całych witryn i jeden przełącznik Trzymaj przy życiu dla obu trybów."
+    },
+    "slide4": {
+      "eyebrow": "WSZYSTKIE KARTY W JEDNYM MIEJSCU",
+      "title": "Zobacz i kontroluj każdą otwartą kartę",
+      "sub": "Lista wszystkich kart na żywo, pogrupowana według witryn i z wyszukiwarką. Trzymaj dowolną kartę w pamięci, nie usypiaj jej albo włącz oba tryby jednym przełącznikiem."
+    },
+    "slide5": {
+      "eyebrow": "PRYWATNOŚĆ U PODSTAW",
+      "title": "Lekka, prywatna,<br>w 50+ językach",
+      "sub": "Brak śledzenia, brak analityki, brak serwerów — wszystko zostaje w Twojej przeglądarce. Motyw jasny, ciemny lub auto, w pełni przetłumaczona."
+    }
+  },
+  "pt_BR": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Impeça o Chrome de<br>recarregar suas abas",
+      "sub": "A Economia de memória do Chrome descarta abas ociosas e as recarrega do zero quando você volta. Mantenha as abas que importam exatamente onde você as deixou."
+    },
+    "slide2": {
+      "eyebrow": "MANTER EM EXECUÇÃO",
+      "title": "Páginas que continuam funcionando<br>mesmo fora da sua vista",
+      "sub": "Chats, respostas de IA, timers e dados ao vivo não pausam em segundo plano. Ative por aba, com timer de desligamento automático. Nada é gravado."
+    },
+    "slide3": {
+      "eyebrow": "DOIS MODOS",
+      "title": "Manter na memória.<br>Manter em execução.",
+      "sub": "Abas mantidas na memória nunca são descartadas; abas mantidas em execução rodam em velocidade total mesmo ocultas. Regras para sites inteiros e uma única chave Manter viva para os dois."
+    },
+    "slide4": {
+      "eyebrow": "TODAS AS ABAS EM UM LUGAR",
+      "title": "Veja e controle cada aba aberta",
+      "sub": "Uma lista ao vivo de todas as abas, agrupadas por site e com busca. Mantenha qualquer aba na memória, em execução ou os dois com uma só chave."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR NATUREZA",
+      "title": "Leve, privado,<br>em 50+ idiomas",
+      "sub": "Sem rastreamento, sem análises, sem servidores — tudo fica no seu navegador. Tema claro, escuro ou automático, totalmente traduzido."
+    }
+  },
+  "pt_PT": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Impeça o Chrome de<br>recarregar os seus separadores",
+      "sub": "A Poupança de Memória do Chrome descarrega os separadores inativos e recarrega-os do zero quando regressa. Mantenha os separadores que importam exatamente onde os deixou."
+    },
+    "slide2": {
+      "eyebrow": "MANTER EM EXECUÇÃO",
+      "title": "As páginas continuam a trabalhar<br>mesmo quando não as vê",
+      "sub": "Chats, respostas de IA, temporizadores e dados em direto não páram em segundo plano. Ative por separador, com temporizador de desativação automática. Nada é gravado."
+    },
+    "slide3": {
+      "eyebrow": "DOIS MODOS",
+      "title": "Manter em memória.<br>Manter em execução.",
+      "sub": "Os separadores mantidos em memória nunca são descartados; os mantidos em execução trabalham a toda a velocidade, mesmo ocultos. Regras para sites inteiros e um só interruptor «Manter ativo» para ambos."
+    },
+    "slide4": {
+      "eyebrow": "TODOS OS SEPARADORES, NUM SÓ LUGAR",
+      "title": "Veja e controle todos os separadores abertos",
+      "sub": "Uma lista em direto de todos os separadores, agrupados por site e com pesquisa. Mantenha qualquer separador em memória, em execução, ou ambos com um só interruptor."
+    },
+    "slide5": {
+      "eyebrow": "PRIVADO POR CONCEÇÃO",
+      "title": "Leve, privado,<br>em mais de 50 idiomas",
+      "sub": "Sem rastreio, sem análises, sem servidores — tudo fica no seu navegador. Tema claro, escuro ou automático, totalmente traduzido."
+    }
+  },
+  "ro": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Împiedică Chrome să-ți<br>reîncarce filele",
+      "sub": "Economizorul de memorie din Chrome descarcă filele inactive și le reîncarcă de la zero când revii. Păstrează filele care contează exact acolo unde le-ai lăsat."
+    },
+    "slide2": {
+      "eyebrow": "PĂSTREAZĂ ÎN RULARE",
+      "title": "Pagini care continuă să lucreze<br>chiar și când nu le vezi",
+      "sub": "Chaturile, răspunsurile AI, cronometrele și datele în timp real nu se opresc în fundal. Activează per filă, cu temporizator de oprire automată. Nu se înregistrează nimic."
+    },
+    "slide3": {
+      "eyebrow": "DOUĂ MODURI",
+      "title": "Păstrează în memorie.<br>Păstrează în rulare.",
+      "sub": "Filele păstrate în memorie nu sunt niciodată eliminate; cele păstrate în rulare merg la viteză maximă chiar și când sunt ascunse. Reguli pentru site-uri întregi și un singur comutator „Păstrează vie” pentru ambele."
+    },
+    "slide4": {
+      "eyebrow": "TOATE FILELE ÎNTR-UN SINGUR LOC",
+      "title": "Vezi și controlează fiecare filă deschisă",
+      "sub": "O listă în timp real a tuturor filelor, grupate pe site și cu căutare. Păstrează orice filă în memorie, în rulare sau ambele, dintr-un singur comutator."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT PRIN CONCEPȚIE",
+      "title": "Ușor, privat,<br>în peste 50 de limbi",
+      "sub": "Fără urmărire, fără analize, fără servere — totul rămâne în browserul tău. Temă deschisă, întunecată sau automată, complet tradus."
+    }
+  },
+  "ru": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Запретите Chrome<br>перезагружать ваши вкладки",
+      "sub": "Экономия памяти в Chrome выгружает неактивные вкладки и перезагружает их с нуля, когда вы возвращаетесь. Сохраните важные вкладки именно там, где вы их оставили."
+    },
+    "slide2": {
+      "eyebrow": "НЕ ДАВАТЬ ЗАСЫПАТЬ",
+      "title": "Страницы работают,<br>даже когда их не видно",
+      "sub": "Чаты, ответы ИИ, таймеры и живые данные не замирают в фоне. Включайте для отдельной вкладки, с таймером автовыключения. Ничего не записывается."
+    },
+    "slide3": {
+      "eyebrow": "ДВА РЕЖИМА",
+      "title": "Держать в памяти.<br>Не давать засыпать.",
+      "sub": "Вкладки в памяти Chrome не выгружает, а вкладки в работе идут на полной скорости, даже когда их не видно. Правила для целых сайтов и один переключатель «Держать живой» для обоих режимов."
+    },
+    "slide4": {
+      "eyebrow": "ВСЕ ВКЛАДКИ В ОДНОМ МЕСТЕ",
+      "title": "Видно и подконтрольно всё, что открыто",
+      "sub": "Живой список всех вкладок, сгруппированных по сайтам, с поиском. Держите любую вкладку в памяти, не давайте ей засыпать или включите оба режима одним переключателем."
+    },
+    "slide5": {
+      "eyebrow": "ПРИВАТНОСТЬ ПО УМОЛЧАНИЮ",
+      "title": "Лёгкое, приватное,<br>на 50+ языках",
+      "sub": "Никакого отслеживания, аналитики и серверов — всё остаётся в вашем браузере. Светлая, тёмная или автоматическая тема, полностью локализовано."
+    }
+  },
+  "sk": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Zabráňte Chrome,<br>aby znovu načítaval vaše karty",
+      "sub": "Šetrič pamäte v prehliadači Chrome zahadzuje nečinné karty a po návrate ich znova načíta od začiatku. Ponechajte si karty, na ktorých záleží, presne tam, kde ste ich nechali."
+    },
+    "slide2": {
+      "eyebrow": "NECHAŤ BEŽAŤ",
+      "title": "Stránky fungujú ďalej,<br>aj keď ich nevidíte",
+      "sub": "Chaty, odpovede AI, časovače a živé dáta sa na pozadí nezastavia. Zapnite to pre jednotlivú kartu, s časovačom automatického vypnutia. Nič sa nezaznamenáva."
+    },
+    "slide3": {
+      "eyebrow": "DVA REŽIMY",
+      "title": "Držať v pamäti.<br>Nechať bežať.",
+      "sub": "Karty držané v pamäti sa nikdy neuvoľnia; karty, ktoré nechávate bežať, fungujú plnou rýchlosťou, aj keď sú skryté. Pravidlá pre celé lokality a jeden prepínač „Držať nažive“ pre oba režimy."
+    },
+    "slide4": {
+      "eyebrow": "VŠETKY KARTY NA JEDNOM MIESTE",
+      "title": "Vidíte a ovládate každú otvorenú kartu",
+      "sub": "Živý zoznam všetkých kariet zoskupených podľa lokality, s vyhľadávaním. Držte ľubovoľnú kartu v pamäti, nechajte ju bežať alebo využite oboje jedným prepínačom."
+    },
+    "slide5": {
+      "eyebrow": "SÚKROMIE OD ZÁKLADU",
+      "title": "Ľahké, súkromné,<br>v 50+ jazykoch",
+      "sub": "Žiadne sledovanie, žiadne analytiky, žiadne servery — všetko zostáva vo vašom prehliadači. Svetlá, tmavá alebo automatická téma, plne preložené."
+    }
+  },
+  "sl": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Preprečite Chromu,<br>da znova nalaga vaše zavihke",
+      "sub": "Chromov varčevalnik pomnilnika opušča nedejavne zavihke in jih ob vrnitvi znova naloži od začetka. Ohranite zavihke, ki so pomembni, točno tam, kjer ste jih pustili."
+    },
+    "slide2": {
+      "eyebrow": "OHRANI DELOVANJE",
+      "title": "Strani, ki delujejo naprej,<br>tudi ko jih ne vidite",
+      "sub": "Klepeti, odgovori umetne inteligence, časovniki in podatki v živo v ozadju ne obstanejo. Vklopite za posamezen zavihek, s časovnikom za samodejni izklop. Nič se ne snema."
+    },
+    "slide3": {
+      "eyebrow": "DVA NAČINA",
+      "title": "Ohrani v pomnilniku.<br>Ohrani delovanje.",
+      "sub": "Zavihkov v pomnilniku Chrome nikoli ne opusti; zavihki z ohranjenim delovanjem tečejo s polno hitrostjo, tudi ko niso vidni. Pravila za cela mesta in eno stikalo »Ohrani pri življenju« za oba načina."
+    },
+    "slide4": {
+      "eyebrow": "VSI ZAVIHKI NA ENEM MESTU",
+      "title": "Oglejte si in upravljajte vsak odprt zavihek",
+      "sub": "Seznam vseh zavihkov v živo, združenih po mestih in z iskanjem. Katerikoli zavihek ohranite v pomnilniku, ohranite njegovo delovanje ali oboje z enim stikalom."
+    },
+    "slide5": {
+      "eyebrow": "ZASEBNOST PO ZASNOVI",
+      "title": "Lahko, zasebno,<br>v 50+ jezikih",
+      "sub": "Brez sledenja, brez analitike, brez strežnikov — vse ostane v vašem brskalniku. Svetla, temna ali samodejna tema, popolnoma prevedeno."
+    }
+  },
+  "sr": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Спречите Chrome да<br>поново учитава ваше картице",
+      "sub": "Chrome-ова Уштеда меморије одбацује неактивне картице и поново их учитава из почетка када се вратите. Задржите важне картице тачно тамо где сте их оставили."
+    },
+    "slide2": {
+      "eyebrow": "НЕ ДАЈ ДА ЗАСПИ",
+      "title": "Странице раде и даље,<br>чак и када их не видите",
+      "sub": "Четови, одговори вештачке интелигенције, тајмери и подаци уживо не застају у позадини. Укључите по картици, уз тајмер за аутоматско гашење. Ништа се не бележи."
+    },
+    "slide3": {
+      "eyebrow": "ДВА РЕЖИМА",
+      "title": "Држи у меморији.<br>Не дај да заспи.",
+      "sub": "Картице у меморији се никада не одбацују, а картице које не дате да заспе раде пуном брзином и када су скривене. Правила за читаве сајтове и један прекидач „Држи у животу“ за оба режима."
+    },
+    "slide4": {
+      "eyebrow": "СВЕ КАРТИЦЕ НА ЈЕДНОМ МЕСТУ",
+      "title": "Видите и контролишете сваку отворену картицу",
+      "sub": "Листа свих картица уживо, груписана по сајтовима и са претрагом. Држите било коју картицу у меморији, не дајте јој да заспи или укључите оба режима једним прекидачем."
+    },
+    "slide5": {
+      "eyebrow": "ПРИВАТНОСТ ПО ДИЗАЈНУ",
+      "title": "Лагано, приватно,<br>на 50+ језика",
+      "sub": "Без праћења, без аналитике, без сервера — све остаје у вашем прегледачу. Светла, тамна или аутоматска тема, потпуно преведено."
+    }
+  },
+  "sv": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Stoppa Chrome från att<br>ladda om dina flikar",
+      "sub": "Chromes Minnesbesparing rensar bort inaktiva flikar och laddar om dem från början när du växlar tillbaka. Håll flikarna som betyder något exakt där du lämnade dem."
+    },
+    "slide2": {
+      "eyebrow": "HÅLL IGÅNG",
+      "title": "Sidor som fortsätter jobba<br>när du inte ser dem",
+      "sub": "Chattar, AI-svar, timers och livedata pausas inte i bakgrunden. Slå på per flik, med timer för automatisk avstängning. Inget registreras."
+    },
+    "slide3": {
+      "eyebrow": "TVÅ LÄGEN",
+      "title": "Behåll i minnet.<br>Håll igång.",
+      "sub": "Flikar som behålls i minnet släpps aldrig, och flikar som hålls igång kör i full fart även när de är dolda. Regler för hela webbplatser och en Håll vid liv-knapp för båda lägena."
+    },
+    "slide4": {
+      "eyebrow": "ALLA FLIKAR PÅ ETT STÄLLE",
+      "title": "Se och styr varje öppen flik",
+      "sub": "En live-lista över alla dina flikar, grupperade efter webbplats och sökbara. Behåll valfri flik i minnet, håll den igång eller gör båda med en knapp."
+    },
+    "slide5": {
+      "eyebrow": "PRIVAT FRÅN GRUNDEN",
+      "title": "Lätt, privat och<br>på 50+ språk",
+      "sub": "Ingen spårning, ingen analys, inga servrar — allt stannar i din webbläsare. Ljust, mörkt eller automatiskt tema, fullt lokaliserad."
+    }
+  },
+  "sw": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Zuia Chrome<br>kupakia tena vichupo vyako",
+      "sub": "Kihifadhi Kumbukumbu cha Chrome hutupa vichupo visivyotumika na huvipakia tena tangu mwanzo unaporudi. Weka vichupo muhimu pale ulipoviacha."
+    },
+    "slide2": {
+      "eyebrow": "WEKA KIKIENDELEA",
+      "title": "Kurasa zinazoendelea kufanya kazi<br>hata usipozitazama",
+      "sub": "Mazungumzo, majibu ya AI, vipima muda na data ya moja kwa moja havisimami chinichini. Washa kwa kila kichupo, na kipima muda cha kujizima. Hakuna kinachorekodiwa."
+    },
+    "slide3": {
+      "eyebrow": "HALI MBILI",
+      "title": "Weka kumbukumbuni.<br>Weka kikiendelea.",
+      "sub": "Vichupo vilivyowekwa kumbukumbuni havitupwi kamwe; vilivyowekwa vikiendelea hufanya kazi kwa kasi kamili hata vikiwa vimefichwa. Sheria kwa tovuti nzima, na swichi moja ya Weka hai kwa zote mbili."
+    },
+    "slide4": {
+      "eyebrow": "VICHUPO VYOTE MAHALI PAMOJA",
+      "title": "Ona na udhibiti kila kichupo kilicho wazi",
+      "sub": "Orodha ya moja kwa moja ya vichupo vyako vyote, iliyopangwa kwa tovuti na yenye utafutaji. Weka kichupo chochote kumbukumbuni, kikiendelea, au vyote kwa swichi moja."
+    },
+    "slide5": {
+      "eyebrow": "FARAGHA TANGU MWANZO",
+      "title": "Nyepesi, ya faragha,<br>katika lugha 50+",
+      "sub": "Hakuna ufuatiliaji, hakuna uchanganuzi, hakuna seva — kila kitu hubaki kwenye kivinjari chako. Mandhari nyepesi, nyeusi au otomatiki, imetafsiriwa kikamilifu."
+    }
+  },
+  "ta": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "உங்கள் தாவல்களை Chrome<br>மீண்டும் ஏற்றுவதைத் தடுக்கவும்",
+      "sub": "Chrome இன் Memory Saver செயலற்ற தாவல்களை நீக்கி, நீங்கள் திரும்பும்போது அவற்றை முதலிலிருந்து மீண்டும் ஏற்றுகிறது. முக்கியமான தாவல்களை நீங்கள் விட்ட இடத்திலேயே வைத்திருங்கள்."
+    },
+    "slide2": {
+      "eyebrow": "இயங்க வைக்கவும்",
+      "title": "பார்க்காதபோதும்<br>பக்கங்கள் தொடர்ந்து இயங்கும்",
+      "sub": "அரட்டைகள், AI பதில்கள், டைமர்கள், நேரலைத் தரவு பின்னணியில் நிற்காது. ஒவ்வொரு தாவலுக்கும் இயக்கலாம், தானியங்கி-நிறுத்த டைமருடன். எதுவும் பதிவு செய்யப்படாது."
+    },
+    "slide3": {
+      "eyebrow": "இரண்டு பயன்முறைகள்",
+      "title": "நினைவகத்தில் வைத்திருக்கவும்.<br>இயங்க வைக்கவும்.",
+      "sub": "நினைவகத்தில் வைத்த தாவல்கள் ஒருபோதும் நீக்கப்படாது; இயங்க வைத்த தாவல்கள் மறைந்திருந்தாலும் முழு வேகத்தில் செயல்படும். முழு தளங்களுக்கும் விதிகள், இரண்டுக்கும் ஒரே “உயிருடன் வைத்திருக்கவும்” சுவிட்ச்."
+    },
+    "slide4": {
+      "eyebrow": "அனைத்து தாவல்களும் ஒரே இடத்தில்",
+      "title": "திறந்துள்ள ஒவ்வொரு தாவலையும் பாருங்கள், கட்டுப்படுத்துங்கள்",
+      "sub": "உங்கள் அனைத்து தாவல்களின் நேரலைப் பட்டியல், தளம் வாரியாகக் குழுவாக்கப்பட்டு, தேடக்கூடியது. எந்த தாவலையும் நினைவகத்தில் வைக்கலாம், இயங்க வைக்கலாம், அல்லது ஒரே சுவிட்சில் இரண்டையும்."
+    },
+    "slide5": {
+      "eyebrow": "வடிவமைப்பிலேயே தனிப்பட்டது",
+      "title": "எளிதானது, தனிப்பட்டது,<br>50+ மொழிகளில்",
+      "sub": "கண்காணிப்பு இல்லை, பகுப்பாய்வு இல்லை, சேவையகங்கள் இல்லை — அனைத்தும் உங்கள் உலாவியிலேயே இருக்கும். வெளிர், அடர் அல்லது தானியங்கி தீம், முழுமையாக உள்ளூராக்கப்பட்டது."
+    }
+  },
+  "te": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "మీ ట్యాబ్‌లను Chrome<br>రీలోడ్ చేయకుండా ఆపండి",
+      "sub": "Chrome యొక్క Memory Saver నిష్క్రియ ట్యాబ్‌లను తొలగించి, మీరు తిరిగి మారినప్పుడు వాటిని మొదటి నుండి రీలోడ్ చేస్తుంది. ముఖ్యమైన ట్యాబ్‌లను మీరు వదిలిన చోటే సరిగ్గా ఉంచండి."
+    },
+    "slide2": {
+      "eyebrow": "నడుస్తూ ఉంచండి",
+      "title": "మీకు కనిపించకపోయినా<br>పేజీలు పని చేస్తూనే ఉంటాయి",
+      "sub": "చాట్‌లు, AI సమాధానాలు, టైమర్లు, లైవ్ డేటా నేపథ్యంలో ఆగవు. ఆటో-ఆఫ్ టైమర్‌తో ప్రతి ట్యాబ్‌కు ఆన్ చేయండి. ఏదీ రికార్డ్ చేయబడదు."
+    },
+    "slide3": {
+      "eyebrow": "రెండు మోడ్‌లు",
+      "title": "మెమరీలో ఉంచండి.<br>నడుస్తూ ఉంచండి.",
+      "sub": "మెమరీలో ఉంచిన ట్యాబ్‌లు ఎప్పటికీ తొలగించబడవు; నడుస్తూ ఉంచిన ట్యాబ్‌లు దాగి ఉన్నా పూర్తి వేగంతో పనిచేస్తాయి. మొత్తం సైట్‌లకు నియమాలు, రెండింటికీ ఒకే “సజీవంగా ఉంచండి” స్విచ్."
+    },
+    "slide4": {
+      "eyebrow": "అన్ని ట్యాబ్‌లు ఒకే చోట",
+      "title": "తెరిచిన ప్రతి ట్యాబ్‌ను చూడండి, నియంత్రించండి",
+      "sub": "అన్ని ట్యాబ్‌ల లైవ్ జాబితా, సైట్ వారీగా సమూహపరచబడి, శోధన సౌకర్యంతో. ఏ ట్యాబ్‌నైనా మెమరీలో ఉంచండి, నడుస్తూ ఉంచండి లేదా ఒకే స్విచ్‌తో రెండూ చేయండి."
+    },
+    "slide5": {
+      "eyebrow": "డిజైన్‌లోనే ప్రైవేట్",
+      "title": "తేలికైనది, ప్రైవేట్,<br>50+ భాషల్లో",
+      "sub": "ట్రాకింగ్ లేదు, విశ్లేషణలు లేవు, సర్వర్లు లేవు — ప్రతిదీ మీ బ్రౌజర్‌లోనే ఉంటుంది. లైట్, డార్క్ లేదా ఆటో థీమ్, పూర్తిగా స్థానికీకరించబడింది."
+    }
+  },
+  "th": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "หยุด Chrome ไม่ให้<br>โหลดแท็บของคุณใหม่",
+      "sub": "Memory Saver ของ Chrome จะยกเลิกการโหลดแท็บที่ไม่ได้ใช้งานและโหลดใหม่ตั้งแต่ต้นเมื่อคุณสลับกลับมา เก็บแท็บที่สำคัญไว้ตรงจุดที่คุณวางไว้พอดี"
+    },
+    "slide2": {
+      "eyebrow": "ให้ทำงานต่อเนื่อง",
+      "title": "หน้าเว็บทำงานต่อไป<br>แม้คุณจะมองไม่เห็น",
+      "sub": "แชต คำตอบจาก AI ตัวจับเวลา และข้อมูลสดจะไม่หยุดเมื่ออยู่เบื้องหลัง เปิดใช้ทีละแท็บพร้อมตัวตั้งเวลาปิดอัตโนมัติ ไม่มีการบันทึกใดๆ"
+    },
+    "slide3": {
+      "eyebrow": "สองโหมด",
+      "title": "คงไว้ในหน่วยความจำ<br>ให้ทำงานต่อเนื่อง",
+      "sub": "แท็บที่คงไว้ในหน่วยความจำจะไม่ถูกล้าง ส่วนแท็บที่ให้ทำงานต่อเนื่องจะทำงานเต็มความเร็วแม้ถูกซ่อน มีกฎสำหรับทั้งเว็บไซต์ และสวิตช์ “คงไว้ทั้งสองแบบ” เดียวสำหรับทั้งสองโหมด"
+    },
+    "slide4": {
+      "eyebrow": "ทุกแท็บในที่เดียว",
+      "title": "ดูและควบคุมทุกแท็บที่เปิดอยู่",
+      "sub": "รายการแท็บทั้งหมดแบบสด จัดกลุ่มตามเว็บไซต์และค้นหาได้ คงแท็บใดก็ได้ไว้ในหน่วยความจำ ให้ทำงานต่อเนื่อง หรือทำทั้งสองอย่างด้วยสวิตช์เดียว"
+    },
+    "slide5": {
+      "eyebrow": "ออกแบบมาให้เป็นส่วนตัว",
+      "title": "เบา เป็นส่วนตัว<br>รองรับ 50+ ภาษา",
+      "sub": "ไม่มีการติดตาม ไม่มีการวิเคราะห์ ไม่มีเซิร์ฟเวอร์ — ทุกอย่างอยู่ในเบราว์เซอร์ของคุณ ธีมสว่าง มืด หรืออัตโนมัติ แปลครบทุกภาษา"
+    }
+  },
+  "tr": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Chrome'un sekmelerinizi<br>yeniden yüklemesini durdurun",
+      "sub": "Chrome'un Bellek Tasarrufu özelliği boştaki sekmeleri kaldırır ve geri döndüğünüzde onları sıfırdan yeniden yükler. Önemli sekmeleri tam bıraktığınız yerde tutun."
+    },
+    "slide2": {
+      "eyebrow": "ÇALIŞIR TUT",
+      "title": "Siz görmeseniz bile<br>çalışmayı sürdüren sayfalar",
+      "sub": "Sohbetler, yapay zekâ yanıtları, zamanlayıcılar ve canlı veriler arka planda durmaz. Sekme bazında açın, otomatik kapanma zamanlayıcısıyla. Hiçbir şey kaydedilmez."
+    },
+    "slide3": {
+      "eyebrow": "İKİ MOD",
+      "title": "Bellekte tut.<br>Çalışır tut.",
+      "sub": "Bellekte tutulan sekmeler asla atılmaz; çalışır tutulan sekmeler gizliyken bile tam hızda çalışır. Tüm siteler için kurallar ve her iki mod için tek bir “Canlı tut” anahtarı."
+    },
+    "slide4": {
+      "eyebrow": "TÜM SEKMELER TEK YERDE",
+      "title": "Açık her sekmeyi görün ve yönetin",
+      "sub": "Tüm sekmelerinizin canlı listesi; sitelere göre gruplanmış ve aranabilir. Dilediğiniz sekmeyi bellekte tutun, çalışır tutun ya da tek anahtarla ikisini birden yapın."
+    },
+    "slide5": {
+      "eyebrow": "TASARIMI GEREĞİ ÖZEL",
+      "title": "Hafif, gizli ve<br>50+ dilde",
+      "sub": "İzleme yok, analiz yok, sunucu yok — her şey tarayıcınızda kalır. Açık, koyu veya otomatik tema, tamamen yerelleştirilmiş."
+    }
+  },
+  "uk": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Не дозволяйте Chrome<br>перезавантажувати вкладки",
+      "sub": "Економія пам'яті в Chrome вивантажує неактивні вкладки й перезавантажує їх з нуля, коли ви повертаєтесь. Тримайте важливі вкладки саме там, де ви їх залишили."
+    },
+    "slide2": {
+      "eyebrow": "НЕ ДАВАТИ ЗАСИНАТИ",
+      "title": "Сторінки працюють,<br>навіть коли їх не видно",
+      "sub": "Чати, відповіді ШІ, таймери й дані наживо не завмирають у фоні. Вмикайте для окремої вкладки, з таймером автовимкнення. Нічого не записується."
+    },
+    "slide3": {
+      "eyebrow": "ДВА РЕЖИМИ",
+      "title": "Тримати в пам’яті.<br>Не давати засинати.",
+      "sub": "Вкладки в пам’яті Chrome не вивантажує, а вкладки в роботі йдуть на повній швидкості, навіть коли їх не видно. Правила для цілих сайтів і один перемикач «Тримати живою» для обох режимів."
+    },
+    "slide4": {
+      "eyebrow": "УСІ ВКЛАДКИ В ОДНОМУ МІСЦІ",
+      "title": "Бачте й контролюйте все, що відкрито",
+      "sub": "Список усіх вкладок наживо, згрупований за сайтами, з пошуком. Тримайте будь-яку вкладку в пам’яті, не давайте їй засинати або ввімкніть обидва режими одним перемикачем."
+    },
+    "slide5": {
+      "eyebrow": "КОНФІДЕНЦІЙНІСТЬ ЗА ЗАМОВЧУВАННЯМ",
+      "title": "Легке, приватне,<br>50+ мов",
+      "sub": "Жодного відстеження, жодної аналітики, жодних серверів — усе лишається у вашому браузері. Світла, темна чи авто тема, повністю локалізовано."
+    }
+  },
+  "vi": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "Ngăn Chrome<br>tải lại các tab của bạn",
+      "sub": "Trình tiết kiệm bộ nhớ của Chrome dỡ bỏ các tab nhàn rỗi và tải lại từ đầu khi bạn quay lại. Giữ các tab quan trọng đúng như nơi bạn đã để lại."
+    },
+    "slide2": {
+      "eyebrow": "CHẠY NỀN",
+      "title": "Trang vẫn hoạt động<br>ngay cả khi bạn không nhìn thấy",
+      "sub": "Trò chuyện, câu trả lời AI, bộ hẹn giờ và dữ liệu trực tiếp không bị tạm dừng khi chạy nền. Bật cho từng tab, kèm hẹn giờ tự tắt. Không có gì bị ghi lại."
+    },
+    "slide3": {
+      "eyebrow": "HAI CHẾ ĐỘ",
+      "title": "Giữ trong bộ nhớ.<br>Chạy nền.",
+      "sub": "Tab được giữ trong bộ nhớ không bao giờ bị gỡ, còn tab chạy nền hoạt động hết tốc độ dù đang ẩn. Quy tắc cho cả trang web và một công tắc Giữ hoạt động cho cả hai chế độ."
+    },
+    "slide4": {
+      "eyebrow": "MỌI TAB TRONG MỘT NƠI",
+      "title": "Xem và kiểm soát mọi tab đang mở",
+      "sub": "Danh sách trực tiếp mọi tab, nhóm theo trang web và có tìm kiếm. Giữ bất kỳ tab nào trong bộ nhớ, cho chạy nền, hoặc bật cả hai bằng một công tắc."
+    },
+    "slide5": {
+      "eyebrow": "RIÊNG TƯ NGAY TỪ THIẾT KẾ",
+      "title": "Nhẹ, riêng tư,<br>hơn 50 ngôn ngữ",
+      "sub": "Không theo dõi, không phân tích, không máy chủ — mọi thứ ở lại trong trình duyệt của bạn. Giao diện Sáng, Tối hoặc Tự động, bản địa hóa đầy đủ."
+    }
+  },
+  "zh_CN": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "阻止 Chrome<br>重新加载你的标签页",
+      "sub": "Chrome 的内存节省程序会丢弃闲置标签页，并在你切回来时从头重新加载。让重要的标签页始终停留在你离开时的状态。"
+    },
+    "slide2": {
+      "eyebrow": "保持运行",
+      "title": "即使看不见，<br>页面也照常工作",
+      "sub": "聊天、AI 回复、计时器和实时数据在后台不会暂停。可按标签页开启，并带自动关闭定时器。不记录任何内容。"
+    },
+    "slide3": {
+      "eyebrow": "两种模式",
+      "title": "保留在内存。<br>保持运行。",
+      "sub": "保留在内存的标签页绝不会被卸载；保持运行的标签页即使隐藏也全速工作。可为整个站点设置规则，一个“保持活跃”开关同时控制两种模式。"
+    },
+    "slide4": {
+      "eyebrow": "所有标签页，一处掌握",
+      "title": "查看并控制每个打开的标签页",
+      "sub": "所有标签页的实时列表，按站点分组并支持搜索。可将任意标签页保留在内存、保持运行，或用一个开关同时启用两者。"
+    },
+    "slide5": {
+      "eyebrow": "隐私为本设计",
+      "title": "轻量、私密、<br>支持 50+ 种语言",
+      "sub": "无追踪、无分析、无服务器——一切都留在你的浏览器中。浅色、深色或自动主题，完全本地化。"
+    }
+  },
+  "zh_TW": {
+    "slide1": {
+      "eyebrow": "KEEP TABS ALIVE",
+      "title": "阻止 Chrome<br>重新載入你的分頁",
+      "sub": "Chrome 的記憶體節省程式會捨棄閒置分頁，並在你切回時從頭重新載入。讓重要的分頁維持在你離開時的狀態。"
+    },
+    "slide2": {
+      "eyebrow": "保持執行",
+      "title": "看不到的頁面，<br>照常運作",
+      "sub": "聊天、AI 回覆、計時器與即時資料在背景不會暫停。可針對單一分頁開啟，並搭配自動關閉計時器。不會記錄任何內容。"
+    },
+    "slide3": {
+      "eyebrow": "兩種模式",
+      "title": "保留在記憶體。<br>保持執行。",
+      "sub": "保留在記憶體的分頁不會被卸載；保持執行的分頁即使隱藏也能全速運作。可為整個網站設定規則，並用一個「保持活躍」開關同時啟用兩者。"
+    },
+    "slide4": {
+      "eyebrow": "所有分頁，集中一處",
+      "title": "掌握每個開啟的分頁",
+      "sub": "即時列出所有分頁，依網站分組並可搜尋。可將任何分頁保留在記憶體、保持執行，或用一個開關同時啟用兩者。"
+    },
+    "slide5": {
+      "eyebrow": "隱私為本設計",
+      "title": "輕量、私密、<br>支援 50+ 種語言",
+      "sub": "不追蹤、不分析、無伺服器——一切都留在你的瀏覽器中。淺色、深色或自動主題，完整在地化。"
+    }
+  }
+}

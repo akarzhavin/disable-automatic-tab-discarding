@@ -1,6 +1,6 @@
 {
   "name": "disable-automatic-tab-discarding",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Keep Chrome tabs alive — prevent automatic tab discarding, with per-site rules, stats and themes.",
   "private": true,
   "type": "module",
@@ -10,11 +10,12 @@
     "build": "npm run clean && npm run copy && tsc",
     "watch": "npm run copy && tsc --watch",
     "minify": "node scripts/minify.mjs",
-    "package": "npm run build && npm run minify && mkdir -p release && rm -f release/keep-tabs-alive-v1.0.0.zip && cd dist && zip -r -X -q ../release/keep-tabs-alive-v1.0.0.zip . -x '*.DS_Store'"
+    "package": "npm run build && npm run minify && mkdir -p release && rm -f release/keep-tabs-alive-v1.1.0.zip && cd dist && zip -r -X -q ../release/keep-tabs-alive-v1.1.0.zip . -x '*.DS_Store'"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.268",
     "esbuild": "^0.28.1",
+    "playwright": "^1.60.0",
     "typescript": "^5.5.4"
   }
 }

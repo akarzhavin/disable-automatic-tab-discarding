@@ -2,7 +2,7 @@
 
 ## Short description (≤132 chars, for the store header)
 
-Disable Chrome tab discarding and prevent tab reloads. Per-site rules, per-tab control, live stats.
+Disable Chrome tab discarding and stop tabs slowing down in the background. Per-site and per-tab control, auto-off timer.
 
 ## Detailed description
 
@@ -38,7 +38,7 @@ monitoring dashboards · and any long-running web app you don't want reloaded.
 
 ### ✨ Features
 
-- **Master switch** — pause or resume all protection from the toolbar popup in one click.
+- **Master switch** — pause or resume all protection from the settings page in one click.
 
 - **Two protection modes**
   - **Protect everything** — keep every tab alive, except the sites you exclude.
@@ -55,8 +55,17 @@ monitoring dashboards · and any long-running web app you don't want reloaded.
 
 - **Toolbar badge** — see at a glance how many tabs are currently protected.
 
-- **Live statistics** — tabs protected now, total protection actions, and how
-  many automatic discards have been observed while the extension was active.
+- **Keep running** — for a tab that must keep working while hidden (chats,
+  timers, live data). Switch it on for one tab and Chrome treats it as in use,
+  so the page isn't slowed down in the background. It is opt-in per tab, with an
+  auto-off timer (30 min, 1 h, 3 h or none) that you can extend at any time.
+  Chrome shows its screen-sharing indicator while it is on; nothing is ever
+  recorded, stored or sent anywhere. It uses more battery, so use it only where
+  you need it.
+
+- **At-a-glance list** — the popup lists every tab that is kept running or kept
+  in memory, each with a one-click off button.
+
 
 - **Light / Dark / Auto themes** — a clean interface that can follow your OS.
 
@@ -68,8 +77,11 @@ monitoring dashboards · and any long-running web app you don't want reloaded.
 
 Keep Tabs Alive collects **no data**. There are no analytics, no tracking and no
 external servers. All your settings and stats live entirely in your own browser.
-It requests only the minimum permissions it needs (`tabs` and `storage`) to do
-its job.
+It requests only the permissions it needs: `tabs` and `storage` for
+protection and — only for the optional Keep running feature — `tabCapture`,
+`activeTab`, `scripting` and `offscreen`. Keep running never reads, records or
+transmits the picture of your tab; the open capture is simply what tells Chrome
+the tab is in use.
 
 ### 🛠️ How it works
 

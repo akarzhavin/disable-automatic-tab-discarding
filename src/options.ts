@@ -13,17 +13,31 @@ import {
   getActivations,
   setActivation,
 } from "./shared/activations.js";
+import {
+  canCapture,
+  getCaptureEnds,
+  getCaptureMinutes,
+  getCaptured,
+  getInvoked,
+  giveCaptureConsent,
+  hasCaptureConsent,
+  NOT_INVOKED,
+  requestCapture,
+  setInvoked,
+  setPendingStart,
+} from "./shared/capture.js";
+import { DEFAULT_ICON_PATHS, drawIcons } from "./shared/icon.js";
 import { getHostname, matchesAny, normalizeDomain } from "./shared/domains.js";
 import { localizePage, t } from "./shared/i18n.js";
 import { getOverrides, setTabOverride } from "./shared/overrides.js";
 import { effectiveProtect, shouldProtect } from "./shared/protection.js";
 import { getSettings, saveSettings } from "./shared/settings.js";
 import { hideBar, showBar } from "./shared/pagefx.js";
-import { getStats, resetStats } from "./shared/stats.js";
 import { applyTheme } from "./shared/theme.js";
 import { maybeAutoStartTour, startTour, type TourStep } from "./tour.js";
 import {
   MAX_DOMAINS,
+  PENDING_KEY,
   type Settings,
   type TabOverrides,
   type ThemePref,
@@ -38,13 +52,12 @@ const els = {
   startTour: $<HTMLButtonElement>("startTour"),
   themeBtns: Array.from(document.querySelectorAll<HTMLButtonElement>(".seg__btn")),
   statProtected: $("statProtected"),
-  statOpen: $("statOpen"),
-  statOps: $("statOps"),
-  statDiscards: $("statDiscards"),
-  statsSince: $("statsSince"),
-  resetStats: $<HTMLButtonElement>("resetStats"),
+  statRunning: $("statRunning"),
   modeInputs: Array.from(document.querySelectorAll<HTMLInputElement>('input[name="mode"]')),
   tabsCount: $("tabsCount"),
+  runList: $<HTMLUListElement>("runList"),
+  runEmpty: $("runEmpty"),
+  stopAll: $<HTMLButtonElement>("stopAll"),
   tabSearch: $<HTMLInputElement>("tabSearch"),
   tabGroups: $("tabGroups"),
   tabsEmpty: $("tabsEmpty"),
@@ -75,6 +88,11 @@ const OPTIONS_TOUR: TourStep[] = [
     body: t("tourTabsBody"),
   },
   {
+    target: "#runPanel",
+    title: t("tourRunTitle"),
+    body: t("tourRunBody"),
+  },
+  {
     target: "#rulesPanel",
     title: t("tourRulesTitle"),
     body: t("tourRulesBody"),
@@ -94,9 +112,43 @@ function scheduleRender(): void {
   renderTimer = setTimeout(() => void render(), 80);
 }
 
+// Where the user last clicked. Rows re-render right after a click, so keep the rectangle,
+// not the element. A message that answers that click is shown right there.
+let lastClick: { rect: DOMRect; at: number } | null = null;
+document.addEventListener(
+  "pointerdown",
+  (e) => {
+    const target = (e.target as Element | null)?.closest("button, label, a, input") ?? (e.target as Element | null);
+    if (target) lastClick = { rect: target.getBoundingClientRect(), at: Date.now() };
+  },
+  true,
+);
+
+/** Put a toast just under (or above, near the bottom) the last click; else bottom-centre. */
+function placeNearLastClick(el: HTMLElement): void {
+  const recent = lastClick && Date.now() - lastClick.at < 15_000 ? lastClick.rect : null;
+  el.classList.toggle("toast--anchored", !!recent);
+  if (!recent) {
+    el.style.left = el.style.top = "";
+    return;
+  }
+  const gap = 8;
+  const w = el.offsetWidth || 360;
+  const h = el.offsetHeight || 48;
+  const left = Math.min(Math.max(16, recent.right - w), window.innerWidth - w - 16);
+  const below = recent.bottom + gap;
+  const top = below + h < window.innerHeight - 8 ? below : Math.max(8, recent.top - gap - h);
+  el.style.left = `${left}px`;
+  el.style.top = `${top}px`;
+}
+
 // Bottom-center toast — answers "I clicked, what happened?".
 let toastTimer: ReturnType<typeof setTimeout> | undefined;
-function showToast(message: string, isError = false): void {
+function showToast(
+  message: string,
+  isError = false,
+  action?: { label: string; run: () => void },
+): void {
   let toast = document.getElementById("toast");
   if (!toast) {
     toast = document.createElement("div");
@@ -104,23 +156,48 @@ function showToast(message: string, isError = false): void {
     toast.className = "toast";
     document.body.appendChild(toast);
   }
-  toast.textContent = message;
-  toast.classList.toggle("toast--error", isError);
-  toast.classList.add("toast--show");
+  const el = toast;
+  el.replaceChildren(document.createTextNode(message));
+  if (action) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "toast__action";
+    btn.textContent = action.label;
+    btn.addEventListener("click", () => {
+      el.classList.remove("toast--show");
+      action.run();
+    });
+    el.append(btn);
+  }
+  el.classList.toggle("toast--error", isError);
+  el.classList.toggle("toast--action", !!action);
+  placeNearLastClick(el);
+  el.classList.add("toast--show");
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove("toast--show"), 3500);
+  // Give the user time to reach the button.
+  toastTimer = setTimeout(() => el.classList.remove("toast--show"), action ? 9000 : 3500);
 }
+
+/** Ids of tabs held by "Keep running", refreshed on every render. */
+let running = new Set<number>();
+/** Tabs where Keep running can start from here (the popup was opened on them). */
+let invoked = new Set<number>();
+/** Whether the user already confirmed the screen-recording explainer (refreshed on render). */
+let captureConsent = false;
 
 // ── Render ────────────────────────────────────────────────────────────────
 
 async function render(): Promise<void> {
-  const [settings, overrides, stats, tabs, activations] = await Promise.all([
+  const [settings, overrides, tabs, activations, captured] = await Promise.all([
     getSettings(),
     getOverrides(),
-    getStats(),
     chrome.tabs.query({}),
     getActivations(),
+    getCaptured(),
   ]);
+  running = new Set(captured);
+  captureConsent = await hasCaptureConsent();
+  invoked = new Set(await getInvoked());
 
   applyTheme(settings.theme);
   els.master.checked = settings.enabled;
@@ -130,25 +207,73 @@ async function render(): Promise<void> {
     btn.setAttribute("aria-checked", String(btn.dataset.theme === settings.theme));
   }
 
-  // Stats strip
+  // Counts on the two mode cards
   const protectedNow = tabs.filter((t) => effectiveProtect(t, settings, overrides)).length;
   els.statProtected.textContent = String(protectedNow);
-  els.statOpen.textContent = String(tabs.length);
-  els.statOps.textContent = stats.protectOps.toLocaleString();
-  els.statDiscards.textContent = stats.discardEventsObserved.toLocaleString();
-  els.statsSince.textContent = stats.installedAt
-    ? t(
-        "statsSince",
-        new Date(stats.installedAt).toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        }),
-      )
-    : " ";
+  els.statRunning.textContent = String(tabs.filter((t) => t.id != null && running.has(t.id)).length);
+
+  renderRunList(tabs, await getCaptureEnds());
 
   renderTabs(settings, overrides, tabs, activations);
   renderRules(settings);
+}
+
+/** "1 h 20 min" / "45 min" left on a timer. */
+function formatLeft(ms: number): string {
+  const total = Math.max(1, Math.ceil(ms / 60_000));
+  const h = Math.floor(total / 60);
+  const m = total % 60;
+  return [h ? `${h} ${t("unitHour")}` : "", m ? `${m} ${t("unitMin")}` : ""].filter(Boolean).join(" ");
+}
+
+/** The Keep running card: every held tab, its time left, a way to stop it. */
+function renderRunList(tabs: chrome.tabs.Tab[], ends: Record<number, number>): void {
+  const held = tabs.filter((tab) => tab.id != null && running.has(tab.id));
+  els.runEmpty.hidden = held.length > 0;
+  els.stopAll.hidden = held.length < 2;
+  els.runList.replaceChildren(
+    ...held.map((tab) => {
+      const id = tab.id as number;
+      const li = document.createElement("li");
+      li.className = "run-item";
+      const main = document.createElement("button");
+      main.type = "button";
+      main.className = "run-item__main";
+      main.title = t("switchToThisTab");
+      const fav = document.createElement("img");
+      fav.className = "run-item__fav";
+      fav.alt = "";
+      if (tab.favIconUrl) fav.src = tab.favIconUrl;
+      else fav.style.visibility = "hidden";
+      fav.addEventListener("error", () => (fav.style.visibility = "hidden"));
+      const name = document.createElement("span");
+      name.className = "run-item__name";
+      name.textContent = tab.title || getHostname(tab.url) || tab.url || "—";
+      const left = document.createElement("span");
+      left.className = "run-item__left";
+      const endsAt = ends[id] ?? 0;
+      left.textContent = endsAt > 0 ? formatLeft(endsAt - Date.now()) : "∞";
+      main.append(fav, name, left);
+      main.addEventListener("click", () => void focusTab(tab));
+      const stop = document.createElement("button");
+      stop.type = "button";
+      stop.className = "run-item__stop";
+      stop.title = t("heldStop");
+      stop.setAttribute("aria-label", t("heldStop"));
+      stop.textContent = "×";
+      stop.addEventListener("click", () => void requestCapture(id, false).then(scheduleRender));
+      li.append(main, stop);
+      return li;
+    }),
+  );
+}
+
+/** One cell of the right-hand columns (in memory · running · keep alive), shared by rows and group heads. */
+function colCell(kind: "mem" | "run" | "alive", ...content: Node[]): HTMLElement {
+  const el = document.createElement("div");
+  el.className = `col col--${kind}`;
+  el.append(...content);
+  return el;
 }
 
 // Sentinel key for tabs with no web host (chrome://, extension pages, …).
@@ -308,6 +433,11 @@ function renderTabs(
     const card = document.createElement("section");
     card.className = "tab-group";
     if (isExpanded) card.classList.add("is-expanded");
+    // The "pick a tab" hint has done its job once a tab here runs.
+    if (host === runHintHost && groupTabs.some((tab) => tab.id != null && running.has(tab.id))) {
+      runHintHost = null;
+    }
+    if (host === runHintHost) card.classList.add("hint-run");
 
     const head = document.createElement("div");
     head.className = "tab-group__head";
@@ -326,7 +456,10 @@ function renderTabs(
     count.textContent = String(items.length);
     toggle.append(name, count);
     toggle.addEventListener("click", () => {
-      if (expandedHosts.has(host)) expandedHosts.delete(host);
+      if (expandedHosts.has(host)) {
+        expandedHosts.delete(host);
+        if (runHintHost === host) runHintHost = null;
+      }
       else expandedHosts.add(host);
       void render();
     });
@@ -340,14 +473,26 @@ function renderTabs(
       head.append(makePinBadge(pinnedCount, keptAlive));
     }
 
-    // Site-wide "keep alive" switch — internal pages have no domain rule.
-    if (host !== INTERNAL_GROUP) {
-      const label = document.createElement("span");
-      label.className = "tab-group__alive";
-      label.textContent = t("keepSiteAlive");
-      head.append(label, makeSiteSwitch(host, groupTabs, settings));
-    }
+    // The same columns as the rows: the whole site's memory rule, and Keep running —
+    // in the header too, so it isn't hidden inside a collapsed group.
+    const runnable = groupTabs.filter((t) => t.id != null && canCapture(t.url));
+    const cols = document.createElement("div");
+    cols.className = "cols";
+    cols.append(
+      colCell("mem", ...(host !== INTERNAL_GROUP ? [makeSiteSwitch(host, groupTabs, settings)] : [])),
+      colCell("run", ...(runnable.length > 0 ? [makeGroupRunButton(host, runnable)] : [])),
+      colCell("alive"),
+    );
+    head.append(cols);
     card.appendChild(head);
+    // "Pick a tab" sits inside the group, above the rows it points at — never over them.
+    if (host === runHintHost) {
+      const hint = document.createElement("p");
+      hint.className = "tab-group__hint";
+      hint.setAttribute("role", "status");
+      hint.textContent = t("groupRunPick");
+      card.appendChild(hint);
+    }
 
     // Rows only when expanded — collapsed groups show just the header + count.
     if (isExpanded) {
@@ -361,6 +506,7 @@ function renderTabs(
         );
       }
       card.appendChild(ul);
+      if (host === runHintHost) applyWave(card);
     }
     els.tabGroups.appendChild(card);
   }
@@ -385,17 +531,96 @@ function makePin(): SVGElement {
   return svg;
 }
 
+// "Pick one": when a group shows the hint, a single wave runs down its bolt buttons.
+// Rows re-render often, so each render resumes the wave where it is (negative delays)
+// instead of restarting it, and stops applying it once it has passed.
+const WAVE_STEP_MS = 170;
+const WAVE_MS = 900;
+let runHintAt = 0;
+
+function applyWave(card: HTMLElement): void {
+  const bolts = Array.from(card.querySelectorAll<HTMLElement>(".mode-ico--run:not(.is-on)"));
+  const elapsed = Date.now() - runHintAt;
+  if (elapsed > WAVE_STEP_MS * bolts.length + WAVE_MS) return;
+  bolts.forEach((bolt, i) => {
+    bolt.classList.add("is-wave");
+    bolt.style.animationDelay = `${i * WAVE_STEP_MS - elapsed}ms`;
+  });
+}
+
+/** Group showing the "pick a tab" hint, until one of its tabs runs or it is collapsed. */
+let runHintHost: string | null = null;
+
+/**
+ * Header "⚡ Keep running" for a site. It runs one tab at a time: with a single tab it starts
+ * it; with several it opens the group and points at the rows' bolt buttons. With tabs
+ * already running it shows how many (blue) and stops them.
+ */
+function makeGroupRunButton(host: string, tabs: chrome.tabs.Tab[]): HTMLButtonElement {
+  const held = tabs.filter((tab) => running.has(tab.id as number));
+  const on = held.length > 0;
+  const btn = document.createElement("button");
+  btn.className = "group-run" + (on ? " is-on" : "");
+  btn.title = on ? t("groupRunStopTip") : t("groupRunStartTip");
+  btn.setAttribute("aria-pressed", String(on));
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("aria-hidden", "true");
+  const path = document.createElementNS(SVG_NS, "path");
+  path.setAttribute("d", RUN_ICON[0]);
+  path.setAttribute("fill", on ? "currentColor" : "none");
+  path.setAttribute("stroke", "currentColor");
+  path.setAttribute("stroke-width", "1.8");
+  path.setAttribute("stroke-linejoin", "round");
+  svg.append(path);
+  btn.setAttribute("aria-label", btn.title);
+  btn.append(svg);
+  if (on) {
+    const n = document.createElement("span");
+    n.className = "group-run__count";
+    n.textContent = String(held.length);
+    btn.append(n);
+  }
+  btn.addEventListener("click", () => {
+    if (on) {
+      void Promise.all(held.map((tab) => requestCapture(tab.id as number, false))).then(scheduleRender);
+    } else if (tabs.length === 1) {
+      void startRunningFromHere(tabs[0]!);
+    } else {
+      expandedHosts.add(host);
+      runHintHost = host; // stays until a tab here is running, or the group is collapsed
+      runHintAt = Date.now();
+      void render();
+    }
+  });
+  return btn;
+}
+
 /** Header chip showing how many tabs in a collapsed group are kept alive. */
 function makeActiveBadge(count: number): HTMLElement {
+  // Same shape as the "⚡ Keep running" pill: what it is (chip icon + words), then how many.
   const el = document.createElement("span");
   el.className = "tab-group__active";
   el.title = t("groupActiveCount", String(count));
-  const dot = document.createElement("span");
-  dot.className = "dot";
-  el.append(dot);
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("aria-hidden", "true");
+  for (const d of MEMORY_ICON) {
+    const path = document.createElementNS(SVG_NS, "path");
+    path.setAttribute("d", d);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "currentColor");
+    path.setAttribute("stroke-width", "2");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+    svg.append(path);
+  }
+  const label = document.createElement("span");
+  label.textContent = t("groupInMemory");
   const n = document.createElement("span");
+  n.className = "tab-group__active-count";
   n.textContent = String(count);
-  el.append(n);
+  el.append(svg, label, n);
   return el;
 }
 
@@ -424,6 +649,7 @@ function makeTabRow(
   const li = document.createElement("li");
   li.className = "tab-row";
   if (tab.discarded) li.classList.add("is-asleep");
+  if (tab.id != null && running.has(tab.id)) li.classList.add("is-running");
 
   // Clickable main area → jump to the tab.
   const main = document.createElement("button");
@@ -466,31 +692,436 @@ function makeTabRow(
   main.addEventListener("click", () => void focusTab(tab));
   li.appendChild(main);
 
-  // Per-tab protect switch (one-time override). Site-wide rule lives in the group head.
-  const sw = document.createElement("label");
-  sw.className = "switch switch--sm";
-  sw.title = !settings.enabled
-    ? t("switchPausedByMaster")
-    : isOn
-      ? t("switchProtectedFlip")
-      : t("switchDiscardableFlip");
-
-  const input = document.createElement("input");
-  input.type = "checkbox";
-  input.checked = isOn;
-  input.disabled = !settings.enabled || tab.id == null;
-  input.addEventListener("change", () => void onToggleTab(tab, input.checked));
-  sw.appendChild(input);
-
-  const track = document.createElement("span");
-  track.className = "switch__track";
-  const thumb = document.createElement("span");
-  thumb.className = "switch__thumb";
-  track.appendChild(thumb);
-  sw.appendChild(track);
-
-  li.appendChild(sw);
+  li.appendChild(makeModeControls(tab, isOn, !settings.enabled));
   return li;
+}
+
+const MEMORY_ICON = [
+  "M8.5 6h7a2.5 2.5 0 012.5 2.5v7a2.5 2.5 0 01-2.5 2.5h-7A2.5 2.5 0 016 15.5v-7A2.5 2.5 0 018.5 6z",
+  "M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3",
+];
+const RUN_ICON = ["M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"];
+
+/** Small round toggle showing one mode's state; a click flips just that mode. */
+function modeButton(
+  paths: string[],
+  kind: "mem" | "run",
+  on: boolean,
+  title: string,
+  disabled: boolean,
+  onClick: () => void,
+): HTMLButtonElement {
+  const btn = document.createElement("button");
+  btn.className = `mode-ico mode-ico--${kind}` + (on ? " is-on" : "");
+  btn.title = title;
+  btn.setAttribute("aria-label", title);
+  btn.setAttribute("aria-pressed", String(on));
+  btn.disabled = disabled;
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("aria-hidden", "true");
+  for (const d of paths) {
+    const path = document.createElementNS(SVG_NS, "path");
+    path.setAttribute("d", d);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "currentColor");
+    path.setAttribute("stroke-width", "1.8");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+    svg.append(path);
+  }
+  btn.append(svg);
+  btn.addEventListener("click", onClick);
+  return btn;
+}
+
+/**
+ * A small look-alike of Chrome's toolbar for the hand-over dialog: address bar, other
+ * extensions, ours blinking exactly like the real one, the puzzle piece, the profile —
+ * and a cursor clicking ours. Shows what to look for before the user goes looking.
+ */
+function makeMockToolbar(): HTMLElement {
+  const bar = document.createElement("div");
+  bar.className = "mock-toolbar";
+  bar.setAttribute("aria-hidden", "true");
+
+  const omni = document.createElement("span");
+  omni.className = "mock-omni";
+  const url = document.createElement("span");
+  url.className = "mock-url";
+  url.textContent = "example.com"; // a stand-in: the picture is about the icons, not the site
+  const star = document.createElement("span");
+  star.className = "mock-star";
+  star.textContent = "☆";
+  omni.append(url, star);
+
+  const other = (): HTMLElement => {
+    const el = document.createElement("span");
+    el.className = "mock-ext";
+    return el;
+  };
+
+  const ours = document.createElement("span");
+  ours.className = "mock-ours";
+  const normal = document.createElement("img");
+  normal.src = "icons/icon32.png";
+  normal.alt = "";
+  const lit = document.createElement("img");
+  lit.className = "mock-ours__lit";
+  lit.alt = "";
+  // The same "attention" frame the real icon blinks to.
+  void drawIcons("attention").then((frames) => {
+    const frame = frames[32];
+    if (!frame) return;
+    const c = document.createElement("canvas");
+    c.width = c.height = 32;
+    c.getContext("2d")?.putImageData(frame, 0, 0);
+    lit.src = c.toDataURL();
+  });
+  const cursor = document.createElementNS(SVG_NS, "svg");
+  cursor.setAttribute("viewBox", "0 0 24 24");
+  cursor.setAttribute("class", "mock-cursor");
+  const arrow = document.createElementNS(SVG_NS, "path");
+  // The standard arrow pointer: black with a white outline.
+  arrow.setAttribute("d", "M5 2.5v16.2l4.1-4 2.7 6.2 2.6-1.1-2.7-6.1h5.8z");
+  arrow.setAttribute("fill", "#111111");
+  arrow.setAttribute("stroke", "#ffffff");
+  arrow.setAttribute("stroke-width", "1.5");
+  arrow.setAttribute("stroke-linejoin", "round");
+  cursor.append(arrow);
+  ours.append(normal, lit, cursor);
+
+  const puzzle = document.createElement("span");
+  puzzle.className = "mock-puzzle";
+  puzzle.textContent = "🧩";
+  const avatar = document.createElement("span");
+  avatar.className = "mock-avatar";
+
+  bar.append(omni, other(), other(), ours, puzzle, avatar);
+  return bar;
+}
+
+// While a hand-over waits for its click, this page (still open in its own tab) blinks the
+// toolbar icon on that tab. The worker can't: Chrome puts it to sleep within seconds.
+const BLINK_MS = 700;
+const BLINK_MAX_MS = 10 * 60 * 1000;
+let blink: { tabId: number; timer: ReturnType<typeof setInterval> } | null = null;
+
+async function startBlink(tabId: number): Promise<void> {
+  stopBlink();
+  const attention = await drawIcons("attention");
+  const started = Date.now();
+  let lit = false;
+  const tick = (): void => {
+    if (Date.now() - started > BLINK_MAX_MS) return stopBlink();
+    lit = !lit;
+    const icon = lit ? { tabId, imageData: attention } : { tabId, path: DEFAULT_ICON_PATHS };
+    chrome.action.setIcon(icon).catch(() => stopBlink()); // tab closed
+  };
+  // The protected-tabs count would cover half the ring; hide it on this tab meanwhile.
+  await chrome.action.setBadgeText({ tabId, text: "" }).catch(() => undefined);
+  tick();
+  blink = { tabId, timer: setInterval(tick, BLINK_MS) };
+}
+
+/** Stop blinking and give that tab the icon every other tab has right now. */
+function stopBlink(): void {
+  if (!blink) return;
+  const { tabId, timer } = blink;
+  blink = null;
+  clearInterval(timer);
+  void (async () => {
+    const icon =
+      running.size > 0 || (await getCaptured()).length > 0
+        ? { tabId, imageData: await drawIcons("running") }
+        : { tabId, path: DEFAULT_ICON_PATHS };
+    await chrome.action.setIcon(icon).catch(() => undefined);
+    // null drops this tab's own (empty) badge text, so the shared count shows again.
+    await chrome.action.setBadgeText({ tabId, text: null as unknown as string }).catch(() => undefined);
+  })();
+}
+
+// The popup took the hand-over (or it was dropped): the click happened, stop blinking.
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area === "session" && changes[PENDING_KEY] && changes[PENDING_KEY].newValue === undefined) {
+    stopBlink();
+  }
+});
+
+/**
+ * Keep running can't start from here on a tab the popup hasn't been opened on: Chrome
+ * allows it only after a click on the toolbar icon on that tab. Say so up front — what
+ * happens and where to click — then hand it over: remember what to finish and switch to
+ * the tab. The click on the icon opens the popup, which finishes it.
+ * (Opening the popup from here would bring it up without that permission — a dead end.)
+ */
+function openPopupOn(tab: chrome.tabs.Tab, memory = false): Promise<void> {
+  if (tab.id == null) return Promise.resolve();
+  const id = tab.id;
+  if (!canCapture(tab.url)) return focusTab(tab);
+  return new Promise((resolve) => {
+    const dialog = document.createElement("dialog");
+    dialog.className = "consent handoff";
+
+    const title = document.createElement("h2");
+    title.className = "consent__title";
+    title.textContent = t(memory ? "handoffTitleAlive" : "handoffTitle");
+
+    const steps = document.createElement("ol");
+    steps.className = "handoff__steps";
+    const step = (text: string, extra?: HTMLElement): void => {
+      const li = document.createElement("li");
+      const span = document.createElement("span");
+      span.textContent = text;
+      li.append(span);
+      if (extra) li.append(extra);
+      steps.append(li);
+    };
+    step(t("handoffStep1", tab.title || getHostname(tab.url) || tab.url || ""));
+    step(t("handoffStep2"), makeMockToolbar());
+    step(t(memory ? "handoffStep3Alive" : "handoffStep3"));
+
+    const actions = document.createElement("div");
+    actions.className = "consent__actions";
+    const cancel = document.createElement("button");
+    cancel.type = "button";
+    cancel.className = "consent__btn";
+    cancel.textContent = t("consentCancel");
+    const go = document.createElement("button");
+    go.type = "button";
+    go.className = "consent__btn consent__btn--ok";
+    go.textContent = t("goToTab");
+    actions.append(cancel, go);
+
+    dialog.append(title, steps, actions);
+    document.body.append(dialog);
+    const done = (): void => {
+      dialog.close();
+      dialog.remove();
+      scheduleRender();
+      resolve();
+    };
+    cancel.addEventListener("click", done);
+    dialog.addEventListener("cancel", done);
+    go.addEventListener("click", async () => {
+      await setPendingStart({ tabId: id, memory, at: Date.now() });
+      void startBlink(id);
+      done();
+      await chrome.tabs.update(id, { active: true });
+      await chrome.windows.update(tab.windowId, { focused: true });
+    });
+    dialog.showModal();
+    go.focus();
+  });
+}
+
+/**
+ * Start Keep running from this page. Chrome lets us capture a tab only once the extension
+ * has been invoked on it (its popup opened there) — site access doesn't count. So this
+ * works for tabs the popup was opened on since their last load; for the rest, send the
+ * user to the tab, where one click on the toolbar icon does it.
+ */
+function startRunningFromHere(tab: chrome.tabs.Tab, withMemory = false): Promise<void> {
+  if (tab.id == null || !canCapture(tab.url) || !invoked.has(tab.id)) return openPopupOn(tab, withMemory);
+  if (!captureConsent) return confirmThenStart(tab, withMemory);
+  return tryStart(tab, withMemory);
+}
+
+/**
+ * Start Keep running; with `withMemory` (Keep alive) turn memory on only once it is running,
+ * so the switch never flashes on and falls back off.
+ */
+async function tryStart(tab: chrome.tabs.Tab, withMemory = false): Promise<void> {
+  const id = tab.id as number;
+  const minutes = await getCaptureMinutes();
+  const res = await requestCapture(id, true, minutes);
+  if (res.ok) {
+    if (withMemory) await onToggleTab(tab, true);
+    scheduleRender();
+    return;
+  }
+  if (NOT_INVOKED.test(res.error ?? "")) {
+    // The grant is gone (e.g. the page reloaded): the row turns into "Turn on in tab".
+    await setInvoked(id, false);
+    showToast(t("runNeedsPopup"), false, {
+      label: t("goToTab"),
+      run: () => void openPopupOn(tab, withMemory),
+    });
+  } else {
+    // Something else holds a capture of the page; a reload usually clears it.
+    showToast(t("captureFailed"), true, {
+      label: t("captureReload"),
+      run: () => void reloadAndStart(tab),
+    });
+  }
+  scheduleRender();
+}
+
+/** Reload the tab, then try again once it has loaded. */
+async function reloadAndStart(tab: chrome.tabs.Tab): Promise<void> {
+  const id = tab.id as number;
+  const loaded = new Promise<void>((resolve) => {
+    const onUpdated = (tabId: number, info: { status?: string }): void => {
+      if (tabId !== id || info.status !== "complete") return;
+      chrome.tabs.onUpdated.removeListener(onUpdated);
+      resolve();
+    };
+    chrome.tabs.onUpdated.addListener(onUpdated);
+  });
+  await chrome.tabs.reload(id);
+  await loaded;
+  await tryStart(tab);
+}
+
+const CHECK_PATH = "M5 12.5l4.5 4.5L19 7.5";
+
+/** The same first-use explanation the popup shows, as a dialog on this page. */
+function confirmThenStart(tab: chrome.tabs.Tab, withMemory = false): Promise<void> {
+  return new Promise((resolve) => {
+    const dialog = document.createElement("dialog");
+    dialog.className = "consent";
+
+    const title = document.createElement("h2");
+    title.className = "consent__title";
+    title.textContent = t("runConsentTitle");
+    const lead = document.createElement("p");
+    lead.className = "consent__lead";
+    lead.textContent = t("runHelpLead");
+    const list = document.createElement("ul");
+    list.className = "consent__points";
+    for (const key of ["runHelpPoint1", "runHelpPoint2", "runHelpPoint3"]) {
+      const li = document.createElement("li");
+      const svg = document.createElementNS(SVG_NS, "svg");
+      svg.setAttribute("viewBox", "0 0 24 24");
+      svg.setAttribute("aria-hidden", "true");
+      const path = document.createElementNS(SVG_NS, "path");
+      path.setAttribute("d", CHECK_PATH);
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", "currentColor");
+      path.setAttribute("stroke-width", "2.2");
+      path.setAttribute("stroke-linecap", "round");
+      path.setAttribute("stroke-linejoin", "round");
+      svg.append(path);
+      const text = document.createElement("span");
+      text.textContent = t(key);
+      li.append(svg, text);
+      list.append(li);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "consent__actions";
+    const cancel = document.createElement("button");
+    cancel.type = "button";
+    cancel.className = "consent__btn";
+    cancel.textContent = t("consentCancel");
+    const ok = document.createElement("button");
+    ok.type = "button";
+    ok.className = "consent__btn consent__btn--ok";
+    ok.textContent = t("consentOk");
+    actions.append(cancel, ok);
+
+    dialog.append(title, lead, list, actions);
+    document.body.append(dialog);
+
+    const close = (): void => {
+      dialog.close();
+      dialog.remove();
+    };
+    cancel.addEventListener("click", () => {
+      close();
+      scheduleRender();
+      resolve();
+    });
+    dialog.addEventListener("cancel", () => {
+      dialog.remove();
+      scheduleRender();
+      resolve();
+    });
+    ok.addEventListener("click", () => {
+      captureConsent = true;
+      close();
+      void giveCaptureConsent()
+        .then(() => tryStart(tab, withMemory))
+        .then(resolve);
+    });
+
+    dialog.showModal();
+    ok.focus();
+  });
+}
+
+/**
+ * The tab row's controls: two mode icons (in memory, running) and one "Keep alive" switch
+ * for both. The switch is on only when both modes are; flipping it sets both.
+ */
+function makeModeControls(tab: chrome.tabs.Tab, memoryOn: boolean, paused: boolean): HTMLElement {
+  const id = tab.id as number;
+  const runnable = canCapture(tab.url);
+  const runOn = running.has(id);
+  const noTab = tab.id == null;
+  // Chrome starts a capture only on a tab the popup was opened on; elsewhere we can't from here.
+  const startable = runnable && invoked.has(id);
+  const full = memoryOn && (runOn || !runnable);
+
+  const cols = document.createElement("div");
+  cols.className = "cols";
+
+  const mem = modeButton(MEMORY_ICON, "mem", memoryOn, t("memoryTitle"), paused || noTab, () =>
+    void onToggleTab(tab, !memoryOn),
+  );
+  const runTip = runOn ? t("rowRunStop") : startable ? t("rowRunStart") : t("aliveOnTabTip");
+  const run = runnable
+    ? modeButton(RUN_ICON, "run", runOn, runTip, noTab, () => {
+        if (runOn) void requestCapture(id, false).then(scheduleRender);
+        else void startRunningFromHere(tab);
+      })
+    : null;
+
+  // Not fully on, and Keep running can't start from here: be honest — a link to the tab,
+  // not a switch that would flick on and fall back off.
+  let alive: HTMLElement;
+  if (runnable && !full && !runOn && !startable) {
+    const go = document.createElement("button");
+    go.className = "alive-go";
+    go.title = t("aliveOnTabTip");
+    go.textContent = `${t("aliveOnTab")} ↗`;
+    go.disabled = noTab;
+    go.addEventListener("click", () => void openPopupOn(tab, true));
+    alive = go;
+  } else {
+    const sw = document.createElement("label");
+    sw.className = "switch switch--sm";
+    sw.title = t("aliveRowTip");
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.checked = full;
+    input.disabled = paused || noTab;
+    input.setAttribute("aria-label", t("aliveTitle"));
+    input.addEventListener("change", async () => {
+      if (input.checked) {
+        if (runnable && !runOn) {
+          input.disabled = true; // stays on while starting; memory follows only on success
+          await startRunningFromHere(tab, true);
+        } else {
+          await onToggleTab(tab, true);
+        }
+      } else {
+        await onToggleTab(tab, false);
+        if (runOn) await requestCapture(id, false);
+      }
+      scheduleRender();
+    });
+    const track = document.createElement("span");
+    track.className = "switch__track";
+    const thumb = document.createElement("span");
+    thumb.className = "switch__thumb";
+    track.appendChild(thumb);
+    sw.append(input, track);
+    alive = sw;
+  }
+
+  cols.append(colCell("mem", mem), colCell("run", ...(run ? [run] : [])), colCell("alive", alive));
+  return cols;
 }
 
 /**
@@ -571,8 +1202,10 @@ function tabTags(tab: chrome.tabs.Tab, isManual: boolean): HTMLSpanElement[] {
     const el = document.createElement("span");
     el.className = "minitag" + (extra ? ` ${extra}` : "");
     el.textContent = label;
+    el.title = label; // the chip may be cut short in long languages
     tags.push(el);
   };
+  if (tab.id != null && running.has(tab.id)) make(t("tagRunning"), "minitag--running");
   if (isManual) make(t("tagManual"), "minitag--manual");
   if (tab.discarded) make(t("tagAsleep"));
   if (tab.pinned) make(t("tagPinned"));
@@ -765,9 +1398,13 @@ els.form.addEventListener("submit", async (e) => {
   els.input.focus();
 });
 
-els.resetStats.addEventListener("click", () => void resetStats());
 
-// React to changes from anywhere: settings (sync), stats (local), overrides (session).
+// React to changes from anywhere: settings (sync), consent (local), overrides/captures (session).
+els.stopAll.addEventListener("click", async () => {
+  await Promise.all([...running].map((id) => requestCapture(id, false)));
+  scheduleRender();
+});
+
 chrome.storage.onChanged.addListener(() => scheduleRender());
 
 // Keep the tab list live while the page is open.

@@ -142,7 +142,7 @@ body {
 /* ── Stats band — masthead numbers, hero metric on an accent backplate ─────── */
 .statbar {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) auto;
+  grid-template-columns: repeat(2, minmax(0, 240px));
   align-items: center;
   gap: 14px;
   padding: 22px 32px;
@@ -392,19 +392,23 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  margin-right: 6px;
+  padding: 4px 6px 4px 10px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--accent-strong);
   background: var(--accent-soft);
   border-radius: var(--radius-pill);
-  padding: 2px 10px 2px 8px;
   font-variant-numeric: tabular-nums;
 }
-.tab-group__active .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
+.tab-group__active svg { width: 13px; height: 13px; }
+.tab-group__active-count {
+  min-width: 16px;
+  padding: 0 5px;
+  border-radius: var(--radius-pill);
   background: var(--accent);
+  color: #fff;
+  text-align: center;
 }
 
 /* Pinned-tabs flag on a collapsed group — pin glyph + count. */
@@ -425,7 +429,7 @@ body {
   width: 12px;
   height: 12px;
 }
-.tab-group__pins--warn {
+.tab-group__pins--run {
   color: var(--danger);
   background: var(--danger-soft);
 }
@@ -699,3 +703,477 @@ body {
     order: 10;
   }
 }
+
+/* "Keep running" — blue strip above the tab list + per-tab/group markers. */
+.running-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--run-soft);
+  color: var(--run-strong);
+  font-weight: 600;
+  font-size: 13px;
+}
+.running-bar[hidden] { display: none; }
+.running-bar svg { flex: none; width: 16px; height: 16px; }
+.running-bar__text { flex: 1; min-width: 0; }
+.running-bar__stop {
+  flex: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  font: inherit;
+  font-weight: 700;
+  background: var(--run);
+  color: var(--run-on);
+}
+.running-bar__stop:hover { filter: brightness(1.08); }
+.running-bar__stop:focus-visible { outline: 2px solid var(--run-strong); outline-offset: 2px; }
+.minitag--running {
+  background: var(--run);
+  color: var(--run-on);
+}
+.tab-group__running {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--run-strong);
+  background: var(--run-soft);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+.tab-group__running svg { width: 11px; height: 11px; }
+.tab-row.is-running { box-shadow: inset 3px 0 0 var(--run); }
+
+/* Tab row controls: two round mode icons (in memory / running) + one "Keep alive" switch. */
+.tab-row__ctl { display: flex; align-items: center; gap: 6px; margin-left: 18px; flex: none; }
+.tab-row__lbl { font-size: 11.5px; font-weight: 600; color: var(--text-muted); white-space: nowrap; margin: 0 2px 0 8px; }
+.mode-ico {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--text-faint);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+.mode-ico svg { width: 16px; height: 16px; }
+/* Hover must not repaint an "on" icon — it keeps its colour and only deepens a little. */
+.mode-ico:not(.is-on):hover:not(:disabled) { color: var(--text); background: var(--surface-2); }
+.mode-ico.is-on:hover:not(:disabled) { filter: brightness(0.92); }
+.mode-ico:disabled { opacity: 0.45; cursor: default; }
+.mode-ico--mem.is-on { background: var(--accent-soft); color: var(--accent-strong); box-shadow: inset 0 0 0 1px var(--accent); }
+/* Same blue as the popup's "alive" badge. */
+.mode-ico--run.is-on { background: var(--run); color: var(--run-on); box-shadow: none; }
+.mode-ico:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (max-width: 720px) { .tab-row__lbl { display: none; } .tab-row__ctl { margin-left: 10px; } }
+
+/* First-use confirmation for Keep running, same words as the popup's. */
+.consent {
+  width: min(440px, calc(100vw - 32px));
+  box-sizing: border-box;
+  padding: 22px 22px 18px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--elevated);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+.consent::backdrop { background: rgba(10, 12, 16, 0.45); }
+.consent__title { margin: 0 0 8px; font-size: 17px; }
+.consent__lead { margin: 0 0 12px; font-size: 13.5px; line-height: 1.5; color: var(--text-muted); }
+.consent__points { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 8px; }
+.consent__points li { display: flex; gap: 8px; font-size: 13.5px; line-height: 1.45; }
+.consent__points svg { flex: none; width: 16px; height: 16px; margin-top: 2px; color: var(--accent); }
+.consent__actions { display: flex; justify-content: flex-end; gap: 8px; }
+.consent__btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: 700;
+  background: var(--surface-2);
+  color: var(--text);
+}
+.consent__btn--ok { background: var(--run); color: var(--run-on); }
+.consent__btn:focus-visible { outline: 2px solid var(--run); outline-offset: 2px; }
+
+/* Toast with a button (e.g. "Reload page") must take clicks. */
+.toast--action.toast--show { pointer-events: auto; display: flex; align-items: center; gap: 12px; }
+.toast__action {
+  flex: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 5px 12px;
+  font: inherit;
+  font-weight: 700;
+  background: var(--surface-2);
+  color: var(--text);
+}
+.toast__action:hover { background: var(--border); }
+.toast__action:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Group header "⚡ Keep running": outline when idle, solid blue with a count when tabs run. */
+.group-run {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 6px;
+  padding: 4px 10px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--run-strong);
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--run);
+}
+.group-run svg { width: 13px; height: 13px; }
+.group-run:not(.is-on):hover { background: var(--run-soft); }
+.group-run.is-on { background: var(--run); color: var(--run-on); box-shadow: none; }
+.group-run.is-on:hover { filter: brightness(0.92); }
+.group-run:focus-visible { outline: 2px solid var(--run); outline-offset: 2px; }
+.group-run__count {
+  min-width: 16px;
+  padding: 0 5px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.25);
+  text-align: center;
+}
+
+/* Top: "Keep running" next to "in memory" — the two things the extension does. */
+.stat--run { background: var(--run-soft); }
+.stat__num--run { color: var(--run-strong); }
+.topbar__label { font-size: 12px; font-weight: 600; color: var(--text-muted); white-space: nowrap; }
+.mode-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+.mode-note svg { flex: none; width: 15px; height: 15px; margin-top: 1px; color: var(--run-strong); }
+
+/* "Turn on in tab ↗": Keep alive for a tab where Keep running can only start from its popup. */
+.tab-row__alive { display: flex; align-items: center; justify-content: flex-end; gap: 6px; min-width: 150px; }
+.alive-go {
+  flex: none;
+  padding: 4px 10px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  color: var(--run-strong);
+  background: var(--run-soft);
+}
+.alive-go:hover { box-shadow: inset 0 0 0 1px var(--run); }
+.alive-go:focus-visible { outline: 2px solid var(--run); outline-offset: 2px; }
+.mode-ico-gap { flex: none; width: 28px; height: 28px; }
+
+/* A toast that answers a click sits right by it, not at the bottom of the page. */
+.toast.toast--anchored { bottom: auto; transform: translateY(-4px); }
+.toast.toast--anchored.toast--show { transform: none; }
+
+/* Hand-off to the tab: numbered steps, with the toolbar icon to look for. */
+.handoff__steps { margin: 4px 0 18px; padding-left: 20px; display: grid; gap: 10px; font-size: 13.5px; line-height: 1.45; }
+.handoff__steps li::marker { font-weight: 800; color: var(--run-strong); }
+.handoff__steps li { padding-left: 4px; }
+.handoff__steps li > span:first-child { margin-right: 8px; }
+.handoff__icon { position: relative; display: inline-grid; place-items: center; width: 26px; height: 26px; vertical-align: middle; }
+.handoff__icon img { width: 22px; height: 22px; }
+
+/* Inline "pick a tab" hint between a group's header and its rows. */
+.tab-group__hint {
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--run-strong);
+  background: var(--run-soft);
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* "Pick one": a single soft wave down the bolt buttons — lift, a thin blue ring, a glow
+   that spreads and fades. Staggered per row by inline animation-delay. */
+.mode-ico--run.is-wave { animation: bolt-wave 0.9s cubic-bezier(0.33, 0, 0.2, 1) both; }
+@keyframes bolt-wave {
+  0% {
+    transform: none;
+    color: var(--text-faint);
+    box-shadow: inset 0 0 0 1px var(--border), 0 0 0 0 color-mix(in srgb, var(--run) 0%, transparent);
+  }
+  35% {
+    transform: translateY(-2px) scale(1.12);
+    color: var(--run-strong);
+    background: var(--run-soft);
+    box-shadow: inset 0 0 0 1.5px var(--run), 0 0 0 4px color-mix(in srgb, var(--run) 22%, transparent),
+      0 4px 14px color-mix(in srgb, var(--run) 35%, transparent);
+  }
+  100% {
+    transform: none;
+    color: var(--text-faint);
+    box-shadow: inset 0 0 0 1px var(--border), 0 0 0 10px color-mix(in srgb, var(--run) 0%, transparent);
+  }
+}
+@media (prefers-reduced-motion: reduce) { .mode-ico--run.is-wave { animation: none; } }
+
+/* Look-alike toolbar in the hand-over dialog; our icon blinks in step with the real one. */
+.mock-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 7px 10px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+.mock-omni {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.mock-url { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mock-star { flex: none; opacity: 0.7; }
+.mock-ext { flex: none; width: 18px; height: 18px; border-radius: 5px; background: var(--border-strong); opacity: 0.8; }
+.mock-ours { position: relative; flex: none; width: 22px; height: 22px; }
+.mock-ours img { position: absolute; inset: 0; width: 22px; height: 22px; }
+.mock-ours__lit { animation: mock-blink 1.4s steps(1, end) infinite; }
+.mock-ours__lit:not([src]) { display: none; } /* until the blink frame is drawn */
+@keyframes mock-blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+.mock-cursor {
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+  animation: mock-click 2.8s ease-in-out infinite;
+}
+@keyframes mock-click {
+  0% { transform: translate(14px, 14px); opacity: 0; }
+  20% { opacity: 1; }
+  55% { transform: translate(0, 0); }
+  62% { transform: translate(0, 0) scale(0.85); }
+  70% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(0, 0); opacity: 0; }
+}
+.mock-puzzle { flex: none; font-size: 15px; line-height: 1; filter: grayscale(0.4); }
+.mock-avatar { flex: none; width: 20px; height: 20px; border-radius: 50%; background: var(--border-strong); }
+.handoff__steps li:nth-child(2) > span:first-child { display: block; }
+@media (prefers-reduced-motion: reduce) { .mock-ours__lit, .mock-cursor { animation: none; } }
+
+/* ══ Redesign: two mode cards up top, aligned columns in the tab list ═════════ */
+
+/* The two things the extension does, side by side. */
+.modes-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 4px 32px 28px;
+}
+.mcard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.mcard--mem { background: linear-gradient(150deg, var(--accent-soft), transparent 55%), var(--surface); }
+.mcard--run { background: linear-gradient(150deg, var(--run-soft), transparent 55%), var(--surface); }
+.mcard__head { display: flex; align-items: flex-start; gap: 12px; }
+.mcard__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+.mcard__icon svg { width: 22px; height: 22px; }
+.mcard--mem .mcard__icon { background: var(--accent-soft); color: var(--accent-strong); }
+.mcard--run .mcard__icon { background: var(--run-soft); color: var(--run-strong); }
+.mcard__titles { flex: 1; min-width: 0; }
+.mcard__title { margin: 0; font-size: 17px; font-weight: 750; letter-spacing: -0.01em; }
+.mcard__sub { margin: 3px 0 0; font-size: 13px; line-height: 1.45; color: var(--text-muted); }
+.mcard__count {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.mcard__num {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-transform: none;
+  font-variant-numeric: tabular-nums;
+}
+.mcard--mem .mcard__num { color: var(--accent-strong); }
+.mcard--run .mcard__num { color: var(--run-strong); }
+.mcard__block { display: flex; flex-direction: column; gap: 8px; padding-top: 14px; border-top: 1px solid var(--border); }
+.mcard__stop {
+  flex: none;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--run);
+  color: var(--run-on);
+}
+.mcard__stop[hidden] { display: none; }
+.mcard__stop:hover { filter: brightness(0.94); }
+
+/* Which sites: a two-way segmented control (replaces the big mode boxes). */
+.rule-seg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--surface-2);
+}
+.rule-seg .mode.rule-seg__opt {
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+.rule-seg .mode.rule-seg__opt input { position: absolute; opacity: 0; pointer-events: none; }
+.rule-seg .mode__name { font-size: 13px; font-weight: 650; color: var(--text-muted); }
+.rule-seg .mode.rule-seg__opt:has(input:checked) { background: var(--surface); box-shadow: var(--shadow-sm); }
+.rule-seg .mode.rule-seg__opt:has(input:checked) .mode__name { color: var(--accent-strong); }
+.rule-seg .mode.rule-seg__opt:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 1px; }
+.rules__head { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+.rules__title { margin: 0; font-size: 13.5px; font-weight: 700; }
+.rules__desc { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--text-muted); }
+.mcard .adder { margin: 2px 0 0; }
+.mcard .domain-list { max-height: 196px; overflow-y: auto; margin: 0; }
+
+/* Keep running card: the held tabs. */
+.run-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.run-item { display: flex; align-items: center; gap: 4px; }
+.run-item__main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.run-item__main:hover { background: var(--run-soft); }
+.run-item__fav { flex: none; width: 16px; height: 16px; border-radius: 4px; }
+.run-item__name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 550; }
+.run-item__left { flex: none; font-size: 12.5px; color: var(--run-strong); font-weight: 650; font-variant-numeric: tabular-nums; }
+.run-item__stop {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.run-item__stop:hover { background: var(--run-soft); color: var(--run-strong); }
+.run-empty { margin: 0; font-size: 13px; line-height: 1.5; color: var(--text-muted); }
+.run-empty[hidden] { display: none; }
+
+/* Right-hand columns: one header for the whole list, then the same cells in every
+   group head and row — no repeated labels. */
+.cols, .cols-head { flex: none; display: grid; grid-template-columns: 92px 92px 156px; align-items: center; }
+.col { display: flex; justify-content: center; align-items: center; min-height: 30px; }
+.col--alive { justify-content: flex-end; }
+.cols-head {
+  justify-content: end;
+  margin: 4px 0 -2px auto;
+  width: max-content;
+  padding-right: 13px;
+}
+.cols-head .col {
+  min-height: 0;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: var(--text-faint);
+  text-align: center;
+  overflow-wrap: anywhere; /* long names in some languages wrap instead of overlapping */
+}
+.cols-head .col--mem { color: var(--accent-strong); }
+.cols-head .col--run { color: var(--run-strong); }
+.tab-group__head .cols { margin-right: 2px; }
+.tab-row .cols { margin-left: auto; }
+
+/* Group head Keep running: a compact round bolt, with a count once tabs run. */
+.group-run {
+  margin: 0;
+  padding: 0 7px;
+  min-width: 30px;
+  height: 30px;
+  justify-content: center;
+  gap: 4px;
+}
+.group-run .group-run__count { min-width: 14px; padding: 0 4px; font-size: 11px; }
+
+@media (max-width: 860px) {
+  .modes-band { grid-template-columns: 1fr; padding-left: 18px; padding-right: 18px; }
+  .cols, .cols-head { grid-template-columns: 76px 76px 128px; }
+}
+
+/* Long state words in some languages: cut the chip, the tooltip has the full text. */
+.minitag { max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

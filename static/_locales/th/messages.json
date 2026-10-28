@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "ปิดการล้างแท็บของ Chrome และป้องกันการโหลดแท็บใหม่ที่ไม่ต้องการ มีกฎต่อเว็บไซต์ การควบคุมต่อแท็บ และสถิติแบบเรียลไทม์",
+    "message": "ปิดการล้างแท็บของ Chrome และไม่ให้แท็บช้าลงขณะอยู่เบื้องหลัง ควบคุมต่อเว็บไซต์และต่อแท็บ พร้อมตัวตั้งเวลาปิดอัตโนมัติ",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "ปิดการล้างแท็บอัตโนมัติ",
+    "message": "ปิดการดรอปแท็บอัตโนมัติ",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "สวิตช์หลัก",
+    "message": "หยุดชั่วคราวหรือกลับมาใช้ “คงไว้ในหน่วยความจำ” กับทุกแท็บ (“ให้ทำงานต่อเนื่อง” ไม่ได้รับผลกระทบ)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "เปิดการปกป้อง",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "หยุดชั่วคราว",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "แท็บที่ได้รับการปกป้อง",
@@ -56,62 +52,20 @@
     "description": "Scope chip on the tab switch: the override applies to this tab only and is temporary."
   },
   "internalPageTabOnly": {
-    "message": "หน้าภายในไม่มีกฎของไซต์ — แต่คุณยังสลับแท็บนี้ได้",
+    "message": "หน้าภายในไม่มีกฎของเว็บไซต์ — แต่คุณยังสลับแท็บนี้ได้",
     "description": "Hint when the current page is internal: only the tab switch works."
-  },
-  "pageCantBeManaged": {
-    "message": "ไม่สามารถจัดการหน้านี้ได้",
-    "description": "Shown when the current tab is an internal/extension page."
   },
   "notAvailableHere": {
     "message": "ไม่พร้อมใช้งานที่นี่",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "หน้าภายในและหน้าส่วนขยายจะไม่ถูกแตะต้องเสมอ",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "ได้รับการปกป้อง",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "ล้างได้",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "ปกป้องเว็บไซต์นี้",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "หยุดปกป้องเว็บไซต์นี้",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "ยกเว้นเว็บไซต์นี้",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "เว็บไซต์ที่ได้รับการปกป้อง",
+    "message": "เว็บไซต์ที่คงไว้ในหน่วยความจำ",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "เว็บไซต์ที่ถูกยกเว้น",
+    "message": "เว็บไซต์ที่ Chrome ดรอปได้",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "ยังไม่มีเว็บไซต์",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ เพิ่มเติม",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "ลบ $DOMAIN$",
@@ -136,7 +90,7 @@
     "description": "Document title of the welcome page."
   },
   "takeTour": {
-    "message": "ชมการแนะนำ",
+    "message": "เริ่มทัวร์",
     "description": "Tooltip/label for the guided-tour button."
   },
   "themeLabel": {
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "ได้รับการปกป้องขณะนี้",
+    "message": "ขณะนี้อยู่ในหน่วยความจำ",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "โหมดการปกป้อง",
+    "message": "คงไว้ในหน่วยความจำ: เว็บไซต์ใดบ้าง",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "ปกป้องทุกอย่าง",
+    "message": "ทุกเว็บไซต์ ยกเว้น…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "ไวต์ลิสต์เท่านั้น",
+    "message": "เฉพาะเว็บไซต์ที่เลือก",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "สลับสวิตช์เพื่อคงแท็บนั้นไว้หรือปล่อยให้ Chrome ล้างแท็บ สวิตช์ด้วยตนเองจะแทนที่กฎของเว็บไซต์และมีผลจนกว่าจะปิดแท็บ",
+    "message": "ต่อแท็บ: ▣ คงไว้ในหน่วยความจำ ⚡ ให้ทำงานต่อเนื่อง และ “คงไว้ทั้งสองแบบ” ทำทั้งสองอย่างพร้อมกัน การเปลี่ยนด้วยตนเองมีผลเหนือกฎของเว็บไซต์จนกว่าจะปิดแท็บ",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "ไม่มีแท็บที่ตรงกับการค้นหาของคุณ",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "หน้าต่างนี้ · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "หน้าต่าง $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "ด้วยตนเอง",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "หลับอยู่",
+    "message": "ถูกดรอปแล้ว",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "การปกป้องถูกหยุดชั่วคราวโดยสวิตช์หลัก",
+    "message": "“คงไว้ในหน่วยความจำ” ถูกหยุดชั่วคราว — เปิดใหม่ได้ในการ์ด “คงไว้ในหน่วยความจำ”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "ได้รับการปกป้อง — สลับเพื่อให้ Chrome ล้างแท็บนี้",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "ล้างได้ — สลับเพื่อคงแท็บนี้ไว้",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "เฉพาะเว็บไซต์เหล่านี้เท่านั้นที่จะถูกคงไว้ ส่วนที่เหลืออาจถูกล้าง โดเมนยังครอบคลุมโดเมนย่อยด้วย — เช่น <code>example.com</code> ครอบคลุม <code>mail.example.com</code>",
+    "message": "Chrome จะไม่ดรอปแท็บของเว็บไซต์เหล่านี้ โดเมนครอบคลุมโดเมนย่อยด้วย: <code>example.com</code> → <code>mail.example.com</code>",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "เว็บไซต์เหล่านี้ได้รับอนุญาตให้ถูกล้าง โดเมนยังครอบคลุมโดเมนย่อยด้วย — เช่น <code>example.com</code> ครอบคลุม <code>mail.example.com</code>",
+    "message": "แท็บอื่นทั้งหมดจะคงอยู่ในหน่วยความจำ ส่วนเว็บไซต์เหล่านี้ Chrome อาจดรอปได้ โดเมนครอบคลุมโดเมนย่อยด้วย: <code>example.com</code> → <code>mail.example.com</code>",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "ลบ",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "เสมอสำหรับเว็บไซต์นี้",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "คง $HOST$ ไว้เสมอ (เพิ่มกฎเว็บไซต์)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "ปล่อยให้ $HOST$ ถูกล้างเสมอ (อัปเดตกฎเว็บไซต์)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "คงไว้เสมอ",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "ล้างได้เสมอ",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ ถูกบันทึกเป็นกฎเว็บไซต์ — คลิกเพื่อลบออก",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "ลบแล้ว — $HOST$ จะกลับไปใช้ค่าเริ่มต้นของโหมดอีกครั้ง",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "บันทึกแล้ว — $HOST$ จะคงไว้เสมอ ดูกฎเว็บไซต์ด้านล่าง",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "บันทึกแล้ว — $HOST$ สามารถถูกล้างได้เสมอ ดูกฎเว็บไซต์ด้านล่าง",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "ยังไม่มีอะไรที่นี่",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "เคล็ดลับ: เปิด <code>chrome://discards</code> เพื่อดูคอลัมน์ <strong>Auto Discardable</strong> — แท็บที่ได้รับการปกป้องจะแสดง ✕ หมายเหตุ: การล้างด้วยตนเองที่นั่นยังคงทำงานได้ ส่วนนี้บล็อกเฉพาะการล้างเพื่อประหยัดหน่วยความจำ<em>อัตโนมัติ</em>ของ Chrome เท่านั้น",
+    "message": "เคล็ดลับ: เปิด <code>chrome://discards</code> เพื่อดูคอลัมน์ <strong>Auto Discardable</strong> — แท็บที่คงไว้ในหน่วยความจำจะแสดง ✕ หมายเหตุ: การดรอปด้วยตนเองที่นั่นยังคงทำงานได้ ส่วนนี้บล็อกเฉพาะการดรอป<em>อัตโนมัติ</em>ของ Chrome เพื่อประหยัดหน่วยความจำเท่านั้น",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "เก็บแท็บที่สำคัญให้ทำงานอยู่เสมอ",
+    "message": "รักษาแท็บที่สำคัญให้คงอยู่เสมอ",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Memory Saver ของ Chrome จะยกเลิกการโหลดแท็บที่ไม่ได้ใช้งานเพื่อเพิ่มหน่วยความจำ RAM แล้วโหลดใหม่เมื่อคุณกลับมา Keep Tabs Alive ให้คุณเลือกได้ว่าแท็บใดควรทำงานและพร้อมใช้งานอยู่ — ป้องกันการโหลดใหม่และการขัดจังหวะที่ไม่ต้องการ",
+    "message": "Chrome ประหยัดทรัพยากรสองวิธี คือดรอปแท็บที่คุณไม่ได้ใช้ และทำให้แท็บที่คุณมองไม่เห็นช้าลง Keep Tabs Alive หยุดได้ทั้งสองอย่าง ทีละแท็บ และเฉพาะที่คุณต้องการ",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -466,27 +316,23 @@
     "description": "Note under the welcome CTA."
   },
   "welcomeStep1": {
-    "message": "<strong>ปักหมุด</strong> เพื่อเข้าถึงด้วยคลิกเดียว: คลิกไอคอนปริศนา <span class=\"puzzle\">🧩</span> ในแถบเครื่องมือ แล้วคลิกหมุด",
+    "message": "<strong>ปักหมุด</strong> เพื่อเข้าถึงด้วยคลิกเดียว: คลิกไอคอนจิ๊กซอว์ <span class=\"puzzle\">🧩</span> ในแถบเครื่องมือ แล้วคลิกหมุด",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
-  },
-  "welcomeStep2": {
-    "message": "<strong>ตรวจสอบได้ทุกเมื่อ</strong> ที่ <code>chrome://discards</code> — แท็บที่ได้รับการปกป้องจะแสดง ✕ ในคอลัมน์ <em>Auto Discardable</em>",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
   },
   "tourMasterTitle": {
     "message": "สวิตช์หลัก",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "เปิดหรือปิดการปกป้องทั้งหมดที่นี่ ขณะปิดอยู่ ทุกแท็บสามารถถูกล้างได้ — กฎของคุณจะถูกเก็บไว้ เพียงแค่หยุดชั่วคราว",
+    "message": "หยุดชั่วคราวหรือกลับมาใช้ <b>คงไว้ในหน่วยความจำ</b> กับทุกแท็บที่นี่ ขณะปิดอยู่ แท็บใดก็อาจถูกดรอปได้ กฎของคุณยังอยู่ เพียงถูกหยุดไว้ แท็บที่คุณให้ทำงานต่อเนื่องจะยังคงทำงานต่อ",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "เลือกโหมดการปกป้อง",
+    "message": "เลือกเว็บไซต์ที่จะคงไว้ในหน่วยความจำ",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>ไวต์ลิสต์เท่านั้น</b> จะคงเฉพาะเว็บไซต์ที่คุณเลือกไว้ (ค่าเริ่มต้นแบบนุ่มนวล) <b>ปกป้องทุกอย่าง</b> จะคงทุกแท็บไว้ ยกเว้นที่คุณยกเว้น",
+    "message": "<b>เฉพาะเว็บไซต์ที่เลือก</b> คงไว้ในหน่วยความจำเฉพาะเว็บไซต์ที่คุณเลือก (ค่าเริ่มต้นแบบเบา ๆ) <b>ทุกเว็บไซต์ ยกเว้น…</b> คงทุกแท็บไว้ในหน่วยความจำ ยกเว้นเว็บไซต์ที่คุณยกเว้น “ให้ทำงานต่อเนื่อง” ตั้งค่าต่อแท็บ ไม่ใช่ที่นี่",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "ทุกแท็บที่เปิดอยู่มีสวิตช์ของตัวเอง สลับเพื่อคงแท็บนั้นไว้หรือปล่อยให้หลับ — เป็นตัวเลือกครั้งเดียวที่มีผลจนกว่าจะปิดแท็บ ต้องการให้คงไว้ตลอดไปใช่ไหม คลิก <b>เสมอสำหรับเว็บไซต์นี้</b> ข้างสวิตช์เพื่อเปลี่ยนเป็นกฎเว็บไซต์ถาวร คลิกแถวเพื่อข้ามไปยังแท็บ",
+    "message": "ทุกแท็บที่เปิดอยู่มีสวิตช์ <b>คงไว้ในหน่วยความจำ</b> ของตัวเอง เป็นตัวเลือกครั้งเดียวที่มีผลจนกว่าจะปิดแท็บ สวิตช์ที่ส่วนหัวของเว็บไซต์ทำแบบเดียวกันกับทั้งเว็บไซต์ แบบถาวร คลิกแถวเพื่อข้ามไปยังแท็บนั้น",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "ตั้งกฎตามเว็บไซต์",
+    "message": "คงทั้งเว็บไซต์ไว้ในหน่วยความจำ",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "เพิ่มโดเมนที่นี่เพื่อปกป้อง (หรือยกเว้น) ทั้งเว็บไซต์ในคราวเดียว โดเมนยังครอบคลุมโดเมนย่อยด้วย — <code>example.com</code> ตรงกับ <code>mail.example.com</code> นั่นคือการแนะนำ — เปิดใหม่ได้ทุกเมื่อจากปุ่ม ?",
+    "message": "เพิ่มโดเมนที่นี่เพื่อคงทั้งเว็บไซต์ไว้ในหน่วยความจำ (หรืออนุญาตให้ Chrome ดรอป) โดเมนครอบคลุมโดเมนย่อยด้วย — <code>example.com</code> ตรงกับ <code>mail.example.com</code> นั่นคือทัวร์ทั้งหมด เปิดดูอีกครั้งได้ทุกเมื่อจากปุ่ม ?",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -536,15 +382,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "หน้าภายใน",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "ทำให้ทำงานอยู่",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "คงทั้ง $HOST$ ไว้ในหน่วยความจำเสมอ (กฎเว็บไซต์ถาวร)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,27 +408,27 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "การปกป้องถูกหยุดชั่วคราว — ไม่มีแท็บใดถูกเก็บให้ทำงานอยู่",
+    "message": "“คงไว้ในหน่วยความจำ” ถูกหยุดชั่วคราว — Chrome อาจดรอปแท็บใดก็ได้ “ให้ทำงานต่อเนื่อง” ไม่ได้รับผลกระทบ",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "ปิดแล้ว",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "เลิกคงแท็บที่ปิดนี้ไว้ในหน่วยความจำ (ลืมไป)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "กลุ่มนี้มีแท็บที่ปักหมุดไว้",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "แท็บที่ปักหมุดที่นี่ไม่ได้คงไว้ในหน่วยความจำ",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "ที่นี่มี $COUNT$ แท็บที่คงไว้ในหน่วยความจำ",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "เริ่มไม่ได้ อาจมีส่วนขยายอื่นหรือ Chrome เองกำลังจับภาพแท็บนี้อยู่",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "คงไว้ในหน่วยความจำ",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "ให้ทำงานต่อเนื่อง",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "ทุกอย่างที่คุณพิมพ์จะยังอยู่",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "ยังช้าลงเมื่อถูกซ่อน",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "ทำงานได้แม้ถูกซ่อน",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "แชต ตัวจับเวลา และข้อมูลสดยังทำงานต่อไป",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "ใช้แบตเตอรี่มากขึ้น Chrome จะแสดงไอคอนการแชร์หน้าจอ",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "ทำไมต้องบันทึกหน้าจอ?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“ให้ทำงานต่อเนื่อง” จำลองการบันทึกหน้าจอ",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome ทำให้แท็บที่คุณมองไม่เห็นช้าลง เพื่อป้องกันเรื่องนี้ ส่วนขยายจึงจำลองการบันทึกหน้าจอของแท็บนี้ เพื่อให้ Chrome มองว่ากำลังใช้งานอยู่",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "ไม่มีการบันทึกอะไรเลย ภาพจะไม่ถูกอ่าน บันทึก หรือส่งไปที่ใด",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "เฉพาะแท็บนี้ และเฉพาะตอนที่เปิดสวิตช์ Chrome แสดงไอคอนการแชร์ จึงไม่มีอะไรเกิดขึ้นอย่างลับ ๆ",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "ปิดได้ทุกเมื่อ หรือจะปิดแท็บเลยก็ได้",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "เข้าใจแล้ว เปิดเลย",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "ไว้ก่อน",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "เข้าใจแล้ว",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "คงแท็บนี้ไว้ในหน่วยความจำจนกว่าจะปิด",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — ให้แท็บทำงานต่อเนื่อง",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive กำลังให้แท็บนี้ทำงานต่อเนื่อง"
+  },
+  "bannerOff": {
+    "message": "ปิด"
+  },
+  "bannerHide": {
+    "message": "ซ่อนแถบนี้ (แท็บยังทำงานต่อเนื่อง)"
+  },
+  "tagRunning": {
+    "message": "ทำงานต่อเนื่อง"
+  },
+  "stopAll": {
+    "message": "หยุดทั้งหมด"
+  },
+  "timerLabel": {
+    "message": "ปิดอัตโนมัติหลัง"
+  },
+  "timer30": {
+    "message": "30 นาที"
+  },
+  "timer60": {
+    "message": "1 ชม."
+  },
+  "timer180": {
+    "message": "3 ชม."
+  },
+  "timerNone": {
+    "message": "ไม่ตั้งเวลา"
+  },
+  "timerLeft": {
+    "message": "จะปิดใน $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "ไม่ตั้งเวลา — ทำงานจนกว่าคุณจะปิด"
+  },
+  "unitMin": {
+    "message": "นาที"
+  },
+  "unitHour": {
+    "message": "ชม."
+  },
+  "heldTitle": {
+    "message": "แท็บที่ทำงานต่อเนื่องอยู่ตอนนี้"
+  },
+  "heldStop": {
+    "message": "เลิกให้แท็บนี้ทำงานต่อเนื่อง"
+  },
+  "bannerUntil": {
+    "message": "จนถึง $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "ต่อเวลา"
+  },
+  "memoryStop": {
+    "message": "เลิกคงแท็บนี้ไว้ในหน่วยความจำ"
+  },
+  "rowRunStart": {
+    "message": "ให้ทำงานต่อเนื่อง — เปิดสำหรับแท็บนี้"
+  },
+  "rowRunStop": {
+    "message": "เปิด “ให้ทำงานต่อเนื่อง” อยู่ — คลิกเพื่อหยุด"
+  },
+  "tourRunTitle": {
+    "message": "ให้หน้าเว็บทำงานต่อไป"
+  },
+  "tourRunBody": {
+    "message": "ต้องการให้หน้าเว็บทำงานต่อขณะถูกซ่อน เช่น แชต ตัวจับเวลา หรือข้อมูลสด? เปิดหน้าต่างของส่วนขยายบนแท็บนั้นแล้วเปิด <b>ให้ทำงานต่อเนื่อง</b> หรือกดไอคอนสายฟ้าในแถวของแท็บที่นี่ Chrome จะมองว่าแท็บกำลังใช้งานอยู่ จึงไม่ทำให้ช้าลง ระบบจำลองการบันทึกหน้าจอ — ไม่มีการบันทึกหรือส่งอะไรเลย — และปิดเองตามตัวจับเวลาที่คุณเลือก"
+  },
+  "aliveTitle": {
+    "message": "คงไว้ทั้งสองแบบ"
+  },
+  "aliveTip": {
+    "message": "คงแท็บนี้ไว้ในหน่วยความจำและให้ทำงานต่อเนื่อง — ทั้งสองอย่างพร้อมกัน"
+  },
+  "aliveRowTip": {
+    "message": "คงไว้ในหน่วยความจำ + ให้ทำงานต่อเนื่อง"
+  },
+  "captureReload": {
+    "message": "โหลดหน้าใหม่"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome อนุญาตเฉพาะจากหน้าต่างของส่วนขยายบนแท็บนั้น ไปที่แท็บแล้วคลิกไอคอน Keep Tabs Alive"
+  },
+  "goToTab": {
+    "message": "ไปที่แท็บ"
+  },
+  "groupRunPick": {
+    "message": "“ให้ทำงานต่อเนื่อง” ใช้ได้ทีละแท็บ — เลือกแท็บด้วยปุ่มสายฟ้า"
+  },
+  "groupRunStartTip": {
+    "message": "ให้ทำงานต่อเนื่อง: หน้าเว็บทำงานเต็มความเร็วแม้ถูกซ่อน"
+  },
+  "groupRunStopTip": {
+    "message": "หยุด “ให้ทำงานต่อเนื่อง” สำหรับแท็บของเว็บไซต์นี้"
+  },
+  "statRunningNow": {
+    "message": "ทำงานต่อเนื่องอยู่"
+  },
+  "aliveOnTab": {
+    "message": "เปิดในแท็บ"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome อนุญาต “ให้ทำงานต่อเนื่อง” เฉพาะจากหน้าต่างของส่วนขยายบนแท็บนั้น — ปุ่มนี้จะเปิดหน้าต่างที่นั่น"
+  },
+  "pendingTitle": {
+    "message": "อีกหนึ่งคลิก"
+  },
+  "pendingBody": {
+    "message": "ปิดหน้าต่างนี้ แล้วคลิกไอคอน Keep Tabs Alive (โล่สีเขียว) บนแถบเครื่องมือ หรือใต้ไอคอนจิ๊กซอว์ 🧩 “ให้ทำงานต่อเนื่อง” จะเปิดเอง"
+  },
+  "handoffTitle": {
+    "message": "เปิด “ให้ทำงานต่อเนื่อง” ในแท็บ"
+  },
+  "handoffTitleAlive": {
+    "message": "เปิด “คงไว้ทั้งสองแบบ” ในแท็บ"
+  },
+  "handoffStep1": {
+    "message": "เราจะพาคุณไปที่ “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "คลิกไอคอน Keep Tabs Alive ที่กะพริบบนแถบเครื่องมือ (โล่สีเขียว) ไม่เห็นใช่ไหม? อยู่ใต้ไอคอนจิ๊กซอว์ 🧩"
+  },
+  "handoffStep3": {
+    "message": "หน้าต่างจะชี้ไปที่สวิตช์ “ให้ทำงานต่อเนื่อง” — คลิกแล้วโหมดจะเปิดทันที"
+  },
+  "handoffStep3Alive": {
+    "message": "หน้าต่างจะชี้ไปที่สวิตช์ “ให้ทำงานต่อเนื่อง” — คลิกเลย แท็บจะถูกคงไว้ในหน่วยความจำและทำงานต่อเนื่อง"
+  },
+  "runDone": {
+    "message": "เรียบร้อย — แท็บนี้ทำงานต่อเนื่องอยู่"
+  },
+  "aliveDone": {
+    "message": "เรียบร้อย — แท็บนี้คงไว้ทั้งสองแบบ: อยู่ในหน่วยความจำและทำงานต่อเนื่อง"
+  },
+  "tapToTurnOn": {
+    "message": "คลิกเพื่อเปิด"
+  },
+  "heldMore": {
+    "message": "ดูแท็บทั้งหมดในการตั้งค่า →"
+  },
+  "groupInMemory": {
+    "message": "ในหน่วยความจำ"
+  },
+  "memoryCardSub": {
+    "message": "Chrome จะไม่ดรอปแท็บเหล่านี้ — สิ่งที่คุณพิมพ์จะยังอยู่"
+  },
+  "runCardSub": {
+    "message": "หน้าเหล่านี้ทำงานเต็มความเร็วแม้ถูกซ่อน"
+  },
+  "colRunning": {
+    "message": "ทำงานต่อเนื่อง"
+  },
+  "runEmpty": {
+    "message": "ยังไม่มีแท็บที่ทำงานต่อเนื่อง เปิดให้แท็บด้วย ⚡ ในรายการด้านล่าง หรือจากหน้าต่างของส่วนขยายบนแท็บนั้น"
+  },
+  "wMemPromise": {
+    "message": "Chrome จะไม่ดรอปแท็บนี้"
+  },
+  "wMemDesc": {
+    "message": "กลับมาเมื่อไร ทุกอย่างก็อยู่ตรงที่คุณทิ้งไว้ ไม่ต้องโหลดใหม่"
+  },
+  "wMemGain1": {
+    "message": "ข้อความที่พิมพ์ แบบร่าง และฟอร์มยังอยู่"
+  },
+  "wMemGain2": {
+    "message": "ฟรี: ไม่ใช้แบตเตอรี่เพิ่ม"
+  },
+  "wMemCost": {
+    "message": "ขณะถูกซ่อน หน้าเว็บอาจยังช้าลงได้"
+  },
+  "wGoodFor": {
+    "message": "เหมาะกับ:"
+  },
+  "wMemFor": {
+    "message": "ฟอร์มยาว เอกสาร อีเมล แดชบอร์ดที่คุณเปิดดูเป็นครั้งคราว"
+  },
+  "wRunPromise": {
+    "message": "หน้าเว็บทำงานเต็มความเร็วต่อไป — แม้คุณมองไม่เห็น"
+  },
+  "wRunDesc": {
+    "message": "Chrome มองว่าแท็บกำลังใช้งานอยู่ จึงไม่มีอะไรในแท็บหยุดชะงักขณะที่คุณอยู่ที่อื่น"
+  },
+  "wRunGain1": {
+    "message": "แชต คำตอบจาก AI ตัวจับเวลา เพลง และข้อมูลสดยังทำงานต่อไป"
+  },
+  "wRunGain2": {
+    "message": "ปิดเองตามตัวจับเวลาได้ ถ้าต้องการ"
+  },
+  "wRunCost": {
+    "message": "ใช้แบตเตอรี่มากขึ้น Chrome แสดงไอคอนการแชร์หน้าจอ — ไม่มีการบันทึกอะไรเลย"
+  },
+  "wRunFor": {
+    "message": "แชตและเครื่องมือ AI การเทรดและการเฝ้าติดตาม ตัวจับเวลา การอัปโหลด"
+  },
+  "wBoth": {
+    "message": "<strong>ต้องการทั้งสองอย่าง?</strong> “คงไว้ทั้งสองแบบ” เปิดทั้งสองโหมดให้แท็บได้ในคลิกเดียว"
+  },
+  "wStepsTitle": {
+    "message": "วิธีเปิดใช้งาน"
+  },
+  "wStep2": {
+    "message": "<strong>ในแท็บใดก็ได้ คลิกที่ไอคอน</strong> — หน้าต่างมีสวิตช์สำหรับแต่ละโหมด"
+  },
+  "wStep3": {
+    "message": "<strong>ในการตั้งค่า</strong> ดูทุกแท็บที่เปิดอยู่ และคงทั้งเว็บไซต์ไว้ในหน่วยความจำได้"
+  },
+  "wPrivacy": {
+    "message": "ไม่มีอะไรออกจากเบราว์เซอร์ของคุณ: ไม่มีการติดตาม ไม่มีเซิร์ฟเวอร์ “ให้ทำงานต่อเนื่อง” ไม่เคยบันทึกหน้าเว็บ"
+  },
+  "timerAdd30": {
+    "message": "+30 นาที"
+  },
+  "timerAdd60": {
+    "message": "+1 ชม."
+  },
+  "timerAdd180": {
+    "message": "+3 ชม."
   }
 }

@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "I-disable ang pag-discard ng tab ng Chrome at pigilan ang hindi gustong pag-reload ng tab. Mga panuntunan kada-site, kontrol kada-tab at live na istatistika.",
+    "message": "I-disable ang pag-discard ng tab ng Chrome; di bumabagal ang mga tab sa background. Kontrol kada-site at kada-tab, auto-off timer.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "I-disable ang awtomatikong pag-discard ng tab",
+    "message": "I-disable ang awtomatikong pag-unload ng tab",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Pangunahing switch",
+    "message": "I-pause o ituloy ang “Panatilihin sa memorya” para sa lahat ng tab (hindi apektado ang “Panatilihing tumatakbo”)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Naka-on ang proteksyon",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "Naka-pause",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "tab na protektado",
@@ -44,7 +40,7 @@
     "description": "Heading for the current-tab card in the popup."
   },
   "thisWebsite": {
-    "message": "Website na ito",
+    "message": "Site na ito",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -59,59 +55,17 @@
     "message": "Walang mga panuntunan sa site ang mga internal na pahina — maaari mo pa ring i-switch ang tab na ito.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "Hindi mapamamahalaan ang pahinang ito",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Hindi available dito",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Ang mga internal at extension na pahina ay laging hindi ginagalaw.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Protektado",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Maaaring i-discard",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Protektahan ang site na ito",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Itigil ang pagprotekta sa site na ito",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Ibukod ang site na ito",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Mga protektadong site",
+    "message": "Mga site na pinananatili sa memorya",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Mga ibinukod na site",
+    "message": "Mga site na maaaring i-unload ng Chrome",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Wala pang site",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ pa",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Alisin ang $DOMAIN$",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "protektado ngayon",
+    "message": "nasa memorya ngayon",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Mode ng proteksyon",
+    "message": "Panatilihin sa memorya: aling mga site",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Protektahan lahat",
+    "message": "Lahat ng site, maliban sa…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Whitelist lamang",
+    "message": "Mga piniling site lamang",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "I-flip ang switch para panatilihing buhay ang tab na iyon o hayaang i-discard ito ng Chrome. Ang manwal na switch ay nananaig sa mga panuntunan ng site at tumatagal hanggang isara ang tab.",
+    "message": "Sa bawat tab: pinananatili ito ng ▣ sa memorya, pinananatili itong tumatakbo ng ⚡, at ginagawa ng “Panatilihing buhay” ang dalawa. Nangingibabaw ang manu-manong pagbabago sa mga panuntunan ng site hanggang maisara ang tab.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "Walang tab na tumutugma sa iyong paghahanap.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Window na ito · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Window $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Manwal",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Tulog",
+    "message": "Na-unload",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Naka-pause ang proteksyon ng master switch",
+    "message": "Naka-pause ang “Panatilihin sa memorya” — i-on itong muli sa card na “Panatilihin sa memorya”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Protektado — i-flip para hayaang i-discard ng Chrome ang tab na ito",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Maaaring i-discard — i-flip para panatilihing buhay ang tab na ito",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Ang mga site na ito lamang ang pinananatiling buhay; ang iba ay maaaring i-discard. Tumutugma rin ang isang domain sa mga subdomain nito — hal. <code>example.com</code> ang sumasaklaw sa <code>mail.example.com</code>.",
+    "message": "Hindi iu-unload ng Chrome ang mga tab ng mga site na ito. Sakop ng isang domain ang mga subdomain nito: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Pinapayagang i-discard ang mga site na ito. Tumutugma rin ang isang domain sa mga subdomain nito — hal. <code>example.com</code> ang sumasaklaw sa <code>mail.example.com</code>.",
+    "message": "Nananatili sa memorya ang lahat ng iba pang tab; maaaring i-unload ng Chrome ang mga site na ito. Sakop ng isang domain ang mga subdomain nito: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "Alisin",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Palagi para sa site na ito",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Laging panatilihing buhay ang $HOST$ (nagdadagdag ng panuntunan ng site)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Laging hayaang ma-discard ang $HOST$ (ina-update ang mga panuntunan ng site)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Na-save — lagi nang mananatiling buhay ang $HOST$. Tingnan ang Mga panuntunan ng site sa ibaba.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Na-save — maaari nang laging i-discard ang $HOST$. Tingnan ang Mga panuntunan ng site sa ibaba.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "Laging pinananatiling buhay",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Laging maaaring i-discard",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "Naka-save ang $HOST$ bilang panuntunan ng site — i-click para alisin ito",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Inalis — sumusunod na muli ang $HOST$ sa default ng mode.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Wala pang laman dito.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "Tip: buksan ang <code>chrome://discards</code> upang makita ang column na <strong>Auto Discardable</strong> — ang mga protektadong tab ay may ✕. Tandaan: gumagana pa rin ang manwal na pag-discard doon; pinipigilan lamang nito ang <em>awtomatikong</em> memory-saver na pag-discard ng Chrome.",
+    "message": "Tip: buksan ang <code>chrome://discards</code> upang makita ang column na <strong>Auto Discardable</strong> — ang mga tab na pinananatili sa memorya ay may ✕. Tandaan: gumagana pa rin doon ang manu-manong pag-unload; pinipigilan lamang nito ang <em>awtomatikong</em> pag-unload ng Chrome para makatipid sa memorya.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Panatilihing aktibo ang mahahalagang tab",
+    "message": "Panatilihing buhay ang mahahalagang tab",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Ina-unload ng Memory Saver ng Chrome ang mga idle na tab para magpalaya ng RAM, pagkatapos ay nire-reload ang mga ito kapag bumalik ka. Hinahayaan ka ng Keep Tabs Alive na piliin kung aling mga tab ang mananatiling aktibo at handa — pinipigilan ang mga hindi gustong pag-reload at pagkaabala.",
+    "message": "Nagtitipid ang Chrome ng resources sa dalawang paraan: ina-unload nito ang mga tab na hindi mo ginagamit, at pinapabagal nito ang mga tab na hindi mo nakikita. Pinipigilan ng Keep Tabs Alive ang dalawa — tab kada tab, at doon lang sa gusto mo.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>I-pin ito</strong> para sa one-click na pag-access: i-click ang <span class=\"puzzle\">🧩</span> puzzle na icon sa toolbar, pagkatapos ang pin.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Mag-verify anumang oras</strong> sa <code>chrome://discards</code> — nagpapakita ng ✕ ang mga protektadong tab sa column na <em>Auto Discardable</em>.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "Ang master switch",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "I-on o i-off ang lahat ng proteksyon dito. Habang naka-off ito, malayang ma-discard ang bawat tab — pinananatili ang iyong mga panuntunan, naka-pause lamang.",
+    "message": "I-pause o ituloy ang <b>“Panatilihin sa memorya”</b> para sa bawat tab dito. Habang naka-off, maaaring ma-unload ang anumang tab — nananatili ang iyong mga panuntunan, naka-pause lang. Patuloy na tumatakbo ang mga tab na naka-on ang “Panatilihing tumatakbo”.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Pumili ng mode ng proteksyon",
+    "message": "Aling mga site ang pananatilihin sa memorya",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "Ang <b>Whitelist lamang</b> ay nagpapanatiling buhay lamang sa mga site na pipiliin mo (ang banayad na default). Ang <b>Protektahan lahat</b> ay nagpapanatiling buhay sa bawat tab maliban sa mga ibinubukod mo.",
+    "message": "Pinananatili lang ng <b>Mga piniling site lamang</b> sa memorya ang mga site na ilalagay mo sa listahan (ang banayad na default). Pinananatili ng <b>Lahat ng site, maliban sa…</b> sa memorya ang bawat tab maliban sa mga site na ibinubukod mo. Itinatakda ang “Panatilihing tumatakbo” kada tab, hindi dito.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "May sariling switch ang bawat bukas na tab. I-flip ito para panatilihing buhay ang isang tab na iyon o hayaang matulog ito — isang beses na pagpili na tumatagal hanggang isara ang tab. Gusto mo ito magpakailanman? I-click ang <b>Palagi para sa site na ito</b> sa tabi ng switch para gawing permanenteng panuntunan ng site. I-click ang isang row para tumalon sa tab.",
+    "message": "May sariling switch na <b>“Panatilihin sa memorya”</b> ang bawat bukas na tab — isang beses na pagpili na tumatagal hanggang maisara ang tab. Ganoon din ang ginagawa ng switch sa header ng isang site para sa buong site, nang permanente. Mag-click sa isang row para pumunta sa tab.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Magtakda ng mga panuntunan kada-site",
+    "message": "Panatilihin sa memorya ang buong site",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Magdagdag ng mga domain dito para protektahan (o ibukod) ang buong site nang sabay-sabay. Sumasaklaw rin ang isang domain sa mga subdomain nito — tumutugma ang <code>example.com</code> sa <code>mail.example.com</code>. Iyan ang tour — buksan itong muli anumang oras mula sa ? na button.",
+    "message": "Magdagdag dito ng mga domain para mapanatili sa memorya ang buong site (o para payagan ang Chrome na i-unload ang mga ito). Sakop din ng isang domain ang mga subdomain nito — tumutugma ang <code>example.com</code> sa <code>mail.example.com</code>. Iyan ang tour — buksan itong muli anumang oras sa button na ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -536,15 +382,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "Mga internal na pahina",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "Panatilihing aktibo",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "Palaging panatilihin sa memorya ang buong $HOST$ (permanenteng panuntunan ng site)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,27 +408,27 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Naka-pause ang proteksyon — walang tab na pinananatiling aktibo.",
+    "message": "Naka-pause ang “Panatilihin sa memorya” — maaaring i-unload ng Chrome ang anumang tab. Hindi apektado ang “Panatilihing tumatakbo”.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "Sarado",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "Itigil ang pagpapanatili ng saradong tab na ito sa memorya (kalimutan ito)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "May mga naka-pin na tab ang grupong ito.",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "Hindi pinananatili sa memorya ang mga naka-pin na tab dito.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "$COUNT$ na tab dito ang pinananatili sa memorya.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Hindi nasimulan. Maaaring kinukuha na ng ibang extension o ng Chrome ang tab na ito.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Panatilihin sa memorya",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Panatilihing tumatakbo",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Mananatili ang lahat ng na-type mo",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Bumabagal pa rin kapag nakatago",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Gumagana kahit nakatago.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Tuloy ang mga chat, timer, at live na data",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Mas malakas sa baterya; magpapakita ang Chrome ng icon ng screen sharing",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Bakit screen recording?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "Ang “Panatilihing tumatakbo” ay nagsi-simulate ng screen recording",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Pinapabagal ng Chrome ang mga tab na hindi mo nakikita. Para maiwasan iyon, nagsi-simulate ang extension ng screen recording ng tab na ito, kaya itinuturing ito ng Chrome na ginagamit.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Walang nire-record. Hindi kailanman binabasa, sine-save, o ipinapadala saanman ang larawan.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Ang tab na ito lang, at habang naka-on lang ang switch. Nagpapakita ang Chrome ng icon ng sharing, kaya walang nangyayari nang palihim.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "I-off ito anumang oras, o isara lang ang tab.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Naiintindihan ko, i-on",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Huwag muna",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Sige",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Panatilihin ang tab na ito sa memorya hanggang maisara ito",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — pinananatiling tumatakbo ang mga tab",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Pinananatiling tumatakbo ng Keep Tabs Alive ang tab na ito"
+  },
+  "bannerOff": {
+    "message": "I-off"
+  },
+  "bannerHide": {
+    "message": "Itago ang bar na ito (patuloy pa ring tatakbo ang tab)"
+  },
+  "tagRunning": {
+    "message": "Tumatakbo"
+  },
+  "stopAll": {
+    "message": "Ihinto lahat"
+  },
+  "timerLabel": {
+    "message": "Awtomatikong i-off pagkatapos ng"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 oras"
+  },
+  "timer180": {
+    "message": "3 oras"
+  },
+  "timerNone": {
+    "message": "Walang timer"
+  },
+  "timerLeft": {
+    "message": "Mao-off sa loob ng $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Walang timer — tumatakbo hanggang i-off mo"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "oras"
+  },
+  "heldTitle": {
+    "message": "Pinananatiling tumatakbo ngayon"
+  },
+  "heldStop": {
+    "message": "Itigil ang pagpapanatiling tumatakbo sa tab na ito"
+  },
+  "bannerUntil": {
+    "message": "hanggang $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Pahabain ng"
+  },
+  "memoryStop": {
+    "message": "Itigil ang pagpapanatili ng tab na ito sa memorya"
+  },
+  "rowRunStart": {
+    "message": "Panatilihing tumatakbo — i-on para sa tab na ito"
+  },
+  "rowRunStop": {
+    "message": "Naka-on ang “Panatilihing tumatakbo” — i-click para ihinto"
+  },
+  "tourRunTitle": {
+    "message": "Panatilihing tumatakbo ang isang pahina"
+  },
+  "tourRunBody": {
+    "message": "Kailangan bang magpatuloy sa paggana ang isang pahina habang nakatago — chat, timer, live na data? Buksan ang window ng extension sa tab na iyon at i-on ang <b>“Panatilihing tumatakbo”</b>, o i-click ang icon ng kidlat sa row ng tab dito. Ituturing ng Chrome na ginagamit ang tab, kaya hindi ito mapapabagal. Nagsi-simulate ito ng screen recording — walang nire-record o ipinapadala — at kusa itong nag-o-off pagkatapos ng timer na pipiliin mo."
+  },
+  "aliveTitle": {
+    "message": "Panatilihing buhay"
+  },
+  "aliveTip": {
+    "message": "Panatilihin ang tab na ito sa memorya at panatilihing tumatakbo — dalawa nang sabay"
+  },
+  "aliveRowTip": {
+    "message": "“Panatilihin sa memorya” + “Panatilihing tumatakbo”"
+  },
+  "captureReload": {
+    "message": "I-reload ang pahina"
+  },
+  "runNeedsPopup": {
+    "message": "Pinapayagan lang ito ng Chrome mula sa window ng extension sa tab na iyon. Pumunta sa tab at i-click ang icon ng Keep Tabs Alive."
+  },
+  "goToTab": {
+    "message": "Pumunta sa tab"
+  },
+  "groupRunPick": {
+    "message": "Gumagana ang “Panatilihing tumatakbo” sa isang tab lang bawat pagkakataon — pumili ng tab gamit ang button na kidlat nito."
+  },
+  "groupRunStartTip": {
+    "message": "Panatilihing tumatakbo: patuloy na gumagana ang pahina nang buong bilis kahit nakatago"
+  },
+  "groupRunStopTip": {
+    "message": "Itigil ang “Panatilihing tumatakbo” para sa mga tab ng site na ito"
+  },
+  "statRunningNow": {
+    "message": "pinananatiling tumatakbo"
+  },
+  "aliveOnTab": {
+    "message": "I-on sa tab"
+  },
+  "aliveOnTabTip": {
+    "message": "Pinapayagan lang ng Chrome ang “Panatilihing tumatakbo” mula sa window ng extension sa tab na iyon — bubuksan ito roon."
+  },
+  "pendingTitle": {
+    "message": "Isa pang click"
+  },
+  "pendingBody": {
+    "message": "Isara ang window na ito at i-click ang icon ng Keep Tabs Alive (ang berdeng kalasag) sa toolbar — o sa ilalim ng puzzle na icon 🧩. Kusang mao-on ang “Panatilihing tumatakbo”."
+  },
+  "handoffTitle": {
+    "message": "I-on ang “Panatilihing tumatakbo” sa tab"
+  },
+  "handoffTitleAlive": {
+    "message": "I-on ang “Panatilihing buhay” sa tab"
+  },
+  "handoffStep1": {
+    "message": "Ililipat ka namin sa “$TITLE$”.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "I-click ang kumukurap na icon ng Keep Tabs Alive sa toolbar (ang berdeng kalasag). Hindi makita? Nasa ilalim ito ng puzzle na icon 🧩."
+  },
+  "handoffStep3": {
+    "message": "Ituturo ng window ang switch na “Panatilihing tumatakbo” — i-click ito, at naka-on na."
+  },
+  "handoffStep3Alive": {
+    "message": "Ituturo ng window ang switch na “Panatilihing tumatakbo” — i-click ito, at mananatili ang tab sa memorya at tumatakbo."
+  },
+  "runDone": {
+    "message": "Tapos na — pinananatiling tumatakbo ang tab na ito."
+  },
+  "aliveDone": {
+    "message": "Tapos na — buhay ang tab na ito: nasa memorya at tumatakbo."
+  },
+  "tapToTurnOn": {
+    "message": "I-click para i-on"
+  },
+  "heldMore": {
+    "message": "Nasa Mga Setting ang lahat ng tab →"
+  },
+  "groupInMemory": {
+    "message": "Nasa memorya"
+  },
+  "memoryCardSub": {
+    "message": "Hindi iu-unload ng Chrome ang mga tab na ito — mananatili ang na-type mo."
+  },
+  "runCardSub": {
+    "message": "Patuloy na gumagana nang buong bilis ang mga pahinang ito, kahit nakatago."
+  },
+  "colRunning": {
+    "message": "Tumatakbo"
+  },
+  "runEmpty": {
+    "message": "Walang pinananatiling tumatakbo. I-on ito para sa isang tab gamit ang ⚡ sa listahan sa ibaba, o mula sa window ng extension sa tab na iyon."
+  },
+  "wMemPromise": {
+    "message": "Hindi iu-unload ng Chrome ang tab."
+  },
+  "wMemDesc": {
+    "message": "Pagbalik mo, nasa dating lugar ang lahat — walang reload."
+  },
+  "wMemGain1": {
+    "message": "Nananatili ang na-type na teksto, mga draft, at form"
+  },
+  "wMemGain2": {
+    "message": "Libre: walang dagdag na konsumo ng baterya"
+  },
+  "wMemCost": {
+    "message": "Habang nakatago, maaari pa ring bumagal ang pahina"
+  },
+  "wGoodFor": {
+    "message": "Bagay para sa:"
+  },
+  "wMemFor": {
+    "message": "mahahabang form, dokumento, mail, dashboard na tinitingnan mo paminsan-minsan"
+  },
+  "wRunPromise": {
+    "message": "Patuloy na gumagana nang buong bilis ang pahina — kahit hindi mo ito nakikita."
+  },
+  "wRunDesc": {
+    "message": "Itinuturing ng Chrome na ginagamit ang tab, kaya walang humihinto rito habang nasa ibang lugar ka."
+  },
+  "wRunGain1": {
+    "message": "Tuloy ang mga chat, sagot ng AI, timer, musika, at live na data"
+  },
+  "wRunGain2": {
+    "message": "Kusang nag-o-off sa timer, kung gusto mo"
+  },
+  "wRunCost": {
+    "message": "Mas malakas sa baterya; ipinapakita ng Chrome ang icon ng screen sharing — walang nire-record"
+  },
+  "wRunFor": {
+    "message": "mga chat at AI tool, trading at monitoring, timer, upload"
+  },
+  "wBoth": {
+    "message": "<strong>Kailangan ang dalawa?</strong> Ino-on ng “Panatilihing buhay” ang dalawang mode para sa isang tab sa isang click."
+  },
+  "wStepsTitle": {
+    "message": "Paano i-on ang mga ito"
+  },
+  "wStep2": {
+    "message": "<strong>Sa anumang tab, i-click ang icon</strong> — may switch ang window nito para sa bawat mode."
+  },
+  "wStep3": {
+    "message": "<strong>Sa Mga Setting</strong>, makikita ang lahat ng bukas na tab, at mapapanatili mo sa memorya ang buong site."
+  },
+  "wPrivacy": {
+    "message": "Walang lumalabas sa iyong browser: walang pagsubaybay, walang server. Hindi kailanman nire-record ng “Panatilihing tumatakbo” ang pahina."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 oras"
+  },
+  "timerAdd180": {
+    "message": "+3 oras"
   }
 }

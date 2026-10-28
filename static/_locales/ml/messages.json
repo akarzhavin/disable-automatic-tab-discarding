@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Chrome-ന്റെ ടാബ് ഉപേക്ഷിക്കൽ പ്രവർത്തനരഹിതമാക്കുകയും അനാവശ്യ ടാബ് റീലോഡുകൾ തടയുകയും ചെയ്യുക. ഓരോ സൈറ്റിനുമുള്ള നിയമങ്ങൾ, ഓരോ ടാബിനുമുള്ള നിയന്ത്രണം, തത്സമയ സ്ഥിതിവിവരക്കണക്കുകൾ.",
+    "message": "Chrome ടാബ് ഉപേക്ഷിക്കൽ ഓഫാക്കൂ, ടാബുകൾ പശ്ചാത്തലത്തിൽ മന്ദഗതിയിലാകുന്നത് തടയൂ. ഓരോ സൈറ്റിനും ടാബിനും നിയന്ത്രണം, ഓട്ടോ-ഓഫ് ടൈമർ.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -20,20 +20,16 @@
     "description": "Product name shown in the header."
   },
   "brandSub": {
-    "message": "സ്വയമേവയുള്ള ടാബ് ഉപേക്ഷിക്കൽ പ്രവർത്തനരഹിതമാക്കുക",
+    "message": "സ്വയമേവയുള്ള ടാബ് അൺലോഡിങ് പ്രവർത്തനരഹിതമാക്കുക",
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "മാസ്റ്റർ സ്വിച്ച്",
+    "message": "എല്ലാ ടാബുകൾക്കുമുള്ള “മെമ്മറിയിൽ നിലനിർത്തുക” താൽക്കാലികമായി നിർത്തുക അല്ലെങ്കിൽ തുടരുക (“പ്രവർത്തനം നിലനിർത്തുക” ബാധിക്കില്ല)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "പരിരക്ഷ ഓൺ",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "നിർത്തി",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "ടാബുകൾ പരിരക്ഷിച്ചു",
@@ -44,7 +40,7 @@
     "description": "Heading for the current-tab card in the popup."
   },
   "thisWebsite": {
-    "message": "ഈ വെബ്സൈറ്റ്",
+    "message": "ഈ സൈറ്റ്",
     "description": "Label for the site-level switch in the popup."
   },
   "scopePermanent": {
@@ -59,59 +55,17 @@
     "message": "ആന്തരിക പേജുകൾക്ക് സൈറ്റ് നിയമങ്ങളില്ല — എന്നിരുന്നാലും ഈ ടാബ് മാറ്റാം.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "ഈ പേജ് കൈകാര്യം ചെയ്യാനാകില്ല",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "ഇവിടെ ലഭ്യമല്ല",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "ആന്തരിക, വിപുലീകരണ പേജുകൾ എപ്പോഴും സ്പർശിക്കാതെ വിടുന്നു.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "പരിരക്ഷിതം",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "ഉപേക്ഷിക്കാവുന്നത്",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "ഈ സൈറ്റ് പരിരക്ഷിക്കുക",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "ഈ സൈറ്റ് പരിരക്ഷിക്കുന്നത് നിർത്തുക",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "ഈ സൈറ്റ് ഒഴിവാക്കുക",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "പരിരക്ഷിത സൈറ്റുകൾ",
+    "message": "മെമ്മറിയിൽ നിലനിർത്തുന്ന സൈറ്റുകൾ",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "ഒഴിവാക്കിയ സൈറ്റുകൾ",
+    "message": "Chrome-ന് അൺലോഡ് ചെയ്യാവുന്ന സൈറ്റുകൾ",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "ഇതുവരെ സൈറ്റുകളൊന്നുമില്ല",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "+$COUNT$ കൂടി",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ നീക്കം ചെയ്യുക",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "ഇപ്പോൾ പരിരക്ഷിതം",
+    "message": "ഇപ്പോൾ മെമ്മറിയിൽ",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "പരിരക്ഷണ മോഡ്",
+    "message": "മെമ്മറിയിൽ നിലനിർത്തുക: ഏതൊക്കെ സൈറ്റുകൾ",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "എല്ലാം പരിരക്ഷിക്കുക",
+    "message": "എല്ലാ സൈറ്റുകളും, ഇവ ഒഴികെ…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "വൈറ്റ്‌ലിസ്റ്റ് മാത്രം",
+    "message": "തിരഞ്ഞെടുത്ത സൈറ്റുകൾ മാത്രം",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "ആ ടാബ് സജീവമായി നിലനിർത്താനോ Chrome അത് ഉപേക്ഷിക്കാൻ അനുവദിക്കാനോ ഒരു സ്വിച്ച് മാറ്റുക. ഒരു മാനുവൽ സ്വിച്ച് സൈറ്റ് നിയമങ്ങളെ മറികടക്കുകയും ടാബ് അടയ്ക്കുന്നതുവരെ നിലനിൽക്കുകയും ചെയ്യുന്നു.",
+    "message": "ഓരോ ടാബിനും: ▣ അതിനെ മെമ്മറിയിൽ നിലനിർത്തുന്നു, ⚡ അതിന്റെ പ്രവർത്തനം നിലനിർത്തുന്നു, “സജീവമായി നിലനിർത്തുക” രണ്ടും ചെയ്യുന്നു. ടാബ് അടയ്ക്കുന്നതുവരെ മാനുവൽ മാറ്റം സൈറ്റ് നിയമങ്ങളെക്കാൾ മുൻഗണന നേടുന്നു.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "നിങ്ങളുടെ തിരയലുമായി പൊരുത്തപ്പെടുന്ന ടാബുകളൊന്നുമില്ല.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "ഈ വിൻഡോ · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "വിൻഡോ $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "മാനുവൽ",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "ഉറക്കത്തിൽ",
+    "message": "അൺലോഡ് ചെയ്തു",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "മാസ്റ്റർ സ്വിച്ച് പരിരക്ഷണം താൽക്കാലികമായി നിർത്തിയിരിക്കുന്നു",
+    "message": "“മെമ്മറിയിൽ നിലനിർത്തുക” താൽക്കാലികമായി നിർത്തി — “മെമ്മറിയിൽ നിലനിർത്തുക” കാർഡിൽ വീണ്ടും ഓണാക്കുക",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "പരിരക്ഷിതം — ഈ ടാബ് ഉപേക്ഷിക്കാൻ Chrome-നെ അനുവദിക്കാൻ മാറ്റുക",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "ഉപേക്ഷിക്കാവുന്നത് — ഈ ടാബ് സജീവമായി നിലനിർത്താൻ മാറ്റുക",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "ഈ സൈറ്റുകൾ മാത്രമേ സജീവമായി നിലനിർത്തുകയുള്ളൂ; മറ്റെല്ലാം ഉപേക്ഷിക്കപ്പെടാം. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്‌ഡൊമെയ്‌നുകളുമായും പൊരുത്തപ്പെടുന്നു — ഉദാ. <code>example.com</code> എന്നത് <code>mail.example.com</code>-നെ ഉൾക്കൊള്ളുന്നു.",
+    "message": "ഈ സൈറ്റുകളുടെ ടാബുകൾ Chrome അൺലോഡ് ചെയ്യില്ല. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്ഡൊമെയ്‌നുകളെയും ഉൾക്കൊള്ളുന്നു: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "ഈ സൈറ്റുകൾ ഉപേക്ഷിക്കാൻ അനുവദിച്ചിരിക്കുന്നു. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്‌ഡൊമെയ്‌നുകളുമായും പൊരുത്തപ്പെടുന്നു — ഉദാ. <code>example.com</code> എന്നത് <code>mail.example.com</code>-നെ ഉൾക്കൊള്ളുന്നു.",
+    "message": "മറ്റെല്ലാ ടാബുകളും മെമ്മറിയിൽ തുടരും; ഈ സൈറ്റുകൾ Chrome-ന് അൺലോഡ് ചെയ്യാം. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്ഡൊമെയ്‌നുകളെയും ഉൾക്കൊള്ളുന്നു: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "നീക്കം ചെയ്യുക",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "ഈ സൈറ്റിന് എപ്പോഴും",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$ എപ്പോഴും സജീവമായി നിലനിർത്തുക (ഒരു സൈറ്റ് നിയമം ചേർക്കുന്നു)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$ എപ്പോഴും ഉപേക്ഷിക്കാൻ അനുവദിക്കുക (സൈറ്റ് നിയമങ്ങൾ പുതുക്കുന്നു)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "സംരക്ഷിച്ചു — $HOST$ ഇനി എപ്പോഴും സജീവമായി നിലനിൽക്കും. താഴെയുള്ള സൈറ്റ് നിയമങ്ങൾ കാണുക.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "സംരക്ഷിച്ചു — $HOST$ ഇനി എപ്പോഴും ഉപേക്ഷിക്കാനാകും. താഴെയുള്ള സൈറ്റ് നിയമങ്ങൾ കാണുക.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "എപ്പോഴും സജീവമായി നിലനിർത്തുന്നു",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "എപ്പോഴും ഉപേക്ഷിക്കാവുന്നത്",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ ഒരു സൈറ്റ് നിയമമായി സംരക്ഷിച്ചു — അത് നീക്കം ചെയ്യാൻ ക്ലിക്ക് ചെയ്യുക",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "നീക്കം ചെയ്തു — $HOST$ ഇപ്പോൾ വീണ്ടും മോഡ് സ്ഥിരസ്ഥിതി പിന്തുടരുന്നു.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "ഇവിടെ ഇതുവരെ ഒന്നുമില്ല.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "നുറുങ്ങ്: <strong>Auto Discardable</strong> കോളം കാണാൻ <code>chrome://discards</code> തുറക്കുക — പരിരക്ഷിത ടാബുകൾ ✕ കാണിക്കുന്നു. ശ്രദ്ധിക്കുക: അവിടെയുള്ള മാനുവൽ ഉപേക്ഷിക്കലുകൾ ഇപ്പോഴും പ്രവർത്തിക്കും; ഇത് Chrome-ന്റെ <em>സ്വയമേവയുള്ള</em> മെമ്മറി-സേവർ ഉപേക്ഷിക്കൽ മാത്രമേ തടയുകയുള്ളൂ.",
+    "message": "നുറുങ്ങ്: <code>chrome://discards</code> തുറന്ന് <strong>Auto Discardable</strong> കോളം കാണുക — മെമ്മറിയിൽ നിലനിർത്തിയ ടാബുകൾ ✕ കാണിക്കുന്നു. ശ്രദ്ധിക്കുക: അവിടെ മാനുവലായി അൺലോഡ് ചെയ്യുന്നത് ഇപ്പോഴും പ്രവർത്തിക്കും; ഇത് Chrome-ന്റെ <em>സ്വയമേവയുള്ള</em> മെമ്മറി-സേവർ അൺലോഡിങ് മാത്രമേ തടയുകയുള്ളൂ.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -430,7 +280,7 @@
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "RAM സ്വതന്ത്രമാക്കാൻ Chrome-ന്റെ മെമ്മറി സേവർ നിഷ്ക്രിയ ടാബുകൾ അൺലോഡ് ചെയ്യുകയും നിങ്ങൾ മടങ്ങിയെത്തുമ്പോൾ അവ വീണ്ടും ലോഡ് ചെയ്യുകയും ചെയ്യുന്നു. ഏതൊക്കെ ടാബുകൾ സജീവവും തയ്യാറുമായി നിലനിൽക്കണമെന്ന് തിരഞ്ഞെടുക്കാൻ Keep Tabs Alive നിങ്ങളെ അനുവദിക്കുന്നു — അനാവശ്യമായ റീലോഡുകളും തടസ്സങ്ങളും തടയുന്നു.",
+    "message": "Chrome രണ്ട് രീതിയിൽ വിഭവങ്ങൾ ലാഭിക്കുന്നു: നിങ്ങൾ ഉപയോഗിക്കാത്ത ടാബുകൾ അൺലോഡ് ചെയ്യുന്നു, നിങ്ങൾക്ക് കാണാൻ കഴിയാത്ത ടാബുകളുടെ വേഗത കുറയ്ക്കുന്നു. Keep Tabs Alive രണ്ടും തടയുന്നു — ടാബ് ടാബായി, നിങ്ങൾ ആഗ്രഹിക്കുന്നിടത്ത് മാത്രം.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -466,27 +316,23 @@
     "description": "Note under the welcome CTA."
   },
   "welcomeStep1": {
-    "message": "ഒറ്റ ക്ലിക്കിൽ ആക്സസ് ചെയ്യാൻ <strong>ഇത് പിൻ ചെയ്യുക</strong>: ടൂൾബാറിലെ <span class=\"puzzle\">🧩</span> പസിൽ ഐക്കണിൽ ക്ലിക്ക് ചെയ്യുക, പിന്നെ പിന്നിൽ.",
+    "message": "ഒറ്റ ക്ലിക്കിൽ ആക്സസ് ചെയ്യാൻ <strong>ഇത് പിൻ ചെയ്യുക</strong>: ടൂൾബാറിലെ <span class=\"puzzle\">🧩</span> പസിൽ ഐക്കണിൽ ക്ലിക്ക് ചെയ്യുക, തുടർന്ന് പിൻ ഐക്കണിൽ.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
-  },
-  "welcomeStep2": {
-    "message": "<code>chrome://discards</code> എന്നതിൽ <strong>എപ്പോൾ വേണമെങ്കിലും പരിശോധിക്കുക</strong> — പരിരക്ഷിത ടാബുകൾ <em>Auto Discardable</em> കോളത്തിൽ ✕ കാണിക്കുന്നു.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
   },
   "tourMasterTitle": {
     "message": "മാസ്റ്റർ സ്വിച്ച്",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "എല്ലാ പരിരക്ഷണവും ഇവിടെ ഓൺ അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. ഇത് ഓഫ് ആയിരിക്കുമ്പോൾ, ഓരോ ടാബും ഉപേക്ഷിക്കാൻ സ്വതന്ത്രമാണ് — നിങ്ങളുടെ നിയമങ്ങൾ സൂക്ഷിക്കുന്നു, വെറുതെ താൽക്കാലികമായി നിർത്തുന്നു.",
+    "message": "ഇവിടെ എല്ലാ ടാബുകൾക്കുമുള്ള <b>“മെമ്മറിയിൽ നിലനിർത്തുക”</b> താൽക്കാലികമായി നിർത്തുകയോ തുടരുകയോ ചെയ്യാം. ഓഫ് ആയിരിക്കുമ്പോൾ ഏത് ടാബും അൺലോഡ് ചെയ്യപ്പെടാം — നിങ്ങളുടെ നിയമങ്ങൾ മായില്ല, താൽക്കാലികമായി നിർത്തിവയ്ക്കുന്നു എന്നു മാത്രം. “പ്രവർത്തനം നിലനിർത്തുക” ഓണായ ടാബുകൾ പ്രവർത്തനം തുടരും.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "ഒരു പരിരക്ഷണ മോഡ് തിരഞ്ഞെടുക്കുക",
+    "message": "ഏതൊക്കെ സൈറ്റുകൾ മെമ്മറിയിൽ നിലനിർത്തണം",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>വൈറ്റ്‌ലിസ്റ്റ് മാത്രം</b> നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന സൈറ്റുകൾ മാത്രം സജീവമായി നിലനിർത്തുന്നു (മൃദുവായ സ്ഥിരസ്ഥിതി). <b>എല്ലാം പരിരക്ഷിക്കുക</b> നിങ്ങൾ ഒഴിവാക്കുന്നവയൊഴികെ ഓരോ ടാബും സജീവമായി നിലനിർത്തുന്നു.",
+    "message": "<b>തിരഞ്ഞെടുത്ത സൈറ്റുകൾ മാത്രം</b> നിങ്ങൾ പട്ടികയിൽ ചേർക്കുന്ന സൈറ്റുകൾ മാത്രം മെമ്മറിയിൽ നിലനിർത്തുന്നു (സൗമ്യമായ ഡിഫോൾട്ട്). <b>എല്ലാ സൈറ്റുകളും, ഇവ ഒഴികെ…</b> നിങ്ങൾ ഒഴിവാക്കുന്ന സൈറ്റുകൾ ഒഴികെ എല്ലാ ടാബുകളും മെമ്മറിയിൽ നിലനിർത്തുന്നു. “പ്രവർത്തനം നിലനിർത്തുക” ഓരോ ടാബിനുമാണ് സജ്ജമാക്കുന്നത്, ഇവിടെയല്ല.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "ഓരോ തുറന്ന ടാബിനും അതിന്റേതായ സ്വിച്ച് ഉണ്ട്. ആ ഒറ്റ ടാബ് സജീവമായി നിലനിർത്താനോ ഉറങ്ങാൻ അനുവദിക്കാനോ അത് മാറ്റുക — ടാബ് അടയ്ക്കുന്നതുവരെ നിലനിൽക്കുന്ന ഒറ്റത്തവണ തിരഞ്ഞെടുപ്പ്. എന്നേക്കും വേണോ? അത് ഒരു സ്ഥിര സൈറ്റ് നിയമമാക്കി മാറ്റാൻ സ്വിച്ചിന് അടുത്തുള്ള <b>ഈ സൈറ്റിന് എപ്പോഴും</b> ക്ലിക്ക് ചെയ്യുക. ടാബിലേക്ക് പോകാൻ ഒരു വരിയിൽ ക്ലിക്ക് ചെയ്യുക.",
+    "message": "തുറന്നിരിക്കുന്ന ഓരോ ടാബിനും സ്വന്തം <b>“മെമ്മറിയിൽ നിലനിർത്തുക”</b> സ്വിച്ച് ഉണ്ട് — ടാബ് അടയ്ക്കുന്നതുവരെ നിലനിൽക്കുന്ന ഒറ്റത്തവണ തിരഞ്ഞെടുപ്പ്. ഒരു സൈറ്റിന്റെ ഹെഡറിലെ സ്വിച്ച് മുഴുവൻ സൈറ്റിനും ഇതുതന്നെ സ്ഥിരമായി ചെയ്യുന്നു. ടാബിലേക്ക് പോകാൻ ഒരു വരിയിൽ ക്ലിക്ക് ചെയ്യുക.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "സൈറ്റ് അനുസരിച്ച് നിയമങ്ങൾ സജ്ജമാക്കുക",
+    "message": "മുഴുവൻ സൈറ്റുകളും മെമ്മറിയിൽ നിലനിർത്തുക",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "മുഴുവൻ സൈറ്റുകളും ഒറ്റയടിക്ക് പരിരക്ഷിക്കാൻ (അല്ലെങ്കിൽ ഒഴിവാക്കാൻ) ഇവിടെ ഡൊമെയ്‌നുകൾ ചേർക്കുക. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്‌ഡൊമെയ്‌നുകളെയും ഉൾക്കൊള്ളുന്നു — <code>example.com</code> എന്നത് <code>mail.example.com</code>-മായി പൊരുത്തപ്പെടുന്നു. അതാണ് പര്യടനം — ? ബട്ടണിൽ നിന്ന് എപ്പോൾ വേണമെങ്കിലും ഇത് വീണ്ടും തുറക്കാം.",
+    "message": "മുഴുവൻ സൈറ്റുകളും മെമ്മറിയിൽ നിലനിർത്താൻ (അല്ലെങ്കിൽ Chrome-ന് അവ അൺലോഡ് ചെയ്യാൻ അനുവദിക്കാൻ) ഇവിടെ ഡൊമെയ്‌നുകൾ ചേർക്കുക. ഒരു ഡൊമെയ്ൻ അതിന്റെ സബ്ഡൊമെയ്‌നുകളെയും ഉൾക്കൊള്ളുന്നു — <code>example.com</code> എന്നത് <code>mail.example.com</code>-നോട് പൊരുത്തപ്പെടുന്നു. പര്യടനം ഇവിടെ അവസാനിക്കുന്നു — ? ബട്ടൺ ഉപയോഗിച്ച് എപ്പോൾ വേണമെങ്കിലും വീണ്ടും തുറക്കാം.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -536,15 +382,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "ആന്തരിക പേജുകൾ",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "സജീവമായി നിലനിർത്തുക",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "മുഴുവൻ $HOST$ എപ്പോഴും മെമ്മറിയിൽ നിലനിർത്തുക (സ്ഥിരമായ സൈറ്റ് നിയമം)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,27 +408,27 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "പരിരക്ഷ താൽക്കാലികമായി നിർത്തി — ഒരു ടാബും സജീവമായി നിലനിർത്തുന്നില്ല.",
+    "message": "“മെമ്മറിയിൽ നിലനിർത്തുക” താൽക്കാലികമായി നിർത്തി — Chrome-ന് ഏത് ടാബും അൺലോഡ് ചെയ്യാം. “പ്രവർത്തനം നിലനിർത്തുക” ബാധിക്കില്ല.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "അടച്ചു",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "ഈ അടച്ച ടാബ് മെമ്മറിയിൽ നിലനിർത്തുന്നത് നിർത്തുക (മറക്കുക)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "ഈ ഗ്രൂപ്പിൽ പിൻ ചെയ്ത ടാബുകൾ ഉണ്ട്.",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "ഇവിടെയുള്ള പിൻ ചെയ്ത ടാബുകൾ മെമ്മറിയിൽ നിലനിർത്തുന്നില്ല.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "ഇവിടെ $COUNT$ ടാബുകൾ മെമ്മറിയിൽ നിലനിർത്തുന്നു.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "ആരംഭിക്കാനായില്ല. മറ്റൊരു എക്സ്റ്റൻഷനോ Chrome-ഓ ഇതിനകം ഈ ടാബ് ക്യാപ്ചർ ചെയ്യുന്നുണ്ടാകാം.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "മെമ്മറിയിൽ നിലനിർത്തുക",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "പ്രവർത്തനം നിലനിർത്തുക",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "നിങ്ങൾ ടൈപ്പ് ചെയ്തതെല്ലാം നിലനിൽക്കും",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "മറഞ്ഞിരിക്കുമ്പോൾ ഇപ്പോഴും വേഗത കുറയും",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "മറഞ്ഞിരിക്കുമ്പോഴും പ്രവർത്തിക്കുന്നു.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "ചാറ്റുകളും ടൈമറുകളും തത്സമയ ഡാറ്റയും തുടരുന്നു",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "കൂടുതൽ ബാറ്ററി ഉപയോഗിക്കുന്നു; Chrome സ്ക്രീൻ പങ്കിടൽ ഐക്കൺ കാണിക്കും",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "എന്തിന് സ്ക്രീൻ റെക്കോർഡിംഗ്?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "“പ്രവർത്തനം നിലനിർത്തുക” ഒരു സ്ക്രീൻ റെക്കോർഡിംഗ് അനുകരിക്കുന്നു",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "നിങ്ങൾക്ക് കാണാൻ കഴിയാത്ത ടാബുകളുടെ വേഗത Chrome കുറയ്ക്കുന്നു. അത് തടയാൻ, എക്സ്റ്റൻഷൻ ഈ ടാബിന്റെ സ്ക്രീൻ റെക്കോർഡിംഗ് അനുകരിക്കുന്നു, അതിനാൽ Chrome അതിനെ ഉപയോഗത്തിലുള്ളതായി കണക്കാക്കുന്നു.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "ഒന്നും റെക്കോർഡ് ചെയ്യപ്പെടുന്നില്ല. ചിത്രം ഒരിക്കലും വായിക്കുകയോ സേവ് ചെയ്യുകയോ എവിടെയെങ്കിലും അയയ്ക്കുകയോ ചെയ്യില്ല.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "ഈ ടാബ് മാത്രം, സ്വിച്ച് ഓണായിരിക്കുമ്പോൾ മാത്രം. Chrome പങ്കിടൽ ഐക്കൺ കാണിക്കുന്നു, അതിനാൽ ഒന്നും രഹസ്യമായി സംഭവിക്കുന്നില്ല.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "എപ്പോൾ വേണമെങ്കിലും ഓഫാക്കാം, അല്ലെങ്കിൽ ടാബ് അടച്ചാൽ മതി.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "മനസ്സിലായി, ഓണാക്കുക",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "ഇപ്പോൾ വേണ്ട",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "മനസ്സിലായി",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "ഈ ടാബ് അടയ്ക്കുന്നതുവരെ മെമ്മറിയിൽ നിലനിർത്തുക",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — ടാബുകളുടെ പ്രവർത്തനം നിലനിർത്തുന്നു",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive ഈ ടാബിന്റെ പ്രവർത്തനം നിലനിർത്തുന്നു"
+  },
+  "bannerOff": {
+    "message": "ഓഫാക്കുക"
+  },
+  "bannerHide": {
+    "message": "ഈ ബാർ മറയ്ക്കുക (ടാബ് പ്രവർത്തനം തുടരും)"
+  },
+  "tagRunning": {
+    "message": "പ്രവർത്തിക്കുന്നു"
+  },
+  "stopAll": {
+    "message": "എല്ലാം നിർത്തുക"
+  },
+  "timerLabel": {
+    "message": "സ്വയം ഓഫാകുന്നത്:"
+  },
+  "timer30": {
+    "message": "30 മിനിറ്റ്"
+  },
+  "timer60": {
+    "message": "1 മണിക്കൂർ"
+  },
+  "timer180": {
+    "message": "3 മണിക്കൂർ"
+  },
+  "timerNone": {
+    "message": "ടൈമർ ഇല്ല"
+  },
+  "timerLeft": {
+    "message": "$X$ കഴിഞ്ഞ് ഓഫാകും",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "ടൈമർ ഇല്ല — നിങ്ങൾ ഓഫാക്കുന്നതുവരെ പ്രവർത്തിക്കും"
+  },
+  "unitMin": {
+    "message": "മിനിറ്റ്"
+  },
+  "unitHour": {
+    "message": "മണിക്കൂർ"
+  },
+  "heldTitle": {
+    "message": "ഇപ്പോൾ പ്രവർത്തനം നിലനിർത്തുന്നവ"
+  },
+  "heldStop": {
+    "message": "ഈ ടാബിന്റെ പ്രവർത്തനം നിലനിർത്തുന്നത് അവസാനിപ്പിക്കുക"
+  },
+  "bannerUntil": {
+    "message": "$X$ വരെ",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "ദീർഘിപ്പിക്കുക"
+  },
+  "memoryStop": {
+    "message": "ഈ ടാബ് മെമ്മറിയിൽ നിലനിർത്തുന്നത് അവസാനിപ്പിക്കുക"
+  },
+  "rowRunStart": {
+    "message": "പ്രവർത്തനം നിലനിർത്തുക — ഈ ടാബിനായി ഓണാക്കുക"
+  },
+  "rowRunStop": {
+    "message": "“പ്രവർത്തനം നിലനിർത്തുക” ഓണാണ് — നിർത്താൻ ക്ലിക്ക് ചെയ്യുക"
+  },
+  "tourRunTitle": {
+    "message": "ഒരു പേജിന്റെ പ്രവർത്തനം നിലനിർത്തുക"
+  },
+  "tourRunBody": {
+    "message": "മറഞ്ഞിരിക്കുമ്പോഴും ഒരു പേജ് പ്രവർത്തിക്കണോ — ഒരു ചാറ്റ്, ടൈമർ, തത്സമയ ഡാറ്റ? ആ ടാബിൽ എക്സ്റ്റൻഷൻ വിൻഡോ തുറന്ന് <b>“പ്രവർത്തനം നിലനിർത്തുക”</b> ഓണാക്കുക, അല്ലെങ്കിൽ ഇവിടെ ടാബിന്റെ വരിയിലെ മിന്നൽ ഐക്കണിൽ ക്ലിക്ക് ചെയ്യുക. അപ്പോൾ Chrome ടാബിനെ ഉപയോഗത്തിലുള്ളതായി കണക്കാക്കും, അതിനാൽ അതിന്റെ വേഗത കുറയില്ല. ഇത് ഒരു സ്ക്രീൻ റെക്കോർഡിംഗ് അനുകരിക്കുന്നു — ഒന്നും റെക്കോർഡ് ചെയ്യുകയോ അയയ്ക്കുകയോ ചെയ്യുന്നില്ല — നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന ടൈമർ കഴിഞ്ഞാൽ സ്വയം ഓഫാകും."
+  },
+  "aliveTitle": {
+    "message": "സജീവമായി നിലനിർത്തുക"
+  },
+  "aliveTip": {
+    "message": "ഈ ടാബ് മെമ്മറിയിൽ നിലനിർത്തുകയും അതിന്റെ പ്രവർത്തനം നിലനിർത്തുകയും ചെയ്യുക — രണ്ടും ഒരേസമയം"
+  },
+  "aliveRowTip": {
+    "message": "“മെമ്മറിയിൽ നിലനിർത്തുക” + “പ്രവർത്തനം നിലനിർത്തുക”"
+  },
+  "captureReload": {
+    "message": "പേജ് റീലോഡ് ചെയ്യുക"
+  },
+  "runNeedsPopup": {
+    "message": "ആ ടാബിലെ എക്സ്റ്റൻഷൻ വിൻഡോയിൽ നിന്ന് മാത്രമേ Chrome ഇത് അനുവദിക്കൂ. ടാബിലേക്ക് പോയി Keep Tabs Alive ഐക്കണിൽ ക്ലിക്ക് ചെയ്യുക."
+  },
+  "goToTab": {
+    "message": "ടാബിലേക്ക് പോകുക"
+  },
+  "groupRunPick": {
+    "message": "“പ്രവർത്തനം നിലനിർത്തുക” ഒരു സമയം ഒരു ടാബിന് മാത്രമാണ് — അതിന്റെ മിന്നൽ ബട്ടൺ ഉപയോഗിച്ച് ഒരു ടാബ് തിരഞ്ഞെടുക്കുക."
+  },
+  "groupRunStartTip": {
+    "message": "പ്രവർത്തനം നിലനിർത്തുക: മറഞ്ഞിരിക്കുമ്പോഴും പേജ് പൂർണ്ണ വേഗതയിൽ പ്രവർത്തിക്കുന്നു"
+  },
+  "groupRunStopTip": {
+    "message": "ഈ സൈറ്റിന്റെ ടാബുകൾക്കുള്ള “പ്രവർത്തനം നിലനിർത്തുക” ഓഫാക്കുക"
+  },
+  "statRunningNow": {
+    "message": "പ്രവർത്തനത്തിൽ"
+  },
+  "aliveOnTab": {
+    "message": "ടാബിൽ ഓണാക്കുക"
+  },
+  "aliveOnTabTip": {
+    "message": "ആ ടാബിലെ എക്സ്റ്റൻഷൻ വിൻഡോയിൽ നിന്ന് മാത്രമേ Chrome “പ്രവർത്തനം നിലനിർത്തുക” അനുവദിക്കൂ — ഇത് അവിടെ അത് തുറക്കുന്നു."
+  },
+  "pendingTitle": {
+    "message": "ഒരു ക്ലിക്ക് കൂടി"
+  },
+  "pendingBody": {
+    "message": "ഈ വിൻഡോ അടച്ച് ടൂൾബാറിലെ Keep Tabs Alive ഐക്കണിൽ (പച്ച ഷീൽഡ്) ക്ലിക്ക് ചെയ്യുക — അല്ലെങ്കിൽ പസിൽ ഐക്കണിനുള്ളിൽ 🧩. “പ്രവർത്തനം നിലനിർത്തുക” സ്വയം ഓണാകും."
+  },
+  "handoffTitle": {
+    "message": "ടാബിൽ “പ്രവർത്തനം നിലനിർത്തുക” ഓണാക്കുക"
+  },
+  "handoffTitleAlive": {
+    "message": "ടാബിൽ “സജീവമായി നിലനിർത്തുക” ഓണാക്കുക"
+  },
+  "handoffStep1": {
+    "message": "നിങ്ങളെ “$TITLE$” എന്നതിലേക്ക് മാറ്റും.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "ടൂൾബാറിൽ മിന്നിക്കൊണ്ടിരിക്കുന്ന Keep Tabs Alive ഐക്കണിൽ (പച്ച ഷീൽഡ്) ക്ലിക്ക് ചെയ്യുക. കാണുന്നില്ലേ? അത് പസിൽ ഐക്കണിനുള്ളിലാണ് 🧩."
+  },
+  "handoffStep3": {
+    "message": "വിൻഡോ “പ്രവർത്തനം നിലനിർത്തുക” സ്വിച്ചിലേക്ക് ചൂണ്ടിക്കാണിക്കും — അതിൽ ക്ലിക്ക് ചെയ്യുക, ഓണാകും."
+  },
+  "handoffStep3Alive": {
+    "message": "വിൻഡോ “പ്രവർത്തനം നിലനിർത്തുക” സ്വിച്ചിലേക്ക് ചൂണ്ടിക്കാണിക്കും — അതിൽ ക്ലിക്ക് ചെയ്യുക, ടാബ് മെമ്മറിയിൽ നിലനിൽക്കുകയും പ്രവർത്തിക്കുകയും ചെയ്യും."
+  },
+  "runDone": {
+    "message": "പൂർത്തിയായി — ഈ ടാബിന്റെ പ്രവർത്തനം നിലനിർത്തുന്നു."
+  },
+  "aliveDone": {
+    "message": "പൂർത്തിയായി — ഈ ടാബ് സജീവമായി നിലനിർത്തിയിരിക്കുന്നു: മെമ്മറിയിലും പ്രവർത്തനത്തിലും."
+  },
+  "tapToTurnOn": {
+    "message": "ഓണാക്കാൻ ക്ലിക്ക് ചെയ്യുക"
+  },
+  "heldMore": {
+    "message": "എല്ലാ ടാബുകളും ക്രമീകരണങ്ങളിലുണ്ട് →"
+  },
+  "groupInMemory": {
+    "message": "മെമ്മറിയിൽ"
+  },
+  "memoryCardSub": {
+    "message": "Chrome ഈ ടാബുകൾ അൺലോഡ് ചെയ്യില്ല — നിങ്ങൾ ടൈപ്പ് ചെയ്തത് നിലനിൽക്കും."
+  },
+  "runCardSub": {
+    "message": "ഈ പേജുകൾ മറഞ്ഞിരിക്കുമ്പോഴും പൂർണ്ണ വേഗതയിൽ പ്രവർത്തിക്കുന്നു."
+  },
+  "colRunning": {
+    "message": "പ്രവർത്തിക്കുന്നു"
+  },
+  "runEmpty": {
+    "message": "ഒരു ടാബിന്റെയും പ്രവർത്തനം ഇപ്പോൾ നിലനിർത്തുന്നില്ല. താഴെയുള്ള പട്ടികയിൽ ⚡ ഉപയോഗിച്ചോ ആ ടാബിലെ എക്സ്റ്റൻഷൻ വിൻഡോയിൽ നിന്നോ ഒരു ടാബിനായി ഓണാക്കുക."
+  },
+  "wMemPromise": {
+    "message": "Chrome ടാബ് അൺലോഡ് ചെയ്യില്ല."
+  },
+  "wMemDesc": {
+    "message": "തിരികെ വരുമ്പോൾ എല്ലാം നിങ്ങൾ വിട്ടുപോയ അതേപടി ഉണ്ടാകും — റീലോഡ് ഇല്ല."
+  },
+  "wMemGain1": {
+    "message": "ടൈപ്പ് ചെയ്ത ടെക്സ്റ്റ്, ഡ്രാഫ്റ്റുകൾ, ഫോമുകൾ എന്നിവ നിലനിൽക്കും"
+  },
+  "wMemGain2": {
+    "message": "സൗജന്യം: അധിക ബാറ്ററി ഉപയോഗമില്ല"
+  },
+  "wMemCost": {
+    "message": "മറഞ്ഞിരിക്കുമ്പോൾ പേജിന്റെ വേഗത ഇപ്പോഴും കുറഞ്ഞേക്കാം"
+  },
+  "wGoodFor": {
+    "message": "അനുയോജ്യം:"
+  },
+  "wMemFor": {
+    "message": "നീണ്ട ഫോമുകൾ, ഡോക്യുമെന്റുകൾ, മെയിൽ, ഇടയ്ക്ക് നോക്കുന്ന ഡാഷ്ബോർഡുകൾ"
+  },
+  "wRunPromise": {
+    "message": "പേജ് പൂർണ്ണ വേഗതയിൽ പ്രവർത്തിക്കുന്നു — നിങ്ങൾക്ക് കാണാൻ കഴിയാത്തപ്പോഴും."
+  },
+  "wRunDesc": {
+    "message": "Chrome ടാബിനെ ഉപയോഗത്തിലുള്ളതായി കണക്കാക്കുന്നു, അതിനാൽ നിങ്ങൾ മറ്റൊരിടത്തായിരിക്കുമ്പോൾ അതിലൊന്നും നിലയ്ക്കില്ല."
+  },
+  "wRunGain1": {
+    "message": "ചാറ്റുകൾ, AI ഉത്തരങ്ങൾ, ടൈമറുകൾ, സംഗീതം, തത്സമയ ഡാറ്റ എന്നിവ തുടരുന്നു"
+  },
+  "wRunGain2": {
+    "message": "താൽപര്യമുണ്ടെങ്കിൽ ടൈമറിൽ സ്വയം ഓഫാകും"
+  },
+  "wRunCost": {
+    "message": "കൂടുതൽ ബാറ്ററി ഉപയോഗിക്കുന്നു; Chrome സ്ക്രീൻ പങ്കിടൽ ഐക്കൺ കാണിക്കുന്നു — ഒന്നും റെക്കോർഡ് ചെയ്യുന്നില്ല"
+  },
+  "wRunFor": {
+    "message": "ചാറ്റുകളും AI ടൂളുകളും, ട്രേഡിംഗും നിരീക്ഷണവും, ടൈമറുകൾ, അപ്‌ലോഡുകൾ"
+  },
+  "wBoth": {
+    "message": "<strong>രണ്ടും വേണോ?</strong> “സജീവമായി നിലനിർത്തുക” ഒരു ടാബിനായി രണ്ട് മോഡുകളും ഒറ്റ ക്ലിക്കിൽ ഓണാക്കുന്നു."
+  },
+  "wStepsTitle": {
+    "message": "എങ്ങനെ ഓണാക്കാം"
+  },
+  "wStep2": {
+    "message": "<strong>ഏതെങ്കിലും ടാബിൽ ഐക്കണിൽ ക്ലിക്ക് ചെയ്യുക</strong> — അതിന്റെ വിൻഡോയിൽ ഓരോ മോഡിനും ഒരു സ്വിച്ച് ഉണ്ട്."
+  },
+  "wStep3": {
+    "message": "<strong>ക്രമീകരണങ്ങളിൽ</strong> തുറന്നിരിക്കുന്ന എല്ലാ ടാബുകളും കാണുക, മുഴുവൻ സൈറ്റുകളും മെമ്മറിയിൽ നിലനിർത്തുക."
+  },
+  "wPrivacy": {
+    "message": "ഒന്നും നിങ്ങളുടെ ബ്രൗസർ വിട്ടുപോകുന്നില്ല: ട്രാക്കിംഗ് ഇല്ല, സെർവറുകൾ ഇല്ല. “പ്രവർത്തനം നിലനിർത്തുക” ഒരിക്കലും പേജ് റെക്കോർഡ് ചെയ്യുന്നില്ല."
+  },
+  "timerAdd30": {
+    "message": "+30 മിനിറ്റ്"
+  },
+  "timerAdd60": {
+    "message": "+1 മണിക്കൂർ"
+  },
+  "timerAdd180": {
+    "message": "+3 മണിക്കൂർ"
   }
 }

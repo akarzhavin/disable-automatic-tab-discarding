@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Atspējojiet pārlūka Chrome ciļņu izmešanu un novērsiet nevēlamu ciļņu atkārtotu ielādi. Noteikumi pa vietnēm, vadība pa cilnēm un tiešraides statistika.",
+    "message": "Atspējojiet Chrome ciļņu izmešanu, lai cilnes fonā nepalēninātos. Vadība pa vietnēm un cilnēm, automātiskās izslēgšanas taimeris.",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -24,16 +24,12 @@
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "Galvenais slēdzis",
+    "message": "Pauzēt vai atsākt „Paturēt atmiņā” visām cilnēm („Turēt darbībā” tas neietekmē)",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "Aizsardzība ieslēgta",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "Pauzēts",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "aizsargātas cilnes",
@@ -59,59 +55,17 @@
     "message": "Iekšējām lapām nav vietnes noteikumu — taču šo cilni var pārslēgt.",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "Šo lapu nevar pārvaldīt",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "Šeit nav pieejams",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "Iekšējās un paplašinājumu lapas vienmēr tiek atstātas neskartas.",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "Aizsargāts",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "Izmetams",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "Aizsargāt šo vietni",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "Pārtraukt šīs vietnes aizsardzību",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "Izslēgt šo vietni",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "Aizsargātās vietnes",
+    "message": "Atmiņā paturamās vietnes",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "Izslēgtās vietnes",
+    "message": "Vietnes, ko Chrome drīkst izmest",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "Vietņu vēl nav",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "vēl $COUNT$",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "Noņemt $DOMAIN$",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "aizsargāts tagad",
+    "message": "tagad atmiņā",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "Aizsardzības režīms",
+    "message": "Paturēt atmiņā: kuras vietnes",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "Aizsargāt visu",
+    "message": "Visas vietnes, izņemot…",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "Tikai baltais saraksts",
+    "message": "Tikai izvēlētās vietnes",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "Pārslēdziet slēdzi, lai saglabātu šo cilni aktīvu vai ļautu pārlūkam Chrome to izmest. Manuāls slēdzis ignorē vietnes noteikumus un darbojas, līdz cilne tiek aizvērta.",
+    "message": "Katrai cilnei: ▣ patur atmiņā, ⚡ tur darbībā, „Paturēt dzīvu” dara abus. Manuālām izmaiņām ir prioritāte pār vietņu noteikumiem, līdz cilne tiek aizvērta.",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "Jūsu meklējumam neatbilst neviena cilne.",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "Šis logs · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "Logs $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "Manuāls",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "Snauž",
+    "message": "Izmesta",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "Aizsardzību ir apturējis galvenais slēdzis",
+    "message": "„Paturēt atmiņā” ir pauzēts — ieslēdziet to atkal kartītē „Paturēt atmiņā”",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "Aizsargāts — pārslēdziet, lai ļautu pārlūkam Chrome izmest šo cilni",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "Izmetams — pārslēdziet, lai saglabātu šo cilni aktīvu",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "Aktīvas tiek saglabātas tikai šīs vietnes; viss pārējais var tikt izmests. Domēns atbilst arī saviem apakšdomēniem — piem., <code>example.com</code> ietver <code>mail.example.com</code>.",
+    "message": "Chrome neizmetīs šo vietņu cilnes. Domēns ietver arī apakšdomēnus: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "Šīs vietnes drīkst tikt izmestas. Domēns atbilst arī saviem apakšdomēniem — piem., <code>example.com</code> ietver <code>mail.example.com</code>.",
+    "message": "Visas pārējās cilnes paliek atmiņā; šīs vietnes Chrome drīkst izmest. Domēns ietver arī apakšdomēnus: <code>example.com</code> → <code>mail.example.com</code>.",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "Noņemt",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "Vienmēr šai vietnei",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "Vienmēr saglabāt $HOST$ aktīvu (pievieno vietnes noteikumu)",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "Vienmēr ļaut izmest $HOST$ (atjaunina vietnes noteikumus)",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "Saglabāts — $HOST$ tagad vienmēr paliks aktīvs. Skatiet vietņu noteikumus zemāk.",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "Saglabāts — $HOST$ tagad vienmēr var tikt izmests. Skatiet vietņu noteikumus zemāk.",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "Vienmēr aktīvs",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "Vienmēr izmetams",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ ir saglabāts kā vietnes noteikums — noklikšķiniet, lai to noņemtu",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "Noņemts — $HOST$ atkal ievēro režīma noklusējumu.",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "Šeit pagaidām nekā nav.",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "Padoms: atveriet <code>chrome://discards</code>, lai redzētu kolonnu <strong>Auto Discardable</strong> — pie aizsargātajām cilnēm rādās ✕. Piezīme: manuālā izmešana tur joprojām darbojas; tas bloķē tikai pārlūka Chrome <em>automātisko</em> atmiņas taupīšanas izmešanu.",
+    "message": "Padoms: atveriet <code>chrome://discards</code>, lai redzētu kolonnu <strong>Auto Discardable</strong> — pie cilnēm, kas tiek paturētas atmiņā, rādās ✕. Piezīme: manuālā izmešana tur joprojām darbojas; tas bloķē tikai pārlūka Chrome <em>automātisko</em> atmiņas taupīšanas izmešanu.",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -426,11 +276,11 @@
     "description": "Small eyebrow text above the welcome title."
   },
   "heroTitle": {
-    "message": "Uzturiet aktīvas svarīgākās cilnes",
+    "message": "Paturiet dzīvas svarīgākās cilnes",
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome Atmiņas taupītājs izlādē neaktīvās cilnes, lai atbrīvotu RAM, un pēc tam tās pārlādē, kad atgriežaties. Keep Tabs Alive ļauj jums izvēlēties, kuras cilnes paliek aktīvas un gatavas — novēršot nevēlamu pārlādēšanu un traucējumus.",
+    "message": "Chrome taupa resursus divējādi: tas izmet cilnes, ko nelietojat, un palēnina cilnes, kuras neredzat. Keep Tabs Alive novērš abus — cilni pa cilnei, tikai tur, kur vēlaties.",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>Piespraudiet to</strong> ātrai piekļuvei: noklikšķiniet uz <span class=\"puzzle\">🧩</span> mozaīkas ikonas rīkjoslā un pēc tam uz piespraudes.",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>Pārbaudiet jebkurā laikā</strong> vietnē <code>chrome://discards</code> — aizsargātajām cilnēm kolonnā <em>Auto Discardable</em> tiek rādīts ✕.",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "Galvenais slēdzis",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "Šeit ieslēdziet vai izslēdziet visu aizsardzību. Kamēr tā ir izslēgta, jebkuru cilni var izmest — jūsu noteikumi tiek saglabāti, tikai apturēti.",
+    "message": "Pauzējiet vai atsāciet <b>„Paturēt atmiņā”</b> visām cilnēm šeit. Kamēr tas ir izslēgts, jebkuru cilni var izmest — jūsu noteikumi tiek saglabāti, tikai pauzēti. Cilnes, kuras turat darbībā, turpina darboties.",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "Izvēlieties aizsardzības režīmu",
+    "message": "Kuras vietnes paturēt atmiņā",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>Tikai baltais saraksts</b> saglabā aktīvas tikai jūsu izvēlētās vietnes (maigais noklusējums). <b>Aizsargāt visu</b> saglabā aktīvu katru cilni, izņemot jūsu izslēgtās.",
+    "message": "<b>Tikai izvēlētās vietnes</b> patur atmiņā tikai jūsu norādītās vietnes (saudzīgais noklusējums). <b>Visas vietnes, izņemot…</b> patur atmiņā visas cilnes, izņemot tās vietnes, ko izslēdzat. „Turēt darbībā” tiek iestatīts katrai cilnei atsevišķi, nevis šeit.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "Katrai atvērtajai cilnei ir savs slēdzis. Pārslēdziet to, lai saglabātu šo vienu cilni aktīvu vai ļautu tai aizmigt — vienreizēja izvēle, kas darbojas, līdz cilne tiek aizvērta. Vēlaties to uz visiem laikiem? Noklikšķiniet uz <b>Vienmēr šai vietnei</b> blakus slēdzim, lai padarītu to par pastāvīgu vietnes noteikumu. Noklikšķiniet uz rindas, lai pārietu uz cilni.",
+    "message": "Katrai atvērtajai cilnei ir savs <b>„Paturēt atmiņā”</b> slēdzis — vienreizēja izvēle, kas darbojas, līdz cilne tiek aizvērta. Slēdzis vietnes galvenē dara to pašu visai vietnei, pastāvīgi. Noklikšķiniet uz rindas, lai pārietu uz cilni.",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "Iestatiet noteikumus pa vietnēm",
+    "message": "Paturiet atmiņā veselas vietnes",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "Pievienojiet šeit domēnus, lai uzreiz aizsargātu (vai izslēgtu) veselas vietnes. Domēns ietver arī savus apakšdomēnus — <code>example.com</code> atbilst <code>mail.example.com</code>. Tā arī ir visa apskate — atveriet to jebkurā laikā ar pogu ?.",
+    "message": "Pievienojiet šeit domēnus, lai paturētu atmiņā veselas vietnes (vai ļautu Chrome tās izmest). Domēns ietver arī apakšdomēnus — <code>example.com</code> atbilst <code>mail.example.com</code>. Apskate ir galā — atveriet to atkal jebkurā laikā ar pogu ?.",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -536,15 +382,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "Iekšējās lapas",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "Paturēt atmiņā",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "Vienmēr paturēt visu $HOST$ atmiņā (pastāvīgs vietnes noteikums)",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,27 +408,27 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "Aizsardzība ir pauzēta — neviena cilne netiek uzturēta aktīva.",
+    "message": "„Paturēt atmiņā” ir pauzēts — Chrome drīkst izmest jebkuru cilni. „Turēt darbībā” tas neietekmē.",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "Aizvērta",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "Beigt paturēt šo aizvērto cilni atmiņā (aizmirst to)",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "Šajā grupā ir piespraustas cilnes.",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "Piespraustās cilnes šeit netiek paturētas atmiņā.",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "Šeit atmiņā tiek paturētas $COUNT$ cilnes.",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "Neizdevās sākt. Iespējams, šo cilni jau uztver cits paplašinājums vai pats Chrome.",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "Paturēt atmiņā",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "Turēt darbībā",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "Viss, ko ievadījāt, saglabājas",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "Paslēpta tā joprojām palēninās",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "Darbojas arī tad, kad ir paslēpta.",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "Tērzēšana, taimeri un tiešraides dati turpinās",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "Lielāks akumulatora patēriņš; Chrome rāda ekrāna kopīgošanas ikonu",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "Kāpēc ekrāna ieraksts?",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "„Turēt darbībā” imitē ekrāna ierakstu",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome palēnina cilnes, kuras jūs neredzat. Lai tā nenotiktu, paplašinājums imitē šīs cilnes ekrāna ierakstu, tāpēc Chrome uzskata, ka tā tiek izmantota.",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "Nekas netiek ierakstīts. Attēls nekad netiek lasīts, saglabāts vai nosūtīts.",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "Tikai šī cilne un tikai tad, kad slēdzis ir ieslēgts. Chrome rāda kopīgošanas ikonu, tāpēc nekas nenotiek slepeni.",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "Izslēdziet jebkurā laikā vai vienkārši aizveriet cilni.",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "Sapratu, ieslēgt",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "Ne tagad",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "Skaidrs",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "Paturēt šo cilni atmiņā, līdz tā tiek aizvērta",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — cilnes tiek turētas darbībā",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive tur šo cilni darbībā"
+  },
+  "bannerOff": {
+    "message": "Izslēgt"
+  },
+  "bannerHide": {
+    "message": "Paslēpt šo joslu (cilne joprojām tiek turēta darbībā)"
+  },
+  "tagRunning": {
+    "message": "Darbojas"
+  },
+  "stopAll": {
+    "message": "Apturēt visas"
+  },
+  "timerLabel": {
+    "message": "Automātiski izslēgt pēc"
+  },
+  "timer30": {
+    "message": "30 min"
+  },
+  "timer60": {
+    "message": "1 st."
+  },
+  "timer180": {
+    "message": "3 st."
+  },
+  "timerNone": {
+    "message": "Bez taimera"
+  },
+  "timerLeft": {
+    "message": "Izslēgsies pēc $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "Bez taimera — darbojas, līdz izslēdzat"
+  },
+  "unitMin": {
+    "message": "min"
+  },
+  "unitHour": {
+    "message": "st."
+  },
+  "heldTitle": {
+    "message": "Tagad darbībā turētās"
+  },
+  "heldStop": {
+    "message": "Beigt turēt šo cilni darbībā"
+  },
+  "bannerUntil": {
+    "message": "līdz $X$",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "Pagarināt par"
+  },
+  "memoryStop": {
+    "message": "Beigt paturēt šo cilni atmiņā"
+  },
+  "rowRunStart": {
+    "message": "„Turēt darbībā” — ieslēgt šai cilnei"
+  },
+  "rowRunStop": {
+    "message": "„Turēt darbībā” ir ieslēgts — noklikšķiniet, lai izslēgtu"
+  },
+  "tourRunTitle": {
+    "message": "Turiet lapu darbībā"
+  },
+  "tourRunBody": {
+    "message": "Vai lapai jāturpina darboties, kamēr tā ir paslēpta, — tērzēšana, taimeris, tiešraides dati? Atveriet paplašinājuma logu šajā cilnē un ieslēdziet <b>„Turēt darbībā”</b> vai nospiediet zibens ikonu cilnes rindā šeit. Tad Chrome uzskata, ka cilne tiek lietota, tāpēc tā netiek palēnināta. Tas imitē ekrāna ierakstu — nekas netiek ierakstīts vai nosūtīts —, un pēc jūsu izvēlētā taimera izslēdzas pats."
+  },
+  "aliveTitle": {
+    "message": "Paturēt dzīvu"
+  },
+  "aliveTip": {
+    "message": "Paturēt šo cilni atmiņā un turēt darbībā — abus vienlaikus"
+  },
+  "aliveRowTip": {
+    "message": "„Paturēt atmiņā” + „Turēt darbībā”"
+  },
+  "captureReload": {
+    "message": "Pārlādēt lapu"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome to atļauj tikai no paplašinājuma loga šajā cilnē. Dodieties uz cilni un noklikšķiniet uz Keep Tabs Alive ikonas."
+  },
+  "goToTab": {
+    "message": "Uz cilni"
+  },
+  "groupRunPick": {
+    "message": "„Turēt darbībā” vienlaikus darbojas tikai vienā cilnē — izvēlieties cilni ar tās zibens pogu."
+  },
+  "groupRunStartTip": {
+    "message": "„Turēt darbībā”: lapa darbojas pilnā ātrumā arī tad, kad ir paslēpta"
+  },
+  "groupRunStopTip": {
+    "message": "Izslēgt „Turēt darbībā” šīs vietnes cilnēm"
+  },
+  "statRunningNow": {
+    "message": "turētas darbībā"
+  },
+  "aliveOnTab": {
+    "message": "Ieslēgt cilnē"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome atļauj „Turēt darbībā” tikai no paplašinājuma loga šajā cilnē — šī poga to tur atver."
+  },
+  "pendingTitle": {
+    "message": "Vēl viens klikšķis"
+  },
+  "pendingBody": {
+    "message": "Aizveriet šo logu un noklikšķiniet uz Keep Tabs Alive ikonas (zaļais vairogs) rīkjoslā — vai zem mozaīkas ikonas 🧩. „Turēt darbībā” ieslēgsies pats."
+  },
+  "handoffTitle": {
+    "message": "Ieslēgt „Turēt darbībā” cilnē"
+  },
+  "handoffTitleAlive": {
+    "message": "Ieslēgt „Paturēt dzīvu” cilnē"
+  },
+  "handoffStep1": {
+    "message": "Mēs pārslēgsim jūs uz „$TITLE$”.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "Noklikšķiniet uz mirgojošās Keep Tabs Alive ikonas rīkjoslā (zaļais vairogs). Neredzat? Tā ir zem mozaīkas ikonas 🧩."
+  },
+  "handoffStep3": {
+    "message": "Logs norādīs uz slēdzi „Turēt darbībā” — noklikšķiniet uz tā, un tas ieslēgsies."
+  },
+  "handoffStep3Alive": {
+    "message": "Logs norādīs uz slēdzi „Turēt darbībā” — noklikšķiniet uz tā, un cilne tiks paturēta atmiņā un turēta darbībā."
+  },
+  "runDone": {
+    "message": "Gatavs — šī cilne tiek turēta darbībā."
+  },
+  "aliveDone": {
+    "message": "Gatavs — šī cilne tiek paturēta dzīva: atmiņā un darbībā."
+  },
+  "tapToTurnOn": {
+    "message": "Noklikšķiniet, lai ieslēgtu"
+  },
+  "heldMore": {
+    "message": "Visas cilnes ir iestatījumos →"
+  },
+  "groupInMemory": {
+    "message": "Atmiņā"
+  },
+  "memoryCardSub": {
+    "message": "Chrome neizmetīs šīs cilnes — viss ievadītais saglabāsies."
+  },
+  "runCardSub": {
+    "message": "Šīs lapas darbojas pilnā ātrumā arī tad, kad ir paslēptas."
+  },
+  "colRunning": {
+    "message": "Darbojas"
+  },
+  "runEmpty": {
+    "message": "Neviena cilne netiek turēta darbībā. Ieslēdziet to cilnei ar ⚡ zemāk esošajā sarakstā vai paplašinājuma logā šajā cilnē."
+  },
+  "wMemPromise": {
+    "message": "Chrome neizmetīs cilni."
+  },
+  "wMemDesc": {
+    "message": "Atgriezieties — un viss būs tieši tur, kur to atstājāt, bez pārlādes."
+  },
+  "wMemGain1": {
+    "message": "Ievadītais teksts, melnraksti un veidlapas saglabājas"
+  },
+  "wMemGain2": {
+    "message": "Bez maksas: papildu akumulatora patēriņa nav"
+  },
+  "wMemCost": {
+    "message": "Kamēr lapa ir paslēpta, tā joprojām var palēnināties"
+  },
+  "wGoodFor": {
+    "message": "Piemērots:"
+  },
+  "wMemFor": {
+    "message": "garām veidlapām, dokumentiem, pastam, informācijas paneļiem, ko laiku pa laikam pārbaudāt"
+  },
+  "wRunPromise": {
+    "message": "Lapa darbojas pilnā ātrumā — pat tad, kad jūs to neredzat."
+  },
+  "wRunDesc": {
+    "message": "Chrome uzskata, ka cilne tiek lietota, tāpēc nekas tajā neapstājas, kamēr esat citur."
+  },
+  "wRunGain1": {
+    "message": "Tērzēšana, MI atbildes, taimeri, mūzika un tiešraides dati turpinās"
+  },
+  "wRunGain2": {
+    "message": "Ja vēlaties, pats izslēdzas pēc taimera"
+  },
+  "wRunCost": {
+    "message": "Patērē vairāk akumulatora; Chrome rāda ekrāna kopīgošanas ikonu — nekas netiek ierakstīts"
+  },
+  "wRunFor": {
+    "message": "tērzēšanai un MI rīkiem, tirdzniecībai un uzraudzībai, taimeriem, augšupielādēm"
+  },
+  "wBoth": {
+    "message": "<strong>Vai vajag abus?</strong> „Paturēt dzīvu” ar vienu klikšķi ieslēdz abus režīmus cilnei."
+  },
+  "wStepsTitle": {
+    "message": "Kā tos ieslēgt"
+  },
+  "wStep2": {
+    "message": "<strong>Jebkurā cilnē noklikšķiniet uz ikonas</strong> — tās logā ir slēdzis katram režīmam."
+  },
+  "wStep3": {
+    "message": "<strong>Iestatījumos</strong> redzamas visas atvērtās cilnes, un tur var paturēt atmiņā veselas vietnes."
+  },
+  "wPrivacy": {
+    "message": "Nekas neatstāj jūsu pārlūku: nav izsekošanas, nav serveru. „Turēt darbībā” nekad neieraksta lapu."
+  },
+  "timerAdd30": {
+    "message": "+30 min"
+  },
+  "timerAdd60": {
+    "message": "+1 st."
+  },
+  "timerAdd180": {
+    "message": "+3 st."
   }
 }

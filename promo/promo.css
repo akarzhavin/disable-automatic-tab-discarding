@@ -100,7 +100,7 @@ body { font-family: var(--font); -webkit-font-smoothing: antialiased; }
 }
 .device iframe {
   display: block;
-  width: 340px; height: 384px; border: 0;
+  width: 340px; height: 556px; border: 0;
   margin: 10px 0 0 auto;            /* drop down from the toolbar, right-aligned */
   background: #f4f5f7;
   border-radius: 16px;
@@ -151,3 +151,54 @@ body { font-family: var(--font); -webkit-font-smoothing: antialiased; }
 .window--welcome { width: 1150px; margin-top: 0; }
 .window__view--welcome { width: 1148px; height: 650px; background: #f4f5f7; }
 .window__view--welcome iframe { height: 1100px; background: #f4f5f7; }
+
+/* ── Closing slide: the two modes as a poster ──────────────────────────── */
+.theme-6 .bg { background: linear-gradient(135deg, #eaf7f2 0%, #f5f7f9 50%, #e8f3fb 100%); }
+.slide--modes { padding: 44px 56px 0; }
+.modes__inner { display: flex; flex-direction: column; align-items: center; width: 100%; }
+.modes__title {
+  position: relative; z-index: 2; text-align: center; max-width: 1000px;
+  font-size: 50px; line-height: 1.08; font-weight: 800; letter-spacing: -0.025em; color: var(--ink);
+}
+.modes__row { position: relative; z-index: 2; display: flex; align-items: stretch; gap: 0; margin-top: 38px; width: 100%; max-width: 1170px; gap: 40px; }
+.mode {
+  flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 34px 36px 28px; border-radius: 30px;
+  background: #fff; box-shadow: 0 24px 60px rgba(16,36,29,0.14), 0 2px 8px rgba(16,36,29,0.06);
+}
+.mode--mem { background: linear-gradient(160deg, #e3f6ee 0%, #ffffff 58%); }
+.mode--run { background: linear-gradient(160deg, #e0f0fb 0%, #ffffff 58%); }
+.modes__plus {
+  align-self: center; z-index: 3; width: 56px; height: 56px; margin: 0 -48px; border-radius: 50%;
+  display: grid; place-items: center; background: #fff; color: #5b6b65; font-size: 34px; font-weight: 300; line-height: 1;
+  box-shadow: 0 8px 24px rgba(16,36,29,0.16);
+}
+.mode__art { position: relative; width: 104px; height: 104px; display: grid; place-items: center; margin: 4px 0 20px 8px; }
+.ring { position: absolute; border-radius: 50%; }
+.mode--mem .ring { background: rgba(16,163,127,0.10); }
+.mode--run .ring { background: rgba(2,132,199,0.10); }
+.ring.r1 { inset: 10px; } .ring.r2 { inset: -4px; opacity: .6; } .ring.r3 { inset: -18px; opacity: .3; }
+.mode__icon { position: relative; width: 62px; height: 62px; border-radius: 19px; display: grid; place-items: center; color: #fff; }
+.mode__icon svg { width: 34px; height: 34px; }
+.mode--mem .mode__icon { background: linear-gradient(145deg, #27cfa0, #0d8a6c); box-shadow: 0 10px 24px rgba(16,163,127,0.4); }
+.mode--run .mode__icon { background: linear-gradient(145deg, #38bdf8, #0369a1); box-shadow: 0 10px 24px rgba(2,132,199,0.4); }
+.mode h2 { font-size: 38px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); line-height: 1.1; }
+.mode__promise { margin-top: 12px; font-size: 23px; line-height: 1.35; font-weight: 650; }
+.mode--mem .mode__promise { color: #0d8a6c; }
+.mode--run .mode__promise { color: #0369a1; }
+.mode ul { list-style: none; margin: 22px 0 22px; display: grid; gap: 14px; }
+.mode li { display: flex; gap: 12px; align-items: flex-start; font-size: 18.5px; line-height: 1.4; color: var(--ink); }
+.mode li i { flex: none; width: 22px; height: 22px; margin-top: 1px; }
+.mode li i svg { width: 22px; height: 22px; }
+.mode--mem li.gain i { color: #10a37f; } .mode--run li.gain i { color: #0284c7; }
+.mode li.cost { color: #5b6b65; } .mode li.cost i { color: #9aa7a1; }
+.mode__for { margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(16,36,29,0.10); font-size: 16.5px; line-height: 1.45; color: #4a5b54; }
+.mode__for b { color: var(--ink); }
+.modes__both {
+  position: relative; z-index: 2; display: flex; align-items: center; gap: 10px; margin-top: 32px;
+  padding: 14px 26px 14px 16px; border-radius: 999px; background: #fff; box-shadow: 0 10px 30px rgba(16,36,29,0.12);
+}
+.modes__both p { margin-left: 6px; font-size: 21px; color: #4a5b54; }
+.modes__both strong { color: var(--ink); }
+.modes__chip { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 11px; background: rgba(16,163,127,0.14); color: #0d8a6c; }
+.modes__chip--run { background: rgba(2,132,199,0.14); color: #0369a1; }
+.modes__chip svg { width: 20px; height: 20px; }

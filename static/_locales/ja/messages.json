@@ -8,7 +8,7 @@
     "description": "Short extension name used where space is limited."
   },
   "appDesc": {
-    "message": "Chrome のタブ破棄を無効化し、不要なタブの再読み込みを防ぎます。サイトごとのルール、タブごとの制御、リアルタイムの統計。",
+    "message": "Chrome のタブ破棄を無効にし、バックグラウンドでタブが重くなるのを防ぎます。サイト別・タブ別の制御と自動オフタイマー付き。",
     "description": "Extension description in the Web Store / extensions page."
   },
   "actionTitle": {
@@ -24,16 +24,12 @@
     "description": "Tagline under the product name on the settings page."
   },
   "masterSwitchTitle": {
-    "message": "マスタースイッチ",
+    "message": "すべてのタブの「メモリに保持」を一時停止または再開します（「動作を維持」は影響を受けません）",
     "description": "Tooltip for the on/off master switch."
   },
   "statusActive": {
     "message": "保護オン",
     "description": "Status label when protection is on."
-  },
-  "statusPaused": {
-    "message": "一時停止中",
-    "description": "Status label when protection is off."
   },
   "tabsProtected": {
     "message": "個のタブを保護中",
@@ -59,59 +55,17 @@
     "message": "内部ページにはサイトルールがありませんが、このタブは切り替えられます。",
     "description": "Hint when the current page is internal: only the tab switch works."
   },
-  "pageCantBeManaged": {
-    "message": "このページは管理できません",
-    "description": "Shown when the current tab is an internal/extension page."
-  },
   "notAvailableHere": {
     "message": "ここでは利用できません",
     "description": "Disabled button label for unmanageable pages."
   },
-  "internalPagesUntouched": {
-    "message": "内部ページと拡張機能ページは常にそのまま保持されます。",
-    "description": "Hint explaining why some pages can't be managed."
-  },
-  "stateProtected": {
-    "message": "保護中",
-    "description": "Badge: this tab is kept alive."
-  },
-  "stateDiscardable": {
-    "message": "破棄可能",
-    "description": "Badge: this tab may be discarded by Chrome."
-  },
-  "protectThisSite": {
-    "message": "このサイトを保護",
-    "description": "Button to start protecting the current site."
-  },
-  "stopProtectingThisSite": {
-    "message": "このサイトの保護を解除",
-    "description": "Button to stop protecting the current site (whitelist mode)."
-  },
-  "excludeThisSite": {
-    "message": "このサイトを除外",
-    "description": "Button to exclude the current site (exclude mode)."
-  },
   "protectedSites": {
-    "message": "保護中のサイト",
+    "message": "メモリに保持するサイト",
     "description": "Title for the list of whitelisted (kept-alive) sites."
   },
   "excludedSites": {
-    "message": "除外したサイト",
+    "message": "Chrome が破棄してよいサイト",
     "description": "Title for the list of excluded (discardable) sites."
-  },
-  "noSitesYet": {
-    "message": "サイトはまだありません",
-    "description": "Empty state for the popup site list."
-  },
-  "moreCount": {
-    "message": "他 $COUNT$ 件",
-    "description": "Chip showing how many more sites are hidden.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   },
   "removeDomain": {
     "message": "$DOMAIN$ を削除",
@@ -156,7 +110,7 @@
     "description": "Theme option: dark."
   },
   "statProtectedNow": {
-    "message": "現在保護中",
+    "message": "現在メモリ内",
     "description": "Stat label: tabs currently protected."
   },
   "statOpenTabs": {
@@ -186,11 +140,11 @@
     "description": "Button to reset statistics."
   },
   "protectionMode": {
-    "message": "保護モード",
+    "message": "メモリに保持：対象サイト",
     "description": "Heading for the protection-mode chooser."
   },
   "modeProtectEverything": {
-    "message": "すべて保護",
+    "message": "すべてのサイト（除外を除く）",
     "description": "Mode name: protect all tabs except exclusions."
   },
   "modeProtectEverythingDesc": {
@@ -198,7 +152,7 @@
     "description": "Description of the protect-everything mode."
   },
   "modeWhitelistOnly": {
-    "message": "ホワイトリストのみ",
+    "message": "選んだサイトのみ",
     "description": "Mode name: protect only listed sites."
   },
   "modeWhitelistOnlyDesc": {
@@ -214,7 +168,7 @@
     "description": "Placeholder for the tab search box."
   },
   "openTabsDesc": {
-    "message": "スイッチを切り替えて、そのタブを保持するか Chrome に破棄させるかを選べます。手動スイッチはサイトルールより優先され、タブを閉じるまで有効です。",
+    "message": "タブごとに、▣ でメモリに保持、⚡ で動作を維持、「完全維持」で両方を同時に行います。手動での変更は、タブを閉じるまでサイトのルールより優先されます。",
     "description": "Description under the open-tabs heading."
   },
   "noOpenTabs": {
@@ -225,36 +179,12 @@
     "message": "検索条件に一致するタブはありません。",
     "description": "Empty state when a search returns no tabs."
   },
-  "thisWindowCount": {
-    "message": "このウィンドウ · $COUNT$",
-    "description": "Group header for the focused window and its tab count.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "8"
-      }
-    }
-  },
-  "windowNoCount": {
-    "message": "ウィンドウ $NO$ · $COUNT$",
-    "description": "Group header for another window and its tab count.",
-    "placeholders": {
-      "no": {
-        "content": "$1",
-        "example": "2"
-      },
-      "count": {
-        "content": "$2",
-        "example": "8"
-      }
-    }
-  },
   "tagManual": {
     "message": "手動",
     "description": "Tag: this tab has a manual override."
   },
   "tagAsleep": {
-    "message": "スリープ中",
+    "message": "破棄済み",
     "description": "Tag: this tab is currently discarded."
   },
   "tagPinned": {
@@ -278,23 +208,15 @@
     "description": "Tooltip for the clickable tab row."
   },
   "switchPausedByMaster": {
-    "message": "マスタースイッチにより保護が一時停止されています",
+    "message": "「メモリに保持」は一時停止中です — 「メモリに保持」カードでオンに戻してください",
     "description": "Tooltip when the per-tab switch is disabled."
   },
-  "switchProtectedFlip": {
-    "message": "保護中 — 切り替えると Chrome がこのタブを破棄できます",
-    "description": "Tooltip for a protected tab's switch."
-  },
-  "switchDiscardableFlip": {
-    "message": "破棄可能 — 切り替えるとこのタブを保持します",
-    "description": "Tooltip for a discardable tab's switch."
-  },
   "listDescWhitelist": {
-    "message": "これらのサイトだけが保持され、それ以外は破棄される可能性があります。ドメインはサブドメインにも一致します — 例: <code>example.com</code> は <code>mail.example.com</code> をカバーします。",
+    "message": "Chrome はこれらのサイトのタブを破棄しません。ドメインはサブドメインにも適用されます：<code>example.com</code> → <code>mail.example.com</code>。",
     "description": "Description for the whitelist site list. Keep the <code> tags."
   },
   "listDescExclude": {
-    "message": "これらのサイトは破棄が許可されます。ドメインはサブドメインにも一致します — 例: <code>example.com</code> は <code>mail.example.com</code> をカバーします。",
+    "message": "それ以外のタブはすべてメモリに保持され、これらのサイトだけ Chrome が破棄できます。ドメインはサブドメインにも適用されます：<code>example.com</code> → <code>mail.example.com</code>。",
     "description": "Description for the exclude site list. Keep the <code> tags."
   },
   "domainPlaceholderWhitelist": {
@@ -316,78 +238,6 @@
   "remove": {
     "message": "削除",
     "description": "Button to remove a domain from the list."
-  },
-  "alwaysForThisSite": {
-    "message": "このサイトでは常に適用",
-    "description": "Button to promote a one-time tab override into a permanent site rule."
-  },
-  "alwaysKeepHost": {
-    "message": "$HOST$ を常に保持する（サイトルールを追加）",
-    "description": "Tooltip for the always-protect action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysDiscardHost": {
-    "message": "$HOST$ を常に破棄可能にする（サイトルールを更新）",
-    "description": "Tooltip for the always-discard action.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysProtected": {
-    "message": "保存しました — $HOST$ は今後常に保持されます。下の「サイトルール」をご覧ください。",
-    "description": "Toast after promoting a protect override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastAlwaysDiscardable": {
-    "message": "保存しました — $HOST$ は今後常に破棄可能になります。下の「サイトルール」をご覧ください。",
-    "description": "Toast after promoting a discard override to a permanent rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "alwaysKeptAlive": {
-    "message": "常に保持中",
-    "description": "Active state of the always-button when the site is whitelisted."
-  },
-  "alwaysDiscardable": {
-    "message": "常に破棄可能",
-    "description": "Active state of the always-button when the site is excluded."
-  },
-  "alwaysUndoTip": {
-    "message": "$HOST$ はサイトルールとして保存されています — クリックすると削除します",
-    "description": "Tooltip for the active always-button (click removes the rule).",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
-  },
-  "toastRuleRemoved": {
-    "message": "削除しました — $HOST$ は再びモードのデフォルトに従います。",
-    "description": "Toast after removing a permanent site rule.",
-    "placeholders": {
-      "host": {
-        "content": "$1",
-        "example": "example.com"
-      }
-    }
   },
   "nothingHereYet": {
     "message": "まだ何もありません。",
@@ -418,7 +268,7 @@
     }
   },
   "footerTip": {
-    "message": "ヒント: <code>chrome://discards</code> を開くと <strong>Auto Discardable</strong> 列が表示されます — 保護中のタブには ✕ が付きます。注意: そこでの手動破棄は引き続き機能します。これは Chrome の<em>自動的な</em>メモリセーバーによる破棄のみをブロックします。",
+    "message": "ヒント: <code>chrome://discards</code> を開くと <strong>Auto Discardable</strong> 列が表示されます — メモリに保持中のタブには ✕ が付きます。注意: そこでの手動破棄は引き続き機能します。これは Chrome の<em>自動的な</em>メモリセーバーによる破棄のみをブロックします。",
     "description": "Footer tip on the settings page. Keep the inline tags and chrome://discards literal."
   },
   "heroEyebrow": {
@@ -430,7 +280,7 @@
     "description": "Main welcome headline."
   },
   "heroLead": {
-    "message": "Chrome のメモリセーバーは、アイドル状態のタブを解放して RAM を空け、再アクセス時に再読み込みします。Keep Tabs Alive を使えば、どのタブをアクティブで使える状態に保つかを選べます — 不要な再読み込みや中断を防ぎます。",
+    "message": "Chrome は 2 つの方法でリソースを節約します。使っていないタブを破棄し、見えていないタブの動作を遅くします。Keep Tabs Alive は、そのどちらも止めます。タブごとに、必要なところだけで使えます。",
     "description": "Intro paragraph on the welcome page."
   },
   "wcard1Title": {
@@ -469,24 +319,20 @@
     "message": "<strong>ピン留め</strong>してワンクリックでアクセス：ツールバーの <span class=\"puzzle\">🧩</span> パズルアイコンをクリックし、ピンをクリックします。",
     "description": "Welcome footer step 1. Keep the inline tags and the puzzle emoji."
   },
-  "welcomeStep2": {
-    "message": "<strong>いつでも確認</strong>できます。<code>chrome://discards</code> で、保護されたタブは <em>Auto Discardable</em> 列に ✕ と表示されます。",
-    "description": "Welcome footer step 2. Keep the inline tags and chrome://discards literal."
-  },
   "tourMasterTitle": {
     "message": "マスタースイッチ",
     "description": "Tour step title."
   },
   "tourMasterBody": {
-    "message": "ここですべての保護をオン／オフできます。オフの間はすべてのタブが破棄可能になります — ルールは保持され、一時停止されるだけです。",
+    "message": "ここですべてのタブの<b>メモリに保持</b>を一時停止または再開できます。オフの間は、どのタブも破棄される可能性があります。ルールは保存されたまま、一時停止されるだけです。動作を維持しているタブは動き続けます。",
     "description": "Tour step body."
   },
   "tourModeTitle": {
-    "message": "保護モードを選ぶ",
+    "message": "メモリに保持するサイトを選ぶ",
     "description": "Tour step title."
   },
   "tourModeBody": {
-    "message": "<b>ホワイトリストのみ</b>は選んだサイトだけを保持します（控えめなデフォルト）。<b>すべて保護</b>は除外したサイト以外のすべてのタブを保持します。",
+    "message": "<b>選んだサイトのみ</b>は選んだサイトだけをメモリに保持します（控えめなデフォルト）。<b>すべてのサイト（除外を除く）</b>は除外したサイト以外のすべてのタブをメモリに保持します。「動作を維持」はここではなくタブごとに設定します。",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourTabsTitle": {
@@ -494,15 +340,15 @@
     "description": "Tour step title."
   },
   "tourTabsBody": {
-    "message": "開いているすべてのタブに専用のスイッチがあります。切り替えてそのタブだけを保持したりスリープさせたり — タブを閉じるまで続く一時的な選択です。ずっと有効にしたいですか？スイッチの隣の <b>このサイトでは常に適用</b> をクリックすると、恒久的なサイトルールになります。行をクリックするとそのタブに移動します。",
+    "message": "開いているタブにはそれぞれ専用の<b>メモリに保持</b>スイッチがあります。タブを閉じるまで有効な一時的な選択です。サイトのヘッダーにあるスイッチは、サイト全体に対して同じ操作を恒久的に行います。行をクリックするとそのタブに移動します。",
     "description": "Tour step body. Keep the <b> tags."
   },
   "tourRulesTitle": {
-    "message": "サイトごとにルールを設定",
+    "message": "サイト全体をメモリに保持",
     "description": "Tour step title."
   },
   "tourRulesBody": {
-    "message": "ここにドメインを追加すると、サイト全体をまとめて保護（または除外）できます。ドメインはサブドメインもカバーします — <code>example.com</code> は <code>mail.example.com</code> に一致します。これでツアーは終わりです — ? ボタンからいつでも再開できます。",
+    "message": "ここにドメインを追加すると、サイト全体をメモリに保持できます（または Chrome による破棄を許可できます）。ドメインはサブドメインにも適用され、<code>example.com</code> は <code>mail.example.com</code> に一致します。ツアーは以上です。? ボタンからいつでももう一度開けます。",
     "description": "Tour step body. Keep the <code> tags."
   },
   "tourSkip": {
@@ -536,15 +382,15 @@
     }
   },
   "internalPagesGroup": {
-    "message": "Internal pages",
+    "message": "内部ページ",
     "description": "Group header for tabs without a web host (chrome://, extension pages)."
   },
   "keepSiteAlive": {
-    "message": "Keep alive",
+    "message": "アクティブに保つ",
     "description": "Label next to the site-wide switch in a tab group header."
   },
   "keepSiteAliveTip": {
-    "message": "Always keep all of $HOST$ alive (a permanent site rule)",
+    "message": "常に $HOST$ 全体をメモリに保持する（恒久的なサイトルール）",
     "description": "Tooltip for the site-wide keep-alive switch in a group header.",
     "placeholders": {
       "host": {
@@ -562,27 +408,27 @@
     "description": "Popup summary line when the current tab can be discarded."
   },
   "popupSummaryPaused": {
-    "message": "保護は一時停止中です — タブは維持されていません。",
+    "message": "「メモリに保持」は一時停止中です — Chrome はどのタブも破棄する可能性があります。「動作を維持」は影響を受けません。",
     "description": "Popup summary line when the master switch is off."
   },
   "tagClosed": {
-    "message": "Closed",
+    "message": "閉じたタブ",
     "description": "Tag: this tab is closed but its activation is remembered."
   },
   "ghostForgetTip": {
-    "message": "Stop keeping this closed tab alive (forget it)",
+    "message": "この閉じたタブをメモリに保持するのをやめる（忘れる）",
     "description": "Tooltip on the switch of a remembered, closed tab."
   },
   "groupHasPinned": {
-    "message": "This group has pinned tabs.",
+    "message": "このグループには固定されたタブがあります。",
     "description": "Tooltip on the pinned-tabs badge when the site is kept alive."
   },
   "groupPinnedUnprotected": {
-    "message": "Pinned tabs here aren't being kept alive.",
+    "message": "ここの固定タブはメモリに保持されていません。",
     "description": "Tooltip on the pinned-tabs badge when the site is not kept alive."
   },
   "groupActiveCount": {
-    "message": "$COUNT$ tab(s) here are kept alive.",
+    "message": "ここでは $COUNT$ 個のタブがメモリに保持されています。",
     "description": "Tooltip on the collapsed-group badge counting individually kept-alive tabs.",
     "placeholders": {
       "count": {
@@ -590,5 +436,315 @@
         "example": "2"
       }
     }
+  },
+  "captureFailed": {
+    "message": "開始できませんでした。別の拡張機能または Chrome がすでにこのタブをキャプチャしている可能性があります。",
+    "description": "Popup error when Keep running could not start."
+  },
+  "memoryTitle": {
+    "message": "メモリに保持",
+    "description": "Popup card heading: switches that stop Chrome from unloading the tab."
+  },
+  "runTitle": {
+    "message": "動作を維持",
+    "description": "Popup card heading: switch that keeps the page itself working while hidden."
+  },
+  "memoryGain": {
+    "message": "入力した内容はそのまま残ります",
+    "description": "Benefit line of the Keep in memory card."
+  },
+  "memoryCost": {
+    "message": "非表示中の動作低下は防げません",
+    "description": "Limitation line of the Keep in memory card."
+  },
+  "runSub": {
+    "message": "非表示でも動作します。",
+    "description": "Subtitle of the Keep running card."
+  },
+  "runGain": {
+    "message": "チャット、タイマー、ライブデータが動き続けます",
+    "description": "Benefit line of the Keep running card."
+  },
+  "runCost": {
+    "message": "バッテリー消費が増え、Chrome に画面共有アイコンが表示されます",
+    "description": "Cost line of the Keep running card. Chrome shows its screen-sharing indicator while the switch is on."
+  },
+  "runHelpTitle": {
+    "message": "なぜ画面録画なのですか？",
+    "description": "Title of the explainer, tooltip of the ? button on the Keep running card."
+  },
+  "runConsentTitle": {
+    "message": "「動作を維持」は画面録画を模倣します",
+    "description": "Title of the first-use confirmation."
+  },
+  "runHelpLead": {
+    "message": "Chrome は見えていないタブの動作を遅くします。これを防ぐため、拡張機能がこのタブの画面録画を模倣し、Chrome がタブを使用中と見なすようにします。",
+    "description": "Explains why Keep running uses tab capture."
+  },
+  "runHelpPoint1": {
+    "message": "何も録画されません。映像が読み取られたり、保存されたり、どこかに送信されたりすることはありません。",
+    "description": "Safety point 1."
+  },
+  "runHelpPoint2": {
+    "message": "このタブのみ、スイッチがオンの間だけです。Chrome は共有アイコンを表示するので、こっそり動作することはありません。",
+    "description": "Safety point 2."
+  },
+  "runHelpPoint3": {
+    "message": "いつでもオフにできます。タブを閉じるだけでも構いません。",
+    "description": "Safety point 3."
+  },
+  "consentOk": {
+    "message": "了解、オンにする",
+    "description": "Confirm button of the first-use dialog."
+  },
+  "consentCancel": {
+    "message": "今はしない",
+    "description": "Cancel button of the first-use dialog."
+  },
+  "helpClose": {
+    "message": "OK",
+    "description": "Close button of the explainer."
+  },
+  "memoryTabTip": {
+    "message": "このタブを閉じるまでメモリに保持",
+    "description": "Tooltip of the Keep in memory switch (applies to the current tab only)."
+  },
+  "actionTitleRunning": {
+    "message": "Keep Tabs Alive — タブの動作を維持中",
+    "description": "Toolbar button tooltip while at least one tab is held by Keep running."
+  },
+  "bannerText": {
+    "message": "Keep Tabs Alive がこのタブの動作を維持しています"
+  },
+  "bannerOff": {
+    "message": "オフにする"
+  },
+  "bannerHide": {
+    "message": "このバーを非表示（タブは維持されたまま）"
+  },
+  "tagRunning": {
+    "message": "動作中"
+  },
+  "stopAll": {
+    "message": "すべて停止"
+  },
+  "timerLabel": {
+    "message": "自動オフまで"
+  },
+  "timer30": {
+    "message": "30 分"
+  },
+  "timer60": {
+    "message": "1 時間"
+  },
+  "timer180": {
+    "message": "3 時間"
+  },
+  "timerNone": {
+    "message": "タイマーなし"
+  },
+  "timerLeft": {
+    "message": "$X$ 後にオフになります",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerForever": {
+    "message": "タイマーなし — オフにするまで動作し続けます"
+  },
+  "unitMin": {
+    "message": "分"
+  },
+  "unitHour": {
+    "message": "時間"
+  },
+  "heldTitle": {
+    "message": "動作を維持中"
+  },
+  "heldStop": {
+    "message": "このタブの動作維持を停止"
+  },
+  "bannerUntil": {
+    "message": "$X$ まで",
+    "placeholders": {
+      "x": {
+        "content": "$1"
+      }
+    }
+  },
+  "timerExtendLabel": {
+    "message": "延長"
+  },
+  "memoryStop": {
+    "message": "このタブのメモリ保持を停止"
+  },
+  "rowRunStart": {
+    "message": "動作を維持 — このタブでオンにする"
+  },
+  "rowRunStop": {
+    "message": "「動作を維持」がオン — クリックでオフ"
+  },
+  "tourRunTitle": {
+    "message": "ページを動かし続ける"
+  },
+  "tourRunBody": {
+    "message": "非表示の間もページを動かし続けたいですか？チャット、タイマー、ライブデータなどです。そのタブで拡張機能のウィンドウを開いて<b>動作を維持</b>をオンにするか、ここのタブの行にある稲妻アイコンを押します。Chrome がタブを使用中と見なすため、動作が遅くなりません。画面録画を模倣していますが、何も録画・送信されず、選んだタイマーで自動的にオフになります。"
+  },
+  "aliveTitle": {
+    "message": "完全維持"
+  },
+  "aliveTip": {
+    "message": "このタブをメモリに保持し、動作も維持します — 両方を同時に"
+  },
+  "aliveRowTip": {
+    "message": "メモリに保持 + 動作を維持"
+  },
+  "captureReload": {
+    "message": "ページを再読み込み"
+  },
+  "runNeedsPopup": {
+    "message": "Chrome では、そのタブ上の拡張機能のウィンドウからのみ可能です。タブに移動して Keep Tabs Alive のアイコンをクリックしてください。"
+  },
+  "goToTab": {
+    "message": "タブに移動"
+  },
+  "groupRunPick": {
+    "message": "「動作を維持」は 1 つのタブずつ有効にします。稲妻ボタンでタブを選んでください。"
+  },
+  "groupRunStartTip": {
+    "message": "動作を維持：非表示でもページがフルスピードで動作します"
+  },
+  "groupRunStopTip": {
+    "message": "このサイトのタブの「動作を維持」を停止"
+  },
+  "statRunningNow": {
+    "message": "動作維持中"
+  },
+  "aliveOnTab": {
+    "message": "タブでオンにする"
+  },
+  "aliveOnTabTip": {
+    "message": "Chrome では「動作を維持」をそのタブ上の拡張機能のウィンドウからのみオンにできます。このボタンでそのタブに移動してウィンドウを開きます。"
+  },
+  "pendingTitle": {
+    "message": "あと 1 クリック"
+  },
+  "pendingBody": {
+    "message": "このウィンドウを閉じて、ツールバーの Keep Tabs Alive アイコン（緑の盾）をクリックしてください。パズルアイコン 🧩 の中にある場合もあります。「動作を維持」は自動的にオンになります。"
+  },
+  "handoffTitle": {
+    "message": "タブで「動作を維持」をオンにする"
+  },
+  "handoffTitleAlive": {
+    "message": "タブで「完全維持」をオンにする"
+  },
+  "handoffStep1": {
+    "message": "「$TITLE$」に切り替えます。",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "handoffStep2": {
+    "message": "ツールバーで点滅している Keep Tabs Alive アイコン（緑の盾）をクリックします。見つからない場合は、パズルアイコン 🧩 の中にあります。"
+  },
+  "handoffStep3": {
+    "message": "ウィンドウに「動作を維持」のスイッチが表示されます。クリックするとオンになります。"
+  },
+  "handoffStep3Alive": {
+    "message": "ウィンドウに「動作を維持」のスイッチが表示されます。クリックすると、タブがメモリに保持され、動作も維持されます。"
+  },
+  "runDone": {
+    "message": "完了 — このタブの動作を維持しています。"
+  },
+  "aliveDone": {
+    "message": "完了 — このタブを完全維持しています：メモリに保持され、動作も維持されます。"
+  },
+  "tapToTurnOn": {
+    "message": "クリックでオン"
+  },
+  "heldMore": {
+    "message": "すべてのタブを設定で表示 →"
+  },
+  "groupInMemory": {
+    "message": "メモリ内"
+  },
+  "memoryCardSub": {
+    "message": "Chrome はこれらのタブを破棄しません。入力した内容はそのまま残ります。"
+  },
+  "runCardSub": {
+    "message": "これらのページは、非表示でもフルスピードで動作し続けます。"
+  },
+  "colRunning": {
+    "message": "動作中"
+  },
+  "runEmpty": {
+    "message": "動作を維持しているタブはありません。下のリストの ⚡ か、そのタブ上の拡張機能のウィンドウからオンにできます。"
+  },
+  "wMemPromise": {
+    "message": "Chrome はこのタブを破棄しません。"
+  },
+  "wMemDesc": {
+    "message": "戻れば、すべて離れたときのまま。再読み込みは不要です。"
+  },
+  "wMemGain1": {
+    "message": "入力したテキスト、下書き、フォームが残ります"
+  },
+  "wMemGain2": {
+    "message": "無料：バッテリーの追加消費なし"
+  },
+  "wMemCost": {
+    "message": "非表示の間、ページの動作が遅くなる場合があります"
+  },
+  "wGoodFor": {
+    "message": "向いている用途："
+  },
+  "wMemFor": {
+    "message": "長いフォーム、ドキュメント、メール、ときどき確認するダッシュボード"
+  },
+  "wRunPromise": {
+    "message": "ページは、見えていなくてもフルスピードで動作し続けます。"
+  },
+  "wRunDesc": {
+    "message": "Chrome がタブを使用中と見なすため、ほかのタブやアプリを使っている間もタブ内の処理が止まりません。"
+  },
+  "wRunGain1": {
+    "message": "チャット、AI の回答、タイマー、音楽、ライブデータが動き続けます"
+  },
+  "wRunGain2": {
+    "message": "必要に応じて、タイマーで自動的にオフにできます"
+  },
+  "wRunCost": {
+    "message": "バッテリー消費が増え、Chrome に画面共有アイコンが表示されます。何も録画されません"
+  },
+  "wRunFor": {
+    "message": "チャットや AI ツール、トレードや監視、タイマー、アップロード"
+  },
+  "wBoth": {
+    "message": "<strong>両方必要ですか？</strong>「完全維持」なら、1 クリックでタブの両方のモードをオンにできます。"
+  },
+  "wStepsTitle": {
+    "message": "オンにする方法"
+  },
+  "wStep2": {
+    "message": "<strong>どのタブでもアイコンをクリック</strong> — ウィンドウに各モードのスイッチがあります。"
+  },
+  "wStep3": {
+    "message": "<strong>設定</strong>では、開いているすべてのタブを確認でき、サイト全体をメモリに保持できます。"
+  },
+  "wPrivacy": {
+    "message": "ブラウザの外には何も出ません。トラッキングもサーバーもありません。「動作を維持」がページを録画することはありません。"
+  },
+  "timerAdd30": {
+    "message": "+30 分"
+  },
+  "timerAdd60": {
+    "message": "+1 時間"
+  },
+  "timerAdd180": {
+    "message": "+3 時間"
   }
 }

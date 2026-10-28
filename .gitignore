@@ -4,3 +4,4 @@ release/
 promo/shots/
 *.log
 .DS_Store
+promo/out/*/
